@@ -20,7 +20,7 @@ Read CLAUDE.md first (all rules and decisions), then this file, then docs/journa
 - Build and check: `cd site && npm run build && python3 ../tools/check_site.py` (report in site/check-report.md). Local Pages emulation (redirects, headers, 404): `npx wrangler pages dev dist --port 8799`.
 - Deploy: `cd site && npx wrangler pages deploy dist --project-name fppplumbing-preview --branch main --commit-dirty=true` (wrangler is logged in as request@fppplumbing.com via OAuth; the project is classic Pages, created with --force once, no --force needed now).
 - Preview: https://fppplumbing-preview.pages.dev, protected by two Cloudflare Access self hosted apps (fppplumbing-preview.pages.dev and *.fppplumbing-preview.pages.dev), policy "Denys": Allow, Emails request@fppplumbing.com, login by one time PIN. No password exists.
-- Checks: 27 of 27 pass. Four ranking guides are FROZEN (old text exactly, text checks skipped); tankless allowed in guides (Denys). Phone LCP: / 1.31 s, slab 1.51 s, Frisco 1.53 s, post 1.25 s.
+- Checks: 27 of 27 pass. Three ranking guides are FROZEN (water heater cost, main valve shut-off, angle stop) (old text exactly, text checks skipped); tankless allowed in guides (Denys). Phone LCP: / 1.31 s, slab 1.51 s, Frisco 1.53 s, post 1.25 s.
 - Not done: form to Telegram via Worker plus Turnstile, GA4 and call tracking, schema.org validator run, ?attachment_id redirects (Pages Function, list in site/src/data/redirects-query.csv), real iPhone test of the pipe animation.
 
 ## Next steps
