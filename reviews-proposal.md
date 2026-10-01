@@ -1,184 +1,293 @@
-# Предложение: отзывы по страницам услуг
+# Предложение: отзывы по страницам
 
-Черновик на утверждение Денису. Правила: только пять звезд, текст дословно, один человек на одну страницу по всему сайту, никого из тех, кто уже стоит на старом сайте. Отзыв Liane W. с суммой $700 Денис разрешил взять дословно (1 октября 2026). Уровень Local Guide для подписи еще проверяется.
+Черновик на утверждение Денису, версия от 1 октября 2026. Правила: только пять звезд, текст дословно, один человек на одну страницу по всему сайту, никого из тех, кто уже стоит на старом сайте (проверено по тексту, а не только по имени). Подпись под каждым отзывом по правилу 11: для Google город (только если он есть в тексте отзыва), уровень Local Guide, месяц и год; для Yelp и Thumbtack только площадка, месяц и год, без города автора.
 
+## Что изменилось и почему
+
+- Убраны отзывы, которые звучат как SEO фразы («plumber near me», «plumber in Frisco or Plano»): Yulia B, Vlad Ezhov, funny warner f, Julian Jaramillo, Nivas chowdary, Сергей Кравченко. На их место поставлены отзывы обычным языком на ту же услугу, по возможности с того же профиля (Plano или Frisco).
+- /water-heaters/: Yulia B и Vlad Ezhov заменены на Biswa Senapati (Google) и Igor B. (Yelp).
+- /water-heater-repair-frisco-mckinney/: funny warner f заменен на Yuliia Novoderezhkina (Google), добавлен второй отзыв Stephan S (Google). Отзыва про расширительный бак или T&P клапан обычным языком нет: единственный такой отзыв был как раз от funny warner f.
+- /clogged-drain-cleaning-frisco-plano/: Julian Jaramillo и Nivas chowdary заменены на Joel Brown и David Baez (оба Google).
+- /drain-services/: Сергей Кравченко заменен на Zach Z. (Yelp, засор главной линии и камера до и после).
+- /water-leak-detection-frisco-plano/: Javeed N. (Thumbtack, 2022) заменен на Oksana Toporina (Google, диагностика slab leak).
+- /garbage-disposal-repair-frisco-plano/: добавлен второй отзыв Madison h. (Thumbtack).
+- Проверка по тексту: каждый отзыв из предложения сравнили с текстами отзывов старого сайта и с видимым текстом всех 63 сохраненных страниц старого сайта (полный текст и куски по 8 слов). Ни один новый отзыв на страницах услуг со старым сайтом не совпадает; есть только одинаковое начало фразы у Biswa Senapati, см. вопрос 6. Одно полное совпадение на главной, см. вопрос 1.
+- Уровень Local Guide прочитан в профиле каждого автора Google на Картах Google: все 21 автор отзывов Google в этом предложении являются Local Guide, уровни от 2 до 6. Неизвестных уровней нет.
+- Остальные пары остались как были.
+
+## Вопросы Денису
+
+1. Главная, Lori F. (Thumbtack): это тот же отзыв, что у Lori Flewellen в Google, а он уже стоит на старом сайте на странице Prosper. По правилу «никого со старого сайта» его на главную ставить нельзя. Заменить? Я главную не трогал, жду решения.
+2. Главная, Ann Crawford (профиль Frisco): в тексте «I googled Plumber near me», то есть та же SEO фраза, что у убранных отзывов. Заменить? Еще там «showed up within the hour», а у Paul J. «in 20 minutes»: это слова клиентов, не наше обещание, но если хотите совсем без минут, их тоже можно заменить.
+3. /fixture-installation-repair/, Rushi Nani: начинается с «Great plumber in Frisco», это тот же шаблон, что «plumber in Frisco or Plano». По вашему решению пары остались как были, поэтому я его не менял. Готовая замена: Nat Armstrong (Google, Local Guide уровень 3, май 2026, установка кухонного смесителя), его на старом сайте нет. Менять?
+4. /water-lines/, Kathryn Kim: последняя фраза «If you need a reliable emergency plumber, FPP Plumbing is a great company» немного похожа на рекламную. Я оставил: остальной текст живой, а другого пятизвездочного отзыва про магистральную линию нет. Согласны?
+5. /water-heaters/, Igor B. (Yelp): он пишет «leaking boiler» и «new boiler». Я понял это как водонагреватель (бойлер). Если это был не водонагреватель, скажите, подберу другой.
+6. /water-heaters/, Biswa Senapati: отзыв начинается теми же словами, что отзыв Gopi V. на главной старого сайта («I recently hired Denys from FFP Plumbing to», даже с той же опечаткой FFP). Остальной текст другой, человек другой. Оставляем?
+7. Расширительный бак и T&P клапан: ни одного подходящего отзыва обычным языком нет, поэтому на странице ремонта водонагревателей два отзыва про срочный ремонт. Так нормально?
+
+## Главная /
+
+### Ann Crawford
+
+★★★★★ · Local Guide Level 4 · March 2026 · Google
+
+Почему: выбор для главной (из макета). Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kemJsWmFObVp3VFZSaVEyMDJlRU5IWVRGMGNVRRAB!2m1!1s0x0:0xe28e4c9b59df630f
+
+> I just received the best service!  I googled Plumber near me and Denys showed up within the hour!  He explained everything he was doing and even showed me videos so that I could see his work. It was a very honest experience. Highly recommend!
+
+### Adam Lis
+
+★★★★★ · Local Guide Level 5 · August 2026 · Google
+
+Почему: выбор для главной (из макета). Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tOS0xUUlljRFl3V0Vod1puWnRXRlY0Y2xoNFkxRRAB!2m1!1s0x0:0xccc66184bdaf3a93
+
+> I had a laundry list of plumbing issues to fix after buying a home, and I’m so glad that I chose FPP Plumbing! Denys was excellent—detailed, transparent, and professional. He explained everything to me and didn’t do a single thing without my approval. I’ll definitely stick with FPP for future plumbing work.
+
+### Paul J.
+
+★★★★★ · Yelp · January 2026
+
+Почему: выбор для главной (из макета). Источник: https://www.yelp.com/biz/fpp-plumbing-plano-2
+
+> Water was leaking from my first floor ceiling and it was 7pm. FPP sent someone to my house in 20 minutes. He quickly found the toilet that was leaking (from the bad end) and fixed it quickly. I had to pay extra for after hours service and it was worth it! Stopping the leak now instead of waiting a day kept this problem from getting even worse.
+
+### Lori F.
+
+★★★★★ · Thumbtack · March 2026
+
+Почему: выбор для главной (из макета). Источник: https://www.thumbtack.com/tx/plano/handyman/fpp-plumbing/service/454195206250143760
+
+> One of the best plumbers Ive worked with. Hes prompt, communicates clearly, explains the work in detail, and charges reasonable rates. Reliable service and quick response time. Highly recommend.
 
 ## /slab-leak-repair-frisco-plano-mckinney/
 
-### Steven Cossettini, Google (Plano), 2026-09-10
+### Steven Cossettini
 
-Почему: leak under the foundation slab, tunneling, pipe replaced, tunnel refilled. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25aNmFuTTBaME50UzNkbFRIZHhhRXRyYURReGJYYxAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 3 · September 2026 · Google
+
+Почему: течь под плитой фундамента, туннель, труба заменена, туннель засыпан. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25aNmFuTTBaME50UzNkbFRIZHhhRXRyYURReGJYYxAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > I am very happy with my experiences with FPP Plumbing.  I had them come over a couple weeks ago to assess and fix a pipe leak under my foundation slab.  The plumber and two other workers worked very hard all day digging and tunneling to where the leaking pipe was.  The leak was likely due to some foundation movement.  They replaced the leaking pipe and then refilled the tunnel and hole.  Although not a cheap repair, I was expecting it to be much higher.  I felt the cost was reasonable.  I also just utilized FPP Plumbing for a water heater flush.  They completed the work very efficiently and for a very reasonable price.  I'm definitely pleased with their service and plan to use them again in the future.  Thank you!
 
-### Saman Attar, Google (Plano), 2026-02-11
+### Saman Attar
 
-Почему: slab leak found, tunneling next day, pipe under the slab replaced. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xnd2VsSTVjV1pNU2pCblMwdHlNMTlZWjFVMFpVRRAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 3 · February 2026 · Google
+
+Почему: нашли slab leak, на следующий день туннель, трубу под плитой заменили. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xnd2VsSTVjV1pNU2pCblMwdHlNMTlZWjFVMFpVRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > I hope you never need an emergency plumber like I did - but if you do Denys is the man.
-> 
+>
 > He identified a slab leak in my home and quickly coordinated to get a tunneling crew out the next day. He stayed very late till 9:30pm that following day to finish fixing and replacing the pipe underneath my slab to make sure we had working water that night. Things out of his control kept going wrong
 > but he was quick to mitigate and fix the issues.
-> 
+>
 > He was very professional, educational, and helpful. He’s clearly very good at what he does and you’re in good hands. I’ll be calling him for future work (but hope I never need to!)
-
 
 ## /water-leak-detection-frisco-plano/
 
-### Javeed N., Thumbtack (Plano), 2022-11-06
+### Oksana Toporina
 
-Почему: water leak that was hard to find. Источник: https://www.thumbtack.com/tx/plano/handyman/fpp-plumbing/service/454195206250143760
+★★★★★ · Local Guide Level 3 · January 2025 · Google
 
-> Response was immediate. They were able to troubleshoot a water leak that was hard to find. Very nice and pleasant to work with.
+Почему: НОВЫЙ. Google: диагностика slab leak, потом вода под холодильником и замена линии. Вместо Javeed N. (Thumbtack, 2022). Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURmallDamtnRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
-### Liane W., Yelp (Plano), 2025-02-24
+> Great experience with FPP plumbing!
+> Our journey with Denys started January 2024 with diagnosing a slab leak and after main construction was done,Denys help to finish up all of the plumbing jobs in the kitchen.
+> Summer of 2024 he helped us replace a very old drain in a bathtub and replace 80-is shower head and faucet.
+> Yesterday coming home after work and finding water leaking under the fridge, he replaced the water line.
+> It’s very important to have a reliable plumber to call in case of water emergency.FPP is my company to call!
+> Licenced in Texas,professional,smart and very reasonably priced!
 
-Почему: methodical leak detection, nail through the pipe in the wall (quotes $700, approved by Denys). Источник: https://www.yelp.com/biz/fpp-plumbing-plano-2
+### Liane W.
+
+★★★★★ · Yelp · February 2025
+
+Почему: методичный поиск течи, гвоздь в трубе в стене (сумма $700, Денис разрешил). Источник: https://www.yelp.com/biz/fpp-plumbing-plano-2
 
 > TL;DR: Five-stars all around. Would absolutely hire again. Denys was methodical with his diagnosis/leak detection and was absolutely correct as to how the leak occurred.  This past weekend, I noticed water damage in my garage by the water shut off valve. It was an active growing water leak (see pictures).   Freaking out, I called around to different plumbing companies to see who could come out. The first few I found did not offer emergency/weekend services, but Denys did.  I called around noon, and he was at my house by 2:15p. He was professional, kind, and explained what he was doing and his thought process. Through his diagnosis, he determined the leak must be a small leak and eventually isolated the issue to our master closet (which shares a wall with our garage's attic).  He cut a square piece of drywall from below our closet's shelf, and we could see the active leak dripping down a plastic pipe. He followed that pipe up above our closet shelf and cut out another section of drywall. We all noted that section of the pipe was dry.  He turned off the water again, and then he cut the pipe at both ends accessible via the drywall. Before doing so, he mentioned that builders often punch nails through the drywall/insulation and sometimes end up hitting the pipe. In one of the pics attached, you can see a pointy end of a nail that missed the stud.  When he pulled the cut section of the pipe out, he was correct. A nail had been punched through the pipe, had rusted over four years, and I guess with the recent freeze/thaw had eventually worn away the nail and caused the leak.  He fit a new section of pipe to our existing pipe and fixed the issue. It was about $700 to fix (would have been cheaper if the leak had occurred during regular business hours lol), but the good news is our builder's warranty will cover this claim. :')  Thanks Denys for hanging out with us this past Sat to fix this issue. We appreciate it.
 
-
 ## /water-lines/
 
-### william mckinney, Google (Plano), 2026-09-13
+### william mckinney
 
-Почему: main water line leak repaired Sunday morning. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25nd01taHNhVFJ6UlRCM1FUSkxUR1pIVjB3eFRuYxAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 6 · September 2026 · Google
+
+Почему: течь на магистральной линии воды, ремонт в воскресенье утром. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25nd01taHNhVFJ6UlRCM1FUSkxUR1pIVjB3eFRuYxAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > FPP Plumbing was amazing. I called them late on Saturday night, and they were there to repair the leak on the main water line at 9:10 AM on Sunday morning! Denis was meticulous making sure all parts of the repair were done correctly!
 > Thank you!!
 
-### Kathryn Kim, Google (Plano), 2025-09-04
+### Kathryn Kim
 
-Почему: main water line leak in the yard, after hours. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2taWlkwMXpNVlU0ZDFwb1ZHOVhSeTFhZUdWMlIxRRAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 3 · September 2025 · Google
+
+Почему: течь магистральной линии во дворе, вечерний вызов. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2taWlkwMXpNVlU0ZDFwb1ZHOVhSeTFhZUdWMlIxRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > We had a main water line leak in our yard. It was after hours, but I called FPP Plumbing and they picked up right away and sent out a licensed plumber the same night. It was considered an emergency service, and I completely agree with the fee for such a fast late visit - it was absolutely fair. He found the leak quickly, explained everything, and had it repaired before it got worse. If you need a reliable emergency plumber, FPP Plumbing is a great company.
 
-
 ## /water-heaters/
 
-### Yulia B, Google (Plano), 2025-07-04
+### Biswa Senapati
 
-Почему: water heater burst in the attic, leak stopped that night, replaced Sunday. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tJek5tNWFSbXBpWlRSb05qbDVNSGhLUkZCQ1QzYxAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 2 · December 2024 · Google
 
-> If you ever need an emergency plumber in Frisco, save yourself the stress and just call FPP Plumbing. Late Saturday night, I heard this weird dripping sound and saw water coming through the ceiling. My water heater had burst in the attic. Total mess. I called like five companies, no one answered. Denys from FPP Plumbing actually picked up, came out that night, and stopped the leak before things got worse. Yes, they charged an emergency fee obviously, it was almost midnight but honestly, it was totally fair in a situation like that. He came back Sunday morning and replaced the water heater. Super fast, no nonsense, explained everything, and didn’t try to upsell. Can’t thank them enough.
+Почему: НОВЫЙ. Замена водонагревателей, городские разрешения. Вместо Yulia B. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNmeW9yV1FnEAE!2m1!1s0x0:0xccc66184bdaf3a93
 
-### Vlad Ezhov, Google (Plano), 2025-08-22
+> I recently hired Denys from FFP Plumbing to replace my water heaters. He performed the work efficiently, obtained the necessary city permits, and I am satisfied with the results. I would recommend FFP Plumbing for your plumbing needs.
 
-Почему: leaking water heater, replaced next day, city inspection passed. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pWV2MxaHdPRXhYYmxGSk9EUmZSRmR0UTA1clZIYxAB!2m1!1s0x0:0xccc66184bdaf3a93
+### Igor B.
 
-> This plumber near me was seriously the best. My water heater started leaking and flooding the house total nightmare. I called a bunch of places late Sunday night, and FPP Plumbing were the only ones who actually answered. They showed up that same night, stopped the leak real quick, and came back next day to swap the whole thing out. Yeah, it wasn’t cheap they charged an emergency fee but man, it was worth it. Even the city guy said everything looked great. I’m super happy with how they handled it. Next time I need anything I’m calling these guys again for sure.
+★★★★★ · Yelp · March 2025
 
+Почему: НОВЫЙ. Протекал «boiler» (водонагреватель), заменили. Вместо Vlad Ezhov. Нужно подтверждение Дениса, см. вопросы. Источник: https://www.yelp.com/biz/fpp-plumbing-plano-2
+
+> I had a leaking boiler, and Denys did a fantastic job replacing it. Hey made sure everything was done properly, and the quality of his work was excellent. Denys was professional, friendly, and kept everything clean. My new boiler works great.  I'm very happy with FPP Plumbing service and would definitely call them again if I need a plumber. Highly recommend!
 
 ## /water-heater-repair-frisco-mckinney/
 
-### funny warner f, Google (Plano), 2025-09-28
+### Yuliia Novoderezhkina
 
-Почему: expansion tank leaking, fixed Saturday night. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pFdGQzQjFSR1J3YzJ4clZrcE1iVXhmTkdobU9HYxAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 4 · February 2026 · Google
 
-> My water heater expansion tank started leaking and this plumber near me was the only one who picked up on a Saturday night. Got it fixed quick, definitely recommend!
+Почему: НОВЫЙ. Течь водонагревателя на чердаке: течь остановили, осмотрели, в тот же день замена с разрешением и инспекцией. Вместо funny warner f. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21Zd1h6WXRYM0pGV1Uxcll5MWlUVlYwV2xOTVNWRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
+> Our water heater started leaking and we called FPP Plumbing. A plumber came out in about 20 minutes and stopped the leak. After that he told us the water heater was basically done and needed to be replaced.The water heater was in the attic, so we knew it wasn’t going to be an easy job. The price wasn’t cheap, but it was fair for the work and location. Everything was explained clearly and there were no surprises. They also helped us choose the right water heater instead of trying to sell us something unnecessary.They replaced it the same day, pulled the city permit, and passed inspection with no issues. Overall just really solid service. This is definitely the plumber we’ll be calling from now on.
+
+### Stephan S
+
+★★★★★ · Local Guide Level 5 · January 2026 · Google
+
+Почему: НОВЫЙ, второй отзыв на странице. Ремонт лопнувших водонагревателей и труб, в том числе ночью. Про расширительный бак или T&P клапан нет ни одного пятизвездочного отзыва. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2paT2EyNXNZMGhJVHpkWWFUUmhNbk42U1RCNVUwRRAB!2m1!1s0x0:0xe28e4c9b59df630f
+
+> We love working with FPP Plumbing for emergency water leaks! Their team is always quick to respond—even in the middle of the night. They’ve reliably repaired leaking pipes and busted water heaters for our clients. Highly recommended!
 
 ## /clogged-drain-cleaning-frisco-plano/
 
-### Julian Jaramillo, Google (Plano), 2025-04-25
+### Joel Brown
 
-Почему: kitchen drain clog cleared the same day. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTURva2YzbElREAE!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 4 · May 2025 · Google
 
-> My kitchen drain was clogged and I found FPP Plumbing on Google. Denys came out the same day and fixed it fast. Super nice guy, explained what was wrong and didn’t overcharge. If you need a plumber in Frisco or Plano, definitely give them a call!
+Почему: НОВЫЙ. Проблема с канализацией в доме устранена, Денис поправил диагноз хозяина. Вместо Julian Jaramillo. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VQM050dW00eVpTQ3pnRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
-### Nivas chowdary, Google (Frisco), 2026-07-01
+> Denys is professional and thorough.  I cannot thank him enough for coming out and helping us fix our drain problem.  He even corrected a few mistakes I made in trying to diagnose the issue!  Highly recommend Denys and FPP Plumbing.  He will be our plumber of choice.
 
-Почему: AC drain line clog, Plano. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kME9YazFOa0ZEUTBGQ1gzQjNVRGh4TTB0Q1RXYxAB!2m1!1s0x0:0xe28e4c9b59df630f
+### David Baez
 
-> AC drain line clog in Plano had the sink overflowing. FPP Plumbing came out fast, cleared the clog, and got everything draining again. Quick and easy.
+★★★★★ · Local Guide Level 4 · August 2025 · Google
 
+Почему: НОВЫЙ. Забилась дренажная линия кондиционера, вода с потолка, линию промыли и проверили. Вместо Nivas chowdary. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pGWlpXVlVPRXMwUm1OdWJscEdaVFZHT0RscVMyYxAB!2m1!1s0x0:0xccc66184bdaf3a93
+
+> My AC drain line was clogged, and water started dripping from the ceiling. I couldn’t run the AC at all, and it felt like a real emergency. I called FPP Plumbing, and Denys and his team showed up really fast. They found the problem, flushed the drain line, explained everything step by step, and made sure it was all working before they left. Everything’s running smooth now. These guys really helped me out when I needed it. If you’re dealing with a plumbing issue - boom, problem gone! That’s my go-to plumber now!
 
 ## /drain-services/
 
-### Сергей Кравченко, Google (Frisco), 2026-01-12
+### Zach Z.
 
-Почему: main drain line, camera inspection, wipes. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2psUVdrOXRhbGwwUjBOZk5ESldXbTAzY0RkWVpHYxAB!2m1!1s0x0:0xe28e4c9b59df630f
+★★★★★ · Yelp · October 2025
 
-> Best plumber near me I could find. Sunday night my main drain line got clogged. I called a few plumbers, FPP Plumbing were the only ones who actually answered and showed up. They came out fast, explained what was going on, did a camera inspection and fixed the problem. Not cheap, but it was Sunday night, and at that point it’s fair. They even showed me what caused the clog, lesson learned, no more flushing wipes LOL.
+Почему: НОВЫЙ. Засор главной линии, камера до и после прочистки. Вместо Сергея Кравченко. Источник: https://www.yelp.com/biz/fpp-plumbing-plano-2
 
-### Jose Alfredo Martinez, Google (Plano), 2024-12-10
+> I had a main line clog. The availability and the price seemed reasonable for the urgent need. The plumber scoped it before and after to make sure the line was clear.
 
-Почему: broken old drain line in the crawl space replaced. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN2OXRHRU1nEAE!2m1!1s0x0:0xccc66184bdaf3a93
+### Jose Alfredo Martinez
+
+★★★★★ · Local Guide Level 2 · December 2024 · Google
+
+Почему: старая сломанная канализационная труба в crawl space заменена. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN2OXRHRU1nEAE!2m1!1s0x0:0xccc66184bdaf3a93
 
 > FPP Plumbing did an excellent job! I had a clogged and broken old drain line in the crawl space. They responded quickly, explained everything clearly, cleared the line, and replaced the pipe. Highly recommend!
 
-
 ## /fixture-installation-repair/
 
-### Rushi Nani, Google (Frisco), 2026-08-31
+### Rushi Nani
 
-Почему: shower cartridge replaced, Frisco. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ZM1ExUlNlbGh3UlVaNlRTMTBka1V4TlhSbFFVRRAB!2m1!1s0x0:0xe28e4c9b59df630f
+★★★★★ · Frisco · Local Guide Level 3 · August 2026 · Google
+
+Почему: замена картриджа душа, Frisco. Внимание: см. вопросы, фраза «plumber in Frisco». Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ZM1ExUlNlbGh3UlVaNlRTMTBka1V4TlhSbFFVRRAB!2m1!1s0x0:0xe28e4c9b59df630f
 
 > Great plumber in Frisco my shower cartridge was broken and the water wouldn’t stopped running they came quickly and replaced it and good service
 
-### Derek Gordon, Google (Plano), 2025-03-10
+### Derek Gordon
 
-Почему: shower and tub faucet that would not shut off. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnTURRNHJydnB3RRAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 3 · March 2025 · Google
+
+Почему: смеситель душа и ванны не перекрывался. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnTURRNHJydnB3RRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > We had a shower/tub faucet that we could not stop from running late Sunday evening. FPP was quick to dispatch a plumber (Denys). Deny’s arrived within the ETA govern, and he provided exceptional service. He was quick to trouble shoot the issue, and was a courteous, pleasant and provided a first class experience. It’s experiences extended by individuals like Denys that keep customers calling when they are in need. Thank you Denys and FPP!
 
-
 ## /hose-bib-repair-frisco-plano/
 
-### Bharathi Hariharan, Google (Plano), 2026-07-07
+### Bharathi Hariharan
 
-Почему: outdoor hose bib replaced, estimate confirmed before work. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25wWk1IVnRkV3hHYVRSUVpYUjFibkl0ZFZsZlRsRRAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 3 · July 2026 · Google
+
+Почему: замена наружного крана, цена подтверждена до работы. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25wWk1IVnRkV3hHYVRSUVpYUjFibkl0ZFZsZlRsRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > Dennis from FPP Plumbing provided excellent service. Before starting the repair, he clearly explained the possible scenarios and the associated costs. After opening the area to inspect the plumbing, he immediately let me know that it was the simple repair we had discussed—not a more expensive issue inside the wall—and confirmed the original estimate before proceeding.
-> 
+>
 > He replaced the outdoor hose bib professionally, answered all of my questions, and even checked my rear outdoor spigot for peace of mind. I really appreciated his honesty, transparency, and clear communication throughout the visit. I highly recommend FPP Plumbing and Dennis for anyone needing plumbing repairs.
 
-### David Cuevas, Google (Plano), 2026-08-14
+### David Cuevas
 
-Почему: outdoor spigot replaced. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwa1p5MUxVRFY2VlcxUVFqWkdlblUwUldndFpYYxAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 4 · August 2026 · Google
+
+Почему: замена наружного крана. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwa1p5MUxVRFY2VlcxUVFqWkdlblUwUldndFpYYxAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > On time and did a great job replacing our outdoor spigot.
 
-
 ## /garbage-disposal-repair-frisco-plano/
 
-### Sonja S., Yelp (Plano), 2025-08-29
+### Sonja S.
 
-Почему: garbage disposal replacement. Источник: https://www.yelp.com/biz/fpp-plumbing-plano-2
+★★★★★ · Yelp · August 2025
+
+Почему: замена измельчителя. Источник: https://www.yelp.com/biz/fpp-plumbing-plano-2
 
 > Excellence was provided in quality of work and interactions. Value was good for a garbage disposal replacement. Response to initial request to getting an appointment time was very quick and appreciated for a non-emergency situation.
 
+### Madison h.
+
+★★★★★ · Thumbtack · June 2023
+
+Почему: НОВЫЙ, второй отзыв на странице. Ремонт измельчителя в выходной день. Источник: https://www.thumbtack.com/tx/plano/handyman/fpp-plumbing/service/454195206250143760
+
+> Came within 30 minutes on a weekend! Very nice and fixed our garbage disposal problem quickly. Will be using their services again!
 
 ## /toilet-repair-frisco-plano/
 
-### KD, Google (Plano), 2026-08-19
+### KD
 
-Почему: toilet flange and wax ring after a main line backup. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s4NVpVMUZVbVJNVFVGcU15MUNWMVpZVkdSeVVsRRAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 2 · August 2026 · Google
+
+Почему: фланец и восковое кольцо унитаза после засора главной линии. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s4NVpVMUZVbVJNVFVGcU15MUNWMVpZVkdSeVVsRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > I used FPP recently to clear a main log clog that flooded part of my home and to replace the toilet flange/wax ring where the water had backed into the house. Denys was my plumber and he was fantastic. He was patient, careful, explained everything thoroughly, and cleaned everything up nicely afterwards. He discovered that the original builder flange install was not done properly and spent the extra time to fix the flooring so that everything would balance correctly. All price quotes were done up front and were extremely fair and reasonable, and the company responded to all inquiries almost instantly. Highly recommend these folks!
 
-### Brandon Klapholz, Google (Plano), 2026-08-12
+### Brandon Klapholz
 
-Почему: toilet fill valve and stop valve, price as quoted. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pORGFHODRVV2h2UlhKek1VbFFlSGxuWm1wUlZFRRAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 4 · August 2026 · Google
+
+Почему: наливной клапан унитаза и запорный кран, цена как в расчете. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pORGFHODRVV2h2UlhKek1VbFFlSGxuWm1wUlZFRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > Super responsive (responded after hours by answering the phone with a human being and following up quickly with text messages which in and of itself is unique. Considering all of the ones I called. This was the only one where I got a human being who answered after hours too . The other nice thing is was the fact that I was able to be quoted price up front before anyone came out And the fact that when the final job was done, which it was done very well and actually included more work than what was originally discussed. The price was exactly what was quoted to me originally.
-> 
+>
 > Plumber showed up on time, was very thorough and professional and friendly. He replaced toilet filler, the valve stop and then went above and beyond and had to resolder the copper pipe which required some drywall work.
-> 
+>
 > I would definitely recommend fpp for any plumbing services.
-
 
 ## /emergency-plumbing-services/
 
-### Gerardo, Google (Plano), 2025-05-06
+### Gerardo
 
-Почему: Sunday night broken faucet, the only one who answered. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VOREpoX0hJcFlmSVV3EAE!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 2 · May 2025 · Google
+
+Почему: воскресенье вечером сломался смеситель, ответили только они. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VOREpoX0hJcFlmSVV3EAE!2m1!1s0x0:0xccc66184bdaf3a93
 
 > Sunday night the faucet in my bathroom broke and there was water everywhere. I called a bunch of “24/7 emergency” plumbers and nobody answered but this company actually answered. They showed up and fixed it super fast. I don’t know what I would’ve done if they didn’t answer.
 
-### Mark Y, Google (Plano), 2025-07-14
+### Mark Y
 
-Почему: shower would not turn off at 4 AM, options and prices before the visit. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOcVgzVkhRa1J2VDFKTWQzRkhPRVp4TlRsUk5GRRAB!2m1!1s0x0:0xccc66184bdaf3a93
+★★★★★ · Local Guide Level 2 · July 2025 · Google
+
+Почему: душ не выключался в 4 утра, варианты и цены до выезда. Источник: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOcVgzVkhRa1J2VDFKTWQzRkhPRVp4TlRsUk5GRRAB!2m1!1s0x0:0xccc66184bdaf3a93
 
 > FPP Plumbing came to our rescue! We had a shower that we could not turn off at 4AM, so we called FPP based on their 5-star rating. They answered the phone, asked us to text them our address and quickly and clearly responded what our options and prices were for each option. We scheduled a window for them to come out that morning, they showed up promptly and quickly assessed the situation. They were friendly, professional and put our minds at ease that the repair would be simple and quick. And it was! He even took the time to show us how to turn off the water to our house should we ever need to in the future. Highly recommend for any plumbing needs!
-
