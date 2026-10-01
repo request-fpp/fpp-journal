@@ -1,0 +1,695 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 14:18</p><h1>Технический аудит и аудит схемы новой сборки, 1 октября 2026, 14:15</h1>
+<p>Что проверяли: новую сборку сайта (папка site/dist, сборка от 1 октября 13:11), запущенную у меня на компьютере через эмулятор Cloudflare Pages (wrangler pages dev). Эмулятор ведет себя как настоящий Cloudflare: те же перенаправления, те же заголовки, та же страница 404. Тестовый сайт в интернете закрыт входом по почте (Cloudflare Access), туда я не заходил.</p>
+<p>Проверено: все 64 адреса из списка старого сайта, robots.txt, sitemap.xml, llms.txt, llms-full.txt, все 300 правил перенаправления, страница 404, адреса без косой черты в конце, canonical, заголовки страниц, внутренние ссылки, все 370 картинок, вес страниц, скорость на телефоне по нашему инструменту (tools/perf_budget.py, бюджет 1,6 секунды) и вся схема на каждой странице против словаря schema.org.</p>
+<p>Методика: плагин claude-seo (навыки seo-technical, seo-schema, seo-sitemap, seo-images, seo-geo, seo-page) и его скрипты parse_html, sitemap_discovery, preload_check, metadata_template, agentic_check. Советы плагина здесь только предложения. Где плагин советует то, что запрещает CLAUDE.md или файл голоса Дениса, это вынесено в раздел 4 и в список правок не попало. Модуль programmatic SEO не использовался.</p>
+<p>Тексты на сайте не менялись. Это только находки и список правок.</p>
+<p>Короткий словарь (дальше без пояснений):
+- <strong>Схема (schema, JSON-LD)</strong>: скрытая разметка в коде страницы, которая говорит Google и AI: «это компания, вот адреса, это услуга, это вопросы и ответы, это статья Дениса».
+- <strong>canonical</strong>: строчка в коде, которая говорит Google, какой адрес у страницы главный.
+- <strong>noindex</strong>: запрет показывать страницу в поиске. Сейчас стоит на всех страницах специально, пока сайт тестовый.
+- <strong>301 перенаправление</strong>: старый адрес навсегда отправляет посетителя и Google на новый.
+- <strong>LCP</strong>: время, за которое на телефоне появляется самая большая картинка или блок первого экрана. Наш бюджет 1,6 секунды, у Google «хорошо» до 2,5.
+- <strong>CLS</strong>: насколько страница «прыгает» при загрузке.
+- <strong>Hero</strong>: большая картинка первого экрана.
+- <strong>WebP</strong>: современный формат картинок, в 2 до 4 раз легче JPG и PNG.
+- <strong>Сирота (orphan)</strong>: страница, на которую не ведет ни одна ссылка с сайта.</p>
+<hr />
+<h2>1. Коротко</h2>
+<ol>
+<li><strong>В папке сборки лежат 48 лишних копий файлов с « 2» в имени</strong> («sitemap 2.xml», «llms 2.txt», «404 2.html», копии видео и страниц). Их создает iCloud: папка проекта лежит на Рабочем столе, а Рабочий стол синхронизируется с iCloud. Эмулятор их отдает как обычные адреса (<code>/sitemap%202.xml</code> и <code>/llms%202.txt</code> отвечают 200). Следующая выкладка на Cloudflare опубликует их вместе с сайтом. Такие же копии есть внутри папки git (<code>.git/index 2</code>, <code>index 3</code>). Это главная техническая угроза: дубли файлов и риск испортить историю проекта.</li>
+<li><strong>9 страниц услуг медленнее бюджета 1,6 секунды на телефоне.</strong> Хуже всех <code>/clogged-drain-cleaning-frisco-plano/</code>: 2,75 секунды, первая картинка весит 302 КБ. Дальше water-lines 2,20, top-emergency 2,15, hose bib 2,15, leak detection 2,04, drain-services 1,99, fixtures 1,92, PRV 1,89, water-heaters 1,80. Главная (1,31), slab leak (1,51), города (около 1,25) и все статьи в бюджете. Причина одна: на телефон уходит картинка шириной 960 точек весом 110 до 310 КБ. На странице slab leak это уже решено отдельной облегченной картинкой (42-hero, 45 КБ), то же надо сделать на остальных.</li>
+<li><strong>Картинка в формате HEIC на посте <code>/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/</code>.</strong> 1,4 МБ, и Chrome, Android и Windows такой формат не показывают: у большинства посетителей там пустое место. Нужно перевести в WebP.</li>
+<li><strong>Страница <code>/top-emergency-plumber-calls-frisco/</code> сирота.</strong> Она в sitemap, но ни одна страница сайта на нее не ссылается (на старом сайте ссылки были). Google такие страницы считает неважными.</li>
+<li><strong>Схема: ссылка на Дениса «в никуда» на 29 страницах.</strong> Разметка компании говорит «сотрудник: Денис» через ссылку <code>#denys</code>, но сам блок «Денис Кавалер, Managing Partner and Licensed Plumber» есть только на главной, на постах и на странице автора. На всех 24 страницах услуг и городов и еще на 5 страницах ссылка ведет в пустоту. Правка в одном месте шаблона.</li>
+<li><strong>Схема в целом чистая.</strong> Одна компания Plumber с @id https://fppplumbing.com/#organization на всех 64 страницах, оба офиса, WebSite, WebPage, BreadcrumbList, Service на 24 страницах, FAQPage на 60, BlogPosting с автором Денисом на 33. Все типы и свойства существуют в словаре schema.org, все адреса абсолютные, JSON без ошибок, по одному блоку на страницу.</li>
+<li><strong>Перенаправления работают.</strong> 299 из 300 правил дают 301 прямо на живую страницу, без цепочек. Одно правило (старый адрес с украинским словом в <code>/contact/</code>) срабатывает только при записи маленькими буквами. Шесть старых адресов <code>?attachment_id=</code> пока открывают главную вместо галереи (это известно, нужна маленькая функция Cloudflare).</li>
+<li><strong>Нет счетчика Google.</strong> На старом сайте стоят Google Tag Manager (GTM-NVSNS9FK) и тег Google (GT-PJ4NVLSP) на 63 страницах. В новой сборке их нет. Без них после переезда пропадет статистика. В плане это уже есть, но до переключения домена обязательно.</li>
+<li><strong>Шрифты грузятся с Google Fonts после загрузки страницы без «запасных размеров».</strong> Узкий шрифт заголовков Barlow Condensed приходит позже и текст может перестроиться на глазах. Это риск для CLS, измерить без браузера на телефоне я не смог.</li>
+<li><strong>Режим тестового сайта настроен правильно.</strong> noindex в коде и в заголовке ответа на всех 64 страницах, robots.txt ничего не запрещает и пускает Googlebot, Bingbot, GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot. Сборка с SITE_STAGING=0 снимает оба noindex. Что переключить в день переезда, собрано в разделе 2.10.</li>
+</ol>
+<hr />
+<h2>2. Находки по разделам</h2>
+<h3>2.1 Сводка по категориям (формат плагина seo-technical)</h3>
+<p>Оценка только по тому, что реально проверено. Цифра: сколько проверок прошло из скольких.</p>
+<table>
+<thead>
+<tr>
+<th>Категория</th>
+<th>Статус</th>
+<th>Проверки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Доступ для роботов (crawlability)</td>
+<td>есть замечания</td>
+<td>7 из 9: robots.txt, sitemap найден, все 63 адреса sitemap отвечают 200, глубина не больше 2 кликов, контент в HTML без JavaScript; минус: страница-сирота, лишние файлы « 2»</td>
+</tr>
+<tr>
+<td>Индексация (indexability)</td>
+<td>хорошо</td>
+<td>6 из 6: canonical на себя на всех 64, noindex везде (специально), одна H1 везде, hreflang нет (не нужен), дублей title и meta нет</td>
+</tr>
+<tr>
+<td>Безопасность</td>
+<td>частично</td>
+<td>2 из 4: nosniff и Referrer-Policy есть; HSTS и защиты от встраивания в чужие сайты нет (HSTS включается в день переезда)</td>
+</tr>
+<tr>
+<td>Адреса и перенаправления</td>
+<td>хорошо</td>
+<td>299 из 300 правил, косая черта в конце везде, адрес без нее дает одно перенаправление 308</td>
+</tr>
+<tr>
+<td>Телефон</td>
+<td>хорошо</td>
+<td>viewport на всех, нижняя панель звонка с двумя номерами на всех</td>
+</tr>
+<tr>
+<td>Скорость (оценка)</td>
+<td>есть замечания</td>
+<td>55 из 64 страниц в бюджете 1,6 секунды</td>
+</tr>
+<tr>
+<td>Схема</td>
+<td>хорошо, 2 правки</td>
+<td>64 из 64 разбираются без ошибок; 29 страниц с пустой ссылкой на Дениса</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>хорошо</td>
+<td>весь текст, FAQ, цены и телефоны в HTML (на главной 2 142 слова видно без JavaScript)</td>
+</tr>
+<tr>
+<td>IndexNow</td>
+<td>не настроен</td>
+<td>см. раздел 3, низкий приоритет, только после переезда</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 Лишние копии файлов от iCloud</h3>
+<ul>
+<li>Найдено 48 файлов и папок с « 2» в имени внутри <code>site/dist</code>: <code>sitemap 2.xml</code>, <code>robots 2.txt</code>, <code>llms 2.txt</code>, <code>llms-full 2.txt</code>, <code>404 2.html</code>, <code>_headers 2</code>, <code>favicon 2.png</code>, 7 копий видео и постеров, <code>index 2.html</code> в 10 папках страниц, 22 пустые папки-копии постов и гайдов.</li>
+<li>Эмулятор: <code>/sitemap%202.xml</code> отвечает 200 и отдает второй sitemap, <code>/llms%202.txt</code> 200, <code>/plumber-frisco-tx/index%202.html</code> дает перенаправление на <code>/plumber-frisco-tx/index%202</code>.</li>
+<li>Причина: папка <code>~/Library/Mobile Documents/com~apple~CloudDocs/Desktop</code> существует, то есть Рабочий стол синхронизирует iCloud. Те же копии в <code>photos/originals/</code> (около 20 фото) и в <code>.git/</code> (<code>index 2</code>, <code>index 3</code>). Проверка git (<code>git fsck</code>) ошибок не нашла, но это вопрос времени.</li>
+<li>Проверить, попали ли эти копии в последнюю выкладку на тестовый сайт, я не могу: он закрыт входом.</li>
+</ul>
+<h3>2.3 Скорость на телефоне (tools/perf_budget.py, бюджет 1,6 секунды)</h3>
+<p>Модель: телефон Moto G Power, медленный 4G. Это оценка, не замер на устройстве.</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Оценка LCP</th>
+<th>Первая картинка на телефоне</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/clogged-drain-cleaning-frisco-plano/</td>
+<td>2,75 с</td>
+<td>049-960.webp, 302 КБ</td>
+</tr>
+<tr>
+<td>/water-lines/</td>
+<td>2,20 с</td>
+<td>055-960.webp, 189 КБ</td>
+</tr>
+<tr>
+<td>/top-emergency-plumber-calls-frisco/</td>
+<td>2,15 с</td>
+<td>118-960.webp, 184 КБ</td>
+</tr>
+<tr>
+<td>/hose-bib-repair-frisco-plano/</td>
+<td>2,15 с</td>
+<td>030-960.webp, 181 КБ</td>
+</tr>
+<tr>
+<td>/water-leak-detection-frisco-plano/</td>
+<td>2,04 с</td>
+<td>079-960.webp, 153 КБ</td>
+</tr>
+<tr>
+<td>/drain-services/</td>
+<td>1,99 с</td>
+<td>155-960.webp, 152 КБ</td>
+</tr>
+<tr>
+<td>/fixture-installation-repair/</td>
+<td>1,92 с</td>
+<td>099-960.webp, 136 КБ</td>
+</tr>
+<tr>
+<td>/prv-replacement-frisco-plano/</td>
+<td>1,89 с</td>
+<td>047-960.webp, 125 КБ</td>
+</tr>
+<tr>
+<td>/water-heaters/</td>
+<td>1,80 с</td>
+<td>043-960.webp, 112 КБ</td>
+</tr>
+<tr>
+<td>/slab-leak-repair-frisco-plano-mckinney/</td>
+<td>1,51 с</td>
+<td>042-hero-760.webp, 45 КБ</td>
+</tr>
+<tr>
+<td>/ (главная)</td>
+<td>1,31 с</td>
+<td>картинки нет, первый экран из кода</td>
+</tr>
+<tr>
+<td>города (10 страниц)</td>
+<td>около 1,25 с</td>
+<td>WebP 480 до 960 через picture</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Почему 960: телефон шириной 412 точек с плотным экраном просит картинку около 720 точек, и браузер берет ближайшую большую из набора, то есть 960. У slab leak сделан отдельный кадр 760 точек на 45 КБ, поэтому страница в бюджете.</li>
+<li>check-report.md мерил только 4 страницы (главная, slab, Frisco, один пост), поэтому эти 9 страниц раньше не попадались.</li>
+<li>Все картинки первого экрана грузятся сразу (eager) с fetchpriority="high", остальные лениво (loading="lazy"). Ни одна картинка первого экрана не стоит в ленивой загрузке. Это правильно.</li>
+<li>Внешних скриптов и внешних CSS нет, стили встроены (40 КБ), блокирующих загрузку файлов ноль.</li>
+<li>Шрифты: 6 файлов с Google Fonts, 104 КБ, подключаются скриптом после события load. Первый экран они не задерживают, но в стилях нет запасного шрифта с подогнанными размерами (size-adjust, ascent-override). Узкий Barlow Condensed заметно уже обычного шрифта, заголовки могут перестроиться, когда он придет.</li>
+<li>Скрипт плагина preload_check: главная 50 из 100, slab 75 из 100. Минусы: нет правил предзагрузки следующей страницы (speculation rules). На главной нет картинки первого экрана, поэтому его совет «пометить hero fetchpriority» к главной не относится.</li>
+</ul>
+<h3>2.4 Картинки</h3>
+<ul>
+<li>Всего 370 картинок на 64 страницах. У всех есть alt, у всех кроме одной есть ширина и высота (защита от «прыжков»). GPS в метаданных нет ни у одной из 809 картинок сборки. У 12 картинок остались другие метаданные EXIF (модель телефона и подобное, без координат), например <code>wp-content/uploads/2026/05/hidden-leak-in-the-ceiling.jpg</code>, <code>wp-content/uploads/2026/02/A-meter-box-lid-key.jpeg</code>.</li>
+<li><strong>HEIC</strong>: <code>/wp-content/uploads/2025/11/frisco-shower-valve-leak.heic</code>, 1 384 КБ, на <code>/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/</code>, без размеров. Chrome и Android HEIC не показывают.</li>
+<li><strong>233 картинки не в WebP и без набора размеров (srcset)</strong>, почти все старые файлы из wp-content: галерея 104, страница автора 33, <code>/blog/</code> 17, <code>/plumbing-guides-tips/</code> 16, гайд про ремонт ванной 16, гайд про перекрытие воды 9. CLAUDE.md требует WebP с несколькими размерами.</li>
+<li><strong>Обложки в списках статей огромные.</strong> На <code>/blog/</code>, <code>/plumbing-guides-tips/</code> и странице автора маленькие карточки показывают полноразмерные PNG по 450 до 700 КБ (например <code>water-heater-making-noise-plumber-guide-texas.png</code> 694 КБ, <code>FPP-Plumbing-Emergency-Plumbing-Repair-Cost-Guide-2026.png</code> 649 КБ). Если пролистать <code>/plumbing-guides-tips/</code> до конца, уйдет около 5,7 МБ, <code>/blog/</code> около 2,6 МБ, галерея около 15 МБ.</li>
+<li>53 картинки в 200 КБ и больше, 41 из них это обложки в списках и галерея.</li>
+<li>Пустой alt: 52 у карточек в списках (рядом есть заголовок карточки, это допустимо) и 1 у главной картинки страницы <code>/plumber-lewisville-tx/</code> (фото фургона <code>photo_2025-05-15_20-41-52-1024x576.jpg</code>). На остальных 9 городах alt у этой картинки есть.</li>
+<li>Один alt длиннее 125 знаков (131) на <code>/plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/</code>. Мелочь.</li>
+</ul>
+<h3>2.5 Схема (JSON-LD)</h3>
+<p>Проверка: каждый блок разобран, все типы и свойства сверены со словарем schema.org (скачан 1 октября), проверены ссылки @id внутри страницы, абсолютные адреса, тире.</p>
+<table>
+<thead>
+<tr>
+<th>Страницы</th>
+<th>Набор типов</th>
+<th>Статус</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>33 поста и гайда</td>
+<td>Plumber, WebSite, WebPage, BreadcrumbList, Person, BlogPosting, FAQPage</td>
+<td>хорошо</td>
+</tr>
+<tr>
+<td>24 услуги и города</td>
+<td>Plumber, WebSite, WebPage, BreadcrumbList, Service, FAQPage</td>
+<td>ссылка на Дениса пустая</td>
+</tr>
+<tr>
+<td>/blog/, /plumbing-guides-tips/</td>
+<td>Plumber, WebSite, CollectionPage, BreadcrumbList, FAQPage</td>
+<td>ссылка на Дениса пустая</td>
+</tr>
+<tr>
+<td>/contact/</td>
+<td>Plumber, WebSite, ContactPage, BreadcrumbList</td>
+<td>ссылка на Дениса пустая</td>
+</tr>
+<tr>
+<td>/gallery/, /confidentiality-policy/</td>
+<td>Plumber, WebSite, WebPage, BreadcrumbList</td>
+<td>ссылка на Дениса пустая</td>
+</tr>
+<tr>
+<td>главная</td>
+<td>Plumber, WebSite, WebPage, BreadcrumbList, Person, FAQPage</td>
+<td>хорошо</td>
+</tr>
+<tr>
+<td>/blog/author/admin/</td>
+<td>Plumber, WebSite, ProfilePage, BreadcrumbList, Person</td>
+<td>хорошо</td>
+</tr>
+</tbody>
+</table>
+<p>Что хорошо:
+- Ровно одна компания на сайт: тип Plumber, @id https://fppplumbing.com/#organization, юридическое имя FPP Plumbing LLC, основана 2022, оба адреса, оба телефона, email, логотип по старому адресу, 24/7, лицензия M-44816 с ссылкой на TSBPE, 12 мест обслуживания (10 городов плюс Highland Park и University Park), 10 профилей в sameAs (TikTok, Instagram, Facebook, YouTube, оба Google, Yelp plano-2, Thumbtack, BBB, Nextdoor).
+- Офисы Frisco и Plano описаны как места (Place) с @id <code>#office-frisco</code> и <code>#office-plano</code>, адресом, телефоном и ссылкой на карту. Страница Frisco ссылается на офис Frisco, страница Plano на офис Plano, как требует CLAUDE.md. Остальные 8 городов указывают свой город в areaServed услуги.
+- Service на услугах ссылается на компанию через provider. BlogPosting: headline, автор Денис, издатель компания, картинка, даты публикации и обновления, и те же даты видны на странице (строка «By Denys Kavaler... Published... Updated»).
+- Даты dateModified в схеме совпадают с lastmod в sitemap на всех страницах.
+- FAQPage совпадает с видимыми вопросами слово в слово (это проверяет и check-report). Вопросы на странице это жирный текст внутри раскрывающегося блока, не заголовки. Ответы есть в HTML. FAQ в поиске Google звездочками больше не показывает (с 7 мая 2026), блок оставлен для людей и AI, плагин тоже советует его не убирать.</p>
+<p>Что поправить:
+- <strong>Пустая ссылка на Дениса на 29 страницах.</strong> Компания ссылается на <code>#denys</code> через employee, но узла Person на этих страницах нет. Список: все 14 услуг, все 10 городов, /blog/, /plumbing-guides-tips/, /contact/, /gallery/, /confidentiality-policy/.
+- <strong>У автора нет адреса страницы.</strong> Узел Person (Денис) без url. Подпись в постах ведет на <code>/blog/author/admin/</code>, но эта страница закрыта от поиска до наполнения (noindex_until_content) и не в sitemap. Когда страница автора будет готова, ее надо открыть и указать ее адрес в схеме автора. Это сильный сигнал «кто написал».
+- <strong>Нет координат офисов (geo) и часов офиса.</strong> В схеме только 24/7. Часы офиса пн-пт 8:00 до 17:00 из CLAUDE.md в разметке не стоят. Координаты надо взять из профилей Google, не придумывать.
+- <strong>Формулировка лицензии разная в трех местах.</strong> На сайте: «Responsible Master Plumber, License M-44816». В схеме: «Texas master plumber license M-44816». В llms.txt: «Operates under Texas master plumber license M-44816». AI сравнивает источники, лучше одна формулировка.
+- <strong>Картинка компании в схеме это логотип.</strong> Google для местной компании советует настоящее фото. Мелочь.
+- На услугах нет serviceType (на городах стоит «Plumbing»). Мелочь.
+- Хлебные крошки в схеме называются полным H1 (до 100 знаков). Работает, но короткое имя («Slab Leak Repair») читается лучше. Мелочь.
+- Тире в схеме есть только в ответах FAQ двух замороженных гайдов (angle stop, перекрытие воды): это старый текст, оставлен без изменений по решению Дениса, совпадает со страницей. Не правка.
+- У 7 статей картинка меньше 1200 точек в ширину (Google советует от 1200 для больших превью): посты про душевой трап Little Elm, засор кухни Frisco, замену душевой системы, смеситель ванны Frisco, гайды про перекрытие воды, slab leak Plano, падение давления.</p>
+<h3>2.6 Перенаправления, 404 и адреса</h3>
+<ul>
+<li>Все 300 правил разобраны, повторов нет. 298 точных правил дают 301 на страницу, которая отвечает 200, цепочек нет. Правило <code>/blog/page/*</code> работает (<code>/blog/page/2/</code> дает 301 на <code>/blog/</code>).</li>
+<li>Сбой: <code>/contact/%d0%b7%d0%b0%d0%b2%d0%b0%d0%bd%d1%82%d0%b0%d0%b6%d0%b5%d0%bd%d0%bd%d1%8f/</code> срабатывает, а тот же адрес с большими буквами в кодировке (<code>%D0%B7...</code>, так его обычно пишут браузеры и Google) дает 404.</li>
+<li><code>/?attachment_id=3509</code> и еще 5 таких адресов открывают главную с ответом 200 (canonical главной это прикрывает), а по плану должны вести на <code>/gallery/</code>. Нужна функция Cloudflare Pages, список в <code>site/src/data/redirects-query.csv</code>. Известно, в state.md.</li>
+<li>Старые карты сайта WordPress <code>/sitemap_index.xml</code>, <code>/page-sitemap.xml</code>, <code>/post-sitemap.xml</code> после переезда будут отдавать 404. Скрипт плагина sitemap_discovery сам нашел, что живой сайт сейчас отдает <code>sitemap_index.xml</code>, значит Google его знает. Лучше 301 на <code>/sitemap.xml</code>.</li>
+<li><code>/old-page/</code> несуществующий: 404 и наша страница «Page not found», это правильно (без нее Cloudflare отдавал бы главную с 200). У страницы 404 стоит canonical на <code>https://fppplumbing.com/404/</code>, на странице ошибки он не нужен. <code>/404</code> открывается с ответом 200 (так устроен Cloudflare), noindex на ней постоянный, вреда нет.</li>
+<li>Адрес без косой черты (<code>/plumber-frisco-tx</code>) и с <code>index.html</code> дают одно перенаправление 308 на правильный адрес. Хорошо.</li>
+<li><code>/Plumber-Frisco-TX/</code> с большими буквами в эмуляторе отвечает 200 (диск Mac не различает регистр). Как поведет себя настоящий Cloudflare, проверить можно только на тестовом сайте. canonical в любом случае указывает правильный адрес.</li>
+<li><code>/favicon.ico</code> 404. Иконка подключена как <code>/favicon.png</code> в коде, Google ее найдет, но браузеры и некоторые сервисы по привычке просят <code>/favicon.ico</code>. Мелочь.</li>
+<li><code>/blog/author/admin/</code>: на старом сайте это было перенаправление на главную, в новой сборке это страница автора с ответом 200 и постоянным noindex до наполнения. Это решение проекта, не ошибка.</li>
+</ul>
+<h3>2.7 Внутренние ссылки и структура</h3>
+<ul>
+<li>Все внутренние ссылки на 64 страницах ведут на страницы с ответом 200, ни одна не ведет через перенаправление.</li>
+<li>Глубина: 29 страниц в одном клике от главной, 33 в двух. Требование CLAUDE.md «не глубже трех кликов» выполнено для всех, кроме сироты.</li>
+<li><strong>Сирота</strong>: <code>/top-emergency-plumber-calls-frisco/</code> (0 входящих ссылок, при этом в sitemap и в llms.txt).</li>
+<li>Ссылка на главную с анкором «plumber near me» есть на 15 из 24 страниц услуг и городов. Нет на: /drain-services/, /fixture-installation-repair/, /hose-bib-repair-frisco-plano/, /toilet-repair-frisco-plano/, /top-emergency-plumber-calls-frisco/, /water-heater-repair-frisco-mckinney/, /water-heaters/, /plumber-little-elm-tx/, /plumber-plano-tx/. Это страницы со старым текстом, правило выполнится при их переписывании после переезда.</li>
+<li>Каждая страница услуги ссылается на все 10 городов и на остальные услуги. Хорошо.</li>
+<li><strong>Города ссылаются друг на друга в тексте</strong> в двух местах, а правило 7 CLAUDE.md это запрещает: на <code>/plumber-frisco-tx/</code> фраза «which is why our Plano plumber page reads differently» со ссылкой на Plano; на <code>/plumber-plano-tx/</code> фраза «our second office covers Frisco plumbing twenty minutes up the road» со ссылкой на Frisco. Текст Plano заморожен, текст Frisco одобрен. Нужно решение Дениса (раздел 6).</li>
+<li>Порядок заголовков: на главной первые H3 («Outside and yard» и другие точки разреза дома) стоят до первого H2; на 6 страницах (/blog/, /plumbing-guides-tips/ и 4 поста) блок «Need a plumber?» сделан H3 и стоит до первого H2. Google это не наказывает, но структура для AI чище, когда H3 идет после H2.</li>
+</ul>
+<h3>2.8 Title, meta и Open Graph</h3>
+<ul>
+<li>Title и H1 на всех 64 страницах совпадают со старым сайтом, кроме замены тире на двоеточия и «North Dallas» на «the North Dallas Suburbs». Это одобренные правки.</li>
+<li>25 title длиннее 60 знаков и 13 meta description длиннее 160 знаков (Google обрежет хвост). Все это старые тексты, по правилу поэтапной замены они переезжают как есть.</li>
+<li>Две опечатки в старых текстах: meta Frisco «same-day plumbing , clean, and local» (пробел перед запятой, след удаленного тире; та же строка в схеме и в llms.txt) и title гайда <code>/plumbing-guide/water-heater-making-noise-tips-2026/</code> «Making Noise?A Plumber Explains» (нет пробела). Эта опечатка была и на старом сайте.</li>
+<li>Скрипт плагина metadata_template: у главной meta начинается с тех же слов, что title («Plumber near me in Frisco, Plano &amp; McKinney»), в выдаче это повтор. У slab leak замечаний нет.</li>
+<li>Open Graph: title совпадает с title страницы на всех 64 (требование CLAUDE.md), есть описание, адрес, картинка с размерами (кроме страницы автора). На главной картинка для соцсетей это логотип, на slab leak старое фото WordPress <code>slab-leak-detection-and-repair-frisco.jpg</code>, а не hero 42. На 7 страницах одна и та же <code>FPP-Plumbing.jpg</code>.</li>
+</ul>
+<h3>2.9 robots.txt, sitemap, llms.txt и AI роботы</h3>
+<ul>
+<li>robots.txt: «User-agent: <em>» и отдельные группы для Googlebot, Bingbot, GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot, все «Allow: /», и строка Sitemap на https://fppplumbing.com/sitemap.xml. Требование CLAUDE.md выполнено. Роботы поиска в ChatGPT (OAI-SearchBot) и в Claude (Claude-SearchBot) отдельно не названы, но их пускает общее правило «</em>». Скрипт плагина agentic_check: все проверки robots пройдены, весь текст главной виден без JavaScript (2 142 слова).</li>
+<li>sitemap.xml: 63 адреса, все отвечают 200, у всех canonical совпадает с адресом, нет перенаправлений и нет чужих адресов. Нет только страницы автора (специально). У главной нет lastmod. Даты lastmod взяты со старого сайта (19 страниц 5 августа, 12 страниц 17 августа).</li>
+<li>llms.txt (21 КБ, 65 ссылок, все ведут на живые страницы) и llms-full.txt (660 КБ) отдаются, факты о компании совпадают с CLAUDE.md: адреса, телефоны, 2022, M-44816, $49, нет бесплатных оценок, окно прибытия по телефону, «more than 450 five-star reviews across Google, Yelp and Thumbtack», «4,500+ happy customers». По данным самого плагина и Google, llms.txt на поиск Google не влияет, его используют только другие AI системы. Файл нужен по CLAUDE.md, вреда нет.</li>
+<li>Описания страниц в llms.txt это старые meta, и в них попали вещи, которые CLAUDE.md запрещает или не подтверждает: «10-year warranty on new units» (утилизатор), «Real cost ranges for Frisco and Plano» (PRV), «from burst pipes to gas leaks» (top-emergency), «minutes from our Plano office» (The Colony), «Call now, we show up» (Little Elm). Это уйдет вместе с переписыванием meta, но llms.txt AI читает целиком, поэтому стоит решить раньше (раздел 6).</li>
+</ul>
+<h3>2.10 Тестовый режим и что переключить в день переезда</h3>
+<p>Сейчас всё правильно:
+- <code>&lt;meta name="robots" content="noindex"&gt;</code> на всех 64 страницах и заголовок ответа <code>X-Robots-Tag: noindex</code> на всех ответах, включая robots.txt и llms.txt.
+- robots.txt ничего не запрещает, поэтому робот видит noindex.
+- Сборка с SITE_STAGING=0 убирает и meta noindex, и строку X-Robots-Tag из <code>_headers</code> (проверил код в astro.config.mjs и Base.astro).</p>
+<p>Список на день переезда (после команды Дениса):
+1. Собрать с SITE_STAGING=0, проверить, что на 5 случайных страницах нет noindex ни в коде, ни в заголовке ответа.
+2. Снять вход по почте только с домена fppplumbing.com. На адресе fppplumbing-preview.pages.dev вход оставить или добавить в <code>_headers</code> правило для этого адреса с X-Robots-Tag: noindex, иначе Google увидит копию сайта на втором адресе.
+3. В Cloudflare: всегда HTTPS, HSTS, перенаправление www.fppplumbing.com на fppplumbing.com.
+4. Перенаправления старых карт сайта и функция для <code>?attachment_id</code>.
+5. Отправить <code>/sitemap.xml</code> в Search Console и убрать старый <code>sitemap_index.xml</code>.
+6. Даты lastmod: для страниц, где текст реально поменялся при переезде, поставить дату переезда.</p>
+<h3>2.11 Главная и slab leak по навыку seo-page</h3>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>Главная</th>
+<th>Slab leak</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title</td>
+<td>57 знаков, хорошо</td>
+<td>68 знаков, хвост обрежется (вопрос уже задан в аудите от 1 октября)</td>
+</tr>
+<tr>
+<td>Meta</td>
+<td>141 знак, повторяет title</td>
+<td>141 знак, хорошо</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>одна</td>
+<td>одна</td>
+</tr>
+<tr>
+<td>H2</td>
+<td>5 плюс форма</td>
+<td>15 плюс форма, с ключевыми словами</td>
+</tr>
+<tr>
+<td>canonical, noindex</td>
+<td>на себя, noindex (тестовый режим)</td>
+<td>то же</td>
+</tr>
+<tr>
+<td>Open Graph</td>
+<td>полный, картинка логотип</td>
+<td>полный, картинка старое фото, не hero 42</td>
+</tr>
+<tr>
+<td>Схема</td>
+<td>Plumber, WebSite, WebPage, Breadcrumb, Person, FAQ (5 вопросов)</td>
+<td>плюс Service, FAQ 6 вопросов</td>
+</tr>
+<tr>
+<td>Картинки</td>
+<td>22, все с alt и размерами, видео в первом экране только на компьютере и после загрузки</td>
+<td>hero 42 eager, fetchpriority, srcset, размеры; остальные ленивые</td>
+</tr>
+<tr>
+<td>Оценка LCP</td>
+<td>1,31 с</td>
+<td>1,51 с</td>
+</tr>
+<tr>
+<td>Вес при полной прокрутке</td>
+<td>около 1,8 МБ</td>
+<td>около 0,4 МБ</td>
+</tr>
+<tr>
+<td>Слов в основной части</td>
+<td>около 1 900</td>
+<td>около 4 600</td>
+</tr>
+<tr>
+<td>Внутренние ссылки</td>
+<td>30 страниц, все услуги и города</td>
+<td>все 10 городов, 12 услуг, одна ссылка «plumber near me» на главную</td>
+</tr>
+</tbody>
+</table>
+<p>Повторы абзацев на slab leak уже найдены в check-report и в аудите от 1 октября, здесь не дублирую.</p>
+<h3>2.12 Что CLAUDE.md требует, а check-report.md не проверяет</h3>
+<ul>
+<li><strong>Цены кроме $49.</strong> check-report не ищет суммы. На 16 страницах есть другие цены. На страницах услуг: <code>/garbage-disposal-repair-frisco-plano/</code> («$229 for professional installation» и еще 4 суммы), <code>/prv-replacement-frisco-plano/</code> («PRV replacement labor at FPP Plumbing starts at $499» и еще 3), <code>/hose-bib-repair-frisco-plano/</code> («$300 spigot swap»), <code>/fixture-installation-repair/</code> («$5 part»), <code>/toilet-repair-frisco-plano/</code> («water bills over $500/month»), <code>/water-leak-detection-frisco-plano/</code> («about $700 to fix»). В гайдах по стоимости цен десятки (в замороженном гайде о цене водонагревателя 97 сумм). Часть это примеры счетов за воду, часть это цены компании. Решать Денису.</li>
+<li><strong>Газ.</strong> check-report не ищет. <code>/water-heater-repair-frisco-mckinney/</code>: «No sediment trap on the gas line», «Undersized gas lines or unsafe fittings» (5 мест). Meta <code>/top-emergency-plumber-calls-frisco/</code>: «from burst pipes to gas leaks». CLAUDE.md: газ только если Денис подтвердит.</li>
+<li><strong>«Same-day» и «Fast».</strong> H1 Plano «Same-Day Help», title туалетов «Same-Day Plumbing Service», title водонагревателей «Same Day», meta главной «same-day», H1 Frisco «Fixed Fast». Правило «никогда не обещать время приезда» прямо про часы и минуты, но «same-day» близко. Старые тексты, вопрос к Денису.</li>
+<li><strong>Города ссылаются друг на друга</strong> (правило 7), см. 2.7.</li>
+<li><strong>Картинки в WebP с несколькими размерами</strong>, см. 2.4.</li>
+<li><strong>Счетчик Google</strong> (GTM-NVSNS9FK, GT-PJ4NVLSP), см. пункт 8 в разделе 1.</li>
+<li><strong>Форма в Telegram</strong>: в коде форма выключена (<code>data-live="false"</code>, адрес <code>/api/request</code>), функции Cloudflare в сборке нет («No Functions» при запуске эмулятора). Известно, в state.md.</li>
+<li><strong>Длина текстов.</strong> По правилу Дениса услуги и города от 3 000 слов, посты от 1 500. Сейчас этому соответствуют slab leak (около 4 600) и leak detection (около 3 900). Остальные 12 услуг, 10 городов (Frisco около 1 100 в основной части) и 14 постов короче. Это ожидаемо: по плану старые тексты переезжают как есть, углубление после переезда.</li>
+</ul>
+<hr />
+<h2>3. Список правок по приоритету</h2>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Приоритет</th>
+<th>Что исправить</th>
+<th>Где</th>
+<th>Почему</th>
+<th>Кто</th>
+<th>Работа</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Высокий</td>
+<td>Удалить 48 копий « 2» из сборки; в check_site.py добавить проверку, которая останавливает выкладку, если в dist есть файл с « 2» в имени; перед каждой выкладкой собирать в чистую папку</td>
+<td>site/dist, tools/check_site.py</td>
+<td>Иначе в интернет уйдут второй sitemap, второй llms.txt и копии страниц</td>
+<td>Claude</td>
+<td>20 минут</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Высокий</td>
+<td>Перенести папку проекта с Рабочего стола в место, которое iCloud не синхронизирует (например ~/Projects), или выключить для нее синхронизацию</td>
+<td>вся папка проекта</td>
+<td>iCloud плодит копии файлов, уже внутри git; рано или поздно сломает историю проекта</td>
+<td>Денис решает, Claude делает</td>
+<td>15 минут</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Высокий</td>
+<td>Сделать облегченные кадры первого экрана для телефона (как 42-hero на slab) на 9 медленных страницах, цель до 60 КБ</td>
+<td>/clogged-drain-cleaning-frisco-plano/, /water-lines/, /top-emergency-plumber-calls-frisco/, /hose-bib-repair-frisco-plano/, /water-leak-detection-frisco-plano/, /drain-services/, /fixture-installation-repair/, /prv-replacement-frisco-plano/, /water-heaters/</td>
+<td>Сейчас 1,8 до 2,75 секунды при бюджете 1,6; страница засоров самая медленная</td>
+<td>Claude</td>
+<td>1 час</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Высокий</td>
+<td>Перевести HEIC в WebP с размерами</td>
+<td>/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/</td>
+<td>Фото 1,4 МБ не видно в Chrome и Android</td>
+<td>Claude</td>
+<td>10 минут</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Высокий</td>
+<td>Подключить Google Tag Manager GTM-NVSNS9FK и тег GT-PJ4NVLSP, как на старом сайте (если Денис подтвердит, что они актуальны)</td>
+<td>шаблон Base.astro</td>
+<td>Без них после переезда пропадет статистика и сравнение до и после</td>
+<td>Claude, Денис подтверждает</td>
+<td>30 минут</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Высокий</td>
+<td>Дать странице-сироте хотя бы одну ссылку: из списка на /emergency-plumbing-services/ или из меню «Plumbing guides», без правки текста</td>
+<td>/top-emergency-plumber-calls-frisco/</td>
+<td>Ни одной входящей ссылки, Google считает такую страницу неважной</td>
+<td>Claude, место выбирает Денис</td>
+<td>15 минут</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Средний</td>
+<td>Добавить узел Person (Денис) в общий набор схемы на всех страницах</td>
+<td>шаблон схемы (src/lib/schema.ts)</td>
+<td>На 29 страницах ссылка на Дениса пустая</td>
+<td>Claude</td>
+<td>15 минут</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Средний</td>
+<td>Перевести в WebP с несколькими размерами обложки в списках и фото галереи (только картинки, текст не трогать)</td>
+<td>/blog/, /plumbing-guides-tips/, /gallery/, /blog/author/admin/, гайды про ремонт ванной и перекрытие воды</td>
+<td>Обложки по 450 до 700 КБ в маленьких карточках, галерея около 15 МБ</td>
+<td>Claude</td>
+<td>1 до 2 часов</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Средний</td>
+<td>Шрифты: держать файлы у себя, а не на Google Fonts, заранее подгружать вес заголовков, добавить запасной шрифт с подогнанными размерами; потом замерить CLS на телефоне</td>
+<td>шаблон Base.astro, стили</td>
+<td>Риск, что заголовки «прыгнут», когда придет узкий шрифт; плюс минус один внешний сервис</td>
+<td>Claude</td>
+<td>1 час</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Средний</td>
+<td>Подготовить к переезду: 301 со старых карт сайта на /sitemap.xml; функция для 6 адресов ?attachment_id; noindex или вход на fppplumbing-preview.pages.dev после переезда</td>
+<td>_redirects, functions/, _headers</td>
+<td>Чтобы после переезда не было 404 на картах сайта и копии сайта на втором адресе</td>
+<td>Claude</td>
+<td>1 час</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Средний</td>
+<td>Координаты офисов и часы офиса пн-пт 8:00 до 17:00 в схеме офисов</td>
+<td>схема, #office-frisco и #office-plano</td>
+<td>Сильнее местный сигнал; данные взять из профилей Google</td>
+<td>Claude, данные от Дениса</td>
+<td>20 минут</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Средний</td>
+<td>Одна формулировка лицензии в схеме и llms.txt: «Responsible Master Plumber, License M-44816»</td>
+<td>схема, llms.txt</td>
+<td>AI сравнивает источники, разные слова выглядят как разные факты</td>
+<td>Claude</td>
+<td>10 минут</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Низкий</td>
+<td>Добавить правило перенаправления для того же украинского адреса с большими буквами в кодировке</td>
+<td>_redirects</td>
+<td>Сейчас этот вариант дает 404</td>
+<td>Claude</td>
+<td>5 минут</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Низкий</td>
+<td>Alt у главной картинки Lewisville (сейчас пустой)</td>
+<td>/plumber-lewisville-tx/</td>
+<td>У остальных 9 городов он есть</td>
+<td>Claude, Денис одобряет (страница заморожена)</td>
+<td>5 минут</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Низкий</td>
+<td>Заголовки «Need a plumber?» и точки разреза дома на главной сделать не заголовками или поставить после первого H2</td>
+<td>главная, /blog/, /plumbing-guides-tips/, 4 поста</td>
+<td>Чище структура для AI</td>
+<td>Claude</td>
+<td>20 минут</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Низкий</td>
+<td>Картинки для соцсетей 1200 на 630: на главной настоящее фото вместо логотипа, на slab фото 42</td>
+<td>главная, slab leak, 7 страниц с FPP-Plumbing.jpg</td>
+<td>Ссылку в мессенджере видно с фото работы</td>
+<td>Claude, фото выбирает Денис</td>
+<td>30 минут</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Низкий</td>
+<td>Убрать canonical со страницы 404; добавить /favicon.ico</td>
+<td>404.astro, public</td>
+<td>Порядок</td>
+<td>Claude</td>
+<td>5 минут</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Низкий</td>
+<td>Защитные заголовки: запрет встраивать сайт в чужие страницы (frame-ancestors), Permissions-Policy; HSTS в день переезда</td>
+<td>_headers, Cloudflare</td>
+<td>На позиции почти не влияет, защищает от подделки сайта</td>
+<td>Claude</td>
+<td>15 минут</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Низкий</td>
+<td>serviceType у услуг, короткие имена в хлебных крошках, фото компании в схеме вместо логотипа</td>
+<td>схема</td>
+<td>Аккуратнее для машин</td>
+<td>Claude</td>
+<td>20 минут</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Низкий</td>
+<td>Убрать EXIF у 12 картинок (координат нет, но есть данные телефона)</td>
+<td>wp-content/uploads</td>
+<td>Правило «метаданные снимаются»</td>
+<td>Claude</td>
+<td>10 минут</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Низкий</td>
+<td>Опечатки «plumbing , clean» в meta Frisco и «Noise?A» в title гайда</td>
+<td>/plumber-frisco-tx/, /plumbing-guide/water-heater-making-noise-tips-2026/</td>
+<td>Видно в выдаче Google</td>
+<td>Claude после одобрения Дениса</td>
+<td>5 минут</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Низкий</td>
+<td>Назвать в robots.txt роботов поиска OAI-SearchBot и Claude-SearchBot отдельно (сейчас их уже пускает «*»)</td>
+<td>robots.txt</td>
+<td>Явно для поиска в ChatGPT и Claude</td>
+<td>Claude</td>
+<td>5 минут</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Низкий</td>
+<td>После переезда: длинные title и meta, повтор title в meta главной, правило «plumber near me» на 9 страницах</td>
+<td>старые тексты</td>
+<td>Обрезка в выдаче; по плану, вместе с переписыванием</td>
+<td>Claude, Денис одобряет</td>
+<td>вместе с текстами</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Низкий</td>
+<td>После переезда: IndexNow для Bing (Google его не использует)</td>
+<td>Cloudflare, настройка Crawler Hints</td>
+<td>Bing быстрее увидит новые страницы</td>
+<td>Денис решает</td>
+<td>10 минут</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Не подходит по правилам проекта</h2>
+<table>
+<thead>
+<tr>
+<th>Совет плагина</th>
+<th>Почему не делаем</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Отдельная разметка LocalBusiness на каждый офис или на каждую городскую страницу (шаблон навыка seo-schema)</td>
+<td>CLAUDE.md: «exactly one business entity for the whole site». Офисы уже описаны как места внутри одной компании</td>
+</tr>
+<tr>
+<td>Поле priceRange или диапазоны цен в схеме (рекомендуемое поле LocalBusiness)</td>
+<td>CLAUDE.md: кроме вызова $49 «never invent any other price, range or number»</td>
+</tr>
+<tr>
+<td>Строка Content-Signal с «ai-train=no» в robots.txt (совет agentic_check)</td>
+<td>CLAUDE.md требует пускать GPTBot, ClaudeBot и Google-Extended, то есть и обучение AI тоже</td>
+</tr>
+<tr>
+<td>Отправить адреса в IndexNow или Indexing API прямо сейчас (навык seo-technical)</td>
+<td>Сайт тестовый и закрыт; отправлять ничего нельзя до команды Дениса о переезде</td>
+</tr>
+<tr>
+<td>Создавать страницы по шаблону для многих городов или районов (раздел «programmatic pages» навыка seo-sitemap)</td>
+<td>Денис запретил модуль programmatic SEO; CLAUDE.md: никаких doorway страниц и других городов кроме десяти</td>
+</tr>
+<tr>
+<td>Сейчас укоротить длинные title и meta, исправить заголовки в замороженных гайдах</td>
+<td>CLAUDE.md: замороженные тексты переезжают без изменений, правки после переезда</td>
+</tr>
+<tr>
+<td>Убрать тире из FAQ замороженных гайдов angle stop и перекрытия воды</td>
+<td>Те же замороженные тексты; схема должна совпадать со страницей слово в слово</td>
+</tr>
+<tr>
+<td>Ставить звезды рейтинга (AggregateRating) по своим отзывам в схему компании</td>
+<td>Не запрещено CLAUDE.md, но Google не показывает звезды по отзывам, которые компания публикует о себе сама; делать не советую</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Чего не удалось проверить и что для этого нужно</h2>
+<ul>
+<li><strong>Настоящая скорость на телефоне (LCP, CLS, INP).</strong> Тестовый сайт закрыт входом, PageSpeed Insights его не видит. Скрипт плагина lcp_subparts берет данные Chrome (CrUX) и требует ключ Google API; данных по новому сайту там еще нет. Вкладка браузера в программе была занята другой задачей, поэтому замер в браузере я не делал. Нужно: Денис открывает на телефоне тестовый сайт после правок 3 и 9, или временный открытый адрес для одного прогона PageSpeed.</li>
+<li><strong>Рендер страниц скриптом плагина</strong> (render_page.py) не запускался: нет Playwright. Проверка без JavaScript (agentic_check) показала, что весь текст есть в HTML.</li>
+<li><strong>Rich Results Test и валидатор schema.org онлайн</strong> требуют открытый адрес или вставку кода вручную. Вместо этого я проверил каждый блок по словарю schema.org локально. Нужно: прогнать 5 типовых страниц через validator.schema.org (вставкой кода, Claude может подготовить файлы).</li>
+<li><strong>Как ведет себя настоящий Cloudflare</strong>: большие буквы в адресах, кодировка украинского адреса, HTTPS, HSTS, www. Это видно только на тестовом сайте под входом Дениса или после переезда.</li>
+<li><strong>Попали ли файлы « 2» в последнюю выкладку.</strong> Нужно: список файлов тестового проекта в Cloudflare (Claude может посмотреть через wrangler, если Денис разрешит).</li>
+<li><strong>Форма в Telegram и счетчик Google</strong>: еще не подключены, проверять нечего.</li>
+<li><strong>Сравнение с конкурентами по скорости и схеме</strong> и данные DataForSEO, Moz, Ahrefs: нужны платные ключи, в этой задаче вне рамок. Они дали бы позиции и ссылки, на технический аудит сборки не влияют.</li>
+</ul>
+<hr />
+<h2>6. Вопросы к Денису</h2>
+<ol>
+<li><strong>Цены на страницах.</strong> На странице утилизаторов стоит «$229 за установку» и «10 лет гарантии на новый утилизатор», на странице PRV «работа от $499», в гайдах цены на водонагреватели и аварийный вызов. Это ваши настоящие цены сейчас? Оставляем их при переезде или убираем, как остальные цены кроме $49?</li>
+<li><strong>Газ.</strong> На странице ремонта водонагревателей перечислены проблемы газовой линии (нет грязевика, тонкая газовая труба), а в описании страницы «Top 5 Emergency Plumbing Calls» есть «gas leaks». Вы делаете газовую часть при работе с водонагревателем? Если нет, убираем.</li>
+<li><strong>Frisco и Plano ссылаются друг на друга.</strong> Правило проекта: городская страница не ссылается на другой город. Убрать эти две ссылки при переезде или оставить?</li>
+<li><strong>«Same-day».</strong> В заголовке Plano «Same-Day Help», в заголовках туалетов и водонагревателей «Same Day», в описании главной «same-day». Это считается обещанием времени приезда? Оставляем при переезде?</li>
+<li><strong>Страница «Top 5 Emergency Plumbing Calls».</strong> На нее сейчас нет ни одной ссылки. Куда поставить ссылку: на странице аварийного вызова или в списке гайдов? Или страница вам больше не нужна, и тогда ее лучше перенаправить на аварийную?</li>
+<li><strong>Папка проекта на Рабочем столе синхронизируется с iCloud</strong> и iCloud делает копии файлов. Можно перенести проект в папку вне iCloud (например «Projects» в домашней папке)? Сайт и GitHub от этого не меняются.</li>
+<li><strong>Счетчик Google.</strong> На старом сайте стоят Google Tag Manager GTM-NVSNS9FK и тег GT-PJ4NVLSP. Они ваши и рабочие? Есть ли еще учет звонков (QUO), который надо перенести?</li>
+<li><strong>Часы офиса в профилях Google.</strong> Там стоит пн-пт 8:00 до 17:00 или круглосуточно? Это нужно, чтобы схема совпала с профилем.</li>
+<li><strong>Две опечатки в старых текстах</strong> (лишний пробел перед запятой в описании Frisco и «Noise?A» в заголовке гайда про шумный водонагреватель). Можно исправить при переезде как точечную правку?</li>
+</ol></main></body></html>
