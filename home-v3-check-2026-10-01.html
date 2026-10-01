@@ -1,0 +1,32 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 15:39</p><h1>Главная v3: финальная проверка (1 октября 2026)</h1>
+<h2>1. Правила проекта: пройдено</h2>
+<p>Скрипт tools/check_text.py (цены, города, «Dallas», обещания времени приезда, телефоны в тексте, тире, слова из запретного списка голосового файла, tankless, reroute, owner, PHCC). До правок нашлось: «can come out right away» в ответе про восстановление (звучит как обещание времени). Исправлено. Сейчас нарушений нет. «Plumber near me» в тексте 6 раз, считая title и описание для Google (в самом тексте 4 раза).</p>
+<h2>2. Совпадения: с конкурентами ноль</h2>
+<p>Скрипт tools/check_overlap.py: куски по 8 слов подряд против всех страниц старого сайта, новой сборки и 19 страниц конкурентов из выдачи по «plumber frisco tx» и «emergency plumber plano» (Berkeys, Baker Brothers, Trident, Roto-Rooter, Lex's, GPS Plumbing, Milestone, Watermark, 1-800-Plumber, Legacy, Cody &amp; Sons, Plano Plumbing TX, Tempo, Thorough, JPS). С конкурентами совпадений нет. Со старым сайтом совпадают утвержденные куски главной (FAQ и абзац про районы) и одинаковые формулировки цен на нескольких страницах, так и задумано. Заключительный абзац «If you searched for a plumber near me because something in...» слово в слово стоял на 6 городских страницах: переписан.</p>
+<h2>3. Запросы из Search Console: что главная не должна потерять</h2>
+<p>Title и H1 остаются те же, что сейчас ранжируются. По просьбе Дениса добавлены «licensed plumber near me» (в заголовок раздела, без лишнего повтора) и «closest plumber» (про окно приезда).
+Главное, что нашлось: главная сейчас стоит выше страницы emergency по аварийным запросам (16 месяцев):
+| Запрос | Показы главной | Место главной | Место страницы emergency |
+|---|---|---|---|
+| emergency plumber | 24,723 | 10.1 | 19.1 |
+| emergency plumbing | 13,515 | 13.7 | 18.2 |
+| emergency plumbers | 8,489 | 17.5 | 26.5 |
+| same day plumber | 4,944 | 9.8 | 18.2 |
+| 24 7 plumber | 3,883 | 9.7 | 14.8 |
+На старой главной был заголовок «Plumber Near Me in Frisco &amp; Plano: 24/7 Emergency Plumbing You Can Trust». В v2 и v3 его нет (по карте ключей «emergency plumber» принадлежит странице emergency). Риск: при запуске главная может потерять эти позиции, а страница emergency их не подхватит. Предложение: на запуске оставить на главной заголовок раздела с «24/7 Emergency Plumbing» без города, например «24/7 Emergency Plumbing: How a Call Works», а передачу этих запросов странице emergency делать после запуска, когда она будет углублена. Нужно решение Дениса.</p>
+<h2>4. Детекторы ИИ: результат честно</h2>
+<ul>
+<li>GPTZero (бесплатный): обе половины главной «AI 100%». Пробный кусок, переписанный разговорно, тоже «AI 100%». Контроль: настоящие отзывы клиентов FPP с опечатками («Licenced», «80-is shower head») тоже получили «AI 100%». Значит, на таких текстах GPTZero не отличает человека от машины, как фильтр он не годится.</li>
+<li>QuillBot: во встроенном браузере результат не выдал (похоже, нужен вход). ZeroGPT: браузер сайт не открыл.</li>
+<li>Вывод: правило «прогнать через два детектора и переписать отмеченное» в нынешнем виде не работает: детектор отмечает все подряд, включая живых людей. Google не ранжирует по оценкам детекторов; ему важны настоящие факты, польза, оригинальность. Варианты для решения Дениса: (а) детекторы только как подсказка, а проверка: правила, оригинальность, факты Дениса и его чтение; (б) самые важные куски (блок о Денисе, история про гарантию, вызов с кондиционером) Денис надиктовывает сам по-английски голосом в телефон, я правлю минимально, тогда это его текст по-настоящему; (в) платный детектор (Originality.ai и подобные) только с согласия Дениса.</li>
+</ul></main></body></html>
