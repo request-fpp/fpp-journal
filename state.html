@@ -8,7 +8,7 @@ main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;marg
 h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
 a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
-</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 03:24</p><h1>Working state for the next session (October 1, 2026, about 01:30)</h1>
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 09:53</p><h1>Working state for the next session (October 1, 2026, morning)</h1>
 <p>Read CLAUDE.md first (all rules and decisions), then this file, then docs/journal.md. Talk to Denys in Russian, plain words.</p>
 <h2>Where things are</h2>
 <ul>
@@ -24,23 +24,24 @@ li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 <li>Speed check: <code>python3 tools/perf_budget.py design/mockups/f2-home.html design/mockups/f2-slab.html design/mockups/f2-emergency.html</code> (budget 1.6 s on phone; last: 1.34, 1.43, 1.20).</li>
 <li>Done today: numbers row 4,500+ / 450+ / 24/7 / 2 with light type; license line "Responsible Master Plumber, License M-44816" (footer, Denys block, credentials); BBB official seal linked; Yelp 5.0; footer rebuilt with the original logo; slab hero photo 42; slab tile and detection step photo 161 (Denys with the leak detector, from the old site); photo 112 in the Denys block; no marker marks on finished brazed joints 42 and 45; Liane W. added to leak detection.</li>
 </ul>
-<h2>In progress when this file was written</h2>
-<p>A helper agent was redoing three things in build_mockups_fg.py and build_mockups_f.py, with before and after images in design/review/:
-1. The house cutaway on the F2 homepage first screen (Denys: "the block with the foundation is crooked"): straight section drawing, same size unrotated photo tiles, one label per zone under its tile, one red point per zone, orthogonal copper pipes, each service once, chips deduplicated, phone readable.
-2. The credentials row, final order from Denys: Responsible Master Plumber / License M-44816; Google 5.0 with Plano and Frisco links stacked; Thumbtack Top Pro with Yelp 5.0 stacked under it; Founded 2022 / Fully licensed and insured; the BBB seal at the end with A+ rating. Light band, one row of five cells.
-3. Footer: light background with the original logo directly on it (no white plate), saturated logo red strip like the header, navy text, icon row possibly on a navy bar. Denys found the white plate on the dark footer sad.
-If design/review/compare-*.png do not exist or the work is half done, check <code>git log</code> and the generated pages, finish it, and show Denys before and after.</p>
-<h2>Waiting to be applied right after that agent finishes</h2>
+<h2>Current state (October 1, 2026, morning)</h2>
 <ul>
-<li>Service tiles (SVC in build_mockups_fg.py): Slab leak repair -&gt; 162 (still from video 125: water spraying from a pinhole on copper under the slab); Emergency plumbing -&gt; 112 (Denys stopping water spraying from the wall); Water heater -&gt; 50 (instead of 43). Web files 162 and 50 are already in design/img; 112 exists.</li>
-<li>Spinning meter: replace the marked photo 79 (ANNOT circle) on the F pages with the real looping clip design/video/meter-spin.mp4 / .webm (poster design/video/meter-spin-poster.webp; 480x480, muted, loop, playsinline, autoplay only without prefers-reduced-motion; cut from video 72, sped up 2x, meter serial number cropped out). Caption should say it is the meter leak indicator turning, sped up.</li>
-<li>When Denys's uniform portrait appears in photos/, number it with tools/photo_contact_sheet.py, optimize with tools/optimize_photos.py, put it in the Denys block (PHOTOS["owner"]), and keep 112 only on the emergency tile.</li>
+<li>F2 homepage = the copper pipe concept (design/wow_pipe.py, built by design/build_wow_pipe.py, which design/build_mockups_f.py now calls at the end, so <code>python3 design/build_mockups_f.py</code> writes f2-home.html with the pipe). Phone LCP 1.29 s. Not yet tested on a real iPhone (Safari needed tiling workarounds).</li>
+<li>Other concepts kept for history: f2-home-wow-xray.html, f2-home-wow-blueprint.html, f2-home-house-3d.html, f2-home-house-photo.html (Pexels photo, license in design/assets/house-photo-SOURCE.md). The flat drawing house_illustration.py is still used by F, F3 and the slab and emergency pages' imports.</li>
+<li>Request Service button in header and footer opens the form (fields as on the old site, email required). Footer option C (red band). The van footer D was rejected.</li>
+<li>Real reviews in the mockups (bm.REVIEW_PICKS, build_mockups.py); signatures without office name; Local Guide levels still missing.</li>
+<li>Spinning meter clip replaces photo 79 (fg.meter_fig), caption city Plano (Denys).</li>
+<li>Service tiles: slab 162, emergency 112, water heater 50. Photo 112 is Denys's approved photo for the Denys block (no separate portrait needed).</li>
+</ul>
+<h2>Next steps</h2>
+<ul>
+<li>Extend the pipe look to the slab and emergency pages if Denys wants it; check the pipe animation on a real iPhone.</li>
+<li>Then: Astro project start (see "Not started yet").</li>
 </ul>
 <h2>Waiting for Denys</h2>
 <ul>
 <li>Approve the reviews proposal (docs/reviews-proposal.md, page reviews-proposal.html); he wants Claude to review it first. Local Guide levels for review signatures still need checking on each Google profile.</li>
 <li>Dictate: photos 13, 14, 21, 104, 131, 132, 149, 160; city for 8; pairs 9/10 and 29/30 (cities differ by location); what the roof pipe on 93/94 is.</li>
-<li>His portrait in uniform (he will drop it in photos/).</li>
 <li>Final look at the F2 fixes above.</li>
 </ul>
 <h2>Files that changed today (main ones)</h2>
