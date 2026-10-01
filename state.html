@@ -8,7 +8,7 @@ main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;marg
 h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
 a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
-</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 10:35</p><h1>Working state for the next session (October 1, 2026, midday)</h1>
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 10:40</p><h1>Working state for the next session (October 1, 2026, midday)</h1>
 <p>Read CLAUDE.md first (all rules and decisions), then this file, then docs/journal.md. Talk to Denys in Russian, plain words.</p>
 <h2>Where things are</h2>
 <ul>
@@ -31,7 +31,7 @@ li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 <li>Build and check: <code>cd site &amp;&amp; npm run build &amp;&amp; python3 ../tools/check_site.py</code> (report in site/check-report.md). Local Pages emulation (redirects, headers, 404): <code>npx wrangler pages dev dist --port 8799</code>.</li>
 <li>Deploy: <code>cd site &amp;&amp; npx wrangler pages deploy dist --project-name fppplumbing-preview --branch main --commit-dirty=true</code> (wrangler is logged in as request@fppplumbing.com via OAuth; the project is classic Pages, created with --force once, no --force needed now).</li>
 <li>Preview: https://fppplumbing-preview.pages.dev, protected by two Cloudflare Access self hosted apps (fppplumbing-preview.pages.dev and *.fppplumbing-preview.pages.dev), policy "Denys": Allow, Emails request@fppplumbing.com, login by one time PIN. No password exists.</li>
-<li>Checks: 25 pass; failing only "tankless" (two guides, waiting for Denys) and llms-full.txt for the same text. Phone LCP: / 1.31 s, slab 1.51 s, Frisco 1.53 s, post 1.25 s.</li>
+<li>Checks: 27 of 27 pass. Four ranking guides are FROZEN (old text exactly, text checks skipped); tankless allowed in guides (Denys). Phone LCP: / 1.31 s, slab 1.51 s, Frisco 1.53 s, post 1.25 s.</li>
 <li>Not done: form to Telegram via Worker plus Turnstile, GA4 and call tracking, schema.org validator run, ?attachment_id redirects (Pages Function, list in site/src/data/redirects-query.csv), real iPhone test of the pipe animation.</li>
 </ul>
 <h2>Next steps</h2>
