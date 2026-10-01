@@ -7,7 +7,7 @@
 Вы уже вошли командой `npx --yes wrangler@latest login` (папка проекта, локальный Node). Повторять не нужно. Если когда-нибудь вход слетит: откройте Терминал, вставьте две строки и подтвердите вход в браузере.
 
 ```
-cd ~/Desktop/fppplumbing-site && export PATH="$PWD/.tools/node/bin:$PATH"
+cd ~/Projects/fppplumbing-site && export PATH="$PWD/.tools/node/bin:$PATH"
 npx --yes wrangler@latest login
 ```
 

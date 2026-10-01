@@ -8,11 +8,11 @@ main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;marg
 h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
 a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
-</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 14:48</p><h1>Working state for the next session (October 1, 2026, midday)</h1>
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 14:49</p><h1>Working state for the next session (October 1, 2026, midday)</h1>
 <p>Read CLAUDE.md first (all rules and decisions), then this file, then docs/journal.md. Talk to Denys in Russian, plain words.</p>
 <h2>Where things are</h2>
 <ul>
-<li>Project: /Users/denyskavaler/Desktop/fppplumbing-site, GitHub private repo request-fpp/fppplumbing-site (branch main). Commit small, plain messages, end with the Co-Authored-By line; stage files by name, never <code>git add -A</code> while a helper agent is working.</li>
+<li>Project: /Users/denyskavaler/Projects/fppplumbing-site (moved from ~/Desktop on October 1, 2026 because iCloud made duplicate files and broke git), GitHub private repo request-fpp/fppplumbing-site (branch main). Commit small, plain messages, end with the Co-Authored-By line; stage files by name, never <code>git add -A</code> while a helper agent is working.</li>
 <li>GitHub CLI: ~/.local/bin/gh (logged in as request-fpp).</li>
 <li>Journal: docs/journal.md (Russian) published by <code>python3 tools/publish_journal.py</code> to https://fpp-journal.pages.dev and https://request-fpp.github.io/fpp-journal/ (public repo request-fpp/fpp-journal, clone in journal-site/, ignored). Every docs/*.md becomes a page (journal.md is index.html; this file is state.html; reviews-proposal.md is reviews-proposal.html). Publish after every finished block, without being asked. Robots allowed, no noindex.</li>
 <li>Local preview server for mockups: from the project root run <code>python3 -m http.server 8765 --bind 127.0.0.1</code>, then open http://localhost:8765/design/mockups/compare-f-f2-f3.html or f2-home.html, f2-slab.html, f2-emergency.html. Photo sheet: http://localhost:8765/photos/contact-sheet.html. Caption review: http://localhost:8765/photos/captions-review.html.</li>

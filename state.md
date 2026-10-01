@@ -3,7 +3,7 @@
 Read CLAUDE.md first (all rules and decisions), then this file, then docs/journal.md. Talk to Denys in Russian, plain words.
 
 ## Where things are
-- Project: /Users/denyskavaler/Desktop/fppplumbing-site, GitHub private repo request-fpp/fppplumbing-site (branch main). Commit small, plain messages, end with the Co-Authored-By line; stage files by name, never `git add -A` while a helper agent is working.
+- Project: /Users/denyskavaler/Projects/fppplumbing-site (moved from ~/Desktop on October 1, 2026 because iCloud made duplicate files and broke git), GitHub private repo request-fpp/fppplumbing-site (branch main). Commit small, plain messages, end with the Co-Authored-By line; stage files by name, never `git add -A` while a helper agent is working.
 - GitHub CLI: ~/.local/bin/gh (logged in as request-fpp).
 - Journal: docs/journal.md (Russian) published by `python3 tools/publish_journal.py` to https://fpp-journal.pages.dev and https://request-fpp.github.io/fpp-journal/ (public repo request-fpp/fpp-journal, clone in journal-site/, ignored). Every docs/*.md becomes a page (journal.md is index.html; this file is state.html; reviews-proposal.md is reviews-proposal.html). Publish after every finished block, without being asked. Robots allowed, no noindex.
 - Local preview server for mockups: from the project root run `python3 -m http.server 8765 --bind 127.0.0.1`, then open http://localhost:8765/design/mockups/compare-f-f2-f3.html or f2-home.html, f2-slab.html, f2-emergency.html. Photo sheet: http://localhost:8765/photos/contact-sheet.html. Caption review: http://localhost:8765/photos/captions-review.html.
