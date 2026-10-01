@@ -1,0 +1,52 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 14:48</p><h1>Проверка индексации в Search Console (1 октября 2026)</h1>
+<p>Проверено через Search Console API (URL Inspection, только чтение) 81 адрес: все 64 страницы старого сайта и все старые адреса, у которых были показы за 16 месяцев. Полные данные: source/gsc/inspection-2026-10-01.csv.</p>
+<h2>Адреса с ошибками: Денис прав, все сделано</h2>
+<table>
+<thead>
+<tr>
+<th>Старый адрес</th>
+<th>Что видит Google</th>
+<th>Правильный адрес</th>
+<th>Что видит Google</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/plumbing-guide/emergency-plumbing-repair-cost-guid-2026/</td>
+<td>Page with redirect (последний обход 2026-08-06), Google сам выбрал правильный адрес</td>
+<td>/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/</td>
+<td>Submitted and indexed (последний обход 2026-09-25)</td>
+</tr>
+<tr>
+<td>/plumber-the-celina-tx/</td>
+<td>Redirect error (последний обход 2026-07-27)</td>
+<td>/plumber-celina-tx/</td>
+<td>Submitted and indexed (последний обход 2026-08-30)</td>
+</tr>
+<tr>
+<td>/news и /news/</td>
+<td>Google их не знает (выпали из индекса)</td>
+<td>/blog/</td>
+<td>Submitted and indexed (последний обход 2026-09-04)</td>
+</tr>
+</tbody>
+</table>
+<p>Про /plumber-the-celina-tx/: «Redirect error» это отметка с обхода 27 июля. Сейчас адрес отдает одну чистую переадресацию 301 на /plumber-celina-tx/ (проверено сегодня с http, https, www и без слеша), а правильная страница в индексе. Делать ничего не нужно, Google снимет отметку при следующем обходе. В новой сборке эта переадресация сохранена.</p>
+<p>Остальные старые адреса (/blog/post/, hello-world, адреса гайдов с опечатками и т.п.) Google больше не знает: из индекса выпали.</p>
+<h2>Все 64 страницы</h2>
+<ul>
+<li>В индексе: 55.</li>
+<li>«Crawled, currently not indexed» (Google обошел, но в индекс не взял): 8: /blog/clogged-main-drain-line-daycare-plano/, /blog/clogged-shower-drain-little-elm-case/, /blog/clogged-toilet-auger-fix-blog/, /blog/outside-spigot-replacement-plumber-in-frisco/, /blog/plumber-frisco-water-heater-replacement/, /blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/, /blog/toilet-replacement-with-new-shutoff-valve-and-wax-ring/, /plumbing-guide/water-heater-making-noise-tips-2026/. Это короткие посты и один гайд; при переезде переходят как есть, потом их углубляем по диктовке Дениса.</li>
+<li>/blog/author/admin/ Google не знает (на старом сайте это переадресация на главную).</li>
+<li>www.fppplumbing.com: переадресация на главный адрес, все правильно.</li>
+</ul></main></body></html>
