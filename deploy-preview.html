@@ -1,0 +1,44 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 10:35</p><h1>Предпросмотр нового сайта на Cloudflare: как выложить и как закрыть паролем</h1>
+<p>Предпросмотр живёт по адресу https://fppplumbing-preview.pages.dev. Домен fppplumbing.com и DNS не трогаем. На каждой странице стоит запрет для поисковиков (noindex), а вход будет только по вашей почте.</p>
+<h2>Шаг 1. Вход в Cloudflare (уже сделан)</h2>
+<p>Вы уже вошли командой <code>npx --yes wrangler@latest login</code> (папка проекта, локальный Node). Повторять не нужно. Если когда-нибудь вход слетит: откройте Терминал, вставьте две строки и подтвердите вход в браузере.</p>
+<pre><code>cd ~/Desktop/fppplumbing-site &amp;&amp; export PATH=&quot;$PWD/.tools/node/bin:$PATH&quot;
+npx --yes wrangler@latest login
+</code></pre>
+<h2>Шаг 2. Выкладку делаю я</h2>
+<p>Я собираю сайт, прогоняю проверки и выкладываю одной командой из папки site:</p>
+<pre><code>npx wrangler pages deploy dist --project-name fppplumbing-preview --branch main
+</code></pre>
+<p>Выкладку делаю только после того, как включён шаг 3 (вход по почте).</p>
+<h2>Шаг 3. Закрыть предпросмотр входом по почте (Cloudflare Access)</h2>
+<p>Это делаете вы в браузере, один раз, около пяти минут.</p>
+<ol>
+<li>Откройте https://dash.cloudflare.com и войдите.</li>
+<li>Слева выберите <strong>Zero Trust</strong>. Если Cloudflare попросит выбрать тариф, выберите <strong>Free</strong> (бесплатный) и придумайте имя команды, например <code>fpp</code>.</li>
+<li>В Zero Trust слева: <strong>Access</strong> → <strong>Applications</strong> → кнопка <strong>Add an application</strong>.</li>
+<li>Выберите <strong>Self-hosted</strong>.</li>
+<li><strong>Application name</strong>: <code>FPP preview</code>.</li>
+<li><strong>Session Duration</strong>: оставьте 24 hours.</li>
+<li><strong>Application domain</strong>: в поле Subdomain ничего, в поле Domain впишите <code>fppplumbing-preview.pages.dev</code>. Нажмите <strong>Add domain</strong> (или "+ Add public hostname") и добавьте вторую строку: <code>*.fppplumbing-preview.pages.dev</code> (это закроет и промежуточные версии).</li>
+<li>Нажмите <strong>Next</strong>.</li>
+<li>Политика (Policy): <strong>Policy name</strong> <code>Denys only</code>, <strong>Action</strong> <code>Allow</code>.</li>
+<li>В разделе <strong>Configure rules</strong> → <strong>Include</strong> → выберите <strong>Emails</strong> и впишите вашу почту, с которой вы входите в Cloudflare.</li>
+<li>Нажмите <strong>Next</strong>, на странице настроек входа оставьте <strong>One-time PIN</strong> (код на почту), нажмите <strong>Add application</strong> (или <strong>Save</strong>).</li>
+<li>Проверка: откройте https://fppplumbing-preview.pages.dev в окне инкогнито. Должна появиться страница Cloudflare с полем для почты. Введите почту, придёт код, введите код, откроется сайт.</li>
+</ol>
+<p>Напишите мне, когда шаг 3 готов, и я выложу сайт.</p>
+<h2>Что важно</h2>
+<ul>
+<li>Поисковики сайт не увидят: на каждой странице стоит noindex, и Cloudflare отдаёт тот же запрет в заголовке.</li>
+<li>Живой сайт fppplumbing.com на WordPress работает как раньше. Переключение домена будет отдельным шагом, только когда вы сами скажете.</li>
+</ul></main></body></html>
