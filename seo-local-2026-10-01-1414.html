@@ -1,0 +1,855 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 14:14</p><h1>Локальный SEO аудит: Google карточки, справочники, видимость на карте</h1>
+<p>Дата и время: 1 октября 2026, 14:15 (Central Time). Автор: Claude, по методике плагина claude-seo 2.4.1 (модули seo-local и seo-maps). Модуль programmatic SEO не использовался.</p>
+<p>Важно: все выводы плагина здесь только предложения. Где плагин советует то, что запрещает CLAUDE.md или voice/denys-voice.md, это вынесено в раздел 4 и в список правок не попало. Тексты сайта, карточки Google и справочники я не менял, только смотрел.</p>
+<p>Термины, один раз:
+- <strong>GBP</strong> (Google Business Profile): ваша карточка компании в Google Картах. У вас их две, Frisco и Plano.
+- <strong>NAP</strong> (Name, Address, Phone): название, адрес, телефон. Должны совпадать везде буква в букву.
+- <strong>Citations</strong> (цитаты): упоминания компании с адресом и телефоном в справочниках (Yelp, BBB, Bing, Apple и так далее).
+- <strong>Local pack</strong> (локальная тройка): блок с картой и тремя компаниями в обычной выдаче Google.
+- <strong>Geogrid</strong> (сетка видимости): проверка позиции на карте из 49 точек вокруг офиса, как будто клиент ищет из разных районов.
+- <strong>SoLV</strong> (share of local voice): доля точек сетки, где вы в первой тройке.</p>
+<p>Источники: публичный вид обеих карточек в Google Картах; выгрузка Google Takeout (source/gbp-takeout, снята около 30 сентября 2026); Search Console (source/gsc, июль по сентябрь 2026); Semrush; публичные страницы Yelp, BBB, Thumbtack, Nextdoor, Facebook, Bing Maps, Apple Maps; веб-поиск.</p>
+<p>Примерная оценка по шкале плагина: <strong>около 70 из 100</strong>. Карточки Google сильные (5.0, ответы на все отзывы, свежие посты), слабое место это расхождения в справочниках и лишнее в карточках.</p>
+<table>
+<thead>
+<tr>
+<th>Раздел (вес у плагина)</th>
+<th>Оценка</th>
+<th>Почему</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Карточки Google (25)</td>
+<td>18</td>
+<td>Ссылки на правильные страницы, 24/7, посты каждую неделю. Но 1 дополнительная категория из 4 возможных, в Plano запрещенные города в зоне обслуживания, во Frisco зона не задана, в списках услуг лишнее</td>
+</tr>
+<tr>
+<td>Отзывы (20)</td>
+<td>16</td>
+<td>131 отзыв на Google, 5.0, ответ на 100% в течение суток. Во Frisco всего 26 отзывов и был перерыв 81 день</td>
+</tr>
+<tr>
+<td>Локальные сигналы на сайте (20)</td>
+<td>15</td>
+<td>Есть страницы городов и офисов, NAP в футере. Главная, а не страница Frisco, ранжируется по "plumber frisco tx"</td>
+</tr>
+<tr>
+<td>NAP и справочники (15)</td>
+<td>8</td>
+<td>Yelp и Thumbtack пишут другую цену и другой стаж, на Yelp другой телефон, Yelp Frisco не подтвержден, Frisco нет в Bing, Plano не найден в Apple</td>
+</tr>
+<tr>
+<td>Разметка schema на новой сборке (10)</td>
+<td>8</td>
+<td>Один Plumber на весь сайт, оба офиса, часы, зона, sameAs. Нет координат офисов</td>
+</tr>
+<tr>
+<td>Авторитет и ссылки (10)</td>
+<td>5</td>
+<td>BBB A+, пресс-релизы. Нет торговых палат, местной прессы, списков "лучших"</td>
+</tr>
+</tbody>
+</table>
+<h2>1. Коротко</h2>
+<ol>
+<li><strong>В карточке Plano в зоне обслуживания стоят запрещенные города</strong>: Irving, Addison, Coppell, Richardson, Fairview, Farmers Branch и два адреса с подписью "Dallas" (75205, 75225). Нет Celina и Carrollton. У карточки Frisco зона обслуживания не задана вообще.</li>
+<li><strong>Цена и стаж на Yelp и Thumbtack спорят с сайтом.</strong> Там "$179 service minimum", на Thumbtack "12 years in business" и "often within the hour". На сайте и в Google: $49 за вызов в будни, основаны в 2022. Google и ИИ-помощники сравнивают источники и не доверяют расхождениям.</li>
+<li><strong>Описание карточки Plano устарело</strong>: "Over 4,000 clients and 400+ five-star reviews". Утверждено 4,500+ и "more than 450 five-star reviews across Google, Yelp and Thumbtack". Там же "slab leak detection with camera", а камерой slab leak не ищут.</li>
+<li><strong>В списках услуг обеих карточек есть то, что FPP не делает или не подтверждено</strong>: Pool plumbing repair, Sump pump, Flood Water Removal, Emergency Flood Response, AC Condensate Drain Line, Gas Water Heater с "gas line". Есть услуга "Under-Slab Sewer Repair" с описанием про angle stop под раковиной (текст от другой услуги). Есть "услуги" "Frisco Plumber" и "Plumber" с "plumber near me 24HR" в тексте, это набивка ключами.</li>
+<li><strong>На карте Frisco держится хорошо, Plano слабее.</strong> Разовая проверка из центра офиса: во Frisco FPP первый или второй среди неплатных по всем трем запросам. Из Plano FPP второй по "emergency plumber", но нет в первой тройке по "plumber near me" и "slab leak repair". Это одна точка, а не сетка (раздел 2.3).</li>
+<li><strong>Yelp Frisco (fpp-plumbing-frisco-2) не подтвержден владельцем</strong> ("Unclaimed"). На Yelp Plano телефон (980) 467-2933 вместо 980-899-7997.</li>
+<li><strong>Bing не знает офиса Frisco</strong> (по адресу Westridge выдает только Plano). В Bing у Plano описание "Frisco, Plano &amp; North Dallas". Bing питает ChatGPT и Copilot.</li>
+<li><strong>Ответы на отзывы и посты нарушают правила</strong>: в сентябре 2026 четыре ответа во Frisco со словами "North Dallas area"; 16 ответов в Plano с длинным тире; в старых постах "same-day", "10 minutes", цены $1,000 до $5,000, tankless, список Dallas, Coppell, Fairview, Denton, Garland.</li>
+<li><strong>Отзывы во Frisco идут медленно</strong>: 26 за 9 месяцев, перерыв 81 день (апрель по июнь 2026). У конкурентов рядом сотни и тысячи отзывов.</li>
+<li><strong>Настоящую сетку видимости я не запускал</strong>: в подключенном Semrush нет инструмента карт, а покупать или создавать проекты без вашего решения нельзя. План сетки и цена в разделе 5.</li>
+</ol>
+<h2>2. Находки по разделам</h2>
+<h3>2.1 Карточки Google</h3>
+<p>Обе карточки смотрел в Google Картах 1 октября 2026 (вид как у посетителя, ничего не нажимал, кроме вкладок) и сверял с Takeout.</p>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Frisco</th>
+<th>Plano</th>
+<th>Как должно быть</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Название</td>
+<td>FPP Plumbing</td>
+<td>FPP Plumbing</td>
+<td>Совпадает, без лишних слов. Хорошо</td>
+</tr>
+<tr>
+<td>Основная категория</td>
+<td>Plumber</td>
+<td>Plumber</td>
+<td>Правильно</td>
+</tr>
+<tr>
+<td>Доп. категории</td>
+<td>Drainage service</td>
+<td>Drainage service</td>
+<td>Плагин советует до 4 дополнительных, но только тех, что правда ваша работа</td>
+</tr>
+<tr>
+<td>Адрес</td>
+<td>12800 Westridge Blvd suite 116, Frisco, TX 75035</td>
+<td>5700 Tennyson Pkwy #300, Plano, TX 75024</td>
+<td>Совпадает с сайтом</td>
+</tr>
+<tr>
+<td>Телефон</td>
+<td>(469) 998-8999</td>
+<td>(980) 899-7997</td>
+<td>Совпадает</td>
+</tr>
+<tr>
+<td>Ссылка на сайт</td>
+<td>https://fppplumbing.com/plumber-frisco-tx/</td>
+<td>https://fppplumbing.com/plumber-plano-tx/</td>
+<td>Как в seo/keyword-map. Хорошо</td>
+</tr>
+<tr>
+<td>Часы</td>
+<td>Open 24 hours, 7 дней</td>
+<td>Open 24 hours, 7 дней</td>
+<td>Совпадает с сайтом</td>
+</tr>
+<tr>
+<td>Зона обслуживания</td>
+<td>Не задана</td>
+<td>18 мест, см. ниже</td>
+<td>10 городов плюс Highland Park и University Park</td>
+</tr>
+<tr>
+<td>Описание</td>
+<td>Есть, без цифр</td>
+<td>Есть, старые цифры</td>
+<td>См. ниже</td>
+</tr>
+<tr>
+<td>Услуги</td>
+<td>78 строк</td>
+<td>83 строки</td>
+<td>См. ниже</td>
+</tr>
+<tr>
+<td>Фото и видео (Takeout)</td>
+<td>51: 32 фото, 19 видео, последние 29 сентября</td>
+<td>132: 80 фото, 52 видео, последние 30 сентября</td>
+<td>Свежие, хорошо</td>
+</tr>
+<tr>
+<td>Посты (Takeout)</td>
+<td>35, последний 29 сентября</td>
+<td>96, последний 30 сентября, 13 в августе и 13 в сентябре</td>
+<td>Регулярно, хорошо</td>
+</tr>
+<tr>
+<td>Отзывы</td>
+<td>26, 5.0</td>
+<td>105, 5.0</td>
+<td>Совпадает с CLAUDE.md "5.0 at both locations"</td>
+</tr>
+<tr>
+<td>Ответы на отзывы</td>
+<td>25 из 26 (у одного без ответа), обычно на следующий день</td>
+<td>105 из 105, обычно на следующий день</td>
+<td>Отлично</td>
+</tr>
+<tr>
+<td>Вопросы и ответы (Q&amp;A)</td>
+<td>Не видно</td>
+<td>Не видно</td>
+<td>Google сворачивает Q&amp;A с ноября 2025, это не минус. Ответы на вопросы живут в FAQ на сайте</td>
+</tr>
+<tr>
+<td>Прочее</td>
+<td></td>
+<td>Атрибут "LGBTQ+ friendly"; язык карточки в Takeout "ru"</td>
+<td>Язык карточки лучше "en", сайт и клиенты англоязычные</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Зона обслуживания Plano (Takeout, data.json).</strong> Стоят: Allen, Plano, Irving, The Colony, Frisco, Addison, Coppell, Lewisville, Prosper, Little Elm, McKinney, Dallas 75205, Dallas 75225, Richardson, Fairview, Highland Park, Farmers Branch, University Park. По CLAUDE.md нельзя называть Irving, Addison, Coppell, Richardson, Fairview, Farmers Branch, и нельзя слово "Dallas" отдельно. Нет Celina и Carrollton. Google разрешает до 20 мест, ваши 12 помещаются.</p>
+<p><strong>Описание Plano</strong> (дословно часть): "Over 4,000 clients and 400+ five-star reviews across Google, Yelp &amp; Thumbtack. Upfront, transparent pricing, no hidden fees, no surprises." Цифры старые. "slab leak detection with camera" неверно по методу. Нет $49 и нет строки лицензии.</p>
+<p><strong>Описание Frisco</strong>: без цифр, но есть "real 24/7 emergency plumbing - no call centers, no runaround". Нормально, но стоит переписать голосом Дениса, с правилом цены и строкой лицензии.</p>
+<p><strong>Услуги, которые FPP не делает или которые не подтверждены</strong> (из Takeout):
+- Обе карточки: Pool plumbing repair, Sump pump installation, Sump pump repair, Water tank installation и repair (стандартные пункты Google), Flood Water Removal ("remove standing water", это работа реставраторов), Emergency Flood Response, AC Condensate Drain Line Cleaning, Gas Water Heater Installation (во Frisco прямо "secure gas line and water connections"; газ по CLAUDE.md только если вы подтвердите), RO Water Filtration, Water Leak Sensor Installation, Automatic Water Shut-Off Valve, Plumbing Maintenance, Water Heater Cleaning (Frisco).
+- Plano: "Under-Slab Sewer Repair" с описанием про angle stop под раковиной, текст явно от другой услуги. "Slab Leak Repair, Tunnel Access", где между словами стоит длинное тире.
+- Frisco: "Frisco Plumber" ("plumber near me 24HR" в тексте), "Plumber", "Emergency Plumber" ("plumber near me" в конце), "Water Heater Cleaning" ("Plumber Near Me"), "Flood Water Removal" ("Emergency Plumber Near Me."). Это набивка ключами, Google такое не любит.
+- Обещания скорости: "fast-response", "rapid response", "responds quickly", "release gallons of water in minutes", "every minute matters". По правилу прибытия время не обещаем.
+- "$49 diagnostic service call ... upfront estimate": правильная цифра, но нет "weekday" и "credited toward the repair", а "estimate" рядом с "no free estimates" путает.</p>
+<p><strong>Посты (Takeout, текст постов):</strong>
+- Frisco: "Same-Day" (6 постов), "North Dallas" (2, январь 2026), "We fixed it in just 10 minutes" (июнь 2026), цены "$1,000-$2,000" и "$2,000-$5,000" (20 июня 2026), "$1,800, $2,200, $2,800, or $3,500" и "tankless" (4 февраля 2026).
+- Plano: длинное тире в 25 постах (например 10 августа 2026 перед словами "serving Plano"), "North Dallas" (6), "Same-Day" (16), список "Plano, Frisco, Mckinney, Dallas, Allen, The Colony, Coppell, Lewisville, Little Elm, Carrollton, Prosper, Fairview, Highland Park, Denton, Garland, Celina, Flower Mound" (20 декабря 2024), "400+ reviews" (июль 2025), "under 30 minutes" (июль 2025), "comparable to hydro jetting" (21 сентября 2026, это сравнение, а не услуга, допустимо).
+- Ссылки в постах: в 63 из 96 постов Plano и 13 из 35 Frisco кнопки со ссылкой нет. Где есть, чаще всего ведут на главную.</p>
+<p><strong>Ответы на отзывы:</strong> Frisco, сентябрь 2026, четыре ответа: "in Frisco and the North Dallas area", "in Frisco, Mckinney or the North Dallas area", "in Prosper and the North Dallas area", "Frisco or the surrounding North Dallas area". Plano: 16 ответов с длинным или коротким тире (например короткое тире перед подписью FPP Plumbing). Правило: "North Dallas" только как "North Dallas suburbs", тире не пишем.</p>
+<p><strong>Отзывы, скорость:</strong> Frisco 26 отзывов с 12 января по 13 сентября 2026, по месяцам 7, 2, 7, 1, 0, 2, 2, 1, 4; самый длинный перерыв 81 день (2 апреля по 22 июня). Plano 105 отзывов с июля 2024, за последние 6 месяцев 23, перерывы не длиннее 37 дней. Звонков и маршрутов в Takeout нет (BusinessCalls.json пустой).</p>
+<p><strong>Конкуренты, которых Google показывает рядом</strong> ("People also search for" и результаты поиска на карте): Frisco: Earl's Plumbing 4.9 (755), Porpoise Plumbing 5.0 (403), Plumber True Services of Frisco 5.0 (81), VIP Plumbing Experts 4.7 (57), bluefrog Plumbing and Drain 4.9 (916). Plano: Legacy Plumbing &amp; Electric 4.9 (2,294), Plano Plumbing &amp; Leak Detection 4.8 (266), Accurate Leak and Line 4.8 (160), GPS Plumbing 5.0 (1,381), Benjamin Franklin Plumbing 4.8 (2,830), O'Bryan Plumbing 5.0 (691). По числу отзывов вы сильно позади, по рейтингу на равных.</p>
+<h3>2.2 Справочники и NAP</h3>
+<p>Эталон с сайта: FPP Plumbing; 12800 Westridge Blvd, Suite 116, Frisco, TX 75035, 469-998-8999; 5700 Tennyson Pkwy, Suite 300, Plano, TX 75024, 980-899-7997; основаны 2022; $49 вызов в будни.</p>
+<table>
+<thead>
+<tr>
+<th>Площадка</th>
+<th>Найдено</th>
+<th>Название</th>
+<th>Адрес</th>
+<th>Телефон</th>
+<th>Сайт</th>
+<th>Совпадает</th>
+<th>Что не так</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google, Frisco</td>
+<td>Да</td>
+<td>FPP Plumbing</td>
+<td>Westridge, Suite 116</td>
+<td>469-998-8999</td>
+<td>/plumber-frisco-tx/</td>
+<td>Да</td>
+<td>Зона не задана, лишние услуги</td>
+</tr>
+<tr>
+<td>Google, Plano</td>
+<td>Да</td>
+<td>FPP Plumbing</td>
+<td>Tennyson, #300</td>
+<td>980-899-7997</td>
+<td>/plumber-plano-tx/</td>
+<td>Да</td>
+<td>Зона с запрещенными городами, старые цифры</td>
+</tr>
+<tr>
+<td>Yelp Plano (fpp-plumbing-plano-2)</td>
+<td>Да, подтвержден</td>
+<td>FPP Plumbing</td>
+<td>5700 Tennyson Pkwy Ste 300, Plano 75024</td>
+<td><strong>(980) 467-2933</strong></td>
+<td>fppplumbing.com</td>
+<td>Нет</td>
+<td>Другой телефон; "$179 service minimum"; "400+ reviews"; "show up fast"; "Same-day appointments"; 29 отзывов, 5.0</td>
+</tr>
+<tr>
+<td>Yelp Frisco (fpp-plumbing-frisco-2)</td>
+<td>Да, <strong>не подтвержден</strong></td>
+<td>FPP Plumbing</td>
+<td>12800 Westridge Blvd Ste 116, Frisco 75035</td>
+<td>469-998-8999</td>
+<td>fppplumbing.com/plumber-frisco...</td>
+<td>Да</td>
+<td>Unclaimed, отзывов нет, описание скопировано из Google</td>
+</tr>
+<tr>
+<td>BBB</td>
+<td>Да, A+, Accredited с 24.03.2025</td>
+<td>FPP Plumbing, LLC</td>
+<td>5700 Tennyson Pkwy Ste 300, Plano 75024</td>
+<td>980-899-7997, доп. 469-998-8999</td>
+<td>fppplumbing.com</td>
+<td>Да</td>
+<td>"Mr. Denys Kavaler, Owner" (3 раза); "Collin and Denton Counties"; "same-day service", "fast"; "Business Started 9/13/2022" совпадает</td>
+</tr>
+<tr>
+<td>Thumbtack</td>
+<td>Да, Top Pro 2023 по 2025</td>
+<td>FPP Plumbing</td>
+<td>Plano, TX</td>
+<td>не показан</td>
+<td>не показан</td>
+<td>Нет</td>
+<td>"12 years" в бизнесе; "$179 service minimum"; "often within the hour"; адрес страницы в разделе handyman; в поиске видны категории Handyman и Furniture Assembly; рейтинг 4.9, отзывов на странице 324 (в выдаче поиска 243, в нашем файле 249 с текстом)</td>
+</tr>
+<tr>
+<td>Nextdoor</td>
+<td>Да</td>
+<td>FPP Plumbing</td>
+<td>Plano, TX (без улицы)</td>
+<td>980-899-7997</td>
+<td>fppplumbing.com</td>
+<td>Да</td>
+<td>Адрес страницы старый (crystal-cleaning-charlotte-nc), вы уже знаете</td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td>Да, 214 подписчиков</td>
+<td>FPP Plumbing</td>
+<td>5700 Tennyson Parkway, Suite 300, Plano 75024</td>
+<td>980-899-7997</td>
+<td>fppplumbing.com</td>
+<td>Да</td>
+<td>Зона: 8 городов, нет Celina, Little Elm, The Colony, Carrollton. Отзывы выключены</td>
+</tr>
+<tr>
+<td>Bing Maps</td>
+<td>Plano да, <strong>Frisco нет</strong></td>
+<td>FPP Plumbing</td>
+<td>5700 Tennyson Pkwy #300</td>
+<td>980-899-7997</td>
+<td>/plumber-plano-tx/</td>
+<td>Plano да</td>
+<td>Описание "Emergency Plumbing 24/7 in Frisco, Plano &amp; North Dallas"; услуги из Yelp, включая "Backflow Preventer Installation" и "Conventional Gas Water Heater Installation"; отзывы подтягиваются с Yelp</td>
+</tr>
+<tr>
+<td>Apple Maps</td>
+<td>Frisco да, <strong>Plano не найден</strong></td>
+<td>FPP Plumbing</td>
+<td>12800 Westridge Blvd, Ste 116, Frisco 75035</td>
+<td>не прочитался</td>
+<td>не прочитался</td>
+<td>Frisco да</td>
+<td>По "FPP Plumbing 5700 Tennyson" Apple показывает просто адрес здания, без компании</td>
+</tr>
+<tr>
+<td>Yahoo Local</td>
+<td>Да (копия Yelp)</td>
+<td>FPP Plumbing</td>
+<td>5700 Tennyson Pkwy, Ste 300</td>
+<td>980-899-7997</td>
+<td>fppplumbing.com</td>
+<td>Почти</td>
+<td>"$179 service minimum" из Yelp</td>
+</tr>
+<tr>
+<td>uscity.net</td>
+<td>Да</td>
+<td>FPP Plumbing</td>
+<td>5700 Tennyson Parkway, Suite 300, 75024</td>
+<td>980-899-7997</td>
+<td>fppplumbing.com</td>
+<td>Да</td>
+<td></td>
+</tr>
+<tr>
+<td>serviceagent.ai</td>
+<td>Да</td>
+<td>FPP Plumbing</td>
+<td>5700 Tennyson Pkwy #300</td>
+<td>980-899-7997</td>
+<td>fppplumbing.com</td>
+<td>Почти</td>
+<td>"$125 - $4,500 typical plumbing job range", "80 Google reviews" (старые данные)</td>
+</tr>
+<tr>
+<td>BuildZoom</td>
+<td>Да (из разрешений)</td>
+<td>Fpp plumbing</td>
+<td>5700 Tennyson Pkwy, Suite 300</td>
+<td>возможно (980) 899-7990, проверить</td>
+<td>нет</td>
+<td>Проверить</td>
+<td>Последняя цифра телефона может быть ошибкой площадки или пересказа</td>
+</tr>
+<tr>
+<td>Porch</td>
+<td>Страница больше не открывается</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Ссылка в поиске ведет на общую страницу Porch</td>
+</tr>
+<tr>
+<td>Пресс-релизы EIN Presswire (май 2025, перепечатки на wane.com, ktla.com)</td>
+<td>Да</td>
+<td>FPP Plumbing</td>
+<td>5700 Tennyson Pkwy, Suite 300</td>
+<td>980-899-7997</td>
+<td></td>
+<td>Почти</td>
+<td>"within the hour", "1,800 emergency jobs", "300+ reviews", "BBB A rating", ссылка facebook.com/fpp.plumbing (другая страница)</td>
+</tr>
+<tr>
+<td>Angi, HomeAdvisor</td>
+<td>Не найдено</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>По поиску листинга нет</td>
+</tr>
+<tr>
+<td>Yellow Pages, Manta</td>
+<td>Не найдено</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>По поиску листинга нет</td>
+</tr>
+<tr>
+<td>Торговые палаты Frisco и Plano</td>
+<td>Не найдено</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>В каталогах членов FPP нет</td>
+</tr>
+</tbody>
+</table>
+<p>Отдельно: в выдаче поиска по старому сайту видна фраза "surrounding North Dallas communities" (она есть в краулинге старого сайта на многих страницах). Новая сборка пишет только "North Dallas suburbs", так что после переезда это уйдет.</p>
+<h3>2.3 Видимость на карте</h3>
+<p><strong>Разовая проверка (не сетка).</strong> Google Карты, поиск с центром карты в точке офиса (Frisco 33.18971, -96.76629; Plano 33.07092, -96.82008), масштаб 13, 1 октября 2026 около 14:00. Смотрел первые результаты, которые грузит список; платные отмечены отдельно.</p>
+<table>
+<thead>
+<tr>
+<th>Центр</th>
+<th>Запрос</th>
+<th>Реклама сверху</th>
+<th>Неплатные 1, 2, 3</th>
+<th>FPP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frisco</td>
+<td>plumber near me</td>
+<td>DNA Plumbing, Bacon Plumbing</td>
+<td>Earl's Plumbing, <strong>FPP Plumbing</strong>, Porpoise Plumbing</td>
+<td>2-й</td>
+</tr>
+<tr>
+<td>Frisco</td>
+<td>emergency plumber</td>
+<td>Bewley Plumbing, DNA Plumbing</td>
+<td><strong>FPP Plumbing</strong>, Porpoise Plumbing, Earl's Plumbing</td>
+<td>1-й</td>
+</tr>
+<tr>
+<td>Frisco</td>
+<td>slab leak repair</td>
+<td>Earl's Plumbing, Trident Plumbing</td>
+<td><strong>FPP Plumbing</strong>, Still Waters Plumbing, Porpoise Plumbing</td>
+<td>1-й</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>plumber near me</td>
+<td>DNA Plumbing, Bewley Plumbing</td>
+<td>Legacy Plumbing &amp; Electric, Plumber True Services, Plano Plumbing &amp; Leak Detection</td>
+<td>нет в тройке</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>emergency plumber</td>
+<td>DNA Plumbing, Bacon Plumbing</td>
+<td>Legacy Plumbing &amp; Electric, <strong>FPP Plumbing</strong>, Plumber True Services</td>
+<td>2-й</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>slab leak repair</td>
+<td>Mother Modern Plumbing, Trident Plumbing</td>
+<td>Accurate Leak and Line, Plano Plumbing &amp; Leak Detection, Legacy Plumbing &amp; Electric</td>
+<td>нет в тройке</td>
+</tr>
+</tbody>
+</table>
+<p>Почему это только ориентир: одна точка вместо 49; браузер был вошедшим в Google аккаунт FPP, а Google подмешивает личную историю, обычно в пользу своей же карточки; поиск по центру карты не то же самое, что поиск с телефона по GPS. Цифр сетки я не придумывал, их здесь нет.</p>
+<p><strong>Search Console</strong> (июль по сентябрь 2026, связка страница и запрос). Страницы городов получают показы на позициях 1 до 5 почти без кликов: это ссылка "Website" в карточке на карте, а звонки из карточки Search Console не считает.</p>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Страница</th>
+<th>Показы</th>
+<th>Средняя позиция</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber near me</td>
+<td>/ (главная)</td>
+<td>15,317</td>
+<td>39.2 (обычная выдача)</td>
+</tr>
+<tr>
+<td>plumber near me</td>
+<td>/plumber-plano-tx/</td>
+<td>1,957</td>
+<td>4.9 (скорее всего карта)</td>
+</tr>
+<tr>
+<td>plumber near me</td>
+<td>/plumber-frisco-tx/</td>
+<td>1,469</td>
+<td>10.9</td>
+</tr>
+<tr>
+<td>emergency plumber</td>
+<td>/</td>
+<td>3,102</td>
+<td>9.0</td>
+</tr>
+<tr>
+<td>emergency plumber</td>
+<td>/plumber-frisco-tx/</td>
+<td>1,887</td>
+<td>3.4 (карта)</td>
+</tr>
+<tr>
+<td>emergency plumber</td>
+<td>/plumber-plano-tx/</td>
+<td>1,774</td>
+<td>2.3 (карта)</td>
+</tr>
+<tr>
+<td>slab leak repair</td>
+<td>/plumber-plano-tx/</td>
+<td>430</td>
+<td>4.9 (карта)</td>
+</tr>
+<tr>
+<td>slab leak repair</td>
+<td>/plumber-frisco-tx/</td>
+<td>345</td>
+<td>6.0 (карта)</td>
+</tr>
+<tr>
+<td>slab leak repair</td>
+<td>/slab-leak-repair-frisco-plano-mckinney/</td>
+<td>62</td>
+<td>5.3</td>
+</tr>
+<tr>
+<td>plumber frisco</td>
+<td>/plumber-plano-tx/</td>
+<td>1,403</td>
+<td>1.0 (карточка Plano в тройке по Frisco)</td>
+</tr>
+</tbody>
+</table>
+<p>Всего по "plumber near me" в любых формулировках 30,143 показа и 6 кликов, по "emergency plumber" 30,772 показа и 0 кликов, по "slab leak" 13,602 показа и 0 кликов.</p>
+<p><strong>Semrush</strong> (база US): объем в месяц: plumber near me 450,000 (по всей стране), emergency plumber 201,000, slab leak repair 22,200, plumber plano tx 1,000, plumber frisco tx 880, emergency plumber plano 590, emergency plumber frisco 480, slab leak repair frisco 390, slab leak repair plano 390. Обычная выдача: "plumber frisco tx" FPP 11-й, и это главная, а не /plumber-frisco-tx/; "plumber plano tx" FPP 12-й, тоже главная; "emergency plumber frisco" FPP нет в первых 18; "slab leak repair plano" FPP нет в первых 20. В выдаче по этим запросам Semrush отмечает блок карты.</p>
+<p><strong>Что есть в Semrush.</strong> В подключенном Semrush нет отчетов по картам (Map Rank Tracker в этот доступ не входит). В аккаунте 6 проектов на fppplumbing.com с включенным Position Tracking, но настроенных кампаний в них нет (targets пусто). Создать кампанию значит поменять аккаунт, поэтому я не создавал, это вопрос к вам. Потрачено около 2,450 единиц API Semrush на чтение.</p>
+<h3>2.4 Разметка на новой сборке (коротко, полный аудит схемы делает другой агент)</h3>
+<p>site/src/lib/schema.ts: один Plumber с @id /#organization, оба адреса и телефона, location для каждого офиса со ссылкой hasMap на карточку Google, часы 24/7, areaServed 10 городов плюс Highland Park и University Park, foundingDate 2022, лицензия M-44816, sameAs с обеими карточками Google, Yelp, Thumbtack, BBB, Nextdoor и соцсетями. Нет координат (geo) у офисов. Координаты точек Google: Frisco 33.1897068, -96.7662872; Plano 33.0709162, -96.820077.</p>
+<h2>3. Список правок по приоритету</h2>
+<p>Кто делает: в карточках и справочниках правит только Денис (у меня нет доступа и правило "ничего не трогать"). Я готовлю готовые тексты и списки, чтобы оставалось вставить.</p>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Приоритет</th>
+<th>Что исправить</th>
+<th>Где</th>
+<th>Почему</th>
+<th>Кто</th>
+<th>Время</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Высокий</td>
+<td>Зона обслуживания: убрать Irving, Addison, Coppell, Richardson, Fairview, Farmers Branch, "Dallas 75205", "Dallas 75225"; добавить Celina, Carrollton. Оставить ровно 10 городов плюс Highland Park и University Park</td>
+<td>GBP Plano</td>
+<td>Правило городов CLAUDE.md; одинаковая зона везде</td>
+<td>Денис (Claude даст список)</td>
+<td>10 мин</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Высокий</td>
+<td>Задать ту же зону из 12 мест</td>
+<td>GBP Frisco</td>
+<td>Сейчас зона пустая</td>
+<td>Денис</td>
+<td>10 мин</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Высокий</td>
+<td>Новое описание: 4,500+, "more than 450 five-star reviews across Google, Yelp and Thumbtack", $49 в будни с зачетом в ремонт, без обещаний скорости, без "camera" для slab leak, строка лицензии</td>
+<td>GBP Plano и Frisco</td>
+<td>Устаревшие цифры, расхождение с сайтом</td>
+<td>Claude пишет, Денис вставляет</td>
+<td>30 мин</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Высокий</td>
+<td>Решить одну цену и один стаж для всех площадок: сейчас Yelp и Thumbtack "$179 service minimum", Thumbtack "12 years", сайт и Google $49 и 2022</td>
+<td>Yelp Plano, Thumbtack, затем Yahoo и др. подтянутся</td>
+<td>ИИ-помощники и Google сверяют источники</td>
+<td>Денис решает, Claude пишет тексты</td>
+<td>30 мин</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Высокий</td>
+<td>Убрать "often within the hour", "show up fast", "Same-day appointments", "400+"</td>
+<td>Thumbtack, Yelp Plano</td>
+<td>Правило прибытия, единая цифра отзывов</td>
+<td>Денис</td>
+<td>15 мин</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Высокий</td>
+<td>Почистить список услуг: убрать то, что не делаете (после ответа на вопрос 4 ниже), убрать "Frisco Plumber", "Plumber", ключи "plumber near me" в описаниях, исправить "Under-Slab Sewer Repair", длинное тире в "Tunnel Access", слова "fast", "rapid", "minutes"</td>
+<td>GBP обе</td>
+<td>Не обещаем того, чего нет; набивка ключами</td>
+<td>Claude готовит таблицу, Денис правит</td>
+<td>1 час</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Высокий</td>
+<td>Подтвердить владение Yelp Frisco (fpp-plumbing-frisco-2)</td>
+<td>Yelp</td>
+<td>Сейчас Unclaimed, любой может предложить правку</td>
+<td>Денис</td>
+<td>15 мин</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Средний</td>
+<td>Проверить телефон (980) 467-2933 на Yelp Plano: если это номер Yelp для отслеживания, оставить и знать; если ошибка, поставить 980-899-7997</td>
+<td>Yelp Plano</td>
+<td>NAP</td>
+<td>Денис</td>
+<td>5 мин</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Средний</td>
+<td>Bing Places: подтвердить Plano, добавить Frisco (можно импортом из Google), убрать "North Dallas", проверить услуги backflow и gas</td>
+<td>Bing Places</td>
+<td>Bing кормит ChatGPT и Copilot</td>
+<td>Денис</td>
+<td>30 мин</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Средний</td>
+<td>Apple Business Connect: проверить Frisco (телефон, сайт), добавить Plano</td>
+<td>Apple</td>
+<td>Карты на iPhone</td>
+<td>Денис</td>
+<td>30 мин</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Средний</td>
+<td>В ответах на отзывы писать без "North Dallas area" (только "North Dallas suburbs" или города) и без тире. Claude может готовить черновики ответов</td>
+<td>GBP обе</td>
+<td>Правила текста</td>
+<td>Денис или Claude по запросу</td>
+<td>постоянно</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Средний</td>
+<td>Отзывы Frisco: просить отзыв у каждого клиента офиса Frisco ссылкой на карточку Frisco, всех подряд, без отбора довольных</td>
+<td>GBP Frisco</td>
+<td>26 отзывов против сотен у соседей, перерыв 81 день</td>
+<td>Денис</td>
+<td>постоянно</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Средний</td>
+<td>Решить судьбу старых постов с "same-day", ценами, tankless, запрещенными городами, "10 minutes", "North Dallas" (список в 2.1). Удаление необратимо, решаете вы</td>
+<td>GBP обе</td>
+<td>Старые посты видны в карточке</td>
+<td>Денис</td>
+<td>1 час</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Средний</td>
+<td>Новые посты: всегда кнопка со ссылкой на нужную страницу услуги или города, не на главную</td>
+<td>GBP обе</td>
+<td>Посты без ссылки не ведут на сайт</td>
+<td>Claude готовит, Денис публикует</td>
+<td>постоянно</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Средний</td>
+<td>BBB: описание без "same-day" и "fast", без "Denton Counties"; решить "Owner" против "Managing Partner" (вопрос 5)</td>
+<td>BBB</td>
+<td>Единая подача</td>
+<td>Денис</td>
+<td>20 мин</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Средний</td>
+<td>Запустить настоящую сетку видимости до переезда (точка отсчета) и через 2 и 4 недели после (план в разделе 5)</td>
+<td>Внешний сервис</td>
+<td>Без сетки не видно, где карта теряет районы</td>
+<td>Денис одобряет, Claude запускает</td>
+<td>1 час</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Средний</td>
+<td>Дополнительные категории: посмотреть в GBP список и добавить только то, что правда ваше (например категория про поиск утечек или водонагреватели, если такая есть в списке)</td>
+<td>GBP обе</td>
+<td>Категория самый сильный сигнал карты</td>
+<td>Денис, Claude поможет выбрать</td>
+<td>15 мин</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Низкий</td>
+<td>Добавить geo (широта, долгота) в location каждого офиса</td>
+<td>site/src/lib/schema.ts</td>
+<td>Точнее для машин</td>
+<td>Claude</td>
+<td>10 мин</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Низкий</td>
+<td>Facebook: зона на все 10 городов плюс Park Cities</td>
+<td>Facebook</td>
+<td>Единая зона</td>
+<td>Денис</td>
+<td>10 мин</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Низкий</td>
+<td>Thumbtack: убрать категории Handyman и Furniture Assembly, если не нужны; после этого может поменяться адрес страницы, тогда Claude обновит ссылку на сайте</td>
+<td>Thumbtack</td>
+<td>Сущность "сантехник", не "мастер на час"</td>
+<td>Денис</td>
+<td>15 мин</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Низкий</td>
+<td>Язык карточки Plano "ru" на "en", если Google дает поменять</td>
+<td>GBP Plano</td>
+<td>Карточка англоязычная</td>
+<td>Денис</td>
+<td>5 мин</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Низкий</td>
+<td>Проверить телефон в BuildZoom; старые справочники (serviceagent.ai, Yahoo) поправятся сами после Yelp</td>
+<td>BuildZoom и др.</td>
+<td>NAP</td>
+<td>Денис</td>
+<td>10 мин</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Низкий</td>
+<td>Местные заработанные ссылки: торговые палаты Frisco и Plano (если сочтете полезным, это платное членство), поставщики, реставраторы, с кем работаете</td>
+<td>Внешние</td>
+<td>Авторитет, ИИ-видимость</td>
+<td>Денис решает</td>
+<td>по ходу</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Не подходит по правилам проекта</h2>
+<table>
+<thead>
+<tr>
+<th>Что советует плагин или что напрашивается</th>
+<th>Какое правило нарушает</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Создавать страницы под каждый город и каждую услугу в городе, массово</td>
+<td>Запрет на doorway и тонкие страницы; модуль programmatic SEO запрещен Денисом</td>
+</tr>
+<tr>
+<td>Добавить в зону и тексты Irving, Richardson, Coppell и прочие соседние города, раз они уже в карточке</td>
+<td>Только 10 городов плюс Highland Park и University Park</td>
+</tr>
+<tr>
+<td>Писать в карточке "same-day", "fast response", "within the hour", чтобы забирать срочные звонки</td>
+<td>Правило прибытия: время не обещаем</td>
+</tr>
+<tr>
+<td>Заполнить в GBP "Products" с ценами и диапазонами (пункт 11 чеклиста плагина)</td>
+<td>Цена только $49 вызов в будни; других цифр не придумываем</td>
+</tr>
+<tr>
+<td>Добавить в карточку услуги tankless, газовые линии, hydro jetting, reroute ради охвата</td>
+<td>Эти работы FPP не делает или не подтвердил</td>
+</tr>
+<tr>
+<td>Добавлять "plumber near me" и город в название карточки или в каждую услугу</td>
+<td>Набивка ключами, запрещено Google и правилами сайта</td>
+</tr>
+<tr>
+<td>Ставить aggregateRating из своих отзывов в разметку</td>
+<td>Google игнорирует самоотзывы, плагин тоже против; отзывы на сайте только живые с ссылкой</td>
+</tr>
+<tr>
+<td>Покупать места в списках "лучших" и ссылки (главный фактор ИИ-видимости у плагина)</td>
+<td>Ссылки не покупаем, только заработанные</td>
+</tr>
+<tr>
+<td>PHCC как источник ссылки</td>
+<td>PHCC нигде не упоминаем</td>
+</tr>
+<tr>
+<td>Встроить iframe Google Maps на каждую страницу</td>
+<td>Лишний сторонний скрипт против правила скорости; адреса и ссылки на карточки уже в HTML</td>
+</tr>
+<tr>
+<td>Отбирать довольных клиентов перед просьбой об отзыве</td>
+<td>Запрещено Google и FTC; просим всех</td>
+</tr>
+<tr>
+<td>Слово "Owner" в подписи Дениса на сайте</td>
+<td>Решение 30 сентября 2026: на сайте только "Managing Partner and Licensed Plumber"</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Чего не удалось проверить и что для этого нужно</h2>
+<ul>
+<li><strong>Настоящая сетка видимости (geogrid).</strong> Нет инструмента. Предлагаемый план: сетка 7 на 7, 49 точек, радиус 8 км (5 миль), шаг около 2.7 км, телефон, английский; центры Frisco 33.18971, -96.76629 и Plano 33.07092, -96.82008 (офисы в 14 км друг от друга, сетки перекрываются, это нормально); 3 запроса: plumber near me, emergency plumber, slab leak repair; итого 6 сеток, 294 точки за прогон. Когда: один раз до переезда, через 2 и через 4 недели после, дальше раз в месяц. Результат: позиция в каждой точке и SoLV. Инструменты на выбор: Local Falcon (платит кредитами за точку, 294 точки за прогон); DataForSEO Maps API (по справочнику плагина около $0.10 за запрос на сетку 7 на 7, то есть около $0.60 за прогон, нужен аккаунт и ключ на вашу почту); Semrush Map Rank Tracker (платное дополнение Semrush Local). Цены проверить на сайте сервиса перед покупкой. Ничего не покупал и не создавал.</li>
+<li><strong>Статистика карточек</strong> (звонки, маршруты, просмотры): в Takeout пусто, доступ к API Google Business Profile еще не одобрен.</li>
+<li><strong>Скрипты плагина</strong>: не запускал скрипты с Playwright (не установлен) и с ключами DataForSEO и Google Maps API. DataForSEO дал бы живую сетку, полный аудит карточки по 25 полям, скорость отзывов конкурентов.</li>
+<li><strong>Apple Maps</strong>: страница не отдала текст, видно только название и адрес Frisco из адресной строки; телефон и сайт не прочитал.</li>
+<li><strong>Thumbtack</strong>: число отзывов разное в разных местах (324 на странице, 243 в поиске, 249 с текстом в нашем файле); полный профиль виден только частично.</li>
+<li><strong>Angi, HomeAdvisor, Yellow Pages, Manta</strong>: листингов не нашел поиском, но их внутренний поиск не проверял.</li>
+<li><strong>Вкладка "About" в Google Картах</strong> не раскрылась в узком окне браузера; атрибуты брал из Takeout.</li>
+<li><strong>Разовая проверка карты</strong> сделана в браузере, вошедшем в Google аккаунт FPP, поэтому может быть завышена.</li>
+</ul>
+<h2>6. Вопросы к Денису</h2>
+<ol>
+<li>На Yelp и Thumbtack стоит "$179 service minimum", на сайте и в Google $49 вызов в будни с зачетом в ремонт. Какая цифра правильная для всех площадок?</li>
+<li>Thumbtack пишет "12 years in business", поиск по Yelp показывает "established 2014". Это ваш личный стаж в профессии? Компания основана в 2022. Как писать на площадках?</li>
+<li>Телефон (980) 467-2933 на Yelp Plano: это номер Yelp или ваш?</li>
+<li>Что из этого вы реально делаете: ремонт сантехники бассейна, sump pump, водонагреватели на газу с подключением газа, обратный осмос и фильтры, датчики протечки и автоматические краны, дренаж кондиционера, откачка воды после потопа? Что не делаете, уберем из карточек.</li>
+<li>На BBB вы записаны "Mr. Denys Kavaler, Owner". Менять на "Managing Partner" или оставить, если это юридическая роль?</li>
+<li>Кто подтвердит Yelp Frisco, Bing Places и Apple Business Connect? Это делается под вашей почтой, я не создаю аккаунты.</li>
+<li>Запускаем настоящую сетку видимости? Какой сервис и бюджет (раздел 5)?</li>
+<li>Можно создать кампанию отслеживания позиций в существующем проекте Semrush (по Frisco и Plano)? Это меняет настройки аккаунта.</li>
+<li>Старые посты в Google с ценами, "same-day", tankless и запрещенными городами: удаляем, правим или оставляем?</li>
+<li>На Thumbtack оставить категории Handyman и Furniture Assembly?</li>
+</ol></main></body></html>
