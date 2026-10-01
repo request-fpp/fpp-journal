@@ -1,0 +1,71 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+</style></head><body><main><p class="stamp">Опубликовано 01.10.2026 00:37</p><h1>Журнал проекта fppplumbing.com</h1>
+<p>Обновляется после каждой сессии и каждого законченного блока работы. Последнее обновление: 1 октября 2026.</p>
+<h2>Где что лежит</h2>
+<ul>
+<li>Проект на GitHub (закрытый): https://github.com/request-fpp/fppplumbing-site</li>
+<li>Правила проекта: CLAUDE.md в корне проекта</li>
+<li>Макеты: design/mockups/ (открываются через встроенный браузер)</li>
+<li>Фото: photos/originals (160 файлов), лист с номерами photos/contact-sheet.html, подписи photos/captions.csv</li>
+<li>Отзывы: reviews/all-reviews.csv (все площадки), reviews/ledger.md (что стоит на старом сайте), reviews/proposed-placement.md (предложение по страницам)</li>
+</ul>
+<h2>Сделано (30 сентября и 1 октября 2026)</h2>
+<ul>
+<li>Скан старого сайта: 63 страницы плюс служебная переадресация, итого 64 адреса. Сохранено в source/crawl.</li>
+<li>Проект на GitHub, аккаунт request-fpp, закрытый.</li>
+<li>Search Console: выгрузка за 3 и 16 месяцев, индексация, карта сайта, старые адреса. Через официальный API: связка страница плюс запрос (доступ gsc-reader, только чтение, оставляем для сравнения после переезда).</li>
+<li>Semrush подключен, данные по гайдам и блогу сохранены.</li>
+<li>Карта ключей seo/keyword-map.md и отчет о каннибализации seo/cannibalization-*.csv. Показы страниц Frisco и Plano на позициях 1 до 3 по запросам без своего города считаются картами, не конфликтом.</li>
+<li>Отзывы: Google из Takeout (131: Frisco 26, Plano 105), Thumbtack 249 с текстом, Yelp 27 из 29. Все в одном файле с прямыми ссылками на Google.</li>
+<li>Фото: 160 файлов пронумерованы, Денис надиктовал все номера, город по месту съемки (координаты нигде не сохраняются).</li>
+<li>Дизайн: варианты A, B, C, B2, D, E, F, G показаны. Выбран F «Under the house» за основу. Собраны F, F2 (разрез из реальных фото), F3 (светлый).</li>
+</ul>
+<h2>Принятые решения</h2>
+<ul>
+<li>Все 64 адреса остаются один к одному, ничего не объединяем на запуске.</li>
+<li>Страницы с позициями переносим с точечными правками: убрать tankless, запрещенные города, услуги, которых не делаем. Отрицания вроде «мы не делаем reroute» остаются.</li>
+<li>«North Dallas» только как «North Dallas suburbs». Highland Park и University Park можно называть как зону обслуживания, без страниц.</li>
+<li>Водонагреватели: /water-heaters/ ремонт и замена; /water-heater-repair-frisco-mckinney/ расширительный бак и T&amp;P, McKinney второстепенно.</li>
+<li>Hose bib: без слов «faucet repair» в title и H1; «faucet repair» принадлежит странице смесителей.</li>
+<li>Подпись Дениса: «Denys Kavaler, Managing Partner and Licensed Plumber». Слова owner и owned не используем. PHCC нигде не упоминаем.</li>
+<li>Фраза про отзывы: «more than 450 five-star reviews across Google, Yelp and Thumbtack». «450+» только в ряду крупных цифр.</li>
+<li>Nextdoor только ссылкой в футере и в схеме, «Recommended on Nextdoor». Yelp: профиль fpp-plumbing-plano-2.</li>
+<li>Логотип не перерисовываем никогда: только оригинал и полностью белая версия тех же контуров. Все цвета сайта из логотипа, медь в схемах медного цвета.</li>
+<li>Город дежурного плумбера не показываем: «A licensed plumber is on duty 24/7».</li>
+<li>Соцсети и площадки иконками с живыми ссылками в футере и в блоке Дениса.</li>
+<li>Тексты «что сделать прямо сейчас» для четырех кнопок утверждены (source/approved-text-edits.md).</li>
+<li>Slab leak всегда пайка (brazing), никогда ProPress. Слайдер «до и после» на slab leak пока выключен.</li>
+<li>Умягчители Aquasana и коммерческие вызовы бывают редко: показываем на фото, отдельных страниц нет.</li>
+<li>Отзыв на Prosper: настоящее имя Savannah Park вместо «John Doe»; DMarcus Jones с настоящим текстом из Google.</li>
+</ul>
+<h2>Открытые вопросы к Денису</h2>
+<ol>
+<li>Утвердить предложение отзывов по страницам (reviews/proposed-placement.md).</li>
+<li>Leak detection: второй отзыв. Liane W. с Yelp подходит по смыслу, но в тексте сумма $700. Брать или оставить один?</li>
+<li>Yelp: 2 отзыва, которых нет в PDF.</li>
+<li>Фото, которые не продиктованы или не узнаны: 13, 14, 21, 104, 131, 132, 149, 160.</li>
+<li>Фото 8: город (место съемки не записано).</li>
+<li>Выбор дизайна: F, F2 или F3 (после того как увидит исправленные фото в макетах).</li>
+<li>Ответ про мастер-лицензию и RMP (как описывать на сайте).</li>
+<li>Адрес страницы Nextdoor со старым хвостом «crystal-cleaning-charlotte-nc»: поменять, если Nextdoor позволяет.</li>
+<li>Профиль Yelp без «-2» (fpp-plumbing-plano): проверить, не дубль ли.</li>
+<li>Описание профиля Thumbtack расходится с сайтом ($179, «within the hour», «12 years», «4,000 customers»): поправить.</li>
+</ol>
+<h2>Журнал</h2>
+<ul>
+<li>Журнал публикуется открытой страницей на Cloudflare Pages (проект fpp-journal), отдельно от сайта. Gist отменен.</li>
+</ul>
+<h2>В работе сейчас</h2>
+<ul>
+<li>Английские подписи и alt к фото, раскладка фото по страницам (таблица на проверку).</li>
+<li>Исправление фото в макетах F, F2, F3 по диктовке (фото 5, 24, 44, 134 стояли не по смыслу).</li>
+</ul></main></body></html>
