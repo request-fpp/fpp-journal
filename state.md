@@ -43,3 +43,6 @@ CLAUDE.md, docs/journal.md, docs/state.md, docs/reviews-proposal.md, tools/publi
 
 ## Not started yet (next big steps after design approval)
 Astro project, page content build from the approved texts and the edits file, redirect map, schema, Cloudflare Pages preview with Access and noindex for the SITE (not the journal), forms to Telegram via a Worker, GA4 carry over.
+
+## Paused mid-task (October 1, 2026, about 17:00)
+The helper putting homepage v3 onto the site stopped on a usage limit before finishing. Its uncommitted changes are in the working tree: tools/export_home_text.py (new), site/src/design/home-v3.json (new), site/src/layouts/Home.astro, site/src/components/FAQ.astro, site/src/components/ReviewCards.astro, site/src/design/right-now.html, site/src/styles/site.css, tools/build_launch_content.py, site/src/content/pages/index.md, site/src/data/launch-changes.csv, design/build_mockups_f.py, site/check-report.md. Nothing was deployed; the preview still shows the previous homepage. Next: review these changes, finish Home.astro by the plan in docs/journal.md (homepage v3 order), build, run tools/check_site.py and perf, deploy, then commit by file name.
