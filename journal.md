@@ -270,6 +270,14 @@
 - План по страницам с порядком и цифрами: [pages-plan.html](pages-plan.html).
 - Плагины с GitHub: в проекте стоят два (superseo и claude-seo). Ими сделаны аудиты главной, живого сайта, карточек Google и разметки. Для работы над страницами берем навыки superseo: сравнение с конкурентами по темам, вопросы для диктовки, аудит до и после.
 
+## 2 октября, ночь: второе задание по главной
+- «Plumber near me» в тексте 6 раз (Денис поправил задание: шесть, не пять): H1, заголовок блока о компании, заголовок районов, ответ FAQ про районы (новая первая фраза из задания), ответ FAQ про приезд («same day plumber near me»), последний абзац.
+- Заголовок «Who Answers When You Search for a Plumber Near Me» из задания не возвращен: Денис забраковал эту формулировку тем же вечером. Фраза стоит в простом заголовке: «Local Plumber Near Me: A Licensed Plumbing Company With Two Offices». Ждет слова Дениса, если нужен именно старый вариант.
+- «Same-Day»: заголовок раздела услуг «Same-Day Plumbing Services in Frisco, Plano & McKinney»; в шаге 2 «If we have time open, we come the same day, you don't wait.»; в ответе про приезд отдельной фразой «Most weekday calls are handled the same day.»
+- Счетчики Google: Денис решил перенести позже. Что снято с живого сайта: Google tag GT-PJ4NVLSP (через него Google Analytics 4 G-CQV2CCXYQ8 и Google Ads AW-11391189401), метка Google Ads AW-9807662480, контейнер Tag Manager GTM-NVSNS9FK (пустой). Подмены номера для учета звонков на живом сайте нет, событий клика по телефону и отправки формы тоже нет. Заготовка для новой сборки лежит в проекте и не подключена.
+- Порядок после главной: форма в Telegram, страница Frisco, карточки Google, ссылки. Title не трогаем.
+- Тестовый сайт обновлен, 28 проверок из 28.
+
 ## Решения Дениса на следующую обычную сессию (получены 1 октября, еще не сделаны)
 - Отзыв Oksana Toporina снять и подобрать другой.
 - Отзыв Ann Crawford можно поставить на страницу expansion tank.
@@ -284,7 +292,7 @@
 ## Открытые вопросы к Денису
 - Pangram: войти в аккаунт во встроенном браузере (вкладка открыта на pangram.com) и написать «вошел», тогда я один раз прогоню текст главной v4. Отменить пробный Pangram до 8 октября (напоминание 6 октября).
 - Главная v4: посмотреть на тестовом сайте и сказать, что еще режет глаз.
-- С какой страницы начинаем усиление? Предложение: Emergency plumbing, потом Frisco, потом Drain cleaning. Для каждой нужны 2 или 3 минуты диктовки по моим вопросам.
+- Заголовок блока о компании: оставить «Local Plumber Near Me: A Licensed Plumbing Company With Two Offices» или вернуть «Who Answers When You Search for a Plumber Near Me», как в задании?
 - Какой был третий плагин с GitHub? В проекте стоят два: superseo и claude-seo.
 - Вернуть «Same-Day» и в H1? Сейчас: «Plumber Near Me in Frisco, Plano & McKinney: Licensed, Local, 24/7». На живой странице в H1 есть «Same-Day Plumbing». Вариант: «Plumber Near Me in Frisco, Plano & McKinney: Licensed, Local, Same-Day, 24/7».
 - Идет ли сейчас реклама в Google Ads? На живом сайте стоит ее метка, от ответа зависит, как переносить учет звонков.
