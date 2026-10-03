@@ -1,0 +1,1906 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 03.10.2026 02:30</p><h1>Общая таблица страниц городов (части 9.1 и 9.2)</h1>
+<p>Ночь на 3 октября 2026. Девять страниц городов без Frisco. На сайте ничего не менялось, это справка для брифов.</p>
+<h2>Откуда цифры</h2>
+<ul>
+<li>Search Console: запросы из <code>source/gsc/page-query-3m.csv</code> (1 июля по 28 сентября 2026) и <code>page-query-16m.csv</code> (31 мая 2025 по 28 сентября 2026); итог страницы вместе со скрытыми запросами из <code>source/gsc/performance-3m/Pages.csv</code> и <code>performance-16m/Pages.csv</code>. Позиция везде средняя.</li>
+<li>Celina: в Search Console два адреса, нынешний <code>/plumber-celina-tx/</code> и старый <code>/plumber-the-celina-tx/</code> (с него переадресация). Они сложены, общая позиция посчитана с весом по показам.</li>
+<li>Title, H1, слова: <code>source/crawl/pages/plumber-&lt;город&gt;-tx.json</code> (обход 30 сентября 2026). Фото и клипы: <code>docs/briefs/_shared/photos-by-city-after-recount.json</code>; "свободно" значит, что кадр не стоит ни на одной собранной странице.</li>
+<li>Отзывы: <code>reviews/all-reviews.csv</code> (407 строк, 396 с пятью звездами). Занятые: двенадцать главной, три резерва, <code>reviews/site-reviews.json</code> и <code>reviews/site-ledger.md</code> (прочитаны в 02:25: 40 авторов на 14 страницах).</li>
+<li>Приложения в <code>docs/briefs/_shared/</code>: <code>cities-gsc-top-queries-2026-10-03.md</code> (по 50 запросов за 3 и 16 месяцев), <code>cities-gsc-other-page-above-2026-10-03.csv</code> (все запросы, где выше другая страница), <code>cities-free-photos-2026-10-03.md</code> (номера свободных кадров), <code>cities-table-notes-2026-10-03.md</code> (какие места искал в отзывах и откуда названия, старые страницы, замечания), <code>cities-official-place-names-2026-10-03.json</code> (списки районов, индексы).</li>
+</ul>
+<h2>Сводная таблица</h2>
+<p>Итоги со скрытыми запросами. Фото и клипы: всего / свободно. Последний столбец: свободные пятизвездочные отзывы, где назван город.</p>
+<table>
+<thead>
+<tr>
+<th>Город</th>
+<th>Клики 3м</th>
+<th>Показы 3м</th>
+<th>Поз. 3м</th>
+<th>Клики 16м</th>
+<th>Показы 16м</th>
+<th>Поз. 16м</th>
+<th>Слов</th>
+<th>Фото</th>
+<th>Клипы</th>
+<th>Отзывы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plano</td>
+<td>98</td>
+<td>56 197</td>
+<td>6,8</td>
+<td>103</td>
+<td>108 268</td>
+<td>30,5</td>
+<td>2228</td>
+<td>22 / 18</td>
+<td>13 / 13</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Little Elm</td>
+<td>0</td>
+<td>8 852</td>
+<td>21,1</td>
+<td>4</td>
+<td>62 924</td>
+<td>35,1</td>
+<td>1637</td>
+<td>11 / 10</td>
+<td>1 / 0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>The Colony</td>
+<td>1</td>
+<td>8 682</td>
+<td>15,6</td>
+<td>3</td>
+<td>65 244</td>
+<td>31,2</td>
+<td>1804</td>
+<td>2 / 1</td>
+<td>0 / 0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Prosper</td>
+<td>0</td>
+<td>4 853</td>
+<td>11,7</td>
+<td>5</td>
+<td>15 394</td>
+<td>17,1</td>
+<td>1353</td>
+<td>4 / 3</td>
+<td>0 / 0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Lewisville</td>
+<td>2</td>
+<td>3 531</td>
+<td>25,7</td>
+<td>2</td>
+<td>63 896</td>
+<td>50,9</td>
+<td>1458</td>
+<td>0 / 0</td>
+<td>0 / 0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Celina</td>
+<td>0</td>
+<td>3 757</td>
+<td>16,7</td>
+<td>1</td>
+<td>13 793</td>
+<td>21,0</td>
+<td>1355</td>
+<td>2 / 2</td>
+<td>0 / 0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Carrollton</td>
+<td>2</td>
+<td>2 631</td>
+<td>21,3</td>
+<td>2</td>
+<td>45 336</td>
+<td>52,5</td>
+<td>1624</td>
+<td>10 / 8</td>
+<td>0 / 0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Allen</td>
+<td>1</td>
+<td>1 134</td>
+<td>22,7</td>
+<td>2</td>
+<td>39 801</td>
+<td>36,5</td>
+<td>1594</td>
+<td>12 / 11</td>
+<td>1 / 1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>McKinney</td>
+<td>0</td>
+<td>472</td>
+<td>27,2</td>
+<td>1</td>
+<td>20 833</td>
+<td>61,3</td>
+<td>1891</td>
+<td>14 / 12</td>
+<td>9 / 9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Все девять</td>
+<td>104</td>
+<td>90 109</td>
+<td></td>
+<td>123</td>
+<td>435 489</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Город</th>
+<th>Title живой страницы</th>
+<th>H1 живой страницы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plano</td>
+<td>Plumber Plano, TX | Fast Plumbing - Clogged Drains &amp; Emergencies</td>
+<td>Plumber Plano, TX - Same-Day Help for Clogs, Leaks &amp; More</td>
+</tr>
+<tr>
+<td>Little Elm</td>
+<td>Plumber Little Elm, TX | Water Line &amp; Water Heater Repair &amp; PRV</td>
+<td>Plumber in Little Elm, TX - Water Lines, Water Heaters &amp; Everyday Repairs</td>
+</tr>
+<tr>
+<td>The Colony</td>
+<td>Plumber The Colony, TX | Slab Leak &amp; Drain Cleaning Services</td>
+<td>Plumber in The Colony, TX - Slab Leaks, Drains &amp; Everyday Repairs</td>
+</tr>
+<tr>
+<td>Prosper</td>
+<td>Plumber Prosper, TX | Plumbing for New Homes, Clogs &amp; Emergencies</td>
+<td>Plumber in Prosper, TX - Close By, Licensed, and Actually Available</td>
+</tr>
+<tr>
+<td>Lewisville</td>
+<td>Plumber Lewisville, TX | Water Leaks, Slab Leaks &amp; Faucet Repair</td>
+<td>Plumber in Lewisville, TX - Finding Leaks Before They Find Your Floors</td>
+</tr>
+<tr>
+<td>Celina</td>
+<td>Plumber in Celina, TX | Water Heater Repair &amp; Replacement - FPP</td>
+<td>Plumber in Celina, TX - Water Heaters and the Problems New Houses Hide</td>
+</tr>
+<tr>
+<td>Carrollton</td>
+<td>Plumber Carrollton, TX | Leak Detection, Slab Leak &amp; PRV Repair</td>
+<td>Plumber in Carrollton, TX - We Find the Leak Before Anyone Digs</td>
+</tr>
+<tr>
+<td>Allen</td>
+<td>Plumber in Allen, TX | Hose Bibs, Water Heaters &amp; Drains - FPP</td>
+<td>Plumber in Allen, TX - Licensed Plumbing Repair for the Whole House</td>
+</tr>
+<tr>
+<td>McKinney</td>
+<td>Plumber in McKinney, TX | Slab Leak &amp; Garbage Disposal Repair</td>
+<td>Plumbing Repair in McKinney, TX - Slab Leaks, Water Heaters, Drains and Disposals</td>
+</tr>
+</tbody>
+</table>
+<p>Известные запросы. "Выше другая": запросы с городом, где другая страница сайта стоит выше страницы города (в скобках: у другой страницы десять и более показов). "Нет страницы": по запросу с городом показывается только другая страница.</p>
+<table>
+<thead>
+<tr>
+<th>Город</th>
+<th>Известные, 3м: кл. / пок. / запросов / поз.</th>
+<th>Известные, 16м</th>
+<th>С городом у страницы, 3м: запросов / пок.</th>
+<th>Выше другая, 3м</th>
+<th>Выше другая, 16м</th>
+<th>Нет страницы, 3м / 16м</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plano</td>
+<td>48 / 49 302 / 1320 / 7,1</td>
+<td>51 / 99 441 / 1569 / 32,0</td>
+<td>351 / 18 096</td>
+<td>54 (29)</td>
+<td>321</td>
+<td>70 / 271</td>
+</tr>
+<tr>
+<td>Little Elm</td>
+<td>0 / 7 738 / 136 / 21,7</td>
+<td>1 / 60 930 / 205 / 35,3</td>
+<td>118 / 7 460</td>
+<td>14 (7)</td>
+<td>35</td>
+<td>3 / 3</td>
+</tr>
+<tr>
+<td>The Colony</td>
+<td>1 / 7 903 / 196 / 15,7</td>
+<td>1 / 63 252 / 299 / 31,4</td>
+<td>113 / 5 605</td>
+<td>59 (21)</td>
+<td>111</td>
+<td>12 / 11</td>
+</tr>
+<tr>
+<td>Prosper</td>
+<td>0 / 3 799 / 87 / 11,3</td>
+<td>4 / 12 877 / 131 / 16,8</td>
+<td>46 / 2 959</td>
+<td>22 (10)</td>
+<td>26</td>
+<td>2 / 6</td>
+</tr>
+<tr>
+<td>Lewisville</td>
+<td>0 / 3 244 / 118 / 25,9</td>
+<td>0 / 61 559 / 258 / 51,1</td>
+<td>97 / 2 867</td>
+<td>10 (2)</td>
+<td>28</td>
+<td>4 / 9</td>
+</tr>
+<tr>
+<td>Celina</td>
+<td>0 / 1 705 / 86 / 19,1</td>
+<td>0 / 10 448 / 172 / 22,3</td>
+<td>38 / 768</td>
+<td>9 (3)</td>
+<td>16</td>
+<td>1 / 1</td>
+</tr>
+<tr>
+<td>Carrollton</td>
+<td>2 / 2 450 / 98 / 21,2</td>
+<td>2 / 43 821 / 189 / 52,8</td>
+<td>76 / 2 178</td>
+<td>15 (5)</td>
+<td>38</td>
+<td>9 / 11</td>
+</tr>
+<tr>
+<td>Allen</td>
+<td>1 / 553 / 67 / 22,1</td>
+<td>2 / 37 563 / 251 / 36,7</td>
+<td>51 / 457</td>
+<td>0 (0)</td>
+<td>13</td>
+<td>2 / 16</td>
+</tr>
+<tr>
+<td>McKinney</td>
+<td>0 / 319 / 40 / 30,8</td>
+<td>0 / 19 500 / 171 / 62,3</td>
+<td>23 / 108</td>
+<td>6 (3)</td>
+<td>61</td>
+<td>34 / 111</td>
+</tr>
+</tbody>
+</table>
+<h2>Проверка сумм вторым счетом</h2>
+<p>Итоги страниц из <code>Pages.csv</code> совпали с <code>source/gsc/page-query-coverage.csv</code> по всем адресам за оба периода. Суммы по известным запросам посчитаны дважды, скриптом на Python и запросом в SQLite: клики, показы, число запросов и позиция совпали по каждому адресу.</p>
+<h2>Что видно сразу</h2>
+<ul>
+<li>Клики почти все у Plano: 98 из 104 за 3 месяца. У Little Elm, Prosper, Celina и McKinney за 3 месяца ноль.</li>
+<li>Страница Plano показывается по общим запросам без города (plumber, plumber near me, emergency plumber) и по запросам с чужими городами, и стоит по ним выше страниц этих городов. Вероятная причина (мой вывод, не факт из файла): карточка Google в Plano ведет на <code>/plumber-plano-tx/</code> (<code>reviews/live-check-2026-10-03.md</code>), и показы карточки идут в счет этой страницы. Так же ведет себя <code>/plumber-frisco-tx/</code>.</li>
+<li>McKinney: по запросам с городом чаще показываются страницы услуг с McKinney в адресе (slab leak, water heater repair), чем страница города: 34 запроса без нее против 23 с ней за 3 месяца.</li>
+<li>За 3 месяца позиции у всех девяти лучше, чем в среднем за 16 месяцев.</li>
+<li>Пять городов не названы ни в одном отзыве архива: Little Elm, The Colony, Lewisville, Celina, Allen.</li>
+<li>У Lewisville нет ни одного фото, у Celina и The Colony по два, у Prosper четыре.</li>
+</ul>
+<h2>Части по городам</h2>
+<p>В каждой части: двадцать главных запросов за 3 месяца по показам (звездочка: в запросе назван другой город из десяти), известные запросы с кликами (в скобках клики; клики по скрытым запросам есть только в сводной таблице) и запросы с городом, где другая страница стоит выше (первые три по показам другой страницы). Отзывы по городам собраны в разделе "Раскладка отзывов", номера свободных кадров в <code>cities-free-photos-2026-10-03.md</code>.</p>
+<h3>Plano</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber plano tx</td>
+<td>2197</td>
+<td>1</td>
+<td>4,5</td>
+</tr>
+<tr>
+<td>plumber</td>
+<td>2026</td>
+<td>1</td>
+<td>2,9</td>
+</tr>
+<tr>
+<td>plumber near me</td>
+<td>1957</td>
+<td>2</td>
+<td>4,9</td>
+</tr>
+<tr>
+<td>sewer line replacement the colony tx*</td>
+<td>1816</td>
+<td>0</td>
+<td>5,2</td>
+</tr>
+<tr>
+<td>emergency plumber</td>
+<td>1774</td>
+<td>0</td>
+<td>2,3</td>
+</tr>
+<tr>
+<td>slab leak repair the colony tx*</td>
+<td>1709</td>
+<td>0</td>
+<td>6,1</td>
+</tr>
+<tr>
+<td>plumber frisco tx*</td>
+<td>1448</td>
+<td>1</td>
+<td>9,2</td>
+</tr>
+<tr>
+<td>slab leak repair frisco tx*</td>
+<td>1414</td>
+<td>0</td>
+<td>9,0</td>
+</tr>
+<tr>
+<td>plumber frisco*</td>
+<td>1403</td>
+<td>0</td>
+<td>1,0</td>
+</tr>
+<tr>
+<td>plumber plano</td>
+<td>793</td>
+<td>1</td>
+<td>13,6</td>
+</tr>
+<tr>
+<td>emergency plumber near me</td>
+<td>778</td>
+<td>0</td>
+<td>1,0</td>
+</tr>
+<tr>
+<td>drain cleaning</td>
+<td>761</td>
+<td>0</td>
+<td>1,5</td>
+</tr>
+<tr>
+<td>plano plumbing</td>
+<td>585</td>
+<td>0</td>
+<td>22,0</td>
+</tr>
+<tr>
+<td>sewer line replacement</td>
+<td>541</td>
+<td>0</td>
+<td>3,7</td>
+</tr>
+<tr>
+<td>water heater repair</td>
+<td>510</td>
+<td>0</td>
+<td>2,3</td>
+</tr>
+<tr>
+<td>water line repair</td>
+<td>501</td>
+<td>0</td>
+<td>1,2</td>
+</tr>
+<tr>
+<td>plano plumbing service</td>
+<td>500</td>
+<td>0</td>
+<td>18,6</td>
+</tr>
+<tr>
+<td>plano plumber</td>
+<td>498</td>
+<td>1</td>
+<td>12,6</td>
+</tr>
+<tr>
+<td>emergency plumber plano</td>
+<td>469</td>
+<td>0</td>
+<td>7,4</td>
+</tr>
+<tr>
+<td>slab leak repair</td>
+<td>430</td>
+<td>0</td>
+<td>4,9</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: fpp plumbing (21), plumbers near me (3), plumber near me (2), plumbers plano (2), plumber plano tx (1) и еще 19. 16 мес.: fpp plumbing (21), plumber plano tx (3), plumbers near me (3), plumber near me (2), plumbers plano (2) и еще 20.</p>
+<p>Выше стоят (запросов, показов): <code>/</code> (40, 3 010); <code>/emergency-plumbing-services/</code> (10, 311); <code>/garbage-disposal-repair-frisco-plano/</code> (1, 228).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос с городом</th>
+<th>Город: поз. / пок.</th>
+<th>Выше стоит</th>
+<th>Поз. / пок.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>emergency plumber plano</td>
+<td>7,4 / 469</td>
+<td><code>/</code></td>
+<td>6,8 / 700</td>
+</tr>
+<tr>
+<td>plumbing plano tx</td>
+<td>31,5 / 184</td>
+<td><code>/</code></td>
+<td>26,3 / 333</td>
+</tr>
+<tr>
+<td>plumbing plano</td>
+<td>39,5 / 353</td>
+<td><code>/</code></td>
+<td>12,7 / 312</td>
+</tr>
+</tbody>
+</table>
+<h3>Little Elm</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber little elm</td>
+<td>321</td>
+<td>0</td>
+<td>20,2</td>
+</tr>
+<tr>
+<td>emergency plumber little elm tx</td>
+<td>270</td>
+<td>0</td>
+<td>19,2</td>
+</tr>
+<tr>
+<td>plumber little elm tx</td>
+<td>259</td>
+<td>0</td>
+<td>21,1</td>
+</tr>
+<tr>
+<td>water heater repair little elm</td>
+<td>252</td>
+<td>0</td>
+<td>18,8</td>
+</tr>
+<tr>
+<td>little elm tx emergency plumbing</td>
+<td>235</td>
+<td>0</td>
+<td>16,7</td>
+</tr>
+<tr>
+<td>little elm plumber</td>
+<td>189</td>
+<td>0</td>
+<td>19,9</td>
+</tr>
+<tr>
+<td>emergency plumber little elm</td>
+<td>184</td>
+<td>0</td>
+<td>19,3</td>
+</tr>
+<tr>
+<td>plumbing little elm tx</td>
+<td>183</td>
+<td>0</td>
+<td>28,4</td>
+</tr>
+<tr>
+<td>little elm plumbers</td>
+<td>173</td>
+<td>0</td>
+<td>24,1</td>
+</tr>
+<tr>
+<td>expansion tanks repair little elm tx</td>
+<td>171</td>
+<td>0</td>
+<td>10,8</td>
+</tr>
+<tr>
+<td>little elm tx emergency plumber</td>
+<td>164</td>
+<td>0</td>
+<td>21,8</td>
+</tr>
+<tr>
+<td>little elm tx emergency plumbers</td>
+<td>132</td>
+<td>0</td>
+<td>20,4</td>
+</tr>
+<tr>
+<td>bathroom plumbing little elm</td>
+<td>129</td>
+<td>0</td>
+<td>25,6</td>
+</tr>
+<tr>
+<td>little elm tx well repair</td>
+<td>129</td>
+<td>0</td>
+<td>23,6</td>
+</tr>
+<tr>
+<td>little elm water line repair</td>
+<td>129</td>
+<td>0</td>
+<td>13,0</td>
+</tr>
+<tr>
+<td>little elm tx leak detection</td>
+<td>124</td>
+<td>0</td>
+<td>23,4</td>
+</tr>
+<tr>
+<td>little elm tx pluming service</td>
+<td>120</td>
+<td>0</td>
+<td>29,4</td>
+</tr>
+<tr>
+<td>little elm tx faucet repair</td>
+<td>119</td>
+<td>0</td>
+<td>13,9</td>
+</tr>
+<tr>
+<td>plumbers little elm tx</td>
+<td>119</td>
+<td>0</td>
+<td>24,6</td>
+</tr>
+<tr>
+<td>little elm slab leak repair</td>
+<td>115</td>
+<td>0</td>
+<td>11,0</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: нет. 16 мес.: emergency plumber little elm (1).</p>
+<p>Выше стоят (запросов, показов): <code>/garbage-disposal-repair-frisco-plano/</code> (2, 347); <code>/plumber-frisco-tx/</code> (10, 76); <code>/plumber-plano-tx/</code> (6, 41).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос с городом</th>
+<th>Город: поз. / пок.</th>
+<th>Выше стоит</th>
+<th>Поз. / пок.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>garbage disposal repair little elm tx</td>
+<td>25,0 / 1</td>
+<td><code>/garbage-disposal-repair-frisco-plano/</code></td>
+<td>20,4 / 184</td>
+</tr>
+<tr>
+<td>garbage disposal repair little elm</td>
+<td>16,0 / 1</td>
+<td><code>/garbage-disposal-repair-frisco-plano/</code></td>
+<td>13,7 / 163</td>
+</tr>
+<tr>
+<td>emergency plumber little elm</td>
+<td>19,3 / 184</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>12,1 / 18</td>
+</tr>
+</tbody>
+</table>
+<p>Фото: из 11 кадров придержано 8 (№ 16, 38, 39, 40, 41, 102, 126, 204): сняты за чертой города, почтовый адрес Little Elm, ждут слова Дениса; № 204 из них уже стоит на главной. Без оговорок свободны три фото в черте города (№ 69, 123, 124). Клип № 165 записан за Little Elm по слову Дениса и стоит на главной.</p>
+<h3>The Colony</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber the colony tx</td>
+<td>257</td>
+<td>0</td>
+<td>19,9</td>
+</tr>
+<tr>
+<td>plumber near me</td>
+<td>215</td>
+<td>0</td>
+<td>12,2</td>
+</tr>
+<tr>
+<td>plumber the colony</td>
+<td>214</td>
+<td>0</td>
+<td>19,0</td>
+</tr>
+<tr>
+<td>the colony plumber</td>
+<td>200</td>
+<td>0</td>
+<td>20,7</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>176</td>
+<td>0</td>
+<td>1,8</td>
+</tr>
+<tr>
+<td>emergency plumber the colony tx</td>
+<td>167</td>
+<td>0</td>
+<td>13,6</td>
+</tr>
+<tr>
+<td>plumbers the colony tx</td>
+<td>167</td>
+<td>0</td>
+<td>19,7</td>
+</tr>
+<tr>
+<td>plumber in the colony</td>
+<td>158</td>
+<td>0</td>
+<td>20,9</td>
+</tr>
+<tr>
+<td>slab leak repair the colony tx</td>
+<td>156</td>
+<td>0</td>
+<td>7,4</td>
+</tr>
+<tr>
+<td>the colony tx emergency plumber</td>
+<td>151</td>
+<td>0</td>
+<td>14,6</td>
+</tr>
+<tr>
+<td>emergency plumber the colony</td>
+<td>150</td>
+<td>0</td>
+<td>12,6</td>
+</tr>
+<tr>
+<td>plumbing company</td>
+<td>142</td>
+<td>0</td>
+<td>13,8</td>
+</tr>
+<tr>
+<td>the colony tx drain cleaning</td>
+<td>138</td>
+<td>0</td>
+<td>10,9</td>
+</tr>
+<tr>
+<td>faucet repair the colony tx</td>
+<td>131</td>
+<td>0</td>
+<td>14,7</td>
+</tr>
+<tr>
+<td>plumbers in the colony</td>
+<td>131</td>
+<td>0</td>
+<td>22,9</td>
+</tr>
+<tr>
+<td>plumber service</td>
+<td>118</td>
+<td>0</td>
+<td>12,0</td>
+</tr>
+<tr>
+<td>the colony sump pump repair</td>
+<td>115</td>
+<td>0</td>
+<td>23,7</td>
+</tr>
+<tr>
+<td>drain cleaning the colony tx</td>
+<td>114</td>
+<td>0</td>
+<td>10,4</td>
+</tr>
+<tr>
+<td>the colony plumber service</td>
+<td>114</td>
+<td>0</td>
+<td>19,8</td>
+</tr>
+<tr>
+<td>plumbers the colony</td>
+<td>112</td>
+<td>0</td>
+<td>19,4</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: plumbers in the colony tx (1). 16 мес.: plumbers in the colony tx (1).</p>
+<p>Выше стоят (запросов, показов): <code>/plumber-plano-tx/</code> (59, 4 867); <code>/plumber-frisco-tx/</code> (6, 324); <code>/</code> (8, 14).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос с городом</th>
+<th>Город: поз. / пок.</th>
+<th>Выше стоит</th>
+<th>Поз. / пок.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sewer line replacement the colony tx</td>
+<td>15,5 / 4</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>5,2 / 1816</td>
+</tr>
+<tr>
+<td>slab leak repair the colony tx</td>
+<td>7,4 / 156</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>6,1 / 1709</td>
+</tr>
+<tr>
+<td>plumber the colony tx</td>
+<td>19,9 / 257</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>4,8 / 360</td>
+</tr>
+</tbody>
+</table>
+<h3>Prosper</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prosper plumber</td>
+<td>499</td>
+<td>0</td>
+<td>9,0</td>
+</tr>
+<tr>
+<td>plumber prosper tx</td>
+<td>488</td>
+<td>0</td>
+<td>10,2</td>
+</tr>
+<tr>
+<td>plumber prosper</td>
+<td>452</td>
+<td>0</td>
+<td>8,3</td>
+</tr>
+<tr>
+<td>plumber near me</td>
+<td>297</td>
+<td>0</td>
+<td>9,3</td>
+</tr>
+<tr>
+<td>plumbing company prosper tx</td>
+<td>175</td>
+<td>0</td>
+<td>10,4</td>
+</tr>
+<tr>
+<td>plumbing services prosper tx</td>
+<td>123</td>
+<td>0</td>
+<td>11,1</td>
+</tr>
+<tr>
+<td>plumbers prosper tx</td>
+<td>108</td>
+<td>0</td>
+<td>9,7</td>
+</tr>
+<tr>
+<td>plumber in prosper</td>
+<td>95</td>
+<td>0</td>
+<td>9,1</td>
+</tr>
+<tr>
+<td>emergency plumber prosper</td>
+<td>87</td>
+<td>0</td>
+<td>8,3</td>
+</tr>
+<tr>
+<td>plumber</td>
+<td>86</td>
+<td>0</td>
+<td>13,4</td>
+</tr>
+<tr>
+<td>water heater repair prosper</td>
+<td>86</td>
+<td>0</td>
+<td>10,8</td>
+</tr>
+<tr>
+<td>water heater replacement prosper</td>
+<td>71</td>
+<td>0</td>
+<td>16,9</td>
+</tr>
+<tr>
+<td>the prosper plumber</td>
+<td>66</td>
+<td>0</td>
+<td>11,2</td>
+</tr>
+<tr>
+<td>toilet repair prosper</td>
+<td>65</td>
+<td>0</td>
+<td>13,5</td>
+</tr>
+<tr>
+<td>plumbing repair near me</td>
+<td>59</td>
+<td>0</td>
+<td>15,7</td>
+</tr>
+<tr>
+<td>emergency plumbing prosper</td>
+<td>56</td>
+<td>0</td>
+<td>14,8</td>
+</tr>
+<tr>
+<td>water heater replacement near me</td>
+<td>50</td>
+<td>0</td>
+<td>10,4</td>
+</tr>
+<tr>
+<td>water heater repair near me</td>
+<td>46</td>
+<td>0</td>
+<td>11,8</td>
+</tr>
+<tr>
+<td>toilet repair near me</td>
+<td>44</td>
+<td>0</td>
+<td>10,1</td>
+</tr>
+<tr>
+<td>plumbing near me</td>
+<td>42</td>
+<td>0</td>
+<td>20,0</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: нет. 16 мес.: plumber prosper (3), prosper plumber (1).</p>
+<p>Выше стоят (запросов, показов): <code>/plumber-frisco-tx/</code> (21, 258); <code>/plumber-plano-tx/</code> (5, 30).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос с городом</th>
+<th>Город: поз. / пок.</th>
+<th>Выше стоит</th>
+<th>Поз. / пок.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber prosper tx</td>
+<td>10,2 / 488</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>2,6 / 28</td>
+</tr>
+<tr>
+<td>emergency plumber prosper</td>
+<td>8,3 / 87</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>1,0 / 26</td>
+</tr>
+<tr>
+<td>sewer line repair prosper</td>
+<td>37,0 / 1</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>1,0 / 25</td>
+</tr>
+</tbody>
+</table>
+<h3>Lewisville</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>slab leak repair lewisville</td>
+<td>200</td>
+<td>0</td>
+<td>9,6</td>
+</tr>
+<tr>
+<td>plumber lewisville tx</td>
+<td>152</td>
+<td>0</td>
+<td>33,4</td>
+</tr>
+<tr>
+<td>slab leak repair lewisville tx</td>
+<td>152</td>
+<td>0</td>
+<td>9,5</td>
+</tr>
+<tr>
+<td>lewisville tx leak detection</td>
+<td>134</td>
+<td>0</td>
+<td>19,9</td>
+</tr>
+<tr>
+<td>plumber lewisville</td>
+<td>113</td>
+<td>0</td>
+<td>34,3</td>
+</tr>
+<tr>
+<td>lewisville tx sab leak repair</td>
+<td>106</td>
+<td>0</td>
+<td>11,8</td>
+</tr>
+<tr>
+<td>lewisville slab leak repair</td>
+<td>105</td>
+<td>0</td>
+<td>9,0</td>
+</tr>
+<tr>
+<td>lewisville tx slab leak repair</td>
+<td>98</td>
+<td>0</td>
+<td>12,9</td>
+</tr>
+<tr>
+<td>lewisville plumbing</td>
+<td>94</td>
+<td>0</td>
+<td>35,0</td>
+</tr>
+<tr>
+<td>plumbers lewisville tx</td>
+<td>94</td>
+<td>0</td>
+<td>38,4</td>
+</tr>
+<tr>
+<td>plumbers in lewisville tx</td>
+<td>92</td>
+<td>0</td>
+<td>42,2</td>
+</tr>
+<tr>
+<td>plumbing lewisville tx</td>
+<td>89</td>
+<td>0</td>
+<td>40,3</td>
+</tr>
+<tr>
+<td>lewisville plumber</td>
+<td>79</td>
+<td>0</td>
+<td>37,9</td>
+</tr>
+<tr>
+<td>plumber in lewisville tx</td>
+<td>78</td>
+<td>0</td>
+<td>36,5</td>
+</tr>
+<tr>
+<td>google find me a plumber</td>
+<td>66</td>
+<td>0</td>
+<td>35,0</td>
+</tr>
+<tr>
+<td>plumbers lewisville texas</td>
+<td>66</td>
+<td>0</td>
+<td>38,6</td>
+</tr>
+<tr>
+<td>lewisville plumber service</td>
+<td>65</td>
+<td>0</td>
+<td>35,9</td>
+</tr>
+<tr>
+<td>lewisville plumbing service</td>
+<td>63</td>
+<td>0</td>
+<td>33,0</td>
+</tr>
+<tr>
+<td>lewisville leak detection</td>
+<td>62</td>
+<td>0</td>
+<td>19,1</td>
+</tr>
+<tr>
+<td>plumbers in lewisville texas</td>
+<td>53</td>
+<td>0</td>
+<td>40,8</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: нет. 16 мес.: нет.</p>
+<p>Выше стоят (запросов, показов): <code>/plumber-plano-tx/</code> (10, 135).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос с городом</th>
+<th>Город: поз. / пок.</th>
+<th>Выше стоит</th>
+<th>Поз. / пок.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber lewisville tx</td>
+<td>33,4 / 152</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>16,9 / 76</td>
+</tr>
+<tr>
+<td>leak detection plumber lewisville</td>
+<td>17,3 / 26</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>1,4 / 40</td>
+</tr>
+</tbody>
+</table>
+<p>В архиве нет ни одного фото и ни одного клипа из Lewisville.</p>
+<h3>Celina</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber near me</td>
+<td>152</td>
+<td>0</td>
+<td>15,5</td>
+</tr>
+<tr>
+<td>plumber celina</td>
+<td>130</td>
+<td>0</td>
+<td>24,5</td>
+</tr>
+<tr>
+<td>plumbing near me</td>
+<td>85</td>
+<td>0</td>
+<td>17,2</td>
+</tr>
+<tr>
+<td>water heater replacement near me</td>
+<td>84</td>
+<td>0</td>
+<td>13,3</td>
+</tr>
+<tr>
+<td>water heater repair near me</td>
+<td>78</td>
+<td>0</td>
+<td>9,6</td>
+</tr>
+<tr>
+<td>celina plumber</td>
+<td>69</td>
+<td>0</td>
+<td>32,6</td>
+</tr>
+<tr>
+<td>water heater repair celina</td>
+<td>65</td>
+<td>0</td>
+<td>19,3</td>
+</tr>
+<tr>
+<td>water heater replacement celina</td>
+<td>62</td>
+<td>0</td>
+<td>19,6</td>
+</tr>
+<tr>
+<td>emergency plumber near me</td>
+<td>56</td>
+<td>0</td>
+<td>9,3</td>
+</tr>
+<tr>
+<td>emergency plumbing near me</td>
+<td>51</td>
+<td>0</td>
+<td>9,5</td>
+</tr>
+<tr>
+<td>plumbing repair</td>
+<td>50</td>
+<td>0</td>
+<td>14,3</td>
+</tr>
+<tr>
+<td>plumbing service celina</td>
+<td>47</td>
+<td>0</td>
+<td>19,6</td>
+</tr>
+<tr>
+<td>emergency plumbing</td>
+<td>45</td>
+<td>0</td>
+<td>10,8</td>
+</tr>
+<tr>
+<td>plumber</td>
+<td>45</td>
+<td>0</td>
+<td>10,4</td>
+</tr>
+<tr>
+<td>plumbing company celina tx</td>
+<td>35</td>
+<td>0</td>
+<td>29,5</td>
+</tr>
+<tr>
+<td>plumber celina tx</td>
+<td>34</td>
+<td>0</td>
+<td>24,2</td>
+</tr>
+<tr>
+<td>emergency plumber</td>
+<td>31</td>
+<td>0</td>
+<td>11,9</td>
+</tr>
+<tr>
+<td>plumbers celina tx</td>
+<td>29</td>
+<td>0</td>
+<td>25,5</td>
+</tr>
+<tr>
+<td>plumbing company</td>
+<td>29</td>
+<td>0</td>
+<td>18,8</td>
+</tr>
+<tr>
+<td>24 hour plumbers near me</td>
+<td>25</td>
+<td>0</td>
+<td>15,1</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: нет. 16 мес.: нет.</p>
+<p>Выше стоят (запросов, показов): <code>/plumber-frisco-tx/</code> (9, 58).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос с городом</th>
+<th>Город: поз. / пок.</th>
+<th>Выше стоит</th>
+<th>Поз. / пок.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber celina</td>
+<td>24,5 / 130</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>1,6 / 16</td>
+</tr>
+<tr>
+<td>plumber celina tx</td>
+<td>24,2 / 34</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>3,9 / 11</td>
+</tr>
+<tr>
+<td>water heater repair celina</td>
+<td>19,3 / 65</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>1,0 / 10</td>
+</tr>
+</tbody>
+</table>
+<h3>Carrollton</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>carrollton tx leak detection</td>
+<td>398</td>
+<td>0</td>
+<td>19,9</td>
+</tr>
+<tr>
+<td>carrollton leak detection</td>
+<td>366</td>
+<td>0</td>
+<td>25,0</td>
+</tr>
+<tr>
+<td>slab leak repair carrollton</td>
+<td>280</td>
+<td>0</td>
+<td>16,1</td>
+</tr>
+<tr>
+<td>slab leak repair carrollton tx</td>
+<td>231</td>
+<td>0</td>
+<td>12,9</td>
+</tr>
+<tr>
+<td>carrollton slab leak repair</td>
+<td>162</td>
+<td>0</td>
+<td>14,4</td>
+</tr>
+<tr>
+<td>slab leak plumber carrollton</td>
+<td>85</td>
+<td>0</td>
+<td>20,3</td>
+</tr>
+<tr>
+<td>slab leak detection carrollton</td>
+<td>74</td>
+<td>0</td>
+<td>22,3</td>
+</tr>
+<tr>
+<td>foundation leak detection carrollton</td>
+<td>70</td>
+<td>0</td>
+<td>30,5</td>
+</tr>
+<tr>
+<td>carrollton tx sab leak repair</td>
+<td>65</td>
+<td>0</td>
+<td>18,6</td>
+</tr>
+<tr>
+<td>leak repair carrollton</td>
+<td>57</td>
+<td>0</td>
+<td>23,0</td>
+</tr>
+<tr>
+<td>leak detection services carrollton</td>
+<td>53</td>
+<td>0</td>
+<td>25,2</td>
+</tr>
+<tr>
+<td>leak repair carrollton tx</td>
+<td>45</td>
+<td>0</td>
+<td>23,5</td>
+</tr>
+<tr>
+<td>google find me a plumber</td>
+<td>44</td>
+<td>0</td>
+<td>38,2</td>
+</tr>
+<tr>
+<td>alexa find me a plumber</td>
+<td>39</td>
+<td>0</td>
+<td>35,1</td>
+</tr>
+<tr>
+<td>slab leak repair near me</td>
+<td>38</td>
+<td>0</td>
+<td>9,9</td>
+</tr>
+<tr>
+<td>plumber carrollton</td>
+<td>36</td>
+<td>1</td>
+<td>25,2</td>
+</tr>
+<tr>
+<td>slab leak detection near me</td>
+<td>36</td>
+<td>0</td>
+<td>10,8</td>
+</tr>
+<tr>
+<td>carrollton tx pluming</td>
+<td>29</td>
+<td>0</td>
+<td>43,9</td>
+</tr>
+<tr>
+<td>water leak repair near me</td>
+<td>27</td>
+<td>0</td>
+<td>7,0</td>
+</tr>
+<tr>
+<td>water leak detection near me</td>
+<td>26</td>
+<td>0</td>
+<td>8,2</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: plumber carrollton (1), plumber carrollton tx (1). 16 мес.: plumber carrollton (1), plumber carrollton tx (1).</p>
+<p>Выше стоят (запросов, показов): <code>/plumber-plano-tx/</code> (15, 424); <code>/</code> (2, 10).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос с городом</th>
+<th>Город: поз. / пок.</th>
+<th>Выше стоит</th>
+<th>Поз. / пок.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber carrollton tx</td>
+<td>29,3 / 9</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>13,2 / 232</td>
+</tr>
+<tr>
+<td>emergency plumber carrollton</td>
+<td>18,3 / 6</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>1,3 / 98</td>
+</tr>
+<tr>
+<td>carrollton tx emergency plumbing</td>
+<td>21,6 / 17</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>1,6 / 42</td>
+</tr>
+</tbody>
+</table>
+<h3>Allen</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>allen tx faucet repair</td>
+<td>70</td>
+<td>0</td>
+<td>12,0</td>
+</tr>
+<tr>
+<td>faucet repair allen tx</td>
+<td>65</td>
+<td>0</td>
+<td>11,5</td>
+</tr>
+<tr>
+<td>expansion tanks repair allen tx</td>
+<td>46</td>
+<td>0</td>
+<td>13,9</td>
+</tr>
+<tr>
+<td>expansion tanks repair allen</td>
+<td>43</td>
+<td>0</td>
+<td>20,8</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>42</td>
+<td>0</td>
+<td>2,0</td>
+</tr>
+<tr>
+<td>plumbing company in allen</td>
+<td>34</td>
+<td>0</td>
+<td>40,5</td>
+</tr>
+<tr>
+<td>hose bibb repair allen</td>
+<td>33</td>
+<td>0</td>
+<td>5,7</td>
+</tr>
+<tr>
+<td>google find me a plumber</td>
+<td>18</td>
+<td>0</td>
+<td>63,4</td>
+</tr>
+<tr>
+<td>plumbing company allen tx</td>
+<td>16</td>
+<td>0</td>
+<td>43,4</td>
+</tr>
+<tr>
+<td>allen tx emergency plumbing</td>
+<td>13</td>
+<td>0</td>
+<td>22,9</td>
+</tr>
+<tr>
+<td>plumbing repairs allen tx</td>
+<td>11</td>
+<td>0</td>
+<td>38,9</td>
+</tr>
+<tr>
+<td>pro service plumbing</td>
+<td>11</td>
+<td>0</td>
+<td>35,0</td>
+</tr>
+<tr>
+<td>alexa find me a plumber</td>
+<td>9</td>
+<td>0</td>
+<td>48,7</td>
+</tr>
+<tr>
+<td>plumber allen tx</td>
+<td>9</td>
+<td>0</td>
+<td>49,7</td>
+</tr>
+<tr>
+<td>water heater repair allen tx</td>
+<td>9</td>
+<td>0</td>
+<td>9,6</td>
+</tr>
+<tr>
+<td>24 hour plumber allen tx</td>
+<td>8</td>
+<td>0</td>
+<td>30,9</td>
+</tr>
+<tr>
+<td>allen tx pluming service</td>
+<td>6</td>
+<td>0</td>
+<td>32,0</td>
+</tr>
+<tr>
+<td>plumbing allen tx</td>
+<td>6</td>
+<td>0</td>
+<td>37,8</td>
+</tr>
+<tr>
+<td>plumbing fixture services allen tx</td>
+<td>6</td>
+<td>0</td>
+<td>31,5</td>
+</tr>
+<tr>
+<td>allen tx emergency plumbers</td>
+<td>5</td>
+<td>0</td>
+<td>33,4</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: plumber allen (1). 16 мес.: plumber allen tx (1), plumber allen (1).</p>
+<p>За 3 месяца нет запроса с городом, где у другой страницы выше позиция и десять и более показов.</p>
+<h3>McKinney</h3>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Пок.</th>
+<th>Кл.</th>
+<th>Поз.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>garbage disposal repair near me</td>
+<td>46</td>
+<td>0</td>
+<td>5,7</td>
+</tr>
+<tr>
+<td>google find me a plumber</td>
+<td>45</td>
+<td>0</td>
+<td>79,6</td>
+</tr>
+<tr>
+<td>slab leak plumber near me</td>
+<td>45</td>
+<td>0</td>
+<td>7,7</td>
+</tr>
+<tr>
+<td>slab leak plumber mckinney</td>
+<td>26</td>
+<td>0</td>
+<td>14,8</td>
+</tr>
+<tr>
+<td>alexa find me a plumber</td>
+<td>22</td>
+<td>0</td>
+<td>77,8</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>20</td>
+<td>0</td>
+<td>1,9</td>
+</tr>
+<tr>
+<td>plumber mckinney</td>
+<td>14</td>
+<td>0</td>
+<td>49,1</td>
+</tr>
+<tr>
+<td>garbage disposal repair mckinney</td>
+<td>12</td>
+<td>0</td>
+<td>9,9</td>
+</tr>
+<tr>
+<td>garbage disposal installation near me</td>
+<td>10</td>
+<td>0</td>
+<td>13,2</td>
+</tr>
+<tr>
+<td>leak detection plumber mckinney</td>
+<td>9</td>
+<td>0</td>
+<td>21,7</td>
+</tr>
+<tr>
+<td>repiping mckinney</td>
+<td>7</td>
+<td>0</td>
+<td>33,3</td>
+</tr>
+<tr>
+<td>24 hour plumber mckinney texas</td>
+<td>6</td>
+<td>0</td>
+<td>45,3</td>
+</tr>
+<tr>
+<td>repiping near me</td>
+<td>6</td>
+<td>0</td>
+<td>19,7</td>
+</tr>
+<tr>
+<td>same day service plumbing mckinney</td>
+<td>6</td>
+<td>0</td>
+<td>15,5</td>
+</tr>
+<tr>
+<td>24/7 plumber mckinney</td>
+<td>5</td>
+<td>0</td>
+<td>29,2</td>
+</tr>
+<tr>
+<td>plumber in mckinney</td>
+<td>5</td>
+<td>0</td>
+<td>49,4</td>
+</tr>
+<tr>
+<td>repiping services near me</td>
+<td>4</td>
+<td>0</td>
+<td>24,2</td>
+</tr>
+<tr>
+<td>dpp plumbing</td>
+<td>3</td>
+<td>0</td>
+<td>65,0</td>
+</tr>
+<tr>
+<td>low water pressure plumber mckinney</td>
+<td>3</td>
+<td>0</td>
+<td>13,0</td>
+</tr>
+<tr>
+<td>plumber mckinney tx</td>
+<td>2</td>
+<td>0</td>
+<td>59,0</td>
+</tr>
+</tbody>
+</table>
+<p>Клики, 3 мес.: нет. 16 мес.: нет.</p>
+<p>Выше стоят (запросов, показов): <code>/plumber-frisco-tx/</code> (3, 115); <code>/plumber-plano-tx/</code> (2, 77); <code>/emergency-plumbing-services/</code> (1, 13).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос с городом</th>
+<th>Город: поз. / пок.</th>
+<th>Выше стоит</th>
+<th>Поз. / пок.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber mckinney tx</td>
+<td>59,0 / 2</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>17,9 / 98</td>
+</tr>
+<tr>
+<td>plumber mckinney tx</td>
+<td>59,0 / 2</td>
+<td><code>/plumber-plano-tx/</code></td>
+<td>17,3 / 75</td>
+</tr>
+<tr>
+<td>emergency plumber mckinney tx</td>
+<td>16,0 / 1</td>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>12,9 / 16</td>
+</tr>
+</tbody>
+</table>
+<h2>Раскладка отзывов (часть 9.2)</h2>
+<p>Правило: отзыв, где назван город, закреплен за страницей этого города, другим городам его не предлагать. В таблице все свободные пятизвездочные отзывы, в тексте которых назван один из десяти городов или место в нем. Копии отзывов Google на Thumbtack отдельно не считаются.</p>
+<table>
+<thead>
+<tr>
+<th>Город</th>
+<th>Автор</th>
+<th>Площадка, дата</th>
+<th>Что названо</th>
+<th>Заметка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frisco</td>
+<td>Yulia B</td>
+<td>Google, 2025-07-04</td>
+<td>"emergency plumber in Frisco"</td>
+<td>профиль Plano; назван Denys; "emergency fee" без жалобы</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>Southwest Industrial</td>
+<td>Google, 2026-08-22</td>
+<td>"Shops at Legacy", "Plano"</td>
+<td>три вызова, без имен</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>Nivas chowdary</td>
+<td>Google, 2026-07-01</td>
+<td>"Plano"</td>
+<td>профиль Frisco; AC drain line</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>Jose Walle</td>
+<td>Google, 2026-07-01</td>
+<td>"Plano"</td>
+<td>старая стр. Plano; Nick и Denys</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>Ксенія (на старом сайте Kseniia)</td>
+<td>Google, 2026-06-27</td>
+<td>"Plano"</td>
+<td>старая стр. PRV; PRV, 30 и 60 PSI</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>Deborah Allen</td>
+<td>Google, 2026-06-19</td>
+<td>"Plano"</td>
+<td>старая стр. Plano; Denys и Nick</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>Dawson And Kelly M.</td>
+<td>Thumbtack, 2022-12-20</td>
+<td>"our house in Plano"</td>
+<td>назван Denys; "within 20 mins"</td>
+</tr>
+<tr>
+<td>Prosper</td>
+<td>DMarcus Jones</td>
+<td>Google, 2026-06-22</td>
+<td>"our home in Prosper"</td>
+<td>профиль Frisco; старая стр. Prosper; Denys и Nick</td>
+</tr>
+<tr>
+<td>Carrollton</td>
+<td>Tyler Sommers</td>
+<td>Google, 2026-06-17</td>
+<td>"Carrollton, TX"</td>
+<td>старая стр. Carrollton; "within an hour"</td>
+</tr>
+<tr>
+<td>Carrollton</td>
+<td>Paula Thompson</td>
+<td>Google, 2026-01-08</td>
+<td>"Carrollton, Tx"</td>
+<td>старая стр. Carrollton; "20 minutes", "40 minutes"</td>
+</tr>
+<tr>
+<td>McKinney</td>
+<td>Ezzy Zhoo</td>
+<td>Google, 2025-03-12</td>
+<td>"city of mckinney"</td>
+<td>старая стр. McKinney; назван Denys; в тексте rerouting и gas line</td>
+</tr>
+<tr>
+<td>Frisco и Plano</td>
+<td>Julian Jaramillo</td>
+<td>Google, 2025-04-25</td>
+<td>"plumber in Frisco or Plano"</td>
+<td>два города сразу; назван Denys</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Little Elm, The Colony, Lewisville, Celina, Allen: таких отзывов нет.</li>
+<li>Город назван, но автор занят: Rushi Nani и tony phuong (стоят на <code>/plumber-frisco-tx/</code>); Kathryn Kim, отзыв от 2026-02-13 с "emergency plumber in Frisco" (ее другой отзыв стоит на <code>/water-lines/</code>).</li>
+<li>Jan Shangle (Google, 2026-07-07, "Frisco Lakes home"): закреплена за Frisco, но на сайт не идет по решению Дениса от 2 октября (жалоба на комиссию 2.99%).</li>
+<li>Elnard KA (Google, 2025-07-07) пишет "North Dallas": это не город из десяти.</li>
+<li>Искал названия городов, названия с живых страниц и официальные списки районов (Plano, Frisco, McKinney, Allen, Prosper, Celina, The Colony; у Little Elm списка нет; сайты Carrollton и Lewisville не открылись, 403). Кроме городов, в архиве названы только "Shops at Legacy" и "Frisco Lakes", улиц нет. Подробно: <code>cities-table-notes-2026-10-03.md</code>.</li>
+<li>Старые страницы: Amy Anderson (стояла на Little Elm) теперь на главной, LXD Properties (McKinney) на странице Frisco, Gregory Gaskin II (Prosper) в резерве главной, Quan Nguyen (Little Elm) в запасе для hose bib. Остальные авторы старых страниц городов свободны.</li>
+</ul>
+<h2>Вопросы Денису</h2>
+<ol>
+<li>Ксенія (Kseniia) называет Plano, но стояла на старой странице PRV. По правилу она уходит на Plano. Так и делаем?</li>
+<li>Julian Jaramillo называет сразу Frisco и Plano. За какой страницей его закрепить?</li>
+<li>Ezzy Zhoo (McKinney) пишет про rerouting и gas line, этого мы не предлагаем. Ставить его на McKinney?</li>
+<li>Восемь фото с почтовым адресом Little Elm сняты за чертой города. Подписывать их Little Elm?</li>
+<li>У Lewisville нет фото, у Celina и The Colony по два. Есть ли кадры с работ в этих городах вне архива?</li>
+<li>В пяти городах нет отзыва с названием города. Просить ли клиентов из Little Elm, The Colony, Lewisville, Celina и Allen называть город в отзыве?</li>
+</ol></main></body></html>
