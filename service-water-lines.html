@@ -1,0 +1,1101 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 03.10.2026 12:50</p><h1>Water line repair: живая страница и Search Console (3 октября 2026)</h1>
+<p>Справка перед переписыванием https://fppplumbing.com/water-lines/ . Текст страницы не пишется, в проекте ничего не менялось. Источники: краул от 30 сентября 2026 (<code>source/crawl/</code>), новый сайт <code>site/src/content/pages/water-lines.md</code> и <code>site/dist/water-lines/index.html</code> (только чтение), <code>site/src/data/launch-changes.csv</code>, <code>reviews/</code>, <code>photos/captions-en.csv</code>, <code>source/gsc/</code>, <code>seo/keyword-map.md</code>, <code>docs/pages-plan.md</code>. Одобренного текста этой страницы в <code>source/</code> нет. Расчёты: копии <code>docs/briefs/_shared/gsc_plano_lib.py</code> и <code>gsc_plano_live.py</code>, переделанные под страницу (<code>wl_lib.py</code>, <code>wl_gsc.py</code>, <code>wl_extra.py</code> в scratchpad сессии). Длинные таблицы: <code>docs/briefs/services/water-lines/</code> (список в конце).</p>
+<h2>Коротко</h2>
+<ul>
+<li>Кормят страницу два запроса: "water line repair" (16 мес: 20,416 показов, место 16.4; 3 мес: 2,253, место 14.1) и "main water line repair" (4,840, место 37.1). У страницы 8 кликов за 16 мес и 3 за 3 мес (данные Google), все со скрытых запросов; у запросов с известным текстом кликов 0.</li>
+<li>Показы падают: последние 3 месяца в среднем 2,766 в месяц, 13 месяцев до них 5,349 в месяц (мой расчёт из <code>Pages.csv</code>). Страница правилась в WordPress 30 августа 2026, прежний текст по файлам не виден.</li>
+<li>Нельзя потерять: title "Main Water Line Repair &amp; Replacement | Plano &amp; Frisco, TX | FPP" (46 запросов, 41,042 показа за 16 мес; 21 запрос, почти все с Frisco или Plano, не держит больше ни один заголовок); H1 "Main Water Line Repair, Found Before It Gets Dug Up" (держит "water line repair" и "main water line repair" целиком); H2 "Water Line Repair vs Full Replacement" ("water line repair", "water line replacement"). Остальные H2 и семь из девяти вопросов FAQ не держат почти ничего.</li>
+<li>Против правил, и на живой странице, и на новом сайте: цена "three to six thousand dollars"; reroute как вариант (три места, на старом сайте ещё и в схеме); 9 вопросов FAQ при норме 5 до 7, тегом H3 на живой странице; два вопроса FAQ дословно стоят на странице Little Elm.</li>
+<li>Не хватает по правилу 8: 7 смысловых H2 вместо 10 до 16; нет списка «симптом и ссылка»; нет своего раздела «если это происходит сейчас» (кусками в двух разделах, на новом сайте частично его заменяет боковой блок шаблона); 2,133 слова своего текста при ориентире около 2,500; из десяти городов в тексте связаны пять (нет Frisco, Allen, Little Elm, The Colony, Lewisville); ни одной внешней ссылки на официальный источник.</li>
+<li>Ссылка на главную с анкором "plumber near me" стоит по правилу 6. Смежные услуги: связаны leak detection, slab leak, PRV, emergency и гайд по крану; не связаны hose bib, пост про тротуар в Plano (19 кликов за 16 мес), гайды про утечку во дворе и про счёт за воду.</li>
+<li>Запросы услуги с городом в последние 3 месяца чаще берут страницы городов: "water line repair plano" у Plano 319 показов, место 14.1, у /water-lines/ 10; "frisco tx water line repair" у Frisco 195, место 16.2, у /water-lines/ 221, место 30.9.</li>
+<li>Чужие показы: Dallas и Rockwall 5,499 за 16 мес, gas line 989, trenchless 1,352 ("trenchless water line replacement frisco": 951 показ, место 4.2), а ещё faucet, slab leak, leak detection.</li>
+<li>На новом сайте при переносе пропал пробел: "plumber in Prosperor a plumber in Celina".</li>
+</ul>
+<h2>1. Живая страница</h2>
+<h3>1.1. Title, описание, H1, заголовки, объём</h3>
+<p>Ответ 200, в page-sitemap.xml, canonical на себя, index и follow. Опубликована 18 декабря 2024, правка 30 августа 2026 (схема страницы).</p>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>На живой странице</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title (63 знака)</td>
+<td>"Main Water Line Repair &amp; Replacement | Plano &amp; Frisco, TX | FPP"</td>
+</tr>
+<tr>
+<td>Meta description (156 знаков)</td>
+<td>"Soggy patch that never dries? One strip of grass greener than the rest? Pressure gone across the house? Licensed plumbers locate the line before anyone digs"</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>"Main Water Line Repair, Found Before It Gets Dug Up"</td>
+</tr>
+<tr>
+<td>OG title</td>
+<td>"Water line repair and replacement" (не как title)</td>
+</tr>
+</tbody>
+</table>
+<p>H2 по порядку (в скобках слов под заголовком, мой счёт): 1. "Signs of a Main Water Line Leak" (207); 2. "Water Line Responsibility: Yours or the City's" (106); 3. "Locating an Underground Water Line Leak" (148); 4. "Water Line Leak at the Foundation: Copper Set in Concrete" (444); 5. "Water Line Repair vs Full Replacement" (189); 6. "Tree Roots and the Water Line" (198); 7. "What Else It Might Be" (158); 8. "Water Line FAQ"; 9. "980-899-7997 469-998-8999" (не раздел: нижняя панель звонка шаблона старого сайта свёрстана тегом H2). H3: девять, все это вопросы FAQ.</p>
+<p>Объём: краул считает 2,135 слов. Свой текст от H1 до конца FAQ 2,133 слова: вступление 118, семь разделов 1,450, FAQ 505 (ответы 420). Отзывов и блока офиса нет.</p>
+<p>Слова в тексте (H1, H2 и FAQ включены, title нет): "water line" 16 раз; "water line repair" 3, все три в заголовках, в обычном тексте 0; "main water line" 3; "Frisco" 0 (только title и alt фото); "Plano", "McKinney", "Carrollton", "Prosper", "Celina" по 1 (анкоры); "Allen", "Little Elm", "The Colony", "Lewisville" 0; "plumber near me" 1; "pipe break", "burst", "broken" 0.</p>
+<h3>1.2. Девять вопросов FAQ</h3>
+<p>Все девять тегом H3 в раскрывающемся списке Elementor (<code>e-n-accordion-item-title-text</code>). Схема FAQPage совпадает со страницей слово в слово по всем девяти (проверено).</p>
+<ol>
+<li>"How do I know if my main water line is leaking?": дословно вопрос FAQ (H3) на /plumber-little-elm-tx/ и в тексте поста /blog/main-water-line-leak-under-sidewalk-plano-tx/ (на новом сайте там вопрос FAQ).</li>
+<li>"Am I responsible for the water line, or is the city?": дословно вопрос FAQ (H3) на /plumber-little-elm-tx/; ответ там написан другими словами, общая с этой страницей мысль и фраза "We verify which side the problem is on".</li>
+<li>"Do you have to dig up my whole yard?"</li>
+<li>"Should I repair the section or replace the line?"</li>
+<li>"Can tree roots damage a water line?"</li>
+<li>"Why did my water pressure drop everywhere at once?" (близкий вопрос на /plumber-little-elm-tx/ и /plumber-carrollton-tx/: "My whole house lost water pressure. Is that the PRV?")</li>
+<li>"The city sent me a notice about high water usage. What now?"</li>
+<li>"Why did my line fail right at the foundation?"</li>
+<li>"How long does a water line repair take?"</li>
+</ol>
+<p>Вопросы 3 до 9 больше нигде на сайте дословно не стоят. Новый сайт: те же девять, жирным текстом в <code>&lt;summary&gt;&lt;strong&gt;</code> (шаблон <code>FAQList.astro</code>), не заголовком.</p>
+<h3>1.3. Отзывы</h3>
+<p>На живой странице отзывов нет (блока нет, слово review только в меню и в знаке BBB). В <code>reviews/all-reviews.csv</code> (407 строк) ни у одного отзыва нет <code>on_old_site</code> = <code>/water-lines/</code>.</p>
+<p>На новом сайте за страницей два отзыва (<code>reviews/site-reviews.json</code>, <code>reviews/site-ledger.md</code>), оба стоят на собранной странице, оба совпадают с архивом знак в знак (текст и ссылка), город в подписи не стоит (в текстах города нет):
+- william mckinney, Google, профиль Plano, 13 сентября 2026, Level 6, про main water line ("they were there to repair the leak on the main water line at 9:10 AM on Sunday morning!"). Ссылка: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25nd01taHNhVFJ6UlRCM1FUSkxUR1pIVjB3eFRuYxAB!2m1!1s0x0:0xccc66184bdaf3a93
+- Kathryn Kim, Google, профиль Plano, 4 сентября 2025, Level 3, про main water line leak во дворе после рабочего дня ("If you need a reliable emergency plumber, FPP Plumbing is a great company."). Ссылка: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2taWlkwMXpNVlU0ZDFwb1ZHOVhSeTFhZUdWMlIxRRAB!2m1!1s0x0:0xccc66184bdaf3a93</p>
+<p>Время в отзывах ("9:10 AM", "the same night") это слова клиентов, их не трогают; сбор Kathryn Kim называет честным, это не жалоба. У неё в архиве есть второй отзыв (профиль Frisco, 13 февраля 2026, тоже main water line leak); по правилу «один автор на одной странице» он больше нигде стоять не может. Отзыв John Wilson (Google, Plano, 29 мая 2025, "a difficult repair on my service line in the front yard") на новом сайте не стоит нигде (на старом был на /plumber-lewisville-tx/).</p>
+<h3>1.4. Фото</h3>
+<table>
+<thead>
+<tr>
+<th>Файл</th>
+<th>Alt</th>
+<th>Что это</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/wp-content/uploads/2024/12/fpp-logo-1-1024x563.png</code> (2 раза)</td>
+<td>"FPP Plumbing Logo"</td>
+<td>логотип</td>
+</tr>
+<tr>
+<td><code>/wp-content/uploads/2025/05/prv-main-shutoff-valve-copper-water-line-repair-768x1024.jpg</code> (полный 960 на 1280)</td>
+<td>"Underground copper water line with PRV valve and main shut-off valve during emergency repair in Frisco"</td>
+<td>единственное фото в тексте, оно же OG картинка</td>
+</tr>
+<tr>
+<td><code>https://seal-dallas.bbb.org/seals/blue-seal-200-65-bbb-91348602.png</code></td>
+<td>"FPP Plumbing, LLC BBB Business Review"</td>
+<td>знак BBB</td>
+</tr>
+</tbody>
+</table>
+<p>Фото открыто (копия в <code>site/public/wp-content/uploads/2025/05/</code>): настоящий снимок с работы, яма с мульчей, медная линия с фитингами и два крана с зелёными ручками. PRV по снимку не опознать; город Frisco только из alt. В <code>photos/captions-en.csv</code> файла нет. Его копия 150 на 150 стоит на старой главной.</p>
+<p>В <code>photos/captions-en.csv</code> за /water-lines/ уже записаны снимки Дениса: 5, 24, 54 (клип), 55 (помечено главным фото страницы), 56, 65, 158 ("Pulling a new PEX water line under the sidewalk, McKinney"), 159 (клип), 168, 186 и 187 (клип).</p>
+<h3>1.5. Ссылки</h3>
+<p>Со страницы в тексте 11 внутренних, внешних нет:</p>
+<table>
+<thead>
+<tr>
+<th>Раздел</th>
+<th>Анкор</th>
+<th>Куда</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>вступление, последний абзац</td>
+<td>"plumber near me"</td>
+<td>/ (правило 6 выполнено)</td>
+</tr>
+<tr>
+<td>Signs of a Main Water Line Leak</td>
+<td>"shut-off guide"</td>
+<td>/plumbing-guide/how-to-shut-off-main-water-valve-texas/</td>
+</tr>
+<tr>
+<td>Locating an Underground Water Line Leak</td>
+<td>"leak detection"</td>
+<td>/water-leak-detection-frisco-plano/</td>
+</tr>
+<tr>
+<td>Water Line Leak at the Foundation</td>
+<td>"slab leak repair"</td>
+<td>/slab-leak-repair-frisco-plano-mckinney/</td>
+</tr>
+<tr>
+<td>Tree Roots and the Water Line (два абзаца)</td>
+<td>"plumber in McKinney", "plumber in Plano", "plumber in Carrollton", "plumber in Prosper", "plumber in Celina"</td>
+<td>пять страниц городов</td>
+</tr>
+<tr>
+<td>What Else It Might Be</td>
+<td>"PRV"; "emergency plumbing"</td>
+<td>/prv-replacement-frisco-plano/; /emergency-plumbing-services/</td>
+</tr>
+</tbody>
+</table>
+<p>Нет ссылок в тексте на Frisco, Allen, Little Elm, The Colony, Lewisville (все десять есть только в меню и подвале). Смежные страницы без ссылки: /hose-bib-repair-frisco-plano/, /blog/main-water-line-leak-under-sidewalk-plano-tx/, /plumbing-guide/water-leak-yard-tips-2026/, /plumbing-guide/why-is-my-water-bill-so-high-frisco-tx/, /plumbing-guide/water-pressure-dropping-tips-2026/, /plumbing-guide/automatic-water-shut-off-valve-install-north-texas/.</p>
+<p>На страницу: меню на всех 62 других живых страницах (64-й файл краула, /blog/author/admin/, это редирект 301), по 3 раза (на главной 6), анкор "Water line repair and replacement". В тексте 16 страниц: главная (плитка услуги); Plano ("main water line repair": "Our main water line repair page covers how we locate it and what each option costs.") и McKinney (тот же анкор, почти та же фраза); Little Elm ("water line replacement", "water line repair"); Carrollton, Celina, Lewisville, Prosper, The Colony, McKinney ("water line repair" в списке «симптом: услуга»); emergency ("Water lines broken"); slab leak и leak detection ("water line repair", случай с медью в бетоне); гайды slab leak Plano, PRV, automatic shut-off ("water line", "main water line"); пост про тротуар ("water line"). Frisco и Allen в тексте не ссылаются. На новом сайте те же, плюс Frisco версии 4 ("Water line repair is the page for that leak.") и главная v4 ("water line repair").</p>
+<h3>1.6. Что идёт против CLAUDE.md, дословно</h3>
+<p>Reroute как вариант (правило: «never mention reroute as an option»):
+- "That section came out and got replaced on a different route." (Tree Roots). Новый сайт: стоит, проверка правок это предложение не ловит.
+- "Rerouting costs more once and ends it." (Tree Roots). Новый сайт: стоит (<code>launch-changes.csv</code> строка 619, "flag not changed", «reroute mention (not above the slab)»).
+- FAQ: "When a tree is the cause, rerouting usually makes more sense than putting the same pipe back beside the same tree." Новый сайт: стоит (строка 620, так же), и раз FAQ повторяется в схеме слово в слово, эта фраза стоит и в схеме FAQPage собранной страницы.
+- Схема старой страницы, Service: "Water service line leak location, repair, replacement and rerouting". Новый сайт: нет (Service строится в <code>site/src/lib/schema.ts</code> без serviceType).</p>
+<p>Протяжка без траншеи: "Where the route allows it, a new line can be pulled without trenching the entire run, which keeps the yard mostly intact." и в FAQ "where the route allows it a new line can be pulled without trenching the full run." В списке «не делаем» стоит «pulling new lines through existing sleeves», здесь протяжка во дворе, не через гильзу, и есть подпись Дениса к фото 158 "Pulling a new PEX water line under the sidewalk, McKinney". Прямым нарушением по файлам не выходит. Новый сайт: стоит.</p>
+<p>Цены (кроме $49 никаких цен и вилок): "Work of that kind runs roughly three to six thousand dollars, and the spread depends on how deep the line sits, how far the tunnel has to run, and what is sitting on top of it." Новый сайт: стоит (проверка правок ищет знак $, сумму прописью не видит). Не наша цена, но сумма: "Two companies quoting the same leak can be thousands apart purely because one of them located it and the other one is pricing in the risk of not knowing." и "The bill climbs first, usually twenty or thirty dollars". Новый сайт: стоят. Слово "estimate" (раздел про замену и ответ FAQ про двор: "you see that in the estimate") бесплатную оценку не обещает; по правилам цена называется фиксированная, до начала работ.</p>
+<p>Гарантия: сроков нет ("the next call comes anywhere from six months to two years later" про новую течь, не гарантия).</p>
+<p>Время приезда: обещаний нет. Цифры времени не про приезд: "A gauge reading tells us which one in a few minutes." и "Most spot repairs finish in a day." Про сбор: "you hear the after hours fee before the truck moves" соответствует правилу о цене.</p>
+<p>Другие города: в тексте нет. В общем узле Organization старого сайта: "surrounding North Dallas communities" и "Texas Master Plumber License M-44816"; новый сайт строит свою схему.</p>
+<p>Границы (правило 9):
+- "Locating an Underground Water Line Leak" описывает метод поиска, а метод принадлежит /water-leak-detection-frisco-plano/; раздел короткий (148 слов), страница сама отсылает туда ссылкой.
+- "Water Line Leak at the Foundation" (444 слова): линия, залитая в фундамент, тема этой страницы, но дальше туннель "roughly five to six feet under the foundation", пайка и новая линия под фундаментом, а ремонт под фундаментом принадлежит /slab-leak-repair-frisco-plano-mckinney/. Страница называет это ("turned into what is effectively a slab leak repair") и ставит ссылку. Похожий случай стоит первым в "From the Job" на главной ("Water coming out of the foundation", клип 165, Little Elm, 27 августа 2026), диктовка <code>source/dictation/2026-10-02-slab-leak-water-from-foundation.md</code> отложена для страницы slab leak. Факты расходятся: здесь "we found the copper below the slab in good condition", на главной "The pipe past it was in bad shape too". Один это случай или два, по файлам не видно.
+- Вопрос про давление и абзац про PRV касаются /prv-replacement-frisco-plano/: одна фраза со ссылкой, это по правилу.</p>
+<p>Телефоны в тексте: нет (H2 с номерами это панель шаблона, на новом сайте её нет). Owner: нет, в историях "the homeowner". FAQ тегом H3: да, все девять (новый сайт исправил шаблоном). Тире: нет ни на живой странице, ни в файле нового сайта.</p>
+<p>Лозунги и пустые слова: H1 "..., Found Before It Gets Dug Up" (правило 4: H1 с ключами, не броский); описание из трёх риторических вопросов подряд (голосовой файл запрещает риторические вопросы в начале); "that link is the front door"; "knowing it in advance is worth more than any tool in your garage" (целиком та же фраза на /plumber-lewisville-tx/, на /plumber-plano-tx/ её конец "is worth more than any tool in your garage"); "This one saves people real money". Слов из запретного списка <code>voice/denys-voice.md</code> нет.</p>
+<p>Повторы с другими страницами (7 слов подряд): /plumber-mckinney-tx/ 18 отрезков (в том числе "yard had grown into the service line and damaged the copper outright"), /plumber-little-elm-tx/ 15 (вопросы и ответы FAQ), "a plumber in Prosper or a plumber in Celina" ещё на трёх страницах услуг, отдельные фразы на Plano, Carrollton, slab leak, leak detection.</p>
+<p>Ошибка переноса на новый сайт: в <code>site/src/content/pages/water-lines.md</code> "<a href="/plumber-prosper-tx/">plumber in Prosper</a>or a [plumber in Celina]"; на собранной странице читается "plumber in Prosperor a plumber in Celina". На живой странице пробел есть.</p>
+<h3>1.7. Полевая суть, которую стоит сохранить</h3>
+<p>Стоит на живой странице; в <code>source/dictation/</code> этих цифр и случаев нет.</p>
+<ul>
+<li>"with every tap in the house closed, a leak indicator that keeps moving means water is leaving the system somewhere."</li>
+<li>"it drops everywhere at once, not at one fixture. That is what separates a line problem from a cartridge or an aerator."</li>
+<li>"Everything from the meter to your house is yours. Everything from the meter out to the street is the city’s"</li>
+<li>"isolate the yard from the house so we know the water is going into the ground and not into a wall, then trace the run with pressure readings and acoustic equipment"</li>
+<li>"Done properly it passes through a sleeve, so the copper never touches concrete and has room to move. Done in a hurry, the pipe is simply set into the pour. Concrete is alkaline and it works on copper slowly."</li>
+<li>Цифры случая: "a meter reading a steady 0.2 gallons per minute with everything in the house shut off"; "fifty PSI of air and walked it with an acoustic locator"; "about three feet from the secondary shut-off valve sitting in its box in the ground"; "a three quarter inch branch and a half inch branch, and both ran directly into the concrete with no sleeve"; "ran the replacement line underneath the foundation instead of through it."</li>
+<li>Замена вместо ремонта: "old galvanized, aging copper that is failing from age rather than from an event, or a line that has already been repaired once and is now leaking somewhere else."</li>
+<li>McKinney: "a large tree in the front yard had grown into the service line and damaged the copper outright" (без слов о reroute).</li>
+<li>"If pressure is the only symptom and nothing anywhere is wet, check the PRV before assuming the worst" и "if the soft ground sits right next to a sprinkler head, start with the irrigation."</li>
+</ul>
+<p>Материал Дениса по теме уже лежит: <code>source/dictation/2026-10-02-frisco-reserve-for-service-pages.md</code> (раздел "For the water lines page": коробка клапанов в грязи, коррозия, pinholes) и <code>2026-10-02-frisco-additions.md</code> (течи у PRV и secondary shut-off valve; Plano: тройник на уличный кран, 186 и 187).</p>
+<h3>1.8. Новый сайт против живой страницы</h3>
+<ul>
+<li>Title, описание, H1, весь текст и девять вопросов FAQ перенесены без изменений. Точечных правок, которые что-то поменяли, нет: в <code>launch-changes.csv</code> две строки, обе "flag not changed" (reroute); в <code>tools/build_launch_content.py</code> правил с путём /water-lines/ нет.</li>
+<li>Шаблон добавил: FAQ жирным текстом, два отзыва, боковой блок "What is happening right now?" (ссылки на emergency и гайд по крану, кнопки звонка обоих офисов), noindex. Схема: без serviceType с rerouting, areaServed десять городов и Park Cities.</li>
+<li>Ошибка переноса: пробел после ссылки "plumber in Prosper".</li>
+<li>Одобренного текста в <code>source/</code> нет. <code>docs/pages-plan.md</code>: группа 3, номер 4, "Water lines | 8,299 | 26.9 | 3 | Старый текст". Карта ключей (<code>seo/keyword-map.md</code>, второстепенные ключи в <code>seo/keyword-map.csv</code>): "carry as is", главный ключ "water line repair", второстепенные "main water line repair; water line repair frisco; water line repair plano", не трогать "slab leak repair; leak detection; gas line repair".</li>
+</ul>
+<h2>2. Search Console</h2>
+<h3>2.1. Итоги</h3>
+<table>
+<thead>
+<tr>
+<th>Период</th>
+<th>Запросов с известным текстом</th>
+<th>Клики</th>
+<th>Показы</th>
+<th>Среднее место (взвешено по показам)</th>
+<th>Google, вся страница: клики</th>
+<th>показы</th>
+<th>место</th>
+<th>Доля показов с известным запросом</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 месяца (1 июля до 28 сентября 2026)</td>
+<td>138</td>
+<td>0</td>
+<td>7,349</td>
+<td>27.6</td>
+<td>3</td>
+<td>8,299</td>
+<td>26.9</td>
+<td>89%</td>
+</tr>
+<tr>
+<td>16 месяцев (31 мая 2025 до 28 сентября 2026)</td>
+<td>555</td>
+<td>0</td>
+<td>74,128</td>
+<td>35.4</td>
+<td>8</td>
+<td>77,831</td>
+<td>34.9</td>
+<td>95%</td>
+</tr>
+</tbody>
+</table>
+<p>Вторая проверка: файлы прочитаны второй раз без модуля csv, число запросов, клики, показы и место совпали между собой и с <code>page-query-coverage.csv</code>. Все клики (3 и 8) со скрытых запросов; скрытых показов 950 за 3 мес и 3,703 за 16 мес. 13 месяцев до последних трёх: 69,532 показа, 5 кликов, место 35.9 (мой расчёт из <code>Pages.csv</code>).</p>
+<p>По группам (суммы групп сверены с итогом):</p>
+<table>
+<thead>
+<tr>
+<th>Группа запросов</th>
+<th>3 мес: запросов</th>
+<th>клики</th>
+<th>показы</th>
+<th>место</th>
+<th>16 мес: запросов</th>
+<th>клики</th>
+<th>показы</th>
+<th>место</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>город из десяти</td>
+<td>37</td>
+<td>0</td>
+<td>1,399</td>
+<td>29.6</td>
+<td>209</td>
+<td>0</td>
+<td>38,321</td>
+<td>41.9</td>
+</tr>
+<tr>
+<td>Park Cities</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>3</td>
+<td>0</td>
+<td>6</td>
+<td>52.3</td>
+</tr>
+<tr>
+<td>без города</td>
+<td>73</td>
+<td>0</td>
+<td>5,560</td>
+<td>25.8</td>
+<td>228</td>
+<td>0</td>
+<td>29,234</td>
+<td>22.0</td>
+</tr>
+<tr>
+<td>другое место</td>
+<td>26</td>
+<td>0</td>
+<td>367</td>
+<td>48.9</td>
+<td>112</td>
+<td>0</td>
+<td>6,082</td>
+<td>62.1</td>
+</tr>
+<tr>
+<td>бренд</td>
+<td>2</td>
+<td>0</td>
+<td>23</td>
+<td>2.1</td>
+<td>3</td>
+<td>0</td>
+<td>485</td>
+<td>2.3</td>
+</tr>
+</tbody>
+</table>
+<p>По месту: за 16 мес на местах 1 до 10 стоят 85 запросов с 1,768 показами, на местах 10 до 20: 61 запрос и 30,343 показа, ниже 20: 409 запросов и 42,017 показов. За 3 мес: места 1 до 10: 18 запросов, 45 показов; 10 до 20: 36 и 3,024; ниже 20: 84 и 4,280.</p>
+<p>По теме запроса за 16 мес (за 3 мес в скобках), показы: водяная линия 54,455 (6,603), место 31.2; pipe break, burst pipe, leak repair 9,013 (615), место 40.2; trenchless, lining, repipe 1,841 (12); leak detection 1,821 (10); slab leak 1,817 (0); faucet 1,742 (0); gas line 989 (35); sewer 859 (7); остальное по мелочи. Полностью: <code>gsc-phrases-and-reverse.md</code>.</p>
+<h3>2.2. Первые 30 запросов по показам и запросы с кликами</h3>
+<p>Запросов с кликом нет ни за 3, ни за 16 месяцев. Все запросы: <code>gsc-all-queries-3m.md</code> (138) и <code>gsc-all-queries-16m.md</code> (555), там же слова в тексте и место точной фразы. Группы (город, чужое место) видны в полных таблицах. Первые 30 дают 6,916 из 7,349 показов (94.1%) за 3 мес и 57,957 из 74,128 (78.2%) за 16 мес.</p>
+<p>3 месяца:</p>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Запрос</th>
+<th>Показы</th>
+<th>Место</th>
+<th>16 мес: показы · место</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>main water line repair</td>
+<td>2,491</td>
+<td>35.1</td>
+<td>4,840 · 37.1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>water line repair</td>
+<td>2,253</td>
+<td>14.1</td>
+<td>20,416 · 16.4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>frisco tx water line repair</td>
+<td>221</td>
+<td>30.9</td>
+<td>3,450 · 18.1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>water line repair frisco tx</td>
+<td>220</td>
+<td>26.8</td>
+<td>2,809 · 18.9</td>
+</tr>
+<tr>
+<td>5</td>
+<td>water line plumber</td>
+<td>216</td>
+<td>48.7</td>
+<td>216 · 48.7</td>
+</tr>
+<tr>
+<td>6</td>
+<td>frisco water line repair</td>
+<td>157</td>
+<td>19.2</td>
+<td>2,597 · 20.1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>water line repair frisco</td>
+<td>143</td>
+<td>18.8</td>
+<td>2,679 · 20.0</td>
+</tr>
+<tr>
+<td>8</td>
+<td>water leak repair</td>
+<td>115</td>
+<td>22.2</td>
+<td>253 · 19.8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>plano tx water line repair</td>
+<td>106</td>
+<td>54.6</td>
+<td>1,088 · 69.8</td>
+</tr>
+<tr>
+<td>10</td>
+<td>frisco pipe break repair</td>
+<td>100</td>
+<td>15.7</td>
+<td>1,224 · 25.2</td>
+</tr>
+<tr>
+<td>11</td>
+<td>frisco tx pipe break repair</td>
+<td>95</td>
+<td>27.0</td>
+<td>1,374 · 23.5</td>
+</tr>
+<tr>
+<td>12</td>
+<td>water line leak repair</td>
+<td>85</td>
+<td>17.5</td>
+<td>288 · 21.9</td>
+</tr>
+<tr>
+<td>13</td>
+<td>water line replacement</td>
+<td>75</td>
+<td>18.1</td>
+<td>344 · 21.1</td>
+</tr>
+<tr>
+<td>14</td>
+<td>plano water line repair</td>
+<td>63</td>
+<td>30.8</td>
+<td>699 · 58.2</td>
+</tr>
+<tr>
+<td>15</td>
+<td>water line repair rockwall</td>
+<td>46</td>
+<td>44.9</td>
+<td>229 · 64.0</td>
+</tr>
+<tr>
+<td>16</td>
+<td>rockwall tx water line repair</td>
+<td>45</td>
+<td>66.9</td>
+<td>246 · 76.5</td>
+</tr>
+<tr>
+<td>17</td>
+<td>pipe break repair</td>
+<td>44</td>
+<td>32.6</td>
+<td>81 · 24.9</td>
+</tr>
+<tr>
+<td>18</td>
+<td>dallas tx water line repair</td>
+<td>43</td>
+<td>44.4</td>
+<td>1,035 · 59.4</td>
+</tr>
+<tr>
+<td>19</td>
+<td>rockwall water line repair</td>
+<td>42</td>
+<td>54.1</td>
+<td>398 · 71.9</td>
+</tr>
+<tr>
+<td>20</td>
+<td>water leak repair near me</td>
+<td>41</td>
+<td>19.5</td>
+<td>126 · 18.7</td>
+</tr>
+<tr>
+<td>21</td>
+<td>water line repair little elm</td>
+<td>39</td>
+<td>43.1</td>
+<td>823 · 40.5</td>
+</tr>
+<tr>
+<td>22</td>
+<td>little elm water line repair</td>
+<td>38</td>
+<td>59.5</td>
+<td>898 · 45.8</td>
+</tr>
+<tr>
+<td>23</td>
+<td>water line repair dallas tx</td>
+<td>38</td>
+<td>35.0</td>
+<td>723 · 50.5</td>
+</tr>
+<tr>
+<td>24</td>
+<td>water line repair dallas</td>
+<td>35</td>
+<td>30.7</td>
+<td>1,380 · 54.6</td>
+</tr>
+<tr>
+<td>25</td>
+<td>pipe breaks frisco</td>
+<td>33</td>
+<td>18.9</td>
+<td>1,363 · 37.0</td>
+</tr>
+<tr>
+<td>26</td>
+<td>pipe breaks frisco tx</td>
+<td>29</td>
+<td>18.8</td>
+<td>1,612 · 52.0</td>
+</tr>
+<tr>
+<td>27</td>
+<td>pipe leak repair near me</td>
+<td>27</td>
+<td>14.6</td>
+<td>51 · 12.2</td>
+</tr>
+<tr>
+<td>28</td>
+<td>water line repair rockwall tx</td>
+<td>26</td>
+<td>45.1</td>
+<td>131 · 62.5</td>
+</tr>
+<tr>
+<td>29</td>
+<td>coppell water line repair</td>
+<td>25</td>
+<td>63.2</td>
+<td>69 · 66.3</td>
+</tr>
+<tr>
+<td>30</td>
+<td>plumbing leak repair</td>
+<td>25</td>
+<td>32.1</td>
+<td>25 · 32.1</td>
+</tr>
+</tbody>
+</table>
+<p>16 месяцев:</p>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Запрос</th>
+<th>Показы</th>
+<th>Место</th>
+<th>3 мес: показы · место</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>water line repair</td>
+<td>20,416</td>
+<td>16.4</td>
+<td>2,253 · 14.1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>main water line repair</td>
+<td>4,840</td>
+<td>37.1</td>
+<td>2,491 · 35.1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>frisco tx water line repair</td>
+<td>3,450</td>
+<td>18.1</td>
+<td>221 · 30.9</td>
+</tr>
+<tr>
+<td>4</td>
+<td>water line repair frisco tx</td>
+<td>2,809</td>
+<td>18.9</td>
+<td>220 · 26.8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>water line repair frisco</td>
+<td>2,679</td>
+<td>20.0</td>
+<td>143 · 18.8</td>
+</tr>
+<tr>
+<td>6</td>
+<td>frisco water line repair</td>
+<td>2,597</td>
+<td>20.1</td>
+<td>157 · 19.2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>pipe breaks frisco tx</td>
+<td>1,612</td>
+<td>52.0</td>
+<td>29 · 18.8</td>
+</tr>
+<tr>
+<td>8</td>
+<td>water line repair dallas</td>
+<td>1,380</td>
+<td>54.6</td>
+<td>35 · 30.7</td>
+</tr>
+<tr>
+<td>9</td>
+<td>frisco tx pipe break repair</td>
+<td>1,374</td>
+<td>23.5</td>
+<td>95 · 27.0</td>
+</tr>
+<tr>
+<td>10</td>
+<td>pipe breaks frisco</td>
+<td>1,363</td>
+<td>37.0</td>
+<td>33 · 18.9</td>
+</tr>
+<tr>
+<td>11</td>
+<td>frisco pipe break repair</td>
+<td>1,224</td>
+<td>25.2</td>
+<td>100 · 15.7</td>
+</tr>
+<tr>
+<td>12</td>
+<td>plano tx water line repair</td>
+<td>1,088</td>
+<td>69.8</td>
+<td>106 · 54.6</td>
+</tr>
+<tr>
+<td>13</td>
+<td>dallas tx water line repair</td>
+<td>1,035</td>
+<td>59.4</td>
+<td>43 · 44.4</td>
+</tr>
+<tr>
+<td>14</td>
+<td>frisco tx faucet repair</td>
+<td>1,028</td>
+<td>49.0</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>15</td>
+<td>trenchless water line replacement frisco</td>
+<td>951</td>
+<td>4.2</td>
+<td>3 · 9.7</td>
+</tr>
+<tr>
+<td>16</td>
+<td>little elm water line repair</td>
+<td>898</td>
+<td>45.8</td>
+<td>38 · 59.5</td>
+</tr>
+<tr>
+<td>17</td>
+<td>water line repair plano</td>
+<td>841</td>
+<td>48.0</td>
+<td>10 · 17.7</td>
+</tr>
+<tr>
+<td>18</td>
+<td>water line repair little elm</td>
+<td>823</td>
+<td>40.5</td>
+<td>39 · 43.1</td>
+</tr>
+<tr>
+<td>19</td>
+<td>dallas water line repair</td>
+<td>750</td>
+<td>74.9</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>20</td>
+<td>frisco gas line repair</td>
+<td>726</td>
+<td>64.3</td>
+<td>9 · 34.8</td>
+</tr>
+<tr>
+<td>21</td>
+<td>water line repair dallas tx</td>
+<td>723</td>
+<td>50.5</td>
+<td>38 · 35.0</td>
+</tr>
+<tr>
+<td>22</td>
+<td>plano water line repair</td>
+<td>699</td>
+<td>58.2</td>
+<td>63 · 30.8</td>
+</tr>
+<tr>
+<td>23</td>
+<td>the colony water line repair</td>
+<td>674</td>
+<td>47.0</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>24</td>
+<td>water line repair the colony</td>
+<td>618</td>
+<td>55.7</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>25</td>
+<td>water line repair little elm tx</td>
+<td>613</td>
+<td>49.1</td>
+<td>19 · 48.6</td>
+</tr>
+<tr>
+<td>26</td>
+<td>faucet repair frisco tx</td>
+<td>602</td>
+<td>59.7</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>27</td>
+<td>slab leak repair frisco</td>
+<td>590</td>
+<td>73.7</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>28</td>
+<td>frisco slab leak repair</td>
+<td>539</td>
+<td>68.7</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>29</td>
+<td>little elm pipe break repair</td>
+<td>536</td>
+<td>50.3</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>30</td>
+<td>frisco tx leak detection</td>
+<td>479</td>
+<td>60.8</td>
+<td>5 · 81.2</td>
+</tr>
+</tbody>
+</table>
+<h3>2.3. Что держат title, H1, каждый H2 и каждый вопрос FAQ</h3>
+<p>Заголовок держит запрос, когда все значимые слова запроса стоят в нём. Подробно, запрос за запросом: <code>gsc-headings.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Заголовок</th>
+<th>3 мес: запросов · показы</th>
+<th>16 мес: запросов · показы</th>
+<th>Фраза целиком, 16 мес</th>
+<th>Держит только он, 16 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>23 · 5,786</td>
+<td>46 · 41,042</td>
+<td>14 · 25,510</td>
+<td>21 · 15,139</td>
+</tr>
+<tr>
+<td>meta description</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>8 · 4,766</td>
+<td>20 · 25,543</td>
+<td>11 · 25,496</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H2 «Signs of a Main Water Line Leak»</td>
+<td>4 · 8</td>
+<td>7 · 14</td>
+<td>3 · 5</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H2 «Water Line Responsibility: Yours or the City's»</td>
+<td>0 · 0</td>
+<td>1 · 1</td>
+<td>1 · 1</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H2 «Locating an Underground Water Line Leak»</td>
+<td>1 · 1</td>
+<td>4 · 4</td>
+<td>2 · 2</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H2 «Water Line Leak at the Foundation: Copper Set in Concrete»</td>
+<td>1 · 1</td>
+<td>4 · 4</td>
+<td>2 · 2</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H2 «Water Line Repair vs Full Replacement»</td>
+<td>5 · 2,342</td>
+<td>15 · 21,026</td>
+<td>9 · 20,647</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H2 «Tree Roots and the Water Line»</td>
+<td>0 · 0</td>
+<td>1 · 1</td>
+<td>1 · 1</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H2 «What Else It Might Be»</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>H2 «Water Line FAQ»</td>
+<td>0 · 0</td>
+<td>1 · 1</td>
+<td>1 · 1</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «How do I know if my main water line is leaking?»</td>
+<td>4 · 8</td>
+<td>7 · 14</td>
+<td>3 · 5</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «Am I responsible for the water line, or is the city?»</td>
+<td>0 · 0</td>
+<td>1 · 1</td>
+<td>1 · 1</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «Do you have to dig up my whole yard?»</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «Should I repair the section or replace the line?»</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «Can tree roots damage a water line?»</td>
+<td>0 · 0</td>
+<td>1 · 1</td>
+<td>1 · 1</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «Why did my water pressure drop everywhere at once?»</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «The city sent me a notice about high water usage. What now?»</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «Why did my line fail right at the foundation?»</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+<td>0 · 0</td>
+</tr>
+<tr>
+<td>вопрос FAQ «How long does a water line repair take?»</td>
+<td>3 · 2,266</td>
+<td>10 · 20,666</td>
+<td>8 · 20,646</td>
+<td>0 · 0</td>
+</tr>
+</tbody>
+</table>
+<p>Что нельзя потерять:
+- Title. Из заголовков только в нём Frisco и Plano, поэтому 21 запрос (15,139 показов за 16 мес) не держит больше ни один заголовок. Крупнейшие: "frisco tx water line repair" (3,450), "water line repair frisco tx" (2,809), "water line repair frisco" (2,679), "frisco water line repair" (2,597), "plano tx water line repair" (1,088), "water line repair plano" (841), "plano water line repair" (699), "water line repair plano tx" (442), "water line replacement plano tx" (274), "main water line replacement" (185, место 6.2).
+- "water line repair" целиком стоит в title, H1, H2 "Water Line Repair vs Full Replacement" и вопросе "How long does a water line repair take?", в обычном тексте ни разу. "main water line repair" целиком в title и H1. Эти два запроса: 25,256 показов за 16 мес, 4,744 за 3 мес.
+- "water line replacement" (344, место 21.1) держат H2 "Water Line Repair vs Full Replacement" и title (слова не подряд).
+- Описание не держит ни одного запроса (в нём нет слов water и repair). Остальные H2 и семь вопросов FAQ держат от 0 до 14 показов. Запросы, которые не держит ни один заголовок (кроме описания): 506 и 33,083 показа за 16 мес, 114 и 1,562 за 3 мес.</p>
+<h3>2.4. Фраза целиком</h3>
+<p>Проверены первые 20 по показам за 16 мес и за 3 мес (вместе 30 разных; запросов с кликами нет). Таблица: <code>gsc-phrases-and-reverse.md</code>. Точная фраза стоит на странице у двух: "water line repair" (title, H1, H2 "Water Line Repair vs Full Replacement", вопрос FAQ "How long does a water line repair take?") и "main water line repair" (title, H1). У остальных 28 нет ни точной фразы, ни фразы без in и tx: городских форм вида "water line repair frisco", "frisco tx water line repair", "water line repair plano" на странице нет; "pipe breaks frisco tx" (1,612 за 16 мес), "frisco tx pipe break repair" (1,374), "pipe breaks frisco" (1,363), "frisco pipe break repair" (1,224): слова "break" на странице нет вообще; нет "water line replacement" подряд, "water line leak repair", "water leak repair", "water line plumber".</p>
+<h3>2.5. Где другая страница сайта стоит выше или берёт показы</h3>
+<p>Только запросы услуги (водяная линия и pipe break), без чужих мест. Полностью по всем запросам: <code>gsc-other-pages-3m.md</code>, <code>gsc-other-pages-16m.md</code>; по услуге и городам: <code>gsc-service-other-pages-cities.md</code>.</p>
+<p>За 3 мес выше или с большим числом показов по тем же запросам: /plumber-plano-tx/ (27 запросов, 1,762 показа против 6,190 у /water-lines/), /plumber-frisco-tx/ (22, 1,166 против 5,660), /plumber-little-elm-tx/ (5, 388 против 103), главная (8, 64 против 5,147), остальные меньше 60 показов. За 16 мес: /plumber-little-elm-tx/ (9, 4,593 против 3,335), /plumber-the-colony-tx/ (9, 4,536 против 2,101), /plumber-plano-tx/ (44, 4,379 против 44,814), главная (43, 2,909 против 29,621), /plumber-allen-tx/ (6, 1,819 против 796), /slab-leak-repair-frisco-plano-mckinney/ (9, 1,497 против 415), /plumber-frisco-tx/ (28, 1,484 против 29,994); ещё шесть страниц от 833 до 1,416 показов.</p>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Другая страница: показы · место</th>
+<th>/water-lines/: показы · место</th>
+<th>Период</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>water line repair</td>
+<td>главная: 1,744 · 1.7</td>
+<td>20,416 · 16.4</td>
+<td>16 мес</td>
+</tr>
+<tr>
+<td>water line repair</td>
+<td>/plumber-frisco-tx/: 642 · 1.7 (за 3 мес 373 · 1.45)</td>
+<td>20,416 · 16.4</td>
+<td>16 мес</td>
+</tr>
+<tr>
+<td>water line repair</td>
+<td>/plumber-plano-tx/: 501 · 1.2 (столько же за 16 мес)</td>
+<td>2,253 · 14.1</td>
+<td>3 мес</td>
+</tr>
+<tr>
+<td>water line repair plano</td>
+<td>/plumber-plano-tx/: 319 · 14.1</td>
+<td>10 · 17.7</td>
+<td>3 мес</td>
+</tr>
+<tr>
+<td>frisco tx water line repair</td>
+<td>/plumber-frisco-tx/: 195 · 16.2</td>
+<td>221 · 30.9</td>
+<td>3 мес</td>
+</tr>
+<tr>
+<td>frisco tx pipe break repair</td>
+<td>/plumber-frisco-tx/: 112 · 13.7</td>
+<td>95 · 27.0</td>
+<td>3 мес</td>
+</tr>
+<tr>
+<td>water line repair the colony</td>
+<td>/plumber-the-colony-tx/: 867 · 30.4</td>
+<td>618 · 55.7</td>
+<td>16 мес</td>
+</tr>
+<tr>
+<td>water line repair carrollton</td>
+<td>/plumber-carrollton-tx/: 823 · 57.0</td>
+<td>9 · 66.1</td>
+<td>16 мес</td>
+</tr>
+<tr>
+<td>pipe breaks plano</td>
+<td>/emergency-plumbing-services/: 646 · 59.3</td>
+<td>107 · 94.6</td>
+<td>16 мес</td>
+</tr>
+<tr>
+<td>water line repair mckinney</td>
+<td>/slab-leak-repair-frisco-plano-mckinney/: 412 · 76.1</td>
+<td>12 · 72.2</td>
+<td>16 мес</td>
+</tr>
+</tbody>
+</table>
+<p>Места 1.2 до 1.7 у страниц Plano и Frisco по запросу без своего города это по правилу проекта (<code>tools/cannibalization_report.py</code>: страница офиса, место 3 или выше, в запросе нет её города) показы из карточки на карте, не обычная выдача. Откуда место 1.7 у главной по "water line repair", файлы не говорят.</p>
+<p>Запросы о водяной линии, где /water-lines/ нет вовсе, а другие страницы есть (16 мес): /plumber-carrollton-tx/ 4 запроса, 1,827 показов; /plumber-lewisville-tx/ 4, 1,087; гайд по главному крану 114, 586 показов, 2 клика; главная 19, 239; остальные меньше 120.</p>
+<p>Обратное, по карте ключей хозяин другой, а показывается /water-lines/ (16 мес, за 3 мес в скобках): leak detection (хозяин /water-leak-detection-frisco-plano/) 39 запросов, 1,821 показ (10), место 58.4, крупнее всех "frisco tx leak detection" 479, "underground leak detection frisco" 271 (место 25.8), "waterline leak detection frisco" 186 (21.0); slab leak (/slab-leak-repair-frisco-plano-mckinney/) 12, 1,817 (0), место 72.2; faucet (/fixture-installation-repair/) 8, 1,742 (0), "frisco tx faucet repair" 1,028; sewer (/drain-services/) 13, 859 (7); остальные темы вместе меньше 100. Без хозяина по карте: pipe break и burst pipe 106 запросов, 9,013 (615), место 40.2. Таблица: <code>gsc-phrases-and-reverse.md</code>.</p>
+<h3>2.6. Услуга с каждым из десяти городов</h3>
+<p>Запрос о водяной линии с названием города, места взвешены по показам. Каждый запрос: <code>gsc-ten-cities.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Город</th>
+<th>/water-lines/ 16 мес: запросов · показы · место</th>
+<th>3 мес</th>
+<th>Больше всех показов, 16 мес</th>
+<th>Другие страницы, 16 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frisco</td>
+<td>11 · 12,691 · 18.1</td>
+<td>8 · 761 · 24.6</td>
+<td>/water-lines/</td>
+<td>главная 4,132 · 42.1; Frisco 1,375 · 46.9; Plano 177 · 3.8</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>21 · 3,943 · 59.9</td>
+<td>5 · 185 · 43.4</td>
+<td>/water-lines/</td>
+<td>Plano 2,335 · 41.3; slab leak 265 · 71.1; главная 190 · 41.0</td>
+</tr>
+<tr>
+<td>McKinney</td>
+<td>6 · 161 · 41.6</td>
+<td>0</td>
+<td>/plumber-mckinney-tx/ 1,464 · 62.4</td>
+<td>slab leak 897 · 76.2; главная 289 · 81.1</td>
+</tr>
+<tr>
+<td>Allen</td>
+<td>6 · 820 · 57.4</td>
+<td>0</td>
+<td>/plumber-allen-tx/ 1,838 · 43.4</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>Prosper</td>
+<td>0</td>
+<td>0</td>
+<td>запросов нет ни у одной страницы</td>
+<td></td>
+</tr>
+<tr>
+<td>Celina</td>
+<td>0</td>
+<td>0</td>
+<td>запросов нет ни у одной страницы</td>
+<td></td>
+</tr>
+<tr>
+<td>Little Elm</td>
+<td>4 · 2,714 · 47.4</td>
+<td>4 · 102 · 53.3</td>
+<td>/plumber-little-elm-tx/ 2,963 · 41.9</td>
+<td>главная 28; /contact/ 21</td>
+</tr>
+<tr>
+<td>The Colony</td>
+<td>4 · 1,672 · 55.5</td>
+<td>0</td>
+<td>/plumber-the-colony-tx/ 2,938 · 35.9</td>
+<td>главная 71 · 3.8</td>
+</tr>
+<tr>
+<td>Carrollton</td>
+<td>2 · 11 · 59.9</td>
+<td>0</td>
+<td>/plumber-carrollton-tx/ 2,650 · 55.1</td>
+<td></td>
+</tr>
+<tr>
+<td>Lewisville</td>
+<td>3 · 41 · 79.2</td>
+<td>0</td>
+<td>/plumber-lewisville-tx/ 2,119 · 62.8</td>
+<td>главная 5 · 5.4</td>
+</tr>
+</tbody>
+</table>
+<p>Только по Frisco и Plano /water-lines/ берёт больше всех показов. По Little Elm, The Colony, Allen, McKinney, Carrollton, Lewisville больше у страниц городов. Park Cities: 3 запроса за 16 мес, 6 показов, ни один не про водяную линию.</p>
+<h3>2.7. Слова в запросах, которые на страницу не ставятся</h3>
+<p>Подробно: <code>gsc-words-set-aside.md</code>. Показы за 16 мес (за 3 мес в скобках):
+- Чужие места: Dallas 4,493 (121), Rockwall 1,006 (159), Coppell 265 (50), Kennedale 35, Highlands 32, Duncanville 31, Reeves Park 25, Denton 20, Water Valley 15, Evergreen 13, Knickerbocker 11, Rowlett 10 и ещё 34 места меньше 10 показов каждое (среди них Lockhart, Irving, Richardson, Collin County, места в Utah с "ut"). "Dallas" отдельно правила запрещают.
+- Услуги, которых нет или которые не заявляем: trenchless 1,352 (3), gas line 989 (35), pipe lining и CIPP 440, колодцы и насосы 150 (8), drainage 50, repipe 38 (6), irrigation 16, motherboard 7, reroute 3 (3), excavation 3.
+- Оценочные слова: cost 105, nearby 14, fast 11, прочие 6. Опечатки и чужой язык: "sab" 42, испанские запросы 2, "imagenes", "reapir".
+- Бренд и поиск по сайту: 485 (23), место 2.3. Park Cities: 6 показов, страницы нет и не будет.</p>
+<p>Слова услуги из запросов, которых нет на странице: "break" 7,623 (315, вместе с breaks и broken), "little elm" 3,772, "colony" 1,931, "faucet" 1,756 (тема страницы faucet), "sewer" 975 (тема /drain-services/), "allen" 882, "waterline" 401, "burst" 244. "frisco" (26,634) стоит только в title и alt.</p>
+<h2>Файлы с длинными таблицами</h2>
+<p><code>docs/briefs/services/water-lines/</code>:
+- <code>gsc-all-queries-3m.md</code>, <code>gsc-all-queries-16m.md</code>: все запросы страницы, с группой, хозяином темы, словами в тексте и местом точной фразы.
+- <code>gsc-headings.md</code>: что держит каждый заголовок, запрос за запросом.
+- <code>gsc-phrases-and-reverse.md</code>: проверка фразы целиком (30 запросов) и запросы с другим хозяином по карте ключей.
+- <code>gsc-other-pages-3m.md</code>, <code>gsc-other-pages-16m.md</code>: все запросы страницы, где другая страница выше или с большим числом показов, и запросы о водяной линии, где /water-lines/ нет.
+- <code>gsc-service-other-pages-cities.md</code>: то же только по запросам услуги, и десять городов.
+- <code>gsc-ten-cities.md</code>: каждый запрос о водяной линии с каждым из десяти городов.
+- <code>gsc-words-set-aside.md</code>: каждое слово запросов, где оно стоит, и что отложено.</p></main></body></html>
