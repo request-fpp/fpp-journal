@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 02.10.2026 23:09</p><h1>2 октября 2026, ночь: единый блок чата (Frisco версия 3, главная, техника) и пятая история на главной</h1>
+</style></head><body><main><p class="stamp">Опубликовано 02.10.2026 23:19</p><h1>2 октября 2026, ночь: единый блок чата (Frisco версия 3, главная, техника) и пятая история на главной</h1>
 <p>Исходное состояние: коммит 9de92f8. Выполнены части A, B, C, D и E единого блока и отдельное дополнение Дениса по главной (новая первая история в «From the Job» с клипом 165). Часть F (контуры городов для фото, бриф Plano) по блоку оставлена на следующую сессию. Тестовый сайт обновлён: https://fppplumbing-preview.pages.dev.</p>
 <h2>Коротко</h2>
 <ul>
@@ -84,6 +84,8 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <li>История «One clog, the whole house» получила пару: фото 204, душевой поддон после обратного тока, и кадр из видео 183, ванна и унитаз полные (секунда 1,2 видео, цвета переведены из HDR). Пара стоит двумя равными ячейками.</li>
 <li>Оба фото занесены в архив (photos/originals, index.csv, captions.csv, captions-en.csv, slugs.csv); города на главной в подписях нет. Проверки сайта 28 из 28, вёрстка главной чиста на шести ширинах, LCP по оценке проекта 1,37 с. Снимок блока: <a href="img/blocks-home-1280.jpg">главная, «From the Job» на 1280</a>, <a href="img/blocks-home-390.jpg">на телефоне</a>. Коммит 976ca15.</li>
 </ul>
+<h2>Замечание Дениса после отчёта: размер фотографий</h2>
+<p>«Одни большие, другие маленькие», особенно пара с гвоздём на Frisco, где ничего не было видно. Сделано одно правило размера: каждая картинка на странице одной ширины и одной формы 3:4, клипы тоже (клип обрезается по ячейке). На компьютере это треть колонки текста: одно фото стоит справа от своего абзаца, пара и четвёрка стоят под своим абзацем, по два в ряд, ячейками того же размера. На телефоне каждая картинка во всю ширину, одна под другой, пары тоже. Замер на собранных страницах: Frisco все ячейки 358 на 477 px на телефоне и 221 на 294 px на 1280; истории главной 340 на 453 и 337 на 450. Вёрстка чиста на шести ширинах, проверки 28 из 28. Правило записано в design/layout-rules.md и CLAUDE.md. Снимки: <a href="img/blocks-plumber-frisco-tx-1280.jpg">Frisco 1280</a>, <a href="img/blocks-plumber-frisco-tx-390.jpg">Frisco телефон</a>. Коммит c1af4fc.</p>
 <h2>Часть C. Техника</h2>
 <ul>
 <li>C1. Один список услуг для выпадающего списка Services, меню Menu и подвала: порядок из блока, длинные названия (tools/export_design.py SERVICE_ORDER, design.services). Отдельный список меню в Header.astro убран.</li>
