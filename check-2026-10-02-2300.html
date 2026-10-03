@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 02.10.2026 23:03</p><h1>2 октября 2026, ночь: единый блок чата (Frisco версия 3, главная, техника) и пятая история на главной</h1>
+</style></head><body><main><p class="stamp">Опубликовано 02.10.2026 23:04</p><h1>2 октября 2026, ночь: единый блок чата (Frisco версия 3, главная, техника) и пятая история на главной</h1>
 <p>Исходное состояние: коммит 9de92f8. Выполнены части A, B, C, D и E единого блока и отдельное дополнение Дениса по главной (новая первая история в «From the Job» с клипом 165). Часть F (контуры городов для фото, бриф Plano) по блоку оставлена на следующую сессию. Тестовый сайт обновлён: https://fppplumbing-preview.pages.dev.</p>
 <h2>Коротко</h2>
 <ul>
@@ -77,7 +77,7 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <li>Правило в CLAUDE.md: в блоке не больше пяти историй, следующая новая вытесняет самую старую на страницу её услуги.</li>
 <li>В docs/pages-plan.md записано, что полная версия истории и клип 165 идут на страницу slab leak; факты Дениса лежат в source/dictation/2026-10-02-slab-leak-water-from-foundation.md (Little Elm, 27 августа 2026).</li>
 </ul>
-<p>HOMESTORY_PLACEHOLDER</p>
+<p>Проверено на собранной главной: первая история «Water coming out of the foundation.», обе ссылки на месте, клип один, без controls, на телефоне играет сам и не ловит нажатий, VideoObject два, валидатор 0 ошибок и 0 предупреждений, вёрстка чиста на шести ширинах, LCP по оценке проекта 1,37 с. Снимок: <a href="img/home-story-clip-390.jpg">история с клипом на телефоне</a>.</p>
 <h2>Часть C. Техника</h2>
 <ul>
 <li>C1. Один список услуг для выпадающего списка Services, меню Menu и подвала: порядок из блока, длинные названия (tools/export_design.py SERVICE_ORDER, design.services). Отдельный список меню в Header.astro убран.</li>
@@ -100,8 +100,8 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <li>Уникальность по всем 64 страницам: вопросы FAQ главной и Frisco не повторяются нигде; H3 главной и Frisco не повторяются нигде; из H2 общий только «What is happening right now?» у главной и страницы аварий (это один и тот же блок дизайна).</li>
 <li>Заголовки Frisco без услуги с городом: H2 с городом это «Plumbing in Frisco Homes…», «The Plumbing Calls We Get Most in Frisco», «Water Pressure in Frisco Homes…», «Permits and the City Inspection in Frisco», «Night Calls in Frisco…», «Frisco Plumbing Questions», «Our Plumbing Office in Frisco, TX»; услуги в них нет. В H3 города нет.</li>
 <li>Меню: 15 прогонов из 15 (три страницы, пять ширин): кнопка, Esc, фон, крестик, ссылка, фокус внутри; 37 ссылок, битых нет.</li>
-<li>Lighthouse (производительность и доступность): LIGHTHOUSE_PLACEHOLDER</li>
-<li>Скорость на телефоне по оценке проекта (предел 1,6 с): LCP_PLACEHOLDER</li>
+<li>Lighthouse (производительность и доступность): главная телефон 99 и 100, LCP 1,8 с; главная компьютер 100 и 100, LCP 0,5 с; Frisco телефон 98 и 100, LCP 2,2 с; Frisco компьютер 100 и 100, LCP 0,4 с. До всех правок сегодняшнего вечера: главная телефон 96 и 98, остальное 99 до 100.</li>
+<li>Скорость на телефоне по оценке проекта (предел 1,6 с): главная 1,37 с, Frisco 1,52 с.</li>
 </ul>
 <h2>Что пропущено и почему</h2>
 <ul>
@@ -115,5 +115,5 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <ul>
 <li>Тексты: source/frisco-text-v3.md, source/home-text-v4.md. Запас для страниц услуг: source/dictation/2026-10-02-frisco-reserve-for-service-pages.md, source/dictation/2026-10-02-slab-leak-water-from-foundation.md.</li>
 <li>Таблицы фраз: exports/frisco-v2-phrases.md, exports/frisco-v3-phrases.md. Страница версии 3: exports/frisco-v3-page.md.</li>
-<li>Коммиты: COMMITS_PLACEHOLDER</li>
+<li>Коммиты: 66a2cf4 (весь блок и дополнение по главной); журнал и отчёт отдельными коммитами.</li>
 </ul></main></body></html>
