@@ -1,0 +1,638 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 03.10.2026 12:50</p><h1>Garbage disposal repair: живая страница и Search Console (3 октября 2026)</h1>
+<p>Страница: https://fppplumbing.com/garbage-disposal-repair-frisco-plano/ . Сейчас не переписывается, текста страницы здесь нет.</p>
+<p>Откуда данные. Обход живого сайта от 30 сентября 2026 (<code>source/crawl/pages/*.json</code>, код <code>source/crawl/html/</code>); новый сайт <code>site/src/content/pages/garbage-disposal-repair-frisco-plano.md</code> и сборка <code>site/dist/</code> от 3 октября 10:38; правки <code>tools/build_launch_content.py</code>, <code>site/src/data/launch-changes.csv</code>; отзывы <code>reviews/</code>; Search Console <code>source/gsc/</code> (выгрузка 30 сентября 2026); <code>seo/keyword-map.md</code>, <code>docs/pages-plan.md</code>; слова Дениса <code>source/dictation/2026-10-02-frisco-additions.md</code>.</p>
+<p>Одобренного текста для этой услуги в <code>source/</code> нет.</p>
+<p>Длинные таблицы в <code>docs/briefs/services/garbage-disposal/</code>: <code>gd-gsc-table-3m.md</code> и <code>gd-gsc-table-16m.md</code> (все запросы, слова в живом тексте, точная фраза, лучшая другая страница), <code>gd-gsc-top30-and-clicks.md</code> (первые 30 и запросы с кликом), <code>gd-gsc-other-pages.md</code> (запросы про измельчитель на других страницах).</p>
+<p>Числа через точку всегда в одном порядке: показы · место · клики.</p>
+<h2>Коротко</h2>
+<ol>
+<li>Кормит сейчас мало. За 3 месяца 1 клик (запрос скрыт), 7,121 показ, среднее место 19.0 (итог Google). За 16 месяцев 4 клика, 32,829 показов, место 30.8. Известный запрос с кликом один: "plano garbage disposal repair" (1 клик за 16 месяцев). В <code>docs/pages-plan.md</code> она пятая в группе 3 («усиливаем смело»).</li>
+<li>Место выросло: за 13 месяцев до июля 2026 среднее место по известным запросам 33.6, за последние 3 месяца 18.8. Запросы почти все одной формы: "garbage disposal repair" плюс город (Plano, Frisco, Little Elm, McKinney).</li>
+<li>Нельзя потерять: начало title "Garbage Disposal Repair in Frisco &amp; Plano" (все слова 25 запросов, 17,658 показов за 16 месяцев) и начало H1 "Garbage Disposal Repair" (точная фраза "garbage disposal repair": 6,380 показов, самый большой запрос). Ни один H2 и ни один вопрос FAQ сейчас запросов не держит.</li>
+<li>Против правил: цены "$229" и "$400-500" (текст, два ответа FAQ, схема), рассказ про 10 лет гарантии производителя с обещанием "the manufacturer sends you a new one free" (этого нет в словах Дениса), фразы о времени ("usually the same day you call", "takes under an hour", "the truck is usually nearby"), город "Plano, TX" в подписи отзыва без города в тексте, лозунги, "thousands of kitchens".</li>
+<li>На новом сайте точечной правкой исправлено только описание (убрана гарантия, "same-day service" осталось); шаблон сам убрал цены из узла Service, H2 с телефонами и тег H3 у вопросов FAQ, отзыв Lanessa с подписью "Plano, TX" заменён другими. Цены, гарантия и фразы о времени в тексте и FAQ стоят там как на живой странице, цены попали и в схему FAQPage.</li>
+<li>Не хватает по правилу 8: H2 с содержанием 6 (нужно 10 до 16), нет списка «симптом, ссылка», нет раздела «если это происходит сейчас» в тексте, своего текста 1,434 слова против 2,500, на города 5 ссылок из 10 с голыми анкорами ("Frisco", не "plumber in Frisco"), нет ссылки на гайд по перекрытию воды в тексте (на новом сайте блок шаблона «What is happening right now?» даёт ссылки на emergency и на гайд по главному крану, но это не раздел текста). Ссылка на главную "plumber near me" есть, но привязана к услуге и стоит в риторическом вопросе.</li>
+<li>Повтор внутри сайта: около 160 слов этой страницы слово в слово стоят на старой странице McKinney (раздел "Garbage Disposals, and When to Stop Repairing Them" и два ответа FAQ), а title McKinney содержит "Garbage Disposal Repair".</li>
+<li>Другие страницы: страница Plano за 3 месяца показывается по 33 запросам про измельчитель (933 показа, среднее место 2.5; по 18 из них место 3 и выше, 723 показа: это карточка Google Plano с кнопкой сайта), главная за 16 месяцев взяла 5,542 показа и 1 клик ("garbage disposal repair plano"), почти всё до июля 2026; городские страницы Little Elm, The Colony, Lewisville, Allen, Carrollton показываются по «измельчитель плюс свой город» за 16 месяцев на местах от 47 до 68 по запросам с 40 показами и больше (среднее по странице от 49.0 до 62.0).</li>
+<li>Отложить: 96 запросов с чужими местами (3,439 показов за 16 месяцев, больше всего Dallas, Rockwall, Coppell, Richardson) и 48 запросов с невидимым знаком.</li>
+</ol>
+<h2>1. Живая страница</h2>
+<h3>1.1. Title, описание, H1, заголовки, объём</h3>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>Живая страница</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title (67 знаков)</td>
+<td>"Garbage Disposal Repair in Frisco &amp; Plano | Jammed or Leaking Unit?"</td>
+</tr>
+<tr>
+<td>Meta description (141 знак)</td>
+<td>"Disposal humming, jammed, or leaking from the bottom? Honest repair or replace advice, same-day service, and a 10-year warranty on new units."</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>"Garbage Disposal Repair and Replacement, Done in One Visit"</td>
+</tr>
+<tr>
+<td>OG title</td>
+<td>"Garbage Disposal" (не совпадает с title)</td>
+</tr>
+<tr>
+<td>OG картинка</td>
+<td><code>/wp-content/uploads/2025/05/new-garbage-disposal-and-p-trap-frisco.jpg</code></td>
+</tr>
+<tr>
+<td>Даты в схеме</td>
+<td>опубликована 6 мая 2025, изменена 17 августа 2026</td>
+</tr>
+</tbody>
+</table>
+<p>H2 по порядку (в скобках слов в разделе по тексту обхода; считаются только слова, запятые, которые обход отбил пробелом перед ссылками, не в счёт):
+1. "Humming, Tripping, Leaking: What Each One Means" (218)
+2. "Why Cheap Builder-Grade Units Die Young" (149)
+3. "Use It or Lose It" (123)
+4. "The Dishwasher Connection Most People Never Check" (223)
+5. "What We Install and What It Costs" (198)
+6. "Disposal Quit Mid Dinner Prep?" (58)
+7. "Garbage Disposal FAQ" (дальше семь вопросов H3)
+8. "What Our Customers Say" (блок отзыва)
+9. "980-899-7997 469-998-8999" (не раздел: два телефона нижней панели свёрстаны тегом H2, шаблон старого сайта)</p>
+<p>H3: семь, все семь это вопросы FAQ (пункт 1.2). Других H3 нет.</p>
+<p>Объём. Обход: 1,530 слов (обход считает по пробелам, и 7 запятых, отбитых пробелом перед ссылками, и 5 знаков подписи отзыва, звёзды и точки, идут у него как слова; одних слов 1,518). Свой текст от H1 до конца FAQ: 1,434 слова (H1 9, вступление 122, шесть разделов 969, семь заголовков H2 вместе с "Garbage Disposal FAQ" 40, FAQ 294). Блок отзыва 58, последняя строка 24, кнопка 2. До ориентира 2,500 не хватает около 1,070 слов.</p>
+<p>Ключи в своём тексте: "garbage disposal" 5 раз (title, H1, H2 FAQ, вопрос FAQ про цену, alt фото), "garbage disposal repair" 2 раза (title и H1), в абзацах ни разу: в тексте везде просто "disposal". "plumber near me" 1 раз (ссылка на главную).</p>
+<h3>1.2. FAQ: семь вопросов слово в слово</h3>
+<ol>
+<li>"How much does garbage disposal installation cost?"</li>
+<li>"My disposal hums but does not spin. Is it dead?"</li>
+<li>"My disposal leaks from the bottom. Can it be repaired?"</li>
+<li>"What size disposal do I actually need?"</li>
+<li>"How often should I run my disposal?"</li>
+<li>"Can you install a disposal I bought myself?"</li>
+<li>"Why does my dishwasher need an air gap or a high loop?"</li>
+</ol>
+<p>Все семь тегом H3 (<code>e-n-accordion-item-title-text</code>) в раскрывающемся списке Elementor; по правилу 8 вопрос должен быть жирным текстом. Повторы на сайте: вопрос 3 почти дословно на McKinney ("My disposal leaks from the bottom. Can it be fixed?", ответ почти тот же), вопрос 4 по смыслу там же ("What size garbage disposal should I get?", тот же ответ про 3/4, 1 и 1/2 HP). Остальные пять нигде больше не стоят. В схеме FAQPage вопросы 6 и 7 поменяны местами, ответ 6 в схеме с точкой в конце, на странице без. Ответы 1 и 6 называют цены (пункт 1.6). На новом сайте вопросы и ответы те же.</p>
+<h3>1.3. Отзыв на живой странице</h3>
+<p>Один отзыв.
+- Текст: "Our old garbage disposal motor burned out, and they had a new one installed in no time! The tech was on time, explained everything and left the area spotless. The new unit runs perfectly. Highly recommend"
+- Lanessa Arnold Jenkins, подпись "★★★★★ · Plano, TX · Local Guide Level 5 · May 2025 · Google", ссылка https://maps.app.goo.gl/755CBZnLn94Ra5Ue8?g_st=ic (три раза). Над отзывом "Real Google reviews from local homeowners."
+- Архив <code>reviews/all-reviews.csv</code>: Google, профиль Plano, 19 мая 2025, <code>on_old_site</code> = эта страница. Текст совпадает знак в знак, месяц совпадает.
+- Против правила 11: в тексте отзыва города нет, а в подписи стоит "Plano, TX". Уровень Local Guide в архиве пустой, проверить "Level 5" по файлам нельзя; по правилу <code>tools/build_site_reviews.py</code> отзыв Google с неизвестным уровнем на сайт не ставится.
+- Ответ компании в архиве называет другой город: "garbage disposal replacement in Frisco, TX". Город работы по файлам не ясен.
+- В архиве есть строка Yelp "Lanessa A." той же даты; в её текст склеен чужой отзыв ("Lisa M. …"), это ошибка разбора Yelp.
+- На новом сайте Lanessa нет нигде (<code>site-ledger.md</code>, <code>site-reviews.json</code>); на этой странице там Sonja S. (Yelp, август 2025, "Excellence was provided in quality of work and interactions. Value was good for a garbage disposal replacement…") и Madison h. (Thumbtack, июнь 2023, "Came within 30 minutes on a weekend!…", слова клиента, не правятся).</p>
+<h3>1.4. Фото</h3>
+<p>Одно настоящее фото с работы: <code>/wp-content/uploads/2025/05/new-garbage-disposal-and-p-trap-frisco-967x1024.jpg</code> (полный файл 1209 на 1280), alt "New garbage disposal and P-trap installed under kitchen sink in Frisco home". Новый Moen под мойкой, белый P-trap, шланг посудомойки. Стоит первым под H1 и грузится «лениво» (<code>data-src</code>), хотя это первый экран. Остальное шаблон: логотип дважды, знак BBB, пустая заглушка аватара в карточке отзыва.</p>
+<p>В <code>photos/index.csv</code> этого файла нет. По виду это та же установка, что фото 115 архива (тот же шкаф, Moen, шланги; сравнил на глаз), а у 115 город по месту съёмки Plano: "in Frisco home" в alt по файлам не подтверждается. Фото 115 стоит на плитке услуги на главной нового сайта.</p>
+<p>Для этой страницы в <code>photos/captions-en.csv</code> записаны ещё пять настоящих фото: 69 (новый Moen 3/4 HP, Little Elm), 103 (новый Moen и сливная линия, пол шкафа испорчен долгой течью, McKinney), 115 (Moen под мойкой, Plano), 123 и 124 (старый и новый, до и после, Little Elm). Видео нет.</p>
+<h3>1.5. Ссылки</h3>
+<p>Со страницы, в тексте (9 внутренних, 1 внешняя): "plumber near me" на <code>/</code> (вступление, второй и последний абзац); "shut-off valve replacement" на <code>/fixture-installation-repair/</code> (Humming, Tripping, Leaking); "drain" на <code>/clogged-drain-cleaning-frisco-plano/</code> (Use It or Lose It); "emergency plumbing" на <code>/emergency-plumbing-services/</code> и "Frisco", "Plano", "McKinney", "Allen", "Little Elm" на пять городских страниц (Disposal Quit Mid Dinner Prep?); внешняя "Moen 3/4 HP disposal" на https://shop.moen.com/collections/garbage-disposals (What We Install).</p>
+<p>Предложение с городами: "Wherever you are, from Frisco to Plano , McKinney , Allen , or Little Elm , the truck is usually nearby." Нет ссылок на Prosper, Celina, The Colony, Carrollton, Lewisville. Нет ссылок на гайд по главному крану, на гайд про кран под раковиной (angle stop), на <code>/drain-services/</code>, на посты про засор кухонной мойки.</p>
+<p>Шаблон: всего 112 внутренних ссылок, из них 9 в тексте; меню трижды, офисы, Privacy Policy, "Request Service". Внешние: соцсети иконками, <code>tel:</code>, три ссылки на отзыв, "Found us" (share.google), почта, знак BBB.</p>
+<p>На страницу с остальных 63 страниц: шаблонное "Garbage Disposal" 188 раз (по 3 в меню на каждой странице с содержимым, на главной 5; <code>/blog/author/admin/</code> отдаёт 301 и ссылок не несёт). Ссылки в тексте:</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Анкор</th>
+<th>Где</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>"Garbage Disposal Service" (H3 плитки) и картинка плитки без анкора</td>
+<td>плитки услуг</td>
+</tr>
+<tr>
+<td><code>/plumber-frisco-tx/</code>, <code>/plumber-plano-tx/</code></td>
+<td>"Garbage disposal repair"</td>
+<td>списки "• Garbage disposal repair and replacement" и "• Garbage disposal repair and installation"</td>
+</tr>
+<tr>
+<td><code>/plumber-mckinney-tx/</code></td>
+<td>"garbage disposal repair" (2 раза)</td>
+<td>"Our garbage disposal repair page has the full pricing." и список услуг</td>
+</tr>
+<tr>
+<td>Allen, Carrollton, Celina, Lewisville, Little Elm, Prosper, The Colony</td>
+<td>"garbage disposal repair"</td>
+<td>список "Humming, jammed, (or) leaking underneath: garbage disposal repair"</td>
+</tr>
+<tr>
+<td><code>/blog/plumber-frisco-kitchen-drain-clog/</code></td>
+<td>"garbage disposal"</td>
+<td>"He did everything right before calling: cleaned the P-trap, checked the garbage disposal , even bought a small hardware store snake…"</td>
+</tr>
+</tbody>
+</table>
+<p>Все десять городских страниц ссылаются сюда; сервисные страницы, гайды и остальные посты только через меню. На новом сайте в тексте ссылаются девять городских страниц (на McKinney два раза), Frisco (пункт "Garbage disposals that jam or leak"), пост про засор кухни и плитка главной.</p>
+<h3>1.6. Что идёт против CLAUDE.md, дословно</h3>
+<p>«Новый сайт»: стоит ли это в файле новой страницы после точечных правок. Всё из этого раздела там стоит, кроме гарантии в описании, цен в узле Service, схемы организации живой страницы, H2 с телефонами и тега H3 у вопросов FAQ (у каждого пункта отмечено). "same-day service" в описании на новом сайте осталось.</p>
+<p><strong>Услуги, которых FPP не делает или не заявляет.</strong> Tankless, reroute, hydro jetting, газа нет. В фактах CLAUDE.md не записано, но и не запрещено: установка измельчителя клиента ("$229 for professional installation if you supply your own unit", вопрос "Can you install a disposal I bought myself?").</p>
+<p><strong>Цены</strong> (разрешена только $49 за выезд в будни; $49 на странице нет вовсе):
+- What We Install: "The numbers, up front as always: $229 for professional installation if you supply your own unit , or $400-500 complete with our Moen 3/4 HP installed, sealed, and tested." Новый сайт: стоит (в журнале правок «flag not changed»).
+- FAQ 1: "$229 for installation if you supply the unit, or $400-500 complete with our Moen 3/4 HP disposal, installed and tested, backed by a 10-year manufacturer warranty." FAQ 6: "Yes, that is the $229 option." Новый сайт: оба стоят, и в схеме FAQPage.
+- Схема Service: Offer с price 229 и Offer с minPrice 400, maxPrice 500. Новый сайт: нет.
+- По правилу сходится: "No separate parts bill afterward. The price you hear before we start is the price you pay after." и "Nights and weekends run through our emergency plumbing line with the after hours fee named before we roll out." (праздники не названы).</p>
+<p><strong>Сроки гарантии.</strong> Гарантия на нашу работу не названа нигде. Названа гарантия производителя Moen, 10 лет: это есть в записи диктовки Дениса от 2 октября (<code>source/dictation/2026-10-02-frisco-additions.md</code>, запись по-английски с его русских слов: "We mostly use Moen, 3/4 horsepower, with a ten year manufacturer warranty"), и это стоит на новой странице Frisco; но 3 октября из описания этой страницы её убрали как «срок гарантии».
+- Meta: "…and a 10-year warranty on new units." Новый сайт: убрано.
+- What We Install: "Our standard unit is a Moen 3/4 HP disposal backed by a 10-year manufacturer warranty, one of the longest in the business. If anything happens to the unit inside those ten years, the manufacturer sends you a new one free. That warranty length is the factory betting on its own build quality, and it is why we stopped installing the cheap stuff." Новый сайт: стоит. Что производитель «присылает новый бесплатно», в файлах проекта не подтверждено.
+- FAQ 1 (выше) и Offer в схеме "Moen 3/4 HP disposal installed, 10-year manufacturer warranty" (на новом сайте схемы нет).
+- "The short manufacturer warranty on those units tells you everything." сходится со словами Дениса (один год у дешёвых моделей).</p>
+<p><strong>Время в своих словах.</strong> Часов и минут приезда нет, но стоят (и на новом сайте): "We handle all three across Frisco, Plano, and the surrounding cities, usually the same day you call."; "Same day is the normal case. You call, we name a real window, and the swap itself usually takes under an hour." (час про работу); "Wherever you are, from Frisco to Plano , McKinney , Allen , or Little Elm , the truck is usually nearby." (намёк на быстрый приезд); "If the fix is a jam and a five minute reset, that is what you pay for."; H1 "…Done in One Visit" и "same-day service" в описании (H1 держит запрос, пункт 2.3). В отзыве на новом сайте "Came within 30 minutes on a weekend!" (Madison h.) это слова клиента.</p>
+<p><strong>Другие города.</strong> В тексте запрещённых нет, "the surrounding cities" без названий. Схема живой страницы: <code>areaServed</code> 8 городов (нет Prosper и Celina), в описании организации "surrounding North Dallas communities" (по правилу область называется только "North Dallas suburbs") и "Texas Master Plumber License M-44816" (снятая формулировка). На новом сайте схема своя: один узел Plumber, десять городов и Park Cities.</p>
+<p><strong>Граница с другими страницами (правило 9).</strong>
+- "While we are under there, the supply lines and shut-off valve replacement usually deserve a look too, since the parts under a sink tend to age together." Одно предложение со ссылкой на <code>/fixture-installation-repair/</code>, это разрешено; тема крана под раковиной по карте ключей у гайда <code>/plumbing-guide/angle-stop-valve-leaking-under-sink/</code> (замороженный).
+- "A good share of the kitchen backups we clear started with a disposal being treated like a trash can." Засоры кухни это <code>/clogged-drain-cleaning-frisco-plano/</code>; ссылка "drain" абзацем выше.
+- С другой стороны границу переходит старая McKinney: H2 "Garbage Disposals, and When to Stop Repairing Them", два вопроса FAQ, title "Plumber in McKinney, TX | Slab Leak &amp; Garbage Disposal Repair". Около 160 слов совпадают дословно (цепочки из 8 слов), например "A disposal that hums but will not spin is jammed", "because it was the cheapest thing that passed inspection" (на McKinney дальше "installed in a house where somebody actually cooks", здесь без "installed"), "run it every day or two with cold water, even for a few seconds with nothing in it", ответы FAQ про течь снизу и размер. На новом сайте McKinney несёт это так же.</p>
+<p><strong>Телефоны в тексте.</strong> Нет. Только шаблон: нижняя панель звонка тегом H2 "980-899-7997 469-998-8999" (на новом сайте нет).</p>
+<p><strong>Owner.</strong> Нет. <strong>Тире.</strong> Нет ("$400-500" это дефис). <strong>FAQ тегом заголовка.</strong> Все семь H3; на новом сайте шаблон даёт жирный текст.</p>
+<p><strong>Лозунги, вода, вопросы, тройки:</strong> H2 "Use It or Lose It", "Disposal Quit Mid Dinner Prep?" (вопрос), "Humming, Tripping, Leaking: What Each One Means" (тройка); "Searched for a plumber near me because the sink is full and the disposal just clicks?" (риторический вопрос; в нём ссылка на главную, привязанная к услуге, против правила 6); "Here is the honest version, and we would rather you hear it from us than learn it twice"; "the smart money says replace it"; "Anyone who tells you otherwise is selling you a visit."; "It still works, right up until it does not."; "share the same biography"; "gravity does what gravity does"; "Nobody sets out to do it wrong."; "one of the longest in the business"; "The numbers, up front as always"; "because this is where other companies start adding lines to the invoice"; тройки "It grinds faster, jams less, runs quieter, and lasts." и "gum up, rust, and die young".</p>
+<p><strong>Без подтверждения</strong> (правило 13, факты CLAUDE.md, диктовки): "From our experience across thousands of kitchens here"; "A licensed plumber arrives with a new unit already on the truck"; "it is why we stopped installing the cheap stuff"; "Tell us what the disposal is doing and we will tell you whether it is a repair or a replacement before anyone comes out."</p>
+<h3>1.7. Что на живой странице стоит сохранить по сути</h3>
+<p>Подтверждено словами Дениса 2 октября (дешёвые модели застройщика на 1/3 или 1/2 л.с., гарантия производителя год, засоры и заклинивание, через два или три года течь снизу, измельчители в основном меняют, а не чинят; ставим в основном Moen 3/4 л.с. с гарантией производителя 10 лет):
+- "a basic 1/3 or 1/2 HP unit, installed by the builder because it was the cheapest thing that passed inspection, in a house where somebody actually cooks."
+- "They rust from the inside out and eventually leak from the bottom"
+- "disposals mostly do not get repaired. Outside of a simple jam or a loose drain connection, once a unit starts causing problems…" (суть)
+- "Our standard unit is a Moen 3/4 HP disposal backed by a 10-year manufacturer warranty"</p>
+<p>Только из старого текста, в диктовках нет:
+- Три признака: "A disposal that hums but will not spin is jammed. Something hard is wedged between the impellers and the motor is fighting it.", "A disposal that trips its reset every week is a tired motor", "A disposal leaking from the bottom is done… That is the internal seal or the housing itself, and neither is repairable."
+- Шкаф: "water sitting on particle board swells it permanently and then the cabinet becomes the expensive part" (к этому подходит фото 103: пол шкафа испорчен долгой течью).
+- Размер: "3/4 HP is the sweet spot for a normal family of three or four who cook regularly", 1 HP для больших семей, 1/2 HP для кухни, где почти не готовят.
+- Уход: "run it every day or two with cold water, even for a few seconds with nothing in it"; не бросать "grease, coffee grounds, bones, fibrous peels, and eggshells by the bowl".
+- Посудомойка, своя тема страницы, на других страницах её нет: "an air gap, the small chrome fitting you sometimes see on the counter behind the faucet, or at minimum a high loop" и "that dirty water has an open path straight into the bottom of your dishwasher."
+- Что входит в замену: новый трап и tailpiece, новые прокладки и уплотнение фланца, линия посудомойки с новым хомутом, проверка всех соединений под мойкой водой, старый блок увозим ("We replace the drain trap and the tailpiece rather than reusing tired parts that will weep in six months…").
+- Вопросы FAQ 2, 3, 5, 7 по сути годятся (3 и 4 повторяются на McKinney).</p>
+<h3>1.8. Новый сайт против живой страницы</h3>
+<ul>
+<li>Старый текст с точечными правками; одобренного текста из <code>source/</code> нет. Title, H1, шесть H2 и семь вопросов FAQ те же.</li>
+<li>Точечная правка одна (<code>build_launch_content.py</code>, «meta description point fix», 3 октября): описание "Disposal humming, jammed, or leaking from the bottom? Honest repair or replace advice and same-day service in Frisco and Plano." (127 знаков).</li>
+<li>Отзывы: вместо Lanessa Arnold Jenkins стоят Sonja S. (Yelp) и Madison h. (Thumbtack). Строки "What Our Customers Say" и "Real Google reviews from local homeowners." лежат в front matter, но шаблон их не выводит; если вывести, слово "Google" будет неверным.</li>
+<li>Три цены помечены «flag not changed»: стоят в тексте, в FAQ и через FAQ в схеме FAQPage. Узел Service без цен.</li>
+<li>От шаблона: вопросы FAQ жирным текстом, блок «What is happening right now?» рядом с текстом (разделы страницы emergency и гайд по главному крану), один узел Plumber, десять городов и Park Cities в <code>areaServed</code>, <code>noindex</code>. H2 с телефонами нет.</li>
+<li>Своего текста 1,449 слов без H1 и с последней строкой (1,155 в теле с заголовками, 294 в FAQ). Это те же слова, что на живой странице: 1,434 с H1 9 и без последней строки 24.</li>
+</ul>
+<h2>2. Search Console</h2>
+<h3>2.1. Итоги</h3>
+<table>
+<thead>
+<tr>
+<th>Период</th>
+<th>Запросов</th>
+<th>Клики</th>
+<th>Показы</th>
+<th>Место по показам</th>
+<th>Итог Google со скрытыми</th>
+<th>Доля известных: клики, показы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 месяца (1 июля до 28 сентября 2026)</td>
+<td>137</td>
+<td>0</td>
+<td>6,718</td>
+<td>18.8</td>
+<td>1 клик, 7,121 показ, место 18.99</td>
+<td>0%, 94%</td>
+</tr>
+<tr>
+<td>16 месяцев (31 мая 2025 до 28 сентября 2026)</td>
+<td>254</td>
+<td>1</td>
+<td>30,876</td>
+<td>30.4</td>
+<td>4 клика, 32,829 показов, место 30.82</td>
+<td>25%, 94%</td>
+</tr>
+</tbody>
+</table>
+<p>13 месяцев до июля 2026 (вычитанием, все запросы 3 месяцев есть в 16): 24,158 показов, место 33.6, 1 клик.</p>
+<p>По группам:</p>
+<table>
+<thead>
+<tr>
+<th>Группа</th>
+<th>3 мес: запросов · показы · место</th>
+<th>16 мес: запросов · показы · место · клики</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>город из десяти</td>
+<td>35 · 2,989 · 12.9</td>
+<td>63 · 19,507 · 31.2 · 1</td>
+</tr>
+<tr>
+<td>без города</td>
+<td>28 · 2,406 · 14.5</td>
+<td>94 · 7,929 · 17.3 · 0</td>
+</tr>
+<tr>
+<td>другое место</td>
+<td>73 · 1,322 · 40.0</td>
+<td>96 · 3,439 · 56.2 · 0</td>
+</tr>
+<tr>
+<td>служебный запрос site:</td>
+<td>1 · 1 · 26.0</td>
+<td>1 · 1 · 26.0 · 0</td>
+</tr>
+</tbody>
+</table>
+<p>По месту страницы: за 3 месяца на местах от 1 до 10 стоят 20 запросов (1,168 показов), от 10 до 20 ещё 39 (3,851), от 20 до 50 59 (1,512), ниже 50 19 (187). За 16 месяцев от 10 до 20 стоят 45 запросов с 14,243 показами и тем одним кликом.</p>
+<p>Отдельно: 16 запросов про кнопку reset ("garbage disposal reset button" 51 показ, место 1.7, и другие) за 16 месяцев дали 79 показов на месте 1.6, за последние 3 месяца ни одного. "air gap for garbage disposal" и "garbage disposal air gap" по 2 показа на месте 2.</p>
+<h3>2.2. Первые 30 запросов и запросы с кликом</h3>
+<p>Полные таблицы за оба периода: <code>gd-gsc-top30-and-clicks.md</code>. За 3 месяца первые 30 запросов дают 5,883 показа из 6,718 (кликов 0), за 16 месяцев 27,397 из 30,876 и 1 клик.</p>
+<p>Первые 10 за 3 месяца (показы · место; в скобках 16 месяцев): garbage disposal repair 1,915 · 14.9 (6,380 · 15.9); garbage disposal repair plano 512 · 5.0 (2,453 · 13.9); garbage disposal repair frisco 339 · 9.3 (1,881 · 14.6); garbage disposal repair plano tx 323 · 12.8 (1,344 · 44.5); garbage disposal repair near me 254 · 10.6 (814 · 16.4); plano garbage disposal repair 228 · 4.5 (1,192 · 17.9 · 1 клик); garbage disposal repair little elm tx 184 · 20.4 (735 · 52.5); plano tx garbage disposal repair 180 · 13.3 (981 · 55.3); frisco garbage disposal repair 164 · 10.5 (1,227 · 18.3); garbage disposal repair little elm 163 · 13.7 (1,462 · 33.0). Дальше идут McKinney, Frisco tx, "garbage disposal repair service" 99 · 12.7 и запросы с Rockwall, Coppell, Richardson, Lake City.</p>
+<p>За 16 месяцев в первую тридцатку входят, кроме названных, в том числе "garbage disposal repair mckinney" 1,654 · 28.3, "garbage disposal repair dallas" 945 · 66.2, "the colony garbage disposal repair" 543 · 26.0, "garbage disposal repair the colony" 487 · 20.9, "garbage disposal repair allen" 161 · 26.1, "garbage disposal repair carrollton" 161 · 55.5, "lewisville garbage disposal repair" 149 · 69.1.</p>
+<p>Запрос с кликом один: "plano garbage disposal repair", 16 мес 1,192 · 17.9 · 1 клик (за 3 месяца 228 · 4.5 · 0).</p>
+<h3>2.3. Что держат title, H1, H2 и вопросы FAQ</h3>
+<p>Заголовок «держит» запрос, когда все значимые слова запроса стоят в нём (in, tx и подобные не считаются, множественное число приводится к единственному, город считается).</p>
+<table>
+<thead>
+<tr>
+<th>Заголовок</th>
+<th>3 мес: запросов · показы</th>
+<th>16 мес: запросов · показы · клики</th>
+<th>Держит только он, 16 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title "Garbage Disposal Repair in Frisco &amp; Plano | Jammed or Leaking Unit?"</td>
+<td>16 · 3,982</td>
+<td>25 · 17,658 · 1</td>
+<td>19 · 11,268 · 1</td>
+</tr>
+<tr>
+<td>meta description</td>
+<td>0</td>
+<td>2 · 3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>H1 "Garbage Disposal Repair and Replacement, Done in One Visit"</td>
+<td>3 · 1,918</td>
+<td>6 · 6,390</td>
+<td>0 (их держит и title)</td>
+</tr>
+<tr>
+<td>все девять H2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>вопрос FAQ "How much does garbage disposal installation cost?"</td>
+<td>0</td>
+<td>1 · 1 ("who installs garbage disposals")</td>
+<td>1 · 1</td>
+</tr>
+<tr>
+<td>остальные шесть вопросов FAQ</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Title и H1 вместе держат 27 запросов: 17,686 показов и клик за 16 месяцев, 4,001 показ за 3 месяца. Что нельзя потерять:
+- "Garbage Disposal Repair" в начале title и в начале H1: точная фраза "garbage disposal repair" стоит только там (в абзацах её нет), это 6,380 показов.
+- "Frisco &amp; Plano" в title: на нём держатся запросы «измельчитель плюс plano или frisco», у которых все слова стоят в title: 15 запросов, 11,153 показа и единственный клик за 16 месяцев, 13 запросов и 2,064 показа за 3 месяца. Остальные запросы с этими городами (installation, sink, replacement) title держит не целиком.
+- "Leaking" в title держит "leaking garbage disposal repair" (105 показов за 16 месяцев) и ещё три таких запроса (вместе 115).
+- Little Elm и McKinney не держит ни один заголовок (они только в предложении со ссылками), The Colony, Carrollton и Lewisville на странице нет вовсе («частично» в полных таблицах).
+- H2 и вопросы FAQ запросов не держат: по Search Console их можно менять.</p>
+<h3>2.4. Фраза целиком: 20 первых запросов за каждый период и запрос с кликом</h3>
+<p>Список из 26 запросов (20 первых за 16 месяцев, 20 первых за 3 месяца, запрос с кликом). Точная фраза (подряд, слово в слово, регистр и знаки не в счёт) стоит на живой странице только у одного: "garbage disposal repair" (title и H1). У остальных 25, включая запрос с кликом "plano garbage disposal repair" и все запросы «garbage disposal repair плюс город» (plano, frisco, mckinney, little elm, the colony, с tx и без), точной фразы нет нигде: ни в тексте, ни в FAQ, ни в отзыве. Нет и "garbage disposal repair near me", "garbage disposal repair service".</p>
+<p>По правилу проектного инструмента (слово "in" не считается) title "Garbage Disposal Repair in Frisco &amp; Plano" содержит "garbage disposal repair frisco" и "garbage disposal repair frisco tx", а "frisco garbage disposal repair" как перестановку. Для Plano так не выходит: между "repair" и "plano" стоит "frisco".</p>
+<h3>2.5. Другие страницы сайта по запросам про измельчитель</h3>
+<p>Только запросы про кухонный измельчитель. «Выше»: лучшее место по тому же запросу за тот же период. Все строки: <code>gd-gsc-other-pages.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>3 мес: запросов · показы · место (выше этой: запросов, показы)</th>
+<th>16 мес: запросов · показы · место (выше этой)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/plumber-plano-tx/</code></td>
+<td>33 · 933 · 2.5 (27, 714)</td>
+<td>33 · 2,712 · 45.5 (27, 313)</td>
+</tr>
+<tr>
+<td><code>/</code> (главная)</td>
+<td>2 · 7 · 14.0 (1, 1)</td>
+<td>55 · 5,542 · 14.9 · 1 клик (31, 4,831)</td>
+</tr>
+<tr>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>5 · 75 · 11.3 (3, 45)</td>
+<td>12 · 1,392 · 49.8 (4, 28)</td>
+</tr>
+<tr>
+<td><code>/plumber-mckinney-tx/</code></td>
+<td>4 · 69 · 7.6 (4, 69)</td>
+<td>6 · 229 · 44.8 (5, 175)</td>
+</tr>
+<tr>
+<td><code>/plumber-little-elm-tx/</code></td>
+<td>2 · 2 · 20.5 (0)</td>
+<td>6 · 2,599 · 57.2 (2, 1,305)</td>
+</tr>
+<tr>
+<td><code>/plumber-the-colony-tx/</code></td>
+<td>0</td>
+<td>6 · 1,053 · 56.5 (1, 274)</td>
+</tr>
+<tr>
+<td><code>/plumber-lewisville-tx/</code></td>
+<td>0</td>
+<td>7 · 856 · 59.3 (2, 399)</td>
+</tr>
+<tr>
+<td><code>/plumber-allen-tx/</code></td>
+<td>0</td>
+<td>2 · 647 · 49.0 (1, 277)</td>
+</tr>
+<tr>
+<td><code>/plumber-carrollton-tx/</code></td>
+<td>1 · 1 · 29.0 (0)</td>
+<td>4 · 263 · 62.0 (2, 2)</td>
+</tr>
+<tr>
+<td>ещё семь страниц (water heaters, emergency, Celina, Prosper, toilet, contact, faucet)</td>
+<td>0 или 1 показ</td>
+<td>от 1 до 57 показов каждая</td>
+</tr>
+</tbody>
+</table>
+<p>Строка гайда по цене водонагревателя в <code>gd-gsc-other-pages.md</code> ("cost to remove and dispose old water heater 2026", 1 показ) не про измельчитель, а про вывоз старого водонагревателя: в счёт страниц выше не идёт.</p>
+<p>Главные строки, где другая страница выше:</p>
+<table>
+<thead>
+<tr>
+<th>Запрос, период</th>
+<th>Другая страница: показы · место · клики</th>
+<th>Эта страница</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>garbage disposal repair plano, 3 мес</td>
+<td><code>/plumber-plano-tx/</code> 216 · 1.7</td>
+<td>512 · 5.0</td>
+</tr>
+<tr>
+<td>garbage disposal repair plano tx, 3 мес</td>
+<td><code>/plumber-plano-tx/</code> 145 · 1.6</td>
+<td>323 · 12.8</td>
+</tr>
+<tr>
+<td>garbage disposal installation, 3 мес</td>
+<td><code>/plumber-plano-tx/</code> 119 · 1.0</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>garbage disposal repair near me, 3 мес</td>
+<td><code>/plumber-mckinney-tx/</code> 46 · 5.7</td>
+<td>254 · 10.6</td>
+</tr>
+<tr>
+<td>garbage disposal repair, 3 мес</td>
+<td><code>/plumber-frisco-tx/</code> 16 · 1.8</td>
+<td>1,915 · 14.9</td>
+</tr>
+<tr>
+<td>garbage disposal repair plano tx, 16 мес</td>
+<td><code>/</code> 983 · 3.9</td>
+<td>1,344 · 44.5</td>
+</tr>
+<tr>
+<td>garbage disposal repair plano, 16 мес</td>
+<td><code>/</code> 970 · 10.0 · 1 клик</td>
+<td>2,453 · 13.9</td>
+</tr>
+<tr>
+<td>garbage disposal repair, 16 мес</td>
+<td><code>/</code> 913 · 12.0</td>
+<td>6,380 · 15.9</td>
+</tr>
+<tr>
+<td>garbage disposal repair little elm tx, 16 мес</td>
+<td><code>/plumber-little-elm-tx/</code> 718 · 51.4</td>
+<td>735 · 52.5</td>
+</tr>
+<tr>
+<td>the colony tx garbage disposal repair, 16 мес</td>
+<td><code>/plumber-the-colony-tx/</code> 446 · 52.5</td>
+<td>нет</td>
+</tr>
+</tbody>
+</table>
+<p>Что из этого следует по файлам:
+- Страница Plano за 3 месяца стоит в среднем на месте 2.5 по запросам про измельчитель, по 18 из 33 на месте 3 и выше (723 показа), в том числе по 12 запросам без слова plano (321 показ: Frisco, The Colony, Little Elm, Willow Bend, Collin County, Lake City и "garbage disposal installation" без города). Кнопка сайта в карточке Google Plano ведёт на страницу Plano (<code>seo/cannibalization-findings.md</code>): это показы карточки, не текста; за 16 месяцев место той же страницы 45.5. Так же "garbage disposal repair" у Frisco на месте 1.8 (карточка Frisco).
+- Главная брала запросы про измельчитель до июля 2026: 5,535 показов из 5,542 и 1 клик ("garbage disposal repair plano"); за последние 3 месяца у неё 7 показов, по этим запросам теперь показывается эта страница.
+- Старая McKinney выше этой страницы по 4 запросам за 3 месяца ("garbage disposal repair near me", "garbage disposal repair mckinney" и ещё два); у неё раздел и title про измельчители (пункт 1.6).
+- Городские страницы показываются по «измельчитель плюс свой город» за 16 месяцев на местах от 47 до 68 по запросам с 40 показами и больше (среднее по странице от 49.0 у Allen до 62.0 у Carrollton). Эта страница по тем же запросам где выше ("garbage disposal repair little elm" 33.0 против 61.5, "the colony garbage disposal repair" 26.0 против 62.0, все запросы с frisco), где ниже или её нет ("the colony tx…", "lewisville tx…", "allen tx…", "carrollton tx garbage disposal repair").</p>
+<p>Обратная сторона, запросы этой страницы, которые по карте ключей принадлежат другим: "plano faucet repair" (14 показов, место 87.6; кран, страница <code>/fixture-installation-repair/</code>; её же показывает и Plano 1,073 · 42.5), "sink repair plano" (7 · 82.9), "emergency plumber mckinney" (1 · 95.0; главная и страница emergency), "cabinet replacements frisco" (1, не сантехника), "moen" (1). Запрещённый для этой страницы по карте ключ "plumber plano" у неё не встречается ни разу.</p>
+<h3>2.6. Измельчитель с каждым из десяти городов</h3>
+<p>Только запросы про измельчитель с названием города (запросы про вывоз мусора, "disposal of garbage plano" и "plano disposal of garbage", не в счёт). Числа: запросов · показы · место по показам.</p>
+<table>
+<thead>
+<tr>
+<th>Город</th>
+<th>Эта страница, 3 мес</th>
+<th>Эта страница, 16 мес</th>
+<th>Кто ещё, 3 мес</th>
+<th>Кто ещё, 16 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plano</td>
+<td>11 · 1,347 · 8.7</td>
+<td>14 · 6,515 · 28.3 · 1 клик</td>
+<td>Plano 9 · 534 · 2.5 (карточка); главная 1 · 6</td>
+<td>главная 6 · 2,718 · 12.3 · 1 клик; Plano 9 · 2,313 · 52.9</td>
+</tr>
+<tr>
+<td>Frisco</td>
+<td>10 · 849 · 12.5</td>
+<td>11 · 5,151 · 23.8</td>
+<td>Plano 6 · 136 · 2.5; Frisco 3 · 36 · 8.3</td>
+<td>Frisco 5 · 1,337 · 51.2; главная 7 · 1,099 · 21.8</td>
+</tr>
+<tr>
+<td>McKinney</td>
+<td>6 · 318 · 25.9</td>
+<td>7 · 2,668 · 33.6</td>
+<td>McKinney 2 · 13 · 9.6</td>
+<td>McKinney 4 · 173 · 57.1</td>
+</tr>
+<tr>
+<td>Little Elm</td>
+<td>5 · 455 · 16.9</td>
+<td>6 · 3,193 · 42.8</td>
+<td>Plano 3 · 10 · 7.0; Little Elm 2 · 2</td>
+<td>Little Elm 6 · 2,599 · 57.2</td>
+</tr>
+<tr>
+<td>The Colony</td>
+<td>2 · 19 · 10.6</td>
+<td>5 · 1,191 · 27.5</td>
+<td>Plano 5 · 72 · 2.7</td>
+<td>The Colony 6 · 1,053 · 56.5; главная 5 · 295 · 13.1</td>
+</tr>
+<tr>
+<td>Allen</td>
+<td>0</td>
+<td>3 · 221 · 27.9</td>
+<td>нет</td>
+<td>Allen 2 · 647 · 49.0</td>
+</tr>
+<tr>
+<td>Carrollton</td>
+<td>1 · 1 · 46.0</td>
+<td>5 · 311 · 57.3</td>
+<td>Carrollton 1 · 1 · 29.0</td>
+<td>Carrollton 4 · 263 · 62.0; главная 4 · 231 · 30.6</td>
+</tr>
+<tr>
+<td>Lewisville</td>
+<td>0</td>
+<td>5 · 231 · 69.6</td>
+<td>нет</td>
+<td>Lewisville 7 · 856 · 59.3; главная 5 · 30 · 4.4</td>
+</tr>
+<tr>
+<td>Prosper</td>
+<td>0</td>
+<td>0</td>
+<td>нет</td>
+<td>Prosper 1 · 15 · 46.6</td>
+</tr>
+<tr>
+<td>Celina</td>
+<td>0</td>
+<td>0</td>
+<td>нет</td>
+<td>Celina 2 · 9 · 23.2</td>
+</tr>
+</tbody>
+</table>
+<p>Лучшее место по городу за 3 месяца: Plano 3.9, The Colony 7.0, Frisco 9.3, Little Elm 11.0, McKinney 16.4. На странице названы Frisco и Plano (title, вступление, раздел) и Little Elm, McKinney, Allen (одно предложение); The Colony, Carrollton, Lewisville, Prosper, Celina нет.</p>
+<h3>2.7. Слова, которые на страницу не идут</h3>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>3 мес: запросов · показы</th>
+<th>16 мес: запросов · показы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Чужие места, всего</td>
+<td>73 · 1,322</td>
+<td>96 · 3,439</td>
+</tr>
+<tr>
+<td>из них Dallas (и "dallas tx")</td>
+<td>4 · 47</td>
+<td>7 · 1,425</td>
+</tr>
+<tr>
+<td>Rockwall</td>
+<td>5 · 320</td>
+<td>5 · 575</td>
+</tr>
+<tr>
+<td>Coppell</td>
+<td>6 · 312</td>
+<td>6 · 371</td>
+</tr>
+<tr>
+<td>Richardson</td>
+<td>5 · 196</td>
+<td>5 · 227</td>
+</tr>
+<tr>
+<td>Lake City (и "lake city sc")</td>
+<td>2 · 110</td>
+<td>3 · 178</td>
+</tr>
+<tr>
+<td>Остальные места (за 16 мес 42 места и индексы 43291, 43069): Willow Bend, Collin County, Far North Dallas, Denton, Denton County, Valley Ranch, Twin Creeks, Deerfield, Windhaven, Lake Dallas, Bartonville, Highland Village, Irving, Garland, Fairview, Murphy, Addison, Farmers Branch, Rowlett, Wylie и другие, в том числе вне Техаса</td>
+<td>51 · 337</td>
+<td>70 · 663</td>
+</tr>
+<tr>
+<td>Невидимый знак после "repair" (zero width space; шаблон "sink disposal repair" или "garbage disposal repair" плюс место)</td>
+<td>40 · 291</td>
+<td>48 · 834</td>
+</tr>
+<tr>
+<td>Не про услугу: "can you show me pictures of", "i need to replace it", "is it required", "stuck?", "moen", два запроса site:</td>
+<td>4 · 4</td>
+<td>7 · 11</td>
+</tr>
+<tr>
+<td>Про вывоз мусора, не измельчитель: "disposal of garbage plano", "plano disposal of garbage", "garbage dumpster plano"</td>
+<td>0</td>
+<td>3 · 3</td>
+</tr>
+<tr>
+<td>Слово handyman</td>
+<td>0</td>
+<td>2 · 2</td>
+</tr>
+<tr>
+<td>Марка InSinkErator (на странице названа только Moen)</td>
+<td>1 · 1</td>
+<td>2 · 2</td>
+</tr>
+<tr>
+<td>Канадское слово garburator</td>
+<td>1 · 1</td>
+<td>2 · 2</td>
+</tr>
+<tr>
+<td>Оценочные слова: cost, how much</td>
+<td>1 · 1</td>
+<td>2 · 4</td>
+</tr>
+<tr>
+<td>Шкафы ("cabinet replacements frisco")</td>
+<td>0</td>
+<td>1 · 1</td>
+</tr>
+</tbody>
+</table>
+<p>Прямо запрещены CLAUDE.md: Dallas (и Far North Dallas), Richardson, Denton, Irving, Garland, Fairview. Остальные места в десять городов не входят; Willow Bend, Deerfield, Windhaven, Twin Creeks, Valley Ranch это районы и улицы.</p>
+<h3>Как считали и вторая проверка</h3>
+<ul>
+<li>Скрипт <code>gd_gsc.py</code> в <code>/private/tmp/claude-501/-Users-denyskavaler-Projects-fppplumbing-site/d2b78dea-4d58-4222-812f-a40bb43eb5d1/scratchpad/services/garbage-disposal/</code> сделан из копий <code>docs/briefs/_shared/gsc_plano_lib.py</code> и <code>gsc_plano_live.py</code> (оригиналы не тронуты, <code>tools/gsc_page_table.py</code> не запускался). Правила слов те же; группы: город из десяти, другое место, служебный, без города; пометки «карта» нет (кнопки карточек Google ведут на Frisco и Plano). Отзыв клиента в счёт слов не идёт.</li>
+<li>Итоги посчитаны трижды (модуль csv, разбор строк без него, awk), все три совпали: 3 месяца 137 запросов, 0 кликов, 6,718 показов, место 18.83; 16 месяцев 254, 1, 30,876, место 30.40. Те же числа в <code>source/gsc/page-query-coverage.csv</code>.</li>
+<li>Группы сходятся с итогом: 28 + 35 + 73 + 1 = 137 и 2,406 + 2,989 + 1,322 + 1 = 6,718; 94 + 63 + 96 + 1 = 254 и 7,929 + 19,507 + 3,439 + 1 = 30,876.</li>
+<li>Руками сверены "garbage disposal repair" (1,915 · 14.91 и 6,380 · 15.93), "plano garbage disposal repair" (1,192 · 17.92 · 1) и итог в <code>performance-3m/Pages.csv</code> (1 · 7,121 · 18.99).</li>
+</ul></main></body></html>
