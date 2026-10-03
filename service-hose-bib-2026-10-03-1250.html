@@ -1,0 +1,600 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 03.10.2026 12:50</p><h1>Hose bib repair: живая страница и Search Console (3 октября 2026)</h1>
+<p>Страница: https://fppplumbing.com/hose-bib-repair-frisco-plano/ . Сейчас не переписывается, текста страницы здесь нет.</p>
+<p>Откуда данные: обход живого сайта от 30 сентября 2026 (<code>source/crawl/</code>); новый сайт <code>site/src/content/pages/hose-bib-repair-frisco-plano.md</code> и сборка <code>site/dist/</code> (3 октября); правки <code>tools/build_launch_content.py</code>, <code>site/src/data/launch-changes.csv</code>; <code>source/FPP-Hose-Bib-Page.docx</code>, <code>source/approved-text-edits.md</code>; <code>reviews/</code>; <code>photos/captions-en.csv</code>; Search Console <code>source/gsc/</code> (выгрузка 30 сентября 2026); <code>seo/keyword-map.md</code>, <code>docs/pages-plan.md</code>; <code>source/dictation/2026-10-02-frisco-additions.md</code>, <code>source/frisco-text-v4.md</code>.</p>
+<p>Длинные таблицы в <code>docs/briefs/services/hose-bib/</code>: <code>hb-gsc-table-3m.md</code> и <code>hb-gsc-table-16m.md</code> (все запросы), <code>hb-gsc-top30-and-clicks.md</code>, <code>hb-gsc-headings.md</code> (что держит каждый заголовок), <code>hb-gsc-other-pages.md</code> (другие страницы и обратная сторона), <code>hb-links.md</code> (все ссылки).</p>
+<p>Числа через точку: показы · место · клики. Тире живой страницы показаны пометкой [короткое тире] или [длинное тире].</p>
+<h2>Коротко</h2>
+<ol>
+<li>Кормит мало. Итог Google: за 3 месяца 2 клика (оба по скрытым запросам), 1,575 показов, место 21.26; за 16 месяцев 13 кликов, 7,833 показа, место 37.48. Известный запрос с кликом один: "who fixes outdoor spigots" (16 мес: 5 · 7.2 · 1). В <code>docs/pages-plan.md</code> 14-я в группе 3.</li>
+<li>Главное: большую часть известных показов страница берёт чужим ключом. Запросы про кран без уличных слов, почти все «faucet repair плюс город» (frisco faucet repair, faucet repair frisco, plano faucet repair…), дают 4,101 показ из 5,507 за 16 месяцев (20 запросов, из них 17 с repair и городом: 4,069 показов) и 361 из 594 за 3 месяца (4 запроса), кликов 0. По <code>seo/keyword-map.md</code> это ключ <code>/fixture-installation-repair/</code>, этой странице он запрещён. Ловит их title словами "Outdoor Faucet Repair in Frisco &amp; Plano"; по двум самым большим страница кранов стоит выше (24.9 и 28.1 против 38.7 и 42.5).</li>
+<li>По своей теме (hose bib, spigot, outdoor faucet) за 16 месяцев 145 запросов, 1,376 показов, место 39.2, 1 клик; за 3 месяца 32 · 223 · 30.1 (до июля место было 41.0). Главный ключ по карте "hose bib repair": 1 показ за 16 месяцев на месте 56.</li>
+<li>Нельзя потерять: "Hose Bib" в title и H1; H2 "What Makes a Hose Bib Installation “Right”?" (точная фраза "hose bib installation", 129 показов за 16 месяцев, 36 за 3, только здесь); "Outdoor Faucet Repair" в title (точная фраза "outdoor faucet repair"). Лучший по месту большой запрос "hose bibb repair allen" (307 · 10.7) не держит ни один заголовок: "bibb" на странице нет.</li>
+<li>Спор правил: правка Дениса от 30 сентября велит убрать "faucet repair" из title и H1; этими словами title держит 3,848 показов чужого ключа (кликов 0), своей темы 154.</li>
+<li>Против правил: цены "$300" и "$5,000" (на новом сайте стоят); три тире и дважды "North Dallas" (на новом исправлено); ответы FAQ тегом H2 (на новом нет); семь разорванных фраз (стоят); H1 и четыре H2 с вопросами и лозунгами; числа без подтверждения ("hundreds", "dozens", "every week"); "full wall rebuilds"; в схеме второй узел Plumber и снятая формулировка лицензии.</li>
+<li>Не хватает по правилу 8: своего текста 844 слова против 2,500; разделов с содержанием 6 (нужно 10 до 16); FAQ 3 (нужно 5 до 7); нет раздела «если это происходит сейчас» и гайда по главному крану (на новом сайте их частично даёт шаблонный блок "What is happening right now?" после текста, пункт 1.8); нет ссылки "plumber near me" на главную; ссылок на десять городов в тексте 0 (Celina и Lewisville не названы); из соседних услуг в тексте только leak detection; нет внешней ссылки на источник; отзывов на живой нет.</li>
+<li>Одобренный <code>source/FPP-Hose-Bib-Page.docx</code> (1,773 слова, 9 разделов, 6 FAQ, главная и десять городов анкорами) не стоит ни на живом, ни на новом сайте; его title снова с "Faucet Repair", в тексте "Denton County".</li>
+<li>Тему на сайте кормит пост <code>/blog/burst-outside-spigot/</code> (за 3 месяца 16 кликов, 1,721 показ, место 9.3; 95% скрыто). Allen выше этой страницы по "hose bibb repair allen" за 3 месяца (5.7 против 14.1), и её title говорит "Hose Bibs" (по карте нельзя). Frisco, Plano и главная выше по "outdoor faucet repair dfw".</li>
+<li>Город плюс уличный кран: запросы есть только с Allen и Lewisville. Отложить: 29 запросов с чужими местами (362 показа за 16 месяцев, Richardson 165), 11 без предмета, 2 site:.</li>
+</ol>
+<h2>1. Живая страница</h2>
+<h3>1.1. Title, описание, H1, заголовки, объём</h3>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>Живая страница</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title (71 знак)</td>
+<td>"Hose Bib &amp; Outdoor Faucet Repair in Frisco &amp; Plano | Spigot Replacement"</td>
+</tr>
+<tr>
+<td>Meta description (178 знаков, длиннее того, что Google обычно показывает)</td>
+<td>"Leaky outdoor faucet or broken hose bib? We repair and replace spigots, frost-free hydrants, and outdoor valves in Frisco, Plano &amp; McKinney. Clean, licensed work. Need fast help?"</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>"Hose Bib Leaking? Outdoor Spigot Busted? We Replace Them Right"</td>
+</tr>
+<tr>
+<td>OG title</td>
+<td>"Outdoor Faucet (Hose Bib) Repair" (не совпадает с title)</td>
+</tr>
+<tr>
+<td>OG картинка</td>
+<td><code>/wp-content/uploads/2025/05/new-hose-bib-spigot-installation-frisco-768x1024.jpg</code></td>
+</tr>
+<tr>
+<td>Даты в схеме</td>
+<td>опубликована 6 мая 2025, изменена 16 августа 2026</td>
+</tr>
+</tbody>
+</table>
+<p>H2 по порядку (в скобках слов текста в разделе, по тексту обхода):
+1. "Emergency Outdoor Faucet or Hose Bib Issues? We’re On Call 24/7 in Frisco &amp; Plano" (96; это и есть вступление: между H1 и первым H2 текста нет)
+2. "Why Outdoor Faucets (Spigots / Hose Bibs) Fail Even “Frost-Proof” Ones" (137)
+3. "What Makes a Hose Bib Installation “Right”?" (103)
+4. "Signs Your Outdoor Faucet Might Be Leaking Inside the Wall [короткое тире] Plumber Tips" (90)
+5. "Outdoor Faucet Leaking, Hose Bib Dripping or Loose? We’re On Call 24/7 in Frisco &amp; Plano" (78)
+6. "Serving Frisco, Plano, Allen, McKinney &amp; North Dallas" (30, только список мест)
+7. "Outdoor Faucet Questions From Homeowners" (FAQ, 126 слов вопросов и ответов)
+8. Три ответа FAQ, каждый тегом H2 (пункт 1.2)
+9. "Outdoor Spigot Problem? Call a Licensed Plumber, Not Just Anyone" (56 слов, потом кнопка "Request Service" и две строки со ссылками, 36 слов)
+10. "980-899-7997 469-998-8999" (не раздел: два телефона нижней панели звонка свёрстаны тегом H2, шаблон всего старого сайта)</p>
+<p>H3 нет ни одного.</p>
+<p>Объём. Обход: 859 слов по пробелам, слов с буквами или цифрами 844. От H1 до конца FAQ 740 (H1 10, заголовки шести разделов 65, их текст 534, FAQ 131), последний раздел 104. До 2,500 не хватает около 1,650.</p>
+<p>Ключи в title, описании, alt фото и тексте вместе: "hose bib" 14 раз, "outdoor faucet" 10, "spigot" 15, "hose bib repair" подряд 0, "near me" 0. Города там же: Frisco 7, Plano 6, McKinney 3, Allen 2 (H2 "Serving…" и список), Little Elm, Prosper, The Colony, Carrollton по разу в списке; Celina и Lewisville нет. В одном тексте страницы (<code>body_text</code> обхода, без title, описания и alt): "hose bib" 11, "outdoor faucet" 8, "spigot" 12, Frisco 4, Plano 4, McKinney 2.</p>
+<h3>1.2. FAQ: три вопроса слово в слово</h3>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Вопрос</th>
+<th>Ответ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>"Why is my outdoor faucet leaking even when it’s off?"</td>
+<td>"It usually means the faucet is worn out inside. The rubber washer or internal stem is damaged, or it’s packed with rust and calcium. If it keeps dripping, it’s time to replace it."</td>
+</tr>
+<tr>
+<td>2</td>
+<td>"Can I just change the handle if it broke?"</td>
+<td>"If the handle snapped off but the valve still works, sure [длинное тире] we can swap the handle. But if it won’t shut off water, the whole unit needs to be replaced."</td>
+</tr>
+<tr>
+<td>3</td>
+<td>"Do I need to cover my hose bib in winter?"</td>
+<td>"Yes, especially if it’s not a frost-proof model. One freeze can split the pipe inside your wall. We install frost-proof hose bibs and show you how to protect them before the next cold snap."</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Вопросы стоят в <code>summary</code> раскрывающегося списка Elementor, это не тег заголовка; зато все три ОТВЕТА свёрстаны тегом H2. По правилу 8 вопрос жирным текстом, ответ обычным.</li>
+<li>Схема FAQPage совпадает со страницей слово в слово (с длинным тире). Вопросов 3, нужно 5 до 7.</li>
+<li>Слово в слово больше нигде на сайте не стоят. Близкие по смыслу: Allen "My outdoor faucet drips. Is that urgent?" (к вопросу 1); новая Frisco "What should I do before a freeze in Frisco?" и раздел поста <code>/blog/burst-outside-spigot/</code> "Winterizing Your Outside Spigots Before the Next Freeze" (к вопросу 3).</li>
+</ul>
+<h3>1.3. Отзывы</h3>
+<p>На живой странице отзывов нет (в коде нет звёзд и ссылок на Google Maps); в <code>reviews/all-reviews.csv</code> ни один из 407 не записан за ней. На новом сайте (<code>reviews/site-reviews.json</code>, <code>site-ledger.md</code>) два автора, оба больше нигде не стоят:
+- Bharathi Hariharan, Google, профиль Plano, 7 июля 2026, подпись "★★★★★ · Local Guide Level 3 · July 2026 · Google". Текст и ссылка совпадают с архивом знак в знак, уровень 3 в архиве есть. Про замену уличного hose bib, вскрытие и подтверждённую цену; в тексте клиента два длинных тире и "peace of mind" (не правится), исполнитель "Dennis". Города в отзыве и в подписи нет: верно по правилу 11.
+- David Cuevas, Google, профиль Plano, 14 августа 2026, "★★★★★ · Local Guide Level 4 · August 2026 · Google": "On time and did a great job replacing our outdoor spigot." Совпадает с архивом, уровень 4 в архиве есть.</p>
+<p>В запасе (<code>reviews/ledger-decisions.csv</code>): Quan Nguyen (Google, профиль Frisco, март 2026, "My busted outdoor spigot was inspected and replaced carefully and fast."), снят с Frisco при версии 3 и оставлен сюда, на новом сайте не стоит ни на одной странице. На живом сайте этот отзыв стоит на странице Little Elm (<code>reviews/ledger.md</code>; в <code>all-reviews.csv</code> on_old_site <code>/plumber-little-elm-tx/</code>).</p>
+<h3>1.4. Фото</h3>
+<p>Одно настоящее фото с работы, сразу под H1, оно же OG картинка: <code>/wp-content/uploads/2025/05/new-hose-bib-spigot-installation-frisco-768x1024.jpg</code>, alt "New outdoor hose bib (spigot) installed after replacing leaking faucet in Frisco backyard". Новый frost free кран с чёрной ручкой в кирпиче у белого камня, внизу гравий. Грузится «лениво», хотя стоит на первом экране. Остальное шаблон (логотип, знак BBB). В <code>photos/index.csv</code> такого файла нет; по виду это фото 52 архива (сравнил на глаз по <code>photos/thumbs/052.jpg</code>), а у 52 город по месту съёмки Celina. Значит "in Frisco backyard" в alt не подтверждается. На новом сайте это фото с тем же alt стоит ниже, в начале текста, и грузится лениво; первым экраном (грузится сразу) стоит фото 30 архива: <code>/img/frost-free-outside-faucet-replaced-frisco-30-720.webp</code>, alt "New frost free outside faucet on a brick wall, hose bib replacement, Frisco" (в <code>photos/captions-en.csv</code> у 30 hero_for эта страница, city_final Frisco).</p>
+<p>Для этой страницы в <code>photos/captions-en.csv</code> записаны ещё: 29 и 30 (новый frost free, два ракурса одного крана; у 30 city_final Frisco, у 29 город пустой; по пометке файла 29 снято вне десяти городов, 30 у границы Frisco), 100 и 101 (до и после, Frisco), 121 (лопнувший и новый рядом, Celina), 172 (течёт и не закрывается, city_final Plano, по пометке место у границы Plano и Frisco, ближе к Plano), видео 176 и фото 178 (оба Frisco, стоят на новой Frisco). Видео на живой странице нет.</p>
+<h3>1.5. Ссылки</h3>
+<p>Полный список с предложениями: <code>docs/briefs/services/hose-bib/hb-links.md</code>. Поправка к его разделу 2: на новом сайте ссылка на гайд по главному крану есть, в шаблонном блоке "What is happening right now?" после текста (пункт 1.8); в самом тексте её нет.</p>
+<p>Со страницы: внутренних ссылок 105, в тексте 2 (последние две строки целиком: на <code>/water-leak-detection-frisco-plano/</code> и <code>/emergency-plumbing-services/</code>). Нет: "plumber near me" на главную, ссылок на города (города голым списком), соседних услуг в тексте, гайда по главному крану, поста про лопнувший кран, внешних ссылок.</p>
+<p>На страницу: шаблонное "Outdoor Faucet (Hose Bib) Repair" 189 раз на 62 страницах. В тексте: главная (плитка), Allen ("hose bib repair" дважды), Frisco ("hose bib repair"), Plano ("Outdoor faucet repair"), emergency ("Outdoor faucets"), пост про лопнувший кран ("outside spigot replacement"), пост <code>/blog/outside-spigot-replacement-plumber-in-frisco/</code> (голый адрес вместо анкора), гайд PRV ("outdoor hose"), гайд <code>/plumbing-guide/water-leak-yard-tips-2026/</code> ("outside spigot"). Из десяти городов в тексте ведут три. На новом сайте то же плюс новая Frisco ("Both kinds are on the hose bib repair page") и главная (плитка "Hose bib repair", точка "Outdoor faucet" на трубе).</p>
+<h3>1.6. Что идёт против CLAUDE.md, дословно</h3>
+<p>«Новый сайт»: стоит ли это в файле новой страницы после точечных правок.</p>
+<p><strong>Услуги, которых FPP не делает или не заявляет.</strong> Tankless, reroute, hydro jetting, газа нет. Под вопросом:
+- "…from clean installs to full wall rebuilds." Перестройки стен в списке услуг нет (стены открываем, восстанавливает партнёр). Новый сайт: стоит.
+- "Insulating the wall cavity if needed to prevent freeze bursts". Денис говорил об изоляции трубы после разрыва, про утепление полости стены при установке крана в его словах нет. Новый сайт: стоит.</p>
+<p><strong>Цены</strong> (разрешена только $49 за выезд в будни; $49 на странице нет вовсе):
+- "What starts as a $300 spigot swap can easily turn into a $5,000 mold remediation and drywall rebuild." Новый сайт: стоит (в журнале правок «flag not changed»).</p>
+<p><strong>Сроки гарантии.</strong> Нет. Рядом с обещанием: "install a new frost-proof hose bib that won’t quit after the next Texas freeze" (новый сайт: стоит).</p>
+<p><strong>Время в своих словах.</strong> Часов и минут нет. Намёки на скорость: meta "Need fast help?", "It’s usually a fast fix, unless damage was already done." (про работу); на новом сайте стоят. В схеме живой, во втором узле Plumber (<code>#schema</code>), ещё "Fast help from licensed plumbers"; на новом сайте этого узла нет. "We’re On Call 24/7" это факт, не обещание приезда.</p>
+<p><strong>Другие города и регион.</strong> "As a plumber in North Dallas, I’ve replaced more of these than I can count." и H2 "Serving Frisco, Plano, Allen, McKinney &amp; North Dallas": на новом сайте исправлено на "North Dallas suburbs" (в H2 с заглавной: "Serving Frisco, Plano, Allen, McKinney &amp; the North Dallas Suburbs"). Highland Park и University Park в списке без ссылок, это разрешено; "and nearby cities" без названий; запрещённых городов в тексте нет. Схема живой: в узле Organization "surrounding North Dallas communities" и "Texas Master Plumber License M-44816" (обе формулировки сняты), второй узел Plumber (<code>#schema</code>) с именем страницы и только адресом Plano. Новый сайт: один Plumber, Service, FAQPage, десять городов и Park Cities.</p>
+<p><strong>Граница с другими страницами (правило 9).</strong>
+- Раздел "Signs Your Outdoor Faucet Might Be Leaking Inside the Wall…" перечисляет признаки скрытой течи ("Weird drop in water pressure", "Dripping or hissing sounds inside the wall", "Musty smell or soft drywall weeks later"); поиск течи это <code>/water-leak-detection-frisco-plano/</code>, ссылка туда только в последней строке. Методов поиска раздел не описывает.
+- Мороз: тема "frost free spigot leaking" по карте у поста <code>/blog/burst-outside-spigot/</code>; раздел "Why Outdoor Faucets … Fail Even “Frost-Proof” Ones" и вопрос FAQ 3 идут по ней без ссылки на пост.
+- Title ловит «faucet repair плюс город», ключ <code>/fixture-installation-repair/</code> (пункт 2.5).
+- С другой стороны: страница Allen, title "Plumber in Allen, TX | Hose Bibs, Water Heaters &amp; Drains" (на новом тот же), раздел "Outdoor Faucets and Hose Bibs", вопрос "My outdoor faucet drips. Is that urgent?"; по карте Allen не должна целиться в "hose bib repair".</p>
+<p><strong>Телефоны в тексте.</strong> Нет. Только шаблон: нижняя панель звонка тегом H2 "980-899-7997 469-998-8999" (на новом сайте нет).</p>
+<p><strong>Owner.</strong> Нет.</p>
+<p><strong>FAQ тегом заголовка.</strong> Вопросы не заголовки, но ответы тегом H2 (пункт 1.2). Новый сайт: вопрос жирным в <code>summary</code>, ответ абзацем.</p>
+<p><strong>Тире.</strong> Три места: H2 "…Inside the Wall [короткое тире] Plumber Tips", ответ FAQ 2 "sure [длинное тире] we can swap the handle" (и в схеме), строка "If it’s already flooding or urgent [короткое тире] hit our 24/7 Emergency Plumbing page." Новый сайт: все три заменены двоеточием.</p>
+<p><strong>Разорванные фразы</strong> (похоже, выпал знак; в коде WordPress они уже такие; на новом сайте стоят): "The faucet won’t fully shut off keeps dripping"; "push-fits, SharkBites, no bracing invisible leaks that ruin homes slowly"; "Proper mounting to the siding or brick no wiggly faucets"; "Sometimes we can do a clean install outside other times, drywall needs to be opened up."; "pouring water into the wall every spring you’re not alone."; "hundreds of outdoor faucets , from" (пробел перед запятой); "…after the next Texas freeze" (без точки).</p>
+<p><strong>Лозунги, вопросы, вода, тройки.</strong> H1 "Hose Bib Leaking? Outdoor Spigot Busted? We Replace Them Right" (два вопроса и лозунг; правило 4). Четыре H2 с вопросом ("Emergency Outdoor Faucet or Hose Bib Issues? …", "What Makes a Hose Bib Installation “Right”?", "Outdoor Faucet Leaking, Hose Bib Dripping or Loose? …", "Outdoor Spigot Problem? Call a Licensed Plumber, Not Just Anyone"), хвост "We’re On Call 24/7 in Frisco &amp; Plano" повторён в двух. "And years later?", "Sound familiar? We fix this stuff the right way.", "Texas weather’s crazy.", "It’s not just about stopping the drip. It’s about doing it right .", "Don’t wait for the damage to show, call a plumber before it gets worse.", meta "Clean, licensed work. Need fast help?". Тройки: "a water leak, a drywall problem, or a surprise indoor flood"; "ruins sheetrock, cabinets, insulation"; "soaking studs, insulation, and subflooring". Новый сайт: всё стоит.</p>
+<p><strong>Без подтверждения</strong> (правило 13): "We deal with this every week."; "I’ve replaced more of these than I can count."; "We’ve redone dozens of outdoor spigot jobs…"; "we’ve replaced hundreds of outdoor faucets"; "We’ve opened walls to find leaks that ran for years"; "We’ve seen that flood walls, garages, even slab edges.". Частично подтверждает одобренный текст Frisco (<code>source/frisco-text-v4.md</code>): "every spring and half the summer we replace outdoor spigots that cracked inside the wall during the freeze".</p>
+<p><strong>Совет про мороз.</strong> С поправкой Дениса (frost free кран при правильной установке не лопается, ему нужен чехол, капать его не оставляют) совпадает; нарушения нет.</p>
+<h3>1.7. Что на живой странице стоит сохранить по сути</h3>
+<p>Подтверждено словами Дениса (диктовка 2 октября и Frisco v4: трещина в стене видна, только когда включают шланг; кран, который не закрывается; трубы в плохо утеплённых стенах лопаются): "When spring comes, the pipe behind the wall starts leaking as soon as you open it"; "Sometimes the spigot looks totally fine, until you turn it on for the first time after winter"; "The faucet won’t fully shut off keeps dripping" (фото 100, 172, видео 176); "even “frost-proof” spigots burst if they’re installed wrong, or if there’s not enough insulation inside the wall".</p>
+<p>Только из старого текста, в диктовках нет: "The spigot leaks from the vacuum breaker (air gap on top)" (про это запросы «leaking from top», пункт 2.7); "Old threads inside the wall get micro-cracks and they only leak after replacement"; "Builders didn’t secure the pipe inside the wall so when you try to unscrew it, the pipe snaps"; список установки ("Checking that the pipe inside the wall is braced and secure", "Using thread sealant properly (not ten pounds of Teflon)", "Making sure there’s no old corrosion inside the fitting", крепление к сайдингу или кирпичу); ошибки прежних мастеров ("Used indoor hose bibs instead of frost-free models", "Jammed on a SharkBite and hoped for the best", "Installed it too shallow, so it froze and burst next winter"); "If we find issues inside the wall (bad pipe, weak fitting, poor bracing), we’ll walk you through options." (сходится с отзывом Bharathi Hariharan); FAQ 1 и 2 по сути.</p>
+<h3>1.8. Новый сайт против живой страницы</h3>
+<ul>
+<li>Стоит старый текст с точечными правками, одобренного текста нет. Title, описание, H1, восемь H2, три вопроса FAQ те же; OG title равен title.</li>
+<li>Правки (<code>launch-changes.csv</code>, строки 235 до 239): "North Dallas" дважды на "North Dallas suburbs", три тире на двоеточие. Строка 240: "$300" и "$5,000" «flag not changed», стоят.</li>
+<li>Добавлены отзывы Bharathi Hariharan и David Cuevas.</li>
+<li>От шаблона: первым экраном фото 30 (пункт 1.4); FAQ жирным вопросом; блок "What is happening right now?" дважды: под первым экраном четыре ссылки на разделы emergency (<code>#p-floor</code>, <code>#p-hot</code>, <code>#p-sewer</code>, <code>#p-pressure</code>), после текста те же четыре, ссылка на гайд по главному крану "Close the main shut-off valve: how to find it and shut off the water" и кнопки звонка в два офиса (это шаблон, в самом тексте страницы гайда нет); один Plumber; Service (имя узла это H1, описание это meta с "Need fast help?"); FAQPage; <code>noindex</code>.</li>
+<li>Своего текста около 846 слов.</li>
+</ul>
+<p>Одобренный текст <code>source/FPP-Hose-Bib-Page.docx</code> (на сайты не ставился): title "Hose Bib &amp; Outdoor Faucet Repair in Frisco &amp; Plano, TX", H1 "Outdoor Faucet and Hose Bib Repair: Fixed Before It Floods the Wall", 9 разделов (признаки, причины, замена frost free, течь в стене после мороза, ручки и вакуумные клапаны, перед морозом, цена с $49, десять городов анкорами "plumber in …", «вода идёт в стену прямо сейчас»), 6 FAQ жирным, 1,773 слова, ссылки на главную "plumber near me", leak detection, пост про лопнувший кран, гайд по главному крану, emergency. Против нынешних правил: title с "Faucet Repair" (правка от 30 сентября); "On the Denton County side…" (Denton запрещён); вопрос "Can a frost-free hose bib still freeze and burst?" почти повторяет вопрос поста "Can a frost-free spigot still freeze and break?"; "We see it every March." без подтверждения; пометка про LXD Properties устарела. Фразы "hose bib installation" в нём нет.</p>
+<h2>2. Search Console</h2>
+<h3>2.1. Итоги</h3>
+<table>
+<thead>
+<tr>
+<th>Период</th>
+<th>Запросов</th>
+<th>Клики</th>
+<th>Показы</th>
+<th>Место по показам</th>
+<th>Итог Google со скрытыми</th>
+<th>Доля известных: клики, показы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 месяца (1 июля до 28 сентября 2026)</td>
+<td>44</td>
+<td>0</td>
+<td>594</td>
+<td>33.5</td>
+<td>2 клика, 1,575 показов, место 21.26</td>
+<td>0%, 38%</td>
+</tr>
+<tr>
+<td>16 месяцев (31 мая 2025 до 28 сентября 2026)</td>
+<td>186</td>
+<td>1</td>
+<td>5,507</td>
+<td>45.3</td>
+<td>13 кликов, 7,833 показа, место 37.48</td>
+<td>8%, 70%</td>
+</tr>
+</tbody>
+</table>
+<p>Скрыто: за 3 месяца 981 показ и оба клика, за 16 месяцев 2,326 показов и 12 кликов из 13. 13 месяцев до июля 2026 (вычитанием; все 44 запроса 3 месяцев есть в 16): 4,913 показов, место 46.7, 1 клик.</p>
+<p>По группам:</p>
+<table>
+<thead>
+<tr>
+<th>Группа</th>
+<th>3 мес: запросов · показы · место</th>
+<th>16 мес: запросов · показы · место · клики</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>город из десяти</td>
+<td>6 · 389 · 34.6</td>
+<td>27 · 4,425 · 44.7 · 0</td>
+</tr>
+<tr>
+<td>без города</td>
+<td>27 · 89 · 24.4</td>
+<td>117 · 703 · 54.8 · 1</td>
+</tr>
+<tr>
+<td>другое место</td>
+<td>6 · 111 · 38.3</td>
+<td>29 · 362 · 35.8 · 0</td>
+</tr>
+<tr>
+<td>без предмета</td>
+<td>4 · 4 · 4.0</td>
+<td>11 · 11 · 12.0 · 0</td>
+</tr>
+<tr>
+<td>служебный site:</td>
+<td>1 · 1 · 29.0</td>
+<td>2 · 6 · 24.7 · 0</td>
+</tr>
+</tbody>
+</table>
+<p>По теме:</p>
+<table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>3 мес</th>
+<th>16 мес</th>
+<th>13 мес до июля</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>кран вообще ("faucet" без уличных слов: ключ страницы кранов)</td>
+<td>4 · 361 · 35.9</td>
+<td>20 · 4,101 · 47.5 · 0</td>
+<td>3,740 · 48.6</td>
+</tr>
+<tr>
+<td>уличный кран (тема этой страницы)</td>
+<td>32 · 223 · 30.1</td>
+<td>145 · 1,376 · 39.2 · 1</td>
+<td>1,156 · 41.0</td>
+</tr>
+<tr>
+<td>другое (водопровод, гипсокартон, outdoor kitchen)</td>
+<td>3 · 5 · 42.6</td>
+<td>8 · 13 · 57.2 · 0</td>
+<td></td>
+</tr>
+<tr>
+<td>без предмета и site:</td>
+<td>5 · 5 · 9.0</td>
+<td>13 · 17 · 16.5 · 0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>По месту (запросов, показы): 3 мес: 1 до 10: 14, 27; 10 до 20: 16, 45; 20 до 50: 12, 514; ниже 50: 2, 8. 16 мес: 37, 72 (и клик); 19, 396; 50, 3,302; 80, 1,737.</p>
+<h3>2.2. Первые 30 запросов и запросы с кликом</h3>
+<p>Полные таблицы: <code>hb-gsc-top30-and-clicks.md</code>. За 3 месяца первые 30 дают 580 показов из 594, за 16 месяцев 5,096 из 5,507; кликов в первых тридцати нет.</p>
+<p>Первые 10 за 3 месяца (показы · место; в скобках 16 месяцев): frisco faucet repair 350 · 35.6 (1,414 · 38.7); hose bib replacement richardson tx 47 · 39.1 (91 · 41.4); hose bib repair richardson tx 43 · 39.0 (74 · 39.5); hose bib installation 36 · 39.6 (129 · 39.1); hose bibb repair allen 26 · 14.1 (307 · 10.7); water spigot texas 11 · 29.2 (22 · 26.7); who to call to fix outdoor spigot 11 · 8.0 (17 · 7.8); leaking outside faucet in cypress tx 10 · 47.0; outdoor faucet repair dfw 8 · 20.8 (17 · 21.5); faucet repair plano 7 · 50.4 (268 · 57.0).</p>
+<p>Первые 10 за 16 месяцев, кроме уже названных: faucet repair frisco 1,322 · 42.5; plano faucet repair 460 · 67.9; faucet repair frisco tx 238 · 56.7; little elm faucet repair 134 · 55.8; frisco tx faucet repair 133 · 61.3.</p>
+<p>Запрос с кликом один: "who fixes outdoor spigots", за 16 месяцев 5 · 7.2 · 1, за 3 месяца 2 · 10.5 · 0.</p>
+<h3>2.3. Что держат title, H1, H2 и вопросы FAQ</h3>
+<p>Заголовок «держит» запрос, когда все значимые слова запроса стоят в нём (in, tx и подобные не считаются, множественное число и формы на -ing приводятся к одной, город считается, «near me» считается одним словом и на странице не стоит). Все запросы по каждому заголовку: <code>hb-gsc-headings.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Заголовок</th>
+<th>3 мес: запросов · показы</th>
+<th>16 мес: запросов · показы · клики</th>
+<th>Из них «кран вообще», 16 мес</th>
+<th>Держит только он, 16 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title "Hose Bib &amp; Outdoor Faucet Repair in Frisco &amp; Plano | Spigot Replacement"</td>
+<td>6 · 363</td>
+<td>20 · 4,002 · 0</td>
+<td>7 · 3,848</td>
+<td>20 · 4,002</td>
+</tr>
+<tr>
+<td>meta description</td>
+<td>11 · 368</td>
+<td>42 · 4,070 · 0</td>
+<td>10 · 3,868</td>
+<td>15 · 45</td>
+</tr>
+<tr>
+<td>H1 "Hose Bib Leaking? Outdoor Spigot Busted? We Replace Them Right"</td>
+<td>1 · 1</td>
+<td>6 · 20 · 0</td>
+<td>0</td>
+<td>4 · 8</td>
+</tr>
+<tr>
+<td>H2 "What Makes a Hose Bib Installation “Right”?"</td>
+<td>1 · 36</td>
+<td>1 · 129 · 0</td>
+<td>0</td>
+<td>0 (держит и ответ FAQ 3, свёрстанный H2)</td>
+</tr>
+<tr>
+<td>H2 "Outdoor Faucet Leaking, Hose Bib Dripping or Loose? …"</td>
+<td>1 · 1</td>
+<td>5 · 17 · 0</td>
+<td>0</td>
+<td>3 · 5</td>
+</tr>
+<tr>
+<td>H2 "Signs Your Outdoor Faucet Might Be Leaking Inside the Wall…"</td>
+<td>1 · 1</td>
+<td>1 · 2 · 0</td>
+<td>0</td>
+<td>1 · 2</td>
+</tr>
+<tr>
+<td>H2 "Outdoor Spigot Problem? Call a Licensed Plumber, Not Just Anyone"</td>
+<td>0</td>
+<td>1 · 1 · 0</td>
+<td>0</td>
+<td>1 · 1</td>
+</tr>
+<tr>
+<td>остальные четыре H2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>три вопроса FAQ</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Что нельзя потерять:
+- "Hose Bib" в title и H1: на них стоят все запросы с hose bib ("hose bib repairs", "hose bib faucet repair" держит title, "replace hose bib", "replacing hose bibs" держит H1).
+- H2 "What Makes a Hose Bib Installation “Right”?": точная фраза "hose bib installation" (129 · 39.1 за 16 месяцев, 36 · 39.6 за 3) только здесь; в Word тексте её нет.
+- "Outdoor Faucet Repair" в title: точная фраза "outdoor faucet repair" (5 · 19.0) только там; у "outdoor faucet repair allen" (29 · 19.2) три слова в title, Allen в H2 "Serving…".
+- "Spigot" в title, H1 и H2: запросы со spigot стоят на местах до 10 (who to call to fix outdoor spigot 17 · 7.8, plumber to replace outdoor spigot 3 · 6.0, outdoor spigot replacement near me 6 · 9.3).
+- Запрос с кликом "who fixes outdoor spigots" и "hose bibb repair allen" (307 · 10.7) не держит ни один заголовок.
+- Вопросы FAQ, первые два H2, H2 "Serving…" и заголовок FAQ запросов не держат: по Search Console их можно менять.</p>
+<p>Без единого заголовка (кроме description): 141 запрос, 1,331 показ и единственный клик за 16 месяцев; 29 и 187 за 3 месяца.</p>
+<h3>2.4. Фраза целиком: 20 первых за каждый период и запрос с кликом</h3>
+<p>Список из 32 запросов (20 первых за 16 месяцев, 20 первых за 3 месяца, запрос с кликом). Точная фраза (подряд, слово в слово, регистр и знаки не в счёт) стоит на живой странице только у двух:
+- "hose bib installation": H2 "What Makes a Hose Bib Installation “Right”?";
+- "outdoor faucet repair": title.</p>
+<p>По правилу проектного инструмента (без in и tx) title содержит ещё "faucet repair frisco" и "faucet repair frisco tx", а "frisco faucet repair" и "frisco tx faucet repair" как перестановку; это всё чужой ключ. "hose bib repairs" инструмент находит в описании только через знак вопроса ("broken hose bib? We repair").</p>
+<p>Точной фразы нет нигде (ни в заголовках, ни в тексте, ни в FAQ) у остальных 30, в том числе: запрос с кликом "who fixes outdoor spigots"; "hose bibb repair allen"; "who to call to fix outdoor spigot"; "plumber to replace outdoor spigot"; "outdoor faucet repair allen"; "bib faucet repair"; четыре запроса с "near me"; "plano faucet repair", "faucet repair plano", "little elm faucet repair" (Plano не стоит рядом со словами faucet repair, Little Elm только в списке).</p>
+<h3>2.5. Другие страницы сайта</h3>
+<p>Все строки: <code>hb-gsc-other-pages.md</code>. «Выше»: лучшее место по тому же запросу за тот же период.</p>
+<p><strong>Запросы про уличный кран на всём сайте.</strong> За 16 месяцев таких запросов 190, эта страница стоит в 145 (1,376 показов, место 39.2); за 3 месяца 74 и 32 (223 показа, место 30.1).</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>3 мес: запросов · показы · место (выше этой: запросов · показы)</th>
+<th>16 мес: запросов · показы · место (выше этой)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/plumber-allen-tx/</code></td>
+<td>2 · 34 · 5.7 (1 · 33)</td>
+<td>4 · 172 · 14.2 (2 · 34)</td>
+</tr>
+<tr>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>12 · 80 · 6.7 (3 · 70)</td>
+<td>18 · 90 · 8.0 (5 · 74)</td>
+</tr>
+<tr>
+<td><code>/plumber-plano-tx/</code></td>
+<td>4 · 88 · 7.1 (2 · 86)</td>
+<td>4 · 88 · 7.1 (2 · 86)</td>
+</tr>
+<tr>
+<td><code>/blog/burst-outside-spigot/</code></td>
+<td>32 · 73 · 22.1 (1 · 1)</td>
+<td>34 · 81 · 20.8 (3 · 5)</td>
+</tr>
+<tr>
+<td><code>/</code> (главная)</td>
+<td>0</td>
+<td>9 · 66 · 10.9 (4 · 59)</td>
+</tr>
+<tr>
+<td><code>/plumber-lewisville-tx/</code></td>
+<td>0</td>
+<td>2 · 33 · 16.1 (1 · 16)</td>
+</tr>
+<tr>
+<td><code>/blog/outside-spigot-replacement-plumber-in-frisco/</code></td>
+<td>0</td>
+<td>1 · 1 · 3.0 (1 · 1)</td>
+</tr>
+</tbody>
+</table>
+<p>Главные строки: "hose bibb repair allen" за 3 мес Allen 33 · 5.7 против 26 · 14.1 (за 16 мес эта выше: 307 · 10.7 против 137 · 12.5); "hose bib replacement allen tx" 16 мес Allen 33 · 21.6 против 5 · 30.8; "outdoor faucet repair dfw" 3 мес Plano 85 · 7.0, Frisco 68 · 6.4 против 8 · 20.8 (за 16 мес ещё главная 55 · 11.2); "outdoor faucet repair lewisville tx" 16 мес Lewisville 16 · 14.2 против 6 · 33.7; "hose bib repair lewisville tx" только Lewisville 17 · 17.9 и главная 2 · 6.0; "frost free spigot leaking" 12 · 17.2 и "is it normal for my outdoor hose bib to leak after the winter thaw?" 16 · 36.6 только у поста.</p>
+<p>Что из этого следует по файлам:
+- Пост <code>/blog/burst-outside-spigot/</code> берёт больше этой страницы: итог Google за 3 месяца 16 кликов, 1,721 показ, место 9.3 (эта 2 · 1,575 · 21.26), за 16 месяцев 19, 2,139, 8.68. Известно только 5% его показов (39 запросов, 86 показов за 3 месяца); по 31 из 32 его известных запросов про уличный кран эта страница не показывается.
+- Allen выше этой страницы по "hose bibb repair allen" за последние 3 месяца (пункт 1.6 про её title и раздел).
+- Frisco, Plano и главная выше по "outdoor faucet repair dfw" (места от 6 до 11); по остальным запросам темы Frisco и Plano показываются по 1 до 2 раза.
+- Пост <code>/blog/outside-spigot-replacement-plumber-in-frisco/</code>: за 16 месяцев 0 кликов, 25 показов, место 19; его ключ по карте "outside spigot replacement" совпадает с хвостом title этой страницы "Spigot Replacement".</p>
+<p><strong>Обратная сторона: запросы этой страницы, которые принадлежат другим.</strong></p>
+<p>«Faucet repair плюс город», ключ <code>/fixture-installation-repair/</code>. За 16 месяцев на этой странице 17 таких запросов с repair, 4,069 показов, место 47.4, кликов 0; страница кранов стоит в 11 из них. Эта выше в 10 запросах (707 показов), страница кранов выше в 7, в том числе в двух самых больших:</p>
+<table>
+<thead>
+<tr>
+<th>Запрос (16 мес)</th>
+<th>Эта страница</th>
+<th><code>/fixture-installation-repair/</code></th>
+<th>Ещё</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>frisco faucet repair</td>
+<td>1,414 · 38.7</td>
+<td>1,991 · 24.9</td>
+<td>главная 44 · 6.4</td>
+</tr>
+<tr>
+<td>faucet repair frisco</td>
+<td>1,322 · 42.5</td>
+<td>2,735 · 28.1</td>
+<td>Plano 15 · 15.7</td>
+</tr>
+<tr>
+<td>plano faucet repair</td>
+<td>460 · 67.9</td>
+<td>152 · 62.7</td>
+<td>Plano 1,073 · 42.5; главная 228 · 50.4</td>
+</tr>
+<tr>
+<td>faucet repair plano</td>
+<td>268 · 57.0</td>
+<td>538 · 64.4</td>
+<td>Plano 1,061 · 42.6; главная 178 · 30.0</td>
+</tr>
+<tr>
+<td>little elm faucet repair</td>
+<td>134 · 55.8</td>
+<td>229 · 50.9</td>
+<td>Little Elm 1,111 · 18.0</td>
+</tr>
+</tbody>
+</table>
+<p>За 3 месяца: frisco faucet repair 350 · 35.6 против 492 · 31.9 у страницы кранов (Frisco 229 · 19.8), faucet repair frisco 2 · 42.5 против 435 · 28.7. По всем запросам «faucet repair» за 16 месяцев на сайте больше всего показов у страницы кранов (18 запросов, 7,026 показов, место 37.9), потом Plano (20 · 4,901 · 39.9), Little Elm (4 · 4,440 · 18.4), эта страница (17 · 4,069 · 47.4).</p>
+<p>Другое: "pipe breaks frisco" 2 · 88.5 (водопровод: <code>/water-lines/</code> 1,363 · 37.0), "plano wet wall damage" 2 · 74.0 (поиск течи: <code>/water-leak-detection-frisco-plano/</code> 72 · 44.3), "outdoor plumbing frisco tx" 3 · 46.0 (Frisco 25 · 5.0), "frisco drywall repair" 1 · 47.0 (не сантехника). Тема «кран вообще» это 20 запросов страницы за 16 месяцев, 4,101 показ, 0 кликов (все строки в <code>hb-gsc-other-pages.md</code>).</p>
+<h3>2.6. Уличный кран с каждым из десяти городов</h3>
+<p>Только запросы про уличный кран (hose bib, spigot, outdoor faucet и подобные) с названием города. Числа: запросов · показы · место.</p>
+<table>
+<thead>
+<tr>
+<th>Город</th>
+<th>Эта страница, 3 мес</th>
+<th>Эта страница, 16 мес</th>
+<th>Кто ещё, 3 мес</th>
+<th>Кто ещё, 16 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Allen</td>
+<td>1 · 26 · 14.1 (hose bibb repair allen)</td>
+<td>3 · 341 · 11.7</td>
+<td>Allen 1 · 33 · 5.7</td>
+<td>Allen 3 · 171 · 14.3; Frisco 2 · 3 · 42.3</td>
+</tr>
+<tr>
+<td>Lewisville</td>
+<td>0</td>
+<td>1 · 6 · 33.7</td>
+<td>нет</td>
+<td>Lewisville 2 · 33 · 16.1; главная 1 · 2 · 6.0</td>
+</tr>
+<tr>
+<td>Frisco, Plano, McKinney, Prosper, Celina, Little Elm, The Colony, Carrollton</td>
+<td>0</td>
+<td>0</td>
+<td>нет</td>
+<td>нет</td>
+</tr>
+</tbody>
+</table>
+<p>По правилу темы этого файла за 16 месяцев на всём сайте нет ни одного запроса «уличный кран плюс Frisco» или любой из этих восьми городов.</p>
+<p>Для сравнения, «faucet плюс город» на этой странице (чужой ключ, 16 месяцев): Frisco 4 · 3,107 · 42.7 (страница кранов 5 · 5,711 · 33.0), Plano 5 · 757 · 63.8 (кранов 5 · 698 · 64.0), Little Elm 5 · 183 · 57.5 (кранов 3 · 647 · 53.7), McKinney 2 · 19 · 72.0, The Colony 1 · 2, Lewisville 1 · 1; Allen, Prosper, Celina, Carrollton 0.</p>
+<h3>2.7. Слова, которые на страницу не идут</h3>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>3 мес: запросов · показы</th>
+<th>16 мес: запросов · показы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Чужие места, всего</td>
+<td>6 · 111</td>
+<td>29 · 362</td>
+</tr>
+<tr>
+<td>из них Richardson (запрещён CLAUDE.md)</td>
+<td>2 · 90</td>
+<td>2 · 165</td>
+</tr>
+<tr>
+<td>Denton (запрещён)</td>
+<td>0</td>
+<td>2 · 18</td>
+</tr>
+<tr>
+<td>Dallas (запрещён; "outside faucet pipe burst repair dallas tx", "hose fast dallas")</td>
+<td>0</td>
+<td>2 · 7</td>
+</tr>
+<tr>
+<td>Rockwall</td>
+<td>1 · 2</td>
+<td>1 · 18</td>
+</tr>
+<tr>
+<td>DFW и "north texas" (регион пишем только "North Dallas suburbs")</td>
+<td>1 · 8</td>
+<td>3 · 26</td>
+</tr>
+<tr>
+<td>Хьюстон и окрестности: Cypress, Manvel, Stafford, Briar Forest, Fresno, Spring Branch, Channelview, Copperfield, Tomball, Houston</td>
+<td>1 · 10</td>
+<td>11 · 105</td>
+</tr>
+<tr>
+<td>Allen County, Indiana (не наш Allen: "outdoor faucet replacement allen county in" и ещё три)</td>
+<td>0</td>
+<td>4 · 10</td>
+</tr>
+<tr>
+<td>Sarasota FL, Fort Worth, Farmers Branch, USA</td>
+<td>1 · 1</td>
+<td>4 · 13</td>
+</tr>
+<tr>
+<td>Без предмета: "picture?", "what about this?", "what is this called?", "crooked sideways" и ещё семь (места от 1 до 43; похоже на поиск по фото, по файлам не проверить)</td>
+<td>4 · 4</td>
+<td>11 · 11</td>
+</tr>
+<tr>
+<td>Служебный site:</td>
+<td>1 · 1</td>
+<td>2 · 6</td>
+</tr>
+<tr>
+<td>Другая тема: "outdoor kitchen plumbing in frisco tx", "garden hose repair near me", "insulation cover for outdoor faucet", "pipe breaks frisco" и ещё три</td>
+<td>2 · 2</td>
+<td>7 · 9</td>
+</tr>
+<tr>
+<td>Не наше: "frisco drywall repair"; "replacing outside faucet with sharkbite" (способ, который страница ругает)</td>
+<td>0</td>
+<td>2 · 2</td>
+</tr>
+<tr>
+<td>Слова про цену: "cost to repair outside faucet", "how much to replace hose bib" (цену, кроме $49, не называем)</td>
+<td>0</td>
+<td>2 · 3</td>
+</tr>
+</tbody>
+</table>
+<p>Отдельно, не отложено, а названо:
+- Написание "bibb" с двумя b: "hose bibb repair allen" (307 показов за 16 месяцев, 26 за 3 месяца) и "outdoor hose bibbs [короткое тире] fixed / replace" (33). Это принятое второе написание слова, не опечатка; на странице его нет.
+- «Сделай сам» (how to, how much, what is, what size): 17 запросов, 31 показ за 16 месяцев ("how to fix a hose bib that won't turn off", "how to secure outdoor faucet to brick", "what is a hose bib on a house" на месте 1).
+- «Течёт сверху»: "outside faucet leaks from the top" 4 · 82.0, "frost free faucet leaking from top" 3 · 43.3, "frost free spigot leaking top" 3 · 82.3, "frost proof hose bib leaking from top" 1 · 29 (это вакуумный клапан, на странице "The spigot leaks from the vacuum breaker (air gap on top)").
+- "near me": 9 запросов этой страницы с "near me", 76 показов за 16 месяцев (5 и 8 за 3 месяца), например "outdoor faucet replacement near me" 37 · 47.5; на странице "near me" нет.</p>
+<h3>Как считали и вторая проверка</h3>
+<ul>
+<li>Скрипты <code>hb_lib.py</code> и <code>hb_gsc.py</code> в <code>/private/tmp/claude-501/-Users-denyskavaler-Projects-fppplumbing-site/d2b78dea-4d58-4222-812f-a40bb43eb5d1/scratchpad/services/hose-bib/</code> сделаны из копий <code>docs/briefs/_shared/gsc_plano_lib.py</code> и <code>gsc_plano_live.py</code> (оригиналы не тронуты, <code>tools/gsc_page_table.py</code> не запускался). Правила слов те же; города развёрнуты на десять; «тема» делит запросы на уличный кран, кран вообще и другое; ответы FAQ, свёрстанные H2, отделены от разделов.</li>
+<li>Итоги посчитаны трижды (модуль csv, разбор строк без него, awk): 3 месяца 44 запроса, 0 кликов, 594 показа, место 33.54; 16 месяцев 186, 1, 5,507, место 45.31. Те же числа в <code>source/gsc/page-query-coverage.csv</code>; итоги со скрытыми из <code>performance-3m/Pages.csv</code> и <code>performance-16m/Pages.csv</code>.</li>
+<li>Группы сходятся с итогом: 6 + 27 + 6 + 4 + 1 = 44 и 389 + 89 + 111 + 4 + 1 = 594; 27 + 117 + 29 + 11 + 2 = 186 и 4,425 + 703 + 362 + 11 + 6 = 5,507. Темы тоже: 361 + 223 + 5 + 5 = 594; 4,101 + 1,376 + 13 + 17 = 5,507.</li>
+<li>Руками сверены "frisco faucet repair" (350 · 35.58 и 1,414 · 38.74), "who fixes outdoor spigots" (5 · 7.2 · 1) и "hose bibb repair allen" (307 · 10.68); в <code>performance-16m/Queries.csv</code> (весь сайт) "hose bibb repair allen" 368 показов, место 9.71.</li>
+</ul></main></body></html>
