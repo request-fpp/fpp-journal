@@ -1,0 +1,745 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 03.10.2026 12:50</p><h1>Sewer line repair and camera inspection: живая страница и Search Console (3 октября 2026)</h1>
+<p>Страница https://fppplumbing.com/drain-services/ . Она сейчас не переписывается, текста страницы здесь нет. Источники: краул от 30 сентября 2026 (<code>source/crawl/pages/drain-services.json</code>, код <code>source/crawl/html/drain-services.html</code>, остальные 63 страницы там же), новая версия <code>site/src/content/pages/drain-services.md</code> и собранная <code>site/dist/drain-services/index.html</code> (сборка 3 октября 10:38, только прочитана), правки <code>tools/build_launch_content.py</code> и <code>site/src/data/launch-changes.csv</code>, одобренный текст <code>source/FPP-Sewer-Line-Repair-Page.docx</code>, Search Console <code>source/gsc/</code> (page-query-3m.csv, page-query-16m.csv, performance-3m и performance-16m Pages.csv, page-query-coverage.csv), <code>seo/keyword-map.md</code> и <code>.csv</code>, <code>docs/pages-plan.md</code>, <code>reviews/all-reviews.csv</code>, <code>site-ledger.md</code>, <code>site-reviews.json</code>.</p>
+<p>Длинные таблицы в <code>docs/briefs/services/sewer-line/</code>: <code>sewer-gsc-queries-3m.md</code> и <code>-16m.md</code> (все запросы: тема, хозяин по карте ключей, город, слова в тексте, где стоит фраза), <code>sewer-gsc-top30.md</code> (топ 30 обоих периодов и клики), <code>sewer-gsc-headings.md</code> (что держит каждый заголовок), <code>sewer-gsc-phrases.md</code> (фраза целиком), <code>sewer-gsc-other-pages-3m.md</code> и <code>-16m.md</code> (другие страницы на запросах темы), <code>sewer-gsc-reverse.md</code> (чужие запросы этой страницы), <code>sewer-gsc-cities.md</code> (тема с каждым из десяти городов).</p>
+<p>Три числа через точку всегда: показы · среднее место · клики. Тире в цитатах помечены словами [em dash] и [en dash].</p>
+<h2>Коротко</h2>
+<ol>
+<li>Кормит страницу почти ничего. 3 месяца: 0 кликов, 185 показов, место 30.6 (итог Google); с известным запросом 11 запросов и 99 показов. 16 месяцев: 0 кликов, 7,138 показов, место 65.5; известных 139 запросов и 6,718 показов. Кликов не было ни разу; 6,619 из 6,718 показов пришлись на 13 месяцев до июля 2026, сейчас страница почти выпала.</li>
+<li>Больше трети показов чужие: drain cleaning (хозяин <code>/clogged-drain-cleaning-frisco-plano/</code>, у этой страницы в «must not target») 2,542 из 6,718 за 16 месяцев и 76 из 99 за 3 месяца. Своя тема (sewer, main line, cast iron, камера) 3,667 и 17.</li>
+<li>Свою тему забирают другие страницы: за 3 месяца у сайта по ней 5,062 показа, у этой страницы 17; Plano 3,411 (место 3.9) и Frisco 1,521 (4.0), в основном по запросам без своего города, то есть, по правилу проекта, через карточки Google. За 16 месяцев главная 5,635 показов и выше этой страницы по 39 запросам.</li>
+<li>Не терять (кликов нет, только показы на местах 20 до 90): «Sewer Repair» и «Frisco, Plano &amp; McKinney» в title; H2 «Spot Repairs &amp; Sewer Line Replacement»; «cast iron pipes» в тексте (1,653 показа за 16 месяцев, лучшие места страницы 23.6 до 35.7); «main line» в FAQ; «Camera Inspection for Sewer» под вторичный ключ карты.</li>
+<li>Ломает правила: hydro jetting в description (на новом сайте убрано); commercial как главная тема в H1, H2 и последнем абзаце с «grease traps, soda lines» (осталось); «North Dallas» дважды (исправлено); тире (убраны); ответы FAQ тегом H2 (исправил макет); граница правила 9: title, H1, четыре H2 и два вопроса FAQ про drain cleaning (осталось); в старой схеме второй бизнес; на фото фургона «M-38532», а лицензия M-44816.</li>
+<li>Не хватает по правилу 8: вступления нет совсем; 7 H2 вместо 10 до 16, про саму линию два; списка симптомов нет; раздела «если это происходит прямо сейчас» нет (одна строка со ссылкой на emergency); FAQ 3 вместо 5 до 7; ссылки на главную с «plumber near me» нет; десяти городов в тексте нет; из связанных услуг в тексте только drain cleaning и emergency; внешней ссылки на официальный источник нет; 363 слова вместо около 2,500; ни фото с подписью, ни истории.</li>
+<li>Новый сайт: старая страница с точечными правками (тире, North Dallas, hydro jetting), плюс два отзыва (Zach Z., Jose Alfredo Martinez) и блок «What is happening right now?». Word текст <code>FPP-Sewer-Line-Repair-Page.docx</code> (около 2,000 слов, 11 H2, 6 FAQ) не стоит. Раздел smoke test ждёт в <code>source/dictation/2026-10-02-sewer-smoke-test.md</code>.</li>
+<li>Итоги посчитаны трижды (модуль csv, разбор строк, awk) и совпали с <code>page-query-coverage.csv</code>.</li>
+</ol>
+<h2>1. Живая страница</h2>
+<p>Ответ 200, в page-sitemap.xml, canonical на себя, index и follow. Опубликована 16 декабря 2024, правка 18 мая 2025 (схема). В индексе: да (проверка URL 1 октября 2026, последний обход 15 сентября 2026).</p>
+<h3>1.1. Title, description, H1, заголовки, объём</h3>
+<table>
+<thead>
+<tr>
+<th>Что</th>
+<th>На живой странице</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title (57 знаков)</td>
+<td>"Drain Cleaning &amp; Sewer Repair in Frisco, Plano &amp; McKinney"</td>
+</tr>
+<tr>
+<td>Description (184 знака)</td>
+<td>"We clear clogged drains, fix sewer lines, and handle tough backups in Frisco, Plano &amp; McKinney. Snaking, hydro jetting, camera inspections &amp; more. Emergency issue? Visit our 24/7 page."</td>
+</tr>
+<tr>
+<td>H1 (74 знака)</td>
+<td>"Full Drain Service, Repairs &amp; Commercial Cleaning in Frisco &amp; North Dallas"</td>
+</tr>
+<tr>
+<td>OG title, крошки, пункт меню</td>
+<td>"General Drain Services"</td>
+</tr>
+</tbody>
+</table>
+<p>H2 по порядку (слов в разделе): 1. "Why Professional Drain Maintenance Matters" (21); 2. "Video Camera Inspection for Sewer &amp; Drain Lines" (22); 3. "Spot Repairs &amp; Sewer Line Replacement" (21); 4. "Commercial Drain Cleaning for Restaurants &amp; Bars" (23); 5. "Odors, Gurgling &amp; Slow Drains? We Find the Cause" (22); 6. "Real Questions About Drain Cleaning [en dash] Answered" (FAQ, 136 слов); 7, 8, 9: три ответа FAQ, каждый целиком тегом H2; 10. "Book Routine Drain Cleaning or Emergency Service" (57 вместе с кнопкой и двумя ссылками); 11. "980-899-7997 469-998-8999" (телефоны панели звонка тегом H2, шаблон старого сайта). H3 нет. Вступления нет: после H1 сразу первый H2.</p>
+<p>Объём: краул 363 слова, это весь текст (от H1 до конца FAQ 299, последний блок 64). "sewer" 3 раза, "cast iron" 1, "camera" 2 и "cameras" 1, "main line" 3, "Frisco" 1 (H1), "Plano" и "McKinney" 0 (только title и description), "North Dallas" 2, "plumber near me" 0. В H1 слова "sewer" нет. В первых ста словах оно стоит три раза, но только в двух заголовках H2 и в "sewer cameras"; первый абзац после H1 про обслуживание стоков, ответа на "sewer line repair" там нет.</p>
+<h3>1.2. FAQ слово в слово</h3>
+<p>Вопросы в раскрывающемся списке (<code>details</code>, <code>summary</code>, текст в <code>span</code>), не заголовки; каждый ответ тегом H2. Схема FAQPage совпадает со страницей.</p>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Вопрос</th>
+<th>Ответ (тег H2)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>"Why does my drain keep clogging over and over?"</td>
+<td>"Most likely the clog wasn’t fully cleared or there’s a deeper issue [em dash] like roots, a belly in the pipe, or grease buildup. Snaking it isn’t always enough. We use a camera to check what’s really going on."</td>
+</tr>
+<tr>
+<td>2</td>
+<td>"Can I just use store-bought drain cleaner?"</td>
+<td>"You can, but it’s usually a bad idea. Those chemicals can eat through your pipes, especially if they sit too long. And they rarely fix the actual problem [em dash] they just push it further down."</td>
+</tr>
+<tr>
+<td>3</td>
+<td>"How do I know if it’s the main line or just one drain?"</td>
+<td>"If multiple fixtures are slow or backing up [em dash] like a tub, toilet, and kitchen sink all acting up [em dash] it’s probably your main line. That’s when you need a plumber, not a plunger."</td>
+</tr>
+</tbody>
+</table>
+<p>Повторы (схемы FAQPage всех страниц краула и новые файлы): вопрос 3 почти дословно на странице The Colony, "How do I know if it is my main line and not one drain?" (старый и новый сайт). Вопрос 1 по смыслу: toilet repair "What causes a toilet to clog over and over?", The Colony "My drains keep backing up every few months. Why?", пост про кухню "Why does my kitchen drain clog again even after someone already snaked it?", пост про душ "Why does a shower drain clog again even after I clean it?", drain cleaning "How do I keep drains from clogging again?". Вопрос 2 по смыслу: пост про унитаз "Will chemical drain cleaners help with a clogged toilet?". На будущее: вопрос Word текста "How much does a sewer camera inspection cost?" уже есть в гайде <code>/plumbing-guide/why-your-toilet-keeps-backing-up/</code> ("How much does a camera inspection cost in Plano TX?"); на Allen стоит "Can tree roots get into my sewer line?".</p>
+<h3>1.3. Отзывы</h3>
+<p>На живой странице отзывов нет. Новый сайт показывает два (из <code>site-reviews.json</code>; по <code>site-ledger.md</code> оба только на этой странице; на старом сайте не стояли):</p>
+<ul>
+<li>Zach Z., Yelp, 3 октября 2025, "★★★★★ · Yelp · October 2025", https://www.yelp.com/biz/fpp-plumbing-plano-2: "I had a main line clog. The availability and the price seemed reasonable for the urgent need. The plumber scoped it before and after to make sure the line was clear."</li>
+<li>Jose Alfredo Martinez, Google, профиль Plano, 10 декабря 2024, "★★★★★ · Local Guide Level 2 · December 2024 · Google", https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN2OXRHRU1nEAE!2m1!1s0x0:0xccc66184bdaf3a93: "FPP Plumbing did an excellent job! I had a clogged and broken old drain line in the crawl space. They responded quickly, explained everything clearly, cleared the line, and replaced the pipe. Highly recommend!"</li>
+</ul>
+<p>Тексты и ссылки совпадают с <code>all-reviews.csv</code> знак в знак, цифр времени в них нет.</p>
+<h3>1.4. Фото</h3>
+<p>Одно фото (кроме логотипа и печати BBB): <code>/wp-content/uploads/2025/05/drain-cleaning-snake-branded-van-frisco-652x1024.jpg</code>, alt "Branded FPP Plumbing van with drain snake equipment set up for sewer line cleaning in Frisco". Снимок настоящий (открыт из <code>site/public/</code>): на газоне катушка Milwaukee с толкаемым кабелем, по виду камера, а не трос, серый кейс, два открытых уличных клинаута, за ними фургон FPP. В <code>photos/index.csv</code> файла нет, город в alt ничем не подтверждён. На борту телефон Plano, на передней двери читается "M-38532" при лицензии сайта M-44816; что это за номер, в проекте не записано (то же отмечено в <code>docs/plano-brief-2026-10-03.md</code>). Для переписывания в <code>photos/captions-en.csv</code> для этой страницы уже подписаны фото и клипы Дениса: 8, 9, 10, 16, 17, 41, 122, 142, 143, 155, 156, 166, 167, 171 (smoke test), 179, 183, 184, 185, 204 (только перечень).</p>
+<h3>1.5. Ссылки</h3>
+<p>Со страницы в тексте две ссылки, обе в конце: <code>/clogged-drain-cleaning-frisco-plano/</code> с анкором "Drains bubbling? Toilet backs up when you use the washer? You might have a main line blockage [en dash] check Clogged Drain Cleaning for surface issues." и <code>/emergency-plumbing-services/</code> с анкором "Or go straight to 24/7 Emergency Plumbing if it’s flooding now." Остальное шаблон: 13 услуг и 10 городов в меню шапки и подвала, блог, гайды, галерея, контакты, оба офиса. Главная: только логотип с пустым анкором, "plumber near me" нет. Десяти городов в тексте нет. Slab leak, leak detection, toilet repair, water lines в тексте не названы. Внешние ссылки только шаблонные (соцсети, телефоны, почта, share.google, BBB), официального источника нет.</p>
+<p>На страницу: меню "General Drain Services" 3 раза на каждой из 62 других страниц с содержимым (на главной 5; <code>/blog/author/admin/</code> отдаёт 301). В тексте ссылаются 16 страниц:</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Анкор</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>плитка услуг: картинка и H3 "General Drain Services"</td>
+</tr>
+<tr>
+<td><code>/emergency-plumbing-services/</code></td>
+<td>"Main line stoppages"</td>
+</tr>
+<tr>
+<td>Allen (дважды), Carrollton, Celina, Lewisville, Little Elm, McKinney, Prosper, The Colony</td>
+<td>"main line service" в строке "Backups, gurgling(, and) sewer smells: main line service"; на Allen ещё "Full details on our main line service page."</td>
+</tr>
+<tr>
+<td><code>/plumber-plano-tx/</code></td>
+<td>"main line service": "That is our main line service."</td>
+</tr>
+<tr>
+<td><code>/plumber-frisco-tx/</code> (живая)</td>
+<td>"sewer line cleaning": "Main line backups and sewer line cleaning"</td>
+</tr>
+<tr>
+<td><code>/toilet-repair-frisco-plano/</code></td>
+<td>"Toilet gurgles when you use the sink? Could be the main line [en dash] see Drain Services"</td>
+</tr>
+<tr>
+<td><code>/top-emergency-plumber-calls-frisco/</code></td>
+<td>"Water coming up from the tub when washer runs sounds like a main line issue [en dash] check Drain Services"</td>
+</tr>
+<tr>
+<td><code>/water-leak-detection-frisco-plano/</code></td>
+<td>"sewer line repair": "The repair that follows is on our sewer line repair page."</td>
+</tr>
+<tr>
+<td><code>/blog/clogged-kitchen-sink-chain-snake/</code></td>
+<td>"drain services": "Our drain services cover everything from simple clogs to complex main line blockages."</td>
+</tr>
+</tbody>
+</table>
+<p>Drain cleaning, slab leak и гайды в тексте сюда не ссылаются. На новом сайте анкоры те же без тире; Frisco версии 4 и главная версии 4 дают "sewer line repair and camera inspection", главная ещё "main sewer line" в истории "One clog, the whole house".</p>
+<h3>1.6. Против правил CLAUDE.md</h3>
+<p>В скобках статус на новом сайте (<code>drain-services.md</code>, <code>launch-changes.csv</code> строки 196 до 204, собранная страница).</p>
+<p>Услуги, которых FPP не делает или не заявляет:
+1. Description: "Snaking, hydro jetting, camera inspections &amp; more." (исправлено: "Snaking, camera inspections &amp; more."; та же фраза стояла в описании WebPage старой схемы, ушла вместе с ней)
+2. H1: "Full Drain Service, Repairs &amp; Commercial Cleaning in Frisco &amp; North Dallas": commercial бывает изредка и своей страницы не получает (осталось; то же имя у узла Service в схеме).
+3. H2 "Commercial Drain Cleaning for Restaurants &amp; Bars": "We work with cafés, bars, and commercial kitchens to clear grease traps, soda lines, floor drains, and stubborn clogs caused by kitchen debris." Grease traps и soda lines в списке услуг нет (осталось).
+4. "We handle both emergency overflows and routine maintenance with flexible scheduling for residential and commercial clients across North Dallas." (commercial осталось).</p>
+<p>Цены, гарантия, обещания времени, телефоны в тексте, слово owner: в тексте нет. Только шаблон:
+5. Панель звонка "980-899-7997 469-998-8999" тегом H2 (на новом сайте нет).</p>
+<p>Другие города:
+6. H1 "... in Frisco &amp; North Dallas" (исправлено: "... &amp; the North Dallas Suburbs").
+7. "... across North Dallas." (исправлено: "across the North Dallas suburbs").
+8. Схема Organization: "surrounding North Dallas communities" (ушло со старой схемой).</p>
+<p>Граница (правило 9: прочистку держит drain cleaning; эта страница держит линию, камеру, ремонт, запах канализации и smoke test):
+9. Title начинается с "Drain Cleaning"; «drain cleaning frisco, plano, mckinney» у этой страницы в «must not target» (осталось).
+10. Description: "We clear clogged drains ... and handle tough backups" (осталось).
+11. H2 "Why Professional Drain Maintenance Matters": "Regular drain cleaning keeps your plumbing system running smoothly and helps avoid backups, leaks, and expensive water damage down the road." (осталось).
+12. H2 "Odors, Gurgling &amp; Slow Drains? We Find the Cause": "Strange drain smells or bubbling sounds? We check venting issues, clogged traps, and deeper blockages to keep your system safe and odor-free." Медленные стоки это drain cleaning; запах как раз тема этой страницы, но без smoke test (осталось).
+13. H2 "Real Questions About Drain Cleaning [en dash] Answered" и вопросы 1, 2 (тема drain cleaning; исправлено только тире).
+14. H2 "Book Routine Drain Cleaning or Emergency Service" и "emergency overflows and routine maintenance" (осталось).</p>
+<p>FAQ тегом заголовка:
+15. Три ответа тегом H2 (исправил макет <code>FAQList.astro</code>: вопрос жирным, ответ абзацем).</p>
+<p>Тире (все исправлены):
+16. "We do spot repairs where possible [em dash] saving you time, cost, and unnecessary demolition."
+17. H2 "Real Questions About Drain Cleaning [en dash] Answered".
+18. Ответ 1: "a deeper issue [em dash] like roots".
+19. Ответ 2: "the actual problem [em dash] they just push it further down."
+20. Ответ 3: "backing up [em dash] like a tub, toilet, and kitchen sink all acting up [em dash] it’s probably your main line."
+21. "You might have a main line blockage [en dash] check Clogged Drain Cleaning for surface issues."
+22. Схема: "From clogged sinks to broken sewer lines - we handle drain problems of all sizes" (ушло со старой схемой).</p>
+<p>Лозунги и общие слова (23 до 28 остались, 29 ушёл):
+23. "keeps your plumbing system running smoothly and helps avoid backups, leaks, and expensive water damage down the road"
+24. "saving you time, cost, and unnecessary demolition"
+25. "Strange drain smells or bubbling sounds?" (риторический вопрос в начале) и "safe and odor-free"
+26. "That’s when you need a plumber, not a plunger."
+27. "with flexible scheduling for residential and commercial clients"
+28. Description: "handle tough backups ... &amp; more"
+29. Схема: "Fast response, clean work, licensed plumbers every time."</p>
+<p>Схема и фото:
+30. Второй бизнес: Plumber <code>@id .../drain-services/#schema</code>, имя равно title, адрес только Plano, "priceRange": "$$" (на новом сайте один Plumber по <code>#organization</code>, плюс Service и FAQPage).
+31. Organization: "Texas Master Plumber License M-44816", формулировка снята (на новом сайте в hasCredential "Responsible Master Plumber, License M-44816").
+32. Фото фургона с "M-38532" (то же фото на новом сайте).</p>
+<p>Итого 32 места: исправлено или ушло 16 (1, 5 до 8, 15 до 22, 29 до 31), осталось 16, и это главные: commercial (2 до 4), граница с drain cleaning (9 до 14), лозунги (23 до 28), фото (32).</p>
+<p>Чего нет по правилу 8 и разделу «Search»: вступления 2 до 3 абзацев и ответа на «sewer line repair» в первых ста словах; 10 до 16 H2 с ключами; списка симптомов; раздела «если это происходит прямо сейчас» со ссылками на гайд по главному крану и на emergency; 5 до 7 FAQ; ссылки на главную "plumber near me"; десяти "plumber in Frisco" и так далее в тексте; связанных услуг в тексте; внешней ссылки на официальный источник; блока Дениса, фото с подписью, историй; объёма около 2,500 слов.</p>
+<h3>1.7. Что на живой странице есть по делу</h3>
+<p>Полевого материала почти нет: ни случая, ни цифры, ни инструмента по имени. По теме:</p>
+<ul>
+<li>"We use high-definition sewer cameras to locate hidden problems like root intrusion, cracks, misaligned joints, or old corrosion in cast iron pipes." Единственное место со словами cast iron.</li>
+<li>"Not every drain issue means full replacement. We do spot repairs where possible"</li>
+<li>Ответ 1: "roots, a belly in the pipe, or grease buildup. Snaking it isn’t always enough. We use a camera to check what’s really going on."</li>
+<li>Ответ 3, признак главной линии: "If multiple fixtures are slow or backing up, like a tub, toilet, and kitchen sink all acting up, it’s probably your main line."</li>
+<li>Признаки в конце: "Drains bubbling? Toilet backs up when you use the washer? You might have a main line blockage"</li>
+<li>"We check venting issues" (мостик к smoke test).</li>
+</ul>
+<h3>1.8. Новый сайт против живой страницы</h3>
+<ul>
+<li>Текст тот же, кроме правок <code>launch-changes.csv</code>: тире в шести местах (строки 196, 197, 199 до 202), North Dallas в H1 и в последнем блоке (198, 204), hydro jetting в description (203). Title, H2, FAQ, commercial не тронуты. Около 360 слов.</li>
+<li>Макет добавил два отзыва, блок "What is happening right now?" (ссылки на <code>/emergency-plumbing-services/#p-sewer</code> и гайд по главному крану), кнопки звонка обоих офисов, FAQ жирными вопросами, noindex. Блок вступления в собранной странице пустой. Схема: WebPage, BreadcrumbList, Service с именем H1 и description страницы, FAQPage.</li>
+<li>Одобренный текст <code>FPP-Sewer-Line-Repair-Page.docx</code> (30 сентября) на сайте не стоит. В нём title "Sewer Line Repair &amp; Camera Inspection in Frisco &amp; Plano, TX", H1 "Sewer Line Repair: Camera First, Then the Right Fix", около 2,000 слов, 11 H2, 6 FAQ жирным, "plumber near me" на главную, все десять "plumber in ..." в одном абзаце, ссылки на drain cleaning, toilet repair, slab leak repair, emergency. Против решений после 30 сентября: нет smoke test; нет правила про камеру до или после прочистки (<code>2026-10-02-frisco-additions.md</code>); "show the owner what the pipe looks like" в разделе commercial; "different jobs by thousands"; "typically two to three days" и абзац о поломках по городам ("roots in mature yards", "settling backfill"), этих фактов в <code>source/dictation/</code> нет; вопрос о цене камеры повторяет гайд; в title нет McKinney (что это значит, в 2.3). Абзац Дениса про чугун и салфетки для этой страницы: <code>source/dictation/2026-10-01-warranty-and-care.md</code>, Paragraph 3.</li>
+</ul>
+<h2>2. Search Console</h2>
+<h3>2.1. Итоги</h3>
+<table>
+<thead>
+<tr>
+<th>Период</th>
+<th>Запросов</th>
+<th>Клики</th>
+<th>Показы</th>
+<th>Место по показам</th>
+<th>Итог Google со скрытыми: клики · показы · место</th>
+<th>Доля показов с запросом</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 мес (1 июля до 28 сентября 2026)</td>
+<td>11</td>
+<td>0</td>
+<td>99</td>
+<td>37.3</td>
+<td>0 · 185 · 30.64</td>
+<td>54%</td>
+</tr>
+<tr>
+<td>16 мес (31 мая 2025 до 28 сентября 2026)</td>
+<td>139</td>
+<td>0</td>
+<td>6,718</td>
+<td>67.5</td>
+<td>0 · 7,138 · 65.51</td>
+<td>94%</td>
+</tr>
+</tbody>
+</table>
+<p>Все запросы 3 месяцев есть в 16 месяцах; вычитанием: за 13 месяцев до июля 6,619 показов, место 67.9, 0 кликов. В <code>docs/pages-plan.md</code> страница двадцатая, последняя в группе 3.</p>
+<table>
+<thead>
+<tr>
+<th>Тема (правило <code>gsc_sewer_lib.py</code>)</th>
+<th>3 мес: запросов · показы · место</th>
+<th>16 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ремонт и замена sewer и main line</td>
+<td>0</td>
+<td>32 · 1,443 · 84.9</td>
+</tr>
+<tr>
+<td>cast iron</td>
+<td>0</td>
+<td>11 · 1,653 · 44.7</td>
+</tr>
+<tr>
+<td>sewer и main line: прочистка, cleanout, backup</td>
+<td>3 · 17 · 19.8</td>
+<td>27 · 569 · 67.1</td>
+</tr>
+<tr>
+<td>camera inspection</td>
+<td>0</td>
+<td>1 · 2 · 97.0</td>
+</tr>
+<tr>
+<td><strong>своя тема всего</strong></td>
+<td><strong>3 · 17 · 19.8</strong></td>
+<td><strong>71 · 3,667 · 64.0</strong></td>
+</tr>
+<tr>
+<td>drain cleaning (хозяин страница drain cleaning)</td>
+<td>6 · 76 · 43.9</td>
+<td>47 · 2,542 · 71.1</td>
+</tr>
+<tr>
+<td>lining, trenchless, sleeve (нет в списке услуг)</td>
+<td>0</td>
+<td>6 · 415 · 76.4</td>
+</tr>
+<tr>
+<td>commercial</td>
+<td>0</td>
+<td>8 · 68 · 77.0</td>
+</tr>
+<tr>
+<td>уборка после канализации (партнёр)</td>
+<td>0</td>
+<td>1 · 6</td>
+</tr>
+<tr>
+<td>бренд и site:</td>
+<td>2 · 6 · 3.3</td>
+<td>3 · 16 · 8.6</td>
+</tr>
+<tr>
+<td>faucet и прочее</td>
+<td>0</td>
+<td>3 · 4</td>
+</tr>
+</tbody>
+</table>
+<p>По городу, 16 мес (запросов · показы · место): Frisco 37 · 3,098 · 58.4; Plano 53 · 989 · 75.3; McKinney 24 · 2,328 · 75.0; The Colony 4 · 145; Little Elm 1 · 19; остальные пять городов 0; без города 14 · 98; чужой город 3 · 25; бренд 3 · 16. За 3 мес: Frisco 5 · 76 · 33.6, McKinney 1 · 1, без города 2 · 14, чужой 1 · 2, бренд 2 · 6.</p>
+<p>По месту, 16 мес: ниже 50-го 109 запросов (4,549 показов), 20 до 50 25 (2,148), выше 20-го 5 (21: бренд, site: и единичные). 3 мес: 20 до 50 6 (66), 10 до 20 2 (15), выше 10-го 2 (бренд и site:), ниже 50-го 1 (12).</p>
+<h3>2.2. Топ запросов и клики</h3>
+<p><strong>Запросов с кликами нет ни одного</strong> за оба периода. Топ 30 обоих периодов: <code>sewer-gsc-top30.md</code>; все запросы: <code>sewer-gsc-queries-*.md</code>. За 3 месяца все 11:</p>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>3 мес</th>
+<th>16 мес</th>
+<th>Тема</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>drain cleaning frisco</td>
+<td>44 · 34.9 · 0</td>
+<td>715 · 39.0 · 0</td>
+<td>drain cleaning</td>
+</tr>
+<tr>
+<td>sewer cleaning frisco</td>
+<td>14 · 19.6 · 0</td>
+<td>167 · 59.9 · 0</td>
+<td>своя</td>
+</tr>
+<tr>
+<td>drain line cleaning services petros</td>
+<td>12 · 83.4 · 0</td>
+<td>12 · 83.4 · 0</td>
+<td>drain cleaning, petros отложено</td>
+</tr>
+<tr>
+<td>frisco drain cleaning</td>
+<td>12 · 45.1 · 0</td>
+<td>307 · 63.6 · 0</td>
+<td>drain cleaning</td>
+</tr>
+<tr>
+<td>drain cleaning company frisco</td>
+<td>4 · 30.5 · 0</td>
+<td>4 · 30.5 · 0</td>
+<td>drain cleaning</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>4 · 2.0 · 0</td>
+<td>9 · 10.6 · 0</td>
+<td>бренд</td>
+</tr>
+<tr>
+<td>blocked drain cleaning frisco</td>
+<td>2 · 40.0 · 0</td>
+<td>59 · 42.3 · 0</td>
+<td>drain cleaning</td>
+</tr>
+<tr>
+<td>drain clearing service addison</td>
+<td>2 · 30.5 · 0</td>
+<td>2 · 30.5 · 0</td>
+<td>чужой город</td>
+</tr>
+<tr>
+<td>sewer line cleaning near me</td>
+<td>2 · 22.0 · 0</td>
+<td>10 · 53.4 · 0</td>
+<td>своя</td>
+</tr>
+<tr>
+<td>site:fppplumbing.com</td>
+<td>2 · 6.0 · 0</td>
+<td>2 · 6.0 · 0</td>
+<td>служебный</td>
+</tr>
+<tr>
+<td>main line drain cleaning mckinney</td>
+<td>1 · 18.0 · 0</td>
+<td>2 · 16.5 · 0</td>
+<td>своя</td>
+</tr>
+</tbody>
+</table>
+<p>За 16 месяцев первые 12 по показам: drain cleaning frisco 715 · 39.0; drain cleaning mckinney 660 · 93.9; mckinney drain cleaning 466 · 87.9; main sewer line replacement mckinney 362 · 88.4; frisco drain cleaning 307 · 63.6; cast iron pipe replacement plano 246 · 78.3; sewer repair frisco 225 · 84.6; sewer replacement frisco 222 · 81.9; cast iron pipe replacement frisco 205 · 31.5; cast iron pipe repair mckinney 194 · 29.0; cast iron drain pipe repair frisco 189 · 34.5; sewer pipe lining frisco 188 · 85.1 (не наше).</p>
+<p>Слова запросов в живом тексте (правило <code>tools/gsc_page_table.py</code>), 16 мес: «да» 86 запросов на 5,675 показов, «частично» 33 на 535 (нет excavation, colony, blocked, company, «near me»), отложено 20 на 508. Слова есть, но разбросаны: «cast iron» только в тексте, «replacement» только в одном H2, «McKinney» и «Plano» только в title и description.</p>
+<h3>2.3. Что держат заголовки</h3>
+<p>Держит: все значимые слова запроса стоят в заголовке. «Без города»: все слова, кроме названия города. Подробно: <code>sewer-gsc-headings.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Заголовок</th>
+<th>Все слова, 16 мес: запросов · показы</th>
+<th>Без города, 16 мес</th>
+<th>Из них своя тема</th>
+<th>Все слова, 3 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>30 · 2,879</td>
+<td>34 · 3,034</td>
+<td>19 · 655</td>
+<td>3 · 70</td>
+</tr>
+<tr>
+<td>description</td>
+<td>3 · 7</td>
+<td>3 · 7</td>
+<td>1 · 1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>H1</td>
+<td>10 · 1,049</td>
+<td>23 · 2,408</td>
+<td>0</td>
+<td>2 · 56</td>
+</tr>
+<tr>
+<td>"General Drain Services"</td>
+<td>0</td>
+<td>2 · 8</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>H2 "Spot Repairs &amp; Sewer Line Replacement"</td>
+<td>0</td>
+<td>16 · 591</td>
+<td>16 · 591</td>
+<td>0</td>
+</tr>
+<tr>
+<td>H2 "Video Camera Inspection for Sewer &amp; Drain Lines"</td>
+<td>0</td>
+<td>1 · 1</td>
+<td>1 · 1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>H2 commercial, "Real Questions About Drain Cleaning", "Book Routine Drain Cleaning"</td>
+<td>до 2 · 3</td>
+<td>13 до 22 · до 2,376, всё drain cleaning</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>H2 "Why Professional Drain Maintenance Matters", "Odors, Gurgling..."</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>три вопроса FAQ и три ответа тегом H2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Title</strong>: фразой (слова подряд, если не считать "in") держит "sewer repair frisco" (225 · 84.6); все слова у "sewer cleaning mckinney" (184 · 82.5), "sewer cleaning frisco" (167 · 59.9; за 3 мес 14 · 19.6, лучшее своё место последних месяцев), "sewer repair plano", "sewer repair mckinney" и ещё 13 мелких. Города в title (и в description) единственное место с "McKinney" и "Plano". Остальное, что держит title, это чужой drain cleaning (715, 660, 466, 307).</li>
+<li><strong>H1</strong> своей темы не держит: в нём нет "sewer".</li>
+<li><strong>H2 "Spot Repairs &amp; Sewer Line Replacement"</strong> единственный H2 своей темы: без города 16 запросов на 591 ("sewer repair frisco" 225, "sewer replacement frisco" 222, "sewer line repair frisco" 57, "sewer line repair mckinney" 14, "sewer line replacement frisco" 14 и мелкие).</li>
+<li><strong>Cast iron</strong> нет ни в одном заголовке, только в тексте, а это 11 запросов на 1,653 показа и лучшие места страницы: "cast iron drain pipe repair mckinney" 23.6, "cast iron pipe repair mckinney" 29.0, "cast iron pipe replacement frisco" 31.5, "cast iron drain pipe repair frisco" 34.5, "cast iron pipe replacement mckinney" 35.3, "cast iron pipe repair frisco" 35.7. За 3 месяца по cast iron показов нет.</li>
+<li><strong>"main"</strong> только в вопросе 3, в ответе 3 и в анкоре ссылки в конце ("main line blockage"), ни в одном заголовке; его ждут "main sewer line replacement mckinney" (362), "... plano" (144), "... frisco" (67).</li>
+<li><strong>Не потерять</strong>: "Sewer Repair" и "Frisco, Plano &amp; McKinney" в title; "Sewer Line Replacement" и "Repairs" в заголовке; "cast iron pipes" (лучше в заголовке); "main line"; "Camera Inspection for Sewer". McKinney: если город уйдёт из title (как в Word тексте), останется только в description, а им держатся все 24 запроса страницы с McKinney (2,328 показов за 16 мес), в том числе cast iron. Кроме того, "Drain Cleaning ... McKinney" в title даёт этой странице показы по "drain cleaning mckinney" и "mckinney drain cleaning" (1,126 за 16 мес, места 88 до 94, за 3 мес 0); кроме неё по ним показывается только страница McKinney (183 · 65.8 и 6 · 84.0 за 16 мес), страница drain cleaning не показывается.</li>
+</ul>
+<p>Слов запросов нет на странице нигде: excavation (156), colony (145), blocked (59); отложенные lining (269), trenchless (79), sleeve (67), petros (12).</p>
+<h3>2.4. Фраза целиком (топ 20 обоих периодов, кликов нет)</h3>
+<p>28 запросов, таблица <code>sewer-gsc-phrases.md</code>. Точно стоит только "fpp plumbing" (alt фото "Branded FPP Plumbing van"); из всех 139 запросов ещё "drain cleaning" (title, H2, текст; 2 · 83.0). Мягко (без in и tx, слова подряд) стоит "sewer repair frisco" в title. У остальных 26 фразы нет нигде: ни "drain cleaning frisco", ни "sewer cleaning frisco", ни "cast iron pipe repair/replacement" с городом, ни "main sewer line replacement", ни "sewer line cleaning near me" (на странице нет "near me").</p>
+<h3>2.5. Другие страницы на запросах этой услуги, и наоборот</h3>
+<p>Тема sewer, cast iron и камеры по сайту: 3 мес 124 запроса и 5,062 показа, у этой страницы 3 и 17; клики 2, оба у Plano ("sewer drain cleaning near me", "sewer and drain repair near me"). 16 мес 345 и 20,048, у этой страницы 71 и 3,667; клики 3 (ещё главная, "sewer line repair" 191 · 2.4 · 1).</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>3 мес: запросов · показы · место</th>
+<th>16 мес</th>
+<th>Выше этой, 16 мес: запросов · показы</th>
+<th>Без своего города, 3 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/plumber-plano-tx/</code></td>
+<td>81 · 3,411 · 3.9</td>
+<td>113 · 4,239 · 18.8</td>
+<td>21 · 355</td>
+<td>50 · 3,241</td>
+</tr>
+<tr>
+<td><code>/plumber-frisco-tx/</code></td>
+<td>41 · 1,521 · 4.0</td>
+<td>65 · 2,908 · 13.4</td>
+<td>8 · 170</td>
+<td>32 · 1,448</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>5 · 11 · 9.3</td>
+<td>207 · 5,635 · 20.3</td>
+<td>39 · 3,143</td>
+<td></td>
+</tr>
+<tr>
+<td><code>/clogged-drain-cleaning-frisco-plano/</code></td>
+<td>1 · 1 · 23.0</td>
+<td>30 · 968 · 59.9</td>
+<td>14 · 544</td>
+<td></td>
+</tr>
+<tr>
+<td><code>/water-lines/</code></td>
+<td>6 · 10 · 40.5</td>
+<td>16 · 864 · 60.4</td>
+<td>8 · 674</td>
+<td></td>
+</tr>
+<tr>
+<td>Lewisville, Carrollton, McKinney</td>
+<td>мелко</td>
+<td>8 · 427; 5 · 290; 4 · 176</td>
+<td>0; 0; 3 · 34</td>
+<td></td>
+</tr>
+<tr>
+<td><code>/drain-services/</code></td>
+<td>3 · 17 · 19.8</td>
+<td>71 · 3,667 · 64.0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>По правилу проекта (место 3 и выше без города страницы) карточкой за 3 мес считаются у Plano 40 запросов на 850 показов (место 1.2), у Frisco 14 на 970 (1.3). Главные строки (полностью в <code>sewer-gsc-other-pages-*.md</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Другая страница</th>
+<th>Её числа</th>
+<th>Эта страница</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sewer line replacement the colony tx (3 мес)</td>
+<td>Plano</td>
+<td>1,816 · 5.2 · 0</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>sewer line replacement (3 мес)</td>
+<td>Plano</td>
+<td>541 · 3.7 · 0</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>sewer repair (3 мес)</td>
+<td>Frisco</td>
+<td>361 · 1.1 · 0</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>sewer cleaning (3 мес)</td>
+<td>Frisco</td>
+<td>308 · 1.5 · 0</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>sewer line camera inspection (3 мес)</td>
+<td>Frisco</td>
+<td>47 · 1.0 · 0</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>sewer line cleaning near me (3 мес)</td>
+<td>Plano</td>
+<td>116 · 1.0 · 0</td>
+<td>2 · 22.0 · 0</td>
+</tr>
+<tr>
+<td>main sewer line replacement plano (16 мес)</td>
+<td><code>/</code></td>
+<td>362 · 12.3 · 0</td>
+<td>144 · 90.5 · 0</td>
+</tr>
+<tr>
+<td>cast iron plumbing frisco (16 мес)</td>
+<td><code>/</code></td>
+<td>278 · 15.7 · 0</td>
+<td>39 · 49.7 · 0</td>
+</tr>
+<tr>
+<td>cast iron drain pipe repair frisco (16 мес)</td>
+<td><code>/</code></td>
+<td>196 · 13.3 · 0</td>
+<td>189 · 34.5 · 0</td>
+</tr>
+<tr>
+<td>main sewer line replacement frisco (16 мес)</td>
+<td><code>/water-lines/</code></td>
+<td>367 · 44.6 · 0</td>
+<td>67 · 46.1 · 0</td>
+</tr>
+<tr>
+<td>sewer cleaning frisco (16 мес)</td>
+<td>drain cleaning</td>
+<td>138 · 54.0 · 0</td>
+<td>167 · 59.9 · 0</td>
+</tr>
+<tr>
+<td>sewer line repair the colony (16 мес)</td>
+<td>The Colony</td>
+<td>99 · 36.6 · 0</td>
+<td>9 · 93.6 · 0</td>
+</tr>
+</tbody>
+</table>
+<p><code>/water-lines/</code> по карте держит линию от счётчика до дома, а показывается по "main sewer line": слова "main line" путают две темы.</p>
+<p>Наоборот (<code>sewer-gsc-reverse.md</code>): drain cleaning этой страницы, 47 запросов на 2,542 показа за 16 мес и 6 на 76 за 3 мес. Хозяин показывается по 25 из 47 (9,088 показов по тем же запросам) и выше в 18; за 3 мес по 3 из 6 и выше во всех (884 показа). "drain cleaning frisco": здесь 715 · 39.0, у хозяина 2,244 · 43.4 за 16 мес (эта была выше); за 3 мес 44 · 34.9 против 422 · 22.5. "drain cleaning plano" 37 · 95.9 против 1,703 · 67.4. "drain cleaning mckinney" 660 · 93.9 и "mckinney drain cleaning" 466 · 87.9: хозяин не показывается. Бренд "fpp plumbing": здесь 9 · 10.6, у главной 1,863 · 1.5 · 212. "mckinney faucet repair" (хозяин faucet): 1 показ.</p>
+<h3>2.6. Тема страницы с каждым из десяти городов</h3>
+<p>Запросы сайта про sewer, main line, cast iron и камеру с названием города (по страницам: <code>sewer-gsc-cities.md</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Город</th>
+<th>16 мес на сайте</th>
+<th>Эта страница, 16 мес</th>
+<th>Больше всех, 16 мес</th>
+<th>3 мес на сайте</th>
+<th>Кто за 3 мес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frisco</td>
+<td>26 · 6,227</td>
+<td>16 · 1,617 · 61.9</td>
+<td><code>/</code> 2,480 · 29.3</td>
+<td>10 · 94</td>
+<td>Frisco 73 · 1.7; эта 14 · 19.6</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>108 · 4,230</td>
+<td>37 · 813 · 75.3</td>
+<td><code>/</code> 1,879 · 18.8</td>
+<td>31 · 170</td>
+<td>Plano 170 · 2.2</td>
+</tr>
+<tr>
+<td>McKinney</td>
+<td>15 · 1,392</td>
+<td>11 · 1,145 · 58.8</td>
+<td>эта</td>
+<td>3 · 16</td>
+<td>Frisco 15 · 38.3; эта 1 · 18.0</td>
+</tr>
+<tr>
+<td>The Colony</td>
+<td>7 · 2,219</td>
+<td>2 · 24 · 83.0</td>
+<td>Plano 1,818 · 5.2</td>
+<td>4 · 1,986</td>
+<td>Plano 1,818 · 5.2</td>
+</tr>
+<tr>
+<td>Lewisville</td>
+<td>9 · 462</td>
+<td>нет</td>
+<td>Lewisville 427 · 70.6</td>
+<td>1 · 20</td>
+<td>Plano 20 · 1.0</td>
+</tr>
+<tr>
+<td>Carrollton</td>
+<td>5 · 290</td>
+<td>нет</td>
+<td>Carrollton 290 · 61.6</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>Prosper</td>
+<td>2 · 116</td>
+<td>нет</td>
+<td>Prosper 75 · 26.0; Frisco 41 · 1.0</td>
+<td>1 · 26</td>
+<td>Frisco 25 · 1.0</td>
+</tr>
+<tr>
+<td>Celina</td>
+<td>3 · 79</td>
+<td>нет</td>
+<td>Celina 79 · 16.4</td>
+<td>1 · 6</td>
+<td>Celina</td>
+</tr>
+<tr>
+<td>Allen</td>
+<td>5 · 28</td>
+<td>нет</td>
+<td>Allen 26 · 58.7</td>
+<td>1 · 2</td>
+<td>Plano</td>
+</tr>
+<tr>
+<td>Little Elm</td>
+<td>3 · 6</td>
+<td>нет</td>
+<td>Little Elm 6 · 31.8</td>
+<td>2 · 3</td>
+<td>Little Elm</td>
+</tr>
+</tbody>
+</table>
+<p>(Город в ячейке означает страницу этого города.) McKinney единственный город, где эта страница берёт большую часть своей темы. По Frisco и Plano за 16 мес больше всех у главной, за 3 мес у страниц офисов. По семи городам эта страница не показывается. Чужой drain cleaning с городом на этой странице, 16 мес: Frisco 16 · 1,126, McKinney 11 · 1,180, The Colony 2 · 121, Plano 6 · 63, Little Elm 1 · 19.</p>
+<h3>2.7. Слова, которые на страницу не идут</h3>
+<p>За 16 мес (за 3 мес из этого только addison, petros, бренд и site:):</p>
+<ul>
+<li>способ, которого нет в списке услуг: lining 2 запроса · 269 показов ("sewer pipe lining frisco", "pipe lining frisco"), trenchless 1 · 79 ("trenchless pipe repair frisco"), sleeve 3 · 67 ("plano sewer pipe repair sleeve");</li>
+<li>commercial (бывает изредка, своей страницы нет): 8 · 68 ("commercial drain cleaning plano");</li>
+<li>уборка после канализации (это партнёр по восстановлению): "sewage cleanup frisco" 1 · 6;</li>
+<li>чужие города и места: Dallas 1 · 22 ("commercial drain cleaning dallas"), Addison 1 · 2, North Dallas 1 · 1;</li>
+<li>непонятные и чужие названия: petros 1 · 12 ("drain line cleaning services petros", в проекте не объяснено), gps 1 · 1 ("gps plumbing frisco", похоже на другую компанию);</li>
+<li>бренд и служебные: "fpp plumbing", "site:fppplumbing.com", 3 · 16.</li>
+</ul>
+<p>Оценочных слов, опечаток и голосовых слов в запросах страницы нет. По сайту в этой теме есть ещё "hydrojet sewer plumber mckinney tx" (McKinney, 243 · 60.3) и "no dig sewer line replacement plano" (главная, 372 · 7.3): hydro jetting и бестраншейную замену как услугу не называем.</p>
+<h3>Как считали</h3>
+<ul>
+<li>Скрипты <code>gsc_sewer_lib.py</code> и <code>gsc_sewer_live.py</code> в scratchpad <code>services/sewer-line/</code>, из копий <code>docs/briefs/_shared/gsc_plano_lib.py</code> и <code>gsc_plano_live.py</code> (оригиналы не тронуты, <code>tools/gsc_page_table.py</code> не запускался). Правило покрытия как в проектном инструменте, текст с живой страницы из краула; город из десяти считается словом запроса; тема по словам запроса, первое совпадение; адреса с 301 считаются своей целью.</li>
+<li>Итоги страницы тремя способами (модуль csv, разбор строк без него с остановкой при расхождении, awk): 3 мес 11 запросов, 0 кликов, 99 показов, место 37.34; 16 мес 139, 0, 6,718, 67.48. Те же числа в <code>page-query-coverage.csv</code>. Руками сверены "drain cleaning frisco" 715 · 39.05, "cast iron pipe replacement frisco" 205 · 31.46, "sewer cleaning frisco" за 3 мес 14 · 19.64. Сумма по темам (71 · 3,667 своя, 47 · 2,542 drain cleaning, остальное 21 · 509) сходится с 139 · 6,718.</li>
+</ul></main></body></html>
