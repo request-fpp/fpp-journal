@@ -12,7 +12,7 @@
 2. Все 64 страницы пересобираем по очереди: сначала города, потом услуги, потом остальное (посты, гайды, прочие страницы). Ни одна страница не идёт вне очереди, PRV тоже.
 3. Когда все страницы готовы, один итоговый аудит: каждая страница и сайт целиком. Только после него переезд.
 
-**Города.** Главная и Frisco сделаны. Дальше Plano, потом по показам из таблиц ниже, если Денис не назовёт другой порядок: Little Elm, The Colony, Prosper, Lewisville, Celina, Carrollton, Allen, McKinney.
+**Города.** Главная, Frisco и Plano сделаны (Plano версия 1 собрана 3 октября 2026, ждёт взгляда Дениса и его фото). Дальше по показам из таблиц ниже, если Денис не назовёт другой порядок: Little Elm, The Colony, Prosper, Lewisville, Celina, Carrollton, Allen, McKinney.
 
 **Услуги.** Slab leak, leak detection, sewer line, drain cleaning, water heaters (этот порядок Денис называл раньше). Дальше остальные по показам: emergency plumbing, water lines, garbage disposal, hose bib, expansion tank, toilet repair, PRV replacement, faucet and shower valve.
 
@@ -125,3 +125,13 @@ Title главной не трогаем. Главная закрыта фина
 - Полная версия истории «Water coming out of the foundation» (Little Elm, 27 августа 2026) и клип 165 идут на страницу slab leak, когда она будет переписываться. Сейчас короткая версия стоит первой в блоке «From the Job» на главной, без города. Факты Дениса: `source/dictation/2026-10-02-slab-leak-water-from-foundation.md`.
 - Туда же: три фразы Дениса про глину и пинхолы, снятые со страницы Frisco (`source/dictation/2026-10-02-frisco-reserve-for-service-pages.md`).
 - Для страницы PRV: вопрос FAQ «Why do PRVs fail so often in Frisco homes?» с ответом, снятый со страницы Frisco (тот же файл запаса). Порядок после Frisco: Plano, потом PRV.
+
+## Записано 3 октября 2026, вечер (страница Plano и ответы Дениса)
+
+- Plano: текст `source/plano-text-v1.md`, отчёт `docs/plano-v1-report-2026-10-03.md`. Ждёт от Дениса: фото фургона у офиса Plano для первого экрана, фото работы с корнями, закопанного крана, манометра на кране, чугуна, крана на трубе из земли, дымохода водонагревателя.
+- Отзыв Kseniia переехал со старой страницы PRV на Plano. Когда дойдёт очередь страницы PRV, ей нужны два своих отзыва.
+- Похожие вопросы FAQ на старых страницах сменить при их переписывании: «Am I responsible for the water line, or is the city?» на water lines и на Little Elm (на Plano стоит вопрос про счётчик с правилами Plano), «Will my city give me a credit for water lost to a leak?» в гайде про высокий счёт (на Plano стоит вопрос про возврат города Plano).
+- Water lines: когда страница будет переписываться, дать ей работу из Plano и ссылку «plumber in Plano»: сейчас по запросам «water line repair plano» Google показывает страницу города, а не страницу услуги.
+- Цены в старых текстах услуг убраны точечно 3 октября (PRV, измельчители, water lines, hose bib), reroute убран на water lines. Эти страницы всё равно переписываются целиком в свою очередь. Гайды и посты с ценами не тронуты.
+- Перевёрнутый B-vent из диктовки 3 октября ждёт страницу water heaters. Пост про трубу под тротуаром не трогаем.
+- Форма заявки в Telegram делается в самом конце, перед переездом.
