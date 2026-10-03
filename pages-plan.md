@@ -113,3 +113,10 @@ Title главной не трогаем. Главная закрыта фина
 ## После переезда
 
 - Гайд под запрос «sewer smell in the house» с фото и видео теста от Дениса. Сейчас по «sewer smell», «sewer gas» и «smoke test» у сайта нет показов ни у одной страницы, тема свободна. В США такое ищут: «sewer smell in bathroom» 2,900 раз в месяц, «sewer smell in house» 1,900, «sewer gas smell in house» 1,000; конкуренция слабая.
+
+
+## Для страницы slab leak (записано 2 октября 2026, ночь)
+
+- Полная версия истории «Water coming out of the foundation» (Little Elm, 27 августа 2026) и клип 165 идут на страницу slab leak, когда она будет переписываться. Сейчас короткая версия стоит первой в блоке «From the Job» на главной, без города. Факты Дениса: `source/dictation/2026-10-02-slab-leak-water-from-foundation.md`.
+- Туда же: три фразы Дениса про глину и пинхолы, снятые со страницы Frisco (`source/dictation/2026-10-02-frisco-reserve-for-service-pages.md`).
+- Для страницы PRV: вопрос FAQ «Why do PRVs fail so often in Frisco homes?» с ответом, снятый со страницы Frisco (тот же файл запаса). Порядок после Frisco: Plano, потом PRV.
