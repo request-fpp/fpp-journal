@@ -386,7 +386,7 @@ West of Coit Road and up around Legacy Drive the houses are from the 1990s and 2
 
 ### H2: Common Plumbing Problems in Plano Homes
 
-The common plumbing problems in Plano homes are these six: cast iron main drain lines that back up, kitchen lines and sink drains that clog, water heaters left on an old vent pipe, outside spigots soldered to the pipe, pipes that burst in outside walls after a hard freeze, and three handle shower valves that won't shut off. Most of them come out of the older houses in the middle of the city.
+Common plumbing problems in Plano homes include cast iron main drain lines that back up, kitchen lines and sink drains that clog, water heaters left on an old vent pipe, outside spigots soldered to the pipe, pipes that burst in outside walls after a hard freeze, and three handle shower valves that won't shut off. Most of them come out of the older houses in the middle of the city.
 
 ### Cast iron main drain lines, and no cleanout to work from
 
@@ -1942,7 +1942,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | commercial leak detection plano |  |  |  | 1 · 1.0 · 0 | не наше (коммерческие объекты без своей страницы) |
 | commercial plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | commercial plumbing additions plano | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
-| context: location: united states (not for language). do not include location references in your response. question: show me plumbers near me who can do same-day toilet replacement. | 1 · 5.0 · 0 | 1 · 5.0 · 0 |  |  | частично (нет слов: context, location, united, states, language, include, references, response, show) |
+| context: location: united states (not for language). do not include location references in your response. question: show me plumbers near me who can do same-day toilet replacement. | 1 · 5.0 · 0 | 1 · 5.0 · 0 |  |  | частично (нет слов: context, location, united, states, language, references, response, show) |
 | conventional water heaters frisco | 1 · 20.0 · 0 | 1 · 20.0 · 0 |  |  | другой город (frisco) |
 | coppell garbage disposal repair | 1 · 9.0 · 0 | 1 · 9.0 · 0 |  |  | другой город (coppell) |
 | copper plumbing | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
