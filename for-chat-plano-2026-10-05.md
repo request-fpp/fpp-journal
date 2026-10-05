@@ -42,6 +42,9 @@
 - Фраза про картриджи старых марок, которых нет в обычных магазинах: «мои слова». К ней он прислал фото старого нестандартного картриджа из Plano.
 - Про пункт с тремя ручками, по смыслу: зачем на страницу Plano вынесена эта статья, вынесено не то, фотография не та. Позже он прислал два видео: «А вот как поменян этот клапан из трёх ручек душа на одну ручку».
 - Про историю с тройником он не ответил, а спросил: «В истории про тройник, это какой тройник?»
+- Про давление, позже в этот день: что большинство домов имеют 90 до 95, «не писать этого». Надо так: «на нашем опыте много домов имеет повышенное давление, и об этом домовладелец даже не догадывается. Естественно, нужно проверять это давление».
+- Про возврат города за PRV: «Не город же платит тебе, а город возмещает часть со счёта воды».
+- Про ссылки: «Все посторонние ссылки, включая Facebook, TikTok, Instagram, должны открываться в новом окне. И добавь это в правило. Наши внутренние ссылки пусть переходят в этом же окне».
 - Просьба: «Напиши список всего материала, который я тебе скидывал, с короткими историями, чтобы его другой чат мог посмотреть». И вторая: «Перепиши это всё заново другому чату: эти вопросы, ответы и всё остальное».
 
 **Что он сказал как мнение**
@@ -75,8 +78,10 @@
 5. Третья история. Было: «new copper and two ball valves». Стало: «new copper and the new shut-off valve».
 6. Третья история, ссылка. Слова «replaced that piece of the main line» теперь ведут на страницу water lines. Новых слов нет.
 7. Список услуг. Он открывается новым абзацем: «Emergency plumbing comes first: it's our main service. Somebody is on the line around the clock, holidays too, and when it's a real emergency in Plano, we come out.» Слова «Emergency plumbing» ведут на страницу emergency. Следующий абзац начинается «Leaks next.» вместо «Leaks first.». Из конца абзаца про сливы ушла фраза «And when it can't wait until morning, there's emergency plumbing, around the clock.»: её ссылка переехала в новый абзац.
+8. Абзац про закопанные краны, по его слову про давление. Было: «The gauge on a spigot reads 90 to 95 PSI, and anything over 80 wears a house out early: cartridges, fill valves, supply lines, the water heater.» Стало: «In our experience a lot of them run on high water pressure, and the homeowner doesn't even suspect it. Anything over 80 PSI wears a house out early: cartridges, fill valves, supply lines, the water heater. So the pressure has to be checked, and a gauge on an outside spigot shows it.»
+9. Абзац про возврат города, по его слову. Было: «The City of Plano pays part of that job back. Its PRV rebate returns half the cost of the valve, the parts and the installation, up to a limit the city sets, as a credit on the water bill.» Стало: «The City of Plano doesn't pay for the valve, but it gives part of the cost back as a credit on the water bill. The rebate is half the cost of the valve, the parts and the installation, up to a limit the city sets.»
 
-Больше в тексте ничего не менялось. В нём 3 945 слов.
+Больше в тексте ничего не менялось. В нём 3 976 слов.
 
 ## 5. Что сейчас стоит на странице Plano
 
@@ -127,7 +132,6 @@
 - Страница называет оценку Census и зимний совет города, а ссылок на них нет. Обе страницы есть в брифе.
 - Первая история не ведёт ни на одну страницу услуг.
 - Фраза «For an emergency plumber in Plano the usual night is a pipe that broke in a freeze...» читается как вставленный ключ.
-- Абзац про закопанные краны говорит про 90 до 95 PSI, а на фото рядом манометр показывает около 78. Подпись честная, но фото и абзац говорят разные цифры.
 - Абзац про уличные краны говорит, что труба выходит из земли «about two feet from the house». На клипах 256 и 257 труба стоит у самой стены.
 - По запросам «water line repair plano» Google сейчас показывает страницу Plano, а не страницу water lines. Когда будешь писать water lines, дай ей работу из Plano и ссылку «plumber in Plano».
 - Вопросы FAQ про счётчик и про возврат за воду близки к вопросам на старых страницах water lines, Little Elm и в гайде про высокий счёт. Вопросы Plano остаются; старые сменятся, когда те страницы будут переписаны.
@@ -143,6 +147,7 @@
 - Фото водонагревателя 50.
 - Часы в профиле Google и на странице.
 - Место emergency plumbing в списке услуг: первое.
+- Ссылки: каждая ссылка на чужой сайт открывается в новой вкладке, наши ссылки открываются в том же окне. Это проверяется при каждой сборке и записано в CLAUDE.md.
 - Файл фото с координатами на живом сайте: остаётся до переезда.
 - Регистрация в городах: слово Дениса.
 

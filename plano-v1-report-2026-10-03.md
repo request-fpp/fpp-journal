@@ -166,6 +166,12 @@
 
 Вопросы отчёта закрыты.
 
+## 5 октября, вечер: давление, возврат города, ссылки
+
+- **Давление.** В абзаце про закопанные краны больше нет слов о том, что манометр показывает 90 до 95 PSI. Было: «The gauge on a spigot reads 90 to 95 PSI, and anything over 80 wears a house out early». Стало: «In our experience a lot of them run on high water pressure, and the homeowner doesn't even suspect it. Anything over 80 PSI wears a house out early: cartridges, fill valves, supply lines, the water heater. So the pressure has to be checked, and a gauge on an outside spigot shows it.»
+- **Возврат города.** Было: «The City of Plano pays part of that job back.» Стало: «The City of Plano doesn't pay for the valve, but it gives part of the cost back as a credit on the water bill. The rebate is half the cost of the valve, the parts and the installation, up to a limit the city sets.»
+- **Ссылки.** Твоё правило записано: каждая ссылка на чужой сайт открывается в новой вкладке, наши ссылки открываются в том же окне. Проверка сайта смотрит это при каждой сборке. На сайте так уже и было: обе ссылки на город Plano, отзывы и значки соцсетей открываются в новой вкладке.
+
 ## 5 октября, после ответов: emergency первым, клипы к первой истории, фото офиса
 
 - **Emergency plumbing первым.** Список услуг на странице Plano теперь открывается emergency plumbing со ссылкой на страницу emergency. В тексте чата оно стояло последним, поэтому так и было собрано. Абзац из двух предложений написан твоими словами этого дня: мы всё время на линии, если emergency, мы выезжаем, это основной сервис.
@@ -409,11 +415,11 @@ Bathroom plumbing in these houses still means three handle tub and shower valves
 
 *[Рядом фото 56: Cut out pipe: pinholes first, then rotted through into big holes, Plano]*
 
-**Buried valves, and no PRV.** In about eight of ten older houses here the main shut-off valve, or the second valve by the house, is buried, and nobody in the house knows where it is. Find it on a dry day: our main shut-off valve guide shows where it sits in houses like these. Most of these houses also have no pressure reducing valve at all. The gauge on a spigot reads 90 to 95 PSI, and anything over 80 wears a house out early: cartridges, fill valves, supply lines, the water heater. The fix is a PRV on the main line, and PRV replacement shows how one goes in.
+**Buried valves, and no PRV.** In about eight of ten older houses here the main shut-off valve, or the second valve by the house, is buried, and nobody in the house knows where it is. Find it on a dry day: our main shut-off valve guide shows where it sits in houses like these. Most of these houses also have no pressure reducing valve at all. In our experience a lot of them run on high water pressure, and the homeowner doesn't even suspect it. Anything over 80 PSI wears a house out early: cartridges, fill valves, supply lines, the water heater. So the pressure has to be checked, and a gauge on an outside spigot shows it. The fix is a PRV on the main line, and PRV replacement shows how one goes in.
 
 *[Рядом фото 207: The black needle reads about 78 PSI: not 80 yet, but close to the line, Plano]*
 
-The City of Plano pays part of that job back. Its PRV rebate returns half the cost of the valve, the parts and the installation, up to a limit the city sets, as a credit on the water bill. The conditions are the city's: a house built before 2013 that shows over 80 PSI on the city's eligibility map, a valve bought from a store inside Plano and installed by a licensed plumber registered with the city, and an itemized invoice with the plumber's license number and the installation date, received by the city within 120 days of the installation. Read them before the job, not after. The application is on the city's Water Conservation Rebates page.
+The City of Plano doesn't pay for the valve, but it gives part of the cost back as a credit on the water bill. The rebate is half the cost of the valve, the parts and the installation, up to a limit the city sets. The conditions are the city's: a house built before 2013 that shows over 80 PSI on the city's eligibility map, a valve bought from a store inside Plano and installed by a licensed plumber registered with the city, and an itemized invoice with the plumber's license number and the installation date, received by the city within 120 days of the installation. Read them before the job, not after. The application is on the city's Water Conservation Rebates page.
 
 ---
 
@@ -1948,7 +1954,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | emergency drain cleaning service | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | emergency plumber in tennyson | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | да |
 | emergency plumber paris | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: paris) |
-| emergency plumber quotes for high-pressure leak repairs | 1 · 5.0 · 0 | 1 · 5.0 · 0 |  |  | частично (нет слов: quotes, high) |
+| emergency plumber quotes for high-pressure leak repairs | 1 · 5.0 · 0 | 1 · 5.0 · 0 |  |  | частично (нет слов: quotes) |
 | emergency plumbers in tennyson | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | emergency plumbers near me |  | 1 · 14.0 · 0 |  |  | да |
 | emergency plumbing in tennyson | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | да |
