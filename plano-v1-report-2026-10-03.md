@@ -166,6 +166,15 @@
 
 Вопросы отчёта закрыты.
 
+## 5 октября, блок чата: слово в H1 и правки текста
+
+- **H1.** Теперь: «Plumber Plano, TX: Same-Day Help for Clogs, Leaks & Emergencies». Было «& More». Это твоё решение от 5 октября. Начало H1, которым страница ранжируется, осталось слово в слово. Title не менялся.
+- **Начало раздела о частых проблемах.** Раздел открывается одним предложением, которое называет все шесть проблем.
+- **Унитаз и фланец.** В пункте про чугунные линии три новые фразы по твоей диктовке: унитаз сидит на силиконе и цементе, под ним часто нет фланца, он сгнил, и его тоже приходится чинить.
+- **Первая история.** В конце одна фраза со ссылкой на страницу drain cleaning.
+- **Две ссылки на официальные страницы.** Таблица Census про год постройки домов в Plano (там стоит 1993) и страница города про зиму (там есть фраза про краны в доме, которые оставляют капать). Обе страницы я открыл в браузере.
+- **Счёт.** В тексте 4 080 слов, 41 ссылка и одна в FAQ. Мой счёт сошёлся со счётом чата. Не сошлось одно: чат не увидел на странице города фразу про краны, а она там есть, просто подгружается не сразу. Ссылка поставлена, фраза в тексте осталась.
+
 ## 5 октября, поздний вечер: фраза про город, картинка в первом разделе
 
 - **Возврат города.** Фразы «The City of Plano doesn't pay for the valve» больше нет. Теперь абзац начинается так: «The City of Plano gives part of the cost back as a credit on the water bill.» Дальше без изменений.
@@ -341,7 +350,7 @@ Meta description: Slab leaks under the floor, main lines that back up, shut-off 
 
 ---
 
-### H1: Plumber Plano, TX: Same-Day Help for Clogs, Leaks & More
+### H1: Plumber Plano, TX: Same-Day Help for Clogs, Leaks & Emergencies
 
 FPP Plumbing is a licensed plumbing company with an office in Plano, at 5700 Tennyson Pkwy. When you need a plumber in Plano, TX, a person picks up the phone, day or night, and it's one of us, not an answering service. The weekday service call is $49, and that money goes toward the repair. You hear one flat price before any work starts. We hold a contractor registration with the City of Plano, and if a job needs a permit, we're the ones who pull it.
 
@@ -377,11 +386,11 @@ West of Coit Road and up around Legacy Drive the houses are from the 1990s and 2
 
 ### H2: Common Plumbing Problems in Plano Homes
 
-Most of these come out of the older houses in the middle of the city.
+The common plumbing problems in Plano homes are these six: cast iron main drain lines that back up, kitchen lines and sink drains that clog, water heaters left on an old vent pipe, outside spigots soldered to the pipe, pipes that burst in outside walls after a hard freeze, and three handle shower valves that won't shut off. Most of them come out of the older houses in the middle of the city.
 
 ### Cast iron main drain lines, and no cleanout to work from
 
-In the older houses the drain lines under the floor are cast iron. After forty years that pipe rusts and cracks, and it loses its shape. What's left of the inside fills up with grease, dirt, calcium and rust. In about half of these houses there's no cleanout where one should be, so when the main line backs up, the way in is often through a toilet. In a newer house, clearing a main line takes up to half an hour. In old Plano it can take two to three hours to unclog the same kind of line. A line that is cracked or keeps backing up is a job for sewer line repair and camera inspection. And a toilet that clogs again a week after it was cleared can be a pipe that came apart under the floor. We wrote up one Plano job like that: why a toilet keeps backing up after it was cleared.
+In the older houses the drain lines under the floor are cast iron. After forty years that pipe rusts and cracks, and it loses its shape. What's left of the inside fills up with grease, dirt, calcium and rust. In about half of these houses there's no cleanout where one should be, so when the main line backs up, the way in is often through a toilet. Pulling that toilet is a job in itself. It's stuck down with silicone and set in cement, and when it comes up, there's often no flange left under it: the flange has rusted away, and then it has to be repaired too. In a newer house, clearing a main line takes up to half an hour. In old Plano it can take two to three hours to unclog the same kind of line. A line that is cracked or keeps backing up is a job for sewer line repair and camera inspection. And a toilet that clogs again a week after it was cleared can be a pipe that came apart under the floor. We wrote up one Plano job like that: why a toilet keeps backing up after it was cleared.
 
 *[Под текстом рядом: фото 248: Under a toilet in Plano: the old flange, rusted through and broken off after years of leaking; фото 250: After: a new flange and a new wax ring, ready for the toilet, Plano]*
 
@@ -449,7 +458,7 @@ Water heaters have their own sheet at the city, and one line in it says the reli
 
 ### H2: Four Plano Jobs, the Way They Went
 
-**Twenty tries to get past one fitting.** A recent emergency call from a house more than forty years old: every toilet, the tub and the shower had backed up, and one toilet was leaking at its base. Outside there was a single cleanout, buried, and it only led toward the city's line. We uncovered it, and that side of the line was clear, so the clog was under the house. There were no cleanouts in the walls. The camera wasn't much help: old cast iron has sharp edges at the turns, and they caught the camera and jammed it about five times. A cast iron line this old is also full of cockroaches, thousands of them. With no other way in, we pulled a toilet. The flange was a little rusty and still good. About five feet in, the branch line meets a fitting, and at that fitting the cable kept turning up into the vent instead of down the drain. Around the twentieth try it went the right way. The line opened, and through the outside cleanout we could see the cable go past. The toilet went back on a new wax ring. The camera still couldn't get past six feet, so nobody had seen the rest of that line. To see it we would have had to go in from the vent on the roof, and the homeowner passed: a replacement of the drain lines was already planned with another contractor.
+**Twenty tries to get past one fitting.** A recent emergency call from a house more than forty years old: every toilet, the tub and the shower had backed up, and one toilet was leaking at its base. Outside there was a single cleanout, buried, and it only led toward the city's line. We uncovered it, and that side of the line was clear, so the clog was under the house. There were no cleanouts in the walls. The camera wasn't much help: old cast iron has sharp edges at the turns, and they caught the camera and jammed it about five times. A cast iron line this old is also full of cockroaches, thousands of them. With no other way in, we pulled a toilet. The flange was a little rusty and still good. About five feet in, the branch line meets a fitting, and at that fitting the cable kept turning up into the vent instead of down the drain. Around the twentieth try it went the right way. The line opened, and through the outside cleanout we could see the cable go past. The toilet went back on a new wax ring. The camera still couldn't get past six feet, so nobody had seen the rest of that line. To see it we would have had to go in from the vent on the roof, and the homeowner passed: a replacement of the drain lines was already planned with another contractor. A backup like this one starts as a drain cleaning call.
 
 *[Под текстом рядом: видео 271, 5 секунд без звука: No cleanout to work from, so the chain snake goes in through the toilet drain: the clog breaks and the water goes down, Plano; видео 272, 5 секунд без звука: After: the toilet back in place and flushing, Plano]*
 
@@ -567,6 +576,9 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | PRV replacement | /prv-replacement-frisco-plano/ |
 | Water Conservation Rebates page | https://www.plano.gov/water-conservation-rebates |
 | registered with the City of Plano | https://www.plano.gov/contractors-architects |
+| U.S. Census Bureau's estimate | https://data.census.gov/table/ACSDT5Y2024.B25035?g=160XX00US4858016 |
+| The city's winter advice | https://www.plano.gov/winter-preparedness |
+| drain cleaning | /clogged-drain-cleaning-frisco-plano/ |
 | replaced that piece of the main line | /water-lines/ |
 | water leak detection | /water-leak-detection-frisco-plano/ |
 | guide to the main shut-off valve | /plumbing-guide/how-to-shut-off-main-water-valve-texas/ |
