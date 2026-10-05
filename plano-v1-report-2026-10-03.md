@@ -166,6 +166,11 @@
 
 Вопросы отчёта закрыты.
 
+## 5 октября, поздний вечер: фраза про город, картинка в первом разделе
+
+- **Возврат города.** Фразы «The City of Plano doesn't pay for the valve» больше нет. Теперь абзац начинается так: «The City of Plano gives part of the cost back as a credit on the water bill.» Дальше без изменений.
+- **Картинка в первом разделе.** Фото разошедшейся трубы поднято. Теперь оно стоит рядом с двумя абзацами, «Leaks next» и «Then the drains», и кончается на одной линии с текстом. Проверено на ширине 1100, 1280 и 1440. На телефоне порядок прежний: текст, под ним фото.
+
 ## 5 октября, поздний вечер: два фото сняты у пункта про три ручки
 
 - Ты сказал: «ту фотографию с Ridgid убери, и ту фотографию с картриджем убери». Оба фото сняты: картинка из поста с пресс-инструментом (216) и старый картридж (76).
@@ -426,7 +431,7 @@ Bathroom plumbing in these houses still means three handle tub and shower valves
 
 *[Рядом фото 207: The black needle reads about 78 PSI: not 80 yet, but close to the line, Plano]*
 
-The City of Plano doesn't pay for the valve, but it gives part of the cost back as a credit on the water bill. The rebate is half the cost of the valve, the parts and the installation, up to a limit the city sets. The conditions are the city's: a house built before 2013 that shows over 80 PSI on the city's eligibility map, a valve bought from a store inside Plano and installed by a licensed plumber registered with the city, and an itemized invoice with the plumber's license number and the installation date, received by the city within 120 days of the installation. Read them before the job, not after. The application is on the city's Water Conservation Rebates page.
+The City of Plano gives part of the cost back as a credit on the water bill. The rebate is half the cost of the valve, the parts and the installation, up to a limit the city sets. The conditions are the city's: a house built before 2013 that shows over 80 PSI on the city's eligibility map, a valve bought from a store inside Plano and installed by a licensed plumber registered with the city, and an itemized invoice with the plumber's license number and the installation date, received by the city within 120 days of the installation. Read them before the job, not after. The application is on the city's Water Conservation Rebates page.
 
 ---
 
