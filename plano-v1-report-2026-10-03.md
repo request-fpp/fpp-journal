@@ -41,8 +41,8 @@
 
 - Проверка сайта: 28 из 28. Вёрстка на шести ширинах: чисто.
 - Текст страницы не менялся: 3 927 слов.
-- Вес страницы на телефоне после всех четырёх партий: 1 271 КБ при загрузке (было 686). Одиннадцать клипов весят 2 673 КБ вместе и грузятся только когда до них долистали.
-- Lighthouse на телефоне после всех четырёх партий: скорость 99, доступность 100, главное содержимое за 1,7 с, сдвиг 0,002.
+- Вес страницы на телефоне после всех правок 5 октября: 1 378 КБ при загрузке (было 686). Шестнадцать клипов весят 3 322 КБ вместе и грузятся только когда до них долистали.
+- Lighthouse на телефоне после всех правок 5 октября, два замера: скорость 99 и 100, доступность 100, главное содержимое за 1,5 и 1,7 с, сдвиг 0,002.
 
 **Независимая проверка фото и клипов**
 
@@ -153,15 +153,27 @@
 
 Проверяющие нашли в первом варианте списка недочёты, я их исправил. Описания файлов теперь отделены от твоих слов. Файлы без города больше не складываются в одну работу только из-за общей даты. В конце добавлен указатель: какие файлы стоят на каждой странице и какие для неё отложены. Заодно выяснилось, что фото 29 и 30 это два разных крана, а не один с двух ракурсов.
 
-## Вопросы Денису
+## 5 октября, ответы Дениса: все вопросы закрыты
 
-1. Работа с дымоходом водонагревателя (клип на странице Plano и три фото с крыши): это Plano или Allen?
-2. Два видео переделки трёх ручек в одну: в каком городе эта работа? Если скажешь Plano, поставлю их под пунктом про три ручки.
-3. Пункт про три ручки оставить на странице Plano или убрать совсем?
-4. На манометре красная стрелка стоит на 100. Что она показывает? Пока про неё ничего не написано.
-5. В истории про тройник поставили два шаровых крана или один?
-6. Фото водонагревателя с неровным отверстием у дымохода: оставить, обрезать верх или заменить?
-7. Для Plano ещё нужны фото: фургон у двери офиса Plano для первого экрана, закопанный ящик крана до и после, старый backflow с датой и новый.
+- **Город.** «Я говорю Plano, значит Plano.» Город, который ты назвал, это город работы. С местом съёмки я его больше не сверяю и не переспрашиваю. Клип с дымоходом и три фото с крыши теперь Plano.
+- **Три ручки.** Твои два видео стоят под пунктом про три ручки первыми: три ручки с водой из излива, потом одна ручка с широкой накладкой. За ними фото из статьи и старый картридж.
+- **Красная стрелка манометра.** Её двигают рукой, она ничего не показывает. Про неё нигде не пишем.
+- **Фото.** Не меняем. Фото водонагревателя остаётся как есть.
+- **Backflow.** Фото старого backflow с датой и нового нет. Запросы фото для Plano закрыты.
+- **Тройник.** Это третья история на странице: главная линия у дома делится тройником, ветка на уличный кран соскочила под землёй. В тексте стояло «two ball valves», а ты говорил про один shut-off клапан. Поправил на «the new shut-off valve».
+
+Для другого чата написана сводка со всеми вопросами, ответами и состоянием страницы: `docs/for-chat-plano-2026-10-05.md`, страница https://fpp-journal.pages.dev/for-chat .
+
+Вопросы отчёта закрыты.
+
+## 5 октября, после ответов: emergency первым, клипы к первой истории, фото офиса
+
+- **Emergency plumbing первым.** Список услуг на странице Plano теперь открывается emergency plumbing со ссылкой на страницу emergency. В тексте чата оно стояло последним, поэтому так и было собрано. Абзац из двух предложений написан твоими словами этого дня: мы всё время на линии, если emergency, мы выезжаем, это основной сервис.
+- **Первая история.** Под ней два клипа той работы: трос идёт через слив унитаза, вода стоит и уходит; потом унитаз снова на месте и смывается. Из второго видео взяты только первые пять секунд. Дальше в кадре вещи хозяев, человек в зеркале и грязный душевой поддон, это на сайт не идёт.
+- **Трубы в наружных стенах.** У этого пункта стоит твой клип с пресс-фитингом, который лопнул от мороза. Телефон записал это видео во Frisco, а город ты для него не называл. Поэтому в подписи города нет.
+- **Офис.** Фото двери офиса с табличкой стоит в блоке офиса. Первый экран пока без фото.
+
+Теперь на странице 12 фото и 16 клипов.
 
 # Отчёт от 3 октября
 
@@ -327,9 +339,11 @@ A lot of people get to this page by asking their phone for a plumber near me. If
 
 Our plumbing services in Plano cover the whole house, and each one below has a page of its own. Most of what a plumber in Plano gets called for is residential: repairs in houses, and the replacements that come with their age.
 
-Leaks first. Water leak detection finds the leak before anything gets opened. Slab leak repair is for the copper under the foundation, and water line repair is for the copper that runs from the meter to the house. PRV replacement is the page about water pressure. For hot water there's water heater repair and replacement, and next to it expansion tank replacement.
+Emergency plumbing comes first: it's our main service. Somebody is on the line around the clock, holidays too, and when it's a real emergency in Plano, we come out.
 
-Then the drains. Drain cleaning is the clog itself: a kitchen line, a tub, a bathroom sink with the AC condensate line tied into its drain. Sewer line repair and camera inspection is for a main line that keeps backing up or has broken. Around the house it's toilet repair, faucet and shower valve repair, garbage disposal repair, and hose bib repair for the outside spigots. And when it can't wait until morning, there's emergency plumbing, around the clock.
+Leaks next. Water leak detection finds the leak before anything gets opened. Slab leak repair is for the copper under the foundation, and water line repair is for the copper that runs from the meter to the house. PRV replacement is the page about water pressure. For hot water there's water heater repair and replacement, and next to it expansion tank replacement.
+
+Then the drains. Drain cleaning is the clog itself: a kitchen line, a tub, a bathroom sink with the AC condensate line tied into its drain. Sewer line repair and camera inspection is for a main line that keeps backing up or has broken. Around the house it's toilet repair, faucet and shower valve repair, garbage disposal repair, and hose bib repair for the outside spigots.
 
 *[Рядом фото 212: A drain line that came apart at the joint, where the roots were, Plano]*
 
@@ -363,7 +377,7 @@ Not every clog is the main line. A slow drain in the kitchen is usually grease. 
 
 In a house that is thirty or forty years old the water heater has been replaced more than once, and the vent pipe above it is still the old one. On a gas heater that's a double wall B-vent, and with age its inner wall comes apart and drops out. Then the whole vent has to be replaced, up through the ceiling and out through the roof. We also find vents that were never strapped, and vents that touch the drywall or the roof deck where the code calls for clearance. That's a carbon monoxide risk and a fire risk. It's also why a replacement that should take four or five hours can take the whole day in an older Plano house. The tank itself is on the water heater repair and replacement page.
 
-*[Рядом видео 221, 5 секунд без звука: The inner pipe coming out of an old water heater vent, Plano]*
+*[Рядом видео 221, 5 секунд без звука: The vent pipe of a water heater coming out at the ceiling, Plano]*
 
 ### Outside spigots soldered to the pipe
 
@@ -375,11 +389,13 @@ The older houses don't have frost free spigots. What they have is a plain spigot
 
 Insulation in a wall that is thirty to fifty years old has worn out and settled, and a water line in an outside wall is no longer protected the way it was when the house was new. In a hard freeze those lines burst. We've had pipe breaks behind kitchen cabinets on an outside wall, frozen toilet supply lines that split right at the shut-off valve, and one tub and shower valve in an outside corner where all the tile had to come off to reach it. After the pipe repair, our restoration partner dries the wall and puts the insulation back, and they deal with the insurance company. Before a freeze, leave the faucets inside the house dripping and open the cabinet doors under the sinks. The city's winter advice says the same.
 
+*[Рядом видео 252, 5 секунд без звука: An outside wall after a freeze: the pipe burst inside a press fitting, Frisco]*
+
 ### Three handle shower valves that won't shut off
 
 Bathroom plumbing in these houses still means three handle tub and shower valves: hot, cold, and the diverter between them. After decades the valve stops closing all the way. It drips into the tub, or it leaks inside the wall where nobody sees it. Faucet repair in these bathrooms is often just a cartridge, and some cartridges come from old brands the regular stores don't carry any more. When the valve itself is done, we replace it with a single handle valve in the same wall and cover the opening with a plate, so the tile stays where it is. One of those jobs, start to finish: a 3 handle shower converted to a single handle valve. The faucet and shower valve repair page goes deeper.
 
-*[Под текстом рядом: фото 216: A 3 handle shower converted to a single handle valve: the new valve is pressed in through the opening in the tile, Plano; фото 76: An old nonstandard shower cartridge, the kind you can't find anywhere, Plano]*
+*[Под текстом рядом: видео 222, 5 секунд без звука: Before: a three handle tub and shower valve, water running from the spout, Plano; видео 223, 5 секунд без звука: After: one handle and a wide cover plate on the same wall, Plano; фото 216: A 3 handle shower converted to a single handle valve: the new valve is pressed in through the opening in the tile, Plano; фото 76: An old nonstandard shower cartridge, the kind you can't find anywhere, Plano]*
 
 ---
 
@@ -417,13 +433,15 @@ Water heaters have their own sheet at the city, and one line in it says the reli
 
 **Twenty tries to get past one fitting.** A recent emergency call from a house more than forty years old: every toilet, the tub and the shower had backed up, and one toilet was leaking at its base. Outside there was a single cleanout, buried, and it only led toward the city's line. We uncovered it, and that side of the line was clear, so the clog was under the house. There were no cleanouts in the walls. The camera wasn't much help: old cast iron has sharp edges at the turns, and they caught the camera and jammed it about five times. A cast iron line this old is also full of cockroaches, thousands of them. With no other way in, we pulled a toilet. The flange was a little rusty and still good. About five feet in, the branch line meets a fitting, and at that fitting the cable kept turning up into the vent instead of down the drain. Around the twentieth try it went the right way. The line opened, and through the outside cleanout we could see the cable go past. The toilet went back on a new wax ring. The camera still couldn't get past six feet, so nobody had seen the rest of that line. To see it we would have had to go in from the vent on the roof, and the homeowner passed: a replacement of the drain lines was already planned with another contractor.
 
+*[Под текстом рядом: видео 271, 5 секунд без звука: No cleanout to work from, so the chain snake goes in through the toilet drain: the clog breaks and the water goes down, Plano; видео 272, 5 секунд без звука: After: the toilet back in place and flushing, Plano]*
+
 **The roots that wrapped the water line.** Water was coming up out of the meter box when the homeowner got back from vacation, and the meter was spinning. The city had already sent him a notice about his water use. The line from the meter is 3/4 inch copper, and the roots of a tree had wrapped it completely. The tree went in about thirty years ago, one of seven or eight planted in a row. Before a single root was cut, the city had its say. The homeowner sent an email stating that the tree stands on his property and belongs to him, not to the HOA. Building Inspections issued the plumbing permit and passed the tree question to Engineering, and Engineering answered that the tree could come down without a permit. In the end it stayed: the excavation crew dug under the roots and cut about a third of them. The water line itself was broken there. We replaced that section of pipe, and the city's underground inspection passed. Then came the backflow preventer. Our repair was within 10 feet of it, and the city added a backflow inspection to the permit. The city's backflow inspector put it plainly: work that close to an existing assembly, and the assembly has to be tested. In Plano the same goes for any work on a backflow assembly or on the line ahead of it, and the city gets the report of the test. This one couldn't be tested. It sat half buried and it was rusted. The homeowner believed it was thirty-five years old, but the date stamped on it read 2015, week 23. We replaced it. Once the new assembly was in, it got tested and the test report went to the city. Then the permit was closed.
 
 *[Под текстом рядом: видео 205, 5 секунд без звука: Before the dig: water coming up in the meter box, Plano; видео 206, 5 секунд без звука: Dug out: the copper line by the meter with roots around it, water spraying from the line, Plano]*
 
-**The tee that came apart.** Where the copper main comes into this Plano house, it splits at a tee, and one branch runs to the outside spigot. That branch came off underground. The clip shows the dig, flooded. We replaced that piece of the main line and the piece that runs to the spigot, and changed the shut-off valve while the hole was open, so nothing in it was left to leak. The photo is the same spot after: new copper and two ball valves.
+**The tee that came apart.** Where the copper main comes into this Plano house, it splits at a tee, and one branch runs to the outside spigot. That branch came off underground. The clip shows the dig, flooded. We replaced that piece of the main line and the piece that runs to the spigot, and changed the shut-off valve while the hole was open, so nothing in it was left to leak. The photo is the same spot after: new copper and the new shut-off valve.
 
-*[Под текстом рядом: видео 187, 5 секунд без звука: Before: the main line and the tee to the spigot in a flooded dig, Plano; фото 186: The main line where it tees off to the spigot, new copper and two ball valves, Plano]*
+*[Под текстом рядом: видео 187, 5 секунд без звука: Before: the main line and the tee to the spigot in a flooded dig, Plano; фото 186: The main line where it tees off to the spigot: new copper and a new shut-off valve, Plano]*
 
 **The pinhole behind the water heater.** The water heater here stands in a closet inside the house, and one room had a wet floor, wet enough to squish underfoot. The meter was turning with everything closed. We started narrowing it down and heard water running behind the water heater. The only way to that wall was through the heater, so the heater came out. We opened the drywall, and there it was: a pinhole in the copper supply line, spraying inside the wall. We replaced that part of the line, the leak was gone, and the heater went back in its place. Finding a leak nobody can see is what the water leak detection page is about.
 
@@ -487,6 +505,8 @@ Their words, not ours: four reviews, unedited, each one linked to the place wher
 
 FPP Plumbing, 5700 Tennyson Pkwy, Suite 300, Plano, TX 75024, in the Legacy area. The call button at the top of this page dials the Plano line. The office is open 8 AM to 5 PM, Monday to Friday, and emergency plumbing calls are answered 24/7, holidays included. We're a local plumbing company with four to five licensed plumbers on staff, and two of them are on every shift. From here we cover all of Plano: ZIP codes 75023, 75024, 75025, 75074, 75075 and 75093, and the Plano corner of 75094, from the 1960s streets east of Highway 75 to Willow Bend and Legacy West. The license behind the work is our Responsible Master Plumber license, M-44816.
 
+*[Рядом фото 273: The door of our office: 3rd floor, Suite 300, Plano]*
+
 *[Блок офиса: адрес, номер кнопкой звонка, ссылка «Google reviews, Plano», часы, почта, рядом карта Google с офисом.]*
 
 ---
@@ -498,6 +518,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | Слова в тексте | Куда ведет |
 |---|---|
 | plumber near me | / |
+| Emergency plumbing | /emergency-plumbing-services/ |
 | Water leak detection | /water-leak-detection-frisco-plano/ |
 | Slab leak repair | /slab-leak-repair-frisco-plano-mckinney/ |
 | water line repair | /water-lines/ |
@@ -510,7 +531,6 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | faucet and shower valve repair | /fixture-installation-repair/ |
 | garbage disposal repair | /garbage-disposal-repair-frisco-plano/ |
 | hose bib repair | /hose-bib-repair-frisco-plano/ |
-| emergency plumbing | /emergency-plumbing-services/ |
 | sewer line repair and camera inspection | /drain-services/ |
 | why a toilet keeps backing up after it was cleared | /plumbing-guide/why-your-toilet-keeps-backing-up/ |
 | a daycare whose main drain line was packed with wipes | /blog/clogged-main-drain-line-daycare-plano/ |
