@@ -1,5 +1,75 @@
 # Страница Plano, версия 1: что сделано, проверки, текст, запросы
 
+Обновлено 5 октября 2026: на страницу поставлены фото и видео Дениса, записаны его ответы. Ниже сначала это обновление, потом отчёт от 3 октября.
+
+## 5 октября: фото и видео Дениса, его ответы
+
+Денис прислал 14 файлов. Три из них уже лежали в архиве (фото 29 и 76, видео 125), одиннадцать новых получили номера с 205 по 215. По месту съёмки все они из Plano, кроме кейса с уличным краном: он снят вне десяти городов.
+
+**Пункт про три ручки.** Рядом с ним стояло фото 105: картридж Moen из другой статьи. Это и было «не то». Фото снято со страницы. Теперь под пунктом стоят два фото. Первое взято из самой статьи про три ручки: новый клапан ставят через отверстие в плитке, и в статье сказано, что работа сделана в Plano. Второе прислал Денис: старый нестандартный картридж из Plano, к фразе про картриджи старых марок. Ссылка на статью осталась.
+
+**Что куда поставлено**
+
+| Файл | Что на нём, словами Дениса | Где стоит |
+|---|---|---|
+| Видео 205 | Работа с корнями: вода идёт у счётчика | Под второй историей, пять секунд без звука |
+| Видео 206 | Та же работа, уже выкопано, видно, где течёт вода | Под второй историей, рядом с 205 |
+| Видео 125 | Пинхол под плитой, slab leak | Под абзацем про slab leaks, перед фото пайки в тоннеле |
+| Фото 207 | Манометр, около 78 PSI: ещё не 80, но уже почти граница | Рядом с абзацем про закопанные краны и давление |
+| Фото 212 | В Plano разошёлся стык трубы, там были корни | В первом разделе, рядом с абзацем про сливы и канализацию |
+| Фото 76 | В Plano старый нестандартный картридж, который нигде нельзя найти | Под пунктом про три ручки, рядом с фото из статьи |
+
+**Что не поставлено**
+
+- Фото с экрана камеры (213). Денис сам сказал, что на нём мало что видно. Ещё на экране стоит слово меню не на английском и неверная дата.
+- Второй снимок старого картриджа, где он ещё в стене (214), и третий (215). На странице хватает одного, остальные ждут страницу faucets.
+- Кейс с уличным краном, который лопнул внутри стены (видео 208, фото 209 и 210, новый кран на фото 29). Сохранён для страницы hose bib, как просил Денис. Город в подписях не ставится: место съёмки вне десяти городов.
+
+**Что закрыто в кадре**
+
+- На видео 205 в первые секунды на крышке счётчика читается его номер. Клип начинается позже, когда крышка видна сверху и вся в земле. Все кадры клипов 205 и 206 просмотрены с увеличением: номер нигде не читается.
+- С фото после ремонта тройника (186) срезана картонная коробка с крупным логотипом магазина. Теперь в кадре сам ремонт.
+- У всех новых фото и клипов убраны данные съёмки и звук.
+
+**Ответы Дениса**
+
+- Список вызовов на западе Plano: его слова, остаётся.
+- Картриджи старых марок, которых нет в обычных магазинах: его слова, остаётся, теперь с фото.
+- Часы: аварийная служба работает 24 на 7, офис открыт с 8 до 5. Профиль Google с «Open 24 hours» и страница остаются как есть. Вопрос закрыт.
+
+**Проверки после правки**
+
+- Проверка сайта: 28 из 28. Вёрстка на шести ширинах: чисто.
+- Текст страницы не менялся: 3 927 слов.
+- Вес страницы на телефоне при загрузке: 960 КБ (было 686). Шесть клипов весят 1 567 КБ вместе и грузятся только когда до них долистали.
+- Lighthouse на телефоне: скорость 99, доступность 100, главное содержимое за 1,7 с, сдвиг 0,002.
+
+**Независимая проверка фото и клипов**
+
+Три проверяющих посмотрели каждое фото и каждый клип страницы. Личного в кадре нет: ни номеров, ни лиц, ни адресов. По их находкам исправлено:
+
+- Фото разошедшейся трубы стояло у пункта про чугунные линии под полом, а труба на нём пластиковая и лежит во дворе. Это та же ошибка, что с картриджем Moen. Фото переставлено к абзацу про сливы и канализацию.
+- В подписи к этому фото стояло «with roots in it». Денис сказал «где были корни», и внутри трубы корней не видно. Теперь «where the roots were».
+- Клип со счётчиком показывал одну воду, и без подписи было не понять, что это ящик счётчика. Клип перерезан шире: видны счётчик, труба и вода.
+- Дата обновления страницы в разметке стала 5 октября.
+
+Оставлено на слово Дениса:
+
+- Манометр. Подпись говорит про 78, текст рядом про 90 до 95, а самая заметная стрелка на фото красная и стоит на 100. Подпись называет чёрную стрелку, про красную ничего не написано.
+- В истории про тройник стоит «new copper and two ball valves». В диктовке был один shut-off клапан. На фото в темноте два крана разглядеть трудно.
+- Фото водонагревателя (50): вверху дымоход проходит через неровное отверстие в потолке, за баком видна вата. Страница при этом предупреждает про дымоходы, которые касаются гипсокартона. Если это кадр до конца работы, лучше взять другой или обрезать верх.
+- На клипе с пинхолом за водонагревателем (188) струю на телефоне почти не видно.
+
+## Вопросы Денису
+
+1. Пункт про три ручки: я оставил сам пункт и ссылку на статью, а рядом поставил фото из этой статьи и твой старый картридж. Если ты имел в виду убрать весь пункт со страницы Plano, скажи одно слово.
+2. На манометре красная стрелка стоит на 100. Что она показывает? Если это самое высокое давление, которое было в доме, это сильный факт для страницы. Пока про неё ничего не написано.
+3. В истории про тройник поставили два шаровых крана или один?
+4. Фото водонагревателя с неровным отверстием у дымохода: оставить, обрезать верх или заменить?
+5. Для Plano ещё нужны фото: фургон у двери офиса Plano для первого экрана, закопанный ящик крана до и после, кран на трубе из земли, дымоход водонагревателя в старом доме, старый backflow с датой и новый.
+
+# Отчёт от 3 октября
+
 3 октября 2026. Страница /plumber-plano-tx/ собрана из `source/plano-text-v1.md` (текст чата по диктовке Дениса от 3 октября) и стоит на тестовом сайте: https://fppplumbing-preview.pages.dev/plumber-plano-tx/ (вход по почте Дениса).
 
 ## Коротко
@@ -126,22 +196,15 @@ Kseniia переехала сюда со старой страницы PRV. Ко
 
 Это замечания к тексту чата. Текст я по ним не менял.
 
-- **Абзац про запад Plano.** «…the calls there are different: water heaters at the end of their life, garbage disposals, faucets, sink drains, a leak coming through a ceiling, and after a hard freeze, pipes in the attic.» В записи диктовки этого списка нет. Водонагреватели и трубы на чердаке были на живой странице, остальное ниоткуда не подтверждается.
-- **Картриджи старых марок.** «…some cartridges come from old brands the regular stores don't carry any more.» В записи диктовки и в постах этого нет.
+- **Абзац про запад Plano (5 октября Денис подтвердил: его слова).** «…the calls there are different: water heaters at the end of their life, garbage disposals, faucets, sink drains, a leak coming through a ceiling, and after a hard freeze, pipes in the attic.» В записи диктовки этого списка нет. Водонагреватели и трубы на чердаке были на живой странице, остальное ниоткуда не подтверждается.
+- **Картриджи старых марок (5 октября Денис подтвердил: его слова, прислал фото).** «…some cartridges come from old brands the regular stores don't carry any more.» В записи диктовки и в постах этого нет.
 - **Начало раздела «Common Plumbing Problems in Plano Homes».** Первая строка не называет ни одной проблемы. По правилу сайта раздел открывается прямым ответом: можно одной фразой назвать шесть пунктов.
 - **Заголовки.** Город стоит в 10 заголовках H2 из 11 (у Frisco в 7 из 13). Новый заголовок «Plano Plumbing by the Age of the House» можно оставить без города, живые заголовки не трогать.
 - **Раздел «From the Call to the Invoice».** Читается близко к такому же разделу Frisco и третий раз повторяет $49 и цену до работы. Дословных повторов нет.
 - **Источники без ссылок.** Страница называет оценку Census и зимний совет города, но ссылок на них нет. Обе страницы есть в брифе, можно добавить две ссылки.
 - **Первая история** (засор через унитаз) не ведёт ни на одну страницу услуг. Для ссылки нужна одна новая фраза.
-- **Фото 186** (после ремонта тройника): в кадре коробка с логотипом магазина. В таблице фото стоит слово Дениса «оставить».
+- **Фото 186** (после ремонта тройника): в кадре была коробка с логотипом магазина. 5 октября коробка срезана с фото.
 - **Похожие вопросы FAQ на старых страницах.** Вопрос про счётчик близок к вопросу на water lines и Little Elm, вопрос про возврат за воду близок к вопросу в гайде про счёт. Вопросы Plano сильнее и остаются. Старые вопросы сменятся, когда те страницы будут переписаны: записано в плане.
-
-## Вопросы Денису
-
-1. Список вызовов на западе Plano (измельчители, смесители, раковины, течь через потолок): это твои слова? Если нет, оставлю водонагреватели и трубы на чердаке.
-2. Фраза про картриджи старых марок, которых нет в обычных магазинах: твои слова? Если нет, уберу.
-3. Профиль Google у офиса Plano показывает «Open 24 hours», а страница пишет часы офиса с 8 до 5 и ответ на звонки круглосуточно. У Frisco так же. Оставить как есть или выровнять?
-4. Фото по списку из части 3 блока (список в ответе Денису).
 
 ## Текст страницы, как он стоит на тестовом сайте
 
@@ -173,6 +236,8 @@ Leaks first. Water leak detection finds the leak before anything gets opened. Sl
 
 Then the drains. Drain cleaning is the clog itself: a kitchen line, a tub, a bathroom sink with the AC condensate line tied into its drain. Sewer line repair and camera inspection is for a main line that keeps backing up or has broken. Around the house it's toilet repair, faucet and shower valve repair, garbage disposal repair, and hose bib repair for the outside spigots. And when it can't wait until morning, there's emergency plumbing, around the clock.
 
+*[Рядом фото 212: A drain line that came apart at the joint, where the roots were, Plano]*
+
 ---
 
 ### H2: Plano Plumbing by the Age of the House
@@ -195,6 +260,8 @@ In the older houses the drain lines under the floor are cast iron. After forty y
 
 Not every clog is the main line. A slow drain in the kitchen is usually grease. The kitchen line in one of these houses has been taking it for decades, and some of these lines are long: on one Plano kitchen line the cable went in 75 feet. The cable opens a line like that. The deep clean is the chain snake. Bathroom sinks fill up with hair and soap. Where the air conditioner drains into the same pipe, the first sign is water inside the cabinet. And then there are wet wipes. We've pulled them out of a shower drain, and at a daycare here they blocked the whole main line. That story is here: a daycare whose main drain line was packed with wipes. Unclogging any of these is on the drain cleaning page.
 
+*[Рядом фото 91: Clearing the kitchen drain line, 75 feet, Plano]*
+
 ### Water heaters on a new tank and an old vent
 
 In a house that is thirty or forty years old the water heater has been replaced more than once, and the vent pipe above it is still the old one. On a gas heater that's a double wall B-vent, and with age its inner wall comes apart and drops out. Then the whole vent has to be replaced, up through the ceiling and out through the roof. We also find vents that were never strapped, and vents that touch the drywall or the roof deck where the code calls for clearance. That's a carbon monoxide risk and a fire risk. It's also why a replacement that should take four or five hours can take the whole day in an older Plano house. The tank itself is on the water heater repair and replacement page.
@@ -211,19 +278,23 @@ Insulation in a wall that is thirty to fifty years old has worn out and settled,
 
 Bathroom plumbing in these houses still means three handle tub and shower valves: hot, cold, and the diverter between them. After decades the valve stops closing all the way. It drips into the tub, or it leaks inside the wall where nobody sees it. Faucet repair in these bathrooms is often just a cartridge, and some cartridges come from old brands the regular stores don't carry any more. When the valve itself is done, we replace it with a single handle valve in the same wall and cover the opening with a plate, so the tile stays where it is. One of those jobs, start to finish: a 3 handle shower converted to a single handle valve. The faucet and shower valve repair page goes deeper.
 
+*[Под текстом рядом: фото 216: A 3 handle shower converted to a single handle valve: the new valve is pressed in through the opening in the tile, Plano; фото 76: An old nonstandard shower cartridge, the kind you can't find anywhere, Plano]*
+
 ---
 
 ### H2: Slab Leaks, Main Lines and Buried Valves in Older Plano
 
 **Slab leaks.** Here they're a regular call: we've repaired twenty to thirty of them in Plano. The water lines under the slab are copper, and they run inside a plastic sleeve. When the copper gets a pinhole under there, the water follows the sleeve up, and the first thing you see is a wet floor inside the house with no pipe anywhere above it. In Plano we go in through a tunnel from outside the house. We cut out the bad copper, replace the line back to where the pipe is still sound, and braze the new joints. Drying the house and the insurance side go through our restoration partner, so you make one call for all of it. Slab leak repair explains the method. Two Plano jobs, told in full: two leaks on one copper line, and a pinhole that came up through the floor.
 
-*[Рядом фото 163: Slab leak repair: brazing the copper line in the tunnel under the foundation, Plano]*
+*[Под текстом рядом: видео 125, 5 секунд без звука: Slab leak: a pinhole spraying from the copper line under the foundation, Plano; фото 163: Slab leak repair: brazing the copper line in the tunnel under the foundation, Plano]*
 
 **The main water line.** From the meter to the house the line is copper, and in these yards it has been in the ground for thirty to fifty years. The ground moves, the copper thins, and pinholes open up. The pipe in the photo is from Plano: pinholes first, and then it rotted through into big holes. Tree roots do the rest, and one of the jobs below is about exactly that. The signs are a wet meter box, a meter that turns with every faucet closed, or a notice from the city about your water use. Water line repair covers how that line gets fixed. We wrote one of these up: a main line leak under a sidewalk.
 
 *[Рядом фото 56: Cut out pipe: pinholes first, then rotted through into big holes, Plano]*
 
 **Buried valves, and no PRV.** In about eight of ten older houses here the main shut-off valve, or the second valve by the house, is buried, and nobody in the house knows where it is. Find it on a dry day: our main shut-off valve guide shows where it sits in houses like these. Most of these houses also have no pressure reducing valve at all. The gauge on a spigot reads 90 to 95 PSI, and anything over 80 wears a house out early: cartridges, fill valves, supply lines, the water heater. The fix is a PRV on the main line, and PRV replacement shows how one goes in.
+
+*[Рядом фото 207: The black needle reads about 78 PSI: not 80 yet, but close to the line, Plano]*
 
 The City of Plano pays part of that job back. Its PRV rebate returns half the cost of the valve, the parts and the installation, up to a limit the city sets, as a credit on the water bill. The conditions are the city's: a house built before 2013 that shows over 80 PSI on the city's eligibility map, a valve bought from a store inside Plano and installed by a licensed plumber registered with the city, and an itemized invoice with the plumber's license number and the installation date, received by the city within 120 days of the installation. Read them before the job, not after. The application is on the city's Water Conservation Rebates page.
 
@@ -246,6 +317,8 @@ Water heaters have their own sheet at the city, and one line in it says the reli
 **Twenty tries to get past one fitting.** A recent emergency call from a house more than forty years old: every toilet, the tub and the shower had backed up, and one toilet was leaking at its base. Outside there was a single cleanout, buried, and it only led toward the city's line. We uncovered it, and that side of the line was clear, so the clog was under the house. There were no cleanouts in the walls. The camera wasn't much help: old cast iron has sharp edges at the turns, and they caught the camera and jammed it about five times. A cast iron line this old is also full of cockroaches, thousands of them. With no other way in, we pulled a toilet. The flange was a little rusty and still good. About five feet in, the branch line meets a fitting, and at that fitting the cable kept turning up into the vent instead of down the drain. Around the twentieth try it went the right way. The line opened, and through the outside cleanout we could see the cable go past. The toilet went back on a new wax ring. The camera still couldn't get past six feet, so nobody had seen the rest of that line. To see it we would have had to go in from the vent on the roof, and the homeowner passed: a replacement of the drain lines was already planned with another contractor.
 
 **The roots that wrapped the water line.** Water was coming up out of the meter box when the homeowner got back from vacation, and the meter was spinning. The city had already sent him a notice about his water use. The line from the meter is 3/4 inch copper, and the roots of a tree had wrapped it completely. The tree went in about thirty years ago, one of seven or eight planted in a row. Before a single root was cut, the city had its say. The homeowner sent an email stating that the tree stands on his property and belongs to him, not to the HOA. Building Inspections issued the plumbing permit and passed the tree question to Engineering, and Engineering answered that the tree could come down without a permit. In the end it stayed: the excavation crew dug under the roots and cut about a third of them. The water line itself was broken there. We replaced that section of pipe, and the city's underground inspection passed. Then came the backflow preventer. Our repair was within 10 feet of it, and the city added a backflow inspection to the permit. The city's backflow inspector put it plainly: work that close to an existing assembly, and the assembly has to be tested. In Plano the same goes for any work on a backflow assembly or on the line ahead of it, and the city gets the report of the test. This one couldn't be tested. It sat half buried and it was rusted. The homeowner believed it was thirty-five years old, but the date stamped on it read 2015, week 23. We replaced it. Once the new assembly was in, it got tested and the test report went to the city. Then the permit was closed.
+
+*[Под текстом рядом: видео 205, 5 секунд без звука: Before the dig: water coming up in the meter box, Plano; видео 206, 5 секунд без звука: Dug out: the copper line by the meter with roots around it, water spraying from the line, Plano]*
 
 **The tee that came apart.** Where the copper main comes into this Plano house, it splits at a tee, and one branch runs to the outside spigot. That branch came off underground. The clip shows the dig, flooded. We replaced that piece of the main line and the piece that runs to the spigot, and changed the shut-off valve while the hole was open, so nothing in it was left to leak. The photo is the same spot after: new copper and two ball valves.
 
