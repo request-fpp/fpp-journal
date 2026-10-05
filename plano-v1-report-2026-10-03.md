@@ -1,6 +1,6 @@
 # Страница Plano, версия 1: что сделано, проверки, текст, запросы
 
-Обновлено 5 октября 2026: на страницу поставлены фото и видео Дениса, записаны его ответы. Ниже сначала это обновление, потом отчёт от 3 октября.
+Обновлено 5 октября 2026: на страницу поставлены фото и видео Дениса из четырёх партий, записаны его ответы, собран общий список его материала. Ниже сначала эти обновления, потом отчёт от 3 октября.
 
 ## 5 октября: фото и видео Дениса, его ответы
 
@@ -41,8 +41,8 @@
 
 - Проверка сайта: 28 из 28. Вёрстка на шести ширинах: чисто.
 - Текст страницы не менялся: 3 927 слов.
-- Вес страницы на телефоне при загрузке: 972 КБ (было 686). Семь клипов весят 1 726 КБ вместе и грузятся только когда до них долистали.
-- Lighthouse на телефоне после обеих партий: скорость 100, доступность 100, главное содержимое за 1,5 с, сдвиг 0,002.
+- Вес страницы на телефоне после всех четырёх партий: 1 271 КБ при загрузке (было 686). Одиннадцать клипов весят 2 673 КБ вместе и грузятся только когда до них долистали.
+- Lighthouse на телефоне после всех четырёх партий: скорость 99, доступность 100, главное содержимое за 1,7 с, сдвиг 0,002.
 
 **Независимая проверка фото и клипов**
 
@@ -91,14 +91,77 @@
 
 Три места, где место съёмки расходится со словами: видео 221 (слово Plano, место Allen), видео 231 (слово The Colony, место Lewisville), видео 222 и 223 (город не назван, место вне десяти городов). В первых двух стоит город по слову Дениса.
 
+## 5 октября, третья партия: ещё 25 файлов и общий список
+
+Новые файлы получили номера с 236 по 257. Четыре файла уже были в архиве.
+
+**Поставлено на Plano**
+
+- **Кран на трубе из земли, до и после** (видео 256 и 257). Стоят под пунктом про уличные краны, по пять секунд без звука. До: кран открывают, и вода бьёт у земли. После: новый кран на новой медной трубе. Это то самое фото, которое я просил для этого пункта.
+- **Старый фланец унитаза, до и после** (фото 248 и 250). Стоят под пунктом про чугунные линии: там сказано, что без cleanout в линию заходят через унитаз. Подпись твоими словами: фланец проржавел насквозь, отломан, тёк годами.
+
+**Сохранено для своих страниц**
+
+| Файлы | Что это, словами Дениса | Куда пойдёт |
+|---|---|---|
+| 114, 118, 119, 120, 237, 238 | Зимой лопнула труба в стене, заливало и в дом, и на улицу. В стене PEX на SharkBite, растянулось и лопнуло. Заменили на медь | Emergency |
+| 239, 240 | Течь в стене после чужого ремонта: старый фитинг потёк снова. Заменили участок, поставили ProPress | Leak detection |
+| 241 | Plano: сняли унитаз, а фланца нет, проржавел. Частый кейс в домах 30 до 40 лет | Toilet repair, Plano |
+| 242, 243 | Мокрый пол на кухне, плитка двигается, ковёр в спальне мокрый, плесень. Leak detection нашёл пинхол в стене | Leak detection, Allen |
+| 98, 99, 244 | Две ручки душа меняются на одну | Faucets, McKinney |
+| 245, 246, 247 | Allen: течь на потолке первого этажа. Корродированный tee на горячей линии, заменили линию, tee и кран | Leak detection, Allen |
+| 251 | Ещё один проржавевший фланец, через него лезли корни | Toilet repair |
+| 252 | Наружная стена: пресс-фитинг не выдержал мороза, труба внутри него лопнула | Emergency, Frisco |
+| 253, 254, 255 | Plano: пинхол, отвалился потолок. В том же доме раньше лопнул кран на трубе из земли | Leak detection, Plano |
+
+**Общий список для другого чата**
+
+Весь материал, который ты присылал, собран в один список: `docs/material-from-denys.md`, страница https://fpp-journal.pages.dev/material . В нём все файлы архива (после четвёртой партии их 270), сложенные в работы по услугам. У каждой работы твои слова, город, дата, где файл стоит на сайте сейчас и для какой страницы отложен. Список пересобирается одной командой после каждой новой партии.
+
+**Что я исправил за собой**
+
+Во второй партии один снимок красной PEX трубы с гвоздём я принял за старое фото из архива: имена файлов на телефоне совпали. Теперь файлы сверяются по содержимому. Снимок занесён отдельно под номером 236.
+
+**Где место съёмки расходится со словами**
+
+- Фланцы унитаза (241, 248, 249, 250): ты сказал Plano, телефон записал соседние города. Стоит Plano по твоему слову.
+- Клип с дымоходом (221) снят в тот же выезд, что три фото из архива (92, 93, 94). Телефон записал все четыре файла в Allen, а про клип ты сказал Plano. Клип стоит на Plano по твоему слову. Три фото я придержал: они не пойдут на страницу Allen, пока ты не скажешь город этой работы.
+
+## 5 октября, четвёртая партия: ещё 13 файлов
+
+Новые файлы получили номера с 258 по 270.
+
+**Поставлено на Plano**
+
+- **Припаянный кран, который ты обещал** (видео 269 и 268). Стоят под пунктом про уличные краны первыми: старый кран припаян к трубе в кирпичной стене, потом он же отпаян. За ними идут два клипа крана на трубе из земли. Теперь под этим пунктом четыре клипа, по одному на каждый случай из абзаца.
+
+**Сохранено для своих страниц**
+
+| Файлы | Что это, словами Дениса | Куда пойдёт |
+|---|---|---|
+| 261 до 267 | Prosper: дом около 10 лет, давление 120 PSI. Коробка, где должны быть PRV и secondary shut-off, закопана, в ней земля. Откопали: только кран, PRV не было вообще. Два раза текли уличные краны, ломался кран под раковиной. Поставили PRV, выставили 70 PSI | Страница PRV, Prosper |
+| 258, 259, 260 | McKinney: замена душевой системы, в том же доме давление 108 PSI | Faucets, PRV, McKinney |
+| 270 | Plano: поиск утечки воздухом. У крана из-под земли выходит распылённая вода там, где лопнула труба | Leak detection, Plano |
+
+Твои слова о том, как дом в Prosper прошёл инспекцию, записаны как мнение. На сайт как утверждение о застройщике или городе они не пойдут.
+
+**Где место съёмки расходится со словами**
+
+Припаянный кран (268, 269) и поиск утечки воздухом (270): ты сказал Plano, телефон записал другие города. Стоит Plano по твоему слову.
+
+**Общий список после проверки**
+
+Проверяющие нашли в первом варианте списка недочёты, я их исправил. Описания файлов теперь отделены от твоих слов. Файлы без города больше не складываются в одну работу только из-за общей даты. В конце добавлен указатель: какие файлы стоят на каждой странице и какие для неё отложены. Заодно выяснилось, что фото 29 и 30 это два разных крана, а не один с двух ракурсов.
+
 ## Вопросы Денису
 
-1. Два видео переделки трёх ручек в одну: в каком городе эта работа? Если скажешь Plano, поставлю их под пунктом про три ручки.
-2. Пункт про три ручки сейчас: сам пункт и ссылка на статью остались, рядом стоят фото из этой статьи и твой старый картридж. Если ты имел в виду убрать весь пункт со страницы Plano, скажи одно слово.
-3. На манометре красная стрелка стоит на 100. Что она показывает? Если это самое высокое давление, которое было в доме, это сильный факт для страницы. Пока про неё ничего не написано.
-4. В истории про тройник поставили два шаровых крана или один?
-5. Фото водонагревателя с неровным отверстием у дымохода: оставить, обрезать верх или заменить?
-6. Для Plano ещё нужны фото: фургон у двери офиса Plano для первого экрана, закопанный ящик крана до и после, кран на трубе из земли, старый backflow с датой и новый.
+1. Работа с дымоходом водонагревателя (клип на странице Plano и три фото с крыши): это Plano или Allen?
+2. Два видео переделки трёх ручек в одну: в каком городе эта работа? Если скажешь Plano, поставлю их под пунктом про три ручки.
+3. Пункт про три ручки оставить на странице Plano или убрать совсем?
+4. На манометре красная стрелка стоит на 100. Что она показывает? Пока про неё ничего не написано.
+5. В истории про тройник поставили два шаровых крана или один?
+6. Фото водонагревателя с неровным отверстием у дымохода: оставить, обрезать верх или заменить?
+7. Для Plano ещё нужны фото: фургон у двери офиса Plano для первого экрана, закопанный ящик крана до и после, старый backflow с датой и новый.
 
 # Отчёт от 3 октября
 
@@ -288,6 +351,8 @@ Most of these come out of the older houses in the middle of the city.
 
 In the older houses the drain lines under the floor are cast iron. After forty years that pipe rusts and cracks, and it loses its shape. What's left of the inside fills up with grease, dirt, calcium and rust. In about half of these houses there's no cleanout where one should be, so when the main line backs up, the way in is often through a toilet. In a newer house, clearing a main line takes up to half an hour. In old Plano it can take two to three hours to unclog the same kind of line. A line that is cracked or keeps backing up is a job for sewer line repair and camera inspection. And a toilet that clogs again a week after it was cleared can be a pipe that came apart under the floor. We wrote up one Plano job like that: why a toilet keeps backing up after it was cleared.
 
+*[Под текстом рядом: фото 248: Under a toilet in Plano: the old flange, rusted through and broken off after years of leaking; фото 250: After: a new flange and a new wax ring, ready for the toilet, Plano]*
+
 ### Kitchen lines and sink drains
 
 Not every clog is the main line. A slow drain in the kitchen is usually grease. The kitchen line in one of these houses has been taking it for decades, and some of these lines are long: on one Plano kitchen line the cable went in 75 feet. The cable opens a line like that. The deep clean is the chain snake. Bathroom sinks fill up with hair and soap. Where the air conditioner drains into the same pipe, the first sign is water inside the cabinet. And then there are wet wipes. We've pulled them out of a shower drain, and at a daycare here they blocked the whole main line. That story is here: a daycare whose main drain line was packed with wipes. Unclogging any of these is on the drain cleaning page.
@@ -303,6 +368,8 @@ In a house that is thirty or forty years old the water heater has been replaced 
 ### Outside spigots soldered to the pipe
 
 The older houses don't have frost free spigots. What they have is a plain spigot soldered onto a copper pipe, and in some yards it isn't even on the wall: the pipe comes up out of the ground about two feet from the house with the spigot on top of it. When one of those fails, we unsolder it and put the new spigot on a threaded connection. Hose bib repair is the page for outside spigots. A frost free one can crack too, inside the wall, when a hose stays on it through a freeze. Another Plano job shows what cracks inside a frost free spigot.
+
+*[Под текстом рядом: видео 269, 5 секунд без звука: An old spigot soldered straight onto the pipe in the wall, Plano; видео 268, 5 секунд без звука: The same spigot unsoldered: only the pipe is left in the wall, Plano; видео 256, 5 секунд без звука: A spigot on a pipe out of the ground: it had burst and leaked for a long time, open it and the water comes out at the ground, Plano; видео 257, 5 секунд без звука: After: a new spigot on a new copper pipe, Plano]*
 
 ### Pipes in outside walls, after a hard freeze
 
