@@ -1279,12 +1279,12 @@ Plano · апрель 2026 · файлы: 75, 76, 214, 215
 **Слова Дениса (215):** «То же: старый нестандартный картридж в Plano»
 
 - **75**, фото: Replacing a shower cartridge from a rare old brand, not sold in regular stores, Plano. План: /fixture-installation-repair/
-- **76**, фото: An old nonstandard shower cartridge, the kind you can't find anywhere, Plano. На сайте: /plumber-plano-tx/. План: /fixture-installation-repair/
-  - Заметки: Денис прислал фото еще раз 5 октября 2026 для страницы Plano: «старый нестандартный картридж, который нигде нельзя найти» / On the Plano page under the three handle shower valve item, next to 216 (Denys sent the photo again on October 5, 2026, with these words).
+- **76**, фото: An old nonstandard shower cartridge, the kind you can't find anywhere, Plano. План: /fixture-installation-repair/
+  - Заметки: Денис прислал фото еще раз 5 октября 2026 для страницы Plano: «старый нестандартный картридж, который нигде нельзя найти» Снято со страницы Plano 5 октября 2026 вечером по слову Дениса: «ту фотографию с Ridgid убери, и ту фотографию с картриджем убери». / Off the Plano page since October 5, 2026, evening (Denys: remove the photo with the cartridge, why is it needed here). Waits for the faucet and shower valve page together with 214.
 - **214**, фото: An old nonstandard shower cartridge still in the valve, the kind you can't find anywhere, Plano. План: /fixture-installation-repair/
-  - Заметки: прислано 5 октября 2026 для страницы Plano; 2 апреля 2026, та же работа, что 75, 76 и 215. Картридж еще в стене, ручка снята; на странице Plano не стоит: под пунктом про три ручки осталось одно фото картриджа (76) / Same job as 75, 76 and 215 (April 2, 2026). Not on the Plano page: one cartridge picture (76) stands there.
+  - Заметки: прислано 5 октября 2026 для страницы Plano; 2 апреля 2026, та же работа, что 75, 76 и 215. Картридж еще в стене, ручка снята; на странице Plano не стоит / Same job as 75, 76 and 215 (April 2, 2026). Not on the Plano page.
 - **215**, фото: The same old cartridge out of the valve, Plano. План: /fixture-installation-repair/
-  - Заметки: прислано 5 октября 2026 для страницы Plano; почти копия 75 и 76, на странице Plano стоит 76 (резче) / Near copy of 75 and 76; 76 is the sharper one and stands on the Plano page.
+  - Заметки: прислано 5 октября 2026 для страницы Plano; почти копия 75 и 76; 76 резче. 76 снят со страницы Plano вечером 5 октября 2026 / Near copy of 75 and 76; 76 is the sharper one; it came off the Plano page on the evening of October 5, 2026.
 
 ### 112. Washing machine outlet box, the valves do not work
 
@@ -1480,8 +1480,8 @@ Plano · день съёмки не записан · файлы: 216
 
 **Описание (не слова Дениса):** «Фото из поста Дениса про переделку душа с трёх ручек на одну: новый клапан ставится через отверстие в плитке, ProPress (фото со старого сайта, пост shower-system-replacement-3-handle-to-single-handle-valve)»
 
-- **216**, фото: A 3 handle shower converted to a single handle valve: the new valve is pressed in through the opening in the tile, Plano. На сайте: /plumber-plano-tx/, /blog/. План: /blog/shower-system-replacement-3-handle-to-single-handle-valve/ /fixture-installation-repair/
-  - Заметки: с fppplumbing.com wp-content/uploads/2026/01, картинка самого поста; в посте сказано: This particular case was completed in Plano. Поставлено к пункту про три ручки на странице Plano 5 октября 2026 после слов Дениса «фотографию не ту» / From the old site: the picture of the 3 handle post, whose text says the case was completed in Plano. On the Plano page under the three handle shower valve item (October 5, 2026: Denys called the Moen photo 105 the wrong photo there). A press tool with its brand name in the frame.
+- **216**, фото: A 3 handle shower converted to a single handle valve: the new valve is pressed in through the opening in the tile, Plano. На сайте: /blog/. План: /blog/shower-system-replacement-3-handle-to-single-handle-valve/ /fixture-installation-repair/
+  - Заметки: с fppplumbing.com wp-content/uploads/2026/01, картинка самого поста; в посте сказано: This particular case was completed in Plano. Поставлено к пункту про три ручки на странице Plano 5 октября 2026 после слов Дениса «фотографию не ту» Снято со страницы Plano 5 октября 2026 вечером по слову Дениса: «ту фотографию с Ridgid убери, и ту фотографию с картриджем убери». / From the old site: the picture of the 3 handle post, whose text says the case was completed in Plano. Off the Plano page since October 5, 2026, evening (Denys: remove the photo with the press tool).
 
 ## Измельчители
 
@@ -1840,7 +1840,7 @@ Plano · январь 2025 · файлы: 104
 - `/emergency-plumbing-services/` стоят: 6 (51), 47 (39), 48 (38), 96 (70). Отложены: 4 (148), 90 (143), 112 (141), 114 (142), 119 (142), 120 (142), 136 (18), 164 (140), 173 (58), 174 (120), 178 (139), 183 (74), 237 (142), 238 (142), 252 (144).
 - `/top-emergency-plumber-calls-frisco/` стоят: 118 (142). Отложены: 114 (142), 116 (142), 120 (142).
 - `/plumber-frisco-tx/` стоят: 2 (146), 5 (28), 43 (53), 44 (40), 46 (39), 47 (39), 53 (75), 122 (76), 153 (49), 166 (76), 167 (76), 169 (85), 173 (58), 174 (120), 175 (55), 176 (134), 177 (114), 178 (139), 179 (76), 192 (25), 193 (25), 199 (50), 201 (64). Отложены: 30 (132), 31 (88), 60 (114), 83 (45), 96 (70), 101 (134), 106 (122), 108 (122), 109 (122), 112 (141), 113 (121), 197 (50), 198 (50), 217 (46), 218 (46), 219 (46), 220 (46), 224 (15), 228 (48), 233 (33).
-- `/plumber-plano-tx/` стоят: 50 (52), 56 (31), 76 (111), 91 (72), 125 (5), 163 (1), 186 (34), 187 (34), 188 (26), 189 (26), 205 (29), 206 (29), 207 (29), 212 (78), 216 (127), 221 (57), 222 (116), 223 (116), 248 (102), 250 (102), 252 (144), 256 (9), 257 (9), 268 (138), 269 (138), 271 (61), 272 (61), 273 (150). Отложены: 15 (65), 17 (79), 37 (86), 61 (95), 89 (12), 92 (57), 93 (57), 94 (57), 115 (131), 137 (104), 138 (104), 151 (125), 152 (125), 172 (135), 202 (150), 211 (78), 235 (18), 241 (99), 253 (9), 254 (9), 255 (9), 270 (27).
+- `/plumber-plano-tx/` стоят: 50 (52), 56 (31), 91 (72), 125 (5), 163 (1), 186 (34), 187 (34), 188 (26), 189 (26), 205 (29), 206 (29), 207 (29), 212 (78), 221 (57), 222 (116), 223 (116), 248 (102), 250 (102), 252 (144), 256 (9), 257 (9), 268 (138), 269 (138), 271 (61), 272 (61), 273 (150). Отложены: 15 (65), 17 (79), 37 (86), 61 (95), 89 (12), 92 (57), 93 (57), 94 (57), 115 (131), 137 (104), 138 (104), 151 (125), 152 (125), 172 (135), 202 (150), 211 (78), 235 (18), 241 (99), 253 (9), 254 (9), 255 (9), 270 (27).
 - `/plumber-mckinney-tx/` Отложены: 7 (36), 33 (87), 51 (37), 71 (112), 73 (112), 98 (123), 99 (123), 103 (130), 139 (103), 141 (103), 190 (101), 195 (24), 196 (24), 244 (123), 258 (117), 259 (117), 260 (117).
 - `/plumber-allen-tx/` Отложены: 18 (110), 19 (110), 62 (94), 150 (119), 164 (140), 229 (67), 230 (67), 242 (22), 243 (22), 245 (23), 246 (23), 247 (23).
 - `/plumber-prosper-tx/` Отложены: 35 (41), 36 (41), 49 (62), 59 (115), 261 (47), 262 (47), 263 (47), 264 (47), 265 (47), 266 (47), 267 (47).
@@ -1951,7 +1951,6 @@ Plano · январь 2025 · файлы: 104
 - **211** (работа 78)
 - **212** (работа 78): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
 - **213** (работа 65)
-- **216** (работа 127): на сайте стоит как есть (/plumber-plano-tx/, /blog/); для других страниц смотреть заметки
 - **218** (работа 46)
 - **222** (работа 116): на сайте стоит как есть (/plumber-plano-tx/); для других страниц смотреть заметки
 - **223** (работа 116): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки

@@ -17,7 +17,7 @@
 | Видео 125 | Пинхол под плитой, slab leak | Под абзацем про slab leaks, перед фото пайки в тоннеле |
 | Фото 207 | Манометр, около 78 PSI: ещё не 80, но уже почти граница | Рядом с абзацем про закопанные краны и давление |
 | Фото 212 | В Plano разошёлся стык трубы, там были корни | В первом разделе, рядом с абзацем про сливы и канализацию |
-| Фото 76 | В Plano старый нестандартный картридж, который нигде нельзя найти | Под пунктом про три ручки, рядом с фото из статьи |
+| Фото 76 | В Plano старый нестандартный картридж, который нигде нельзя найти | Стояло под пунктом про три ручки. Снято вечером 5 октября по твоему слову |
 
 **Что не поставлено**
 
@@ -166,6 +166,13 @@
 
 Вопросы отчёта закрыты.
 
+## 5 октября, поздний вечер: два фото сняты у пункта про три ручки
+
+- Ты сказал: «ту фотографию с Ridgid убери, и ту фотографию с картриджем убери». Оба фото сняты: картинка из поста с пресс-инструментом (216) и старый картридж (76).
+- Под пунктом про три ручки теперь стоят только твои два видео: три ручки до работы и одна ручка после.
+- Фраза про картриджи старых марок в тексте осталась, это твои слова. Фото картриджа ждёт страницу смесителей.
+- Теперь на странице 10 фото и 16 клипов. Вёрстка чистая на шести ширинах. Скорость на телефоне 99, главное содержимое за 1,7 секунды.
+
 ## 5 октября, вечер: давление, возврат города, ссылки
 
 - **Давление.** В абзаце про закопанные краны больше нет слов о том, что манометр показывает 90 до 95 PSI. Было: «The gauge on a spigot reads 90 to 95 PSI, and anything over 80 wears a house out early». Стало: «In our experience a lot of them run on high water pressure, and the homeowner doesn't even suspect it. Anything over 80 PSI wears a house out early: cartridges, fill valves, supply lines, the water heater. So the pressure has to be checked, and a gauge on an outside spigot shows it.»
@@ -179,7 +186,7 @@
 - **Трубы в наружных стенах.** У этого пункта стоит твой клип с пресс-фитингом, который лопнул от мороза. Телефон записал это видео во Frisco, а город ты для него не называл. Поэтому в подписи города нет.
 - **Офис.** Фото двери офиса с табличкой стоит в блоке офиса. Первый экран пока без фото.
 
-Теперь на странице 12 фото и 16 клипов.
+После этих правок на странице стало 12 фото и 16 клипов.
 
 # Отчёт от 3 октября
 
@@ -401,7 +408,7 @@ Insulation in a wall that is thirty to fifty years old has worn out and settled,
 
 Bathroom plumbing in these houses still means three handle tub and shower valves: hot, cold, and the diverter between them. After decades the valve stops closing all the way. It drips into the tub, or it leaks inside the wall where nobody sees it. Faucet repair in these bathrooms is often just a cartridge, and some cartridges come from old brands the regular stores don't carry any more. When the valve itself is done, we replace it with a single handle valve in the same wall and cover the opening with a plate, so the tile stays where it is. One of those jobs, start to finish: a 3 handle shower converted to a single handle valve. The faucet and shower valve repair page goes deeper.
 
-*[Под текстом рядом: видео 222, 5 секунд без звука: Before: a three handle tub and shower valve, water running from the spout, Plano; видео 223, 5 секунд без звука: After: one handle and a wide cover plate on the same wall, Plano; фото 216: A 3 handle shower converted to a single handle valve: the new valve is pressed in through the opening in the tile, Plano; фото 76: An old nonstandard shower cartridge, the kind you can't find anywhere, Plano]*
+*[Под текстом рядом: видео 222, 5 секунд без звука: Before: a three handle tub and shower valve, water running from the spout, Plano; видео 223, 5 секунд без звука: After: one handle and a wide cover plate on the same wall, Plano]*
 
 ---
 
