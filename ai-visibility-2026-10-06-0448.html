@@ -1,0 +1,137 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 04:48</p><h1>Видимость в ИИ-поисковиках: точка отсчёта (6 октября 2026)</h1>
+<p>Чтобы рост можно было мерить, а не обещать. Заполняется раз в месяц, первая проверка в начале ноября 2026.</p>
+<h2>1. Переходы на сайт из ИИ-сервисов (GA4, последние 90 дней)</h2>
+<p>Источники: chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com, claude.ai.</p>
+<p>Цифр пока нет: у сервисного аккаунта проекта (gsc-reader@fpp-site.iam.gserviceaccount.com) нет доступа к GA4, и в облачном проекте fpp-site не включён API аналитики. Что нужно от Дениса, два шага, около пяти минут:
+1. https://console.cloud.google.com/apis/library/analyticsdata.googleapis.com?project=fpp-site → Enable (и то же для analyticsadmin.googleapis.com).
+2. В GA4 (analytics.google.com), Admin, Property access management, Add users: адрес gsc-reader@fpp-site.iam.gserviceaccount.com с ролью Viewer.
+После этого Claude Code снимает переходы по источникам скриптом и вписывает сюда таблицу за 90 дней до переезда (точка отсчёта) и дальше раз в месяц.</p>
+<h2>2. Роботы ИИ на сайте</h2>
+<p>Первая картина: docs/ai-crawlers-2026-10-06.md (15 запросов за сутки, все пропущены: Claude-User 5, ChatGPT-User 4, Googlebot 4, ClaudeBot 2). Следующий снимок через месяц со страницы AI Crawl Control, Metrics, окно 30 дней.</p>
+<h2>3. Bing</h2>
+<p>Страниц в индексе Bing: не известно, Bing Webmaster Tools ещё не подключён (нужен вход Дениса; шаги в docs/journal.md, запись 6 октября). После подключения сюда вписывается число страниц из отчёта Site Explorer и дата. IndexNow подключён 6 октября: все 63 адреса отправлены, ответ API 202.</p>
+<h2>4. Вопросы для ежемесячной проверки</h2>
+<p>Задать в ChatGPT (с поиском), Gemini, Perplexity и Claude; записать: назван ли FPP Plumbing, есть ли ссылка на fppplumbing.com, верны ли факты (телефон, адрес, $49, лицензия, города). Результаты вносят чат и Денис.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Вопрос</th>
+<th>ChatGPT</th>
+<th>Gemini</th>
+<th>Perplexity</th>
+<th>Claude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>emergency plumber in Frisco TX open now</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>best plumber in Plano TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>who repairs slab leaks in Plano TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>water leak detection Frisco TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>24 hour plumber near McKinney TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>water heater leaking in the attic who to call in Frisco</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>plumber in Little Elm TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>main drain line backing up plumber Plano</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>PRV replacement Frisco TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>how much does an emergency plumber cost in Frisco TX</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>how to shut off the main water valve in a Texas house</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>FPP Plumbing reviews</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Запись в ячейке: «назван, ссылка, факты верны» или что не так. Первая проверка: после того как Bing и Google переиндексируют новый сайт (ориентир две недели после 6 октября).</p></main></body></html>

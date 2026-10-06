@@ -1,0 +1,78 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 04:48</p><h1>Роботы ИИ и поисковиков на fppplumbing.com: первая картина (6 октября 2026, около 04:50)</h1>
+<p>Снято со страниц AI Crawl Control зоны в панели Cloudflare (Overview, Security, Metrics, Signals) и со страниц Security, через сутки после добавления зоны и через час после переключения домена. Это начало замеров: следующая картина через месяц.</p>
+<h2>Что стоит в Cloudflare для роботов</h2>
+<ul>
+<li>AI Crawl Control, Security: ни один из 33 роботов в списке не заблокирован (Amazonbot, Applebot, archive.org_bot, Baidu, BingBot, Bytespider, CCBot, ChatGPT-User, Claude-SearchBot, Claude-User, ClaudeBot, Cloudflare Crawler, DuckAssistBot, FacebookBot, Google-CloudVertexBot, Googlebot, GPTBot, Meta-ExternalAgent, Meta-ExternalFetcher, MistralAI-User, OAI-SearchBot, Perplexity-User, PerplexityBot, PetalBot, TikTok Spider и другие). Переключатели «Block Crawler» все выключены.</li>
+<li>Политики мастера добавления домена (Search, Agent, Training): все три «Allow (do not block)»; галочка «I monetize pages that serve ads» не стояла; Bot Preference Sync (дописывание robots.txt силами Cloudflare) выключен и остаётся выключенным, robots.txt отдаётся наш.</li>
+<li>Security, Settings: AI Labyrinth выключен, Bot fight mode выключен, Browser Integrity Check включён (значение по умолчанию; проверенных роботов он не трогает, при первом заблокированном роботе выключить), «Security Level» в новой панели не показывается отдельной настройкой. Email Address Obfuscation выключена (была включена по умолчанию).</li>
+<li>Security, Analytics за сутки: подозрительной активности 0, остановленных запросов 0.</li>
+<li>Signals: robots.txt домена отдаётся с кодом 200 (3 запроса за 7 дней), нарушений robots.txt нет; Content Signals в robots.txt «Not set» до выкладки этой ночи (с 04:50 строка стоит).</li>
+</ul>
+<h2>Кто приходил за последние 24 часа (до 04:50)</h2>
+<table>
+<thead>
+<tr>
+<th>Робот</th>
+<th>Компания</th>
+<th>Запросов</th>
+<th>Пропущено</th>
+<th>Заблокировано</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude-User</td>
+<td>Anthropic</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+</tr>
+<tr>
+<td>ChatGPT-User</td>
+<td>OpenAI</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Googlebot</td>
+<td>Google</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>ClaudeBot</td>
+<td>Anthropic</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>все остальные</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Всего 15 запросов, все пропущены; 12 ответов 200, 2 ответа 301, 1 ответ 308. OpenAI забрал 162,62 КБ HTML, Anthropic 125 КБ, Google 12 КБ. Самые запрашиваемые адреса: /sitemap.xml (5), / (2), /water-heater-repair-frisco-mckinney/, /water-heaters/, /top-emergency-plumber-calls-frisco/, /llms.txt, /emergency-plumbing-services/ (по 1). Для сведения: чат читал сайт своим роботом (Claude-User) в 04:10, это часть из пяти запросов Anthropic.</p>
+<h2>Что сделано этой ночью для роботов</h2>
+<ul>
+<li>robots.txt: отдельные группы с Allow: / для OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, Perplexity-User, Applebot-Extended, Amazonbot, DuckAssistBot, meta-externalagent, CCBot (к прежним семи) и строка Content-Signal: search=yes, ai-input=yes, ai-train=yes в группе для всех.</li>
+<li>IndexNow: ключ в корне сайта, все 63 адреса отправлены; после каждой выкладки <code>python3 tools/indexnow.py --changed</code>.</li>
+<li>llms.txt: раздел Services в простых словах, список вопросов и ответов, строка о компании, профили в разделе Company.</li>
+</ul></main></body></html>
