@@ -32,7 +32,7 @@
 | _dmarc.fppplumbing.com | TXT | `v=DMARC1; p=none;` | 1200 | DMARC, as it is |
 | default._domainkey.fppplumbing.com | TXT | `v=DKIM1; k=rsa; p=MIIB… (ключ целиком в exports/dns/records-expected.json)` | 1200 | DKIM key of the HOSTiQ server (cPanel selector default), as it is |
 
-Плюс NS (dns1.hostiq.ua, dns2.hostiq.ua) и SOA, которые в Cloudflare будут свои и не копируются.
+Плюс NS (dns1.hostiq.ua, dns2.hostiq.ua) и SOA, которые в Cloudflare будут свои и не копируются. Одно отличие в копии (замечание проверки 6 октября): mail.fppplumbing.com у HOSTiQ это CNAME на сам домен, а после переезда домен ведёт на новый сайт; чтобы имя cPanel по-прежнему вело на HOSTiQ все 30 дней отката, в зоне Cloudflare оно стоит записью A 162.247.155.224 без прокси, как webmail и cpanel (exports/dns/records-expected.json). Почте это не нужно (MX у Google), это только для входа в панель HOSTiQ по этому имени.
 
 ## Две вещи про почту, которые видны из записей (не для переезда, на потом)
 
@@ -56,6 +56,6 @@
 5. Страница «Change your nameservers»: Cloudflare покажет два своих адреса вида `xxx.ns.cloudflare.com`. **Ничего не менять у HOSTiQ.** Эти два адреса пригодятся в день переезда. Нажать **Continue** или просто закрыть страницу. Зона останется в состоянии Pending, это правильно.
 6. Написать Claude Code: «зона добавлена».
 
-Дальше Claude Code читает зону (`python3 tools/dns_zone.py check`) и сравнивает с таблицей. Если чего-то не хватает, есть два пути: Денис добавляет записи сам в панели по таблице, или создаёт в Cloudflare токен API с правом «Edit zone DNS» только для fppplumbing.com (My Profile, API Tokens, Create Token, шаблон Edit zone DNS, зона fppplumbing.com) и вставляет его в скрытое окно на Mac (`zsh tools/dns_token.sh`), после чего `python3 tools/dns_zone.py apply` добавляет недостающие записи, все без прокси, ничего не удаляя. Токен нигде не записывается; после работы Денис его удаляет в той же панели.
+Дальше Claude Code читает зону (`python3 tools/switch_day.py status`) и сравнивает с таблицей. Недостающие записи добавляет `zsh tools/switch_day.sh records` с токеном `fpp switch` из скрытого окна на Mac (docs/switch-day-plan.md, шаг 0: пять прав, только зона fppplumbing.com), все без прокси, ничего не удаляя. Токен нигде не записывается; после переезда Денис его удаляет в той же панели.
 
 В зоне до самого последнего шага переезда: A fppplumbing.com и CNAME www ведут на HOSTiQ без прокси, как сейчас. Так после смены nameservers сайт продолжает работать с HOSTiQ, а переключение на новый сайт становится одним движением (и откат тоже), см. docs/switch-day-plan.md.

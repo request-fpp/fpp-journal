@@ -11,6 +11,20 @@
 - От Дениса: хостинг HOSTiQ оплачен минимум на 30 дней вперёд, домен с автопродлением (24 декабря 2026), ответ, идёт ли реклама в Google Ads.
 - Форма заявки уже работает через функцию Pages и секреты проекта; Turnstile знает оба адреса. На живом домене ничего не меняется.
 
+## Шаг 0. Токен для записей и правил (Денис, один раз, около пяти минут)
+
+Вход Claude Code в Cloudflare умеет читать зону и привязывать домены к Pages, но не умеет писать записи DNS, правила и настройки зоны. Для этого Денис один раз создаёт токен в панели и вставляет его в скрытое окно на Mac, где он нигде не сохраняется:
+
+1. https://dash.cloudflare.com, справа вверху значок профиля, **My Profile**, слева **API Tokens**, кнопка **Create Token**.
+2. Внизу страницы **Create Custom Token**, кнопка **Get started**.
+3. Имя токена: `fpp switch`. В разделе Permissions пять строк (кнопка **+ Add more** добавляет строку): `Zone` / `DNS` / `Edit`; `Zone` / `Single Redirect` / `Edit` (на некоторых экранах эта строка называется `Dynamic URL Redirects`, это то же право); `Zone` / `Zone Settings` / `Edit`; `Zone` / `Zone` / `Read`; `Zone` / `SSL and Certificates` / `Read`.
+4. Zone Resources: `Include` / `Specific zone` / `fppplumbing.com` (зона должна быть уже добавлена, шаг из docs/dns-before-move.md).
+5. **Continue to summary**, **Create Token**. Токен показывается один раз: скопировать.
+6. Claude Code запускает `zsh tools/switch_day.sh records`: на Mac открывается окно со скрытым полем, Денис вставляет токен, скрипт копирует в зону недостающие записи HOSTiQ (все без прокси, ничего не удаляя) и ставит короткий срок жизни (5 минут) на записи сайта, чтобы переключение и откат доходили до интернета за минуты. То же окно появится на проверке перед переключением (`status`), на шаге 4 (`switch`), и один раз на откате, если он понадобится.
+7. После переезда Денис удаляет токен на той же странице API Tokens.
+
+Проверка после шага: `python3 tools/switch_day.py status` показывает зону, все записи HOSTiQ в ней и A и www без прокси на HOSTiQ.
+
 ## Шаг 1. Подключить Google-теги и собрать сайт как живой (Claude Code, утро дня переезда)
 
 1. Подключить компонент GoogleTags (site/src/components/GoogleTags.astro) в head и GoogleTagsNoscript после body в site/src/layouts/Base.astro, как написано в самом компоненте. Это тег GT-PJ4NVLSP (GA4 и Google Ads через него), Google Ads AW-9807662480 и Tag Manager GTM-NVSNS9FK, те же, что на живом сайте.
@@ -29,21 +43,26 @@
 
 ## Шаг 3. Ждать, пока зона станет активной (Claude Code проверяет)
 
-- Проверка: `dig +short NS fppplumbing.com @1.1.1.1` показывает адреса Cloudflare; `python3 tools/dns_zone.py check` показывает status active. Обычно от минут до нескольких часов, в правилах DNS до двух суток.
+- Проверка: `dig +short NS fppplumbing.com @1.1.1.1` показывает адреса Cloudflare; `python3 tools/switch_day.py status` показывает status active. Cloudflare сам проверяет nameservers через минуту после добавления зоны и дальше всё реже; если интернет уже отвечает адресами Cloudflare, а зона всё ещё Pending, Денис нажимает в панели на странице зоны (Overview) кнопку проверки nameservers (Check nameservers; на бесплатном тарифе раз в час). Обычно от минут до нескольких часов, в правилах DNS до двух суток.
 - Сертификат (окно сертификата): после активации Cloudflare сам выпускает сертификат для домена (Universal SSL). Пока он не выпущен, включать прокси нельзя: посетители увидят ошибку сертификата. Проверка по API (`/zones/<id>/ssl/certificate_packs`, статус active) или в панели SSL/TLS, Edge Certificates. Обычно минуты, редко до суток.
 - Проверить почту: письмо на request@fppplumbing.com с другого ящика и ответ с него (Денис). MX не менялся, но проверка обязательна.
 
 ## Шаг 4. Переключение (одно движение, Claude Code с Денисом на связи)
 
-1. Привязать домены к проекту Pages: fppplumbing.com и www.fppplumbing.com (панель Cloudflare, Workers & Pages, проект fppplumbing-preview, Custom domains, Set up a custom domain; или по API). Cloudflare предложит создать записи сам: согласиться. В зоне запись A fppplumbing.com заменяется на CNAME fppplumbing.com → fppplumbing-preview.pages.dev с прокси, запись www тоже. С этой секунды сайт отдаёт Cloudflare Pages. (Если делать по API, записи DNS ставит `python3 tools/dns_zone.py` с токеном из скрытого окна, как при копировании.)
-2. Правило www → fppplumbing.com: в зоне Rules, Redirect Rules, Create rule: если Hostname equals www.fppplumbing.com, то Dynamic redirect, выражение `concat("https://fppplumbing.com", http.request.uri.path)`, код 301, Preserve query string включить. На живом сайте www отвечает 301 на fppplumbing.com, это правило повторяет то же.
-3. Always Use HTTPS: в SSL/TLS, Edge Certificates проверить, что включено (http → https 301, как сейчас). Режим шифрования Full (strict) можно включить сразу: Pages говорит с Cloudflare по https.
+Одна команда, `zsh tools/switch_day.sh switch` (токен из скрытого окна), делает всё по порядку и отказывается работать, пока зона не активна и сертификат не выпущен:
+
+1. Проверяет токен и читает записи им; привязывает домены fppplumbing.com и www.fppplumbing.com к проекту Pages (вход wrangler) и не идёт дальше, пока оба не числятся на проекте (запись на Pages без домена на проекте отвечала бы ошибкой 522).
+2. Ставит правило www → fppplumbing.com (301, с сохранением строки запроса), как отвечает живой сайт сейчас, включает режим шифрования Full (strict) и Always Use HTTPS (http → https 301). Пока записи без прокси, всё это ни на что не действует, зато ошибка прав токена находится до того, как что-то стало живым: тогда скрипт останавливается, пункт делается в панели, и скрипт запускается снова.
+3. В зоне заменяет www на CNAME → fppplumbing-preview.pages.dev с прокси, потом A fppplumbing.com на такой же CNAME. С этой минуты сайт отдаёт Cloudflare Pages (срок жизни старой записи 5 минут). Если новую запись не удалось создать, старая запись HOSTiQ возвращается тем же скриптом сразу. Записи почты и всё остальное не трогаются.
+4. Ждёт, пока Pages покажет домены активными (до десяти минут), печатает, что отвечает домен, и итог: сделано или что именно не вышло.
+
+Если пункт 2 не прошёл по правам токена, скрипт пишет об этом и ничего не переключает; тот пункт делается в панели: Rules, Redirect Rules (правило: Hostname equals www.fppplumbing.com, Dynamic redirect, выражение `concat("https://fppplumbing.com", http.request.uri.path)`, код 301, Preserve query string) и SSL/TLS (режим Full strict, Always Use HTTPS); потом `zsh tools/switch_day.sh switch` ещё раз. Проверка зоны (active) не обходится ничем; проверку сертификата можно обойти только словом `--skip-cert-check`, когда панель показывает сертификат активным, а API его не читает.
 
 Откат с этого шага: docs/rollback.md, раздел «Быстрый откат», минуты.
 
 ## Шаг 5. Проверки сразу после переключения (Claude Code)
 
-- `curl -sI https://fppplumbing.com/` отвечает 200, в заголовках server: cloudflare, нет X-Robots-Tag; в HTML нет `<meta name="robots" content="noindex">`.
+- `curl -sI https://fppplumbing.com/` отвечает 200, в заголовках server: cloudflare, нет X-Robots-Tag; в HTML нет `<meta name="robots" content="noindex">`. Mac может ещё несколько минут видеть старый ответ (кэш своего резолвера); скрипт печатает рядом ответ 1.1.1.1.
 - https://www.fppplumbing.com/ отвечает 301 на https://fppplumbing.com/; http://fppplumbing.com/ отвечает 301 на https.
 - `python3 tools/check_migration.py --live https://fppplumbing.com`: все 64 адреса и все старые адреса отвечают как в проверке до переезда.
 - Страница /?attachment_id=3509 отвечает 301 на /gallery/ (функция Pages работает на живом домене).
@@ -54,7 +73,7 @@
 
 ## Шаг 6. Search Console и остальное (в тот же день)
 
-- Search Console, собственность fppplumbing.com (домен): раздел Sitemaps: добавить https://fppplumbing.com/sitemap.xml; старый sitemap_index.xml теперь отвечает 301 на него. Запросить индексирование главной, Frisco, Plano и emergency (URL Inspection, Request indexing).
+- Search Console, собственность fppplumbing.com (домен): раздел Sitemaps: добавить https://fppplumbing.com/sitemap.xml; старый sitemap_index.xml теперь отвечает 301 на него. Это делает Денис (у сервисного аккаунта проекта только ограниченные права, `python3 tools/gsc_sitemap.py list` показывает siteRestrictedUser; если Денис даст ему полные права в Settings, Users and permissions, то `python3 tools/gsc_sitemap.py submit` сделает это сам). Запросить индексирование главной, Frisco, Plano и emergency (URL Inspection, Request indexing).
 - Google Business Profile: ссылки на сайт не меняются (те же адреса /plumber-frisco-tx/ и /plumber-plano-tx/); ничего не делать.
 - Yelp, Thumbtack, BBB, соцсети: адреса те же; ничего не делать.
 - Журнал проекта: запись о переезде со временем каждого шага и результатами проверок.
