@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 00:28</p><h1>Всё о проекте fppplumbing.com одним текстом: передача новому чату</h1>
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 00:47</p><h1>Всё о проекте fppplumbing.com одним текстом: передача новому чату</h1>
 <p>Составлено 5 октября 2026 года по просьбе Дениса: «скинь всю информацию для нового чата: всё, что ты сделал, всё, что у нас есть, все страницы, новые фотографии, истории, которые я тебе рассказывал, одним текстом». Писал Claude Code, который собирает сайт в папке проекта. Всё взято из файлов проекта на этот день.</p>
 <p>Читает это новый чат. Он пишет тексты страниц и ведёт SEO. Тестовый сайт он открыть не может: вход туда только у Дениса. Всё нужное лежит открытыми страницами журнала по адресам вида https://fpp-journal.pages.dev/имя, они перечислены в разделе 2. Если у чата есть доступ к папке проекта, он читает файлы прямо из неё.</p>
 <h2>Самое главное за одну минуту</h2>
@@ -119,7 +119,7 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <p><strong>Pangram</strong> только для сведения, под цифру не переписывают: главная и Frisco версия 1 по 100% ИИ, Plano не проверена (войти может только Денис).</p>
 <h3>Что не сделано в инфраструктуре</h3>
 <ul>
-<li><strong>Форма заявки в Telegram.</strong> Форма Request Service есть на каждой странице, но выключена: на тестовом сайте пишет «Preview: this form is not connected yet, nothing was sent.» Нужны Cloudflare Worker, который шлёт заявку в бот Дениса (ключ бота и номер чата только в секретах Worker), и Turnstile с проверкой на сервере. От Дениса нужен бот на его почте. Его слово от 3 октября: в самом конце, перед переездом; настоящая заявка до и после переключения.</li>
+<li><strong>Форма заявки в Telegram.</strong> Подключена 6 октября после полуночи по слову Дениса (раньше стояла в самом конце). Функция Pages <code>site/functions/api/request.ts</code> принимает /api/request, проверяет Turnstile на сервере и шлёт заявку одним текстом в чат Дениса через его бота; заявки нигде не хранятся. Секреты проекта Pages (только имена): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, TURNSTILE_SECRET_KEY; ключ бота Денис вводил в скрытое окно на Mac (<code>tools/form_secrets.sh</code>), виджет Turnstile создан через API. Форма живая на всех страницах, строки «не подключена» нет; ловушка для ботов; при ошибке посетитель видит строку ошибки, не «спасибо». Перед переездом остаётся проверка настоящей заявкой.</li>
 <li><strong>Счётчики Google</strong>: GT-PJ4NVLSP (GA4 и Google Ads), AW-9807662480, GTM-NVSNS9FK. Заготовка site/src/components/GoogleTags.astro готова и не подключена; включается в день переезда, до смены nameservers. Подмены номера для звонков на живом сайте нет.</li>
 <li><strong>Шесть старых адресов вида /?attachment_id=...</strong> записаны в site/src/data/redirects-query.csv. Для них нужна отдельная функция на Cloudflare, её пока нет.</li>
 <li><strong>Список перед переездом</strong> (CLAUDE.md): счётчики подключены и проверены; каждый старый адрес отдаёт 200 или верный 301; title, H1 и описания как в одобренных текстах; форма доходит в Telegram; телефонные ссылки работают; шаг снятия noindex описан; sitemap и robots готовы; Search Console подтверждён; инструкция отката написана. Почта request@fppplumbing.com (MX, SPF, DKIM) копируется в DNS Cloudflare и проверяется до переключения.</li>
@@ -1004,7 +1004,7 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <td>контакты</td>
 <td>старый</td>
 <td>4 · 1,053 · 9.8</td>
-<td>форма в Telegram перед переездом</td>
+<td>форма в Telegram подключена 6 октября</td>
 </tr>
 <tr>
 <td>61</td>
