@@ -166,6 +166,12 @@
 
 Вопросы отчёта закрыты.
 
+## 5 октября, ночь: аудит и закрытие страницы
+
+- Семь проверяющих прошли страницу по всем правилам и оценкам: критических ошибок нет. Superseo 62 из 70, claude-seo 93 из 100, Search Console без потерь. Полный отчёт: https://fpp-journal.pages.dev/audit-plano .
+- Что поправил сразу: запятая в строке лицензии в подвале, ссылка на water lines во второй истории, два клипа (вес и бледный код на циферблате счётчика), четыре фразы приведены к источникам, фото первого экрана облегчено для телефона.
+- Страница закрыта. Что осталось на твоё слово и на слово чата, в отчёте аудита.
+
 ## 5 октября, ночь: фото фургона на первом экране
 
 - Твоё фото фургона у входа в здание 5700 Tennyson Pkwy стоит на первом экране справа от текста, как на Frisco, и в картинке для соцсетей. На телефоне оно полосой над текстом.
@@ -383,9 +389,9 @@ Then the drains. Drain cleaning is the clog itself: a kitchen line, a tub, a bat
 
 ### H2: Plano Plumbing by the Age of the House
 
-What breaks in a Plano house depends on the year it was built, and that changes from one part of town to the next. Two plumbers in Plano can spend the same day on completely different work. The oldest streets, from the 1960s, are east of Highway 75. The middle of the city, between Highway 75 and Coit Road and south of Legacy Drive, was built mostly in the 1970s and 1980s, and the houses off Parker Road and along Independence Parkway are forty years old and more. That's where we find cast iron under the floor, slab leaks, and copper that has been in the ground since the house was built.
+What breaks in a Plano house depends on the year it was built, and that changes from one part of town to the next. Two plumbers in Plano can spend the same day on completely different work. The oldest streets, from the 1960s, are east of Highway 75. The middle of the city, between Highway 75 and Coit Road and south of Legacy Drive, was built mostly in the 1970s and 1980s, and a lot of the houses off Parker Road and along Independence Parkway south of Legacy Drive are around forty years old. That's where we find cast iron under the floor, slab leaks, and copper that has been in the ground since the house was built.
 
-West of Coit Road and up around Legacy Drive the houses are from the 1990s and 2000s. Our office is in that part of town, and the calls there are different: water heaters at the end of their life, garbage disposals, faucets, sink drains, a leak coming through a ceiling, and after a hard freeze, pipes in the attic. Newer doesn't mean nothing breaks. By the U.S. Census Bureau's estimate the median year built for a home in Plano is 1993, so half the city is older than that, and that older half is where the heavy Plano plumbing work is.
+West of Coit Road and up around Legacy Drive the houses are from the 1990s and 2000s. Our office is in that part of town, and the calls there are different: water heaters at the end of their life, garbage disposals, faucets, sink drains, a leak coming through a ceiling, and after a hard freeze, pipes in the attic. Newer doesn't mean nothing breaks. By the U.S. Census Bureau's estimate the median year built for a home in Plano is 1993, so about half the homes in the city are older than that, and that older half is where the heavy Plano plumbing work is.
 
 ---
 
@@ -467,7 +473,7 @@ Water heaters have their own sheet at the city, and one line in it says the reli
 
 *[Под текстом рядом: видео 271, 5 секунд без звука: No cleanout to work from, so the chain snake goes in through the toilet drain: the clog breaks and the water goes down, Plano; видео 272, 5 секунд без звука: After: the toilet back in place and flushing, Plano]*
 
-**The roots that wrapped the water line.** Water was coming up out of the meter box when the homeowner got back from vacation, and the meter was spinning. The city had already sent him a notice about his water use. The line from the meter is 3/4 inch copper, and the roots of a tree had wrapped it completely. The tree went in about thirty years ago, one of seven or eight planted in a row. Before a single root was cut, the city had its say. The homeowner sent an email stating that the tree stands on his property and belongs to him, not to the HOA. Building Inspections issued the plumbing permit and passed the tree question to Engineering, and Engineering answered that the tree could come down without a permit. In the end it stayed: the excavation crew dug under the roots and cut about a third of them. The water line itself was broken there. We replaced that section of pipe, and the city's underground inspection passed. Then came the backflow preventer. Our repair was within 10 feet of it, and the city added a backflow inspection to the permit. The city's backflow inspector put it plainly: work that close to an existing assembly, and the assembly has to be tested. In Plano the same goes for any work on a backflow assembly or on the line ahead of it, and the city gets the report of the test. This one couldn't be tested. It sat half buried and it was rusted. The homeowner believed it was thirty-five years old, but the date stamped on it read 2015, week 23. We replaced it. Once the new assembly was in, it got tested and the test report went to the city. Then the permit was closed.
+**The roots that wrapped the water line.** Water was coming up out of the meter box when the homeowner got back from vacation, and the meter was spinning. The city had already sent a notice about the water use. The line from the meter is 3/4 inch copper, and the roots of a tree had wrapped it completely. The tree went in about thirty years ago, one of seven or eight planted in a row. Before a single root was cut, the city had its say. The homeowner sent an email stating that the tree stands on the homeowner's property and belongs to the homeowner, not to the HOA. Building Inspections issued the plumbing permit and passed the tree question to Engineering, and Engineering answered that the tree could come down without a permit. In the end it stayed: the excavation crew dug under the roots and cut about a third of them. The water line itself was broken there. We replaced that section of pipe, and the city's underground inspection passed. Then came the backflow preventer. Our repair was within 10 feet of it, and the city added a backflow inspection to the permit. The city's backflow inspector put it plainly: work that close to an existing assembly, and the assembly has to be tested. In Plano the same goes for any work on a backflow assembly or on the line ahead of it, and the city gets the report of the test. This one couldn't be tested. It sat half buried and it was rusted. The homeowner believed it was thirty-five years old, but the date stamped on it read 2015, week 23. We replaced it. Once the new assembly was in, it got tested and the test report went to the city. Then the permit was closed.
 
 *[Под текстом рядом: видео 205, 5 секунд без звука: Before the dig: water coming up in the meter box, Plano; видео 206, 5 секунд без звука: Dug out: the copper line by the meter with roots around it, water spraying from the line, Plano]*
 
@@ -485,7 +491,7 @@ Water heaters have their own sheet at the city, and one line in it says the reli
 
 Shut the water off before you pick up the phone. In the older houses the valve by the house may be buried, and the middle of a leak is the wrong time to look for it. The city's valve in the meter box by the curb shuts off the whole house, and the city allows a homeowner to open that box for one purpose: to turn the water on or off. It takes a meter key. Our guide to the main shut-off valve shows both valves. If the sewer is backing up, stop using water in the whole house, and that includes the washing machine and the dishwasher.
 
-The Plano line is answered at any hour. For an emergency plumber in Plano the usual night is a pipe that broke in a freeze or a main line coming up in the tub. The first minutes of a leak or a backup are covered on our emergency plumbing page.
+The Plano line is answered at any hour. For an emergency plumber in Plano, a night call can be a pipe that broke in a freeze or a main line coming up in the tub. The first minutes of a leak or a backup are covered on our emergency plumbing page.
 
 ---
 
@@ -584,6 +590,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | U.S. Census Bureau's estimate | https://data.census.gov/table/ACSDT5Y2024.B25035?g=160XX00US4858016 |
 | The city's winter advice | https://www.plano.gov/winter-preparedness |
 | drain cleaning | /clogged-drain-cleaning-frisco-plano/ |
+| replaced that section of pipe | /water-lines/ |
 | replaced that piece of the main line | /water-lines/ |
 | water leak detection | /water-leak-detection-frisco-plano/ |
 | guide to the main shut-off valve | /plumbing-guide/how-to-shut-off-main-water-valve-texas/ |
@@ -1081,7 +1088,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | cipp drain lining plano tx |  |  |  | 33 · 42.5 · 0 | частично (нет слов: cipp, lining) |
 | drain pipe installation plano tx |  | 20 · 74.8 · 0 |  | 13 · 1.1 · 0 | да |
 | plumber hebron tx | 33 · 1.1 · 0 | 33 · 1.1 · 0 |  |  | частично (нет слов: hebron) |
-| replacement showers in plano |  | 33 · 68.2 · 0 |  |  | частично (нет слов: showers) |
+| replacement showers in plano |  | 33 · 68.2 · 0 |  |  | да |
 | drain cleaner | 32 · 3.6 · 0 | 32 · 3.6 · 0 |  |  | частично (нет слов: cleaner) |
 | dripping sound in water heater | 32 · 1.0 · 0 | 32 · 1.0 · 0 |  |  | да |
 | emergency drain cleaning | 32 · 1.0 · 0 | 32 · 1.0 · 0 |  |  | да |
@@ -1104,7 +1111,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | plano toilet repair |  | 19 · 86.2 · 0 |  | 10 · 80.8 · 0 | да |
 | plumbing help | 29 · 1.0 · 0 | 29 · 1.0 · 0 |  |  | да |
 | slab leaks plano, tx |  | 29 · 97.7 · 0 |  |  | да |
-| weekend plumber plano tx | 19 · 6.8 · 0 | 19 · 6.8 · 0 | 10 · 12.3 · 0 | 10 · 12.3 · 0 | частично (нет слов: weekend) |
+| weekend plumber plano tx | 19 · 6.8 · 0 | 19 · 6.8 · 0 | 10 · 12.3 · 0 | 10 · 12.3 · 0 | да |
 | 24/7 plumber plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 | 21 · 10.1 · 0 | 27 · 9.6 · 0 | да |
 | cipp relining plano tx |  |  |  | 28 · 22.7 · 0 | нет (нет слов: cipp, relining) |
 | emergency pipe repair | 28 · 1.5 · 0 | 28 · 1.5 · 0 |  |  | да |
@@ -2367,9 +2374,9 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | water.heater | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
 | website design for plumbers plano |  |  |  | 1 · 64.0 · 0 | не наше (не про услугу) |
 | website for plumbers frisco | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (frisco) |
-| weekend plumber | 1 · 11.0 · 0 | 1 · 11.0 · 0 |  |  | частично (нет слов: weekend) |
-| weekend plumbers | 1 · 12.0 · 0 | 1 · 12.0 · 0 |  |  | частично (нет слов: weekend) |
-| weekend plumbing services | 1 · 13.0 · 0 | 1 · 13.0 · 0 |  |  | частично (нет слов: weekend) |
+| weekend plumber | 1 · 11.0 · 0 | 1 · 11.0 · 0 |  |  | да |
+| weekend plumbers | 1 · 12.0 · 0 | 1 · 12.0 · 0 |  |  | да |
+| weekend plumbing services | 1 · 13.0 · 0 | 1 · 13.0 · 0 |  |  | да |
 | well repair plano tx |  |  | 1 · 49.0 · 0 | 1 · 49.0 · 0 | не наше (насосы скважин: нет такой услуги) |
 | where did you get this information from? | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | частично (нет слов: did, information) |
 | where to buy kitchen faucets near me | 1 · 19.0 · 0 | 1 · 19.0 · 0 |  |  | частично (нет слов: buy) |
