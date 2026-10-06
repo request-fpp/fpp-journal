@@ -1,0 +1,74 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 02:30</p><h1>День переезда: план по шагам</h1>
+<p>Написан 6 октября 2026 ночью как подготовка (решение Дениса «Хочу сейчас»). Ни один шаг отсюда не выполняется, пока Денис не скажет «переезжаем». Порядок важен: сначала всё, что не трогает домен, потом смена nameservers, потом само переключение одним движением.</p>
+<p>Слова: nameservers это два адреса, которые говорят интернету, где искать записи домена. Зона это записи домена в Cloudflare. «Без прокси» (серое облако) значит, что Cloudflare только отвечает, куда идти, и трафик через себя не пропускает. Pages это хостинг нового сайта, проект fppplumbing-preview. Access это вход по почте на тестовом адресе.</p>
+<h2>До дня переезда (сделано или делается заранее)</h2>
+<ul>
+<li>Зона fppplumbing.com добавлена в аккаунт Дениса (один шаг в панели, docs/dns-before-move.md), записи сверены скриптом <code>python3 tools/dns_zone.py check</code>: все записи HOSTiQ стоят один к одному, все без прокси, A и www ведут на HOSTiQ. Две записи google-site-verification тоже там: подтверждение Search Console держится после смены nameservers само.</li>
+<li>Проверка всех адресов скриптом <code>python3 tools/check_migration.py</code>: каждый старый адрес отвечает 200 или правильным 301, title, H1 и описания совпадают с утверждёнными, sitemap и robots в порядке, сборка «как для живого сайта» без noindex (docs/migration-check-2026-10-06.md).</li>
+<li>От Дениса: хостинг HOSTiQ оплачен минимум на 30 дней вперёд, домен с автопродлением (24 декабря 2026), ответ, идёт ли реклама в Google Ads.</li>
+<li>Форма заявки уже работает через функцию Pages и секреты проекта; Turnstile знает оба адреса. На живом домене ничего не меняется.</li>
+</ul>
+<h2>Шаг 1. Подключить Google-теги и собрать сайт как живой (Claude Code, утро дня переезда)</h2>
+<ol>
+<li>Подключить компонент GoogleTags (site/src/components/GoogleTags.astro) в head и GoogleTagsNoscript после body в site/src/layouts/Base.astro, как написано в самом компоненте. Это тег GT-PJ4NVLSP (GA4 и Google Ads через него), Google Ads AW-9807662480 и Tag Manager GTM-NVSNS9FK, те же, что на живом сайте.</li>
+<li>Собрать сайт с <code>SITE_STAGING=0</code>: уходит тег noindex со всех страниц, а заголовок X-Robots-Tag остаётся только для адресов *.pages.dev (так тестовый адрес никогда не попадёт в поиск, а живой домен чистый).</li>
+<li><code>SITE_STAGING=0 python3 tools/check_site.py</code> и <code>python3 tools/check_migration.py</code>: все проверки чистые.</li>
+<li>Выложить в проект Pages (<code>npx wrangler pages deploy dist --project-name fppplumbing-preview --branch main</code>). Тестовый адрес остаётся за Access, поэтому Google его не видит, хотя noindex там уже нет.</li>
+<li>Проверить теги на тестовом адресе из браузера, где есть вход по Access: в консоли браузера должны загрузиться gtag/js и gtm.js после загрузки страницы.</li>
+</ol>
+<p>Почему теги до смены nameservers: правило проекта (Денис, 2 октября 2026). Если реклама идёт, учёт не прерывается ни на час.</p>
+<h2>Шаг 2. Смена nameservers у HOSTiQ (Денис, единственное действие у HOSTiQ)</h2>
+<p>В панели HOSTiQ (управление доменом fppplumbing.com, раздел nameservers): заменить dns1.hostiq.ua и dns2.hostiq.ua на два адреса Cloudflare, которые показала панель при добавлении зоны (вида xxx.ns.cloudflare.com). Больше ничего у HOSTiQ не менять: ни записи DNS, ни хостинг, ни WordPress.</p>
+<p>После этого шага для посетителей не меняется ничего: в зоне Cloudflare A и www ведут на тот же сервер HOSTiQ без прокси, почта на тех же записях.</p>
+<h2>Шаг 3. Ждать, пока зона станет активной (Claude Code проверяет)</h2>
+<ul>
+<li>Проверка: <code>dig +short NS fppplumbing.com @1.1.1.1</code> показывает адреса Cloudflare; <code>python3 tools/dns_zone.py check</code> показывает status active. Обычно от минут до нескольких часов, в правилах DNS до двух суток.</li>
+<li>Сертификат (окно сертификата): после активации Cloudflare сам выпускает сертификат для домена (Universal SSL). Пока он не выпущен, включать прокси нельзя: посетители увидят ошибку сертификата. Проверка по API (<code>/zones/&lt;id&gt;/ssl/certificate_packs</code>, статус active) или в панели SSL/TLS, Edge Certificates. Обычно минуты, редко до суток.</li>
+<li>Проверить почту: письмо на request@fppplumbing.com с другого ящика и ответ с него (Денис). MX не менялся, но проверка обязательна.</li>
+</ul>
+<h2>Шаг 4. Переключение (одно движение, Claude Code с Денисом на связи)</h2>
+<ol>
+<li>Привязать домены к проекту Pages: fppplumbing.com и www.fppplumbing.com (панель Cloudflare, Workers &amp; Pages, проект fppplumbing-preview, Custom domains, Set up a custom domain; или по API). Cloudflare предложит создать записи сам: согласиться. В зоне запись A fppplumbing.com заменяется на CNAME fppplumbing.com → fppplumbing-preview.pages.dev с прокси, запись www тоже. С этой секунды сайт отдаёт Cloudflare Pages. (Если делать по API, записи DNS ставит <code>python3 tools/dns_zone.py</code> с токеном из скрытого окна, как при копировании.)</li>
+<li>Правило www → fppplumbing.com: в зоне Rules, Redirect Rules, Create rule: если Hostname equals www.fppplumbing.com, то Dynamic redirect, выражение <code>concat("https://fppplumbing.com", http.request.uri.path)</code>, код 301, Preserve query string включить. На живом сайте www отвечает 301 на fppplumbing.com, это правило повторяет то же.</li>
+<li>Always Use HTTPS: в SSL/TLS, Edge Certificates проверить, что включено (http → https 301, как сейчас). Режим шифрования Full (strict) можно включить сразу: Pages говорит с Cloudflare по https.</li>
+</ol>
+<p>Откат с этого шага: docs/rollback.md, раздел «Быстрый откат», минуты.</p>
+<h2>Шаг 5. Проверки сразу после переключения (Claude Code)</h2>
+<ul>
+<li><code>curl -sI https://fppplumbing.com/</code> отвечает 200, в заголовках server: cloudflare, нет X-Robots-Tag; в HTML нет <code>&lt;meta name="robots" content="noindex"&gt;</code>.</li>
+<li>https://www.fppplumbing.com/ отвечает 301 на https://fppplumbing.com/; http://fppplumbing.com/ отвечает 301 на https.</li>
+<li><code>python3 tools/check_migration.py --live https://fppplumbing.com</code>: все 64 адреса и все старые адреса отвечают как в проверке до переезда.</li>
+<li>Страница /?attachment_id=3509 отвечает 301 на /gallery/ (функция Pages работает на живом домене).</li>
+<li>Телефонные ссылки на главной открывают номер (Денис с телефона).</li>
+<li>Форма: одна настоящая заявка с fppplumbing.com (Денис), она приходит в Telegram и на экране стоит галочка.</li>
+<li>Теги: в GA4 в реальном времени виден визит (Денис открывает сайт с телефона, Claude Code или чат смотрит отчёт Realtime по доступу Дениса), Google Ads и Tag Manager загружаются.</li>
+<li>Почта: ещё одно письмо туда и обратно.</li>
+</ul>
+<h2>Шаг 6. Search Console и остальное (в тот же день)</h2>
+<ul>
+<li>Search Console, собственность fppplumbing.com (домен): раздел Sitemaps: добавить https://fppplumbing.com/sitemap.xml; старый sitemap_index.xml теперь отвечает 301 на него. Запросить индексирование главной, Frisco, Plano и emergency (URL Inspection, Request indexing).</li>
+<li>Google Business Profile: ссылки на сайт не меняются (те же адреса /plumber-frisco-tx/ и /plumber-plano-tx/); ничего не делать.</li>
+<li>Yelp, Thumbtack, BBB, соцсети: адреса те же; ничего не делать.</li>
+<li>Журнал проекта: запись о переезде со временем каждого шага и результатами проверок.</li>
+</ul>
+<h2>Что остаётся как есть</h2>
+<ul>
+<li>Тестовый адрес fppplumbing-preview.pages.dev остаётся за Access и с X-Robots-Tag noindex: так у сайта нет открытой копии.</li>
+<li>WordPress и хостинг HOSTiQ не трогаются минимум 30 дней: это откат. Зона DNS у HOSTiQ тоже остаётся, как была.</li>
+<li>Секреты формы живут в проекте Pages; старая форма WordPress остаётся на старом сайте и больше никому не видна.</li>
+<li>Записи почты (MX, SPF, DKIM, DMARC) один к одному; два улучшения почты из docs/dns-before-move.md делаются отдельно и позже.</li>
+</ul>
+<h2>Через 30 дней (отдельное решение Дениса)</h2>
+<p>Если за 30 дней не понадобился откат: решение, что делать с хостингом HOSTiQ. Копию WordPress (файлы и база) сохранить перед любым отключением. Это не часть переезда.</p></main></body></html>

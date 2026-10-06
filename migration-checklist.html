@@ -1,0 +1,193 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 02:30</p><h1>Переезд на Cloudflare Pages: список готовности</h1>
+<p>Составлен 6 октября 2026, ночью, по решению Дениса «Хочу сейчас» (01:28): переезд готовим сейчас, не дожидаясь остальных страниц. Непереписанные страницы переезжают со старым текстом и точечными правками, как стоят на тестовом сайте; переписывание продолжается в прежнем порядке, следующая Little Elm.</p>
+<p>Что здесь не делается ни при каких условиях: живой сайт, WordPress, DNS у HOSTiQ и nameservers не трогаются. Само переключение будет отдельным шагом только по прямой просьбе Дениса.</p>
+<p>Слова: nameservers это два адреса, которые говорят интернету, где искать записи домена; сейчас они у HOSTiQ. Зона это набор записей домена (куда ведёт сайт, куда ходит почта). Pages это хостинг Cloudflare, где стоит новый сайт. Access это вход по почте, который закрывает тестовый адрес.</p>
+<h2>Таблица</h2>
+<p>Статус на 6 октября 2026, ночь. Обновляется по мере работы.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Пункт из правил проекта</th>
+<th>Готово?</th>
+<th>Что осталось</th>
+<th>Кто</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Google-теги подключены в день переезда, до смены nameservers, и проверены</td>
+<td>нет, по плану</td>
+<td>Компонент site/src/components/GoogleTags.astro готов (тег GT-PJ4NVLSP с GA4 и Google Ads, Google Ads AW-9807662480, Tag Manager GTM-NVSNS9FK). В день переезда: подключить в Base.astro, собрать, выложить, проверить через Tag Assistant. Делается только в день переезда, по правилу</td>
+<td>Claude Code, день переезда</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Каждый старый адрес отвечает 200 или правильным 301 на новом сайте</td>
+<td>да, скриптом</td>
+<td>414 адресов проверены на сборке «как для живого сайта»: 83 отвечают 200, 318 одним 301 на страницу с 200, 13 старых 404 были 404 и на живом сайте (docs/migration-check-2026-10-06.md). Шесть адресов ?attachment_id= отвечает функция Pages; на тестовом адресе её можно увидеть только из браузера с входом: https://fppplumbing-preview.pages.dev/?attachment_id=3509 должен открыть страницу /gallery/ (Денис, один клик). После переезда та же проверка на живом домене: <code>python3 tools/check_migration.py --live https://fppplumbing.com</code></td>
+<td>Claude Code</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Title, H1 и описание совпадают с утверждёнными текстами</td>
+<td>да, скриптом</td>
+<td>63 собранные страницы сверены с файлами текстов (переписанные) и с обходом живого сайта: каждое отличие либо переписанная страница, либо точечная правка из журнала правок; без записи ни одного</td>
+<td>Claude Code</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Форма доставляет заявки в Telegram</td>
+<td>да</td>
+<td>Сделано 6 октября (тест Дениса пришёл). На живом домене меняется только то, что функция и секреты живут в том же проекте Pages: ничего. Контрольная настоящая заявка после переезда</td>
+<td>Денис, после переезда</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Телефонные ссылки работают</td>
+<td>да, скриптом</td>
+<td>Обе tel: ссылки офисов стоят на каждой из 63 страниц; нажатие с телефона проверяет Денис после переезда</td>
+<td>Claude Code</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Шаг снятия noindex описан</td>
+<td>да</td>
+<td>docs/switch-day-plan.md, шаг 1: сборка с SITE_STAGING=0 снимает noindex со страниц, заголовок X-Robots-Tag остаётся только для адресов *.pages.dev</td>
+<td>Claude Code</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Sitemap и robots готовы</td>
+<td>да, скриптом</td>
+<td>sitemap.xml: 63 адреса, каждый собранная страница; robots.txt: группы для всех нужных роботов без запретов, строка Sitemap; старые адреса Yoast (sitemap_index.xml и три части) отвечают 301 на /sitemap.xml</td>
+<td>Claude Code</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Search Console: собственность подтверждена</td>
+<td>да, через DNS</td>
+<td>Собственность fppplumbing.com подтверждена двумя записями google-site-verification в DNS. Эти записи копируются в зону Cloudflare один к одному (пункт 5); после смены nameservers подтверждение держится само. Проверить в Search Console в день переезда</td>
+<td>Claude Code (копия записей), Денис (вход в Search Console)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Инструкция отката написана</td>
+<td>да</td>
+<td>docs/rollback.md</td>
+<td>Claude Code</td>
+</tr>
+</tbody>
+</table>
+<h2>Что добавилось к списку из правил</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Пункт</th>
+<th>Готово?</th>
+<th>Что осталось</th>
+<th>Кто</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>Снимок DNS до переезда: все записи домена как они отвечают сейчас, где живёт почта request@</td>
+<td>да</td>
+<td>docs/dns-before-move.md: 15 записей для копирования, почта request@ в Google Workspace, регистратор и срок домена</td>
+<td>Claude Code</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Зона fppplumbing.com в аккаунте Cloudflare Дениса, записи скопированы один к одному, почта без прокси</td>
+<td>нет, ждёт шага Дениса</td>
+<td>В аккаунте зон нет; вход Claude Code в Cloudflare умеет только читать зоны и не умеет их создавать. Один шаг Дениса в панели (добавить домен, docs/dns-before-move.md, последний раздел), потом <code>python3 tools/dns_zone.py check</code> сверяет записи со снимком, а недостающие добавляет <code>zsh tools/dns_token.sh</code> с токеном из скрытого окна</td>
+<td>Денис (один шаг в панели), Claude Code (сверка и записи)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>План дня переезда</td>
+<td>да</td>
+<td>docs/switch-day-plan.md</td>
+<td>Claude Code</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Отзывы на сайте сверены с живыми профилями</td>
+<td>да, скриптом, кроме оценок</td>
+<td>44 отзыва на 15 страницах слово в слово как в архиве платформ, ссылки на источник отвечают, один человек на одной странице (exports/reviews-check.md). Оценки 5.0 и число отзывов скрипт с Google прочитать не может: это проверка в браузере в день переезда, по правилу Дениса</td>
+<td>Claude Code</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Домен fppplumbing.com и www привязаны к проекту Pages</td>
+<td>нет, день переезда</td>
+<td>Делается после того, как зона в Cloudflare стала активной (после смены nameservers); до этого Cloudflare не даёт привязать</td>
+<td>Claude Code, день переезда</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Тестовый адрес остаётся закрытым входом по почте (Access) и с noindex</td>
+<td>да</td>
+<td>После переезда тестовый адрес *.pages.dev остаётся закрытым: так он не станет копией сайта для Google. Открытым будет только fppplumbing.com</td>
+<td>ничего не менять</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Turnstile (защита формы) знает живой домен</td>
+<td>да</td>
+<td>В виджете стоят оба адреса: fppplumbing-preview.pages.dev и fppplumbing.com</td>
+<td>ничего не менять</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Хостинг HOSTiQ оплачен ещё минимум на 30 дней после переезда, WordPress не удаляется</td>
+<td>нужно слово Дениса</td>
+<td>Денис проверяет срок оплаты хостинга в панели HOSTiQ. Домен fppplumbing.com продлевается 24 декабря 2026 (регистратор Registrar.eu через HOSTiQ): проверить автопродление</td>
+<td>Денис</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Google Ads: идёт ли реклама сейчас</td>
+<td>нужно слово Дениса</td>
+<td>Если реклама идёт, теги подключаются в тот же день до смены nameservers, чтобы учёт конверсий не прервался; если нет, ничего не меняется</td>
+<td>Денис</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Почта request@fppplumbing.com работает после переезда</td>
+<td>по плану</td>
+<td>Почта живёт в Google Workspace (MX smtp.google.com), к хостингу не привязана; записи MX, SPF, DKIM, DMARC копируются в зону без прокси; проверка письмом туда и обратно после смены nameservers</td>
+<td>Claude Code (записи), Денис (письмо)</td>
+</tr>
+<tr>
+<td>20</td>
+<td>www.fppplumbing.com ведёт на fppplumbing.com, как сейчас</td>
+<td>по плану</td>
+<td>На живом сайте www отвечает 301 на fppplumbing.com. В Cloudflare это правило переадресации зоны (Redirect Rule), ставится в день переезда</td>
+<td>Claude Code, день переезда</td>
+</tr>
+</tbody>
+</table>
+<h2>Что нужно от Дениса (не сейчас, а когда он скажет «переезжаем»)</h2>
+<ol>
+<li>Один шаг в панели Cloudflare: добавить домен fppplumbing.com в свой аккаунт (пошагово в docs/dns-before-move.md). Nameservers при этом не менять: Cloudflare покажет два своих адреса, их пока только записать.</li>
+<li>Сказать, оплачен ли хостинг HOSTiQ ещё минимум на 30 дней после переезда и стоит ли автопродление домена (24 декабря 2026).</li>
+<li>Сказать, идёт ли сейчас реклама в Google Ads.</li>
+<li>В день переезда: сменить nameservers в панели HOSTiQ на два адреса Cloudflare. Это единственное, что меняется у HOSTiQ, и только по его решению.</li>
+<li>После переезда: одна настоящая заявка через форму на fppplumbing.com и одно письмо на request@fppplumbing.com.</li>
+</ol></main></body></html>

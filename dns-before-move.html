@@ -1,0 +1,163 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 02:30</p><h1>DNS домена fppplumbing.com до переезда</h1>
+<p>Снято 6 октября 2026 около 02:00 по Далласу прямо с nameserver HOSTiQ (dns1.hostiq.ua), сырые ответы в <code>exports/dns/fppplumbing.com-2026-10-06.txt</code>, список для копирования в <code>exports/dns/records-expected.json</code>. Ничего не менялось: это снимок.</p>
+<p>Слова: запись A говорит, на каком сервере сайт; CNAME это псевдоним на другое имя; MX говорит, какой сервер принимает почту; TXT это текстовые записи (SPF и DKIM защищают почту от подделки, DMARC говорит получателям, что делать с подделкой, google-site-verification подтверждает Search Console). TTL это сколько секунд интернет помнит ответ. «Без прокси» значит, что Cloudflare только отвечает на запрос DNS и не пропускает трафик через себя (в панели это серое облако).</p>
+<h2>Кто что держит</h2>
+<ul>
+<li>Nameservers: dns1.hostiq.ua и dns2.hostiq.ua (HOSTiQ). Меняются в панели HOSTiQ, в день переезда, только Денисом.</li>
+<li>Регистратор домена: Registrar.eu (Hosting Concepts B.V.), через HOSTiQ. Домен создан 24 декабря 2024, продлевается 24 декабря 2026. Статус clientTransferProhibited: домен заперт от переноса, это нормально.</li>
+<li>Сайт: A запись ведёт на 162.247.155.224, общий сервер HOSTiQ (LiteSpeed, WordPress). www отвечает 301 на fppplumbing.com; http отвечает 301 на https; сайт отдаёт HSTS на год с includeSubDomains.</li>
+<li>Почта request@fppplumbing.com: Google Workspace (MX smtp.google.com). К хостингу HOSTiQ она не привязана: переезд сайта почту не трогает, если записи MX, SPF, DKIM и DMARC скопированы один к одному.</li>
+<li>Записей AAAA (IPv6) и CAA нет. Подстановочной записи (*) нет. Имён autodiscover, autoconfig, google._domainkey нет.</li>
+</ul>
+<h2>Все записи, как они отвечают сейчас</h2>
+<table>
+<thead>
+<tr>
+<th>Имя</th>
+<th>Тип</th>
+<th>Значение</th>
+<th>TTL</th>
+<th>Для чего и как копировать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fppplumbing.com</td>
+<td>A</td>
+<td><code>162.247.155.224</code></td>
+<td>1200</td>
+<td>the WordPress site at HOSTiQ; DNS only until the last step of the switch day, then the Pages domain</td>
+</tr>
+<tr>
+<td>fppplumbing.com</td>
+<td>MX</td>
+<td><code>1 smtp.google.com</code></td>
+<td>1200</td>
+<td>mail of request@ at Google Workspace; never proxied</td>
+</tr>
+<tr>
+<td>fppplumbing.com</td>
+<td>TXT</td>
+<td><code>v=spf1 +a +mx +ip4:162.247.152.67 ~all</code></td>
+<td>1200</td>
+<td>SPF, as it is (the ip4 is the HOSTiQ outgoing mail server)</td>
+</tr>
+<tr>
+<td>fppplumbing.com</td>
+<td>TXT</td>
+<td><code>google-site-verification=ZRf3Q97paZA9xWU2KhBEFiawW-wE5Hh03JgHOgoiCvc</code></td>
+<td>1200</td>
+<td>Search Console verification, as it is</td>
+</tr>
+<tr>
+<td>fppplumbing.com</td>
+<td>TXT</td>
+<td><code>google-site-verification=IPE6G2RnGA1na1_wxBUA7iV1IPz5oC9vT9FHsE7HvGM</code></td>
+<td>1200</td>
+<td>Search Console verification, as it is</td>
+</tr>
+<tr>
+<td>www.fppplumbing.com</td>
+<td>CNAME</td>
+<td><code>fppplumbing.com</code></td>
+<td>1200</td>
+<td>www; DNS only until the last step, then the Pages domain</td>
+</tr>
+<tr>
+<td>mail.fppplumbing.com</td>
+<td>CNAME</td>
+<td><code>fppplumbing.com</code></td>
+<td>1200</td>
+<td>cPanel name, kept for the 30 days of rollback</td>
+</tr>
+<tr>
+<td>webmail.fppplumbing.com</td>
+<td>A</td>
+<td><code>162.247.155.224</code></td>
+<td>1200</td>
+<td>cPanel service name at HOSTiQ, kept for the 30 days of rollback</td>
+</tr>
+<tr>
+<td>ftp.fppplumbing.com</td>
+<td>A</td>
+<td><code>162.247.155.224</code></td>
+<td>1200</td>
+<td>cPanel service name at HOSTiQ, kept for the 30 days of rollback</td>
+</tr>
+<tr>
+<td>cpanel.fppplumbing.com</td>
+<td>A</td>
+<td><code>162.247.155.224</code></td>
+<td>1200</td>
+<td>cPanel service name at HOSTiQ, kept for the 30 days of rollback</td>
+</tr>
+<tr>
+<td>webdisk.fppplumbing.com</td>
+<td>A</td>
+<td><code>162.247.155.224</code></td>
+<td>1200</td>
+<td>cPanel service name at HOSTiQ, kept for the 30 days of rollback</td>
+</tr>
+<tr>
+<td>cpcalendars.fppplumbing.com</td>
+<td>A</td>
+<td><code>162.247.155.224</code></td>
+<td>1200</td>
+<td>cPanel service name at HOSTiQ, kept for the 30 days of rollback</td>
+</tr>
+<tr>
+<td>cpcontacts.fppplumbing.com</td>
+<td>A</td>
+<td><code>162.247.155.224</code></td>
+<td>1200</td>
+<td>cPanel service name at HOSTiQ, kept for the 30 days of rollback</td>
+</tr>
+<tr>
+<td>_dmarc.fppplumbing.com</td>
+<td>TXT</td>
+<td><code>v=DMARC1; p=none;</code></td>
+<td>1200</td>
+<td>DMARC, as it is</td>
+</tr>
+<tr>
+<td>default._domainkey.fppplumbing.com</td>
+<td>TXT</td>
+<td><code>v=DKIM1; k=rsa; p=MIIB… (ключ целиком в exports/dns/records-expected.json)</code></td>
+<td>1200</td>
+<td>DKIM key of the HOSTiQ server (cPanel selector default), as it is</td>
+</tr>
+</tbody>
+</table>
+<p>Плюс NS (dns1.hostiq.ua, dns2.hostiq.ua) и SOA, которые в Cloudflare будут свои и не копируются.</p>
+<h2>Две вещи про почту, которые видны из записей (не для переезда, на потом)</h2>
+<ol>
+<li>SPF <code>v=spf1 +a +mx +ip4:162.247.152.67 ~all</code> разрешает слать письма от имени домена серверу HOSTiQ (так шлёт форма WordPress) и серверу из A записи, но не Google. Письма, которые Денис шлёт из Gmail с адреса request@, проходят SPF как «мягкий отказ» (~all). Чтобы это починить, в SPF добавляется <code>include:_spf.google.com</code>. Это не делается при переезде (правило «один к одному»), это отдельное решение Дениса после.</li>
+<li>DKIM для Google Workspace не настроен (нет записи google._domainkey). Настраивается в Google Admin, Gmail, Authenticate email; тоже после переезда и отдельно.</li>
+</ol>
+<p>Оба пункта не мешают переезду и не меняют его шаги.</p>
+<h2>Что нужно от Дениса, чтобы снимок был полным</h2>
+<p>Ничего обязательного. dig отвечает только на имена, которые у него спрашивают: все стандартные имена cPanel и почты проверены, ключ DKIM найден, Search Console найдена. Единственное, чего dig не увидит, это записи с нестандартным именем, если такие есть. Если Денис хочет полной уверенности: в панели HOSTiQ (cPanel) открыть Zone Editor и прислать скриншот списка записей домена; доступ в саму панель не нужен. Если не пришлёт, список выше считается полным: сайт, обход 64 страниц и письма ссылаются только на эти имена.</p>
+<h2>Зона в Cloudflare: один шаг Дениса в панели (пункт 11 списка)</h2>
+<p>Вход Claude Code в Cloudflare (wrangler, под request@fppplumbing.com) умеет читать зоны и выкладывать сайт, но не умеет создавать зону и писать в неё записи. В аккаунте сейчас зон нет. Поэтому один раз в панели, около пяти минут, когда Денис скажет, что готовим переезд дальше:</p>
+<ol>
+<li>Открыть https://dash.cloudflare.com, войти (тот же вход, что для Access).</li>
+<li>Кнопка <strong>Add a domain</strong> (или <strong>Onboard a domain</strong>). Вписать <code>fppplumbing.com</code>. Оставить «Quick scan for DNS records», нажать <strong>Continue</strong>.</li>
+<li>Тариф: <strong>Free</strong>. <strong>Continue</strong>.</li>
+<li>Cloudflare покажет найденные записи. Ничего не править и не удалять, просто <strong>Continue</strong>: сверку и недостающие записи сделает Claude Code по таблице выше.</li>
+<li>Страница «Change your nameservers»: Cloudflare покажет два своих адреса вида <code>xxx.ns.cloudflare.com</code>. <strong>Ничего не менять у HOSTiQ.</strong> Эти два адреса пригодятся в день переезда. Нажать <strong>Continue</strong> или просто закрыть страницу. Зона останется в состоянии Pending, это правильно.</li>
+<li>Написать Claude Code: «зона добавлена».</li>
+</ol>
+<p>Дальше Claude Code читает зону (<code>python3 tools/dns_zone.py check</code>) и сравнивает с таблицей. Если чего-то не хватает, есть два пути: Денис добавляет записи сам в панели по таблице, или создаёт в Cloudflare токен API с правом «Edit zone DNS» только для fppplumbing.com (My Profile, API Tokens, Create Token, шаблон Edit zone DNS, зона fppplumbing.com) и вставляет его в скрытое окно на Mac (<code>zsh tools/dns_token.sh</code>), после чего <code>python3 tools/dns_zone.py apply</code> добавляет недостающие записи, все без прокси, ничего не удаляя. Токен нигде не записывается; после работы Денис его удаляет в той же панели.</p>
+<p>В зоне до самого последнего шага переезда: A fppplumbing.com и CNAME www ведут на HOSTiQ без прокси, как сейчас. Так после смены nameservers сайт продолжает работать с HOSTiQ, а переключение на новый сайт становится одним движением (и откат тоже), см. docs/switch-day-plan.md.</p></main></body></html>

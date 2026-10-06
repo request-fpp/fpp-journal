@@ -1,0 +1,41 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 02:30</p><h1>Откат переезда</h1>
+<p>Написан 6 октября 2026 ночью, до переезда. Два пути: быстрый, через записи в Cloudflare, и полный, через nameservers у HOSTiQ. Оба работают, потому что WordPress, хостинг HOSTiQ и зона DNS у HOSTiQ после переезда не трогаются минимум 30 дней.</p>
+<p>Когда откат нужен: сайт на новом адресе не открывается или открывается неправильно, и причина не исправляется за несколько минут; форма не доставляет заявки; заметное падение звонков или позиций, которое Денис связывает с переездом. Решение об откате принимает Денис; Claude Code предлагает его, когда видит такую причину.</p>
+<h2>Быстрый откат (минуты; сайт снова отдаёт HOSTiQ, nameservers остаются у Cloudflare)</h2>
+<ol>
+<li>В зоне fppplumbing.com в Cloudflare (DNS, Records): запись <code>fppplumbing.com</code> вернуть на A 162.247.155.224, без прокси (серое облако), TTL 5 минут; запись <code>www</code> вернуть на CNAME fppplumbing.com, без прокси. Это снимает записи, которые ставила привязка к Pages.</li>
+<li>В проекте Pages (Workers &amp; Pages, fppplumbing-preview, Custom domains) удалить fppplumbing.com и www.fppplumbing.com. Сайт на тестовом адресе и его секреты не трогать.</li>
+<li>Правило переадресации www → fppplumbing.com отключить (оно действует только с прокси, но пусть не мешает).</li>
+<li>Проверка: <code>dig +short fppplumbing.com A @1.1.1.1</code> показывает 162.247.155.224; https://fppplumbing.com/ открывает WordPress (в заголовках server: LiteSpeed). У записей без прокси TTL короткий, поэтому возврат виден за минуты.</li>
+<li>Сертификат: у HOSTiQ сертификат AutoSSL выпущен на 90 дней и после переезда не продлевается (проверка продления требует, чтобы домен вёл на HOSTiQ). В первые недели после переезда он ещё действует; если откат случился поздно и браузер ругается на сертификат, в cPanel HOSTiQ запустить AutoSSL заново, он выпускается за минуты, когда домен снова ведёт на HOSTiQ.</li>
+</ol>
+<p>Почта при быстром откате не затрагивается: записи MX, SPF, DKIM, DMARC не менялись.</p>
+<p>Кто делает: Claude Code через API с токеном из скрытого окна (zsh tools/dns_token.sh, тот же путь, что при копировании записей) или Денис в панели по пунктам 1 и 2. Пункт 2 нужен, чтобы Pages не считал домен своим.</p>
+<h2>Полный откат (от часа до двух суток; всё как до переезда)</h2>
+<ol>
+<li>В панели HOSTiQ вернуть nameservers на dns1.hostiq.ua и dns2.hostiq.ua. Это делает Денис.</li>
+<li>Зона у HOSTiQ хранит все записи, как были (их никто не менял), поэтому сайт, почта и Search Console возвращаются к состоянию до переезда по мере того, как интернет узнаёт новые nameservers (TTL записей NS у регистратора до двух суток, обычно часы).</li>
+<li>Зону в Cloudflare не удалять: она пригодится для второй попытки. Проект Pages не удалять.</li>
+<li>Проверка: <code>dig +short NS fppplumbing.com @1.1.1.1</code> показывает dns1.hostiq.ua и dns2.hostiq.ua; https://fppplumbing.com/ отвечает WordPress.</li>
+</ol>
+<h2>Чего не делать в 30 дней после переезда</h2>
+<ul>
+<li>Не удалять и не отключать WordPress, хостинг HOSTiQ и зону DNS у HOSTiQ.</li>
+<li>Не удалять записи google-site-verification ни в одной из зон.</li>
+<li>Не удалять проект Pages, его секреты и виджет Turnstile.</li>
+<li>Не менять записи почты.</li>
+</ul>
+<h2>Если откат случился: что дальше</h2>
+<p>Причина записывается в журнал. Новый сайт продолжает жить на тестовом адресе, ошибка исправляется там, и переезд повторяется по docs/switch-day-plan.md с шага 4 (если nameservers остались у Cloudflare) или с шага 2 (после полного отката).</p></main></body></html>
