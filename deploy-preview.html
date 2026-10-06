@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 05:00</p><h1>Предпросмотр нового сайта на Cloudflare: как выложить и как закрыть паролем</h1>
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 05:16</p><h1>Предпросмотр нового сайта на Cloudflare: как выложить и как закрыть паролем</h1>
 <p>Предпросмотр живёт по адресу https://fppplumbing-preview.pages.dev. Домен fppplumbing.com и DNS не трогаем. На каждой странице стоит запрет для поисковиков (noindex), а вход будет только по вашей почте.</p>
 <h2>Шаг 1. Вход в Cloudflare (уже сделан)</h2>
 <p>Вы уже вошли командой <code>npx --yes wrangler@latest login</code> (папка проекта, локальный Node). Повторять не нужно. Если когда-нибудь вход слетит: откройте Терминал, вставьте две строки и подтвердите вход в браузере.</p>
@@ -44,6 +44,13 @@ npx --yes wrangler@latest login
 <li>Поисковики сайт не увидят: на каждой странице стоит noindex, и Cloudflare отдаёт тот же запрет в заголовке.</li>
 <li>Живой сайт fppplumbing.com на WordPress работает как раньше. Переключение домена будет отдельным шагом, только когда вы сами скажете.</li>
 </ul>
+<h2>Порядок выкладки после переезда (с 6 октября 2026)</h2>
+<p>Сайт живёт на fppplumbing.com, поэтому каждая выкладка на main сразу видна всем. Чтобы страница публиковалась только после «да» Дениса, два адреса и одна команда:</p>
+<ul>
+<li>Черновой адрес: <code>zsh tools/deploy.sh draft</code> собирает сайт с noindex и кладёт его в ветку draft проекта Pages: https://draft.fppplumbing-preview.pages.dev. Вход по почте (Cloudflare Access), в поиск не попадает (noindex на каждой странице и заголовок X-Robots-Tag). Денис смотрит новую страницу здесь.</li>
+<li>Живой домен: после его «да» <code>zsh tools/deploy.sh live</code> собирает сайт без noindex (SITE_STAGING=0), проверяет сборку, выкладывает в ветку main (это fppplumbing.com) и сообщает Bing об изменённых адресах (IndexNow). Скрипт не выложит на живой домен сборку с noindex или без тегов Google.</li>
+</ul>
+<p>Текст для чата: «Новая версия страницы идёт на черновой адрес https://draft.fppplumbing-preview.pages.dev (вход по почте, noindex). Денис говорит "да", и Claude Code выкладывает её на fppplumbing.com командой <code>zsh tools/deploy.sh live</code>. Без "да" на живой домен ничего не уходит.»</p>
 <h2>Шаг 4. Форма заявки в Telegram (сделано 6 октября 2026)</h2>
 <p>Форма Request Service на каждой странице шлёт заявку на адрес /api/request. Его принимает функция Pages из папки site/functions (файл api/request.ts): она выкладывается той же командой, что и сайт, вместе с ним. Функция проверяет Turnstile на сервере и отправляет заявку одним текстом в чат Дениса через его бота; заявки нигде не хранятся.</p>
 <p>Секреты проекта Pages (значения нигде не записаны, в команды не вставляются): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, TURNSTILE_SECRET_KEY. Если ключ бота когда-нибудь сменится, Claude Code запускает <code>zsh tools/form_secrets.sh</code>: на экране Mac открывается окно со скрытым полем, Денис вставляет ключ, дальше всё уходит в секреты само. Публичный ключ сайта Turnstile стоит в site/src/lib/site.ts.</p>
