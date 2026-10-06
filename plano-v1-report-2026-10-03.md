@@ -166,6 +166,11 @@
 
 Вопросы отчёта закрыты.
 
+## 5 октября, ночь: фото фургона на первом экране
+
+- Твоё фото фургона у входа в здание 5700 Tennyson Pkwy стоит на первом экране справа от текста, как на Frisco, и в картинке для соцсетей. На телефоне оно полосой над текстом.
+- По твоему слову размыты передний номер, знак парковки для инвалидов на асфальте слева и табличка «Reserved parking» на столбе у здания.
+
 ## 5 октября, блок чата: слово в H1 и правки текста
 
 - **H1.** Теперь: «Plumber Plano, TX: Same-Day Help for Clogs, Leaks & Emergencies». Было «& More». Это твоё решение от 5 октября. Начало H1, которым страница ранжируется, осталось слово в слово. Title не менялся.
@@ -358,7 +363,7 @@ A lot of the homes we work in here went up in the 1970s and 1980s, and at that a
 
 A lot of people get to this page by asking their phone for a plumber near me. If the address is in Plano, this is the closest of our two offices.
 
-*[Кнопка «Call Plano» с номером офиса и кнопка «Request Service». Фото на первом экране пока нет: ждём снимок от Дениса.]*
+*[Кнопка «Call Plano» с номером офиса и кнопка «Request Service». Справа фото 302: FPP Plumbing van at the Plano office, 5700 Tennyson Pkwy; номерной знак закрыт.]*
 
 ---
 
