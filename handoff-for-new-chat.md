@@ -504,7 +504,7 @@ Search Console, последние 3 месяца на конец сентябр
 |---|---|---|---|---|
 | Главная | `/` | `source/home-text-v4.md` | 2 840 | закрыта 2 октября, правки только по слову Дениса |
 | Frisco | `/plumber-frisco-tx/` | `source/frisco-text-v4.md` | 3 676 | версия 4 от 3 октября |
-| Plano | `/plumber-plano-tx/` | `source/plano-text-v1.md` | 4 077 | версия 1, закрыта аудитом 5 октября ночью (superseo 62 из 70, claude-seo 93 из 100); дальше только по слову Дениса |
+| Plano | `/plumber-plano-tx/` | `source/plano-text-v1.md` | 4 271 | версия 1, закрыта аудитом 5 октября ночью (superseo 62 из 70, claude-seo 93 из 100); после аудита блок чата с ответами Дениса (5 октября, ночь): 16 правок, седьмой вопрос FAQ, строка переходов и видимая дата; закрывается снова после «да» Дениса на тестовом сайте |
 
 Слова посчитаны `python3 tools/check_text.py <файл>` (вместе с title и description), у всех трёх "PROBLEMS: none". Что стоит на страницах, взято из собранных страниц. Отчёты по страницам открыты по адресу https://fpp-journal.pages.dev/<имя>, имена: home-v4, frisco-v1, frisco-v3, plano-v1, for-chat. Точные тексты страниц, как они стоят сейчас: text-home, text-frisco, text-plano.
 
@@ -570,7 +570,7 @@ Search Console, последние 3 месяца на конец сентябр
 - Title: "Plumber Plano, TX | Fast Plumbing: Clogged Drains & Emergencies"
 - Description: "Slab leaks under the floor, main lines that back up, shut-off valves buried in the yard. Licensed Plano plumbers, upfront pricing, same day service."
 - H1: "Plumber Plano, TX: Same-Day Help for Clogs, Leaks & Emergencies". Последнее слово заменено 5 октября по решению Дениса: на живой странице стоит "& More". Причина в цифрах Search Console за три месяца: у страницы 1 320 запросов, ни в одном нет слова "more", а запросы со словом "emergency" это её самая большая группа по показам, 99 запросов и 6 483 показа. Начало H1, которым страница ранжируется, осталось слово в слово. Title не менялся.
-- Подпись автора как у Frisco, кнопка Call Plano.
+- Подпись автора как у Frisco, кнопка Call Plano. С 5 октября ночью на Plano и на Frisco: под строкой доверия строка переходов «On this page:» с короткими названиями разделов (на телефоне одна строка, листается вбок), у подписи автора видимая дата «Updated October 2026» (в коде полная дата из поля updated, меняется только с текстом).
 - Текст написал чат 3 октября по диктовке Дениса и брифу `docs/plano-brief-2026-10-03.md`. Запись диктовки `source/dictation/2026-10-03-plano.md` это пересказ фактов, не слова Дениса дословно. Дата обновления в разметке 2026-10-05.
 
 **Разделы и пункты по порядку**
@@ -579,17 +579,17 @@ Search Console, последние 3 месяца на конец сентябр
 - "Plano Plumbing by the Age of the House": 1960-е восточнее Highway 75, 1970-е и 1980-е в середине (Parker Road, Independence Parkway), 1990-е и 2000-е западнее Coit Road; Census: медианный год постройки 1993.
 - "Common Plumbing Problems in Plano Homes": раздел открывается прямым ответом, одним предложением, которое называет шесть проблем ("Common plumbing problems in Plano homes include ..."; правка чата 5 октября, слова "are these six" чат снял поздним вечером по замечанию проверяющих). Дальше шесть H3:
   - "Cast iron main drain lines, and no cleanout to work from": в половине домов нет ревизии, заходят через унитаз; унитаз сидит на силиконе и цементе, фланец под ним часто сгнил и его тоже чинят (три фразы по диктовке Дениса, добавлены 5 октября); 2 до 3 часов вместо получаса. Фото 248, 250.
-  - "Kitchen lines and sink drains": жир, 75 футов, салфетки, пост про детский сад. Фото 91.
+  - "Kitchen lines and sink drains": жир, салфетки, пост про детский сад; без 75 футов (Денис: это длина chain snake, «почти commercial grade», стоит во вступлении). Фото 91: барабанная машина с тросом у наружной ревизии, подпись "Clearing a kitchen drain line through an outside cleanout, Plano".
   - "Water heaters on a new tank and an old vent": выпадает внутренняя стенка B-vent, дымоходы без зазора, день вместо 4 до 5 часов. Клип 221.
   - "Outside spigots soldered to the pipe": кран припаян, иногда на трубе из земли; отпаиваем, ставим на резьбу. Клипы 269, 268, 256, 257.
   - "Pipes in outside walls, after a hard freeze": осевший утеплитель, прорывы в наружных стенах, партнёр по сушке. Клип 252 без города.
-  - "Three handle shower valves that won't shut off": замена на одну ручку с накладкой, картриджи старых марок. Клипы 222, 223.
+  - "Three handle shower valves that won't shut off": замена на одну ручку с накладкой, картриджи старых марок; фраза о жёсткой воде с цифрой из отчёта города за 2025 год (total hardness до 200 ppm) и ссылкой на страницу отчётов города. Клипы 222, 223.
 - "Slab Leaks, Main Lines and Buried Valves in Older Plano": "Slab leaks." 20 до 30 ремонтов в Plano, гильза, тоннель, пайка (клип 125, фото 163); "The main water line." (фото 56); "Buried valves, and no PRV." кран закопан примерно в 8 из 10 старых домов (фото 207, чёрная стрелка около 78 PSI); абзац про возврат города за PRV.
 - "What the City of Plano Requires From a Plumbing Contractor": регистрация, пермиты, что город просит под плитой, линия T&P в поддоне на недавнем вызове. Фото 50.
-- "Four Plano Jobs, the Way They Went".
-- "If Water Is Running Right Now": перекрыть воду, городской кран в ящике счётчика, при засоре не пускать воду.
+- "Four Plano Jobs, the Way They Went": открывается строкой-ответом; истории 1 и 2 в двух абзацах, клипы под вторым (271, 272 и 205, 206); у историй 1 и 2 стоит "September 2026", слова recent на странице нет.
+- "Emergency Plumber in Plano: If Water Is Running Right Now" (H2 с 5 октября ночью, по решению Дениса страница города ведёт запросы emergency со своим городом): первая фраза "If you know where the valve is...", перекрыть воду, городской кран в ящике счётчика, при засоре не пускать воду; ссылки на гайд о главном кране и на страницу emergency.
 - "Plano Plumbing Service: From the Call to the Invoice".
-- "Plano Plumbing FAQ" (6).
+- "Plano Plumbing FAQ" (7; седьмой вопрос "How do I pay for a plumbing repair in Plano?" с $49 и способами оплаты; $49 на странице три раза: вступление и этот ответ).
 - "What Plano homeowners say about FPP Plumbing" (4 отзыва).
 - "Our Plumbing Office in Plano, TX": Suite 300, часы 8 до 5 и линия 24/7, шесть ZIP и угол 75094, лицензия, карта. Фото 273 (дверь офиса).
 
@@ -605,7 +605,7 @@ Search Console, последние 3 месяца на конец сентябр
 
 **Картинки: 10 фото и 16 клипов** (клип около пяти секунд, без звука, сам крутится). Сняты: 105 (Денис: не то фото), 216 и 76 (см. ниже). Не ставился 213 (экран камеры, Денис: мало что видно). 202 с вклеенным фургоном не используется. 168 это тот же файл, что 56.
 
-**Внешние ссылки, четыре:** https://www.plano.gov/contractors-architects и https://www.plano.gov/water-conservation-rebates (условия чат сверил 3 октября с документом города, суммы в тексте нет); с 5 октября ещё две. Первая: https://data.census.gov/table/ACSDT5Y2024.B25035?g=160XX00US4858016 под словами "U.S. Census Bureau's estimate", на странице стоит 1993 для Plano city. Вторая: https://www.plano.gov/winter-preparedness под словами "The city's winter advice", на странице есть фраза "Leave indoor faucets dripping and open your sink cabinets during a freeze." Обе страницы Claude Code открыл в браузере 5 октября. Текст на странице города подгружается через несколько секунд после открытия, сначала видны только два ролика. Всего в тексте 41 ссылка и одна в FAQ.
+**Внешние ссылки, пять:** https://www.plano.gov/contractors-architects (регистрация подрядчика, раздел о требованиях города), https://www.plano.gov/water-conservation-rebates (скидка на PRV: город возвращает часть стоимости кредитом на счёт за воду, бумаги в город в течение 120 дней после установки), https://data.census.gov/table/ACSDT5Y2024.B25035?g=160XX00US4858016 (медианный год постройки 1993), https://www.plano.gov/winter-preparedness (зимние советы города, в пункте о трубах в наружных стенах), https://www.plano.gov/water-quality-reports (отчёт города о качестве воды за 2025 год, total hardness до 200 ppm, в пункте о картриджах; на странице города отчёт за 2025 год стоит, проверено 5 октября ночью). Все внешние ссылки открываются в новой вкладке.
 
 **Цифры** (5 октября вечером, после снятия двух фото): Lighthouse телефон 99, компьютер 100, главное содержимое на телефоне за 1,7 с, сдвиг 0,002; вес при загрузке на телефоне 1 335 КБ, клипы 3 322 КБ грузятся по прокрутке; проверка сайта 29 из 29; сдвиг от шрифтов 701 px стал 28 px (замер 3 октября, 5 октября проверка сдвига не нашла). Pangram не запускался.
 
@@ -745,6 +745,7 @@ Search Console, последние 3 месяца на конец сентябр
 - Emergency не первым: «Почему ты с этого не начал?»
 
 **Чего ждёт.** Emergency первым. Ответ по-русски, просто. Отчёт файлом в docs/ и страницей журнала, адрес с датой в конце ответа. О критической ошибке сказать до того, как делать; решает он. Только его факты.
+**5 октября, ночь, блок чата после аудита, ответы Дениса.** запрос «emergency plumber plano» и такие же запросы с городом ведёт страница города, страница emergency ведёт запросы emergency без города и ссылается на города; на Plano и Frisco строка переходов «On this page:» и видимая дата «Updated October 2026» у подписи автора (на других городах появятся с их переписыванием); вторая ссылка на главную как отсылка к разделу разрешена («The six steps in full» на /#how-a-call-works), ссылка «plumber near me» остаётся одна и первая; 75 футов это длина chain snake («почти commercial grade»); даты в историях решил чат: месяц и год у двух историй сентября 2026; оплата седьмым вопросом FAQ («чтобы было для Google и для GPT-чата»); жёсткая вода одной фразой с цифрой отчёта города за 2025 год.
 
 ## 7. Весь материал Дениса: фото, видео и его истории
 
@@ -927,7 +928,7 @@ Search Console, последние 3 месяца на конец сентябр
 
 **78. Kitchen drain line through an outside wall cleanout, chain snake, 75 feet** (вне десяти городов, город не пишем · апрель 2025 · файлы: 129, 296). Слова Дениса (129): «Через наружный cleanout на стене чистим кухонную дренажную линию, chain snake 75 футов» Слова Дениса (296): «Опять забита кухонная линия. Через настенный cleanout чистим её chain snake 75 футов» Отложено: /blog/clogged-kitchen-sink-chain-snake/, /clogged-drain-cleaning-frisco-plano/.
 
-**79. Clearing the kitchen drain line, 75 feet** (Plano · декабрь 2024 · файлы: 91). Слова Дениса: «Кухня: пробиваем дренажную линию, 75 футов» На сайте: /plumber-plano-tx/. Отложено: /clogged-drain-cleaning-frisco-plano/.
+**79. Clearing a kitchen drain line through an outside cleanout** (Plano · декабрь 2024 · файлы: 91). Слова Дениса: «Кухня: пробиваем дренажную линию, 75 футов» На сайте: /plumber-plano-tx/. Отложено: /clogged-drain-cleaning-frisco-plano/.
 
 **80. Milwaukee snake clearing the shower drain line** (McKinney · ноябрь 2024 · файлы: 74). Слова Дениса: «Milwaukee snake: пробиваем дренажную линию душа» Отложено: /clogged-drain-cleaning-frisco-plano/.
 

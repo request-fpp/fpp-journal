@@ -2,6 +2,14 @@
 
 Обновлено 5 октября 2026: на страницу поставлены фото и видео Дениса из четырёх партий, записаны его ответы, собран общий список его материала. Ниже сначала эти обновления, потом отчёт от 3 октября.
 
+## 5 октября, ночь: блок чата после аудита
+
+- Шестнадцать правок текста из блока чата встали слово в слово: $49 во вступлении и в вопросе о цене, раздел «Emergency Plumber in Plano: If Water Is Running Right Now», строки-ответы у slab leaks и у четырёх историй, две истории в двух абзацах с клипами под вторым, «September 2026» у двух свежих историй, фраза про жёсткую воду из отчёта города за 2025 год (до 200 ppm, со ссылкой), седьмой вопрос FAQ про оплату, кухня без 75 футов троса (твои слова: это длина chain snake, «почти commercial grade»).
+- Фото 91: на нём барабанная машина с тросом, не chain snake, поэтому подпись «Clearing a kitchen drain line through an outside cleanout, Plano».
+- Новое на Plano и на Frisco: строка переходов «On this page:» под строкой доверия (на телефоне одна строка, листается вбок) и видимая дата «Updated October 2026» у подписи автора.
+- Запрос «emergency plumber plano» в карте ключей теперь у страницы Plano. Ссылок в тексте 43 и одна в FAQ, FAQ в разметке семь вопросов. Текст 4 271 слово, как у чата. Проверки: сайт 29 из 29, вёрстка чистая, шрифты без сдвига, Lighthouse на телефоне 97, доступность 100.
+- Страница закрывается снова после твоего «да» на тестовом сайте.
+
 ## 5 октября: фото и видео Дениса, его ответы
 
 Денис прислал 14 файлов. Три из них уже лежали в архиве (фото 29 и 76, видео 125), одиннадцать новых получили номера с 205 по 215. По месту съёмки все они из Plano, кроме кейса с уличным краном: он снят вне десяти городов.
@@ -389,7 +397,7 @@ Then the drains. Drain cleaning is the clog itself: a kitchen line, a tub, a bat
 
 ### H2: Plano Plumbing by the Age of the House
 
-What breaks in a Plano house depends on the year it was built, and that changes from one part of town to the next. Two plumbers in Plano can spend the same day on completely different work. The oldest streets, from the 1960s, are east of Highway 75. The middle of the city, between Highway 75 and Coit Road and south of Legacy Drive, was built mostly in the 1970s and 1980s, and a lot of the houses off Parker Road and along Independence Parkway south of Legacy Drive are around forty years old. That's where we find cast iron under the floor, slab leaks, and copper that has been in the ground since the house was built.
+What breaks in a Plano house depends on the year it was built, and that changes from one part of town to the next. Two plumbers in Plano can spend the same day on completely different work. The oldest streets, from the 1960s, are east of Highway 75. The middle of the city, between Highway 75 and Coit Road and south of Legacy Drive, was built mostly in the 1970s and 1980s, and a lot of the houses there, off Parker Road and along Independence Parkway, are around forty years old. That's where we find cast iron under the floor, slab leaks, and copper that has been in the ground since the house was built.
 
 West of Coit Road and up around Legacy Drive the houses are from the 1990s and 2000s. Our office is in that part of town, and the calls there are different: water heaters at the end of their life, garbage disposals, faucets, sink drains, a leak coming through a ceiling, and after a hard freeze, pipes in the attic. Newer doesn't mean nothing breaks. By the U.S. Census Bureau's estimate the median year built for a home in Plano is 1993, so about half the homes in the city are older than that, and that older half is where the heavy Plano plumbing work is.
 
@@ -407,9 +415,9 @@ In the older houses the drain lines under the floor are cast iron. After forty y
 
 ### Kitchen lines and sink drains
 
-Not every clog is the main line. A slow drain in the kitchen is usually grease. The kitchen line in one of these houses has been taking it for decades, and some of these lines are long: on one Plano kitchen line the cable went in 75 feet. The cable opens a line like that. The deep clean is the chain snake. Bathroom sinks fill up with hair and soap. Where the air conditioner drains into the same pipe, the first sign is water inside the cabinet. And then there are wet wipes. We've pulled them out of a shower drain, and at a daycare here they blocked the whole main line. That story is here: a daycare whose main drain line was packed with wipes. Unclogging any of these is on the drain cleaning page.
+Not every clog is the main line. A slow drain in the kitchen is usually grease, and the kitchen line in one of these houses has been taking it for decades. A cable opens a line like that. The deep clean is the chain snake: ours has 75 feet of cable, and it's close to a commercial grade machine. Bathroom sinks fill up with hair and soap. Where the air conditioner drains into the same pipe, the first sign is water inside the cabinet. And then there are wet wipes. We've pulled them out of a shower drain, and at a daycare here they blocked the whole main line. That story is here: a daycare whose main drain line was packed with wipes. Unclogging any of these is on the drain cleaning page.
 
-*[Рядом фото 91: Clearing the kitchen drain line, 75 feet, Plano]*
+*[Рядом фото 91: Clearing a kitchen drain line through an outside cleanout, Plano]*
 
 ### Water heaters on a new tank and an old vent
 
@@ -431,7 +439,7 @@ Insulation in a wall that is thirty to fifty years old has worn out and settled,
 
 ### Three handle shower valves that won't shut off
 
-Bathroom plumbing in these houses still means three handle tub and shower valves: hot, cold, and the diverter between them. After decades the valve stops closing all the way. It drips into the tub, or it leaks inside the wall where nobody sees it. Faucet repair in these bathrooms is often just a cartridge, and some cartridges come from old brands the regular stores don't carry any more. When the valve itself is done, we replace it with a single handle valve in the same wall and cover the opening with a plate, so the tile stays where it is. One of those jobs, start to finish: a 3 handle shower converted to a single handle valve. The faucet and shower valve repair page goes deeper.
+Bathroom plumbing in these houses still means three handle tub and shower valves: hot, cold, and the diverter between them. After decades the valve stops closing all the way. It drips into the tub, or it leaks inside the wall where nobody sees it. Hard water has a part in that: the city's 2025 water quality report lists total hardness of up to 200 parts per million, and that calcium wears a cartridge out. Faucet repair in these bathrooms is often just a cartridge, and some cartridges come from old brands the regular stores don't carry any more. When the valve itself is done, we replace it with a single handle valve in the same wall and cover the opening with a plate, so the tile stays where it is. One of those jobs, start to finish: a 3 handle shower converted to a single handle valve. The faucet and shower valve repair page goes deeper.
 
 *[Под текстом рядом: видео 222, 5 секунд без звука: Before: a three handle tub and shower valve, water running from the spout, Plano; видео 223, 5 секунд без звука: After: one handle and a wide cover plate on the same wall, Plano]*
 
@@ -439,11 +447,13 @@ Bathroom plumbing in these houses still means three handle tub and shower valves
 
 ### H2: Slab Leaks, Main Lines and Buried Valves in Older Plano
 
+In the older half of Plano the big repairs are the ones nobody can see, under the slab and out in the yard.
+
 **Slab leaks.** Here they're a regular call: we've repaired twenty to thirty of them in Plano. The water lines under the slab are copper, and they run inside a plastic sleeve. When the copper gets a pinhole under there, the water follows the sleeve up, and the first thing you see is a wet floor inside the house with no pipe anywhere above it. In Plano we go in through a tunnel from outside the house. We cut out the bad copper, replace the line back to where the pipe is still sound, and braze the new joints. Drying the house and the insurance side go through our restoration partner, so you make one call for all of it. Slab leak repair explains the method. Two Plano jobs, told in full: two leaks on one copper line, and a pinhole that came up through the floor.
 
 *[Под текстом рядом: видео 125, 5 секунд без звука: Slab leak: a pinhole spraying from the copper line under the foundation, Plano; фото 163: Slab leak repair: brazing the copper line in the tunnel under the foundation, Plano]*
 
-**The main water line.** From the meter to the house the line is copper, and in these yards it has been in the ground for thirty to fifty years. The ground moves, the copper thins, and pinholes open up. The pipe in the photo is from Plano: pinholes first, and then it rotted through into big holes. Tree roots do the rest, and one of the jobs below is about exactly that. The signs are a wet meter box, a meter that turns with every faucet closed, or a notice from the city about your water use. Water line repair covers how that line gets fixed. We wrote one of these up: a main line leak under a sidewalk.
+**The main water line.** From the meter to the house the line is copper, and in these yards it has been in the ground for thirty to fifty years. The ground moves, and the copper wears thin until pinholes open up. The pipe in the photo is from Plano: pinholes first, and then it rotted through into big holes. Tree roots do the rest, and one of the jobs below is about exactly that. The signs are a wet meter box, a meter that turns with every faucet closed, or a notice from the city about your water use. Water line repair covers how that line gets fixed. We wrote one of these up: a main line leak under a sidewalk.
 
 *[Рядом фото 56: Cut out pipe: pinholes first, then rotted through into big holes, Plano]*
 
@@ -463,17 +473,23 @@ A plumbing contractor has to be registered with the City of Plano before the cit
 
 Under a slab the city asks for more. When a water or sewer line under a house is replaced, the plumber has to bring three things to the inspection: photos of the work, a letter signed by the Responsible Master Plumber with the license number on it, and a drawing of where the new pipe runs.
 
-Water heaters have their own sheet at the city, and one line in it says the relief line may not drain into the pan. On a recent water heater replacement in Plano that's exactly what we found: the relief line from the old heater simply dropped into the pan. A pipe meant to carry that discharge stood in the wall right there, and nobody had ever connected it. We tied the relief line into it.
+Water heaters have their own sheet at the city, and one line in it says the relief line may not drain into the pan. On one water heater replacement in Plano that's exactly what we found: the relief line from the old heater simply dropped into the pan. A pipe meant to carry that discharge stood in the wall right there, and nobody had ever connected it. We tied the relief line into it.
 
 ---
 
 ### H2: Four Plano Jobs, the Way They Went
 
-**Twenty tries to get past one fitting.** A recent emergency call from a house more than forty years old: every toilet, the tub and the shower had backed up, and one toilet was leaking at its base. Outside there was a single cleanout, buried, and it only led toward the city's line. We uncovered it, and that side of the line was clear, so the clog was under the house. There were no cleanouts in the walls. The camera wasn't much help: old cast iron has sharp edges at the turns, and they caught the camera and jammed it about five times. A cast iron line this old is also full of cockroaches, thousands of them. With no other way in, we pulled a toilet. The flange was a little rusty and still good. About five feet in, the branch line meets a fitting, and at that fitting the cable kept turning up into the vent instead of down the drain. Around the twentieth try it went the right way. The line opened, and through the outside cleanout we could see the cable go past. The toilet went back on a new wax ring. The camera still couldn't get past six feet, so nobody had seen the rest of that line. To see it we would have had to go in from the vent on the roof, and the homeowner passed: a replacement of the drain lines was already planned with another contractor. A backup like this one starts as a drain cleaning call.
+Four real jobs from Plano houses: a main drain line that took twenty tries to open, tree roots around a water line, a tee that came apart underground, and a pinhole behind a water heater.
+
+**Twenty tries to get past one fitting.** An emergency call in September 2026, from a house more than forty years old: every toilet, the tub and the shower had backed up, and one toilet was leaking at its base. Outside there was a single cleanout, buried, and it only led toward the city's line. We uncovered it, and that side of the line was clear, so the clog was under the house. There were no cleanouts in the walls. The camera wasn't much help: old cast iron has sharp edges at the turns, and they caught the camera and jammed it about five times. A cast iron line this old is also full of cockroaches, thousands of them.
+
+With no other way in, we pulled a toilet. The flange was a little rusty and still good. About five feet in, the branch line meets a fitting, and at that fitting the cable kept turning up into the vent instead of down the drain. Around the twentieth try it went the right way. The line opened, and through the outside cleanout we could see the cable go past. The toilet went back on a new wax ring. The camera still couldn't get past six feet, so nobody had seen the rest of that line. To see it we would have had to go in from the vent on the roof, and the homeowner passed: a replacement of the drain lines was already planned with another contractor. A backup like this one starts as a drain cleaning call.
 
 *[Под текстом рядом: видео 271, 5 секунд без звука: No cleanout to work from, so the chain snake goes in through the toilet drain: the clog breaks and the water goes down, Plano; видео 272, 5 секунд без звука: After: the toilet back in place and flushing, Plano]*
 
-**The roots that wrapped the water line.** Water was coming up out of the meter box when the homeowner got back from vacation, and the meter was spinning. The city had already sent a notice about the water use. The line from the meter is 3/4 inch copper, and the roots of a tree had wrapped it completely. The tree went in about thirty years ago, one of seven or eight planted in a row. Before a single root was cut, the city had its say. The homeowner sent an email stating that the tree stands on the homeowner's property and belongs to the homeowner, not to the HOA. Building Inspections issued the plumbing permit and passed the tree question to Engineering, and Engineering answered that the tree could come down without a permit. In the end it stayed: the excavation crew dug under the roots and cut about a third of them. The water line itself was broken there. We replaced that section of pipe, and the city's underground inspection passed. Then came the backflow preventer. Our repair was within 10 feet of it, and the city added a backflow inspection to the permit. The city's backflow inspector put it plainly: work that close to an existing assembly, and the assembly has to be tested. In Plano the same goes for any work on a backflow assembly or on the line ahead of it, and the city gets the report of the test. This one couldn't be tested. It sat half buried and it was rusted. The homeowner believed it was thirty-five years old, but the date stamped on it read 2015, week 23. We replaced it. Once the new assembly was in, it got tested and the test report went to the city. Then the permit was closed.
+**The roots that wrapped the water line.** Water was coming up out of the meter box when the homeowner got back from vacation in September 2026, and the meter was spinning. The city had already sent a notice about the water use. The line from the meter is 3/4 inch copper, and the roots of a tree had wrapped it completely. The tree went in about thirty years ago, one of seven or eight planted in a row. Before a single root was cut, the city had its say. The homeowner sent an email stating that the tree stands on their property and belongs to them, not to the HOA. Building Inspections issued the plumbing permit and passed the tree question to Engineering, and Engineering answered that the tree could come down without a permit. In the end it stayed: the excavation crew dug under the roots and cut about a third of them. The water line itself was broken there. We replaced that section of pipe, and the city's underground inspection passed.
+
+Then came the backflow preventer. Our repair was within 10 feet of it, and the city added a backflow inspection to the permit. The city's backflow inspector put it plainly: work that close to an existing assembly, and the assembly has to be tested. In Plano the same goes for any work on a backflow assembly or on the line ahead of it, and the city gets the report of the test. This one couldn't be tested. It sat half buried and it was rusted. The homeowner believed it was thirty-five years old, but the date stamped on it read 2015, week 23. We replaced it. Once the new assembly was in, it got tested and the test report went to the city. Then the permit was closed.
 
 *[Под текстом рядом: видео 205, 5 секунд без звука: Before the dig: water coming up in the meter box, Plano; видео 206, 5 секунд без звука: Dug out: the copper line by the meter with roots around it, water spraying from the line, Plano]*
 
@@ -487,9 +503,9 @@ Water heaters have their own sheet at the city, and one line in it says the reli
 
 ---
 
-### H2: If Water Is Running Right Now
+### H2: Emergency Plumber in Plano: If Water Is Running Right Now
 
-Shut the water off before you pick up the phone. In the older houses the valve by the house may be buried, and the middle of a leak is the wrong time to look for it. The city's valve in the meter box by the curb shuts off the whole house, and the city allows a homeowner to open that box for one purpose: to turn the water on or off. It takes a meter key. Our guide to the main shut-off valve shows both valves. If the sewer is backing up, stop using water in the whole house, and that includes the washing machine and the dishwasher.
+If you know where the valve is, shut the water off before you pick up the phone. In the older houses the valve by the house may be buried, and the middle of a leak is the wrong time to look for it. The city's valve in the meter box by the curb shuts off the whole house, and the city allows a homeowner to open that box for one purpose: to turn the water on or off. It takes a meter key. Our guide to the main shut-off valve shows both valves. If the sewer is backing up, stop using water in the whole house, and that includes the washing machine and the dishwasher.
 
 The Plano line is answered at any hour. For an emergency plumber in Plano, a night call can be a pipe that broke in a freeze or a main line coming up in the tub. The first minutes of a leak or a backup are covered on our emergency plumbing page.
 
@@ -497,7 +513,7 @@ The Plano line is answered at any hour. For an emergency plumber in Plano, a nig
 
 ### H2: Plano Plumbing Service: From the Call to the Invoice
 
-Tell us on the phone what you see, and if water is running, you hear which valve to close. A weekday visit is the $49 service call, and the $49 comes off the repair. The price is one flat number, named before anything is opened. When the job is finished, the invoice lists the work, and the number on it is the one you agreed to. On the bigger jobs there are photos. The six steps in full are on the home page.
+Tell us on the phone what you see, and if water is running, you hear which valve to close. On the visit the plumber finds the problem first. The price is one flat number, named before anything is opened. When the job is finished, the invoice lists the work, and the number on it is the one you agreed to. On the bigger jobs there are photos. The six steps in full are on the home page.
 
 ---
 
@@ -508,6 +524,8 @@ Tell us on the phone what you see, and if water is running, you hear which valve
 **Do you repair water heaters in Plano?** Yes, gas and electric tank water heaters, repair and replacement. A lot of repairs are small: a relief valve, or a heating element on an electric unit. Expansion tanks fill with water and get replaced. When the tank itself leaks, the heater gets replaced, with a city permit and a final inspection. A tank also wants a flush once a year, and that's the maintenance almost nobody does.
 
 **How much does it cost to have a plumber come out in Plano?** On a weekday it's $49. That's the service call: the trip and finding the problem, and the $49 comes off the bill when you approve the repair. Evenings, weekends and holidays cost more: there's an emergency fee tied to the hour, and the amount is named on the phone before the plumber heads out. Nobody drives out for free to write an estimate.
+
+**How do I pay for a plumbing repair in Plano?** After the work is done, and in the way that suits you: a card, Apple Pay, PayPal, Zelle, Venmo, a check or cash. Zelle, a check and cash add nothing to the bill. A card adds a processing fee, and you're told the amount before you pay. A bigger job can be spread out through PayPal Pay Later or Klarna when they approve it, and that decision is theirs. The total is the flat price you approved before the work started.
 
 **Water is leaking at my water meter in Plano. Is that my pipe or the city's?** It depends on which side of the meter the leak is on. The meter itself and the pipe on the street side of it are the city's, and the city repairs them. From the meter to the house the line is yours, and a leak on that side is the homeowner's to fix. Water standing in the meter box can be either one, so call the city's utility department first. If they say it's on your side, that's a job for a plumber.
 
@@ -589,6 +607,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | registered with the City of Plano | https://www.plano.gov/contractors-architects |
 | U.S. Census Bureau's estimate | https://data.census.gov/table/ACSDT5Y2024.B25035?g=160XX00US4858016 |
 | The city's winter advice | https://www.plano.gov/winter-preparedness |
+| the city's 2025 water quality report | https://www.plano.gov/water-quality-reports |
 | drain cleaning | /clogged-drain-cleaning-frisco-plano/ |
 | replaced that section of pipe | /water-lines/ |
 | replaced that piece of the main line | /water-lines/ |
@@ -648,534 +667,418 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 
 | Запрос | Страница Plano, 3 мес | Страница Plano, 16 мес | Главная, 3 мес | Главная, 16 мес | В новом тексте |
 |---|---|---|---|---|---|
-| emergency plumber plano | 469 · 7.4 · 0 | 989 · 31.1 · 0 | 700 · 6.8 · 0 | 6,378 · 12.6 · 6 | да |
-| plumber plano tx | 2,197 · 4.5 · 1 | 3,853 · 23.2 · 3 | 485 · 13.1 · 0 | 3,367 · 25.1 · 2 | да |
-| plumbing plano | 353 · 39.5 · 0 | 838 · 61.0 · 0 | 312 · 12.7 · 0 | 5,214 · 19.1 · 1 | да |
-| plumber plano | 793 · 13.6 · 1 | 2,034 · 29.6 · 1 | 78 · 17.1 · 1 | 3,377 · 16.8 · 3 | да |
-| plumbers plano tx | 243 · 11.2 · 1 | 1,767 · 60.9 · 1 | 87 · 27.1 · 0 | 3,314 · 13.4 · 1 | да |
-| plumber in plano | 336 · 11.7 · 1 | 2,337 · 43.9 · 1 | 60 · 23.6 · 0 | 2,345 · 18.8 · 3 | да |
-| plumbers plano | 296 · 10.2 · 2 | 881 · 34.9 · 2 | 114 · 14.0 · 1 | 3,441 · 6.1 · 5 | да |
-| emergency plumber plano tx | 342 · 6.2 · 0 | 902 · 35.8 · 0 | 696 · 8.1 · 0 | 3,382 · 13.3 · 1 | да |
-| plumber in plano tx | 240 · 9.2 · 0 | 1,657 · 63.7 · 1 | 134 · 21.7 · 0 | 1,876 · 32.1 · 1 | да |
-| plano emergency plumber | 216 · 11.6 · 0 | 630 · 41.6 · 0 | 290 · 6.9 · 0 | 2,774 · 12.0 · 1 | да |
-| plano plumbing | 585 · 22.0 · 0 | 1,915 · 33.0 · 0 | 5 · 1.2 · 0 | 1,135 · 19.2 · 2 | да |
-| plumbing plano tx | 184 · 31.5 · 0 | 586 · 56.5 · 0 | 333 · 26.3 · 0 | 2,246 · 37.1 · 2 | да |
-| plano tx emergency plumbing | 258 · 1.1 · 0 | 598 · 32.3 · 0 | 534 · 8.8 · 0 | 2,097 · 19.8 · 0 | да |
-| plano tx emergency plumbers | 234 · 1.1 · 0 | 585 · 30.1 · 0 | 296 · 10.7 · 0 | 1,989 · 18.3 · 0 | да |
-| plano plumbing service | 500 · 18.6 · 0 | 1,476 · 51.3 · 0 | 6 · 3.7 · 0 | 1,087 · 28.0 · 0 | да |
-| plumber plano texas | 193 · 11.2 · 0 | 1,126 · 61.1 · 0 | 115 · 22.6 · 0 | 1,417 · 29.5 · 1 | да |
-| plano tx emergency plumber | 155 · 1.5 · 0 | 582 · 40.1 · 0 | 226 · 9.4 · 0 | 1,759 · 18.0 · 0 | да |
+| plumber plano tx | 2,197 · 4.5 · 1 | 3,853 · 23.2 · 3 |  |  | да |
+| plumber in plano | 336 · 11.7 · 1 | 2,337 · 43.9 · 1 |  |  | да |
 | plumber near me | 1,957 · 4.9 · 2 | 2,279 · 7.9 · 2 |  |  | да |
 | plumber | 2,026 · 2.9 · 1 | 2,083 · 3.2 · 1 |  |  | да |
-| plano plumber service | 121 · 16.7 · 0 | 799 · 62.2 · 0 | 3 · 20.7 · 0 | 1,170 · 53.5 · 0 | да |
-| plano plumber | 498 · 12.6 · 1 | 1,135 · 25.4 · 1 | 30 · 17.1 · 0 | 826 · 19.6 · 3 | да |
+| plumber plano | 793 · 13.6 · 1 | 2,034 · 29.6 · 1 |  |  | да |
+| plano plumbing | 585 · 22.0 · 0 | 1,915 · 33.0 · 0 |  |  | да |
 | sewer line replacement the colony tx | 1,816 · 5.2 · 0 | 1,816 · 5.2 · 0 |  |  | другой город (the colony) |
 | emergency plumber | 1,774 · 2.3 · 0 | 1,797 · 2.6 · 0 |  |  | да |
-| plumbers in plano texas | 85 · 6.6 · 0 | 567 · 64.2 · 0 | 43 · 20.4 · 0 | 1,189 · 28.8 · 3 | да |
-| plumbers plano texas | 94 · 8.3 · 0 | 777 · 60.1 · 0 | 51 · 21.2 · 0 | 939 · 32.7 · 1 | да |
+| plumbers plano tx | 243 · 11.2 · 1 | 1,767 · 60.9 · 1 |  |  | да |
 | slab leak repair the colony tx | 1,709 · 6.1 · 0 | 1,709 · 6.1 · 0 |  |  | другой город (the colony) |
-| garbage disposal repair plano tx | 145 · 1.6 · 0 | 600 · 50.8 · 0 |  | 983 · 3.9 · 0 | да |
-| plumbers in plano tx | 169 · 7.3 · 0 | 847 · 37.2 · 0 | 78 · 19.2 · 0 | 712 · 24.3 · 3 | да |
-| garbage disposal repair plano | 216 · 1.7 · 0 | 588 · 41.4 · 0 | 6 · 15.8 · 0 | 970 · 10.0 · 1 | да |
-| plumbers in plano | 195 · 10.9 · 0 | 863 · 41.3 · 0 | 29 · 13.7 · 0 | 649 · 15.4 · 2 | да |
-| plumbing service plano | 83 · 32.5 · 0 | 479 · 64.7 · 0 | 29 · 23.9 · 0 | 972 · 35.4 · 0 | да |
+| plumber in plano tx | 240 · 9.2 · 0 | 1,657 · 63.7 · 1 |  |  | да |
+| plano plumbing service | 500 · 18.6 · 0 | 1,476 · 51.3 · 0 |  |  | да |
 | plumber frisco tx | 1,448 · 9.2 · 1 | 1,448 · 9.2 · 1 |  |  | другой город (frisco) |
-| emergency plumbing plano | 152 · 2.3 · 0 | 180 · 9.5 · 0 | 289 · 6.5 · 0 | 1,265 · 11.3 · 0 | да |
 | slab leak repair frisco tx | 1,414 · 9.0 · 0 | 1,414 · 9.0 · 0 |  |  | другой город (frisco) |
-| plano plumbers | 309 · 13.9 · 0 | 807 · 29.9 · 0 | 39 · 23.1 · 0 | 604 · 16.4 · 2 | да |
 | plumber frisco | 1,403 · 1.0 · 0 | 1,404 · 1.0 · 0 |  |  | другой город (frisco) |
-| faucet repair plano tx | 52 · 6.0 · 0 | 1,193 · 38.6 · 0 | 4 · 29.0 · 0 | 184 · 19.0 · 0 | да |
-| plano tx plumber service | 83 · 12.1 · 0 | 576 · 61.8 · 0 | 11 · 17.3 · 0 | 736 · 36.6 · 0 | да |
-| plano faucet repair | 68 · 10.1 · 0 | 1,073 · 42.5 · 0 | 72 · 52.1 · 0 | 228 · 50.4 · 0 | да |
-| faucet repair plano | 66 · 9.5 · 0 | 1,061 · 42.6 · 0 | 4 · 24.0 · 0 | 178 · 30.0 · 0 | да |
-| slab leak repair plano | 39 · 18.7 · 0 | 1,222 · 63.0 · 0 |  | 12 · 30.1 · 0 | да |
-| plumbing services plano tx | 243 · 12.0 · 0 | 354 · 25.2 · 0 | 179 · 22.1 · 0 | 846 · 21.0 · 0 | да |
-| plumbing repair plano | 65 · 28.9 · 0 | 460 · 58.1 · 0 | 29 · 23.0 · 0 | 673 · 36.3 · 0 | да |
-| plano tx plumbers | 67 · 2.0 · 0 | 511 · 59.7 · 0 | 79 · 18.6 · 0 | 584 · 27.5 · 0 | да |
-| same day service plumbing plano | 30 · 3.9 · 0 | 108 · 41.4 · 0 | 14 · 18.9 · 0 | 980 · 10.8 · 0 | да |
-| plano tx garbage disposal repair | 97 · 3.8 · 0 | 586 · 59.2 · 0 |  | 500 · 17.9 · 0 | да |
-| plano tx plumber | 41 · 1.2 · 0 | 477 · 65.0 · 0 | 31 · 16.0 · 0 | 580 · 29.7 · 0 | да |
-| plumbing service in plano | 108 · 20.9 · 0 | 364 · 55.2 · 0 | 59 · 21.0 · 0 | 690 · 32.8 · 0 | да |
-| plumbing services plano | 106 · 36.5 · 0 | 390 · 56.8 · 0 | 60 · 24.5 · 0 | 662 · 25.1 · 0 | да |
-| plano tx pluming | 90 · 25.9 · 0 | 488 · 64.1 · 0 | 67 · 36.5 · 0 | 557 · 40.1 · 0 | да: опечатка в запросе |
-| emergency plumber near me plano | 1 · 1.0 · 0 | 63 · 35.5 · 0 |  | 973 · 8.3 · 0 | да |
-| plano tx faucet repair | 35 · 4.3 · 0 | 819 · 41.2 · 0 |  | 150 · 10.9 · 0 | да |
-| emergency plumbing plano tx | 117 · 1.0 · 0 | 127 · 5.4 · 0 | 134 · 5.9 · 0 | 789 · 10.6 · 0 | да |
-| plumber in plano texas | 48 · 1.3 · 0 | 306 · 64.2 · 0 | 6 · 19.2 · 0 | 567 · 27.5 · 1 | да |
-| bathroom plumbing plano | 70 · 13.0 · 0 | 613 · 64.3 · 0 |  | 259 · 73.6 · 0 | да |
-| plano slab leak repair | 58 · 9.5 · 0 | 793 · 58.6 · 0 |  | 53 · 1.2 · 0 | да |
-| plumbing repair plano tx | 47 · 15.9 · 0 | 185 · 35.6 · 0 | 12 · 21.9 · 0 | 614 · 25.8 · 0 | да |
-| slab leak repair plano tx | 40 · 13.8 · 0 | 540 · 57.4 · 0 |  | 256 · 3.1 · 0 | да |
+| slab leak repair plano | 39 · 18.7 · 0 | 1,222 · 63.0 · 0 |  |  | да |
+| faucet repair plano tx | 52 · 6.0 · 0 | 1,193 · 38.6 · 0 |  |  | да |
+| plano plumber | 498 · 12.6 · 1 | 1,135 · 25.4 · 1 |  |  | да |
+| plumber plano texas | 193 · 11.2 · 0 | 1,126 · 61.1 · 0 |  |  | да |
+| plano faucet repair | 68 · 10.1 · 0 | 1,073 · 42.5 · 0 |  |  | да |
+| faucet repair plano | 66 · 9.5 · 0 | 1,061 · 42.6 · 0 |  |  | да |
+| emergency plumber plano | 469 · 7.4 · 0 | 989 · 31.1 · 0 |  |  | да |
+| emergency plumber plano tx | 342 · 6.2 · 0 | 902 · 35.8 · 0 |  |  | да |
+| plumbers plano | 296 · 10.2 · 2 | 881 · 34.9 · 2 |  |  | да |
+| plumbers in plano | 195 · 10.9 · 0 | 863 · 41.3 · 0 |  |  | да |
+| plumbers in plano tx | 169 · 7.3 · 0 | 847 · 37.2 · 0 |  |  | да |
+| plumbing plano | 353 · 39.5 · 0 | 838 · 61.0 · 0 |  |  | да |
+| plano tx faucet repair | 35 · 4.3 · 0 | 819 · 41.2 · 0 |  |  | да |
+| plano plumbers | 309 · 13.9 · 0 | 807 · 29.9 · 0 |  |  | да |
+| plano plumber service | 121 · 16.7 · 0 | 799 · 62.2 · 0 |  |  | да |
+| plano slab leak repair | 58 · 9.5 · 0 | 793 · 58.6 · 0 |  |  | да |
 | fpp plumbing | 409 · 4.6 · 21 | 790 · 3.5 · 21 |  |  | да |
 | emergency plumber near me | 778 · 1.0 · 0 | 778 · 1.0 · 0 |  |  | да |
-| plumbers near me plano | 4 · 1.0 · 0 | 37 · 52.9 · 0 | 1 · 13.0 · 0 | 730 · 17.6 · 0 | да |
+| plumbers plano texas | 94 · 8.3 · 0 | 777 · 60.1 · 0 |  |  | да |
 | drain cleaning | 761 · 1.5 · 0 | 761 · 1.5 · 0 |  |  | да |
-| plano plumbing services | 182 · 12.9 · 0 | 424 · 41.0 · 0 | 1 · 1.0 · 0 | 327 · 16.1 · 1 | да |
-| 24 hour plumbing plano | 9 · 71.0 · 0 | 10 · 71.8 · 0 | 112 · 7.2 · 0 | 738 · 23.5 · 0 | да |
-| plumbing services in plano | 123 · 19.6 · 0 | 182 · 28.0 · 0 | 67 · 23.4 · 0 | 529 · 23.3 · 0 | да |
 | google find me a plumber | 92 · 75.7 · 0 | 696 · 59.4 · 0 |  |  | да: голосовой запрос |
-| plano plumbing repair | 129 · 12.1 · 0 | 360 · 40.5 · 0 |  | 333 · 24.6 · 0 | да |
-| plumbing leak repair in plano | 98 · 28.5 · 0 | 400 · 38.2 · 0 | 52 · 61.9 · 0 | 291 · 46.3 · 0 | да |
-| plumbing repair services in plano | 82 · 47.0 · 0 | 186 · 50.2 · 0 | 92 · 23.9 · 0 | 501 · 22.9 · 0 | да |
-| water line repair plano tx | 281 · 11.8 · 0 | 660 · 36.9 · 0 |  | 24 · 60.0 · 0 | да |
-| leak repair plano | 21 · 32.3 · 0 | 278 · 38.6 · 0 | 6 · 39.0 · 0 | 399 · 13.6 · 0 | да |
-| plano garbage disposal repair | 33 · 9.3 · 0 | 496 · 66.3 · 0 |  | 178 · 60.2 · 0 | да |
-| water line repair plano | 319 · 14.1 · 0 | 615 · 33.2 · 0 |  | 30 · 63.4 · 0 | да |
-| residential plumbing services in plano | 47 · 55.0 · 0 | 96 · 48.1 · 0 | 84 · 27.2 · 0 | 540 · 30.7 · 0 | да |
-| 24 hour plumber plano | 8 · 36.4 · 0 | 18 · 37.9 · 0 | 87 · 9.0 · 0 | 602 · 26.8 · 1 | да |
-| plumber near me plano | 14 · 19.4 · 0 | 26 · 48.1 · 0 | 3 · 12.7 · 0 | 591 · 18.1 · 0 | да |
-| residential plumber services in plano | 29 · 45.8 · 0 | 75 · 51.9 · 0 | 75 · 26.7 · 0 | 538 · 30.3 · 0 | да |
-| 24-hour plumber plano |  | 20 · 51.3 · 0 | 1 · 7.0 · 0 | 585 · 27.6 · 0 | да |
-| residential plumber service in plano | 39 · 61.5 · 0 | 106 · 59.9 · 0 | 73 · 26.1 · 0 | 497 · 36.2 · 0 | да |
-| plumbing contractor plano |  | 67 · 52.2 · 0 | 125 · 29.8 · 0 | 535 · 30.0 · 0 | да |
-| 24 hour plumber plano tx | 60 · 33.4 · 0 | 69 · 32.8 · 0 | 148 · 10.1 · 0 | 523 · 26.1 · 0 | да |
-| plumber services plano | 41 · 33.3 · 0 | 123 · 51.1 · 0 | 75 · 25.6 · 0 | 453 · 36.7 · 0 | да |
-| plumber services in plano | 57 · 23.8 · 0 | 135 · 44.6 · 0 | 43 · 23.7 · 0 | 428 · 31.1 · 0 | да |
-| plumber service in plano | 39 · 28.3 · 0 | 155 · 52.0 · 0 | 17 · 22.5 · 0 | 396 · 34.5 · 0 | да |
+| water line repair plano tx | 281 · 11.8 · 0 | 660 · 36.9 · 0 |  |  | да |
+| plano emergency plumber | 216 · 11.6 · 0 | 630 · 41.6 · 0 |  |  | да |
+| water line repair plano | 319 · 14.1 · 0 | 615 · 33.2 · 0 |  |  | да |
+| bathroom plumbing plano | 70 · 13.0 · 0 | 613 · 64.3 · 0 |  |  | да |
+| garbage disposal repair plano tx | 145 · 1.6 · 0 | 600 · 50.8 · 0 |  |  | да |
+| plano tx emergency plumbing | 258 · 1.1 · 0 | 598 · 32.3 · 0 |  |  | да |
+| garbage disposal repair plano | 216 · 1.7 · 0 | 588 · 41.4 · 0 |  |  | да |
+| plano tx garbage disposal repair | 97 · 3.8 · 0 | 586 · 59.2 · 0 |  |  | да |
+| plumbing plano tx | 184 · 31.5 · 0 | 586 · 56.5 · 0 |  |  | да |
+| plano tx emergency plumbers | 234 · 1.1 · 0 | 585 · 30.1 · 0 |  |  | да |
+| plano tx emergency plumber | 155 · 1.5 · 0 | 582 · 40.1 · 0 |  |  | да |
+| plano tx plumber service | 83 · 12.1 · 0 | 576 · 61.8 · 0 |  |  | да |
+| plumbers in plano texas | 85 · 6.6 · 0 | 567 · 64.2 · 0 |  |  | да |
 | sewer line replacement | 541 · 3.7 · 0 | 541 · 3.7 · 0 |  |  | да |
-| plano tx pluming service | 87 · 13.7 · 0 | 176 · 37.1 · 0 | 58 · 22.5 · 0 | 362 · 29.7 · 0 | да: опечатка в запросе |
-| plano tx pipe break repair | 91 · 12.3 · 0 | 340 · 41.9 · 0 | 9 · 66.3 · 0 | 176 · 79.7 · 0 | да |
-| plumbing leak repair plano | 95 · 26.8 · 0 | 409 · 31.8 · 0 |  | 106 · 30.3 · 0 | да |
+| slab leak repair plano tx | 40 · 13.8 · 0 | 540 · 57.4 · 0 |  |  | да |
+| plano tx plumbers | 67 · 2.0 · 0 | 511 · 59.7 · 0 |  |  | да |
 | water heater repair | 510 · 2.3 · 0 | 510 · 2.3 · 0 |  |  | да |
-| bathroom plumbing plano tx | 38 · 4.8 · 0 | 391 · 56.4 · 0 |  | 117 · 58.8 · 0 | да |
 | water line repair | 501 · 1.2 · 0 | 501 · 1.2 · 0 |  |  | да |
-| emergency plumber in plano | 55 · 1.1 · 0 | 65 · 8.1 · 0 | 25 · 6.0 · 0 | 430 · 8.9 · 1 | да |
-| plano pipe break repair | 60 · 6.6 · 0 | 402 · 50.0 · 0 |  | 91 · 43.4 · 0 | да |
-| plano water line repair | 182 · 13.9 · 0 | 472 · 43.1 · 0 |  | 12 · 63.2 · 0 | да |
-| plano plumbing contractor | 26 · 58.7 · 0 | 95 · 53.6 · 0 | 118 · 30.0 · 0 | 383 · 33.7 · 0 | да |
-| plano emergency plumbing | 70 · 1.2 · 0 | 91 · 17.6 · 0 | 21 · 6.6 · 0 | 382 · 5.5 · 0 | да |
-| leak repair services plano | 20 · 33.5 · 0 | 225 · 50.5 · 0 | 45 · 36.9 · 0 | 247 · 42.9 · 0 | да |
-| water leak repair in plano | 39 · 30.5 · 0 | 264 · 42.2 · 0 | 33 · 51.4 · 0 | 207 · 50.3 · 0 | да |
-| plumber near plano tx | 13 · 13.5 · 0 | 231 · 68.4 · 0 | 16 · 18.8 · 0 | 231 · 41.1 · 0 | да |
-| plano plumbing companies | 15 · 21.0 · 0 | 66 · 46.0 · 0 | 28 · 19.4 · 0 | 395 · 34.1 · 0 | да |
-| plumbing companies plano | 3 · 24.3 · 0 | 73 · 60.9 · 0 | 3 · 22.7 · 0 | 387 · 25.2 · 0 | да |
-| plumbing contractor in plano | 1 · 1.0 · 0 | 48 · 49.9 · 0 | 89 · 24.6 · 0 | 403 · 25.6 · 0 | да |
-| plumbing in plano | 8 · 17.4 · 0 | 173 · 74.9 · 0 | 6 · 17.7 · 0 | 267 · 38.9 · 0 | да |
+| plano garbage disposal repair | 33 · 9.3 · 0 | 496 · 66.3 · 0 |  |  | да |
+| plano tx pluming | 90 · 25.9 · 0 | 488 · 64.1 · 0 |  |  | да: опечатка в запросе |
+| plumbing service plano | 83 · 32.5 · 0 | 479 · 64.7 · 0 |  |  | да |
+| plano tx plumber | 41 · 1.2 · 0 | 477 · 65.0 · 0 |  |  | да |
+| plano water line repair | 182 · 13.9 · 0 | 472 · 43.1 · 0 |  |  | да |
+| plumbing repair plano | 65 · 28.9 · 0 | 460 · 58.1 · 0 |  |  | да |
 | slab leak repair | 430 · 4.9 · 0 | 430 · 4.9 · 0 |  |  | да |
-| plumbing in plano tx | 18 · 29.4 · 0 | 147 · 62.5 · 0 | 28 · 22.0 · 0 | 282 · 27.6 · 3 | да |
-| plano plumbing leak repair | 55 · 22.4 · 0 | 366 · 32.9 · 0 |  | 57 · 6.1 · 0 | да |
-| plumbing repair services plano | 34 · 27.5 · 0 | 90 · 35.4 · 0 | 21 · 28.3 · 0 | 313 · 22.8 · 0 | да |
+| plano plumbing services | 182 · 12.9 · 0 | 424 · 41.0 · 0 |  |  | да |
+| plumbing leak repair plano | 95 · 26.8 · 0 | 409 · 31.8 · 0 |  |  | да |
+| plano pipe break repair | 60 · 6.6 · 0 | 402 · 50.0 · 0 |  |  | да |
 | plumbing company | 398 · 2.9 · 0 | 400 · 2.9 · 0 |  |  | да |
-| best plumbers in plano tx | 32 · 33.0 · 0 | 39 · 42.6 · 0 | 60 · 18.1 · 0 | 356 · 18.1 · 0 | да: оценочное слово в текст не ставим: best |
-| plano tx plumbing | 6 · 18.8 · 0 | 128 · 63.0 · 0 |  | 266 · 37.7 · 0 | да |
-| plumber service plano | 19 · 25.1 · 0 | 132 · 56.9 · 0 | 19 · 22.9 · 0 | 260 · 44.0 · 0 | да |
-| leak repair services in plano | 43 · 38.6 · 0 | 170 · 43.9 · 0 | 47 · 54.5 · 0 | 221 · 55.0 · 0 | да |
-| emergency drain cleaning plano tx |  | 140 · 63.0 · 0 |  | 248 · 34.3 · 0 | да |
-| plano water heater replacement | 122 · 1.5 · 0 | 137 · 9.7 · 0 | 2 · 1.0 · 0 | 248 · 4.2 · 0 | да |
-| plumbing company plano | 10 · 32.9 · 0 | 37 · 41.3 · 0 | 75 · 28.2 · 0 | 344 · 30.6 · 0 | да |
-| no dig sewer line replacement plano | 7 · 2.3 · 0 | 7 · 2.3 · 0 |  | 372 · 7.3 · 0 | да |
-| plumbing repairs plano | 86 · 8.6 · 0 | 111 · 18.7 · 0 | 9 · 28.2 · 0 | 263 · 18.7 · 0 | да |
-| emergency plumber plano, tx |  | 3 · 57.3 · 0 |  | 367 · 12.9 · 0 | да |
-| main sewer line replacement plano |  |  |  | 362 · 12.3 · 0 | да |
-| water leak repair plano | 32 · 31.3 · 0 | 279 · 37.9 · 0 |  | 82 · 44.0 · 0 | да |
+| plumbing leak repair in plano | 98 · 28.5 · 0 | 400 · 38.2 · 0 |  |  | да |
+| bathroom plumbing plano tx | 38 · 4.8 · 0 | 391 · 56.4 · 0 |  |  | да |
+| plumbing services plano | 106 · 36.5 · 0 | 390 · 56.8 · 0 |  |  | да |
+| plano plumbing leak repair | 55 · 22.4 · 0 | 366 · 32.9 · 0 |  |  | да |
+| plumbing service in plano | 108 · 20.9 · 0 | 364 · 55.2 · 0 |  |  | да |
+| plano plumbing repair | 129 · 12.1 · 0 | 360 · 40.5 · 0 |  |  | да |
 | plumber the colony tx | 360 · 4.8 · 0 | 360 · 4.8 · 0 |  |  | другой город (the colony) |
 | plumbing | 267 · 1.3 · 1 | 360 · 5.4 · 1 |  |  | да |
+| plumbing services plano tx | 243 · 12.0 · 0 | 354 · 25.2 · 0 |  |  | да |
 | plumbing serrvice | 353 · 1.0 · 0 | 353 · 1.0 · 0 |  |  | да: опечатка в запросе |
-| residential plumbing services plano | 50 · 28.5 · 0 | 83 · 31.5 · 0 |  | 256 · 28.8 · 0 | да |
+| plano tx pipe break repair | 91 · 12.3 · 0 | 340 · 41.9 · 0 |  |  | да |
 | plumbing clog | 336 · 1.0 · 0 | 336 · 1.0 · 0 |  |  | да |
-| plano plumbing company | 69 · 2.9 · 0 | 95 · 18.5 · 0 |  | 237 · 19.0 · 0 | да |
-| commercial plumber services in plano | 47 · 1.0 · 0 | 56 · 12.4 · 0 | 56 · 60.6 · 0 | 272 · 39.1 · 0 | не наше (коммерческие объекты без своей страницы) |
-| plumbing near plano tx |  | 34 · 71.6 · 0 |  | 291 · 46.5 · 0 | да |
 | commercial plumbing maintenance | 322 · 1.0 · 0 | 322 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
-| faucet repair near plano tx |  | 268 · 44.9 · 0 |  | 52 · 19.5 · 0 | да |
-| plano plumber services | 10 · 10.6 · 0 | 132 · 51.1 · 0 |  | 185 · 51.8 · 0 | да |
-| commercial plumber plano | 52 · 1.0 · 0 | 52 · 1.0 · 0 | 45 · 46.0 · 0 | 264 · 43.9 · 0 | не наше (коммерческие объекты без своей страницы) |
-| local plumbers plano | 18 · 6.7 · 0 | 99 · 55.0 · 0 | 5 · 21.2 · 0 | 217 · 31.1 · 0 | да |
-| plumbing companies plano tx | 1 · 1.0 · 0 | 45 · 62.2 · 0 | 16 · 20.6 · 0 | 267 · 28.0 · 0 | да |
-| plumbing company plano tx | 22 · 1.0 · 0 | 82 · 38.6 · 0 | 56 · 25.2 · 0 | 230 · 32.8 · 0 | да |
+| plumber in plano texas | 48 · 1.3 · 0 | 306 · 64.2 · 0 |  |  | да |
 | pipe breaks plano | 107 · 20.5 · 0 | 298 · 54.6 · 0 |  |  | да |
-| plano plumbing repair services | 70 · 23.6 · 0 | 178 · 32.2 · 0 | 6 · 47.0 · 0 | 118 · 29.6 · 0 | да |
-| plumbing contractors plano | 3 · 21.0 · 0 | 36 · 56.6 · 0 | 7 · 27.4 · 0 | 256 · 20.1 · 0 | да |
-| leak repair in plano | 13 · 34.0 · 0 | 212 · 41.8 · 0 |  | 74 · 61.1 · 0 | да |
-| plano texas plumbers | 25 · 1.0 · 0 | 89 · 47.7 · 0 | 1 · 1.0 · 0 | 197 · 15.5 · 0 | да |
-| residential plumber services plano | 8 · 5.5 · 0 | 53 · 28.1 · 0 | 7 · 23.6 · 0 | 231 · 32.2 · 0 | да |
-| residential plumbing plano | 23 · 42.0 · 0 | 60 · 42.1 · 0 |  | 224 · 43.0 · 0 | да |
 | water heater replacement | 283 · 3.7 · 0 | 283 · 3.7 · 0 |  |  | да |
-| clogged toilet plano tx |  | 272 · 74.7 · 0 |  | 5 · 34.2 · 0 | да |
-| drain cleaning plano tx | 171 · 1.0 · 0 | 180 · 5.4 · 0 |  | 97 · 3.2 · 0 | да |
-| residential plumbing in plano | 12 · 25.9 · 0 | 60 · 32.9 · 0 |  | 217 · 32.7 · 0 | да |
+| water leak repair plano | 32 · 31.3 · 0 | 279 · 37.9 · 0 |  |  | да |
+| leak repair plano | 21 · 32.3 · 0 | 278 · 38.6 · 0 |  |  | да |
 | licensed plumber | 274 · 1.0 · 0 | 274 · 1.0 · 0 |  |  | да |
-| expansion tanks repair plano | 55 · 2.1 · 0 | 55 · 2.1 · 0 |  | 217 · 4.0 · 0 | да |
-| sewer line plumber plano |  | 77 · 75.9 · 0 |  | 195 · 14.9 · 0 | да |
-| plano tx water line repair | 119 · 16.1 · 0 | 257 · 44.1 · 0 |  | 13 · 70.1 · 0 | да |
-| residential plumber service plano | 10 · 22.9 · 0 | 50 · 35.4 · 0 |  | 219 · 38.9 · 0 | да |
-| clogged toilet repair near plano tx |  | 156 · 78.2 · 0 |  | 108 · 2.5 · 0 | да |
-| water heater replacement plano | 56 · 1.0 · 0 | 56 · 1.0 · 0 | 2 · 1.0 · 0 | 206 · 1.4 · 1 | да |
+| clogged toilet plano tx |  | 272 · 74.7 · 0 |  |  | да |
+| faucet repair near plano tx |  | 268 · 44.9 · 0 |  |  | да |
+| water leak repair in plano | 39 · 30.5 · 0 | 264 · 42.2 · 0 |  |  | да |
 | plumbing service | 23 · 2.7 · 0 | 260 · 33.5 · 0 |  |  | да |
-| commercial plumbing services in plano | 2 · 1.0 · 0 | 3 · 11.7 · 0 | 67 · 58.2 · 0 | 256 · 56.8 · 0 | не наше (коммерческие объекты без своей страницы) |
-| plano residential plumbing | 4 · 31.8 · 0 | 49 · 33.7 · 0 |  | 209 · 43.5 · 0 | да |
-| water heater installation plano | 29 · 1.0 · 0 | 29 · 1.0 · 0 | 2 · 1.0 · 0 | 227 · 15.2 · 1 | да |
+| plano tx water line repair | 119 · 16.1 · 0 | 257 · 44.1 · 0 |  |  | да |
 | plumbing repair | 183 · 2.8 · 0 | 252 · 5.7 · 0 |  |  | да |
-| slab leak repair in plano | 9 · 26.6 · 0 | 247 · 50.2 · 0 |  | 1 · 1.0 · 0 | да |
-| clogged drains plano |  | 220 · 63.1 · 0 |  | 27 · 8.8 · 0 | да |
-| plano residential plumber services | 6 · 2.5 · 0 | 62 · 37.7 · 0 |  | 184 · 35.7 · 0 | да |
-| emergency water heater repair plano tx |  | 57 · 84.2 · 0 |  | 186 · 37.2 · 0 | да |
-| plano residential plumbing services | 3 · 2.7 · 0 | 45 · 35.4 · 0 |  | 196 · 30.7 · 0 | да |
-| faucet plumbing plano tx |  | 158 · 47.9 · 0 |  | 82 · 29.5 · 0 | да |
+| slab leak repair in plano | 9 · 26.6 · 0 | 247 · 50.2 · 0 |  |  | да |
 | plumber carrollton tx | 232 · 13.2 · 0 | 232 · 13.2 · 0 |  |  | другой город (carrollton) |
-| website for plumbers plano | 21 · 9.3 · 0 | 23 · 9.9 · 0 | 5 · 38.0 · 0 | 209 · 26.3 · 0 | не наше (не про услугу) |
 | evaluate the plumbing and drain cleaning services company fox plumbing & heating on dallas | 231 · 6.8 · 0 | 231 · 6.8 · 0 |  |  | другой город (dallas) |
-| plumbing services plano, tx |  | 3 · 63.7 · 0 |  | 228 · 25.5 · 0 | да |
-| water heater repair plano | 51 · 1.8 · 0 | 52 · 4.0 · 0 |  | 176 · 36.2 · 0 | да |
-| plumbing plano texas | 9 · 7.9 · 0 | 24 · 41.1 · 0 | 8 · 26.5 · 0 | 203 · 42.3 · 0 | да |
-| repiping near plano tx |  | 49 · 71.2 · 0 |  | 176 · 9.1 · 0 | не наше (repipe: нет такой услуги) |
-| plumbing repair plano, tx |  | 9 · 80.3 · 0 |  | 212 · 28.1 · 0 | да |
-| plumbing plano, tx |  | 7 · 65.9 · 0 |  | 213 · 35.8 · 0 | да |
-| 24/7 plumber plano, tx |  |  |  | 215 · 17.8 · 0 | да |
-| plano residential plumber service | 6 · 19.8 · 0 | 45 · 39.1 · 0 |  | 167 · 41.8 · 0 | да |
-| commercial plumber services plano | 8 · 1.6 · 0 | 8 · 1.6 · 0 | 35 · 56.5 · 0 | 201 · 47.1 · 0 | не наше (коммерческие объекты без своей страницы) |
+| plumber near plano tx | 13 · 13.5 · 0 | 231 · 68.4 · 0 |  |  | да |
+| leak repair services plano | 20 · 33.5 · 0 | 225 · 50.5 · 0 |  |  | да |
+| clogged drains plano |  | 220 · 63.1 · 0 |  |  | да |
+| leak repair in plano | 13 · 34.0 · 0 | 212 · 41.8 · 0 |  |  | да |
 | faucet repair | 203 · 3.6 · 0 | 203 · 3.6 · 0 |  |  | да |
-| commercial plumber service plano | 10 · 1.3 · 0 | 10 · 1.3 · 0 | 42 · 57.7 · 0 | 191 · 62.5 · 0 | не наше (коммерческие объекты без своей страницы) |
-| commercial plumbing in plano | 5 · 1.0 · 0 | 7 · 25.1 · 0 | 32 · 56.2 · 0 | 193 · 38.8 · 0 | не наше (коммерческие объекты без своей страницы) |
 | plano tx sab leak repair | 3 · 28.0 · 0 | 194 · 80.9 · 0 |  |  | да: опечатка в запросе |
-| clogged toilet repair plano tx |  | 166 · 76.7 · 0 |  | 27 · 20.3 · 0 | да |
 | closest plumber | 21 · 12.1 · 0 | 190 · 24.6 · 0 |  |  | да |
-| expansion tanks repair plano tx | 63 · 1.9 · 0 | 63 · 1.9 · 0 |  | 127 · 2.4 · 0 | да |
-| commercial plumber service in plano | 6 · 1.0 · 0 | 11 · 28.6 · 0 | 42 · 64.1 · 0 | 175 · 65.3 · 0 | не наше (коммерческие объекты без своей страницы) |
 | frisco plumber | 186 · 1.2 · 0 | 186 · 1.2 · 0 |  |  | другой город (frisco) |
-| residential plumber plano tx | 13 · 1.1 · 0 | 33 · 42.6 · 0 |  | 153 · 37.8 · 0 | да |
+| plumbing repair services in plano | 82 · 47.0 · 0 | 186 · 50.2 · 0 |  |  | да |
+| plumbing repair plano tx | 47 · 15.9 · 0 | 185 · 35.6 · 0 |  |  | да |
 | sewer repair | 184 · 1.0 · 0 | 184 · 1.0 · 0 |  |  | да |
-| clogged toilet near plano tx |  | 175 · 73.5 · 0 |  | 7 · 15.6 · 0 | да |
-| plano texas plumber | 24 · 1.0 · 0 | 57 · 40.5 · 0 | 1 · 23.0 · 0 | 123 · 4.3 · 0 | да |
-| water heater replacement plano tx | 40 · 1.0 · 0 | 40 · 1.0 · 0 | 3 · 1.0 · 0 | 137 · 1.2 · 0 | да |
-| 24 hour plumbing service plano | 3 · 39.3 · 0 | 3 · 39.3 · 0 | 30 · 7.8 · 0 | 173 · 24.2 · 0 | да |
-| plano sewer line repair | 16 · 2.0 · 0 | 91 · 68.4 · 0 |  | 85 · 34.8 · 0 | да |
+| plumbing services in plano | 123 · 19.6 · 0 | 182 · 28.0 · 0 |  |  | да |
+| drain cleaning plano tx | 171 · 1.0 · 0 | 180 · 5.4 · 0 |  |  | да |
+| emergency plumbing plano | 152 · 2.3 · 0 | 180 · 9.5 · 0 |  |  | да |
+| plano plumbing repair services | 70 · 23.6 · 0 | 178 · 32.2 · 0 |  |  | да |
+| plano tx pluming service | 87 · 13.7 · 0 | 176 · 37.1 · 0 |  |  | да: опечатка в запросе |
 | sewer cleaning | 176 · 1.0 · 0 | 176 · 1.0 · 0 |  |  | да |
 | 24 hour plumber | 175 · 1.6 · 1 | 175 · 1.6 · 1 |  |  | да |
-| plumbing repair service plano tx | 60 · 5.1 · 0 | 64 · 9.6 · 0 | 4 · 21.0 · 0 | 111 · 8.3 · 0 | да |
-| emergency sewer and drain plano tx |  | 72 · 84.2 · 0 |  | 101 · 29.8 · 0 | да |
-| emergency faucet repair plano tx |  | 70 · 48.4 · 0 |  | 99 · 21.3 · 0 | да |
-| clogged drain plano | 10 · 27.5 · 0 | 163 · 44.2 · 0 |  | 4 · 85.0 · 0 | да |
+| clogged toilet near plano tx |  | 175 · 73.5 · 0 |  |  | да |
+| plumbing in plano | 8 · 17.4 · 0 | 173 · 74.9 · 0 |  |  | да |
+| leak repair services in plano | 43 · 38.6 · 0 | 170 · 43.9 · 0 |  |  | да |
 | gas line repair | 167 · 2.2 · 0 | 167 · 2.2 · 0 |  |  | не наше (газовые линии не заявляем) |
-| pipe repair near plano tx |  | 9 · 50.1 · 0 |  | 158 · 16.1 · 0 | да |
-| 24 hour plumbing plano tx | 4 · 71.0 · 0 | 4 · 71.0 · 0 | 46 · 8.3 · 0 | 161 · 25.9 · 0 | да |
-| water heater installation plano tx | 43 · 1.5 · 0 | 43 · 1.5 · 0 | 3 · 1.0 · 0 | 122 · 3.1 · 0 | да |
-| commercial plumbing plano | 38 · 1.0 · 0 | 40 · 4.7 · 0 | 7 · 43.6 · 0 | 124 · 44.1 · 0 | не наше (коммерческие объекты без своей страницы) |
+| clogged toilet repair plano tx |  | 166 · 76.7 · 0 |  |  | да |
+| clogged drain plano | 10 · 27.5 · 0 | 163 · 44.2 · 0 |  |  | да |
 | emergency plumbers | 162 · 2.4 · 0 | 163 · 2.5 · 0 |  |  | да |
 | toilet repair | 163 · 1.0 · 0 | 163 · 1.0 · 0 |  |  | да |
-| plano water heater installation | 22 · 1.8 · 0 | 22 · 1.8 · 0 |  | 140 · 10.9 · 1 | да |
 | water heater installation | 162 · 1.2 · 0 | 162 · 1.2 · 0 |  |  | да |
-| clogged toilet services plano tx |  | 149 · 76.9 · 0 |  | 8 · 59.1 · 0 | да |
-| plano repiping |  | 7 · 59.6 · 0 |  | 150 · 21.2 · 0 | не наше (repipe: нет такой услуги) |
-| plano commercial plumber services | 12 · 2.3 · 0 | 23 · 23.1 · 0 | 12 · 49.8 · 0 | 132 · 21.0 · 0 | не наше (коммерческие объекты без своей страницы) |
-| plumber insurance plano, tx | 108 · 4.2 · 0 | 108 · 4.2 · 0 | 1 · 8.0 · 0 | 47 · 1.6 · 0 | да |
-| slow drain repair plano tx |  | 52 · 56.9 · 0 |  | 102 · 1.8 · 0 | да |
-| faucet installation near plano tx |  | 129 · 54.8 · 0 |  | 23 · 61.0 · 0 | да |
-| sewer repair plano |  | 1 · 76.0 · 0 |  | 151 · 1.1 · 0 | да |
-| water heater repair plano tx | 54 · 2.1 · 0 | 64 · 12.0 · 0 |  | 88 · 47.8 · 0 | да |
-| plano commercial plumber service | 25 · 1.8 · 0 | 35 · 23.2 · 0 | 4 · 50.2 · 0 | 116 · 11.0 · 0 | не наше (коммерческие объекты без своей страницы) |
+| faucet plumbing plano tx |  | 158 · 47.9 · 0 |  |  | да |
+| clogged toilet repair near plano tx |  | 156 · 78.2 · 0 |  |  | да |
+| plumber service in plano | 39 · 28.3 · 0 | 155 · 52.0 · 0 |  |  | да |
 | plumbers | 59 · 2.3 · 0 | 151 · 13.7 · 0 |  |  | да |
-| emergency faucet installation plano tx |  | 98 · 51.0 · 0 |  | 52 · 28.6 · 0 | да |
-| 24 7 plumbing plano | 4 · 42.8 · 0 | 4 · 42.8 · 0 | 11 · 6.1 · 0 | 144 · 24.2 · 0 | да |
+| clogged toilet services plano tx |  | 149 · 76.9 · 0 |  |  | да |
+| plumbing in plano tx | 18 · 29.4 · 0 | 147 · 62.5 · 0 |  |  | да |
 | water leak | 147 · 1.1 · 0 | 147 · 1.1 · 0 |  |  | да |
-| commercial plumber in plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 | 23 · 56.4 · 0 | 144 · 63.4 · 0 | не наше (коммерческие объекты без своей страницы) |
 | emergency plumber the colony tx | 144 · 1.1 · 0 | 144 · 1.1 · 0 |  |  | другой город (the colony) |
-| hot water heater repair plano tx | 22 · 1.0 · 0 | 25 · 9.5 · 0 | 2 · 1.0 · 0 | 119 · 1.0 · 0 | да |
-| commercial plumbing services plano |  | 1 · 79.0 · 0 | 29 · 43.8 · 0 | 142 · 45.3 · 0 | не наше (коммерческие объекты без своей страницы) |
-| plano sewer repair | 18 · 2.0 · 0 | 25 · 25.7 · 0 |  | 118 · 4.1 · 0 | да |
-| toilet unclogging service plano tx |  | 88 · 79.1 · 0 |  | 55 · 11.7 · 0 | да |
 | plano leak repair | 5 · 40.6 · 0 | 141 · 45.8 · 0 |  |  | да |
-| burst pipe plano |  | 116 · 63.1 · 0 |  | 23 · 45.1 · 0 | да |
-| water line replacement plano tx |  | 129 · 65.7 · 0 |  | 10 · 1.6 · 0 | да |
-| plumbing service plano tx | 14 · 17.6 · 0 | 32 · 42.8 · 0 | 10 · 24.9 · 0 | 106 · 26.0 · 0 | да |
-| plano leak repair services |  | 134 · 44.8 · 0 |  | 2 · 15.0 · 0 | да |
-| commercial plumbing services plano tx | 61 · 1.3 · 0 | 61 · 1.3 · 0 | 4 · 35.0 · 0 | 74 · 14.4 · 0 | не наше (коммерческие объекты без своей страницы) |
+| emergency drain cleaning plano tx |  | 140 · 63.0 · 0 |  |  | да |
+| plano water heater replacement | 122 · 1.5 · 0 | 137 · 9.7 · 0 |  |  | да |
+| plumber services in plano | 57 · 23.8 · 0 | 135 · 44.6 · 0 |  |  | да |
 | plumbers near me | 133 · 3.3 · 3 | 135 · 3.4 · 3 |  |  | да |
+| plano leak repair services |  | 134 · 44.8 · 0 |  |  | да |
 | i need a plumber | 21 · 8.6 · 0 | 133 · 16.2 · 0 |  |  | да |
-| hot water heater repair plano | 23 · 1.0 · 0 | 23 · 1.0 · 0 | 2 · 1.0 · 0 | 109 · 1.5 · 0 | да |
-| plano tx plumbing service | 1 · 1.0 · 0 | 28 · 47.6 · 0 |  | 104 · 25.6 · 0 | да |
+| plano plumber services | 10 · 10.6 · 0 | 132 · 51.1 · 0 |  |  | да |
+| plumber service plano | 19 · 25.1 · 0 | 132 · 56.9 · 0 |  |  | да |
 | drain cleaning plumbers near me | 130 · 1.0 · 0 | 130 · 1.0 · 0 |  |  | да |
-| plano water heater repair | 17 · 6.1 · 0 | 40 · 46.1 · 0 |  | 90 · 23.8 · 0 | да |
-| commercial plumbing repair plano tx | 51 · 1.0 · 0 | 51 · 1.0 · 0 | 6 · 41.2 · 0 | 78 · 15.2 · 0 | не наше (коммерческие объекты без своей страницы) |
-| emergency plumbing services in plano tx |  | 21 · 63.8 · 0 |  | 108 · 25.7 · 0 | да |
-| plano tx water heater repair | 7 · 11.0 · 0 | 49 · 58.1 · 0 |  | 80 · 71.8 · 0 | да |
+| faucet installation near plano tx |  | 129 · 54.8 · 0 |  |  | да |
 | plumber service | 9 · 11.0 · 0 | 129 · 31.6 · 0 |  |  | да |
-| plumbing contractors plano tx | 36 · 1.0 · 0 | 36 · 1.0 · 0 | 9 · 25.4 · 0 | 93 · 12.2 · 1 | да |
-| commercial plumbing installation plano tx | 54 · 1.1 · 0 | 54 · 1.1 · 0 | 4 · 36.2 · 0 | 74 · 10.8 · 0 | не наше (коммерческие объекты без своей страницы) |
-| plumber in plano, tx | 55 · 1.4 · 0 | 67 · 10.1 · 0 |  | 61 · 15.3 · 1 | да |
-| clogged drain repair plano tx |  | 86 · 70.6 · 0 |  | 41 · 19.3 · 0 | да |
-| plumbing maintenance plano tx | 3 · 1.0 · 0 | 4 · 11.5 · 0 |  | 123 · 12.1 · 0 | да |
+| water line replacement plano tx |  | 129 · 65.7 · 0 |  |  | да |
+| plano tx plumbing | 6 · 18.8 · 0 | 128 · 63.0 · 0 |  |  | да |
+| emergency plumbing plano tx | 117 · 1.0 · 0 | 127 · 5.4 · 0 |  |  | да |
 | leak detection the colony tx | 125 · 8.9 · 0 | 125 · 8.9 · 0 |  |  | другой город (the colony) |
-| residential plumbing services plano tx |  | 4 · 67.0 · 0 |  | 121 · 24.6 · 0 | да |
-| plumbing services in plano tx | 4 · 36.2 · 0 | 54 · 70.4 · 0 | 2 · 29.5 · 0 | 68 · 23.1 · 0 | да |
-| plumber company plano tx | 18 · 1.0 · 0 | 20 · 8.7 · 0 | 1 · 20.0 · 0 | 100 · 52.5 · 0 | да |
+| plumber services plano | 41 · 33.3 · 0 | 123 · 51.1 · 0 |  |  | да |
 | garbage disposal installation | 119 · 1.0 · 0 | 119 · 1.0 · 0 |  |  | да |
 | independent plumber sink drain repair | 119 · 6.3 · 0 | 119 · 6.3 · 0 |  |  | частично (нет слов: independent) |
 | pipe breaks plano tx | 3 · 12.7 · 0 | 118 · 28.6 · 0 |  |  | да |
+| burst pipe plano |  | 116 · 63.1 · 0 |  |  | да |
 | sewer line cleaning near me | 116 · 1.0 · 0 | 116 · 1.0 · 0 |  |  | да |
-| emergency clogged toilet plano tx |  | 41 · 64.5 · 0 |  | 71 · 30.4 · 0 | да |
-| plumber plano, tx | 30 · 1.0 · 0 | 33 · 2.9 · 0 | 8 · 13.6 · 0 | 79 · 15.3 · 0 | да |
-| plumbing companies in plano | 3 · 2.0 · 0 | 11 · 43.4 · 0 | 21 · 18.8 · 0 | 101 · 24.1 · 0 | да |
-| sewer pipe replacement plano |  | 1 · 83.0 · 0 |  | 111 · 11.8 · 0 | да |
 | emergency plumber the colony | 111 · 1.0 · 0 | 111 · 1.0 · 0 |  |  | другой город (the colony) |
 | emergency plumbing | 111 · 1.9 · 0 | 111 · 1.9 · 0 |  |  | да |
-| emergency repiping plano tx |  | 22 · 71.5 · 0 |  | 88 · 3.2 · 0 | не наше (repipe: нет такой услуги) |
-| plumbers plano, tx |  | 67 · 68.3 · 0 |  | 43 · 44.3 · 0 | да |
+| plumbing repairs plano | 86 · 8.6 · 0 | 111 · 18.7 · 0 |  |  | да |
 | residential plumbing services | 110 · 2.3 · 0 | 110 · 2.3 · 0 |  |  | да |
-| plumbing company plano, tx |  |  |  | 109 · 28.9 · 0 | да |
+| plumber insurance plano, tx | 108 · 4.2 · 0 | 108 · 4.2 · 0 |  |  | да |
+| same day service plumbing plano | 30 · 3.9 · 0 | 108 · 41.4 · 0 |  |  | да |
 | fast plumbing | 1 · 94.0 · 0 | 107 · 75.1 · 0 |  |  | да |
-| water heater service plano | 18 · 1.0 · 0 | 18 · 1.0 · 0 | 2 · 1.0 · 0 | 89 · 1.1 · 0 | да |
+| residential plumber service in plano | 39 · 61.5 · 0 | 106 · 59.9 · 0 |  |  | да |
 | alexa find me a plumber | 32 · 69.5 · 0 | 104 · 62.9 · 0 |  |  | да: голосовой запрос |
-| plano drain cleaning | 16 · 4.1 · 0 | 84 · 80.1 · 0 |  | 20 · 4.5 · 0 | да |
-| plumbing contractors in plano | 27 · 1.9 · 0 | 27 · 1.9 · 0 | 3 · 22.0 · 0 | 77 · 10.6 · 0 | да |
-| plano plumbing contractors | 33 · 2.7 · 0 | 35 · 5.7 · 0 | 1 · 25.0 · 0 | 68 · 8.1 · 0 | да |
 | water heater plumbers near me | 103 · 1.0 · 0 | 103 · 1.0 · 0 |  |  | да |
-| plumbing in plano texas | 6 · 29.8 · 0 | 33 · 57.5 · 0 | 9 · 32.2 · 0 | 69 · 25.0 · 0 | да |
-| unclog toilet plano tx |  | 100 · 64.6 · 0 |  | 2 · 65.5 · 0 | да |
-| cast iron plumbing plano |  |  |  | 100 · 49.0 · 0 | да |
+| unclog toilet plano tx |  | 100 · 64.6 · 0 |  |  | да |
 | expansion tanks repair | 99 · 7.8 · 0 | 99 · 7.8 · 0 |  |  | да |
-| bathroom faucet repair plano tx |  | 97 · 45.8 · 0 |  | 1 · 1.0 · 0 | да |
+| local plumbers plano | 18 · 6.7 · 0 | 99 · 55.0 · 0 |  |  | да |
+| emergency faucet installation plano tx |  | 98 · 51.0 · 0 |  |  | да |
 | emergency plumber carrollton | 98 · 1.3 · 0 | 98 · 1.3 · 0 |  |  | другой город (carrollton) |
-| toilet repair plano tx | 50 · 1.0 · 0 | 67 · 22.8 · 0 |  | 31 · 13.8 · 0 | да |
-| plumbing companies in plano tx | 6 · 3.5 · 0 | 28 · 46.5 · 0 | 3 · 25.0 · 0 | 69 · 31.3 · 0 | да |
-| toilet repair plano | 16 · 1.0 · 0 | 46 · 53.4 · 0 |  | 51 · 42.2 · 0 | да |
+| bathroom faucet repair plano tx |  | 97 · 45.8 · 0 |  |  | да |
+| residential plumbing services in plano | 47 · 55.0 · 0 | 96 · 48.1 · 0 |  |  | да |
 | commercial water heater repair | 95 · 1.0 · 0 | 95 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | hotel plumber | 95 · 1.0 · 0 | 95 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| plano plumbing company | 69 · 2.9 · 0 | 95 · 18.5 · 0 |  |  | да |
+| plano plumbing contractor | 26 · 58.7 · 0 | 95 · 53.6 · 0 |  |  | да |
 | commercial plumber | 94 · 1.0 · 0 | 94 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | plano water leak repair | 5 · 33.2 · 0 | 94 · 38.1 · 0 |  |  | да |
 | slab leak plumber plano |  | 94 · 87.4 · 0 |  |  | да |
 | fpp | 93 · 6.2 · 0 | 93 · 6.2 · 0 |  |  | да |
-| commercial plumbers plano | 48 · 1.0 · 0 | 48 · 1.0 · 0 |  | 42 · 1.0 · 0 | не наше (коммерческие объекты без своей страницы) |
-| sewer replacement plano |  |  |  | 89 · 2.1 · 0 | да |
-| water leak plumber plano |  | 72 · 46.3 · 0 |  | 17 · 50.8 · 0 | да |
-| drain cleaning plano | 28 · 1.4 · 0 | 37 · 23.8 · 0 |  | 51 · 4.6 · 0 | да |
-| water line plumbing plano tx |  | 20 · 77.6 · 0 |  | 68 · 13.9 · 0 | да |
-| best plumbers in plano | 1 · 1.0 · 0 | 3 · 36.0 · 0 | 14 · 16.1 · 0 | 84 · 15.6 · 0 | да: оценочное слово в текст не ставим: best |
-| emergency plumbing services plano tx |  |  |  | 86 · 32.8 · 0 | да |
-| plano commercial plumbing | 3 · 2.3 · 0 | 6 · 44.3 · 0 | 6 · 52.2 · 0 | 80 · 9.9 · 0 | не наше (коммерческие объекты без своей страницы) |
-| plumbing maintenance company plano tx |  | 12 · 89.0 · 0 |  | 74 · 21.2 · 0 | да |
+| plano emergency plumbing | 70 · 1.2 · 0 | 91 · 17.6 · 0 |  |  | да |
+| plano sewer line repair | 16 · 2.0 · 0 | 91 · 68.4 · 0 |  |  | да |
+| plumbing repair services plano | 34 · 27.5 · 0 | 90 · 35.4 · 0 |  |  | да |
+| plano texas plumbers | 25 · 1.0 · 0 | 89 · 47.7 · 0 |  |  | да |
+| toilet unclogging service plano tx |  | 88 · 79.1 · 0 |  |  | да |
+| clogged drain repair plano tx |  | 86 · 70.6 · 0 |  |  | да |
 | the colony tx emergency plumbers | 86 · 1.2 · 0 | 86 · 1.2 · 0 |  |  | другой город (the colony) |
 | outdoor faucet repair dfw | 85 · 7.0 · 0 | 85 · 7.0 · 0 |  |  | другой город (dfw) |
-| plumbing services of plano | 41 · 1.1 · 0 | 47 · 13.3 · 0 |  | 37 · 23.2 · 0 | да |
-| repiping service plano tx |  | 2 · 91.0 · 0 |  | 82 · 3.2 · 0 | не наше (repipe: нет такой услуги) |
+| plano drain cleaning | 16 · 4.1 · 0 | 84 · 80.1 · 0 |  |  | да |
 | sewer line repair | 84 · 1.0 · 0 | 84 · 1.0 · 0 |  |  | да |
 | blocked drain | 83 · 1.0 · 0 | 83 · 1.0 · 0 |  |  | да |
-| repiping company plano tx |  | 1 · 75.0 · 0 |  | 81 · 11.5 · 0 | не наше (repipe: нет такой услуги) |
+| residential plumbing services plano | 50 · 28.5 · 0 | 83 · 31.5 · 0 |  |  | да |
+| plumbing company plano tx | 22 · 1.0 · 0 | 82 · 38.6 · 0 |  |  | да |
 | the colony tx emergency plumbing | 81 · 1.0 · 0 | 81 · 1.0 · 0 |  |  | другой город (the colony) |
-| plano pipe repair | 36 · 2.1 · 0 | 40 · 6.2 · 0 | 1 · 1.0 · 0 | 40 · 3.0 · 0 | да |
-| plumbing company in plano |  | 21 · 60.8 · 0 |  | 59 · 24.7 · 0 | да |
-| plumbinginplano.net | 12 · 68.6 · 0 | 17 · 67.5 · 0 | 3 · 11.0 · 0 | 63 · 10.5 · 0 | нет (нет слов: plumbinginplano, net) |
-| repiping plano tx |  | 1 · 79.0 · 0 |  | 78 · 26.5 · 0 | не наше (repipe: нет такой услуги) |
 | emergency plumber frisco | 78 · 5.0 · 0 | 78 · 5.0 · 0 |  |  | другой город (frisco) |
-| burst pipe repair plano tx | 11 · 1.4 · 0 | 75 · 67.6 · 0 |  | 2 · 50.0 · 0 | да |
-| plumbing contractors plano near me |  | 15 · 95.5 · 0 |  | 62 · 24.2 · 0 | да |
-| plumbing replacement plano tx |  | 21 · 56.3 · 0 |  | 56 · 30.8 · 0 | да |
-| sewer line replacement plano |  | 2 · 73.5 · 0 |  | 75 · 9.3 · 0 | да |
-| emergency slab leak plano tx |  | 65 · 72.8 · 0 |  | 11 · 83.4 · 0 | да |
+| sewer line plumber plano |  | 77 · 75.9 · 0 |  |  | да |
 | frisco emergency plumber | 76 · 1.8 · 0 | 76 · 1.8 · 0 |  |  | другой город (frisco) |
 | plumber lewisville tx | 76 · 16.9 · 0 | 76 · 16.9 · 0 |  |  | другой город (lewisville) |
-| water heater plano tx | 14 · 1.0 · 0 | 14 · 1.0 · 0 |  | 62 · 1.8 · 0 | да |
+| burst pipe repair plano tx | 11 · 1.4 · 0 | 75 · 67.6 · 0 |  |  | да |
 | plumber mckinney tx | 75 · 17.3 · 0 | 75 · 17.3 · 0 |  |  | другой город (mckinney) |
 | plumbing repair service | 75 · 3.0 · 0 | 75 · 3.0 · 0 |  |  | да |
+| residential plumber services in plano | 29 · 45.8 · 0 | 75 · 51.9 · 0 |  |  | да |
 | emergency plumbing services near me | 34 · 5.7 · 0 | 74 · 9.4 · 0 |  |  | да |
-| plano tx drain cleaning | 72 · 1.2 · 0 | 72 · 1.2 · 0 |  | 2 · 1.0 · 0 | да |
-| emergency sewer line plano tx |  | 65 · 87.5 · 0 |  | 8 · 78.0 · 0 | да |
-| emergency plumber plano texas | 8 · 1.0 · 0 | 8 · 1.0 · 0 | 27 · 2.7 · 0 | 64 · 2.1 · 0 | да |
-| plano commercial plumber | 5 · 1.2 · 0 | 11 · 45.4 · 0 | 8 · 46.8 · 0 | 61 · 47.6 · 0 | не наше (коммерческие объекты без своей страницы) |
+| plumbing companies plano | 3 · 24.3 · 0 | 73 · 60.9 · 0 |  |  | да |
+| emergency sewer and drain plano tx |  | 72 · 84.2 · 0 |  |  | да |
+| plano tx drain cleaning | 72 · 1.2 · 0 | 72 · 1.2 · 0 |  |  | да |
 | under slab leak plano |  | 72 · 69.6 · 0 |  |  | да |
+| water leak plumber plano |  | 72 · 46.3 · 0 |  |  | да |
 | frisco water line repair | 71 · 3.4 · 0 | 71 · 3.4 · 0 |  |  | другой город (frisco) |
-| repiping services plano tx |  |  |  | 71 · 4.8 · 0 | не наше (repipe: нет такой услуги) |
 | slab leak plano |  | 71 · 76.7 · 0 |  |  | да |
-| trenchless plumber plano | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  | 67 · 5.2 · 0 | частично (нет слов: trenchless) |
-| plumbing repair near plano tx |  |  |  | 70 · 37.1 · 0 | да |
-| local plumber plano near me |  | 24 · 86.5 · 0 |  | 45 · 16.7 · 0 | да |
-| residential plumbing additions plano | 65 · 2.4 · 0 | 65 · 2.4 · 0 |  | 4 · 1.2 · 0 | частично (нет слов: additions) |
-| clogged drain plano tx | 1 · 30.0 · 0 | 61 · 75.1 · 0 |  | 7 · 68.1 · 0 | да |
-| water heater repair in plano |  |  |  | 68 · 1.0 · 0 | да |
-| water line near plano tx |  | 67 · 76.0 · 0 |  | 1 · 95.0 · 0 | да |
-| emergency water heater service plano tx |  | 14 · 79.3 · 0 |  | 53 · 61.9 · 0 | да |
+| emergency faucet repair plano tx |  | 70 · 48.4 · 0 |  |  | да |
+| 24 hour plumber plano tx | 60 · 33.4 · 0 | 69 · 32.8 · 0 |  |  | да |
 | plano leak detection and repair | 2 · 84.0 · 0 | 67 · 46.2 · 0 |  |  | да |
-| water heater plano | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  | 63 · 1.2 · 0 | да |
-| unclog sewer line plano tx |  | 59 · 81.7 · 0 |  | 7 · 84.9 · 0 | да |
-| plano sewer line cleanout |  | 62 · 73.7 · 0 |  | 1 · 52.0 · 0 | да |
-| plano slab leak detection |  | 40 · 92.1 · 0 |  | 23 · 2.0 · 0 | да |
+| plumber in plano, tx | 55 · 1.4 · 0 | 67 · 10.1 · 0 |  |  | да |
+| plumbers plano, tx |  | 67 · 68.3 · 0 |  |  | да |
+| plumbing contractor plano |  | 67 · 52.2 · 0 |  |  | да |
+| toilet repair plano tx | 50 · 1.0 · 0 | 67 · 22.8 · 0 |  |  | да |
+| water line near plano tx |  | 67 · 76.0 · 0 |  |  | да |
+| plano plumbing companies | 15 · 21.0 · 0 | 66 · 46.0 · 0 |  |  | да |
+| emergency plumber in plano | 55 · 1.1 · 0 | 65 · 8.1 · 0 |  |  | да |
+| emergency sewer line plano tx |  | 65 · 87.5 · 0 |  |  | да |
+| emergency slab leak plano tx |  | 65 · 72.8 · 0 |  |  | да |
+| residential plumbing additions plano | 65 · 2.4 · 0 | 65 · 2.4 · 0 |  |  | частично (нет слов: additions) |
+| plumbing repair service plano tx | 60 · 5.1 · 0 | 64 · 9.6 · 0 |  |  | да |
+| water heater repair plano tx | 54 · 2.1 · 0 | 64 · 12.0 · 0 |  |  | да |
+| emergency plumber near me plano | 1 · 1.0 · 0 | 63 · 35.5 · 0 |  |  | да |
+| expansion tanks repair plano tx | 63 · 1.9 · 0 | 63 · 1.9 · 0 |  |  | да |
 | plumbing services near me | 57 · 4.6 · 0 | 63 · 5.4 · 0 |  |  | да |
-| residential plumbing repairs plano | 53 · 5.7 · 0 | 53 · 5.7 · 0 | 2 · 1.0 · 0 | 10 · 1.0 · 0 | да |
-| sewer line cleanout plano |  | 59 · 81.2 · 0 |  | 4 · 48.8 · 0 | да |
-| garbage disposal repair​ plano | 16 · 2.1 · 0 | 16 · 2.1 · 0 |  | 46 · 4.5 · 0 | да |
-| cast iron plumbing repair plano tx | 44 · 1.3 · 0 | 44 · 1.3 · 0 |  | 17 · 1.5 · 0 | да |
-| emergency government plumber plano tx |  |  |  | 61 · 21.8 · 0 | частично (нет слов: government) |
+| plano residential plumber services | 6 · 2.5 · 0 | 62 · 37.7 · 0 |  |  | да |
+| plano sewer line cleanout |  | 62 · 73.7 · 0 |  |  | да |
+| clogged drain plano tx | 1 · 30.0 · 0 | 61 · 75.1 · 0 |  |  | да |
+| commercial plumbing services plano tx | 61 · 1.3 · 0 | 61 · 1.3 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | frisco tx emergency plumbing | 61 · 1.6 · 0 | 61 · 1.6 · 0 |  |  | другой город (frisco) |
-| plumbing inspection plano | 52 · 1.7 · 0 | 52 · 1.7 · 0 |  | 9 · 52.1 · 0 | да |
-| cast iron drain pipe repair plano |  |  |  | 60 · 13.4 · 0 | да |
-| emergency pipe repair plano tx |  | 51 · 71.2 · 0 |  | 9 · 29.2 · 0 | да |
-| leak repairs plano tx | 3 · 30.0 · 0 | 38 · 56.2 · 0 | 6 · 31.0 · 0 | 22 · 43.9 · 0 | да |
 | pipe break repair | 60 · 6.7 · 0 | 60 · 6.7 · 0 |  |  | да |
-| toilet installation plano tx | 49 · 1.2 · 0 | 50 · 2.8 · 0 | 1 · 1.0 · 0 | 9 · 5.6 · 0 | да |
+| residential plumbing in plano | 12 · 25.9 · 0 | 60 · 32.9 · 0 |  |  | да |
+| residential plumbing plano | 23 · 42.0 · 0 | 60 · 42.1 · 0 |  |  | да |
+| sewer line cleanout plano |  | 59 · 81.2 · 0 |  |  | да |
+| unclog sewer line plano tx |  | 59 · 81.7 · 0 |  |  | да |
 | commercial plumbing company | 58 · 1.0 · 0 | 58 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | frisco tx water line repair | 58 · 5.4 · 0 | 58 · 5.4 · 0 |  |  | другой город (frisco) |
-| licensed plumber plano |  | 8 · 87.2 · 0 |  | 50 · 38.0 · 0 | да |
-| sink disposal repair​ plano | 17 · 1.4 · 0 | 17 · 1.4 · 0 |  | 41 · 2.0 · 0 | да |
+| emergency water heater repair plano tx |  | 57 · 84.2 · 0 |  |  | да |
+| plano texas plumber | 24 · 1.0 · 0 | 57 · 40.5 · 0 |  |  | да |
+| commercial plumber services in plano | 47 · 1.0 · 0 | 56 · 12.4 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | need a plumber | 8 · 7.4 · 0 | 56 · 12.8 · 0 |  |  | да |
-| no dig sewer line repair plano |  |  |  | 56 · 3.7 · 0 | да |
+| water heater replacement plano | 56 · 1.0 · 0 | 56 · 1.0 · 0 |  |  | да |
+| expansion tanks repair plano | 55 · 2.1 · 0 | 55 · 2.1 · 0 |  |  | да |
 | plumber near me cheap | 55 · 29.9 · 0 | 55 · 29.9 · 0 |  |  | да: оценочное слово в текст не ставим: cheap |
-| sewer line cleanout in plano |  | 53 · 74.4 · 0 |  | 2 · 83.5 · 0 | да |
+| commercial plumbing installation plano tx | 54 · 1.1 · 0 | 54 · 1.1 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | frozen pipe repair | 54 · 2.0 · 0 | 54 · 2.0 · 0 |  |  | да |
 | garbage disposal repair frisco tx | 54 · 2.0 · 0 | 54 · 2.0 · 0 |  |  | другой город (frisco) |
-| residential plumbing maintenance plano | 47 · 1.3 · 0 | 47 · 1.3 · 0 |  | 7 · 1.0 · 0 | да |
+| plumbing services in plano tx | 4 · 36.2 · 0 | 54 · 70.4 · 0 |  |  | да |
 | clogged drain repair plano | 53 · 1.8 · 0 | 53 · 1.8 · 0 |  |  | да |
-| commercial plumbing repairs plano | 44 · 1.1 · 0 | 44 · 1.1 · 0 | 2 · 48.5 · 0 | 9 · 11.6 · 0 | не наше (коммерческие объекты без своей страницы) |
-| plumber cost plano tx |  | 5 · 68.2 · 0 |  | 48 · 63.4 · 0 | да: оценочное слово в текст не ставим: cost |
-| plumbing installation plano tx |  | 9 · 70.7 · 0 |  | 44 · 39.5 · 0 | да |
+| residential plumber services plano | 8 · 5.5 · 0 | 53 · 28.1 · 0 |  |  | да |
+| residential plumbing repairs plano | 53 · 5.7 · 0 | 53 · 5.7 · 0 |  |  | да |
+| sewer line cleanout in plano |  | 53 · 74.4 · 0 |  |  | да |
 | the colony emergency plumber | 53 · 1.1 · 0 | 53 · 1.1 · 0 |  |  | другой город (the colony) |
-| emergency water heater replacement plano tx |  | 30 · 73.6 · 0 |  | 22 · 61.1 · 0 | да |
+| commercial plumber plano | 52 · 1.0 · 0 | 52 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| plumbing inspection plano | 52 · 1.7 · 0 | 52 · 1.7 · 0 |  |  | да |
+| slow drain repair plano tx |  | 52 · 56.9 · 0 |  |  | да |
+| water heater repair plano | 51 · 1.8 · 0 | 52 · 4.0 · 0 |  |  | да |
+| commercial plumbing repair plano tx | 51 · 1.0 · 0 | 51 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| emergency pipe repair plano tx |  | 51 · 71.2 · 0 |  |  | да |
 | expansion tanks repair frisco tx | 51 · 2.8 · 0 | 51 · 2.8 · 0 |  |  | другой город (frisco) |
-| sewer pipe repair sleeve plano | 3 · 7.3 · 0 | 43 · 56.7 · 0 |  | 8 · 46.1 · 0 | да |
-| commercial plumber plano tx | 20 · 1.0 · 0 | 20 · 1.0 · 0 | 1 · 45.0 · 0 | 30 · 4.6 · 0 | не наше (коммерческие объекты без своей страницы) |
-| drain service plano |  | 47 · 80.9 · 0 |  | 2 · 75.5 · 0 | да |
-| emergency plumber frozen pipes burst dallas plano mckinney |  |  |  | 49 · 10.4 · 0 | другой город (dallas) |
-| emergency water heater maintenance plano tx |  | 15 · 91.3 · 0 |  | 34 · 55.4 · 0 | да |
+| residential plumber service plano | 10 · 22.9 · 0 | 50 · 35.4 · 0 |  |  | да |
+| toilet installation plano tx | 49 · 1.2 · 0 | 50 · 2.8 · 0 |  |  | да |
+| plano residential plumbing | 4 · 31.8 · 0 | 49 · 33.7 · 0 |  |  | да |
+| plano tx water heater repair | 7 · 11.0 · 0 | 49 · 58.1 · 0 |  |  | да |
+| repiping near plano tx |  | 49 · 71.2 · 0 |  |  | не наше (repipe: нет такой услуги) |
+| commercial plumbers plano | 48 · 1.0 · 0 | 48 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| plumbing contractor in plano | 1 · 1.0 · 0 | 48 · 49.9 · 0 |  |  | да |
+| drain service plano |  | 47 · 80.9 · 0 |  |  | да |
 | local plumber | 47 · 1.2 · 0 | 47 · 1.2 · 0 |  |  | да |
+| plumbing services of plano | 41 · 1.1 · 0 | 47 · 13.3 · 0 |  |  | да |
+| residential plumbing maintenance plano | 47 · 1.3 · 0 | 47 · 1.3 · 0 |  |  | да |
 | slab leak repair near plano tx |  | 47 · 86.8 · 0 |  |  | да |
 | best plumber | 46 · 40.6 · 0 | 46 · 40.6 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | slab leak detection the colony, tx | 46 · 1.0 · 0 | 46 · 1.0 · 0 |  |  | другой город (the colony) |
-| water heater service plano near me |  |  |  | 46 · 47.5 · 0 | да |
-| drain cleaning plano, tx |  |  |  | 45 · 1.0 · 0 | да |
+| toilet repair plano | 16 · 1.0 · 0 | 46 · 53.4 · 0 |  |  | да |
 | emergency drain cleaning frisco | 45 · 1.4 · 0 | 45 · 1.4 · 0 |  |  | другой город (frisco) |
-| gas line repair plano | 17 · 16.0 · 0 | 19 · 19.2 · 0 |  | 26 · 2.1 · 0 | не наше (газовые линии не заявляем) |
-| drain plumber plano |  | 1 · 30.0 · 0 |  | 43 · 1.0 · 0 | да |
-| heater repair plano, tx | 18 · 1.0 · 0 | 18 · 1.0 · 0 |  | 26 · 1.0 · 0 | да |
+| plano residential plumber service | 6 · 19.8 · 0 | 45 · 39.1 · 0 |  |  | да |
+| plano residential plumbing services | 3 · 2.7 · 0 | 45 · 35.4 · 0 |  |  | да |
+| plumbing companies plano tx | 1 · 1.0 · 0 | 45 · 62.2 · 0 |  |  | да |
+| cast iron plumbing repair plano tx | 44 · 1.3 · 0 | 44 · 1.3 · 0 |  |  | да |
+| commercial plumbing repairs plano | 44 · 1.1 · 0 | 44 · 1.1 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | water heater replacement near me | 44 · 5.1 · 0 | 44 · 5.1 · 0 |  |  | да |
 | emergency plumber richardson | 43 · 1.0 · 0 | 43 · 1.0 · 0 |  |  | другой город (richardson) |
-| plumbing companies plano texas |  | 16 · 58.9 · 0 |  | 27 · 33.2 · 0 | да |
+| sewer pipe repair sleeve plano | 3 · 7.3 · 0 | 43 · 56.7 · 0 |  |  | да |
+| water heater installation plano tx | 43 · 1.5 · 0 | 43 · 1.5 · 0 |  |  | да |
 | carrollton tx emergency plumbing | 42 · 1.6 · 0 | 42 · 1.6 · 0 |  |  | другой город (carrollton) |
-| commercial plumbing plano tx | 9 · 1.2 · 1 | 9 · 1.2 · 1 | 7 · 47.1 · 0 | 33 · 26.4 · 0 | не наше (коммерческие объекты без своей страницы) |
 | leak detection | 42 · 7.4 · 0 | 42 · 7.4 · 0 |  |  | да |
 | main line sewer repair | 42 · 2.0 · 0 | 42 · 2.0 · 0 |  |  | да |
-| pipe repair plano tx | 29 · 1.6 · 0 | 35 · 12.8 · 0 |  | 7 · 56.9 · 0 | да |
 | plumbing repair near me | 34 · 14.2 · 0 | 42 · 14.1 · 0 |  |  | да |
 | compare prices for emergency water heater repair by 24 hour plumbers. | 41 · 3.8 · 0 | 41 · 3.8 · 0 |  |  | частично (нет слов: compare) |
-| gas line repair plano tx | 39 · 5.3 · 0 | 39 · 5.3 · 0 |  | 2 · 2.5 · 0 | не наше (газовые линии не заявляем) |
+| emergency clogged toilet plano tx |  | 41 · 64.5 · 0 |  |  | да |
 | plano leak detection |  | 41 · 71.2 · 0 |  |  | да |
-| sewer line replacement in plano | 1 · 2.0 · 0 | 19 · 69.0 · 0 |  | 22 · 2.8 · 0 | да |
 | water line replacement plano | 41 · 1.9 · 0 | 41 · 1.9 · 0 |  |  | да |
-| clogged drain cleaning plano |  |  |  | 40 · 1.9 · 0 | да |
+| commercial plumbing plano | 38 · 1.0 · 0 | 40 · 4.7 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | garbage disposal repair the colony tx | 40 · 1.9 · 0 | 40 · 1.9 · 0 |  |  | другой город (the colony) |
 | leak detection plumber lewisville | 40 · 1.4 · 0 | 40 · 1.4 · 0 |  |  | другой город (lewisville) |
 | local plumber near me | 40 · 1.5 · 0 | 40 · 1.5 · 0 |  |  | да |
-| can you recommend reliable plumbing companies in plano tx? | 30 · 3.4 · 0 | 30 · 3.4 · 0 |  | 9 · 5.0 · 0 | частично (нет слов: recommend) |
-| commercial plumbing maintenance plano | 37 · 1.4 · 0 | 37 · 1.4 · 0 |  | 2 · 1.0 · 0 | не наше (коммерческие объекты без своей страницы) |
+| plano pipe repair | 36 · 2.1 · 0 | 40 · 6.2 · 0 |  |  | да |
+| plano slab leak detection |  | 40 · 92.1 · 0 |  |  | да |
+| plano water heater repair | 17 · 6.1 · 0 | 40 · 46.1 · 0 |  |  | да |
+| water heater replacement plano tx | 40 · 1.0 · 0 | 40 · 1.0 · 0 |  |  | да |
+| best plumbers in plano tx | 32 · 33.0 · 0 | 39 · 42.6 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | faucet repair the colony tx | 15 · 3.3 · 0 | 39 · 50.5 · 0 |  |  | другой город (the colony) |
-| local plumber plano |  | 18 · 82.2 · 0 |  | 21 · 36.0 · 0 | да |
+| gas line repair plano tx | 39 · 5.3 · 0 | 39 · 5.3 · 0 |  |  | не наше (газовые линии не заявляем) |
 | p trap plumbing | 39 · 8.3 · 0 | 39 · 8.3 · 0 |  |  | частично (нет слов: p, trap) |
 | frisco tx emergency plumbers | 38 · 2.3 · 0 | 38 · 2.3 · 0 |  |  | другой город (frisco) |
 | garbage disposal repair frisco | 38 · 1.9 · 0 | 38 · 1.9 · 0 |  |  | другой город (frisco) |
-| how do emergency plumbing services in plano work? | 14 · 11.0 · 0 | 18 · 10.8 · 0 | 2 · 12.5 · 0 | 20 · 8.2 · 0 | да |
+| leak repairs plano tx | 3 · 30.0 · 0 | 38 · 56.2 · 0 |  |  | да |
 | main drain cleaning | 38 · 1.4 · 0 | 38 · 1.4 · 0 |  |  | да |
 | sewer line clean out plano |  | 38 · 87.2 · 0 |  |  | да |
 | water heater | 38 · 3.2 · 0 | 38 · 3.2 · 0 |  |  | да |
-| clogged toilet cost plano tx |  | 12 · 78.0 · 0 |  | 25 · 69.0 · 0 | да: оценочное слово в текст не ставим: cost |
+| commercial plumbing maintenance plano | 37 · 1.4 · 0 | 37 · 1.4 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| drain cleaning plano | 28 · 1.4 · 0 | 37 · 23.8 · 0 |  |  | да |
 | emergency drain service | 37 · 7.2 · 0 | 37 · 7.2 · 0 |  |  | да |
-| plano sewer and drain services |  | 22 · 86.6 · 0 |  | 15 · 42.1 · 0 | да |
-| plano sewer line replacement |  | 33 · 74.7 · 0 |  | 4 · 32.5 · 0 | да |
-| tankless water heater repair plano | 7 · 16.7 · 0 | 7 · 16.7 · 0 |  | 30 · 1.1 · 0 | не наше (tankless не делаем) |
-| toilet drain cleaning plano tx | 22 · 1.1 · 0 | 23 · 4.8 · 0 |  | 14 · 1.6 · 0 | да |
+| plumbers near me plano | 4 · 1.0 · 0 | 37 · 52.9 · 0 |  |  | да |
+| plumbing company plano | 10 · 32.9 · 0 | 37 · 41.3 · 0 |  |  | да |
 | clogged drain plumber near me | 36 · 1.0 · 0 | 36 · 1.0 · 0 |  |  | да |
-| plano sewer repair near me | 6 · 18.7 · 0 | 6 · 18.7 · 0 |  | 30 · 53.3 · 0 | да |
-| plano water heater |  | 1 · 99.0 · 0 |  | 35 · 1.1 · 0 | да |
+| plumbing contractors plano | 3 · 21.0 · 0 | 36 · 56.6 · 0 |  |  | да |
+| plumbing contractors plano tx | 36 · 1.0 · 0 | 36 · 1.0 · 0 |  |  | да |
 | plumbing pipe repair near me | 14 · 13.4 · 0 | 36 · 15.6 · 0 |  |  | да |
 | the colony tx gas line repair | 36 · 3.7 · 0 | 36 · 3.7 · 0 |  |  | другой город (the colony) |
 | emergency plumbing service | 35 · 1.0 · 0 | 35 · 1.0 · 0 |  |  | да |
-| pipe repair company plano tx |  |  |  | 35 · 34.5 · 0 | да |
+| pipe repair plano tx | 29 · 1.6 · 0 | 35 · 12.8 · 0 |  |  | да |
+| plano commercial plumber service | 25 · 1.8 · 0 | 35 · 23.2 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| plano plumbing contractors | 33 · 2.7 · 0 | 35 · 5.7 · 0 |  |  | да |
 | plumber in frisco | 35 · 1.5 · 0 | 35 · 1.5 · 0 |  |  | другой город (frisco) |
-| trenchless sewer line replacement plano |  |  |  | 35 · 1.3 · 0 | частично (нет слов: trenchless) |
 | blocked drain cleaning frisco | 34 · 1.6 · 0 | 34 · 1.6 · 0 |  |  | другой город (frisco) |
-| plumbers near plano tx |  | 6 · 72.7 · 0 |  | 28 · 41.5 · 0 | да |
-| residential leak detection services in plano |  | 3 · 90.0 · 0 | 1 · 88.0 · 0 | 31 · 34.5 · 0 | да |
-| water heater company plano |  |  |  | 34 · 1.1 · 0 | да |
-| water line services plano tx |  | 29 · 67.0 · 0 |  | 5 · 87.4 · 0 | да |
-| burst pipe repair plano | 9 · 3.2 · 0 | 29 · 33.0 · 0 |  | 4 · 20.8 · 0 | да |
-| cipp drain lining plano tx |  |  |  | 33 · 42.5 · 0 | частично (нет слов: cipp, lining) |
-| drain pipe installation plano tx |  | 20 · 74.8 · 0 |  | 13 · 1.1 · 0 | да |
+| plumbing near plano tx |  | 34 · 71.6 · 0 |  |  | да |
+| plano sewer line replacement |  | 33 · 74.7 · 0 |  |  | да |
 | plumber hebron tx | 33 · 1.1 · 0 | 33 · 1.1 · 0 |  |  | частично (нет слов: hebron) |
+| plumber plano, tx | 30 · 1.0 · 0 | 33 · 2.9 · 0 |  |  | да |
+| plumbing in plano texas | 6 · 29.8 · 0 | 33 · 57.5 · 0 |  |  | да |
 | replacement showers in plano |  | 33 · 68.2 · 0 |  |  | да |
+| residential plumber plano tx | 13 · 1.1 · 0 | 33 · 42.6 · 0 |  |  | да |
 | drain cleaner | 32 · 3.6 · 0 | 32 · 3.6 · 0 |  |  | частично (нет слов: cleaner) |
 | dripping sound in water heater | 32 · 1.0 · 0 | 32 · 1.0 · 0 |  |  | да |
 | emergency drain cleaning | 32 · 1.0 · 0 | 32 · 1.0 · 0 |  |  | да |
-| emergency water line plano tx |  | 30 · 59.3 · 0 |  | 2 · 68.0 · 0 | да |
 | for plumbing | 32 · 71.6 · 0 | 32 · 71.6 · 0 |  |  | да |
 | plano tx slab leak repair |  | 32 · 56.8 · 0 |  |  | да |
-| plumbing installation near plano tx |  |  |  | 32 · 47.1 · 0 | да |
-| water leak detection services plano |  | 1 · 84.0 · 0 |  | 31 · 70.7 · 0 | да |
-| bathroom plumbing services in plano |  | 20 · 62.2 · 0 |  | 11 · 54.2 · 0 | да |
+| plumbing service plano tx | 14 · 17.6 · 0 | 32 · 42.8 · 0 |  |  | да |
 | best plumber near me | 31 · 24.9 · 0 | 31 · 24.9 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | licensed plumber near me little pocket | 31 · 1.4 · 0 | 31 · 1.4 · 0 |  |  | частично (нет слов: pocket) |
-| plano plumbing and leak detection | 1 · 44.0 · 0 | 26 · 38.9 · 0 |  | 5 · 80.0 · 0 | да |
-| plano sewer line repair near me | 1 · 2.0 · 0 | 4 · 48.0 · 0 |  | 27 · 65.2 · 0 | да |
-| government plumber near plano tx |  |  |  | 30 · 36.4 · 0 | частично (нет слов: government) |
+| can you recommend reliable plumbing companies in plano tx? | 30 · 3.4 · 0 | 30 · 3.4 · 0 |  |  | частично (нет слов: recommend) |
+| emergency water heater replacement plano tx |  | 30 · 73.6 · 0 |  |  | да |
+| emergency water line plano tx |  | 30 · 59.3 · 0 |  |  | да |
 | ppr plumbing | 13 · 38.9 · 0 | 30 · 55.8 · 0 |  |  | частично (нет слов: ppr) |
 | same day plumber near me | 2 · 38.0 · 0 | 30 · 12.7 · 0 |  |  | да |
 | sink installation | 30 · 1.0 · 0 | 30 · 1.0 · 0 |  |  | да |
-| emergency government plumbing plano tx |  |  |  | 29 · 47.5 · 0 | частично (нет слов: government) |
-| plano sewer drain cleaning | 2 · 3.0 · 0 | 12 · 75.3 · 0 |  | 17 · 7.3 · 0 | да |
-| plano toilet repair |  | 19 · 86.2 · 0 |  | 10 · 80.8 · 0 | да |
+| burst pipe repair plano | 9 · 3.2 · 0 | 29 · 33.0 · 0 |  |  | да |
 | plumbing help | 29 · 1.0 · 0 | 29 · 1.0 · 0 |  |  | да |
 | slab leaks plano, tx |  | 29 · 97.7 · 0 |  |  | да |
-| weekend plumber plano tx | 19 · 6.8 · 0 | 19 · 6.8 · 0 | 10 · 12.3 · 0 | 10 · 12.3 · 0 | да |
-| 24/7 plumber plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 | 21 · 10.1 · 0 | 27 · 9.6 · 0 | да |
-| cipp relining plano tx |  |  |  | 28 · 22.7 · 0 | нет (нет слов: cipp, relining) |
+| water heater installation plano | 29 · 1.0 · 0 | 29 · 1.0 · 0 |  |  | да |
+| water line services plano tx |  | 29 · 67.0 · 0 |  |  | да |
 | emergency pipe repair | 28 · 1.5 · 0 | 28 · 1.5 · 0 |  |  | да |
 | flow plumbing | 28 · 17.2 · 0 | 28 · 17.2 · 0 |  |  | частично (нет слов: flow) |
-| plano gas line repair | 18 · 4.9 · 0 | 18 · 4.9 · 0 |  | 10 · 13.2 · 0 | не наше (газовые линии не заявляем) |
-| plano residential leak detection services |  | 4 · 89.5 · 0 | 1 · 88.0 · 0 | 24 · 50.9 · 0 | да |
+| plano tx plumbing service | 1 · 1.0 · 0 | 28 · 47.6 · 0 |  |  | да |
+| plumbing companies in plano tx | 6 · 3.5 · 0 | 28 · 46.5 · 0 |  |  | да |
 | plumbing near me | 28 · 7.6 · 0 | 28 · 7.6 · 0 |  |  | да |
 | sink drain repair plano tx | 28 · 1.0 · 0 | 28 · 1.0 · 0 |  |  | да |
 | gas line repair the colony | 27 · 2.0 · 0 | 27 · 2.0 · 0 |  |  | другой город (the colony) |
 | main water line repair | 27 · 1.1 · 0 | 27 · 1.1 · 0 |  |  | да |
-| plano plumber near me |  |  |  | 27 · 11.9 · 0 | да |
 | plano shower repair |  | 27 · 67.0 · 0 |  |  | да |
-| sewer line repair near plano tx |  |  |  | 27 · 1.1 · 0 | да |
-| toilet installation plano | 6 · 1.5 · 0 | 6 · 1.5 · 0 |  | 21 · 1.7 · 0 | да |
+| plumbing contractors in plano | 27 · 1.9 · 0 | 27 · 1.9 · 0 |  |  | да |
 | water line repair frisco | 27 · 1.4 · 0 | 27 · 1.4 · 0 |  |  | другой город (frisco) |
-| cipp pipe lining plano |  |  |  | 26 · 19.2 · 0 | частично (нет слов: cipp, lining) |
 | emergency plumber frisco tx | 26 · 7.3 · 0 | 26 · 7.3 · 0 |  |  | другой город (frisco) |
 | emergency sewer repair | 26 · 1.0 · 0 | 26 · 1.0 · 0 |  |  | да |
-| faucet installation plano tx |  | 25 · 61.2 · 0 |  | 1 · 39.0 · 0 | да |
-| gas line installation plano tx |  |  |  | 26 · 1.5 · 0 | не наше (газовые линии не заявляем) |
+| plano plumbing and leak detection | 1 · 44.0 · 0 | 26 · 38.9 · 0 |  |  | да |
 | plano sewer drain repair |  | 26 · 80.5 · 0 |  |  | да |
-| plumbing repair cost plano tx |  | 1 · 66.0 · 0 |  | 25 · 60.4 · 0 | да: оценочное слово в текст не ставим: cost |
-| sewer repair near me in plano | 4 · 1.0 · 0 | 5 · 12.0 · 0 |  | 21 · 71.9 · 0 | да |
+| plumber near me plano | 14 · 19.4 · 0 | 26 · 48.1 · 0 |  |  | да |
 | well repair plano | 26 · 14.0 · 0 | 26 · 14.0 · 0 |  |  | не наше (насосы скважин: нет такой услуги) |
 | burst pipe repair | 25 · 1.4 · 0 | 25 · 1.4 · 0 |  |  | да |
 | celina plumber | 25 · 84.5 · 0 | 25 · 84.5 · 0 |  |  | другой город (celina) |
 | clogged drain repair | 25 · 1.0 · 0 | 25 · 1.0 · 0 |  |  | да |
 | drain cleaning frisco | 25 · 6.8 · 0 | 25 · 6.8 · 0 |  |  | другой город (frisco) |
+| faucet installation plano tx |  | 25 · 61.2 · 0 |  |  | да |
+| hot water heater repair plano tx | 22 · 1.0 · 0 | 25 · 9.5 · 0 |  |  | да |
 | leak in slab plano tx |  | 25 · 95.8 · 0 |  |  | да |
+| plano sewer repair | 18 · 2.0 · 0 | 25 · 25.7 · 0 |  |  | да |
 | plumbing services frisco | 25 · 1.0 · 0 | 25 · 1.0 · 0 |  |  | другой город (frisco) |
 | sewer camera inspection | 25 · 9.4 · 0 | 25 · 9.4 · 0 |  |  | да |
 | water heater service near me | 25 · 1.0 · 0 | 25 · 1.0 · 0 |  |  | да |
 | 24/7 plumbing service | 24 · 1.0 · 0 | 24 · 1.0 · 0 |  |  | да |
-| conventional water heaters plano |  |  |  | 24 · 12.8 · 0 | частично (нет слов: conventional) |
 | drain cleaning services | 24 · 3.5 · 0 | 24 · 3.5 · 0 |  |  | да |
 | drain clearing plano tx | 24 · 1.0 · 0 | 24 · 1.0 · 0 |  |  | да |
 | hot water heater repair near me | 24 · 1.2 · 0 | 24 · 1.2 · 0 |  |  | да |
+| local plumber plano near me |  | 24 · 86.5 · 0 |  |  | да |
 | plano sewer line clean out |  | 24 · 76.3 · 0 |  |  | да |
 | plumbers frisco | 24 · 12.6 · 0 | 24 · 12.6 · 0 |  |  | другой город (frisco) |
 | plumbing companies near me | 24 · 6.3 · 0 | 24 · 6.3 · 0 |  |  | да |
-| plumbing company in plano, tx | 13 · 1.0 · 0 | 13 · 1.0 · 0 |  | 11 · 1.0 · 0 | да |
+| plumbing plano texas | 9 · 7.9 · 0 | 24 · 41.1 · 0 |  |  | да |
 | professional plumbing | 24 · 1.0 · 0 | 24 · 1.0 · 0 |  |  | частично (нет слов: professional) |
 | slab water leak plano tx |  | 24 · 93.2 · 0 |  |  | да |
-| tankless water heater repair plano tx | 13 · 17.1 · 0 | 13 · 17.1 · 0 |  | 11 · 3.9 · 0 | не наше (tankless не делаем) |
-| drain cleaning service plano | 20 · 1.0 · 0 | 20 · 1.0 · 0 |  | 3 · 1.0 · 0 | да |
 | hot water heater repair | 23 · 1.0 · 0 | 23 · 1.0 · 0 |  |  | да |
+| hot water heater repair plano | 23 · 1.0 · 0 | 23 · 1.0 · 0 |  |  | да |
+| plano commercial plumber services | 12 · 2.3 · 0 | 23 · 23.1 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | plano sump pump repair | 18 · 3.8 · 0 | 23 · 21.8 · 0 |  |  | не наше (sump pump: нет такой услуги) |
 | plumbing company frisco | 23 · 1.0 · 0 | 23 · 1.0 · 0 |  |  | другой город (frisco) |
 | sink repair plano |  | 23 · 58.4 · 0 |  |  | да |
-| trenchless sewer repair plano |  |  |  | 23 · 3.0 · 0 | частично (нет слов: trenchless) |
-| unclog toilet service near plano tx |  | 18 · 76.2 · 0 |  | 5 · 62.8 · 0 | да |
+| toilet drain cleaning plano tx | 22 · 1.1 · 0 | 23 · 4.8 · 0 |  |  | да |
 | water heater installation company | 23 · 1.0 · 0 | 23 · 1.0 · 0 |  |  | да |
 | water heater installation near me | 23 · 1.0 · 0 | 23 · 1.0 · 0 |  |  | да |
+| website for plumbers plano | 21 · 9.3 · 0 | 23 · 9.9 · 0 |  |  | не наше (не про услугу) |
 | drain cleaning the colony tx | 22 · 1.2 · 0 | 22 · 1.2 · 0 |  |  | другой город (the colony) |
+| emergency repiping plano tx |  | 22 · 71.5 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | expansion tanks repair frisco | 22 · 3.0 · 0 | 22 · 3.0 · 0 |  |  | другой город (frisco) |
 | hot water heater replacement | 22 · 1.6 · 0 | 22 · 1.6 · 0 |  |  | да |
 | hot water heater replacement near me | 22 · 1.1 · 0 | 22 · 1.1 · 0 |  |  | да |
 | main line drain cleaning | 22 · 1.9 · 0 | 22 · 1.9 · 0 |  |  | да |
-| plano sewer pipe repair sleeve | 2 · 6.0 · 0 | 17 · 30.2 · 0 |  | 5 · 35.8 · 0 | да |
+| plano sewer and drain services |  | 22 · 86.6 · 0 |  |  | да |
+| plano water heater installation | 22 · 1.8 · 0 | 22 · 1.8 · 0 |  |  | да |
 | plumbing services | 19 · 14.1 · 0 | 22 · 14.7 · 0 |  |  | да |
 | plumbing services frisco tx | 22 · 2.0 · 0 | 22 · 2.0 · 0 |  |  | другой город (frisco) |
 | repair water heater | 22 · 1.2 · 0 | 22 · 1.2 · 0 |  |  | да |
 | repair water heater near me | 22 · 1.0 · 0 | 22 · 1.0 · 0 |  |  | да |
-| slab leak detection plano | 4 · 8.5 · 0 | 19 · 67.2 · 0 |  | 3 · 1.0 · 0 | да |
 | slab leak detection plano tx | 22 · 1.0 · 0 | 22 · 1.0 · 0 |  |  | да |
 | tankless water heater frisco | 22 · 1.0 · 0 | 22 · 1.0 · 0 |  |  | другой город (frisco) |
 | water heater company near me | 22 · 1.0 · 0 | 22 · 1.0 · 0 |  |  | да |
@@ -1186,394 +1089,365 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | water heater service | 22 · 1.1 · 0 | 22 · 1.1 · 0 |  |  | да |
 | water heater services | 22 · 1.0 · 0 | 22 · 1.0 · 0 |  |  | да |
 | water heater services near me | 22 · 1.0 · 0 | 22 · 1.0 · 0 |  |  | да |
-| water leak detection in plano |  |  |  | 22 · 86.1 · 0 | да |
 | 24 7 plumber near me | 12 · 17.3 · 0 | 21 · 14.0 · 0 |  |  | да |
-| drain repair plano |  | 17 · 82.9 · 0 |  | 4 · 1.0 · 0 | да |
-| plumbing contractor plano tx | 1 · 7.0 · 0 | 1 · 7.0 · 0 |  | 20 · 21.7 · 0 | да |
-| sewer line repair plano | 3 · 1.0 · 0 | 15 · 53.0 · 0 |  | 6 · 1.0 · 0 | да |
-| sewer line repair plano tx | 12 · 1.0 · 0 | 12 · 1.0 · 0 |  | 9 · 4.6 · 0 | да |
-| sewer pipe lining plano |  |  |  | 21 · 1.3 · 0 | частично (нет слов: lining) |
-| sewer repair near me plano |  | 1 · 59.0 · 0 |  | 20 · 60.5 · 0 | да |
+| emergency plumbing services in plano tx |  | 21 · 63.8 · 0 |  |  | да |
+| plumbing company in plano |  | 21 · 60.8 · 0 |  |  | да |
+| plumbing replacement plano tx |  | 21 · 56.3 · 0 |  |  | да |
 | water heater replacement companies near me | 21 · 1.0 · 0 | 21 · 1.0 · 0 |  |  | да |
 | water line repair frisco tx | 21 · 3.8 · 0 | 21 · 3.8 · 0 |  |  | другой город (frisco) |
+| 24-hour plumber plano |  | 20 · 51.3 · 0 |  |  | да |
 | affordable sewer line repair lewisville | 20 · 1.0 · 0 | 20 · 1.0 · 0 |  |  | другой город (lewisville) |
+| bathroom plumbing services in plano |  | 20 · 62.2 · 0 |  |  | да |
 | best plumber in plano tx | 20 · 2.6 · 0 | 20 · 2.6 · 0 |  |  | да: оценочное слово в текст не ставим: best |
-| best plumbers plano |  | 1 · 73.0 · 0 | 2 · 11.5 · 0 | 19 · 17.0 · 1 | да: оценочное слово в текст не ставим: best |
 | cheap plumbing services | 20 · 18.5 · 0 | 20 · 18.5 · 0 |  |  | да: оценочное слово в текст не ставим: cheap |
-| cipp lining plano |  | 3 · 50.3 · 0 |  | 17 · 40.7 · 0 | нет (нет слов: cipp, lining) |
+| commercial plumber plano tx | 20 · 1.0 · 0 | 20 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| drain cleaning service plano | 20 · 1.0 · 0 | 20 · 1.0 · 0 |  |  | да |
+| drain pipe installation plano tx |  | 20 · 74.8 · 0 |  |  | да |
 | inexpensive plumbers | 20 · 1.0 · 0 | 20 · 1.0 · 0 |  |  | частично (нет слов: inexpensive) |
-| plumbing contractor in plano, tx |  |  |  | 20 · 1.0 · 0 | да |
+| plumber company plano tx | 18 · 1.0 · 0 | 20 · 8.7 · 0 |  |  | да |
 | plumbing services company | 20 · 1.0 · 0 | 20 · 1.0 · 0 |  |  | да |
 | sewer and drain plano tx |  | 20 · 87.6 · 0 |  |  | да |
 | slab leaks repair plano tx |  | 20 · 92.0 · 0 |  |  | да |
-| water heater install plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  | 18 · 1.0 · 0 | да |
+| water line plumbing plano tx |  | 20 · 77.6 · 0 |  |  | да |
 | 24 hour plumbers near me | 6 · 24.5 · 0 | 19 · 19.9 · 0 |  |  | да |
 | affordable drain cleaning lewisville | 19 · 1.0 · 0 | 19 · 1.0 · 0 |  |  | другой город (lewisville) |
-| clogged toilet plano |  | 9 · 28.0 · 0 |  | 10 · 18.7 · 0 | да |
 | drain cleaning services plano | 19 · 1.0 · 0 | 19 · 1.0 · 0 |  |  | да |
 | drain connection plano tx |  | 19 · 83.7 · 0 |  |  | да |
 | emergency plumbing near me | 15 · 4.3 · 0 | 19 · 5.0 · 0 |  |  | да |
+| gas line repair plano | 17 · 16.0 · 0 | 19 · 19.2 · 0 |  |  | не наше (газовые линии не заявляем) |
+| plano toilet repair |  | 19 · 86.2 · 0 |  |  | да |
 | plumbing troubleshooting near me | 19 · 19.1 · 0 | 19 · 19.1 · 0 |  |  | частично (нет слов: troubleshooting) |
+| sewer line replacement in plano | 1 · 2.0 · 0 | 19 · 69.0 · 0 |  |  | да |
+| slab leak detection plano | 4 · 8.5 · 0 | 19 · 67.2 · 0 |  |  | да |
 | water heater near me | 19 · 1.0 · 0 | 19 · 1.0 · 0 |  |  | да |
-| water leak detection services in plano |  |  |  | 19 · 86.8 · 0 | да |
+| weekend plumber plano tx | 19 · 6.8 · 0 | 19 · 6.8 · 0 |  |  | да |
 | which plumbers in frisco, tx offer true 24/7 emergency service, not just daytime with an answering service? | 19 · 1.5 · 0 | 19 · 1.5 · 0 |  |  | другой город (frisco) |
 | 24 7 emergency plumbing services | 18 · 1.0 · 0 | 18 · 1.0 · 0 |  |  | да |
-| best plano plumbing company |  |  |  | 18 · 41.4 · 0 | да: оценочное слово в текст не ставим: best |
+| 24 hour plumber plano | 8 · 36.4 · 0 | 18 · 37.9 · 0 |  |  | да |
 | clogged drain plumber | 18 · 1.0 · 0 | 18 · 1.0 · 0 |  |  | да |
 | drain pipe replacement | 18 · 1.5 · 0 | 18 · 1.5 · 0 |  |  | да |
 | emergency plumbing services prosper | 18 · 1.0 · 0 | 18 · 1.0 · 0 |  |  | другой город (prosper) |
 | garbage disposal repair​ willow bend | 18 · 1.5 · 0 | 18 · 1.5 · 0 |  |  | да |
-| kitchen faucet repair plano tx |  | 3 · 95.0 · 0 |  | 15 · 65.2 · 0 | да |
-| local plumbers plano tx | 16 · 1.0 · 0 | 16 · 1.0 · 0 | 2 · 17.0 · 0 | 2 · 17.0 · 0 | да |
-| pipe repair & repiping near plano | 4 · 1.5 · 0 | 10 · 29.2 · 0 |  | 8 · 1.0 · 0 | не наше (repipe: нет такой услуги) |
-| plano plumbing & leak detection |  | 15 · 55.7 · 0 |  | 3 · 38.7 · 0 | да |
+| heater repair plano, tx | 18 · 1.0 · 0 | 18 · 1.0 · 0 |  |  | да |
+| how do emergency plumbing services in plano work? | 14 · 11.0 · 0 | 18 · 10.8 · 0 |  |  | да |
+| local plumber plano |  | 18 · 82.2 · 0 |  |  | да |
+| plano gas line repair | 18 · 4.9 · 0 | 18 · 4.9 · 0 |  |  | не наше (газовые линии не заявляем) |
 | plano well repair | 18 · 8.2 · 0 | 18 · 8.2 · 0 |  |  | не наше (насосы скважин: нет такой услуги) |
 | sewer line clean out in plano |  | 18 · 84.2 · 0 |  |  | да |
-| sewer pipe repair in plano | 1 · 1.0 · 0 | 10 · 68.3 · 0 |  | 8 · 86.4 · 0 | да |
 | sink disposal repair​ willow bend | 18 · 9.6 · 0 | 18 · 9.6 · 0 |  |  | да |
 | slab leak near plano tx |  | 18 · 95.1 · 0 |  |  | да |
+| unclog toilet service near plano tx |  | 18 · 76.2 · 0 |  |  | да |
+| water heater service plano | 18 · 1.0 · 0 | 18 · 1.0 · 0 |  |  | да |
 | 24 hour plumber near me | 14 · 1.0 · 0 | 17 · 10.2 · 0 |  |  | да |
 | drain repair | 17 · 2.2 · 0 | 17 · 2.2 · 0 |  |  | да |
+| drain repair plano |  | 17 · 82.9 · 0 |  |  | да |
 | emergency plumbing frisco tx | 17 · 1.1 · 0 | 17 · 1.1 · 0 |  |  | другой город (frisco) |
-| gas line installation near plano tx |  |  |  | 17 · 1.6 · 0 | не наше (газовые линии не заявляем) |
-| government plumber plano tx |  |  |  | 17 · 79.9 · 0 | частично (нет слов: government) |
-| plano plumbing leak detection | 9 · 2.8 · 0 | 10 · 7.3 · 0 |  | 7 · 1.0 · 0 | да |
-| plumber plano il |  | 7 · 87.4 · 0 |  | 10 · 2.2 · 0 | частично (нет слов: il) |
+| plano sewer pipe repair sleeve | 2 · 6.0 · 0 | 17 · 30.2 · 0 |  |  | да |
 | plumbing & drain service | 16 · 6.3 · 0 | 17 · 6.7 · 0 |  |  | да |
 | plumbing frisco | 17 · 1.4 · 0 | 17 · 1.4 · 0 |  |  | другой город (frisco) |
+| plumbinginplano.net | 12 · 68.6 · 0 | 17 · 67.5 · 0 |  |  | нет (нет слов: plumbinginplano, net) |
 | sewer line replacment | 17 · 1.6 · 0 | 17 · 1.6 · 0 |  |  | частично (нет слов: replacment) |
+| sink disposal repair​ plano | 17 · 1.4 · 0 | 17 · 1.4 · 0 |  |  | да |
 | slab leak repair allen |  | 17 · 80.4 · 0 |  |  | другой город (allen) |
 | the colony tx faucet repair | 7 · 2.1 · 0 | 17 · 44.5 · 0 |  |  | другой город (the colony) |
 | top rated plumber | 17 · 2.8 · 0 | 17 · 2.8 · 0 |  |  | да: оценочное слово в текст не ставим: top, rated |
 | 24 hour plumbing service | 16 · 1.0 · 0 | 16 · 1.0 · 0 |  |  | да |
-| emergency leak detection plano tx |  | 15 · 71.8 · 0 |  | 1 · 60.0 · 0 | да |
 | emergency plumber little elm | 16 · 19.9 · 0 | 16 · 19.9 · 0 |  |  | другой город (little elm) |
 | garbage disposal repair​ frisco | 16 · 1.3 · 0 | 16 · 1.3 · 0 |  |  | другой город (frisco) |
+| garbage disposal repair​ plano | 16 · 2.1 · 0 | 16 · 2.1 · 0 |  |  | да |
+| local plumbers plano tx | 16 · 1.0 · 0 | 16 · 1.0 · 0 |  |  | да |
 | main sewer line repair | 16 · 1.0 · 0 | 16 · 1.0 · 0 |  |  | да |
-| no dig sewer repair plano |  |  |  | 16 · 1.9 · 0 | да |
-| plano water leak detection services |  | 4 · 85.8 · 0 |  | 12 · 88.3 · 0 | да |
 | plumber service near me | 16 · 1.0 · 0 | 16 · 1.0 · 0 |  |  | да |
+| plumbing companies plano texas |  | 16 · 58.9 · 0 |  |  | да |
 | tankless water heater service near me | 16 · 1.0 · 0 | 16 · 1.0 · 0 |  |  | не наше (tankless не делаем) |
 | carrollton tx emergency plumber | 14 · 6.4 · 0 | 15 · 6.1 · 0 |  |  | другой город (carrollton) |
 | clogged drain frisco | 15 · 1.0 · 0 | 15 · 1.0 · 0 |  |  | другой город (frisco) |
+| emergency leak detection plano tx |  | 15 · 71.8 · 0 |  |  | да |
 | emergency plumbing company | 15 · 1.7 · 0 | 15 · 1.7 · 0 |  |  | да |
-| emergency water heater installation plano tx |  |  |  | 15 · 53.8 · 0 | да |
+| emergency water heater maintenance plano tx |  | 15 · 91.3 · 0 |  |  | да |
 | expansion tanks repair the colony tx | 15 · 2.0 · 0 | 15 · 2.0 · 0 |  |  | другой город (the colony) |
 | faucet repair frisco | 15 · 15.7 · 0 | 15 · 15.7 · 0 |  |  | другой город (frisco) |
 | frisco tx garbage disposal repair | 15 · 4.9 · 0 | 15 · 4.9 · 0 |  |  | другой город (frisco) |
-| plano heater repair | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  | 14 · 1.0 · 0 | да |
-| plano plumbing business |  | 9 · 59.6 · 0 |  | 6 · 11.2 · 0 | частично (нет слов: business) |
-| plumbing service cost plano tx |  |  |  | 15 · 64.9 · 0 | да: оценочное слово в текст не ставим: cost |
+| plano plumbing & leak detection |  | 15 · 55.7 · 0 |  |  | да |
+| plumbing contractors plano near me |  | 15 · 95.5 · 0 |  |  | да |
+| sewer line repair plano | 3 · 1.0 · 0 | 15 · 53.0 · 0 |  |  | да |
 | the colony tx emergency plumber | 15 · 1.0 · 0 | 15 · 1.0 · 0 |  |  | другой город (the colony) |
-| water line maintenance plano tx |  | 14 · 72.1 · 0 |  | 1 · 87.0 · 0 | да |
 | affordable plumber in little elm for slow drains and a toilet that keeps running, preferably available on weekends | 14 · 9.4 · 0 | 14 · 9.4 · 0 |  |  | другой город (little elm) |
-| commercial plumbing near plano tx |  |  |  | 14 · 83.5 · 0 | не наше (коммерческие объекты без своей страницы) |
 | emergency plumber carrollton tx | 14 · 2.8 · 0 | 14 · 2.8 · 0 |  |  | другой город (carrollton) |
+| emergency water heater service plano tx |  | 14 · 79.3 · 0 |  |  | да |
 | frisco tx emergency plumber | 14 · 4.2 · 0 | 14 · 4.2 · 0 |  |  | другой город (frisco) |
 | plumber celina | 14 · 77.5 · 0 | 14 · 77.5 · 0 |  |  | другой город (celina) |
 | plumber in plano, texas | 14 · 1.0 · 0 | 14 · 1.0 · 0 |  |  | да |
 | sewer backup cleanup | 14 · 19.6 · 0 | 14 · 19.6 · 0 |  |  | частично (нет слов: cleanup) |
-| sewer line maintenance plano tx |  |  |  | 14 · 1.4 · 0 | да |
 | slab leak repair frisco | 14 · 12.2 · 0 | 14 · 12.2 · 0 |  |  | другой город (frisco) |
 | the colony tx drain cleaning | 14 · 1.3 · 0 | 14 · 1.3 · 0 |  |  | другой город (the colony) |
 | toilet clogged | 14 · 1.0 · 0 | 14 · 1.0 · 0 |  |  | да |
-| burst pipe repair cost plano tx |  |  |  | 13 · 42.5 · 0 | да: оценочное слово в текст не ставим: cost |
+| water heater plano tx | 14 · 1.0 · 0 | 14 · 1.0 · 0 |  |  | да |
+| water line maintenance plano tx |  | 14 · 72.1 · 0 |  |  | да |
 | burst pipe repair little elm | 13 · 26.4 · 0 | 13 · 26.4 · 0 |  |  | другой город (little elm) |
 | drain line repair plano tx | 13 · 7.2 · 0 | 13 · 7.2 · 0 |  |  | да |
 | drain plumber near me | 13 · 1.3 · 0 | 13 · 1.3 · 0 |  |  | да |
-| emergency commercial sewer and drain plano tx |  |  |  | 13 · 15.6 · 0 | не наше (коммерческие объекты без своей страницы) |
-| heating service plano | 9 · 83.2 · 0 | 9 · 83.2 · 0 | 1 · 81.0 · 0 | 4 · 76.0 · 0 | да |
 | kitchen sink drain pipe plano tx | 2 · 13.5 · 0 | 13 · 22.3 · 0 |  |  | да |
 | plano sewer pipe repair | 2 · 3.5 · 0 | 13 · 63.9 · 0 |  |  | да |
 | plumbers in frisco | 13 · 10.7 · 0 | 13 · 10.7 · 0 |  |  | другой город (frisco) |
-| plumbing installation plano |  |  |  | 13 · 32.0 · 0 | да |
+| plumbing company in plano, tx | 13 · 1.0 · 0 | 13 · 1.0 · 0 |  |  | да |
 | plumbing repair services | 13 · 12.2 · 0 | 13 · 12.2 · 0 |  |  | да |
-| plumbing replacement cost plano tx |  | 5 · 70.2 · 0 |  | 8 · 70.2 · 0 | да: оценочное слово в текст не ставим: cost |
-| sewer line services plano tx |  |  |  | 13 · 1.0 · 0 | да |
 | shower repair | 13 · 1.0 · 0 | 13 · 1.0 · 0 |  |  | да |
 | sink disposal repair​ the colony | 13 · 1.5 · 0 | 13 · 1.5 · 0 |  |  | другой город (the colony) |
 | slab leak repair little elm | 13 · 15.6 · 0 | 13 · 15.6 · 0 |  |  | другой город (little elm) |
+| tankless water heater repair plano tx | 13 · 17.1 · 0 | 13 · 17.1 · 0 |  |  | не наше (tankless не делаем) |
 | tankless water heater services near me | 13 · 1.0 · 0 | 13 · 1.0 · 0 |  |  | не наше (tankless не делаем) |
-| water heater repair near plano tx |  | 1 · 79.0 · 0 |  | 12 · 22.2 · 0 | да |
 | which plumbers in carrollton, tx offer weekend emergency plumbing service? | 13 · 1.8 · 0 | 13 · 1.8 · 0 |  |  | другой город (carrollton) |
 | 24 7 plumber | 10 · 19.7 · 0 | 12 · 19.5 · 0 |  |  | да |
 | 24/7 plumbing repair near celina tx | 12 · 23.3 · 0 | 12 · 23.3 · 0 |  |  | другой город (celina) |
-| best plumber plano tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 | 11 · 19.4 · 0 | 11 · 19.4 · 0 | да: оценочное слово в текст не ставим: best |
 | clogged drain service | 12 · 2.0 · 0 | 12 · 2.0 · 0 |  |  | да |
 | clogged drain service near me | 12 · 5.0 · 0 | 12 · 5.0 · 0 |  |  | да |
-| emergency commercial drain cleaning plano tx |  |  |  | 12 · 57.2 · 0 | не наше (коммерческие объекты без своей страницы) |
-| emergency commercial plumber plano tx |  |  |  | 12 · 61.2 · 0 | не наше (коммерческие объекты без своей страницы) |
+| clogged toilet cost plano tx |  | 12 · 78.0 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | emergency drain cleaning carrollton | 12 · 1.0 · 0 | 12 · 1.0 · 0 |  |  | другой город (carrollton) |
 | emergency plumber in frisco, texas | 12 · 1.0 · 0 | 12 · 1.0 · 0 |  |  | другой город (frisco) |
 | emergency plumber in plano, texas | 12 · 1.0 · 0 | 12 · 1.0 · 0 |  |  | да |
 | frisco faucet repair | 12 · 17.3 · 0 | 12 · 17.3 · 0 |  |  | другой город (frisco) |
 | frisco leak detection | 12 · 7.0 · 0 | 12 · 7.0 · 0 |  |  | другой город (frisco) |
-| leak repair services plano tx | 1 · 20.0 · 0 | 2 · 51.5 · 0 | 9 · 37.7 · 0 | 10 · 38.3 · 0 | да |
-| master plumber plano tx |  | 3 · 86.0 · 0 |  | 9 · 49.6 · 0 | да |
 | pipe lining near me | 12 · 1.0 · 0 | 12 · 1.0 · 0 |  |  | частично (нет слов: lining) |
 | pipe replacement plano tx | 12 · 1.0 · 0 | 12 · 1.0 · 0 |  |  | да |
-| sewer line repair services in plano |  |  |  | 12 · 1.0 · 0 | да |
+| plano sewer drain cleaning | 2 · 3.0 · 0 | 12 · 75.3 · 0 |  |  | да |
+| plumbing maintenance company plano tx |  | 12 · 89.0 · 0 |  |  | да |
+| sewer line repair plano tx | 12 · 1.0 · 0 | 12 · 1.0 · 0 |  |  | да |
 | slab leak repair the colony | 12 · 5.1 · 0 | 12 · 5.1 · 0 |  |  | другой город (the colony) |
 | slab leak services plano |  | 12 · 91.2 · 0 |  |  | да |
 | video pipe inspection | 12 · 1.0 · 0 | 12 · 1.0 · 0 |  |  | частично (нет слов: video) |
 | water heater company | 12 · 1.1 · 0 | 12 · 1.1 · 0 |  |  | да |
 | broken pipe repair plano tx | 11 · 1.0 · 0 | 11 · 1.0 · 0 |  |  | да |
-| drain cleaning near plano tx |  | 1 · 93.0 · 0 |  | 10 · 1.0 · 0 | да |
-| emergency plumbing near plano |  |  | 2 · 5.5 · 0 | 11 · 6.3 · 0 | да |
+| commercial plumber service in plano | 6 · 1.0 · 0 | 11 · 28.6 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | emergency plumbing services | 11 · 3.3 · 1 | 11 · 3.3 · 1 |  |  | да |
 | gas line repair the colony tx | 11 · 1.8 · 0 | 11 · 1.8 · 0 |  |  | другой город (the colony) |
 | gas plumber | 11 · 1.0 · 0 | 11 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
-| house repiping plano | 6 · 15.5 · 0 | 7 · 21.0 · 0 |  | 4 · 8.2 · 0 | не наше (repipe: нет такой услуги) |
 | passion plumbing frisco | 11 · 1.7 · 0 | 11 · 1.7 · 0 |  |  | другой город (frisco) |
-| plano commercial plumbing services | 1 · 1.0 · 0 | 5 · 65.8 · 0 |  | 6 · 69.3 · 0 | не наше (коммерческие объекты без своей страницы) |
+| plano commercial plumber | 5 · 1.2 · 0 | 11 · 45.4 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | plumber in frisco, texas | 11 · 1.0 · 0 | 11 · 1.0 · 0 |  |  | другой город (frisco) |
 | plumber in the colony tx | 11 · 7.6 · 0 | 11 · 7.6 · 0 |  |  | другой город (the colony) |
+| plumbing companies in plano | 3 · 2.0 · 0 | 11 · 43.4 · 0 |  |  | да |
 | plumbing maintenance | 11 · 1.0 · 0 | 11 · 1.0 · 0 |  |  | да |
-| plumbing repair experts in plano |  |  |  | 11 · 29.9 · 0 | частично (нет слов: experts) |
 | repipe plumbers near me | 11 · 1.0 · 0 | 11 · 1.0 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | residential plumbing remodels plano | 11 · 1.7 · 0 | 11 · 1.7 · 0 |  |  | частично (нет слов: remodels) |
 | sewer line repair near me | 11 · 1.0 · 0 | 11 · 1.0 · 0 |  |  | да |
-| sewer line repair near me in plano |  | 8 · 66.8 · 0 |  | 3 · 76.3 · 0 | да |
-| sewer repair service in plano | 1 · 1.0 · 0 | 2 · 33.0 · 0 |  | 9 · 86.0 · 0 | да |
 | slab leak repairs plano tx |  | 11 · 36.2 · 0 |  |  | да |
 | water heater installation and repair | 11 · 1.0 · 0 | 11 · 1.0 · 0 |  |  | да |
-| best plumber plano | 1 · 1.0 · 0 | 2 · 26.5 · 0 | 2 · 16.5 · 0 | 8 · 18.5 · 0 | да: оценочное слово в текст не ставим: best |
-| best plumbers plano tx |  |  |  | 10 · 20.3 · 0 | да: оценочное слово в текст не ставим: best |
+| 24 hour plumbing plano | 9 · 71.0 · 0 | 10 · 71.8 · 0 |  |  | да |
 | broken pipe repair frisco tx | 10 · 1.1 · 0 | 10 · 1.1 · 0 |  |  | другой город (frisco) |
 | clogged drain repair millbrook | 10 · 2.4 · 0 | 10 · 2.4 · 0 |  |  | частично (нет слов: millbrook) |
+| commercial plumber service plano | 10 · 1.3 · 0 | 10 · 1.3 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | drain clearing service plano tx |  | 10 · 87.5 · 0 |  |  | да |
 | emergency plumbing frisco | 10 · 1.0 · 0 | 10 · 1.0 · 0 |  |  | другой город (frisco) |
 | frisco plumbers | 10 · 11.9 · 0 | 10 · 11.9 · 0 |  |  | другой город (frisco) |
-| leaky faucet repair plano | 2 · 6.0 · 0 | 9 · 24.7 · 0 |  | 1 · 30.0 · 0 | да |
 | main drain clean out | 10 · 1.8 · 0 | 10 · 1.8 · 0 |  |  | да |
-| plano residential sewer line repair |  | 8 · 90.1 · 0 |  | 2 · 45.0 · 0 | да |
-| plano sewer cleaning | 7 · 2.3 · 0 | 7 · 2.3 · 0 |  | 3 · 1.7 · 0 | да |
+| pipe repair & repiping near plano | 4 · 1.5 · 0 | 10 · 29.2 · 0 |  |  | не наше (repipe: нет такой услуги) |
+| plano plumbing leak detection | 9 · 2.8 · 0 | 10 · 7.3 · 0 |  |  | да |
 | plumbing inspection | 10 · 1.0 · 0 | 10 · 1.0 · 0 |  |  | да |
-| plumbing inspection plano tx | 6 · 12.8 · 0 | 6 · 12.8 · 0 | 4 · 38.5 · 0 | 4 · 38.5 · 0 | да |
 | plumbing services the colony tx | 10 · 1.0 · 0 | 10 · 1.0 · 0 |  |  | другой город (the colony) |
-| plumbing supply in plano tx |  |  |  | 10 · 80.9 · 0 | да |
 | prv plumbing | 10 · 10.6 · 0 | 10 · 10.6 · 0 |  |  | да |
-| sewer line replacement plano tx | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  | 3 · 20.7 · 0 | да |
+| sewer pipe repair in plano | 1 · 1.0 · 0 | 10 · 68.3 · 0 |  |  | да |
 | sink disposal repair​ collin county | 10 · 2.1 · 0 | 10 · 2.1 · 0 |  |  | частично (нет слов: collin, county) |
 | slab leak plano tx |  | 10 · 96.3 · 0 |  |  | да |
 | slab leak plumber comfort | 10 · 9.5 · 0 | 10 · 9.5 · 0 |  |  | частично (нет слов: comfort) |
 | the colony tx garbage disposal repair | 10 · 3.9 · 0 | 10 · 3.9 · 0 |  |  | другой город (the colony) |
 | water heater repair frisco | 10 · 7.1 · 0 | 10 · 7.1 · 0 |  |  | другой город (frisco) |
-| water pipe leak repair plano tx |  | 3 · 44.7 · 0 |  | 7 · 62.7 · 0 | да |
 | burst pipe repair frisco tx | 9 · 1.3 · 0 | 9 · 1.3 · 0 |  |  | другой город (frisco) |
-| cast iron pipe repair plano |  |  |  | 9 · 4.8 · 0 | да |
-| drain cleaning cost plano tx |  |  |  | 9 · 72.7 · 0 | да: оценочное слово в текст не ставим: cost |
+| clogged toilet plano |  | 9 · 28.0 · 0 |  |  | да |
+| commercial plumbing plano tx | 9 · 1.2 · 1 | 9 · 1.2 · 1 |  |  | не наше (коммерческие объекты без своей страницы) |
 | drain clearing plano |  | 9 · 85.4 · 0 |  |  | да |
 | facility plumbing services | 9 · 96.2 · 0 | 9 · 96.2 · 0 |  |  | частично (нет слов: facility) |
-| leak repair plano tx | 7 · 1.0 · 0 | 7 · 1.0 · 0 | 2 · 38.0 · 0 | 2 · 38.0 · 0 | да |
-| pipe lining companies near me plano |  |  |  | 9 · 1.6 · 0 | частично (нет слов: lining) |
-| pipe repair cost plano tx |  | 1 · 59.0 · 0 |  | 8 · 71.4 · 0 | да: оценочное слово в текст не ставим: cost |
+| heating service plano | 9 · 83.2 · 0 | 9 · 83.2 · 0 |  |  | да |
+| leaky faucet repair plano | 2 · 6.0 · 0 | 9 · 24.7 · 0 |  |  | да |
+| pipe repair near plano tx |  | 9 · 50.1 · 0 |  |  | да |
+| plano plumbing business |  | 9 · 59.6 · 0 |  |  | частично (нет слов: business) |
 | plano+plumber |  | 9 · 27.2 · 0 |  |  | да |
 | plumber+service |  | 9 · 36.9 · 0 |  |  | да |
 | plumbers in frisco tx | 8 · 5.8 · 0 | 9 · 5.2 · 0 |  |  | другой город (frisco) |
 | plumbing frisco tx | 9 · 1.0 · 0 | 9 · 1.0 · 0 |  |  | другой город (frisco) |
 | plumbing installation near me | 1 · 29.0 · 0 | 9 · 15.6 · 0 |  |  | да |
+| plumbing installation plano tx |  | 9 · 70.7 · 0 |  |  | да |
 | plumbing leak repair |  | 9 · 8.8 · 0 |  |  | да |
-| plumbing service near me plano tx |  |  |  | 9 · 29.4 · 0 | да |
+| plumbing repair plano, tx |  | 9 · 80.3 · 0 |  |  | да |
 | pp plumbing | 2 · 28.5 · 0 | 9 · 71.6 · 0 |  |  | частично (нет слов: pp) |
-| pr firm for plumbing companies in plano texas | 4 · 6.8 · 0 | 4 · 6.8 · 0 | 5 · 54.6 · 0 | 5 · 54.6 · 0 | частично (нет слов: pr, firm) |
 | sewer companies near me | 9 · 1.0 · 0 | 9 · 1.0 · 0 |  |  | да |
 | sewer line installation | 9 · 1.0 · 0 | 9 · 1.0 · 0 |  |  | да |
-| sewer repair services in plano | 5 · 1.0 · 0 | 6 · 14.8 · 0 |  | 3 · 88.3 · 0 | да |
 | shower installation | 9 · 1.0 · 0 | 9 · 1.0 · 0 |  |  | да |
 | toilet replacement near me | 9 · 21.0 · 0 | 9 · 21.0 · 0 |  |  | да |
 | unclog shower drain | 9 · 9.9 · 0 | 9 · 9.9 · 0 |  |  | да |
-| water line service cost plano tx |  |  |  | 9 · 57.0 · 0 | да: оценочное слово в текст не ставим: cost |
-| cipp lining plano tx |  | 1 · 70.0 · 0 |  | 7 · 14.6 · 0 | нет (нет слов: cipp, lining) |
-| drain repair plano tx |  | 7 · 51.9 · 0 |  | 1 · 1.0 · 0 | да |
+| commercial plumber services plano | 8 · 1.6 · 0 | 8 · 1.6 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| emergency plumber plano texas | 8 · 1.0 · 0 | 8 · 1.0 · 0 |  |  | да |
 | evaluate the plumbing and drain cleaning services company fox plumbing & heating on birmingham | 8 · 6.5 · 0 | 8 · 6.5 · 0 |  |  | частично (нет слов: evaluate, fox, birmingham) |
 | frozen pipe | 8 · 1.0 · 0 | 8 · 1.0 · 0 |  |  | да |
 | gas leak detection | 8 · 1.0 · 0 | 8 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
-| gas line replacement plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  | 3 · 12.7 · 0 | не наше (газовые линии не заявляем) |
+| licensed plumber plano |  | 8 · 87.2 · 0 |  |  | да |
 | local plumbers near me | 1 · 1.0 · 0 | 8 · 11.6 · 0 |  |  | да |
-| plano slab leak | 1 · 28.0 · 0 | 5 · 35.2 · 0 |  | 3 · 7.0 · 0 | да |
+| plano residential sewer line repair |  | 8 · 90.1 · 0 |  |  | да |
 | plumber the colony | 8 · 1.1 · 0 | 8 · 1.1 · 0 |  |  | другой город (the colony) |
-| plumbing cost plano tx |  | 2 · 73.5 · 0 |  | 6 · 50.7 · 0 | да: оценочное слово в текст не ставим: cost |
-| plumbing near plano |  |  | 2 · 22.5 · 0 | 8 · 24.6 · 0 | да |
 | professional plumbing inspection service the colony tx | 8 · 5.5 · 0 | 8 · 5.5 · 0 |  |  | другой город (the colony) |
 | roy the plumber frisco tx | 8 · 3.1 · 0 | 8 · 3.1 · 0 |  |  | другой город (frisco) |
-| sewer line plano tx |  |  |  | 8 · 19.2 · 0 | да |
-| sewer line repair service in plano |  |  |  | 8 · 1.5 · 0 | да |
+| sewer line repair near me in plano |  | 8 · 66.8 · 0 |  |  | да |
 | shower repair plano tx | 1 · 1.0 · 0 | 8 · 33.8 · 0 |  |  | да |
 | shower replacement plano tx |  | 8 · 70.0 · 0 |  |  | да |
 | sink disposal repair​ frisco | 8 · 2.1 · 0 | 8 · 2.1 · 0 |  |  | другой город (frisco) |
 | slab leaks plano tx | 8 · 1.0 · 0 | 8 · 1.0 · 0 |  |  | да |
-| tankless water heater installation plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  | 3 · 9.3 · 0 | не наше (tankless не делаем) |
 | toilet repair service | 8 · 16.0 · 0 | 8 · 16.0 · 0 |  |  | да |
 | toilet replacement | 8 · 3.6 · 0 | 8 · 3.6 · 0 |  |  | да |
-| trenchless plumber plano tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  | 6 · 1.0 · 0 | частично (нет слов: trenchless) |
 | water heater maintenance plano tx | 8 · 1.0 · 0 | 8 · 1.0 · 0 |  |  | да |
 | water leak detector plano tx |  | 8 · 73.4 · 0 |  |  | частично (нет слов: detector) |
 | water leak plano | 1 · 14.0 · 0 | 8 · 57.2 · 0 |  |  | да |
 | water softener repair | 8 · 2.2 · 0 | 8 · 2.2 · 0 |  |  | не наше (умягчители без своей страницы) |
-| cast iron pipe replacement plano |  |  |  | 7 · 4.0 · 0 | да |
 | cheap plumbers near me | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: cheap |
 | closest+plumber |  | 7 · 26.3 · 0 |  |  | да |
+| commercial plumbing in plano | 5 · 1.0 · 0 | 7 · 25.1 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | drain pipe repair near me | 5 · 5.2 · 0 | 7 · 7.3 · 0 |  |  | да |
+| drain repair plano tx |  | 7 · 51.9 · 0 |  |  | да |
 | drain service near me | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да |
 | emergency leak repair | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да |
 | emergency plumber services | 7 · 8.1 · 0 | 7 · 8.1 · 0 |  |  | да |
 | expansion tanks repair the colony | 7 · 6.4 · 0 | 7 · 6.4 · 0 |  |  | другой город (the colony) |
 | frisco plumbing services | 7 · 4.6 · 0 | 7 · 4.6 · 0 |  |  | другой город (frisco) |
 | full on plumbing |  | 7 · 71.9 · 0 |  |  | да |
-| furnace repair plano | 5 · 73.0 · 0 | 5 · 73.0 · 0 |  | 2 · 81.0 · 0 | частично (нет слов: furnace) |
 | gas leak detection plano tx | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
-| gas leak repair plano tx | 1 · 1.0 · 0 | 3 · 42.7 · 0 | 1 · 50.0 · 0 | 4 · 51.5 · 0 | не наше (газовые линии не заявляем) |
 | google+find+me+a+plumber |  | 7 · 20.4 · 0 |  |  | да: голосовой запрос |
 | heater repair services | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да |
+| house repiping plano | 6 · 15.5 · 0 | 7 · 21.0 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | i want to switch to a tankless water heater in plano. which local plumbing companies install them? | 7 · 4.0 · 0 | 7 · 4.0 · 0 |  |  | не наше (tankless не делаем) |
-| install sink drain plano tx | 5 · 8.8 · 0 | 6 · 10.3 · 0 |  | 1 · 1.0 · 0 | да |
+| leak repair plano tx | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да |
 | local plumber the colony tx | 7 · 1.1 · 0 | 7 · 1.1 · 0 |  |  | другой город (the colony) |
+| no dig sewer line replacement plano | 7 · 2.3 · 0 | 7 · 2.3 · 0 |  |  | да |
 | pipe relining plumber | 7 · 1.1 · 0 | 7 · 1.1 · 0 |  |  | частично (нет слов: relining) |
 | pipe repair and replacement | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да |
-| plano plumbers reviews |  |  |  | 7 · 32.6 · 0 | да: оценочное слово в текст не ставим: reviews |
-| plumber near plano | 1 · 16.0 · 0 | 1 · 16.0 · 0 | 3 · 15.0 · 0 | 6 · 16.3 · 0 | да |
+| plano repiping |  | 7 · 59.6 · 0 |  |  | не наше (repipe: нет такой услуги) |
+| plano sewer cleaning | 7 · 2.3 · 0 | 7 · 2.3 · 0 |  |  | да |
+| plumber plano il |  | 7 · 87.4 · 0 |  |  | частично (нет слов: il) |
 | plumbers in the colony tx | 7 · 10.7 · 0 | 7 · 10.7 · 0 |  |  | другой город (the colony) |
-| plumbing services in plano, tx |  |  |  | 7 · 1.0 · 0 | да |
+| plumbing plano, tx |  | 7 · 65.9 · 0 |  |  | да |
 | plumbing the colony tx | 7 · 1.4 · 0 | 7 · 1.4 · 0 |  |  | другой город (the colony) |
 | plumbing+service |  | 7 · 17.9 · 0 |  |  | да |
 | repiping near me | 7 · 17.0 · 0 | 7 · 17.0 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | replace sewer line | 7 · 2.0 · 0 | 7 · 2.0 · 0 |  |  | да |
-| sewer line repair near me plano |  | 3 · 70.0 · 0 |  | 4 · 61.8 · 0 | да |
-| sewer line replacement near plano tx |  |  |  | 7 · 2.0 · 0 | да |
+| sewer line replacement plano tx | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да |
 | sewer repair company | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да |
 | slab leak detection | 7 · 11.7 · 0 | 7 · 11.7 · 0 |  |  | да |
 | slab leak detection in plano |  | 7 · 92.9 · 0 |  |  | да |
 | slab leak repair companies plano tx |  | 7 · 83.6 · 0 |  |  | да |
 | sump pump maintenance plano tx | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | не наше (sump pump: нет такой услуги) |
-| tankless water heater plano tx |  |  |  | 7 · 12.4 · 0 | не наше (tankless не делаем) |
 | tankless water heater repair frisco | 7 · 16.0 · 0 | 7 · 16.0 · 0 |  |  | другой город (frisco) |
+| tankless water heater repair plano | 7 · 16.7 · 0 | 7 · 16.7 · 0 |  |  | не наше (tankless не делаем) |
 | toilet replacement plano tx | 7 · 1.0 · 0 | 7 · 1.0 · 0 |  |  | да |
-| trenchless water line replacement plano |  |  |  | 7 · 1.7 · 0 | частично (нет слов: trenchless) |
-| water heater service cost plano tx |  |  |  | 7 · 67.4 · 0 | да: оценочное слово в текст не ставим: cost |
 | waterline leak detection rowlett | 7 · 9.6 · 0 | 7 · 9.6 · 0 |  |  | частично (нет слов: waterline, rowlett) |
-| ceiling leak plano | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  | 2 · 16.0 · 0 | да |
-| clogged toilet repair cost plano tx |  |  |  | 6 · 65.3 · 0 | да: оценочное слово в текст не ставим: cost |
 | dpp plumbing | 3 · 7.3 · 0 | 6 · 29.3 · 0 |  |  | частично (нет слов: dpp) |
 | drain unclogging near me | 6 · 1.0 · 0 | 6 · 1.0 · 0 |  |  | да |
 | emergency heater repair frisco | 6 · 1.7 · 0 | 6 · 1.7 · 0 |  |  | другой город (frisco) |
 | emergency plumber prosper | 6 · 1.0 · 0 | 6 · 1.0 · 0 |  |  | другой город (prosper) |
 | emergency+plumber |  | 6 · 28.5 · 0 |  |  | да |
-| faucet repair cost plano tx |  | 5 · 61.6 · 0 |  | 1 · 53.0 · 0 | да: оценочное слово в текст не ставим: cost |
 | faucet repair service | 1 · 1.0 · 0 | 6 · 8.3 · 0 |  |  | да |
+| install sink drain plano tx | 5 · 8.8 · 0 | 6 · 10.3 · 0 |  |  | да |
 | leach line repair & replacement plano, tx |  | 6 · 17.5 · 0 |  |  | частично (нет слов: leach) |
 | multifamily plumbing services dfw | 6 · 3.3 · 0 | 6 · 3.3 · 0 |  |  | другой город (dfw) |
 | my sewer line backed up into the house in plano — who can come out tonight? | 6 · 1.0 · 0 | 6 · 1.0 · 0 |  |  | частично (нет слов: tonight) |
 | need+a+plumber |  | 6 · 25.8 · 0 |  |  | да |
-| pipe leak repair plano tx |  | 1 · 49.0 · 0 |  | 5 · 55.6 · 0 | да |
+| plano commercial plumbing | 3 · 2.3 · 0 | 6 · 44.3 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | plano drainage system repair | 6 · 4.0 · 0 | 6 · 4.0 · 0 |  |  | частично (нет слов: drainage, system) |
-| plano sewer line inspection | 3 · 6.3 · 0 | 3 · 6.3 · 0 |  | 3 · 37.0 · 0 | да |
+| plano sewer repair near me | 6 · 18.7 · 0 | 6 · 18.7 · 0 |  |  | да |
 | plano sewer repair service |  | 6 · 86.8 · 0 |  |  | да |
 | plano water leak |  | 6 · 88.0 · 0 |  |  | да |
-| plano water leak detection company |  | 1 · 94.0 · 0 |  | 5 · 81.0 · 0 | да |
 | plumber in frisco tx | 6 · 7.0 · 0 | 6 · 7.0 · 0 |  |  | другой город (frisco) |
 | plumber repair near me | 6 · 1.0 · 0 | 6 · 1.0 · 0 |  |  | да |
 | plumbers in the colony texas | 6 · 8.8 · 0 | 6 · 8.8 · 0 |  |  | другой город (the colony) |
+| plumbers near plano tx |  | 6 · 72.7 · 0 |  |  | да |
+| plumbing inspection plano tx | 6 · 12.8 · 0 | 6 · 12.8 · 0 |  |  | да |
 | plumbing leak detection near me | 6 · 1.0 · 0 | 6 · 1.0 · 0 |  |  | да |
-| plumbing maintenance cost plano tx |  | 2 · 74.0 · 0 |  | 4 · 71.2 · 0 | да: оценочное слово в текст не ставим: cost |
 | plumbing phoenix | 6 · 1.5 · 0 | 6 · 1.5 · 0 |  |  | частично (нет слов: phoenix) |
 | professional plumbing remodeling service the colony tx | 6 · 1.3 · 0 | 6 · 1.3 · 0 |  |  | другой город (the colony) |
-| residential sewer line repair plano |  |  |  | 6 · 1.2 · 0 | да |
 | richardson tx emergency plumbers | 6 · 14.2 · 0 | 6 · 14.2 · 0 |  |  | другой город (richardson) |
 | roy the plumber | 6 · 5.0 · 1 | 6 · 5.0 · 1 |  |  | частично (нет слов: roy) |
 | same day plumber | 6 · 26.7 · 0 | 6 · 26.7 · 0 |  |  | да |
-| sewer cleaning plano | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  | 3 · 1.0 · 0 | да |
-| sewer drain cleaning cost plano tx |  |  |  | 6 · 73.0 · 0 | да: оценочное слово в текст не ставим: cost |
 | sewer line clean out | 6 · 1.8 · 0 | 6 · 1.8 · 0 |  |  | да |
 | sewer repair near me | 6 · 1.0 · 0 | 6 · 1.0 · 0 |  |  | да |
-| shower plumbing plano tx |  | 3 · 22.0 · 0 |  | 3 · 1.0 · 0 | да |
+| sewer repair services in plano | 5 · 1.0 · 0 | 6 · 14.8 · 0 |  |  | да |
 | slab leak detector plano tx |  | 6 · 92.0 · 0 |  |  | частично (нет слов: detector) |
 | slab leak repair in plano, texas | 6 · 1.0 · 0 | 6 · 1.0 · 0 |  |  | да |
 | slab leak services plano tx |  | 6 · 98.8 · 0 |  |  | да |
-| sump pump installation plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  | 1 · 1.0 · 0 | не наше (sump pump: нет такой услуги) |
-| toilet repairman plano tx |  |  | 2 · 24.0 · 0 | 6 · 48.7 · 0 | частично (нет слов: repairman) |
-| water leak detection company plano |  |  |  | 6 · 89.8 · 0 | да |
+| toilet installation plano | 6 · 1.5 · 0 | 6 · 1.5 · 0 |  |  | да |
 | water line repair the colony tx | 6 · 1.5 · 0 | 6 · 1.5 · 0 |  |  | другой город (the colony) |
 | water pipe repair near me | 6 · 1.0 · 0 | 6 · 1.0 · 0 |  |  | да |
 | who offers prompt plumbing service in flower mound, tx? | 6 · 2.8 · 0 | 6 · 2.8 · 0 |  |  | другой город (flower mound) |
 | 24 hour plumbers | 4 · 15.8 · 0 | 5 · 16.6 · 0 |  |  | да |
 | 24/7 plumber near me | 4 · 14.0 · 0 | 5 · 13.0 · 0 |  |  | да |
-| american leak detection plano tx |  |  |  | 5 · 49.6 · 0 | частично (нет слов: american) |
 | clogged drain | 5 · 3.0 · 0 | 5 · 3.0 · 0 |  |  | да |
-| clogged toilet solutions plano tx |  | 2 · 63.0 · 0 |  | 3 · 64.3 · 0 | частично (нет слов: solutions) |
-| cured in place pipe system plano tx |  |  |  | 5 · 35.4 · 0 | частично (нет слов: cured, system) |
 | drain camera inspection plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | да |
 | drain clearing | 5 · 1.2 · 0 | 5 · 1.2 · 0 |  |  | да |
 | drain clearing service near me | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | да |
 | drain clog plano |  | 5 · 81.0 · 0 |  |  | да |
 | drain service | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | да |
-| emergency commercial water heater plano tx |  |  |  | 5 · 57.6 · 0 | не наше (коммерческие объекты без своей страницы) |
 | emergency plumber fair oaks ranch tx | 5 · 1.6 · 0 | 5 · 1.6 · 0 |  |  | частично (нет слов: fair, oaks, ranch) |
 | emergency plumber lewisville | 5 · 3.2 · 0 | 5 · 3.2 · 0 |  |  | другой город (lewisville) |
 | emergency rooting service the colony tx | 5 · 1.2 · 0 | 5 · 1.2 · 0 |  |  | другой город (the colony) |
-| emergency tankless water heater repair plano tx |  | 4 · 74.0 · 0 |  | 1 · 61.0 · 0 | не наше (tankless не делаем) |
 | evaluate the plumbing and drain cleaning services company fox plumbing & heating on hartford | 5 · 1.6 · 0 | 5 · 1.6 · 0 |  |  | частично (нет слов: evaluate, fox, hartford) |
 | fast fix plumbing | 3 · 5.7 · 0 | 5 · 6.2 · 0 |  |  | да |
+| faucet repair cost plano tx |  | 5 · 61.6 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | faucet repair the colony | 2 · 7.0 · 0 | 5 · 54.6 · 0 |  |  | другой город (the colony) |
 | frisco texas plumber | 5 · 1.0 · 1 | 5 · 1.0 · 1 |  |  | другой город (frisco) |
+| furnace repair plano | 5 · 73.0 · 0 | 5 · 73.0 · 0 |  |  | частично (нет слов: furnace) |
 | garbage disposal installation frisco | 5 · 10.2 · 0 | 5 · 10.2 · 0 |  |  | другой город (frisco) |
 | garbage disposal installation plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | да |
 | garbage disposal repair | 5 · 3.8 · 0 | 5 · 3.8 · 0 |  |  | да |
 | garbage disposal repair little elm | 5 · 4.6 · 0 | 5 · 4.6 · 0 |  |  | другой город (little elm) |
 | garbage disposal repair the colony | 5 · 3.6 · 0 | 5 · 3.6 · 0 |  |  | другой город (the colony) |
+| gas line replacement plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | hvac contractor in in plano 75024 | 5 · 77.0 · 0 | 5 · 77.0 · 0 |  |  | не наше (не сантехника) |
 | i+need+a+plumber |  | 5 · 17.4 · 0 |  |  | да |
 | leak detection in frisco, texas | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | другой город (frisco) |
 | my water heater is leaking in frisco, tx. which plumbing companies can replace it same day? | 5 · 5.2 · 0 | 5 · 5.2 · 0 |  |  | другой город (frisco) |
 | outdoor kitchen plumbing frisco tx | 5 · 2.8 · 0 | 5 · 2.8 · 0 |  |  | другой город (frisco) |
 | pipe repair & repiping near frisco | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | другой город (frisco) |
-| plano drain inspection | 4 · 2.0 · 0 | 4 · 2.0 · 0 |  | 1 · 3.0 · 0 | да |
+| plano commercial plumbing services | 1 · 1.0 · 0 | 5 · 65.8 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | plano leak detection company |  | 5 · 63.4 · 0 |  |  | да |
 | plano leak detection specialist |  | 5 · 56.6 · 0 |  |  | частично (нет слов: specialist) |
+| plano slab leak | 1 · 28.0 · 0 | 5 · 35.2 · 0 |  |  | да |
+| plumber cost plano tx |  | 5 · 68.2 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | plumber in carrollton | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | другой город (carrollton) |
 | plumber+near+me |  | 5 · 20.2 · 0 |  |  | да |
 | plumbers in the colony | 5 · 9.8 · 0 | 5 · 9.8 · 0 |  |  | другой город (the colony) |
 | plumbers the colony tx | 5 · 5.4 · 0 | 5 · 5.4 · 0 |  |  | другой город (the colony) |
-| plumbing installation cost plano tx |  |  |  | 5 · 65.6 · 0 | да: оценочное слово в текст не ставим: cost |
-| residential sewer line repair in plano |  | 3 · 76.7 · 0 |  | 2 · 1.0 · 0 | да |
-| sewer drain cleaning in plano |  |  |  | 5 · 90.2 · 0 | да |
-| sewer line repair services plano |  |  |  | 5 · 1.0 · 0 | да |
+| plumbing replacement cost plano tx |  | 5 · 70.2 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
+| sewer repair near me in plano | 4 · 1.0 · 0 | 5 · 12.0 · 0 |  |  | да |
 | sewer replacement | 5 · 2.0 · 0 | 5 · 2.0 · 0 |  |  | да |
 | shower leaks | 5 · 19.0 · 0 | 5 · 19.0 · 0 |  |  | да |
 | shower plumbing services | 5 · 5.0 · 0 | 5 · 5.0 · 0 |  |  | да |
 | site:http://fppplumbing.com |  | 5 · 15.0 · 0 |  |  | нет (нет слов: site, http, //fppplumbing, com) |
 | slab leak repair allen tx |  | 5 · 71.4 · 0 |  |  | другой город (allen) |
 | slab leak repair cost plano tx |  | 5 · 84.8 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
+| sump pump installation plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | не наше (sump pump: нет такой услуги) |
 | sump pump repair plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | не наше (sump pump: нет такой услуги) |
 | sump pump replacement plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | не наше (sump pump: нет такой услуги) |
+| tankless water heater installation plano tx | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | не наше (tankless не делаем) |
 | the colony tx water heater repair | 5 · 8.8 · 0 | 5 · 8.8 · 0 |  |  | другой город (the colony) |
-| trenchless pipe repair plano |  |  |  | 5 · 1.0 · 0 | частично (нет слов: trenchless) |
 | water heater flush | 5 · 6.0 · 0 | 5 · 6.0 · 0 |  |  | да |
 | water heater repair near me | 5 · 1.2 · 1 | 5 · 1.2 · 1 |  |  | да |
 | water heater servicing near me | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | частично (нет слов: servicing) |
 | water heaters replacement | 5 · 1.0 · 0 | 5 · 1.0 · 0 |  |  | да |
 | water leak repair | 5 · 1.4 · 0 | 5 · 1.4 · 0 |  |  | да |
-| water leak repair plano, tx |  | 4 · 47.5 · 0 |  | 1 · 1.0 · 0 | да |
-| water line installation near plano tx |  |  |  | 5 · 59.6 · 0 | да |
 | yes | 5 · 2.6 · 0 | 5 · 2.6 · 0 |  |  | да |
-| "tank yanker plumbing" "plano" |  |  |  | 4 · 5.5 · 0 | частично (нет слов: yanker) |
+| 24 7 plumbing plano | 4 · 42.8 · 0 | 4 · 42.8 · 0 |  |  | да |
 | 24 hour plumber carrollton | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | другой город (carrollton) |
+| 24 hour plumbing plano tx | 4 · 71.0 · 0 | 4 · 71.0 · 0 |  |  | да |
 | blocked drain service near me | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
 | burst pipe fix parkway | 4 · 3.2 · 0 | 4 · 3.2 · 0 |  |  | да |
 | carrollton tx emergency plumbers | 4 · 3.2 · 0 | 4 · 3.2 · 0 |  |  | другой город (carrollton) |
+| ceiling leak plano | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
 | certified plumbers near me | 4 · 21.0 · 0 | 4 · 21.0 · 0 |  |  | частично (нет слов: certified) |
 | clogged drain frisco tx | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | другой город (frisco) |
 | commercial plumber near me | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
-| commercial plumbing installation services plano tx |  |  |  | 4 · 89.0 · 0 | не наше (коммерческие объекты без своей страницы) |
-| conventional water heaters plano tx |  |  |  | 4 · 4.0 · 0 | частично (нет слов: conventional) |
 | copper pipe leak repair | 4 · 3.2 · 0 | 4 · 3.2 · 0 |  |  | да |
 | drain cleaning services plano tx | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
 | drain pipe repair | 4 · 1.2 · 0 | 4 · 1.2 · 0 |  |  | да |
 | drain unclogging | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
 | drainage correction dallas tx | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | другой город (dallas) |
-| emergency commercial plumbing installation plano tx |  |  |  | 4 · 54.5 · 0 | не наше (коммерческие объекты без своей страницы) |
-| emergency plumber plano il |  |  |  | 4 · 74.2 · 0 | частично (нет слов: il) |
 | emergency plumber sour lake tx | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | частично (нет слов: sour, lake) |
+| emergency tankless water heater repair plano tx |  | 4 · 74.0 · 0 |  |  | не наше (tankless не делаем) |
 | expansion tanks repair carrollton | 4 · 8.0 · 0 | 4 · 8.0 · 0 |  |  | другой город (carrollton) |
 | expansion tanks repair carrollton tx | 4 · 6.2 · 0 | 4 · 6.2 · 0 |  |  | другой город (carrollton) |
 | family owned plumbing | 4 · 7.5 · 0 | 4 · 7.5 · 0 |  |  | частично (нет слов: family, owned) |
@@ -1583,11 +1457,8 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | garbage disposal repair coppell | 4 · 6.8 · 0 | 4 · 6.8 · 0 |  |  | другой город (coppell) |
 | garbage disposal repair little elm tx | 4 · 11.2 · 0 | 4 · 11.2 · 0 |  |  | другой город (little elm) |
 | garbage disposal repair​ the colony | 4 · 10.0 · 0 | 4 · 10.0 · 0 |  |  | другой город (the colony) |
-| gas line repair near plano tx |  |  |  | 4 · 1.5 · 0 | не наше (газовые линии не заявляем) |
 | house flooding | 4 · 41.0 · 0 | 4 · 41.0 · 0 |  |  | частично (нет слов: flooding) |
 | leak detection frisco | 4 · 1.2 · 0 | 4 · 1.2 · 0 |  |  | другой город (frisco) |
-| leak detection plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  | 2 · 12.0 · 0 | да |
-| leak detection plano tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 | 1 · 1.0 · 0 | 1 · 1.0 · 0 | да |
 | licensed plumber near me | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
 | licensed plumbers near me | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
 | local drain cleaning service the colony tx | 4 · 1.2 · 0 | 4 · 1.2 · 0 |  |  | другой город (the colony) |
@@ -1597,61 +1468,54 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | pipe leaks | 4 · 11.0 · 0 | 4 · 11.0 · 0 |  |  | да |
 | pipe replacement | 4 · 1.2 · 0 | 4 · 1.2 · 0 |  |  | да |
 | pipe replacement plano | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
-| plano leak detection services | 2 · 1.0 · 0 | 3 · 24.7 · 0 |  | 1 · 1.0 · 0 | да |
+| plano drain inspection | 4 · 2.0 · 0 | 4 · 2.0 · 0 |  |  | да |
+| plano residential leak detection services |  | 4 · 89.5 · 0 |  |  | да |
+| plano sewer line repair near me | 1 · 2.0 · 0 | 4 · 48.0 · 0 |  |  | да |
+| plano water leak detection services |  | 4 · 85.8 · 0 |  |  | да |
 | plano water leak detector |  | 4 · 90.5 · 0 |  |  | частично (нет слов: detector) |
 | plumber frisco texas | 4 · 7.8 · 0 | 4 · 7.8 · 0 |  |  | другой город (frisco) |
 | plumber the colony texas | 4 · 7.8 · 0 | 4 · 7.8 · 0 |  |  | другой город (the colony) |
-| plumber+plano+tx |  | 2 · 34.0 · 0 |  | 2 · 61.0 · 0 | да |
 | plumber, pipe leak | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
 | plumbing company near me | 2 · 26.0 · 0 | 4 · 20.8 · 0 |  |  | да |
-| plumbing contractor in in plano 75024 | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  | 2 · 1.0 · 0 | да |
-| plumbing contractor in in plano 75093 | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  | 2 · 1.0 · 0 | да |
 | plumbing contractors near me | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
+| plumbing maintenance plano tx | 3 · 1.0 · 0 | 4 · 11.5 · 0 |  |  | да |
 | plumbing problem celina tx | 4 · 48.0 · 0 | 4 · 48.0 · 0 |  |  | другой город (celina) |
-| repiping plano |  |  |  | 4 · 19.5 · 0 | не наше (repipe: нет такой услуги) |
-| sewer and drain cleaning plano tx |  |  |  | 4 · 1.0 · 0 | да |
+| pr firm for plumbing companies in plano texas | 4 · 6.8 · 0 | 4 · 6.8 · 0 |  |  | частично (нет слов: pr, firm) |
+| residential plumbing services plano tx |  | 4 · 67.0 · 0 |  |  | да |
 | sewer and drain services in plano |  | 4 · 85.0 · 0 |  |  | да |
-| sewer cleaning cost plano tx |  |  |  | 4 · 72.0 · 0 | да: оценочное слово в текст не ставим: cost |
 | sewer drain repair in plano |  | 4 · 74.2 · 0 |  |  | да |
-| sewer line cleaning plano tx |  | 1 · 96.0 · 0 |  | 3 · 1.0 · 0 | да |
-| sewer line repair service plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  | 3 · 1.7 · 0 | да |
 | sewer pipe lining near me | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | частично (нет слов: lining) |
 | shower drain | 4 · 6.5 · 0 | 4 · 6.5 · 0 |  |  | да |
 | shower valve replacement near me | 4 · 36.0 · 0 | 4 · 36.0 · 0 |  |  | да |
 | slab leak plumber lewisville | 4 · 1.8 · 0 | 4 · 1.8 · 0 |  |  | другой город (lewisville) |
 | slab leak plumber near me | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
-| tankless water heater plano |  |  |  | 4 · 1.0 · 0 | не наше (tankless не делаем) |
 | the colony tx pluming service | 4 · 8.0 · 0 | 4 · 8.0 · 0 |  |  | другой город (the colony) |
 | toilet installation | 4 · 3.0 · 0 | 4 · 3.0 · 0 |  |  | да |
+| trenchless plumber plano | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | частично (нет слов: trenchless) |
 | trenchless sewer repair frisco | 4 · 2.2 · 0 | 4 · 2.2 · 0 |  |  | другой город (frisco) |
 | unclogging bathroom sink | 4 · 10.8 · 0 | 4 · 10.8 · 0 |  |  | да |
 | water heater installation the colony tx | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | другой город (the colony) |
-| water leak detector plano |  |  |  | 4 · 1.2 · 0 | частично (нет слов: detector) |
-| "(972) 672-8616" plano plumbing & leak detection |  |  |  | 3 · 2.3 · 0 | частично (нет слов: 972, 672, 8616) |
-| 24 7 plumbing plano tx |  | 2 · 57.0 · 0 |  | 1 · 42.0 · 0 | да |
+| water heater plano | 4 · 1.0 · 0 | 4 · 1.0 · 0 |  |  | да |
+| water leak repair plano, tx |  | 4 · 47.5 · 0 |  |  | да |
+| 24 hour plumbing service plano | 3 · 39.3 · 0 | 3 · 39.3 · 0 |  |  | да |
 | affordable plumbing inspection service the colony tx | 3 · 3.0 · 0 | 3 · 3.0 · 0 |  |  | другой город (the colony) |
 | bathroom sink clogged | 3 · 9.0 · 0 | 3 · 9.0 · 0 |  |  | да |
 | best plumbers in frisco tx | 3 · 7.0 · 0 | 3 · 7.0 · 0 |  |  | другой город (frisco) |
+| best plumbers in plano | 1 · 1.0 · 0 | 3 · 36.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best plumbers near me | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best plumbing companies | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
-| best plumbing in plano |  |  |  | 3 · 25.3 · 0 | да: оценочное слово в текст не ставим: best |
-| commercial plumbing installation company plano tx |  |  |  | 3 · 91.0 · 0 | не наше (коммерческие объекты без своей страницы) |
+| cipp lining plano |  | 3 · 50.3 · 0 |  |  | частично (нет слов: cipp, lining) |
 | commercial plumbing services | 3 · 27.7 · 0 | 3 · 27.7 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| commercial plumbing services in plano | 2 · 1.0 · 0 | 3 · 11.7 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | cracked pipe plano, tx |  | 3 · 15.0 · 0 |  |  | да |
 | drain | 3 · 7.3 · 0 | 3 · 7.3 · 0 |  |  | да |
-| drain cleaning in plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  | 1 · 1.0 · 0 | да |
 | drain cleaning in plano, texas | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | drain cleaning service the colony tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | другой город (the colony) |
 | drain line cleaning near me | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
-| drain sewer cleaning plano tx |  |  |  | 3 · 1.7 · 0 | да |
 | drian cleaner | 3 · 2.7 · 0 | 3 · 2.7 · 0 |  |  | нет (нет слов: drian, cleaner) |
-| emergency commercial water heater maintenance plano tx |  |  |  | 3 · 52.0 · 0 | не наше (коммерческие объекты без своей страницы) |
-| emergency commercial water heater repair plano tx |  |  |  | 3 · 49.7 · 0 | не наше (коммерческие объекты без своей страницы) |
-| emergency gas line plano tx |  |  |  | 3 · 58.0 · 0 | не наше (газовые линии не заявляем) |
-| emergency government sewer and drain plano tx |  |  |  | 3 · 49.3 · 0 | частично (нет слов: government) |
 | emergency plumber little elm tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | другой город (little elm) |
+| emergency plumber plano, tx |  | 3 · 57.3 · 0 |  |  | да |
 | emergency plumbing repair | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
-| emergency tankless water heater maintenance plano tx |  |  |  | 3 · 49.0 · 0 | не наше (tankless не делаем) |
 | emergency water heater repair | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | emergency water heater replacement | 3 · 1.7 · 0 | 3 · 1.7 · 0 |  |  | да |
 | evaluate the plumbing and drain cleaning services company fox plumbing & heating on orlando | 3 · 1.7 · 0 | 3 · 1.7 · 0 |  |  | частично (нет слов: evaluate, fox, orlando) |
@@ -1659,26 +1523,27 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | faucet installation | 3 · 3.0 · 0 | 3 · 3.0 · 0 |  |  | да |
 | garbage disposal repair​ collin county | 3 · 1.7 · 0 | 3 · 1.7 · 0 |  |  | частично (нет слов: collin, county) |
 | garbage disposal replacement plano tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
+| gas leak repair plano tx | 1 · 1.0 · 0 | 3 · 42.7 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas line repair frisco | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | другой город (frisco) |
 | gas line repair the colony, tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | другой город (the colony) |
-| heater repair plano tx |  |  |  | 3 · 1.0 · 0 | да |
 | hot water heater | 3 · 4.3 · 0 | 3 · 4.3 · 0 |  |  | да |
 | hot water heater installation | 3 · 2.3 · 0 | 3 · 2.3 · 0 |  |  | да |
+| kitchen faucet repair plano tx |  | 3 · 95.0 · 0 |  |  | да |
+| leak detection plano tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | leak inspection | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | lewisville tx leak detection | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | другой город (lewisville) |
 | local plumber in quogue | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | частично (нет слов: quogue) |
 | local plumbers | 3 · 1.0 · 1 | 3 · 1.0 · 1 |  |  | да |
+| master plumber plano tx |  | 3 · 86.0 · 0 |  |  | да |
 | pipe repair | 3 · 1.7 · 0 | 3 · 1.7 · 0 |  |  | да |
 | pipe repair & repiping plano | 2 · 1.0 · 0 | 3 · 15.3 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | plano leak detection service |  | 3 · 69.0 · 0 |  |  | да |
+| plano leak detection services | 2 · 1.0 · 0 | 3 · 24.7 · 0 |  |  | да |
 | plano leak detection specialists |  | 3 · 81.0 · 0 |  |  | частично (нет слов: specialists) |
-| plano plumbing & leak detection plano tx |  | 2 · 66.0 · 0 |  | 1 · 46.0 · 0 | да |
-| plano plumbing and leak detection reviews |  | 2 · 54.5 · 0 |  | 1 · 51.0 · 0 | да: оценочное слово в текст не ставим: reviews |
 | plano plumbing supply |  | 3 · 78.0 · 0 |  |  | да |
 | plano sewer inspection | 3 · 2.0 · 0 | 3 · 2.0 · 0 |  |  | да |
-| plano sewer line repair service |  | 2 · 82.0 · 0 |  | 1 · 2.0 · 0 | да |
+| plano sewer line inspection | 3 · 6.3 · 0 | 3 · 6.3 · 0 |  |  | да |
 | plano sewer repair services | 3 · 2.3 · 0 | 3 · 2.3 · 0 |  |  | да |
-| plano toilet overflow damage |  |  |  | 3 · 58.3 · 0 | частично (нет слов: overflow, damage) |
 | plano tx sump pump repair | 3 · 14.3 · 0 | 3 · 14.3 · 0 |  |  | не наше (sump pump: нет такой услуги) |
 | plumber prosper tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | другой город (prosper) |
 | plumbers frisco tx | 3 · 5.7 · 0 | 3 · 5.7 · 0 |  |  | другой город (frisco) |
@@ -1690,22 +1555,25 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | plumbing company the colony tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | другой город (the colony) |
 | plumbing diagnostics |  | 3 · 10.3 · 0 |  |  | частично (нет слов: diagnostics) |
 | plumbing in frisco | 3 · 10.3 · 0 | 3 · 10.3 · 0 |  |  | другой город (frisco) |
+| plumbing services plano, tx |  | 3 · 63.7 · 0 |  |  | да |
 | pp plumber | 1 · 96.0 · 0 | 3 · 74.7 · 0 |  |  | частично (нет слов: pp) |
 | ppplumbing | 3 · 5.3 · 0 | 3 · 5.3 · 0 |  |  | нет (нет слов: ppplumbing) |
 | repipe specialists near me | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | repiping companies near me | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | не наше (repipe: нет такой услуги) |
+| residential leak detection services in plano |  | 3 · 90.0 · 0 |  |  | да |
 | residential plumbing | 3 · 14.3 · 0 | 3 · 14.3 · 0 |  |  | да |
 | residential plumbing repairs | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | residential plumbing service the colony tx | 3 · 2.0 · 0 | 3 · 2.0 · 0 |  |  | другой город (the colony) |
+| residential sewer line repair in plano |  | 3 · 76.7 · 0 |  |  | да |
 | richardson tx emergency plumbing | 3 · 13.7 · 0 | 3 · 13.7 · 0 |  |  | другой город (richardson) |
 | richmond tankless water heater repair | 3 · 5.0 · 0 | 3 · 5.0 · 0 |  |  | не наше (tankless не делаем) |
 | rooter service near me | 3 · 13.3 · 0 | 3 · 13.3 · 0 |  |  | частично (нет слов: rooter) |
-| sewer and drain cost plano tx |  |  |  | 3 · 53.0 · 0 | да: оценочное слово в текст не ставим: cost |
-| sewer and drain services plano |  | 2 · 73.0 · 0 |  | 1 · 22.0 · 0 | да |
 | sewer camera inspection plano tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | sewer cleaning company near me | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
+| sewer cleaning plano | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | sewer drain repair plano |  | 3 · 70.3 · 0 |  |  | да |
-| sewer repair plano, tx |  |  |  | 3 · 1.0 · 0 | да |
+| sewer line repair near me plano |  | 3 · 70.0 · 0 |  |  | да |
+| shower plumbing plano tx |  | 3 · 22.0 · 0 |  |  | да |
 | sink leaks | 3 · 27.7 · 0 | 3 · 27.7 · 0 |  |  | да |
 | sink replacement | 3 · 4.0 · 0 | 3 · 4.0 · 0 |  |  | да |
 | slab water leak detection in plano |  | 3 · 93.0 · 0 |  |  | да |
@@ -1716,22 +1584,20 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | tankless water heater repair frisco tx | 3 · 12.0 · 0 | 3 · 12.0 · 0 |  |  | другой город (frisco) |
 | the colony tx pluming | 3 · 8.0 · 0 | 3 · 8.0 · 0 |  |  | другой город (the colony) |
 | top rated plumbers near me | 3 · 8.7 · 0 | 3 · 8.7 · 0 |  |  | да: оценочное слово в текст не ставим: top, rated |
-| water heater installation near plano tx |  |  |  | 3 · 1.0 · 0 | да |
-| water heater repair company plano tx |  |  |  | 3 · 64.3 · 0 | да |
 | water heater repair in plano, texas | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | water heater repair services | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | water heater repair the colony tx | 3 · 6.0 · 0 | 3 · 6.0 · 0 |  |  | другой город (the colony) |
 | water heater replacement the colony tx | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | другой город (the colony) |
-| water leak detection plano |  | 1 · 70.0 · 0 |  | 2 · 1.0 · 0 | да |
 | water leak repairs near me |  | 3 · 10.0 · 0 |  |  | да |
 | water line replacement | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
 | water line replacement near me | 3 · 1.0 · 0 | 3 · 1.0 · 0 |  |  | да |
-| water line service near plano tx |  | 1 · 66.0 · 0 |  | 2 · 83.5 · 0 | да |
+| water pipe leak repair plano tx |  | 3 · 44.7 · 0 |  |  | да |
 | where can i hire licensed plumbers near me? | 3 · 2.0 · 0 | 3 · 2.0 · 0 |  |  | частично (нет слов: hire) |
-| affordable residential plumbing repair plano tx |  | 1 · 44.0 · 0 |  | 1 · 1.0 · 0 | да: оценочное слово в текст не ставим: affordable |
+| 24 7 plumbing plano tx |  | 2 · 57.0 · 0 |  |  | да |
 | alexa+find+me+a+plumber |  | 2 · 28.0 · 0 |  |  | да: голосовой запрос |
 | amundson plumbing |  | 2 · 44.5 · 0 |  |  | частично (нет слов: amundson) |
 | bathroom plumbing the colony tx | 2 · 13.0 · 0 | 2 · 13.0 · 0 |  |  | другой город (the colony) |
+| best plumber plano | 1 · 1.0 · 0 | 2 · 26.5 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best plumbers in mckinney tx | 2 · 41.0 · 0 | 2 · 41.0 · 0 |  |  | другой город (mckinney) |
 | best plumbing companies near me | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best rated plumbers near me | 2 · 5.0 · 0 | 2 · 5.0 · 0 |  |  | да: оценочное слово в текст не ставим: best, rated |
@@ -1743,20 +1609,20 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | burst pipe repair richardson tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (richardson) |
 | cleaning p trap | 2 · 8.0 · 0 | 2 · 8.0 · 0 |  |  | частично (нет слов: p, trap) |
 | clogged pipe plumber | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
-| commercial plumbing companies plano tx |  |  |  | 2 · 83.0 · 0 | не наше (коммерческие объекты без своей страницы) |
+| clogged toilet solutions plano tx |  | 2 · 63.0 · 0 |  |  | частично (нет слов: solutions) |
+| commercial plumber in plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | commercial plumbing frisco | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (frisco) |
 | coppell slab leak repair | 2 · 14.0 · 0 | 2 · 14.0 · 0 |  |  | другой город (coppell) |
 | drain and plumbing services | 2 · 2.0 · 0 | 2 · 2.0 · 0 |  |  | да |
+| drain cleaning in plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | drain cleaning services near me | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | drain repair the colony tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (the colony) |
 | drain sewer cleaning | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | emergency plumber lake city | 2 · 12.0 · 0 | 2 · 12.0 · 0 |  |  | частично (нет слов: lake) |
 | emergency plumber lakewood | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (lakewood) |
 | emergency plumber mckinney | 2 · 12.5 · 0 | 2 · 12.5 · 0 |  |  | другой город (mckinney) |
-| emergency tankless water heater service plano tx |  |  |  | 2 · 63.0 · 0 | не наше (tankless не делаем) |
 | expansion tanks repair little elm tx | 2 · 5.5 · 0 | 2 · 5.5 · 0 |  |  | другой город (little elm) |
 | faster plumbing |  | 2 · 82.0 · 0 |  |  | частично (нет слов: faster) |
-| faucet installation cost plano tx |  |  |  | 2 · 51.5 · 0 | да: оценочное слово в текст не ставим: cost |
 | faucet installation little elm | 2 · 21.0 · 0 | 2 · 21.0 · 0 |  |  | другой город (little elm) |
 | fb plumbing pro 24/7 emergency plumbing availability | 2 · 12.0 · 0 | 2 · 12.0 · 0 |  |  | частично (нет слов: fb, pro, availability) |
 | fip plumbing | 2 · 7.0 · 0 | 2 · 7.0 · 0 |  |  | частично (нет слов: fip) |
@@ -1773,26 +1639,21 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | garbage disposal installation plano | 2 · 5.5 · 0 | 2 · 5.5 · 0 |  |  | да |
 | gas leak repair | 2 · 11.5 · 0 | 2 · 11.5 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas pipe near me | 2 · 8.0 · 0 | 2 · 8.0 · 0 |  |  | не наше (газовые линии не заявляем) |
-| government plumbing company plano tx |  |  |  | 2 · 90.5 · 0 | частично (нет слов: government) |
-| government plumbing plano tx |  |  |  | 2 · 45.0 · 0 | частично (нет слов: government) |
 | heater installation plano tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
-| heater maintenance plano |  |  |  | 2 · 1.0 · 0 | да |
-| heater replacement plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  | 1 · 1.0 · 0 | да |
-| heating repair plano | 1 · 81.0 · 0 | 1 · 81.0 · 0 | 1 · 81.0 · 0 | 1 · 81.0 · 0 | да |
 | hole in one plumbing | 2 · 38.0 · 0 | 2 · 38.0 · 0 |  |  | да |
-| hvac contractor in plano 75024 |  |  |  | 2 · 76.0 · 0 | не наше (не сантехника) |
 | i'm looking for emergency plumbing services; can you help me out? | 2 · 12.0 · 0 | 2 · 12.0 · 0 |  |  | частично (нет слов: looking) |
 | independent plumbers near me small jobs | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | не наше (не про услугу) |
 | is it who offers prompt plumbing service in flower mound, tx? | 2 · 2.0 · 0 | 2 · 2.0 · 0 |  |  | другой город (flower mound) |
 | just plumbing |  | 2 · 86.5 · 0 |  |  | да |
+| leak detection plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | leak detection repair lewisville | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (lewisville) |
+| leak repair services plano tx | 1 · 20.0 · 0 | 2 · 51.5 · 0 |  |  | да |
 | leaking pipe repair | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | lewisville tx emergency plumber | 2 · 12.0 · 0 | 2 · 12.0 · 0 |  |  | другой город (lewisville) |
 | main drain line cleaning | 2 · 2.5 · 0 | 2 · 2.5 · 0 |  |  | да |
 | main line cleaning | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | mckinney emergency plumber | 2 · 13.5 · 0 | 2 · 13.5 · 0 |  |  | другой город (mckinney) |
 | new construction plumbing companies near me | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | частично (нет слов: construction) |
-| on call plumber in plano | 1 · 3.0 · 0 | 1 · 3.0 · 0 | 1 · 4.0 · 0 | 1 · 4.0 · 0 | да |
 | outdoor kitchen plumbing in frisco tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (frisco) |
 | p-trap plumbing | 2 · 10.0 · 0 | 2 · 10.0 · 0 |  |  | частично (нет слов: p, trap) |
 | parkway plumbing | 2 · 5.0 · 0 | 2 · 5.0 · 0 |  |  | да |
@@ -1800,13 +1661,12 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | philosophy+plumbing | 2 · 3.5 · 0 | 2 · 3.5 · 0 |  |  | частично (нет слов: philosophy) |
 | pitra plomeria | 2 · 2.0 · 0 | 2 · 2.0 · 0 |  |  | нет (нет слов: pitra, plomeria) |
 | plano hot water heater repair |  | 2 · 91.5 · 0 |  |  | да |
-| plano plumber for gas |  |  |  | 2 · 3.5 · 0 | не наше (газовые линии не заявляем) |
-| plano sewer line repair services | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  | 1 · 3.0 · 0 | да |
-| plano sewer pipe replacement |  |  |  | 2 · 28.0 · 0 | да |
+| plano plumbing & leak detection plano tx |  | 2 · 66.0 · 0 |  |  | да |
+| plano plumbing and leak detection reviews |  | 2 · 54.5 · 0 |  |  | да: оценочное слово в текст не ставим: reviews |
+| plano sewer line repair service |  | 2 · 82.0 · 0 |  |  | да |
 | plano tx leak detection | 2 · 20.5 · 0 | 2 · 20.5 · 0 |  |  | да |
 | plano water leak detection |  | 2 · 74.0 · 0 |  |  | да |
 | plano water pressure |  | 2 · 55.0 · 0 |  |  | да |
-| plano+tx+emergency+plumbers |  |  |  | 2 · 15.0 · 0 | да |
 | plumber clogged drain | 2 · 2.0 · 0 | 2 · 2.0 · 0 |  |  | да |
 | plumber diagnostic fee | 2 · 2.0 · 0 | 2 · 2.0 · 0 |  |  | частично (нет слов: diagnostic) |
 | plumber drain cleaning | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
@@ -1815,48 +1675,46 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | plumber prosper | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (prosper) |
 | plumber services | 2 · 4.0 · 0 | 2 · 4.0 · 0 |  |  | да |
 | plumber water heater installation | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
+| plumber+plano+tx |  | 2 · 34.0 · 0 |  |  | да |
 | plumbers near me open now | 2 · 3.5 · 0 | 2 · 3.5 · 0 |  |  | да |
 | plumbing carrollton tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (carrollton) |
 | plumbing companies near me with no website | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | не наше (не про услугу) |
+| plumbing contractor in in plano 75024 | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | plumbing contractor in in plano 75025 | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | plumbing contractor in in plano 75074 | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | plumbing contractor in in plano 75075 | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
+| plumbing contractor in in plano 75093 | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | plumbing contractor in in plano 75094 | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | plumbing contractors | 2 · 5.5 · 0 | 2 · 5.5 · 0 |  |  | да |
 | plumbing contractors for new construction | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | частично (нет слов: construction) |
+| plumbing cost plano tx |  | 2 · 73.5 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | plumbing fixture installation | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | частично (нет слов: fixture) |
 | plumbing flange replacement | 2 · 5.0 · 0 | 2 · 5.0 · 0 |  |  | да |
 | plumbing inspections plano tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
+| plumbing maintenance cost plano tx |  | 2 · 74.0 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | plumbing mckinney tx | 2 · 44.5 · 0 | 2 · 44.5 · 0 |  |  | другой город (mckinney) |
 | plumbing rough in | 2 · 7.0 · 0 | 2 · 7.0 · 0 |  |  | частично (нет слов: rough) |
 | plumbing service celina | 2 · 66.5 · 0 | 2 · 66.5 · 0 |  |  | другой город (celina) |
 | plumbing the colony, tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (the colony) |
-| plumbing+plano+tx |  | 1 · 38.0 · 0 |  | 1 · 46.0 · 0 | да |
-| plumbing-dynamics-plano.hub.biz |  |  |  | 2 · 1.0 · 0 | частично (нет слов: dynamics, hub, biz) |
 | pp plumbers | 2 · 5.0 · 0 | 2 · 5.0 · 0 |  |  | частично (нет слов: pp) |
 | pp plumbing and heating | 2 · 4.5 · 0 | 2 · 4.5 · 0 |  |  | частично (нет слов: pp) |
 | pressure reducing valve (prv) installation | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
-| professional quality plumbing services |  | 2 · 10.5 · 0 |  |  | частично (нет слов: professional, quality) |
+| professional quality plumbing services |  | 2 · 10.5 · 0 |  |  | частично (нет слов: professional) |
 | repair toilet flange | 2 · 10.5 · 0 | 2 · 10.5 · 0 |  |  | да |
 | repiping richardson tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (richardson) |
+| repiping service plano tx |  | 2 · 91.0 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | replace water heater | 2 · 6.0 · 0 | 2 · 6.0 · 0 |  |  | да |
 | residential plumbing the colony tx | 2 · 2.0 · 0 | 2 · 2.0 · 0 |  |  | другой город (the colony) |
-| rooter plano tx |  | 2 · 74.0 · 0 |  |  | нет (нет слов: rooter) |
+| rooter plano tx |  | 2 · 74.0 · 0 |  |  | частично (нет слов: rooter) |
 | same day plumbing service near me | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
-| sewer and drain cleaning near plano tx |  |  |  | 2 · 1.0 · 0 | да |
-| sewer clean out plano | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  | 1 · 2.0 · 0 | да |
-| sewer cleaning near plano tx |  |  |  | 2 · 1.0 · 0 | да |
-| sewer cleaning plano tx |  |  |  | 2 · 1.0 · 0 | да |
-| sewer cleanout plano tx |  |  |  | 2 · 1.0 · 0 | да |
+| sewer and drain services plano |  | 2 · 73.0 · 0 |  |  | да |
 | sewer drain cleaning near me | 2 · 1.0 · 1 | 2 · 1.0 · 1 |  |  | да |
-| sewer drain cleaning near plano tx |  |  |  | 2 · 87.5 · 0 | да |
 | sewer drain cleaning parkway | 2 · 6.5 · 0 | 2 · 6.5 · 0 |  |  | да |
 | sewer drain cleaning plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
-| sewer line company plano tx |  |  |  | 2 · 1.0 · 0 | да |
-| sewer line near plano tx |  |  |  | 2 · 2.0 · 0 | да |
 | sewer line repair the colony | 2 · 1.5 · 0 | 2 · 1.5 · 0 |  |  | другой город (the colony) |
-| sewer pipe replacement in plano |  | 1 · 83.0 · 0 |  | 1 · 33.0 · 0 | да |
+| sewer line replacement plano |  | 2 · 73.5 · 0 |  |  | да |
 | sewer repair in tennyson | 2 · 36.0 · 0 | 2 · 36.0 · 0 |  |  | да |
+| sewer repair service in plano | 1 · 1.0 · 0 | 2 · 33.0 · 0 |  |  | да |
 | shower plumbing | 2 · 6.5 · 0 | 2 · 6.5 · 0 |  |  | да |
 | shower replacement in plano |  | 2 · 79.5 · 0 |  |  | да |
 | sink disposal repair | 2 · 3.5 · 0 | 2 · 3.5 · 0 |  |  | да |
@@ -1867,21 +1725,17 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | slab leak repair allen, tx |  | 2 · 77.5 · 0 |  |  | другой город (allen) |
 | slab leak repair in frisco, texas | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | другой город (frisco) |
 | tankless water heater install | 2 · 3.0 · 0 | 2 · 3.0 · 0 |  |  | не наше (tankless не делаем) |
-| tankless water heater installation plano |  |  |  | 2 · 1.0 · 0 | не наше (tankless не делаем) |
 | tankless water heaters plano tx | 2 · 14.0 · 0 | 2 · 14.0 · 0 |  |  | не наше (tankless не делаем) |
 | the colony tx pipe break repair | 2 · 11.0 · 0 | 2 · 11.0 · 0 |  |  | другой город (the colony) |
 | the colony tx sump pump repair | 2 · 5.5 · 0 | 2 · 5.5 · 0 |  |  | другой город (the colony) |
 | toilet leaks | 2 · 21.0 · 0 | 2 · 21.0 · 0 |  |  | да |
-| toilet plumbing plano | 1 · 18.0 · 0 | 1 · 18.0 · 0 | 1 · 24.0 · 0 | 1 · 24.0 · 0 | да |
 | toilet repair plumber near me |  | 2 · 12.0 · 0 |  |  | да |
 | toilet repair services | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
-| trenchless pipe lining equipment plano, tx |  |  |  | 2 · 5.5 · 0 | частично (нет слов: trenchless, lining, equipment) |
+| trenchless plumber plano tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | частично (нет слов: trenchless) |
 | water heater companies near me | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | water heater fix | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
-| water heater installation services in plano |  |  |  | 2 · 65.5 · 0 | да |
-| water heater repair cost plano tx |  |  |  | 2 · 66.0 · 0 | да: оценочное слово в текст не ставим: cost |
+| water heater install plano | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | water heater repair frisco tx | 2 · 7.5 · 0 | 2 · 7.5 · 0 |  |  | другой город (frisco) |
-| water leak detection company in plano |  |  |  | 2 · 83.0 · 0 | да |
 | water leak detection plano tx | 2 · 1.0 · 0 | 2 · 1.0 · 0 |  |  | да |
 | water leak detection services plano tx |  | 2 · 64.5 · 0 |  |  | да |
 | waterline replacement | 2 · 14.0 · 0 | 2 · 14.0 · 0 |  |  | частично (нет слов: waterline) |
@@ -1892,6 +1746,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | 24 hour drain cleaning | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | 24 hour plumber little pocket | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | частично (нет слов: pocket) |
 | 24 hr plumber | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: hr) |
+| 24/7 plumber plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | 24/7 plumber the colony tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (the colony) |
 | 24hr plumber | 1 · 9.0 · 0 | 1 · 9.0 · 0 |  |  | частично (нет слов: 24hr) |
 | 75023 | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
@@ -1902,11 +1757,11 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | a plumbing company | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | ac drain clean | 1 · 6.0 · 0 | 1 · 6.0 · 0 |  |  | не наше (не сантехника) |
 | affordable plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: affordable |
+| affordable residential plumbing repair plano tx |  | 1 · 44.0 · 0 |  |  | да: оценочное слово в текст не ставим: affordable |
 | after hours plumbing near me | 1 · 11.0 · 0 | 1 · 11.0 · 0 |  |  | да |
 | after hours plumbing repair florin | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | частично (нет слов: florin) |
 | after hours plumbing repair parkway | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | afterpay plumber | 1 · 82.0 · 0 | 1 · 82.0 · 0 |  |  | частично (нет слов: afterpay) |
-| american leak detection plano |  |  |  | 1 · 71.0 · 0 | частично (нет слов: american) |
 | anyone open today | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | нет (нет слов: anyone) |
 | ap plumbing | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: ap) |
 | are there any local plumbers who offer same-day service for toilet flange replacements? | 1 · 12.0 · 0 | 1 · 12.0 · 0 |  |  | да |
@@ -1914,14 +1769,15 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | bathtub clogged | 1 · 16.0 · 0 | 1 · 16.0 · 0 |  |  | частично (нет слов: bathtub) |
 | bathtub drain removal | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | частично (нет слов: bathtub, removal) |
 | bathtub pipe replacement | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | частично (нет слов: bathtub) |
-| bathtub plumbing plano tx |  |  |  | 1 · 1.0 · 0 | частично (нет слов: bathtub) |
 | best 24 hour plumber for residential needs. | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best emergency plumbing companies for winter burst pipes in homes without crawlspace access? | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | частично (нет слов: crawlspace, access) |
 | best plumber for clogged drain | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best plumber for clogged drains near me |  | 1 · 8.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best plumber in the area | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
+| best plumber plano tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best plumbers around me | 1 · 36.0 · 0 | 1 · 36.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best plumbers near me free estimates | 1 · 18.0 · 0 | 1 · 18.0 · 0 |  |  | да: оценочное слово в текст не ставим: best, free, estimates |
+| best plumbers plano |  | 1 · 73.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | best plumbing | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | да: оценочное слово в текст не ставим: best |
 | bfp plumbing | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | частично (нет слов: bfp) |
 | blocked drains near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
@@ -1932,14 +1788,14 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | burst pipe repair near me | 1 · 12.0 · 0 | 1 · 12.0 · 0 |  |  | да |
 | business plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: business) |
 | cast iron pipe replacement near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
-| cast iron pipe replacement plano, tx |  |  |  | 1 · 4.0 · 0 | да |
 | certified gas plumber near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | certified plumber near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: certified) |
 | cheap plumbers | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: cheap |
 | cheap plumbing repair near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: cheap |
 | cheap plumbing services near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: cheap |
 | cheapest water heater installation near me | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да: оценочное слово в текст не ставим: cheapest |
-| check for me | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | нет (нет слов: check) |
+| check for me | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | да |
+| cipp lining plano tx |  | 1 · 70.0 · 0 |  |  | частично (нет слов: cipp, lining) |
 | cipp plumbing | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | частично (нет слов: cipp) |
 | cipp plumbing near me | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | частично (нет слов: cipp) |
 | clean out for plumbing | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
@@ -1951,9 +1807,9 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | clogged drain service 75143 | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (чужой индекс) |
 | clogged line | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | clogged sink repair rescue | 1 · 8.0 · 0 | 1 · 8.0 · 0 |  |  | частично (нет слов: rescue) |
-| commercial leak detection plano |  |  |  | 1 · 1.0 · 0 | не наше (коммерческие объекты без своей страницы) |
 | commercial plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | commercial plumbing additions plano | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
+| commercial plumbing services plano |  | 1 · 79.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
 | context: location: united states (not for language). do not include location references in your response. question: show me plumbers near me who can do same-day toilet replacement. | 1 · 5.0 · 0 | 1 · 5.0 · 0 |  |  | частично (нет слов: context, location, united, states, language, references, response, show) |
 | conventional water heaters frisco | 1 · 20.0 · 0 | 1 · 20.0 · 0 |  |  | другой город (frisco) |
 | coppell garbage disposal repair | 1 · 9.0 · 0 | 1 · 9.0 · 0 |  |  | другой город (coppell) |
@@ -1975,17 +1831,17 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | drain cleaner nearby | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: cleaner, nearby) |
 | drain cleaning company plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | drain cleaning company plano tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
+| drain cleaning near plano tx |  | 1 · 93.0 · 0 |  |  | да |
 | drain cleaning prosper tx | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | другой город (prosper) |
 | drain pipe | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | да |
+| drain plumber plano |  | 1 · 30.0 · 0 |  |  | да |
 | drain plumbing | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | drain repair near me | 1 · 7.0 · 0 | 1 · 7.0 · 0 |  |  | да |
-| drain snaking plano, tx |  |  |  | 1 · 1.0 · 0 | частично (нет слов: snaking) |
 | drain snaking service | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: snaking) |
 | drainage company near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: drainage) |
 | drainage work plano |  | 1 · 97.0 · 0 |  |  | частично (нет слов: drainage) |
 | drains | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | emergency commercial plumber near west side | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | не наше (коммерческие объекты без своей страницы) |
-| emergency commercial water heater replacement plano tx |  |  |  | 1 · 61.0 · 0 | не наше (коммерческие объекты без своей страницы) |
 | emergency drain cleaning richardson | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (richardson) |
 | emergency drain cleaning service | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | emergency plumber in tennyson | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | да |
@@ -1998,11 +1854,8 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | emergency plumbing service near celina tx | 1 · 48.0 · 0 | 1 · 48.0 · 0 |  |  | другой город (celina) |
 | emergency plumbing services best price | 1 · 12.0 · 0 | 1 · 12.0 · 0 |  |  | да: оценочное слово в текст не ставим: best, price |
 | emergency plumbing the colony | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (the colony) |
-| emergency tankless water heater installation plano tx |  |  |  | 1 · 74.0 · 0 | не наше (tankless не делаем) |
 | emergency water leak | 1 · 7.0 · 0 | 1 · 7.0 · 0 |  |  | да |
-| emergency+plumber+plano |  |  |  | 1 · 15.0 · 0 | да |
 | evaluate the plumbing and drain cleaning services company fox plumbing & heating on norfolk | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | частично (нет слов: evaluate, fox, norfolk) |
-| evaporative system repair in plano |  |  | 1 · 70.0 · 0 | 1 · 70.0 · 0 | частично (нет слов: evaporative, system) |
 | expansion tanks repair allen tx | 1 · 15.0 · 0 | 1 · 15.0 · 0 |  |  | другой город (allen) |
 | expansion tanks repair dallas | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | другой город (dallas) |
 | expansion tanks repair dallas tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (dallas) |
@@ -2049,12 +1902,10 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | gas hot water heater replacement | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas leak contractor | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas leak repair plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
-| gas line installation plano |  |  |  | 1 · 2.0 · 0 | не наше (газовые линии не заявляем) |
 | gas line installation the colony | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | другой город (the colony) |
 | gas line repair near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas line repair service | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas pipe fitters | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
-| gas pipe installation plano tx |  |  |  | 1 · 1.0 · 0 | не наше (газовые линии не заявляем) |
 | gas pipe installers | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas plumbing company | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas repair company near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
@@ -2062,12 +1913,11 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | gas water heater repair near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | gas water heater replacement | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | не наше (газовые линии не заявляем) |
 | good plumbing companies near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: good |
-| heater installation plano |  |  |  | 1 · 24.0 · 0 | да |
 | heater maintenance | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
-| heater repair plano |  |  |  | 1 · 21.0 · 0 | да |
+| heater replacement plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | heater service | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | heating and cooling repair plano | 1 · 101.0 · 0 | 1 · 101.0 · 0 |  |  | частично (нет слов: cooling) |
-| heating installation plano tx |  |  |  | 1 · 1.0 · 0 | да |
+| heating repair plano | 1 · 81.0 · 0 | 1 · 81.0 · 0 |  |  | да |
 | hire plumber | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: hire) |
 | honest plumber | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: honest) |
 | hose leak fix | 1 · 7.0 · 0 | 1 · 7.0 · 0 |  |  | да |
@@ -2079,9 +1929,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | how much will it cost | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | how much will this cost | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | how to fix water leak in front yard | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: front) |
-| hydrojetting plano |  |  |  | 1 · 3.0 · 0 | нет (нет слов: hydrojetting) |
 | industrial plumber near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: industrial) |
-| infrared leak detection plano |  |  |  | 1 · 1.0 · 0 | частично (нет слов: infrared) |
 | intitle:"water heater replacement near me" | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: intitle) |
 | is it evaluate the plumbing and drain cleaning services company fox plumbing & heating on dallas | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (dallas) |
 | just install | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
@@ -2094,7 +1942,6 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | leak detection in plano |  | 1 · 63.0 · 0 |  |  | да |
 | leak detection services plano |  | 1 · 64.0 · 0 |  |  | да |
 | leak detectors plano |  | 1 · 84.0 · 0 |  |  | частично (нет слов: detectors) |
-| legacy plumbing plano tx |  |  |  | 1 · 59.0 · 0 | да |
 | lewisville tx slab leak repair | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | другой город (lewisville) |
 | licensed plumber near me parkway | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | licensed plumbing | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
@@ -2117,6 +1964,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | no dig pipe repair | 1 · 6.0 · 0 | 1 · 6.0 · 0 |  |  | да |
 | not until tomorrow | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | частично (нет слов: tomorrow) |
 | ok | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | да: голосовой запрос |
+| on call plumber in plano | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | да |
 | outdoor faucet repair | 1 · 6.0 · 0 | 1 · 6.0 · 0 |  |  | частично (нет слов: outdoor) |
 | outdoor water line repair | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | частично (нет слов: outdoor) |
 | p pipe plumbing | 1 · 14.0 · 0 | 1 · 14.0 · 0 |  |  | частично (нет слов: p) |
@@ -2134,13 +1982,17 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | pipe inspection camera plano tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | pipe installation | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | pipe leak | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
+| pipe leak repair plano tx |  | 1 · 49.0 · 0 |  |  | да |
+| pipe repair cost plano tx |  | 1 · 59.0 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | pipe repair richardson tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (richardson) |
 | pipe works plumbing | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: works) |
 | plano affordable plumbers |  | 1 · 27.0 · 0 |  |  | да: оценочное слово в текст не ставим: affordable |
 | plano garbage pickup schedule |  | 1 · 76.0 · 0 |  |  | частично (нет слов: pickup) |
+| plano heater repair | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | plano plumbing supply inc plano tx |  | 1 · 85.0 · 0 |  |  | частично (нет слов: inc) |
-| plano tx gas line repair |  |  |  | 1 · 3.0 · 0 | не наше (газовые линии не заявляем) |
-| plano water heater repair services |  |  |  | 1 · 79.0 · 0 | да |
+| plano sewer line repair services | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
+| plano water heater |  | 1 · 99.0 · 0 |  |  | да |
+| plano water leak detection company |  | 1 · 94.0 · 0 |  |  | да |
 | plimber | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | нет (нет слов: plimber) |
 | pliumbing | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | нет (нет слов: pliumbing) |
 | plomeria | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | нет (нет слов: plomeria) |
@@ -2172,6 +2024,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | plumber nea rme | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: nea, rme) |
 | plumber near me clogged drain | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | plumber near me dfw | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | другой город (dfw) |
+| plumber near plano | 1 · 16.0 · 0 | 1 · 16.0 · 0 |  |  | да |
 | plumber open on sunday near me | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | частично (нет слов: sunday) |
 | plumber rates | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: rates |
 | plumber snake drain | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
@@ -2213,6 +2066,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | plumbing contractor | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | plumbing contractor carrollton | 1 · 41.0 · 0 | 1 · 41.0 · 0 |  |  | другой город (carrollton) |
 | plumbing contractor celina tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (celina) |
+| plumbing contractor plano tx | 1 · 7.0 · 0 | 1 · 7.0 · 0 |  |  | да |
 | plumbing contractors carrollton | 1 · 41.0 · 0 | 1 · 41.0 · 0 |  |  | другой город (carrollton) |
 | plumbing designer | 1 · 8.0 · 0 | 1 · 8.0 · 0 |  |  | частично (нет слов: designer) |
 | plumbing dfw | 1 · 6.0 · 0 | 1 · 6.0 · 0 |  |  | другой город (dfw) |
@@ -2236,6 +2090,7 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | plumbing problems celina tx | 1 · 50.0 · 0 | 1 · 50.0 · 0 |  |  | другой город (celina) |
 | plumbing prosper, tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (prosper) |
 | plumbing pumps | 1 · 15.0 · 0 | 1 · 15.0 · 0 |  |  | частично (нет слов: pumps) |
+| plumbing repair cost plano tx |  | 1 · 66.0 · 0 |  |  | да: оценочное слово в текст не ставим: cost |
 | plumbing repair service near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | plumbing repairs | 1 · 41.0 · 0 | 1 · 41.0 · 0 |  |  | да |
 | plumbing ruffin | 1 · 12.0 · 0 | 1 · 12.0 · 0 |  |  | частично (нет слов: ruffin) |
@@ -2245,10 +2100,10 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | plumbing worx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: worx) |
 | plumbing+disorder | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | частично (нет слов: disorder) |
 | plumbing+fungus | 1 · 8.0 · 0 | 1 · 8.0 · 0 |  |  | частично (нет слов: fungus) |
+| plumbing+plano+tx |  | 1 · 38.0 · 0 |  |  | да |
 | plumbing+pruning | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | частично (нет слов: pruning) |
 | plumer | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да: опечатка в запросе |
 | plumming | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | нет (нет слов: plumming) |
-| pool heater repair plano tx |  |  |  | 1 · 1.0 · 0 | да |
 | pool heater replacement plano tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | poor man plumbing | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: poor, man) |
 | professional kitchen sink installation | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | частично (нет слов: professional) |
@@ -2261,14 +2116,15 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | repair bathtub drain stopper | 1 · 9.0 · 0 | 1 · 9.0 · 0 |  |  | частично (нет слов: bathtub, stopper) |
 | repair outdoor water spigot | 1 · 7.0 · 0 | 1 · 7.0 · 0 |  |  | частично (нет слов: outdoor) |
 | repair water fixtures | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: fixtures) |
+| repiping company plano tx |  | 1 · 75.0 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | repiping frisco | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | другой город (frisco) |
+| repiping plano tx |  | 1 · 79.0 · 0 |  |  | не наше (repipe: нет такой услуги) |
 | replace kitchen sink | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
 | reputable plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: reputable) |
 | residential leak detection services plano |  | 1 · 80.0 · 0 |  |  | да |
 | residential plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | residential plumbing additions frisco | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (frisco) |
 | residential plumbing experts near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: experts) |
-| residential plumbing installation plano tx |  |  |  | 1 · 28.0 · 0 | да |
 | richardson tx emergency plumber | 1 · 15.0 · 0 | 1 · 15.0 · 0 |  |  | другой город (richardson) |
 | rough plumbing | 1 · 6.0 · 0 | 1 · 6.0 · 0 |  |  | частично (нет слов: rough) |
 | same day plumber cedar flat | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | частично (нет слов: cedar) |
@@ -2278,22 +2134,25 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | same day plumbing services near me | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | да |
 | saturday plumbers | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: saturday) |
 | service line repair | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
-| sewage cleanup plano |  |  |  | 1 · 41.0 · 0 | нет (нет слов: sewage, cleanup) |
 | sewer and drain cleaning | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | sewer and drain repair near me | 1 · 1.0 · 1 | 1 · 1.0 · 1 |  |  | да |
 | sewer camera | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
-| sewer clean out plano tx |  |  |  | 1 · 2.0 · 0 | да |
+| sewer clean out plano | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | sewer cleanup near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: cleanup) |
 | sewer drain clogged | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | sewer inspection camera | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
 | sewer line | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
 | sewer line cleaning | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
+| sewer line cleaning plano tx |  | 1 · 96.0 · 0 |  |  | да |
 | sewer line repair frisco | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (frisco) |
-| sewer line replacement company plano tx |  |  |  | 1 · 1.0 · 0 | да |
-| sewer pipe repair plano |  |  |  | 1 · 22.0 · 0 | да |
+| sewer line repair service plano | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
+| sewer pipe replacement in plano |  | 1 · 83.0 · 0 |  |  | да |
+| sewer pipe replacement plano |  | 1 · 83.0 · 0 |  |  | да |
 | sewer pump rental | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | частично (нет слов: pump, rental) |
 | sewer repair and snaking | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | частично (нет слов: snaking) |
 | sewer repair contractors | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
+| sewer repair near me plano |  | 1 · 59.0 · 0 |  |  | да |
+| sewer repair plano |  | 1 · 76.0 · 0 |  |  | да |
 | sewer repair plano tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | shelters near me | 1 · 36.0 · 0 | 1 · 36.0 · 0 |  |  | нет (нет слов: shelters) |
 | shower drain plumbing | 1 · 11.0 · 0 | 1 · 11.0 · 0 |  |  | да |
@@ -2305,14 +2164,12 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | sink drainage | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | частично (нет слов: drainage) |
 | sink removal | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | частично (нет слов: removal) |
 | site:fppplumbing.com | 1 · 18.0 · 0 | 1 · 18.0 · 0 |  |  | нет (нет слов: site, fppplumbing, com) |
-| site:google.com "texas" "plano" "handyman" "@gmail.com" or "@yahoo.com" or "@hotmail.com" |  |  |  | 1 · 10.0 · 0 | не наше (не сантехника) |
 | slab leak detection allen, tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (allen) |
 | slab leak detection frisco | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | другой город (frisco) |
 | slab leak plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | slab leak repair coppell | 1 · 9.0 · 0 | 1 · 9.0 · 0 |  |  | другой город (coppell) |
 | slab leak repair plano, tx |  | 1 · 83.0 · 0 |  |  | да |
 | slab leak repair wylie tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (wylie) |
-| standard water heater installation plano tx |  |  |  | 1 · 3.0 · 0 | частично (нет слов: standard) |
 | start task | 1 · 18.0 · 0 | 1 · 18.0 · 0 |  |  | частично (нет слов: task) |
 | storm drain pipe repair | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | частично (нет слов: storm) |
 | sump pump installation | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | не наше (sump pump: нет такой услуги) |
@@ -2322,21 +2179,16 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | tankless water heater plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (tankless не делаем) |
 | tankless water heater repair near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | не наше (tankless не делаем) |
 | tankless water heater repair the colony | 1 · 3.0 · 0 | 1 · 3.0 · 0 |  |  | другой город (the colony) |
-| tankless water heaters plano |  |  |  | 1 · 11.0 · 0 | не наше (tankless не делаем) |
 | the colony tx plumbing | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (the colony) |
 | thorp plumbing | 1 · 11.0 · 0 | 1 · 11.0 · 0 |  |  | частично (нет слов: thorp) |
 | toilet flange repair | 1 · 7.0 · 0 | 1 · 7.0 · 0 |  |  | да |
-| toilet installation in plano, tx |  |  |  | 1 · 100.0 · 0 | да |
-| toilet installation plano, tx |  |  |  | 1 · 73.0 · 0 | да |
+| toilet plumbing plano | 1 · 18.0 · 0 | 1 · 18.0 · 0 |  |  | да |
 | toilet plumbing services | 1 · 41.0 · 0 | 1 · 41.0 · 0 |  |  | да |
 | toilet repair parts | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | да |
 | toilet replacement installation | 1 · 5.0 · 0 | 1 · 5.0 · 0 |  |  | да |
 | toilet unclog | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
 | top plumbers near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да: оценочное слово в текст не ставим: top |
 | top same day plumbing for urgent leaks. | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | частично (нет слов: urgent) |
-| traditional water heater installation plano tx |  |  |  | 1 · 1.0 · 0 | частично (нет слов: traditional) |
-| trenchless pipe repair plano, tx |  |  |  | 1 · 3.0 · 0 | частично (нет слов: trenchless) |
-| trenchless sewer line repair plano |  |  |  | 1 · 1.0 · 0 | частично (нет слов: trenchless) |
 | trophy plumbing |  | 1 · 11.0 · 0 |  |  | частично (нет слов: trophy) |
 | tub drain replacement | 1 · 11.0 · 0 | 1 · 11.0 · 0 |  |  | да |
 | unblocking bathroom sink | 1 · 12.0 · 0 | 1 · 12.0 · 0 |  |  | частично (нет слов: unblocking) |
@@ -2350,34 +2202,28 @@ To reach a plumber in Plano, TX, use the Plano line: the button is at the top of
 | water heater drain valve replacement | 1 · 11.0 · 0 | 1 · 11.0 · 0 |  |  | да |
 | water heater flush service near me | 1 · 9.0 · 0 | 1 · 9.0 · 0 |  |  | да |
 | water heater frisco | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | другой город (frisco) |
-| water heater installation and replacement plano tx |  |  |  | 1 · 1.0 · 0 | да |
-| water heater installation contractor plano |  |  |  | 1 · 1.0 · 0 | да |
 | water heater installation contractors | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | water heater installation frisco tx | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (frisco) |
-| water heater maintenance near plano tx |  |  |  | 1 · 86.0 · 0 | да |
 | water heater plumbing | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | water heater repair carrollton | 1 · 21.0 · 0 | 1 · 21.0 · 0 |  |  | другой город (carrollton) |
+| water heater repair near plano tx |  | 1 · 79.0 · 0 |  |  | да |
 | water heater repair same day | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | water heater repair service near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | water heater repairman iowa colony tx | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | другой город (colony) |
-| water heater replacement company plano tx |  |  |  | 1 · 62.0 · 0 | да |
-| water heater replacement near plano tx |  |  |  | 1 · 72.0 · 0 | да |
-| water heater service plano tx |  |  |  | 1 · 73.0 · 0 | да |
-| water heaters plano |  |  |  | 1 · 1.0 · 0 | да |
 | water leak detection | 1 · 10.0 · 0 | 1 · 10.0 · 0 |  |  | да |
+| water leak detection plano |  | 1 · 70.0 · 0 |  |  | да |
+| water leak detection services plano |  | 1 · 84.0 · 0 |  |  | да |
 | water leak detector near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | частично (нет слов: detector) |
 | water line | 1 · 8.0 · 0 | 1 · 8.0 · 0 |  |  | да |
-| water line installation plano tx |  |  |  | 1 · 77.0 · 0 | да |
 | water line repair near me | 1 · 9.0 · 0 | 1 · 9.0 · 0 |  |  | да |
+| water line service near plano tx |  | 1 · 66.0 · 0 |  |  | да |
 | water pressure regulator repair | 1 · 7.0 · 0 | 1 · 7.0 · 0 |  |  | частично (нет слов: regulator) |
 | water service line replacement near me | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | да |
 | water.heater | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | да |
-| website design for plumbers plano |  |  |  | 1 · 64.0 · 0 | не наше (не про услугу) |
 | website for plumbers frisco | 1 · 1.0 · 0 | 1 · 1.0 · 0 |  |  | другой город (frisco) |
 | weekend plumber | 1 · 11.0 · 0 | 1 · 11.0 · 0 |  |  | да |
 | weekend plumbers | 1 · 12.0 · 0 | 1 · 12.0 · 0 |  |  | да |
 | weekend plumbing services | 1 · 13.0 · 0 | 1 · 13.0 · 0 |  |  | да |
-| well repair plano tx |  |  | 1 · 49.0 · 0 | 1 · 49.0 · 0 | не наше (насосы скважин: нет такой услуги) |
 | where did you get this information from? | 1 · 4.0 · 0 | 1 · 4.0 · 0 |  |  | частично (нет слов: did, information) |
 | where to buy kitchen faucets near me | 1 · 19.0 · 0 | 1 · 19.0 · 0 |  |  | частично (нет слов: buy) |
 | which plumbers in grand prairie, tx offer emergency drain and sewer service overnight? | 1 · 2.0 · 0 | 1 · 2.0 · 0 |  |  | частично (нет слов: grand, prairie, overnight) |

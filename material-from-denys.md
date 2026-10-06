@@ -936,13 +936,14 @@ Frisco · май 2025 · файлы: 96
 - **296**, видео: Kitchen line clogged again: the wall cleanout opened, the water runs out, then the chain snake goes in. План: /clogged-drain-cleaning-frisco-plano/
   - Заметки: прислано 5 октября 2026 поздно вечером, шестая партия; 12 апреля 2025. Видео 33 с: на кирпичной стене открыт настенный cleanout, из него на траву льётся вода. Та же работа, что 129 (IMG_4536.MOV, тот же день): Денис прислал 129 ещё раз с этими словами. / Video, 33 s. Not placed yet (Denys, October 5, 2026, evening). Same job as 129 (April 12, 2025); outside the ten cities, no city. A gloved hand, no face.
 
-### 79. Clearing the kitchen drain line, 75 feet
+### 79. Clearing a kitchen drain line through an outside cleanout
 
 Plano · декабрь 2024 · файлы: 91
 
 **Слова Дениса:** «Кухня: пробиваем дренажную линию, 75 футов»
 
-- **91**, фото: Clearing the kitchen drain line, 75 feet, Plano. На сайте: /plumber-plano-tx/. План: /clogged-drain-cleaning-frisco-plano/
+- **91**, фото: Clearing a kitchen drain line through an outside cleanout, Plano. На сайте: /plumber-plano-tx/. План: /clogged-drain-cleaning-frisco-plano/
+  - Заметки: 5 октября 2026, ночь: в кадре барабанная машина с тросом, не chain snake; подпись «through an outside cleanout», без 75 футов (блок чата, пункт 4.3).
 
 ### 80. Milwaukee snake clearing the shower drain line
 
@@ -2206,4 +2207,5 @@ Plano · январь 2025 · файлы: 104
 - `source/dictation/2026-10-02-slab-leak-water-from-foundation.md`: Slab leak: water coming out of the foundation (facts from Denys, October 2, 2026, night). For the slab leak page, when it is rewritten: the full story and clip 165 (IMG_6115.MOV, August 27, 2026, Little Elm). A short version stands first in "From the Job" on the homepage since October 2, 2026, night, without the city. 
 - `source/dictation/2026-10-03-frisco-ac-sink.md`: Диктовка Дениса, 3 октября 2026: раковина с линией кондиционера, Frisco. Слова Дениса, как их передал блок чата от 3 октября (вторая редакция, пункт 2.2). Это факты для пункта «A sink that won't drain, with the AC line tied in» на странице Frisco. Английский текст пункта написал чат по этим словам, он 
 - `source/dictation/2026-10-03-plano.md`: Диктовка Дениса, 3 октября 2026: страница Plano. Денис диктовал чату голосом по-русски: четыре части и ответы на вопросы чата. Здесь запись фактов, как их передал чат, не его слова дословно. Английский текст страницы написал чат, он стоит в source/plano-text-v1.md. Имён, телефон
+- `source/dictation/2026-10-05-plano-audit-answers.md`: Ответы Дениса на вопросы аудита страницы Plano (5 октября 2026, ночь). Денис отвечал чату голосом по-русски; чат передал ответы блоком «Plano после аудита» (5 октября, ночь). Здесь его слова и решения как они переданы; цитаты стоят там, где блок их приводит.
 - `source/dictation/2026-10-05-plano-photos.md`: Диктовка Дениса, 5 октября 2026: фото и видео для страницы Plano, ответы на три вопроса. Денис прислал 14 файлов и надиктовал голосом по-русски, что на них. Здесь запись фактов его словами, без лишних слов. Имён, телефонов и адресов клиентов здесь нет и быть не должно. Координаты съёмки нигде не записаны: в таблицах с
