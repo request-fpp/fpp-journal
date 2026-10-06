@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 00:07</p><h1>Всё о проекте fppplumbing.com одним текстом: передача новому чату</h1>
+</style></head><body><main><p class="stamp">Опубликовано 06.10.2026 00:28</p><h1>Всё о проекте fppplumbing.com одним текстом: передача новому чату</h1>
 <p>Составлено 5 октября 2026 года по просьбе Дениса: «скинь всю информацию для нового чата: всё, что ты сделал, всё, что у нас есть, все страницы, новые фотографии, истории, которые я тебе рассказывал, одним текстом». Писал Claude Code, который собирает сайт в папке проекта. Всё взято из файлов проекта на этот день.</p>
 <p>Читает это новый чат. Он пишет тексты страниц и ведёт SEO. Тестовый сайт он открыть не может: вход туда только у Дениса. Всё нужное лежит открытыми страницами журнала по адресам вида https://fpp-journal.pages.dev/имя, они перечислены в разделе 2. Если у чата есть доступ к папке проекта, он читает файлы прямо из неё.</p>
 <h2>Самое главное за одну минуту</h2>
@@ -440,7 +440,7 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <h3>Коротко</h3>
 <ul>
 <li>На новом сайте 64 адреса, ровно как на живом: 63 страницы и одна переадресация (<code>/blog/author/admin/</code> отдаёт 301 на главную, страница не строится; подпись автора ведёт на блок Дениса на главной, <code>/#about</code>).</li>
-<li>Переписаны четыре: главная (версия 4, закрыта, правки только по слову Дениса, title не трогаем), Frisco (версия 4), Plano (версия 1, закрыта аудитом 5 октября: superseo 62 из 70, claude-seo 93 из 100; дальше только по слову Дениса), emergency (версия 2, собрана 5 октября ночью по его замечаниям с тестового сайта; открыты H1 и вопрос о плате при мелком ремонте). Что в них, раздел 5.</li>
+<li>Переписаны четыре: главная (версия 4, закрыта, правки только по слову Дениса, title не трогаем), Frisco (версия 4), Plano (версия 1, закрыта аудитом 5 октября: superseo 62 из 70, claude-seo 93 из 100; дальше только по слову Дениса), emergency (версия 3, собрана 6 октября после полуночи по его замечаниям; открыт только H1). Что в них, раздел 5.</li>
 <li>56 страниц несут старый текст живого сайта: 55 с точечными правками (в конце раздела), у leak detection в журнале правок нет ни одной строки.</li>
 <li>Три гайда заморожены: старый текст слово в слово.</li>
 <li>Переадресации старых служебных адресов в 64 не входят. О них сказано в разделе 1, в проверках.</li>
@@ -634,7 +634,7 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <td>17</td>
 <td>/emergency-plumbing-services/</td>
 <td>emergency plumbing</td>
-<td>переписана, v2 (5 октября ночью, его замечания с тестового сайта внесены)</td>
+<td>переписана, v3 (6 октября после полуночи; его замечания к версиям 1 и 2 внесены; открыт только H1)</td>
 <td>2 · 9,978 · 23.4</td>
 <td>раздел 5; бриф emergency-brief; делит запросы с главной, срочные слова главная отдаёт сюда после переезда; запросы emergency с городом ведут страницы городов</td>
 </tr>
@@ -1095,9 +1095,9 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <tr>
 <td>Emergency</td>
 <td><code>/emergency-plumbing-services/</code></td>
-<td><code>source/emergency-text-v2.md</code></td>
-<td>4 803</td>
-<td>версия 2, собрана 5 октября ночью по замечаниям Дениса с тестового сайта; открыты H1 и вопрос о плате при мелком ремонте</td>
+<td><code>source/emergency-text-v3.md</code></td>
+<td>5 009</td>
+<td>версия 3, собрана 6 октября после полуночи по замечаниям Дениса к версии 2; открыт только H1</td>
 </tr>
 <tr>
 <td>Plano</td>
@@ -1280,10 +1280,10 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <li>Title: "Emergency Plumber in Frisco &amp; Plano, TX | 24/7 Plumbing Service" (живой, слово в слово).</li>
 <li>Description: "Burst pipe, sewer backup, water through the ceiling: FPP Plumbing answers 24/7 in Frisco, Plano &amp; McKinney. You hear the emergency fee before we roll."</li>
 <li>H1: "24/7 Emergency Plumber in Frisco, Plano &amp; McKinney: Licensed and Local". Новый: без вопроса в начале, без слова "Fast" и без тройки; всё, что держит запросы, стоит в том же порядке. Денис ещё не сказал ни да, ни нет; скажет оставить живой, вернём живой одной строкой.</li>
-<li>Текст: версия 2, <code>source/emergency-text-v2.md</code> (чат, 5 октября ночью: версия 1 по диктовке Дениса плюс его замечания после просмотра тестового сайта, 22:46 до 23:48; запись слов <code>source/dictation/2026-10-05-emergency.md</code>). Версия 1 лежит рядом нетронутой. Собрана 5 октября ночью.</li>
+<li>Текст: версия 3, <code>source/emergency-text-v3.md</code> (чат, 6 октября после полуночи: версия 2 плюс замечания Дениса к ней, 00:15 до 00:19; версия 2 это версия 1 по его диктовке плюс замечания с тестового сайта 22:46 до 23:48; записи слов в <code>source/dictation/2026-10-05-emergency.md</code>). Версии 1 и 2 лежат рядом нетронутыми. Собрана 6 октября после полуночи.</li>
 <li>Первый экран как у Frisco: слева H1, подпись автора с датой, вступление, кнопки Call Frisco и Call Plano с номерами и Request Service; справа клип 300: вода бьёт у медных труб в стене (вызов с гвоздём от плинтуса, Frisco по месту съёмки; перерезан по замечанию Дениса так, чтобы брызги стояли в верхней половине кадра, которую показывает телефон; его слово: «да, оставляем это видео»). Под первым экраном строка доверия и два блока макета: «What is happening right now?» и главный кран, который поворачивается нажатием. Строки переходов «On this page» нет: она решена для страниц городов.</li>
 </ul>
-<p><strong>H2 по порядку:</strong> "First Thing in a Plumbing Emergency: Shut the Water Off"; "What Counts as a Plumbing Emergency and What Can Wait Until Morning" (список из семи пунктов; кран и измельчитель словами Дениса); "What a 24 Hour Plumber Costs After Hours" (живой); "A 24 Hour Plumber Who Actually Picks Up" (живой); "Emergency Plumbing Services: What We Get Called Out For" (список из девяти пунктов со ссылками); "What Our Emergency Plumbers Found on Real Calls" (одиннадцать историй); "Burst Pipes After a Hard Freeze: Where They Break" (с зимним вызовом как отдельной историей); "Before It's an Emergency: Find the Main Shut-Off Valve"; "When the Water Has Already Done Damage"; "24 Hour Plumber Service Area: Frisco, Plano and the Cities Around Them" (живой); "Emergency Plumbing FAQ" (живой); "What People Wrote After a Night Call".</p>
+<p><strong>H2 по порядку:</strong> "First Thing in a Plumbing Emergency: Shut the Water Off"; "What Counts as a Plumbing Emergency and What Can Wait Until Morning" (список из семи пунктов; кран и измельчитель словами Дениса; после списка абзац о работе, которая не emergency, но нужна сегодня: после рабочих часов любой выезд это emergency сервис с emergency fee, его пример с биде в субботу вечером); "What a 24 Hour Plumber Costs After Hours" (живой); "A 24 Hour Plumber Who Actually Picks Up" (живой); "Emergency Plumbing Services: What We Get Called Out For" (список из девяти пунктов со ссылками); "What Our Emergency Plumbers Found on Real Calls" (одиннадцать историй); "Burst Pipes After a Hard Freeze: Where They Break" (с зимним вызовом как отдельной историей); "Before It's an Emergency: Find the Main Shut-Off Valve"; "When the Water Has Already Done Damage"; "24 Hour Plumber Service Area: Frisco, Plano and the Cities Around Them" (живой); "Emergency Plumbing FAQ" (живой); "What People Wrote After a Night Call".</p>
 <p><strong>Одиннадцать историй Дениса (жирное начало абзаца, не заголовки):</strong>
 1. "A nail behind the baseboard." Frisco; гвоздь предыдущего подрядчика через линию 3/4 дюйма. Клипы 298, 299.
 2. "The ceiling that came down in Plano." Два абзаца. Клип 253 (потолок упал) справа от первого, клипы 254, 255 под вторым.
@@ -1294,21 +1294,21 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 7. "A recirculation pump that dripped all night." Дом около восьми лет, насос застройщика, Grundfos; прямая труба на выходные, в понедельник насос из supply house, Ferguson в McKinney (ссылка на страницу магазина). Клип 306, без города.
 8. "A leak inside the garage wall." После мороза; старый кран убран, труба сплющена и запаяна без заглушки, стык разошёлся; пресс-кап. Клип 307 (Frisco).
 9. "After somebody else's work." Три абзаца: handyman за половину нашей цены сломал трубы в стене, два часа текло; потом платить нам и restoration партнёру; у handyman нет права на сантехнику и страховки на неё; что чувствует сантехник, откручивая старый кран; «We're not criticizing anybody»; лицензия и TSBPE. Клип 305 (Frisco) у первого абзаца.
-10. "Closet shelves, and a nail through the pipe." Клип 280, без города.
+10. "Closet shelves, and a nail through the pipe." Его словами: ничего сверхкритического, но ни домовладелец, ни handyman не смогли перекрыть воду; свободная команда рядом. Клип 280, без города.
 11. "A manifold made of push-fit fittings." Клип 295 (Plano), марка не названа.</p>
-<p><strong>Раздел про мороз:</strong> фото 279 у второго абзаца; "<strong>One winter call.</strong>" отдельной историей после общих абзацев (стена обшита деревом), под ней клип 114 и фото 120; всё без города.</p>
+<p><strong>Раздел про мороз:</strong> фото 279 у второго абзаца; "<strong>One winter emergency call.</strong>" отдельной историей после общих абзацев (стена обшита деревом, труба «stretched and burst»), под ней клип 114 и фото 120; всё без города.</p>
 <p><strong>FAQ (6):</strong> плата после рабочих часов при мелком ремонте; кран за унитазом не держит; вода через потолок; душ не выключается; остановить ночью и починить потом; воскресенья и праздники. Ссылка в FAQ одна: toilet repair.</p>
 <p><strong>Отзывы (Google Plano):</strong> Gerardo, Mark Y. Оба без города.</p>
 <p><strong>Ссылки:</strong> 39 в тексте и одна в FAQ: главная («plumber near me» во вступлении), все двенадцать других услуг, все десять городов, три гайда, страница пяти частых вызовов, две внешние: https://tsbpe.texas.gov/ и страница магазина Ferguson в McKinney. На гайд цен emergency ссылки нет нарочно (в нём суммы).</p>
 <p><strong>Разметка:</strong> Service, FAQPage с шестью вопросами слово в слово, два Review без общей оценки, тринадцать VideoObject, Person для Дениса. Картинка для соцсетей логотип.</p>
-<p><strong>Цифры:</strong> 4 803 слова с title и описанием; повторов 10 (семь с живой страницей emergency, три нарочных), с конкурентами 0; Search Console: 95% показов за 3 месяца и 94% за 16 месяцев со всеми словами запроса в тексте; сайт 29 из 29; вёрстка чистая; сдвига от шрифтов нет; Lighthouse версии 1: телефон 99 и 100 (LCP 1,8 с), компьютер 100 и 100.</p>
+<p><strong>Цифры:</strong> 5 009 слов с title и описанием; повторов 10 (семь с живой страницей emergency, три нарочных), с конкурентами 0; Search Console: 95% показов за 3 месяца и 94% за 16 месяцев со всеми словами запроса в тексте; сайт 29 из 29; вёрстка чистая; сдвига от шрифтов нет; Lighthouse версии 1: телефон 99 и 100 (LCP 1,8 с), компьютер 100 и 100.</p>
 <p><strong>Особые решения</strong>
 - Сумма за работу handyman не называется: Денис хотел $120, чат сказал, к чему ведёт сумма на странице, он выбрал «half our price». На странице одна сумма, $49.
 - Страховка handyman его словами (нет права на сантехнику, значит нет страховки на неё); «We're not criticizing anybody» его слова.
 - 305 это случай с handyman и спиготом (его слово), не убранный кран; чат сопоставил было иначе. Клип первого экрана перерезан по его замечанию и оставлен его словом.
 - 183 стоп-кадром, не клипом (при любом окне кадра в петле ноги, инструмент или коробка хозяев).
 - Нет на странице: газ, старые истории живой страницы, цены кроме $49, обещаний срока.</p>
-<p><strong>Открыто у Дениса (чат спрашивал один раз, второй раз не спрашиваем):</strong> новый H1; берётся ли плата после рабочих часов целиком при мелком ремонте (ответ собран из правила). Строка про измельчитель закрыта его словами.</p>
+<p><strong>Открыто у Дениса (чат спрашивал один раз, второй раз не спрашиваем):</strong> только новый H1. Плата после рабочих часов закрыта его словами 6 октября (любой выезд после рабочих часов это emergency сервис с emergency fee, клиент решает сам), строка про измельчитель его словами 5 октября.</p>
 <h2>6. Решения и замечания Дениса по дням</h2>
 <p>В «» его слова, как записаны, или точный текст страницы; без кавычек пересказ. Только то, что действует; правила в разделе 3, фото в разделе 7.</p>
 <h3>5 октября</h3>
