@@ -567,6 +567,7 @@
 - GBP API: project prepared, application pending
 - GBP API: application submitted
 - llms.txt task cancelled, nothing deployed
+- OpenSEO plugin installed, trial
 
 ## 6 октября, день: гид об автоматическом запорном клапане, цена случая со старым домом
 
