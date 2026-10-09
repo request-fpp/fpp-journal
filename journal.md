@@ -565,6 +565,7 @@
 ## 9 октября
 
 - GBP API: project prepared, application pending
+- GBP API: application submitted
 
 ## 6 октября, день: гид об автоматическом запорном клапане, цена случая со старым домом
 
