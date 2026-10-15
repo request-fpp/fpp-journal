@@ -1,0 +1,251 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 15.10.2026 17:55</p><h1>Дополнение к брифу McKinney (15 октября 2026)</h1>
+<p>Страница: /plumber-mckinney-tx/ . Полный бриф от 3 октября 2026 стоит на странице журнала https://fpp-journal.pages.dev/mckinney-brief.html (живая страница дословно, Search Console за 3 и 16 месяцев, десять конкурентов, фото и клипы, кандидаты в отзывы, официальные факты города McKinney, индексы и возраст жилья, ссылки). Это дополнение написано 15 октября 2026, после слова Дениса «Да, сейчас сделаем McKinney»: что изменилось с 3 октября, какие правила прибавились, какой материал прибавился и что нужно для текста. Текст пишет чат по диктовке Дениса и кладёт его в <code>source/mckinney-text-v1.md</code>; Claude Code собирает страницу из этого файла на черновой адрес, Денис смотрит и говорит «да».</p>
+<h2>Коротко</h2>
+<ol>
+<li>Сайт живёт на Cloudflare Pages с 6 октября. Страница McKinney на живом сайте стоит со старым текстом и точечными правками (цен нет, кроме $49; tankless и reroute нет; телефонов в тексте нет); блока отзывов у неё нет. Три отзыва старой страницы на новую не идут: LXD Properties стоит на Frisco, Ezzy Zhoo и Victoria Nwanegbo называют Дениса по имени.</li>
+<li>За 28 дней до 6 октября у страницы 197 показов, 0 кликов, среднее место 15.9 (прошлые 28 дней: 178 показов, место 16.8). Главный ключ по карте, «plumber mckinney tx», у страницы McKinney показов не имеет: его берут Frisco и Plano. Запросы «emergency plumber mckinney» берёт страница Frisco на местах 1 и 2, а по решению Дениса от 5 октября они принадлежат странице города.</li>
+<li>Правила, которых не было в брифе 3 октября: список услуг открывает emergency plumbing; строка «On this page» и видимая дата «Updated October 2026»; первый экран как у Frisco и Plano, справа фото фургона (файл 314, принят 15 октября); блока офиса нет, пока Денис не скажет, какой офис обслуживает McKinney; одна фраза про запах газа, если газ упоминается; способы оплаты и «pay over time» словами Дениса, без цифр; про канализацию только ремонт повреждённого участка во дворе, никакой замены целиком и никакой работы под фундаментом; слово repiping на страницу не ставится.</li>
+<li>Материал по слову Дениса с McKinney, которого в брифе 3 октября не было: сервисная линия у счётчика (286, 287, 288), гвозди застройщика в линии к водонагревателю (289 до 294), замена душевой системы и 108 PSI в том же доме (258, 259, 260). Плюс 18 файлов, принятых 15 октября: фургон (314), шесть видео от 8 октября (308 до 313), о которых Денис ещё ничего не сказал, фото с видео случая 1 диктовки (315, 316) и девять файлов второй диктовки (317 до 325: корни, свечка, клапан Delta, манометр, выкопанный PRV, фланец, PRV с 70 PSI, фитинг у счётчика, стояки; что на каком файле, в части 3).</li>
+<li>Диктовка Дениса по McKinney пришла 15 октября 2026 (<code>source/dictation/2026-10-15-mckinney.md</code>, записана чатом): офис, самые частые вызовы, случай с PRV (58 PSI от города у водонапорной башни), инспекторы, аварийный вызов с линией конденсата кондиционера около 13 октября 2026. Офис: McKinney обслуживает офис Frisco, его слова («McKinney граничит с Frisco почти вплотную»): вопрос 14 брифа закрыт, на странице будет блок офиса Frisco, как на самой странице Frisco, и кнопка Frisco на первом экране.</li>
+<li>Чистых отзывов с McKinney по-прежнему 0. Из десяти кандидатов брифа свободны девять (Dr. Jalal Jalali ушёл на Plano).</li>
+</ol>
+<h2>1. Что изменилось с 3 октября</h2>
+<h3>Сайт и страница</h3>
+<ul>
+<li>6 октября сайт переехал на Cloudflare Pages; старый WordPress остаётся запасным 30 дней. Выкладка теперь в два адреса: черновой https://draft.fppplumbing-preview.pages.dev (вход по почте, noindex), где Денис смотрит новую страницу, и живой fppplumbing.com, куда страница идёт только после его «да».</li>
+<li>Живая страница McKinney (проверено 15 октября): title «Plumber in McKinney, TX | Slab Leak &amp; Garbage Disposal Repair», H1 «Plumbing Repair in McKinney, TX: Slab Leaks, Water Heaters, Drains and Disposals», восемь H2 (Slab Leak Repair in McKinney; Main Water Line Repair in Older McKinney Homes; Garbage Disposals, and When to Stop Repairing Them; Our Plumbing Services in McKinney; Water Heaters and the Tank Nobody Mentions; Older McKinney, Newer McKinney; When It Cannot Wait; McKinney Plumbing FAQ), шесть вопросов FAQ, одно фото (старый фургон из общей серии, на крыле другой номер лицензии, на борту телефон Plano), блока отзывов нет. Точечные правки стоят: цены сняты, кроме $49.</li>
+<li>Страницы, собранные по новому порядку и закрытые Денисом: главная, Frisco, Plano, emergency. Их тексты лежат на страницах журнала text-home, text-frisco, text-plano; страница emergency собрана из <code>source/emergency-text-v4.md</code>. Страница Plano это образец для McKinney: тот же конвейер, тот же вид файла.</li>
+</ul>
+<h3>Search Console за 28 дней до 6 октября (выгрузка 9 октября, последний окончательный день 6 октября)</h3>
+<p>Страница McKinney: 16 запросов, 118 показов с запросом (всего по странице 197), 0 кликов.</p>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Показы</th>
+<th>Место</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>slab leak plumber near me</td>
+<td>19</td>
+<td>7.6</td>
+</tr>
+<tr>
+<td>slab leak plumber mckinney</td>
+<td>16</td>
+<td>14.0</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>14</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>garbage disposal repair near me</td>
+<td>14</td>
+<td>6.4</td>
+</tr>
+<tr>
+<td>repiping near me</td>
+<td>13</td>
+<td>17.5</td>
+</tr>
+<tr>
+<td>garbage disposal installation near me</td>
+<td>10</td>
+<td>13.2</td>
+</tr>
+<tr>
+<td>repiping services near me</td>
+<td>10</td>
+<td>23.8</td>
+</tr>
+<tr>
+<td>emergency plumber frisco</td>
+<td>6</td>
+<td>11.0</td>
+</tr>
+<tr>
+<td>leak detection plumber mckinney</td>
+<td>5</td>
+<td>21.4</td>
+</tr>
+<tr>
+<td>garbage disposal repair mckinney</td>
+<td>2</td>
+<td>9.5</td>
+</tr>
+<tr>
+<td>repiping mckinney</td>
+<td>2</td>
+<td>24.0</td>
+</tr>
+<tr>
+<td>slab leak detection near me</td>
+<td>2</td>
+<td>11.5</td>
+</tr>
+<tr>
+<td>slab leak repair mckinney tx</td>
+<td>1</td>
+<td>33.0</td>
+</tr>
+</tbody>
+</table>
+<p>Другие страницы по запросам со словом mckinney (18 запросов, 60 показов): Frisco берёт «emergency plumber mckinney tx» (7, место 2.4), «emergency plumbing services mckinney» (4, место 1.0), «emergency plumber mckinney» (2, место 1.0), «plumber mckinney tx» (8, место 12.1), «slab leak detection mckinney» (2, место 1.0), «sewer line repair mckinney tx» (1, место 11.0); Plano берёт «plumber mckinney tx» (2, место 23.5), «plumbers mckinney» (1), «plumbing company mckinney tx» (1); страница измельчителей берёт «mckinney garbage disposal repair» (11, место 34.0); страница расширительного бака берёт «expansion tanks repair mckinney» (4, место 8.2), «water heater leak mckinney tx» и «water heater leaking mckinney tx» (по 4); страница slab leak берёт «slab leak repair mckinney» (4) и «mckinney slab leak repair» (2).</p>
+<p>Что из этого следует для текста:</p>
+<ul>
+<li>Фраза «plumber in McKinney» (и «plumber McKinney, TX») должна стоять во вступлении, в первом блоке, в заключении и в части H2, как велит правило городских страниц; на живой странице в тексте её нет вообще.</li>
+<li>Своя emergency-секция с H2, где есть слова Emergency Plumber и McKinney, как на Plano («Emergency Plumber in Plano: If Water Is Running Right Now»): по решению Дениса от 5 октября запросы «emergency plumber mckinney» ведёт страница города. Страница emergency ссылается на города якорями «plumber in McKinney».</li>
+<li>«Repiping» не ставится: FPP не делает repipe (и не делает reroute), показы по этим запросам странице не нужны.</li>
+<li>Slab leak и измельчитель держат лучшие места страницы, но их ключи с mckinney карта отдаёт страницам slab leak и disposal. Решение по title и H1 (бриф, вопрос 1) принимает Денис с чатом; что бы ни решили, начало title «Plumber in McKinney, TX», H1 с «Plumbing Repair in McKinney, TX», H2 «Our Plumbing Services in McKinney», «Main Water Line Repair in Older McKinney Homes» и «McKinney Plumbing FAQ» остаются слово в слово (часть 2 брифа, «Что нельзя потерять»).</li>
+</ul>
+<h2>2. Правила, прибавившиеся после брифа (5 и 6 октября 2026)</h2>
+<ol>
+<li>Список услуг на странице города открывается emergency plumbing со ссылкой на /emergency-plumbing-services/ (Денис, 5 октября: «это наша главная услуга»). Абзац в две фразы его словами: всегда на линии, аварийная служба 24/7, когда это авария, мы выезжаем.</li>
+<li>Под лентой доверия стоит строка «On this page» с короткими ярлыками к H2, в подписи автора видимая дата «Updated October 2026». Это делает Claude Code, в тексте ничего не нужно.</li>
+<li>Первый экран как у Frisco и Plano: слева H1, подпись автора, вступление, кнопки звонка и Request Service; справа фото фургона (314). Офис: по диктовке 15 октября McKinney обслуживает офис Frisco, поэтому страница получает блок офиса Frisco (адрес, часы, карта) и кнопку Frisco на первом экране, как Plano получила свой. В тексте офис называется словами Дениса: McKinney граничит с Frisco почти вплотную, выезжает офис Frisco. Никакого адреса или телефона в McKinney не выдумывается.</li>
+<li>Ссылка на главную с якорем «plumber near me» один раз, во вступлении, как побочная фраза, не о McKinney. Вторая ссылка на главную допускается одна: «The six steps in full» на /#how-a-call-works, чтобы не пересказывать шесть шагов звонка.</li>
+<li>Запах газа: если газ упоминается, одна фраза словами Дениса: «If you smell gas, leave the house first. Then call the gas company, or call 911 for the fire department.» Никаких «shut off the gas», «turn the dial», «call a plumber» первым шагом.</li>
+<li>Оплата: карты, Apple Pay, PayPal, Zelle, Venmo, чеки, наличные, крипто по запросу; Zelle, чек и наличные без комиссии; карта с комиссией, размер комиссии не называется; фраза про комиссию на каждой странице своя (главная и Plano уже заняли свои). «Pay over time» через PayPal Pay Later и Klarna: без процентов, числа платежей и сумм, без слова financing.</li>
+<li>Цены: только $49 за выезд в будни, засчитывается в ремонт. Никаких других сумм и диапазонов. Сроки приезда не обещаются ни в какой форме; «same-day» допустимо только как на главной (без часов и минут).</li>
+<li>Канализация (задание 15 октября): FPP ремонтирует повреждённый участок канализационной линии во дворе. Не писать, что меняем линию целиком, и не писать о канализации под фундаментом. Гидростатический тест дренажных линий под плитой делаем (это тест, не ремонт), о нём пишет страница leak detection.</li>
+<li>История с вызова берётся только из слов Дениса. История с деревом, вросшим в медную сервисную линию в McKinney (живая страница), ничем не подтверждена и почти теми же словами стоит на /water-lines/: без его слова в новый текст не идёт.</li>
+<li>Отзывы: только из текстового файла, два до четырёх, слово в слово, с площадкой и датой, один автор на одну страницу сайта. В подписи Google нужен уровень Local Guide (у alex p и Phillip Potter в архиве пуст, читается в профиле).</li>
+<li>Фото стоят только там, где их называет текст: номер файла в квадратной заметке у абзаца, как в <code>source/plano-text-v1.md</code> («[Photo 50 next to the first paragraph: …]»). Картинка стоит рядом с пунктом, только если показывает то, о чём пункт говорит.</li>
+<li>Объём около 2,500 слов, H2 с ключами, 5 до 7 вопросов FAQ, уникальных на сайте (все 278 занятых вопросов в приложении внизу). Вопросы жирным текстом, не заголовками. Одна внешняя ссылка на официальную страницу города (в брифе, часть 6a: регистрация подрядчиков McKinney, пакет требований к водонагревателю).</li>
+<li>Текст проверяется до сборки: <code>tools/check_text.py</code> (тире, слова-метки ИИ, чужие города, цены, обещания приезда, телефоны, tankless, reroute, hydro jetting, PHCC, owner, счёт «plumber near me», восклицания, вопросы-зачины, группы по три) и <code>tools/check_overlap.py</code> против папки <code>source/competitors/2026-10-03-mckinney</code> (десять страниц конкурентов: Baker Brothers, Bewley, Milestone, Smith and Son, Roto-Rooter, JMP, Legacy, Hackler, The McKinney Plumber, Genzel): совпадений с конкурентами 0.</li>
+</ol>
+<h2>3. Материал с McKinney (всё, что есть к 15 октября)</h2>
+<p>Номера по photos/index.csv, подписи в photos/captions-en.csv, полный список с историями на странице журнала material (https://fpp-journal.pages.dev/material.html). «По слову Дениса» значит, что город назвал он; «по черте города» значит, что город дала геометка телефона, а Денис города не называл.</p>
+<h3>Новое после 3 октября</h3>
+<ul>
+<li><strong>314, фото, фургон (принято 15 октября 2026).</strong> Его слова: «фотография на страницу McKinney про машину, ну, главное». Фургон у обочины на улице у кирпичного дома, на крыле M-44816, на борту 469-998-8999 и «24/7 Emergency Plumbing», номерной знак размыт, номеров домов в кадре нет. Снято 5 октября 2026. В проекте пока копия из чата, 768 на 1024 px (по AirDrop в тот день на Mac ничего не пришло); веб-версии готовы (480 и 720 px, полоса для телефона, картинка для соцсетей), оригинал с телефона заменит копию под тем же номером. По геометке снято во Frisco, поэтому в подписи и в имени файла города нет, пока Денис не скажет, где снимал. Место: первый экран страницы McKinney вместо старого фургона.</li>
+<li><strong>286, 287, 288, фото (6 декабря 2023), по слову Дениса.</strong> Его слова: «Вот McKinney: главная сервисная линия воды в 5 до 10 дюймах от счётчика проржавела, корродированная, началась активная утечка. Сделали leak detection, нашли, заменили, перепаяли, всё классно. Тоже мини-кейс». Кадры: вырезанный кусок медной трубы с дырой от коррозии (286), конец трубы с дырой в яме с водой (287), яма у коробки счётчика (288). Тема для раздела про сервисную линию в старых домах McKinney (H2 «Main Water Line Repair in Older McKinney Homes» остаётся).</li>
+<li><strong>289 до 294, фото и видео (13 декабря 2023), по слову Дениса.</strong> Его слова: «Также ещё в McKinney, это именно в McKinney. Застройщик, относительно новый дом: когда утепляли стену, крепили гвоздями, и линия подачи воды к водонагревателю была вся пробита гвоздями, штук 10 гвоздей в ней». Гвозди сидели в трубе и держали воду, пока не проржавели; течь нашли leak detection, участок вырезали и заменили. Кадры: кусок PEX с ржавым гвоздём внутри (289), гвоздь в торце (290), ряд гвоздей в брусе и линия под ними (291, 292), вскрытая стена (293, 294). В кадре 290 коробка из магазина, у 292 читается надпись на трубе: веб-версии делаются с учётом этого.</li>
+<li><strong>258, 259, 260, фото и видео (14 октября 2025), по слову Дениса.</strong> Его слова: «И там же, в этом же McKinney, давление воды: 108 PSI» и «Shower valve replacement, shower system replacement, в McKinney». Кадры: манометр у кирпичной стены, чёрная стрелка около 108 (258; про красную стрелку ничего не пишется, её ставят рукой), новый душевой клапан обжимают прессом в открытой стене (259), старый клапан в той же стене до замены (260). Тема: давление выше 80 PSI и PRV, душевые клапаны.</li>
+<li><strong>315, фото, и 316, видео (5 августа 2026), по слову Дениса (диктовка 15 октября, случай 1).</strong> Его слова: у клиента было низкое давление воды, около 40 PSI; он хотел сам отрегулировать PRV; клапан старый, закопанный, как и все они, потёк. Город отключил счётчик и сказал, что в этом месте, возле водонапорной башни, давление магистрали 56 или 58 PSI. Мы поменяли secondary shut-off valve и pressure reducing valve, давление стало ровно 58 PSI, как сказал город. В McKinney есть места, где давление выше 100 PSI; это прямо на границе с Frisco. Кадры: манометр Watts на уличном кране у кирпичной стены, чёрная стрелка около 58 (315; про красную стрелку ничего не пишется); новый PRV и новый шаровой кран в коробке на гравии у фундамента, в конце крышка закрывается (316, 27 с; на странице будет клип около пяти секунд без звука). Из диктовки ещё: инспекторы McKinney смотрят вентиляционную трубу водонагревателя и discharge линию T&P; аварийный вызов около 13 октября 2026 с забитой линией конденсата кондиционера (раковина переполнялась, поддон AC полный, аварийный слив через крышу), пробили chain snake. В разделе «Факты из файлов» диктовки стоят район и улица места съёмки: они не идут ни на страницу, ни в журнал.</li>
+<li><strong>Вторая партия диктовки, девять файлов, принятых 15 октября вечером (317 до 325), McKinney по слову Дениса для каждого.</strong> Что на каком файле, по кадрам (чат HEIC не открывает, поэтому его привязка файлов к случаям в диктовке местами другая; верно так):</li>
+<li>317, видео IMG_2652 (20 мая 2026, 6,7 с): случай 3, корни из канализационной линии: трос chain snake уходит в чёрный cleanout у кустов, рядом белый cleanout, в конце клубок вытащенных корней.</li>
+<li>318, фото IMG_1632 (2 мая 2026): случай 4, экран камеры с горящей пластиковой свечкой в линии, на экране «24.40FT» (24 фута от cleanout); штамп даты на экране камеры неверный (часы камеры) и на веб-версии размыт.</li>
+<li>319, фото IMG_0538 (14 октября 2025, 19:19): случай 7, новый душевой клапан Delta на новых медных стояках в открытой стене, рука показывает на него. Это та же работа, что видео 259 и 260 (та же стена) и манометр 258: случай 7 и «110 PSI» это один дом и один день, 14 октября 2025; «недавно» в диктовке это год назад.</li>
+<li>320, фото IMG_1018_2 (14 октября 2025, 10:58): тот же снимок, что 258 (манометр около 110 PSI), вывезен из телефона дважды. На страницах стоит только 258; 320 никогда (как 56 и 168).</li>
+<li>321, фото IMG_0287 (29 сентября 2026): случай 6, выкопанный старый узел PRV и клапанов в руке, в клумбе крышки коробок и пластиковый декоративный камень, под которым был закопанный умягчитель. Это не фото 110 PSI.</li>
+<li>322, фото IMG_5253 (29 июля 2026): случай 5, унитаз снят, фланец проржавел насквозь, рядом новый фланец. Это не фото 110 PSI; дата случая 5 это 29 июля 2026, не 14 октября 2025.</li>
+<li>323, видео IMG_1487 (23 декабря 2025, 11,7 с): коробка с гравием, новый шаровой кран и PRV, потом манометр на уличном кране, чёрная стрелка около 70 PSI. По месту съёмки другой дом, чем 258: на странице это своя работа с PRV в McKinney и не привязывается к дому с 110 PSI (слова Дениса «сделай, чтобы было типа оттуда» выполнить нельзя: подпись с чужим домом была бы неправдой на сайте; оба дома кончились на 70 PSI, так что клип честно показывает «выставили 70», не называя дом).</li>
+<li>324, видео IMG_8577 (2 августа 2025, 12,5 с): случай 8, коробка счётчика, латунный резьбовой фитинг и корродированный push-fit фитинг на главной линии, вода в яме. Марка фитинга в подписи не пишется (как у 295).</li>
+<li>325, видео IMG_3706 (19 марта 2025, 30 с): корродированные медные стояки в открытой стене, утеплитель, push-fit фитинги внизу. Дата другая, чем у случая 7 (14 октября 2025): другая работа, держится до слова Дениса.
+  Веб-версии фото 318, 319, 321, 322 сделаны; клипы режутся при сборке, когда текст скажет, где они стоят. Остальные слова второй диктовки без файлов: измельчители (меняем, ничего сверхъестественного) и случай 9, slab leak у кухонного острова (пинхол в трубе в пластиковом рукаве, вода по рукаву поднималась в дом, тоннель, участок заменён; фото нет).</li>
+<li><strong>308 до 313, шесть видео (8 октября 2026), слов Дениса нет.</strong> Пришли по AirDrop на Mac 8 октября, приняты в архив 15 октября. По кадрам одна работа в старом доме (ковёр с цветами, деревянные панели): старый запорный кран на медной трубе из стены с потёками (308, 309), комната со снятым полом, ведро и бак (310), зачистка медного стаба и новый четвертьоборотный кран на нём (311, 312, 313). По геометке Plano. Что это за вызов и для какой страницы, спросить у Дениса; на McKinney без его слова не идёт.</li>
+</ul>
+<h3>Что было в брифе 3 октября (для памяти)</h3>
+<ul>
+<li>По слову Дениса: 195, 196 (декабрь 2024): laundry box посреди дома, латунный кран месяцами капал в стену, вздулся пол и плинтусы в зале и спальне, до нас кто-то приезжал и не разобрался (диктовка 2 октября). 7 (заменённый PRV) и 51 (PRV во flower bed): его слова «Замененный PRV», «Замена PRV во flower bed».</li>
+<li>По его подписям к фото (город по черте города): 33, 34 (ржавый фланец и новый фланец, июль 2026); 71, 73 (laundry box со сломанными кранами и новый, апрель 2026); 98, 99, 244 (две ручки на одну, Moen, декабрь 2024; 99 уже стоит на главной и на странице смесителей); 103 (новый Moen 3/4 HP, пол шкафа испорчен долгой течью); 139, 140, 141 (бачок, новые fill и flush valve, июль 2024; 141 стоит на главной и на странице унитазов); 158 (новая PEX линия под тротуаром, август 2024); 63, 64 (пинхол на PEX у манифолда на чердаке и новый манифолд, сентябрь 2025); 74 (Milwaukee snake в душевом сливе, ноябрь 2024); 180 (дивертер, ноябрь 2025); 190, 191 (унитаз, забитый бумагой, шестифутовый огер, ноябрь 2024).</li>
+<li>Одна работа не стоит на двух городских страницах; картинка страницы города может стоять и на странице услуги.</li>
+</ul>
+<h2>4. Отзывы</h2>
+<ul>
+<li>Чистых пятизвёздочных отзывов, где назван McKinney: 0 (единственный, Ezzy Zhoo, дважды называет Дениса, «rerouting of vents and water lines» и «gas line»).</li>
+<li>Из десяти кандидатов брифа (часть 5) свободны девять: Rangsan L. (Thumbtack, декабрь 2023, измельчитель и три смесителя), Sathya P. (Thumbtack, ноябрь 2023, измельчитель и течь под раковиной; вместе с Rangsan не брать), Javeed N. (Thumbtack, ноябрь 2022, течь, которую трудно найти), alex p (Google, январь 2025, нет горячей воды в снежную бурю), David H. (Thumbtack, январь 2023, течь душевого смесителя и лопнувшая труба снаружи), Kevin N. (Thumbtack, январь 2023, течь из ванной наверху через светильник кухни), Phillip Potter (Google, декабрь 2024, срочная работа в воскресенье), Thomas S. (Thumbtack, февраль 2023, раковина поздно ночью), Ryan E. (Thumbtack, март 2023, унитаз). Dr. Jalal Jalali стоит на Plano с 3 октября. Тексты дословно и ссылки в брифе, часть 5.</li>
+<li>Проверка перед сборкой: <code>tools/check_reviews.py</code> и журнал reviews/site-ledger.md (один автор на одну страницу).</li>
+</ul>
+<h2>5. Как собирается страница и что нужно от Дениса</h2>
+<p>Файл <code>source/mckinney-text-v1.md</code> в виде <code>source/plano-text-v1.md</code>: шапка для людей, строки «Title:» и «Meta description:», «# H1», абзацы вступления, разделы «## », пункты списка вызовов строками «### », жирная первая фраза абзаца остаётся текстом, FAQ с вопросами жирным, «Closing paragraph above the footer:», заметки в квадратных скобках (фото, ссылки, отзывы) не попадают в текст. Claude Code прописывает ссылки, фото и клипы в tools/export_page_text.py (PAGES), собирает страницу, гоняет проверки (check_text, check_overlap, Search Console по запросам страницы, проверка сайта, вёрстка на шести ширинах, сдвиг шрифтов, Lighthouse на телефоне) и выкладывает на черновой адрес. После «да» Дениса страница уходит на живой сайт.</p>
+<p>Вопросы к Денису, которые задаёт чат, по одному разу (офис закрыт диктовкой: Frisco): старые дома у площади и к востоку от US 75 (чугун, старая медь), чего в диктовке пока нет; мороз; подтверждает ли историю с деревом в сервисной линии (иначе она не идёт); title и H1 (slab leak и измельчитель в title против карты ключей); что за работа на видео 308 до 313. Где снят фургон 314, Claude Code спросил сам 15 октября.</p>
+<h2>6. Канализация на живом сайте: где сказано больше, чем мы делаем (список по заданию, без правок)</h2>
+<p>Правило: FPP ремонтирует повреждённый участок канализационной линии во дворе; замену линии целиком и работу с канализацией под фундаментом не заявляем. Проверены все 63 страницы живого сайта 15 октября 2026, плюс файлы llms.txt и llms-full.txt.</p>
+<p>Прямо про замену линии целиком:</p>
+<ol>
+<li>/drain-services/ , заголовок H2: «Spot Repairs &amp; Sewer Line Replacement». Текст под ним: «Not every drain issue means full replacement. We do spot repairs where possible: saving you time, cost, and unnecessary demolition.»</li>
+<li>llms.txt (не страница, живой файл https://fppplumbing.com/llms.txt, строка услуги): «Sewer Line Repair and Camera Inspection: for backups that keep coming back: sewer camera inspection with line locating, spot repair, full sewer line replacement, cleanout installation, root removal, cast iron replacement.» Файл llms-full.txt повторяет заголовок «Spot Repairs &amp; Sewer Line Replacement» страницы /drain-services/.</li>
+</ol>
+<p>Про канализацию под фундаментом:</p>
+<ol start="3">
+<li>/plumber-plano-tx/ , раздел «What the City of Plano Requires from a Plumbing Contractor»: «Replacing a water heater takes a permit and a final inspection here. So does replacing a water line or a sewer line.» И следующий абзац: «Under a slab the city asks for more. When a water or sewer line under a house is replaced, the plumber has to bring three things to the inspection: photos of the work, a letter signed by the Responsible Master Plumber with the license number on it, and a drawing of where the new pipe runs.» (Страница закрыта Денисом 5 октября; меняется только по его слову.)</li>
+<li>/water-leak-detection-frisco-plano/ , раздел про гидростатический тест: «If it drops, a line under the house is leaking, and the system is isolated section by section with more test balls until the losing run is found, then confirmed with a camera. The repair that follows is on our sewer line repair page.» Читается так, что ремонт дренажной линии под домом наша работа. Сам тест (та же страница и её FAQ: «A hydrostatic test checks the drain lines under the slab… If it drops, a drain line under the house is leaking into the soil.») это проверка, не ремонт.</li>
+</ol>
+<p>Пограничные места, где сказано, что такое бывает, а не что делаем мы:</p>
+<ol start="5">
+<li>/blog/clogged-toilet-auger-fix-blog/ : «Main sewer line clogs require professional equipment. I use a motorized drain snake with a camera attachment to locate the blockage and clear it. Sometimes the problem is tree roots that have invaded the pipe through small cracks. Other times it's a collapsed section of pipe that needs to be repaired or replaced. Either way, it's not a DIY job.»</li>
+<li>/plumber-frisco-tx/ : «Water heater replacements and sewer repairs usually need a city permit and a city inspection, small repairs don't.» (ремонт, не замена; и в тексте той же страницы правильно: «If the camera shows a separated joint, we repair that section.»)</li>
+</ol>
+<p>На остальных страницах (главная, emergency, города, drain cleaning, посты и гайды) канализация упоминается как «sewer line repair and camera inspection», «main line service», прочистка и камера: замены целиком и работы под фундаментом там нет. Точка домика на главной «Sewer line and cleanout» стоит в группе «Outside and yard».</p>
+<h2>Приложение. Вопросы FAQ, которые уже стоят на сайте (новые вопросы не должны их повторять)</h2>
+<ul>
+<li>/blog/: Why do you share real plumbing cases on your blog? | How can these blog posts help me with my own plumbing problem? | What type of plumbing issues do you write about the most? | Are the photos and videos on this blog from real jobs? | Can I request a topic for your next plumbing blog post?</li>
+<li>/blog/burst-outside-spigot/: Why does my spigot leak only when I turn it on? | Can a frost-free spigot still freeze and break? | Is a leaking outdoor spigot a big problem?</li>
+<li>/blog/clogged-kitchen-sink-chain-snake/: Can I unclog a kitchen sink with a drain snake myself? | Why does my kitchen sink clog so often? | Why does my kitchen sink smell bad?</li>
+<li>/blog/clogged-main-drain-line-daycare-plano/: Why did all the toilets overflow at the same time? | What actually caused the blockage in the main line? | Could the drain clog have been prevented</li>
+<li>/blog/clogged-shower-drain-little-elm-case/: What should I do first if my shower drain is clogged with hair? | Why does a shower drain clog again even after I clean it? | When is a plumber needed for a clogged shower drain?</li>
+<li>/blog/clogged-toilet-auger-fix-blog/: Can a clogged toilet fix itself? | Can I use a regular drain snake on a toilet? | Will chemical drain cleaners help with a clogged toilet?</li>
+<li>/blog/double-sink-clog-and-drain-line-repair/: Why did the drain snake come out of the other sink instead of going down the drain? | Why do both bowls of my double sink back up at the same time? | Can a wrong P-trap cause constant clogs? | Can an AC condensate line clog a sink drain?</li>
+<li>/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/: Why did the shower valve start leaking after only a month? | Can a handyman install a shower valve? | How do you install a shower valve the right way?</li>
+<li>/blog/main-water-line-leak-under-sidewalk-plano-tx/: How do I know if my main water line is leaking? | Can a main water line leak under a concrete sidewalk be fixed without breaking the concrete? | Why does the backflow preventer get replaced too? | Does the city require an inspection after a backflow replacement? | How long does this kind of repair take? | How much does main water line replacement cost in Plano TX?</li>
+<li>/blog/moen-shower-cartridge-replacement-blog/: Why won’t my shower turn off completely? | How much does shower cartridge replacement cost in Frisco? | Why is my Moen shower cartridge stuck? | Why is my shower still dripping after I replaced the cartridge? | Does Moen replace cartridges for free? | Which Moen cartridge do I need: 1222, 1225, or 1224? | How long does a Moen shower cartridge last?</li>
+<li>/blog/outside-spigot-replacement-plumber-in-frisco/: Why did my outside spigot start leaking even though it looked fine from the outside? | Can a leaking spigot cause damage inside the wall? | How long does a frost-free spigot actually last, and do I need to maintain it?</li>
+<li>/blog/plumber-frisco-kitchen-drain-clog/: Why does my kitchen drain clog again even after someone already snaked it? | How do I know if I need a plumber and not just to clean the P-trap? | Why do kitchen drains clog more than bathroom drains?</li>
+<li>/blog/plumber-frisco-water-heater-replacement/: Why do water heaters burst like this? | Should I repair a leaking water heater or just replace it? | How long does a water heater usually last in Texas?</li>
+<li>/blog/shower-system-replacement-3-handle-to-single-handle-valve/: Can I replace a shower valve myself? | Is it difficult to convert a 3-handle shower to a single-handle valve? | Which shower valve brand do you recommend?</li>
+<li>/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/: Can I replace a shower cartridge myself? | Can I replace the bathtub spout myself? | Can you install a cover plate after replacing a shower valve?</li>
+<li>/blog/slab-leak-two-leaks-one-line-plano/: How do I know if I have a slab leak? | Do you do water leak detection, or do you just start digging? | Why do you repair slab leaks through a tunnel instead of cutting the floor?</li>
+<li>/blog/toilet-fill-valve-flush-valve-replacement-real-case-in-frisco-tx/: If my toilet is running, can I fix it myself? | How do I pick the right fill valve and flush valve for my toilet? | Should I replace the fill valve and flush valve at the same time?</li>
+<li>/blog/toilet-replacement-with-new-shutoff-valve-and-wax-ring/: How do I know it’s time to replace my toilet? | Should the shutoff valve be replaced when installing a new toilet? | Will replacing the toilet fix a clog? | Is a leaking toilet always caused by the wax ring? | Can I replace just the toilet without updating anything else?</li>
+<li>/clogged-drain-cleaning-frisco-plano/: My sink is draining slow. Do I need a plumber? | What’s the difference between a regular snake and a chain snake? | How do I keep drains from clogging again?</li>
+<li>/drain-services/: Why does my drain keep clogging over and over? | Can I just use store-bought drain cleaner? | How do I know if it’s the main line or just one drain?</li>
+<li>/emergency-plumbing-services/: Do I pay the after hours fee if the repair turns out to be small? | The valve behind my toilet will not stop the water. What do I do? | Water is coming through my ceiling. Where is it coming from? | My shower will not turn off. What do I do until the plumber gets here? | Can you stop the leak tonight and do the full repair later? | Do you come out on Sundays and holidays?</li>
+<li>/fixture-installation-repair/: Why does my faucet keep dripping even after I shut it off? | Is it better to fix or replace a leaky faucet? | Why is my shower pressure weak?</li>
+<li>/garbage-disposal-repair-frisco-plano/: How much does garbage disposal installation cost? | My disposal hums but does not spin. Is it dead? | My disposal leaks from the bottom. Can it be repaired? | What size disposal do I actually need? | How often should I run my disposal? | Can you install a disposal I bought myself? | Why does my dishwasher need an air gap or a high loop?</li>
+<li>/hose-bib-repair-frisco-plano/: Why is my outdoor faucet leaking even when it’s off? | Can I just change the handle if it broke? | Do I need to cover my hose bib in winter?</li>
+<li>/: Do you only handle emergency plumbing, or regular plumbing too? | What areas do you serve? | How quickly can a plumber arrive? | Are you open 24/7? Do you really answer at night? | Do you provide a warranty on your work? | How much do your services cost? | Do I get photos or a report of the work? | Do you handle the water damage too? | What payment methods do you accept?</li>
+<li>/plumber-allen-tx/: My outdoor faucet drips. Is that urgent? | Can tree roots get into my sewer line? | How much does a plumber cost in Allen, TX? | My water heater died overnight. How fast can you replace it? | Why does my toilet keep running after it fills? | What happens if the problem turns out smaller than expected? | Do you charge extra after hours?</li>
+<li>/plumber-carrollton-tx/: How much does a plumber cost in Carrollton, TX? | What are the first signs of a slab leak? | Can you replace a water heater the same day in Carrollton? | My whole house lost water pressure. Is that the PRV? | How do I know if I have a hidden water leak? | Do you charge extra after hours? | Do you work in both old and new homes? | Do you work with property managers and rental homes?</li>
+<li>/plumber-celina-tx/: Should I repair my water heater or replace it? | My house is only a few years old. Why is water leaking behind a wall? | Can a new home really get a slab leak? | How do you find a hidden leak without opening the whole wall? | How much does a plumber cost in Celina, TX? | Will you document what you find for a builder warranty claim? | Do you charge extra after hours?</li>
+<li>/plumber-frisco-tx/: Do you pull permits with the City of Frisco? | Do you work on newer homes in Frisco? | Is Frisco water hard? | What should I do before a freeze in Frisco? | Who answers the Frisco line after hours? | When do I pay, and does paying by card cost extra? | Where is your Frisco office, and who comes to my house?</li>
+<li>/plumber-lewisville-tx/: My water bill jumped but I cannot find anything wet. What now? | How much does a plumber cost in Lewisville, TX? | Can a slab leak be repaired without tearing up my floors? | The shutoff valve under my sink will not turn. Is that a problem? | Do you charge extra after hours? | How fast can you get to Lewisville?</li>
+<li>/plumber-little-elm-tx/: How much does a plumber cost in Little Elm, TX? | How do I know if my main water line is leaking? | My water heater is in the attic. Can you still replace it same day? | My whole house lost water pressure. Is that the PRV? | Am I responsible for the water line, or is the city? | My faucet drips no matter how tight I turn it. What is that? | Do you charge extra after hours?</li>
+<li>/plumber-mckinney-tx/: What does a slab leak feel like before you can see it? | My disposal leaks from the bottom. Can it be fixed? | What size garbage disposal should I get? | How much does a plumber cost in McKinney, TX? | Do you locate a slab leak before opening the floor? | Do you charge extra after hours?</li>
+<li>/plumber-plano-tx/: Do you offer same-day plumbing in Plano? | Do you repair water heaters in Plano? | How much does it cost to have a plumber come out in Plano? | How do I pay for a plumbing repair in Plano? | Water is leaking at my water meter in Plano. Is that my pipe or the city's? | Will the City of Plano lower my water bill after a leak is fixed? | How does an emergency plumbing call work at night in Plano?</li>
+<li>/plumber-prosper-tx/: How much does a plumber cost in Prosper, TX? | How long does a water heater replacement actually take? | My house is almost new. Why does it already need plumbing work? | Do you charge extra after hours? | How quickly can you get to Prosper? | Do you handle permits with the Town of Prosper?</li>
+<li>/plumber-the-colony-tx/: How much does a plumber cost in The Colony, TX? | What are the first signs of a slab leak? | How do I know if it is my main line and not one drain? | My drains keep backing up every few months. Why? | My faucet drips no matter how tight I turn it. What is that? | Do you charge extra after hours? | How fast can you get to The Colony? | Do you work with property managers and rental homes?</li>
+<li>/plumbing-guide/angle-stop-valve-leaking-under-sink/: Why is my shut-off valve suddenly leaking? | I tried to shut the water off and now it’s leaking - what do I do? | Can I just leave a small leak for now?</li>
+<li>/plumbing-guide/automatic-water-shut-off-valve-install-north-texas/: How much does it cost to install an automatic water shut-off valve? | Can an automatic water shut-off valve be installed outside? | Do smart water shut-off valves lower your insurance? | Which automatic shut-off valve is best, Moen or YoLink?</li>
+<li>/plumbing-guide/bathtub-drain-slow-draining-tips-2026/: Why is my bathtub draining slowly? | How can I fix a slow drain? | When should I call a plumber for a slow drain?</li>
+<li>/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/: How much does emergency plumbing cost? | Why is emergency plumbing more expensive? | What is considered a plumbing emergency?</li>
+<li>/plumbing-guide/how-long-do-water-heaters-last-guide/: How long do water heaters usually last in North Texas? | What are the signs that a water heater is near the end of its life? | Is it better to repair or replace an old water heater?</li>
+<li>/plumbing-guide/how-to-shut-off-main-water-valve-texas/: How do I turn off the water to my house in an emergency? | How to shut off the main water valve? | Where is the main water shutoff valve located in Texas homes? | What tools do I need to shut off the water?</li>
+<li>/plumbing-guide/plumber-near-me-north-texas-guide-to-avoid-scams/: How can I find a reliable plumber near me in Frisco, Plano, or McKinney? | What should I check before hiring a plumber in Frisco or Plano? | Is it better to hire a local plumber in McKinney or a large national company?</li>
+<li>/plumbing-guide/pressure-reducing-valve-replacement-guide-2026/: I have very high water pressure. Do I need a PRV? | My water pressure dropped. Could the PRV be the reason? | Can I replace a PRV myself?</li>
+<li>/plumbing-guide/slab-leak-repair-plano-tips-2026/: How much does it cost to repair a slab leak? | Can a slab leak cause foundation damage? | How long does it take to repair a slab leak?</li>
+<li>/plumbing-guide/water-heater-making-noise-tips-2026/: How often should I flush my water heater in North Texas? | Can I flush my water heater myself? | Will a noisy water heater explode?</li>
+<li>/plumbing-guide/water-heater-replacement-cost-2026/: How long does a water heater replacement take? | Do I need a permit to replace a water heater in Texas? | Is it cheaper to repair or replace a water heater? | How much does water heater replacement cost in Frisco and Plano? | Why do attic water heater installations cost more? | Will my water heater fail without warning?</li>
+<li>/plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/: How long can a hidden water leak go before you notice it? | Is a plumbing leak after a remodel covered by warranty or insurance? | Can an AC condensation drain cause a water leak in the wall? | Why does a sanitary tee fail on a horizontal drain line? | Do I need an emergency plumber for a ceiling leak?</li>
+<li>/plumbing-guide/water-leak-yard-tips-2026/: How do I know if I have a main water line leak? | Why is my yard wet even when it hasn’t rained? | Can I fix a main water line leak myself?</li>
+<li>/plumbing-guide/water-pressure-dropping-tips-2026/: How can I check the water pressure in my house? | How do I know if my pressure reducing valve is failing? | Can I replace a pressure reducing valve myself?</li>
+<li>/plumbing-guide/why-is-my-water-bill-so-high-frisco-tx/: Why did the city send me a high water usage alert? | Can a toilet really cause that much water waste? | How do I know if I have a slab leak vs. a toilet leak? | How much does it cost to find and fix a hidden water leak in Frisco TX? | Should I shut off the water to my house if I think I have a leak? | Will my city give me a credit for water lost to a leak?</li>
+<li>/plumbing-guide/why-your-toilet-keeps-backing-up/: Why does my toilet keep clogging in the same spot? | How much does a camera inspection cost in Plano TX? | Can a slab leak cause toilet problems later? | Are flushable wipes really bad for pipes? | When should I call a plumber instead of using a plunger?</li>
+<li>/plumbing-guides-tips/: What plumbing problems do homeowners most often search for online? | What is this Plumbing Guides &amp; Tips page for? | Can these plumbing guides help me decide if I need a plumber? | Are these plumbing guides based on real experience? | Do these guides replace hiring a licensed plumber?</li>
+<li>/prv-replacement-frisco-plano/: What is normal water pressure for a house? | How much does PRV replacement cost in Frisco? | How do I know if my pressure reducing valve is bad? | Can a bad PRV cause low water pressure throughout the house? | Where is the PRV located? | How long does a residential PRV last? | Can a plumber adjust the PRV instead of replacing it? | Does PRV replacement require a permit? | Does a PRV affect the water heater expansion tank?</li>
+<li>/slab-leak-repair-frisco-plano-mckinney/: How does water from a slab leak get into the house? | Why do copper pipes get pinholes under the slab? | Do you braze or solder the repair under the foundation? | Should I call a foundation company or a plumber first? | Is tunneling or cutting the slab better for a slab leak? | Does a slab leak repair need a permit in Plano, McKinney or Frisco?</li>
+<li>/toilet-repair-frisco-plano/: Why does my toilet keep running after flushing? | What causes a toilet to clog over and over? | Do I need a new toilet or just a repair?</li>
+<li>/top-emergency-plumber-calls-frisco/: My pipe just burst. What do I do first? | Why do pipes burst during a freeze? | Do you charge extra for emergency calls?</li>
+<li>/water-heater-repair-frisco-mckinney/: What’s the difference between 6-year and 12-year water heaters? | Is it normal for water to smell like gas from a water heater? | Can I replace just the heating element in my electric water heater? | My ceiling has a water stain under the attic. Is it the water heater? | Water is dripping from the small tank next to my water heater. What is it?</li>
+<li>/water-heaters/: Why is my water heater making loud popping sounds? | Do I need to replace my water heater if it’s leaking? | How long do water heaters last?</li>
+<li>/water-leak-detection-frisco-plano/: How do plumbers find a hidden water leak? | My water meter is moving with everything off. Is that always a leak? | Can you find a leak under a concrete slab without breaking it? | What is a hydrostatic test and when do I need one? | How long does leak detection take? | Do you repair the leak after you find it?</li>
+<li>/water-lines/: How do I know if my main water line is leaking? | Am I responsible for the water line, or is the city? | Do you have to dig up my whole yard? | Should I repair the section or replace the line? | Can tree roots damage a water line? | Why did my water pressure drop everywhere at once? | The city sent me a notice about high water usage. What now? | Why did my line fail right at the foundation? | How long does a water line repair take?</li>
+</ul>
+<p>Всего вопросов FAQ на сайте: 278</p></main></body></html>
