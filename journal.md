@@ -1,6 +1,6 @@
 # Журнал проекта fppplumbing.com
 
-Обновляется после каждой сессии и каждого законченного блока работы. Последнее обновление: 5 октября 2026.
+Обновляется после каждой сессии и каждого законченного блока работы. Последнее обновление: 15 октября 2026.
 
 ## Где что лежит
 - Проект на GitHub (закрытый): https://github.com/request-fpp/fppplumbing-site
@@ -561,6 +561,10 @@
 - Всё закоммичено и отправлено в закрытый репозиторий (два коммита за ночь: блок чата после аудита и закрытие страницы). Журнал и страницы отчётов опубликованы.
 - Дальше Денис работает в новом чате. Новому чату для старта: общий текст https://fpp-journal.pages.dev/handoff , выписка нового материала https://fpp-journal.pages.dev/new-material , бриф страницы emergency https://fpp-journal.pages.dev/emergency-brief . Следующая страница по очереди: /emergency-plumbing-services/, текст пишет чат по диктовке Дениса, сборка через Claude Code.
 - Не в git, как и раньше: папка «Claude outputs» и два PDF главной в корне проекта (это файлы Дениса), отчёты Lighthouse в exports/lighthouse.
+
+## 15 октября
+
+- GBP API: approved by Google (300 requests per minute), v4 enabled, Frisco read test and posting tool ready in ~/Projects/fpp-data/gbp/, the owner login waits for Denys (scope choice put to him), nothing posted
 
 ## 9 октября
 
