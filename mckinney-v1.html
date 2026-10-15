@@ -1,0 +1,3539 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 15.10.2026 18:40</p><h1>Страница McKinney, версия 1: отчёт о сборке (15 октября 2026, вечер)</h1>
+<p>Страница /plumber-mckinney-tx/ собрана из <code>source/mckinney-text-v1.md</code> (текст чата по двум диктовкам Дениса от 15 октября 2026, брифу от 3 октября и дополнению от 15 октября) и выложена на черновой адрес: https://draft.fppplumbing-preview.pages.dev/plumber-mckinney-tx/ (вход по почте, noindex). На живой сайт ничего не выкладывалось. Другие страницы не трогались: в содержимом сайта изменился только файл страницы McKinney.</p>
+<h2>Цифры</h2>
+<ul>
+<li>Текст страницы от H1 до заключения, с FAQ: 4,390 слов (живая страница: 1,561). Title и описание те же, что в файле, H1 из файла, 11 разделов, 7 вопросов FAQ слово в слово в разметке FAQPage.</li>
+<li>Ссылки в тексте: 31 (29 внутренних, две внешние: страница города McKinney «Meters, Leaks &amp; Pipes» и профиль Google офиса Frisco), в FAQ ссылок нет; у четырёх отзывов свои ссылки на источник. Ссылка на главную «plumber near me» одна, во вступлении; вторая на главную «The six steps in full» на раздел шагов звонка.</li>
+<li>Фото на странице: 14 (51, 7, 258, 315, 321, 286, 288, 289, 291, 196, 319, 322, 318 и фото 2 у офиса) плюс фургон 314 на первом экране и в картинке для соцсетей. Клипы: 7 (316, 323, 324, 325, 317, 195, 260), по пять секунд без звука, каждый VideoObject в разметке; по правилу Дениса от 2 октября клип только крутится, никакого окна с полным видео по нажатию (задание просило «full video on tap», это против его решения, сделано по правилу).</li>
+<li>Отзывы: 4 из файла (alex p, Google, Local Guide Level 5; Phillip Potter, Google, Local Guide Level 3; Javeed N. и Rangsan L., Thumbtack). Уровни прочитаны в профилях авторов 15 октября. Ни один из четырёх не занят другой страницей (<code>tools/check_reviews.py</code>: 48 отзывов на сайте, проблем 0).</li>
+<li>Офис: блок офиса Frisco с адресом, часами, картой и ссылкой на профиль Google, кнопка «Call Frisco» с номером на первом экране (по слову Дениса офис Frisco обслуживает McKinney). Для этого в шаблоне страниц одно изменение: страница города без своего офиса называет офис в своих данных, и шаблон показывает его блок и кнопку, как на странице самого офиса. В разметке у страницы одна организация с обоими офисами, areaServed с McKinney, без второго бизнеса с адресом Frisco (его старая страница несла).</li>
+<li>Ряд «On this page» из 11 ссылок на H2, в подписи автора «Updated October 2026».</li>
+</ul>
+<h2>Проверки</h2>
+<ul>
+<li><code>tools/check_text.py</code>: без проблем в тексте (две пометки идут на цитату отзыва alex p: «exceptional service» и восклицательный знак; отзывы цитируются слово в слово и не правятся). «plumber near me» в тексте 1 раз.</li>
+<li><code>tools/check_overlap.py</code> против папки десяти конкурентов McKinney: 16 повторов, из них с конкурентами 1: вопрос FAQ «How much does a plumber cost in McKinney, TX?» стоит слово в слово у JMP Plumbing (это вопрос живой страницы McKinney, чат оставил его сознательно). Остальные повторы со своими страницами: фраза про запах газа (одна на всём сайте по правилу), фраза про $49, название гайда о главном кране, «if we have time open we come the same day» с главной, фразы про плату вечером и в выходные с Allen, Carrollton, Little Elm, The Colony и slab leak, часы офиса с Frisco, «the lowest drain in the house backing up» с Allen.</li>
+<li>Search Console (<code>tools/gsc_page_table.py</code>, таблица ниже): из 19,500 показов страницы за 16 месяцев слова 19,145 показов (98.2%) стоят в новом тексте целиком; частично 29 запросов (327 показов: hydrojet, trenchless, waterline, cast iron, опечатки и названия других фирм); не наше 9, чужой город 3, нет 1. Два слова добавлены в текст по запросам страницы и названы чату: «local» во фразе «a local plumber in McKinney» (local plumber mckinney tx, local plumbers mckinney tx: около 280 показов) и «plumbing contractor» вместо «plumbing company» в разделе про город (plumbing contractors mckinney, 88 показов; так город сам называет регистрацию). Ещё одно слово поправлено по странице города: «the copper service lines installed between 1997 and 2011» вместо «it installed» (город не пишет, что сам ставил ту медь).</li>
+<li>Страницы города McKinney открыты в браузере перед сборкой: регистрация подрядчика до разрешения, граница по счётчику и кран города между счётчиком и улицей, кредит за течь (раз в 12 месяцев, бланк за 60 дней, счёт в 3 раза выше), линии 1997 до 2011 и замена за счёт города, советы на мороз (капать из кранов на наружных стенах, открыть шкафчики, утеплитель на уличный кран) стоят на страницах города. Список для водонагревателя (линия T&amp;P, расширительный бак, поддон со сливом) и граница по канализации от cleanout взяты из документов города, проверенных 3 октября (PDF, скрипт их не открывает).</li>
+<li>Проверка сайта: 32 из 32, предупреждений 7 (все на других страницах, как и раньше). Вёрстка на шести ширинах чистая, сдвиг шрифтов чистый. Lighthouse: телефон 97, LCP 2.4 с, CLS 0 (с локального сервера без сжатия, как Plano 97 и 2.4 с); компьютер 100, LCP 0.5 с. Вес страницы на телефоне при загрузке 1,487 КБ (HTML 165 КБ, фото 1,122 КБ, постеры клипов 200 КБ), клипы 1,754 КБ только при прокрутке к ним.</li>
+</ul>
+<h2>Что сделано не так, как в заметках текста, и почему</h2>
+<ul>
+<li>Абзац может нести либо одну картинку сбоку, либо ряд из двух картинок под собой, не оба сразу, а ряд держит две ячейки. Поэтому: под первым абзацем раздела о давлении пара 51 и 7 (чат просил 51 сбоку и 7 «в конце раздела»); под историей про водонапорную башню пара 315 и 316; под историей про умягчитель пара 321 и 323 (чат просил 321 сбоку и 323 в конце раздела; подпись 323 говорит только «a new PRV in McKinney, 70 PSI after»); под историей про пять дюймов от счётчика пара 286 и 288, фото 287 не поставлено (три ячейки в ряд не встают); под историей про душ пара 260 (старый клапан до) и 319 (новый клапан Delta после), клип 259 с прессом не поставлен.</li>
+<li>Фото 320 (IMG_1018_2) это тот же снимок, что 258: на странице стоит 258.</li>
+<li>Подпись манометра 315: 56 PSI, как в истории и в записи чата о слове Дениса (в диктовке было 58).</li>
+<li>Заметка чата об отзывах была на шесть строк в квадратных скобках, а сборка читает заметки построчно: заметка склеена в одну строку, текст не менялся.</li>
+</ul>
+<h2>Чего в архиве нет</h2>
+<ul>
+<li>Ничего из того, что просит текст, не отсутствует. Не поставлены только по правилу ряда из двух ячеек: 287 и 259 (см. выше).</li>
+</ul>
+<h2>Открыто у Дениса</h2>
+<ul>
+<li>Оригинал фото фургона 314 с телефона (в проекте копия из чата 768 px; на первом экране смотрится нормально, на большом экране чуть мягче оригинала).</li>
+<li>История старой страницы про дерево, вросшее в медную сервисную линию: снята, пока он не подтвердит, что это был вызов в McKinney.</li>
+</ul>
+<h2>Текст страницы, как он стоит на тестовом сайте</h2>
+<p>Курсивом в квадратных скобках стоят пометки о том, что в этом месте на странице (фото, кнопки, карта). Это не текст страницы.</p>
+<p>Title: Plumber in McKinney, TX: Water Pressure, PRV &amp; 24/7 Emergency</p>
+<p>Meta description: Low water pressure, a buried PRV, a water heater past ten years, a main line backed up on a Sunday. Licensed McKinney plumbers, the price before the work.</p>
+<hr />
+<h3>H1: Plumbing Repair in McKinney, TX: Water Pressure, PRV, Water Heaters &amp; Emergencies</h3>
+<p>FPP Plumbing works in McKinney every week, with its own licensed plumbers on its own trucks. We do not have an office inside McKinney. The trucks come from our Frisco office on Westridge Blvd, and McKinney starts right where Frisco ends, so for most addresses here that is the closest office we have. When you call, somebody on our own team picks up, day or night; there is no call center in between. The weekday service call is $49, and that money comes off the repair. The full price is on the table before anything starts, and the invoice matches it.</p>
+<p>The call we get most from McKinney is about water pressure: a pressure reducing valve that is clogged, stuck or leaking, buried in the flower bed with the second shut-off valve next to it. After that come water heaters, because a lot of the houses here are past twenty years and a water heater is good for about ten. Then the usual: a main line that backs up, a toilet that rocks, a shower valve that drips, and a slab leak now and then in the older streets.</p>
+<p>If you got to this page by typing plumber near me into your phone with water on the floor, the number at the top is the one to use. The rest of this page is what we see in McKinney houses and how we handle it.</p>
+<p><em>[Кнопка «Call Frisco» с номером офиса и кнопка «Request Service». Справа фото 314: The FPP Plumbing van on a street in McKinney: 24/7 emergency plumbing, licensed and insured; номерной знак закрыт.]</em></p>
+<hr />
+<h3>H2: Our Plumbing Services in McKinney</h3>
+<p>Every service a local plumber in McKinney gets called for has its own page on this site, and the list below is the short version. All of it is residential work: the repairs a house needs, and the replacements that come due as it gets older.</p>
+<p>Emergency plumbing comes first on the list, because it is the core of the company. The phone is live at every hour, holidays too, and a real emergency in McKinney gets a truck.</p>
+<p>Water pressure is next, and in McKinney it comes up more than in any other city we serve. PRV replacement is the page for a pressure reducing valve that is clogged, leaking or dead, and for pressure that runs too high. Water leak detection pins a leak down before a wall or a floor is opened. Slab leak repair deals with the copper under the foundation; water line repair deals with the copper between the meter and the house. For hot water there is water heater repair and replacement, and expansion tank replacement for the small tank above the heater that quietly fills with water and starts the pressure swings.</p>
+<p>Then the drains: drain cleaning for a kitchen line, a shower, or a bathroom sink that also takes the water from the air conditioner, and sewer line repair and camera inspection when the main line backs up again and again, or has broken somewhere in the yard. Around the house it is hose bib repair, toilet repair, garbage disposal repair, and faucet and shower valve repair. Garbage disposals in McKinney are the same as everywhere: when the motor hums or the bottom leaks, the unit gets replaced, usually in the same visit.</p>
+<hr />
+<h3>H2: Low Pressure, High Pressure, and the PRV in the Flower Bed</h3>
+<p>Water pressure in McKinney is not one number. On one street the gauge on the hose bib reads 108 PSI, and across town a house gets 58 PSI from the main and never more. The part that decides what your house sees is the pressure reducing valve, the PRV. In most houses here it sits in a plastic box in the flower bed by the foundation, with the second shut-off valve next to it, and both get buried a little deeper every year the mulch is topped up. When somebody finally digs one up, it is clogged, stuck or leaking at the stem, and often all three at once.</p>
+<p><em>[Под текстом рядом: фото 51: PRV replaced in a flower bed, McKinney; фото 7: Replaced PRV (pressure reducing valve), McKinney]</em></p>
+<p>The two ways it fails are two different calls. A clogged PRV gives you low water pressure: the shower is fine until somebody flushes, and the hose at the back of the house is a trickle. A PRV that has stopped regulating gives you high pressure, and that is the quieter problem, because nothing feels wrong. The house just runs at 100 PSI and more, every day, and the parts that take the hit are the ones that cost money: the water heater, the supply lines, every faucet cartridge, the fill valve in each toilet. A gauge on an outside spigot tells the story in a minute, and we put one on at the start of almost every call in McKinney. Anything over 80 PSI gets the PRV adjusted or replaced, and we set it to about 70.</p>
+<p><em>[Рядом фото 258: About 108 PSI on the gauge at a house where the shower valve was replaced, McKinney]</em></p>
+<p>Two McKinney calls show both ends of it.</p>
+<p><strong>The house by the water tower, August 2026.</strong> The homeowner had about 40 PSI and tried to adjust the PRV himself. The valve was old and buried, and like most of them it started leaking the moment it was touched. He also had the city out. The city shut the water off at the meter, tested its own side, and told him that in that part of town, by the water tower right at the Frisco line, the main delivers 56 to 58 PSI and no more. We replaced the second shut-off valve and the PRV, and the gauge settled at 56 PSI, inside what the city had measured. In other parts of McKinney the same gauge reads over 100. Why that one pocket runs low, nobody has told us. A new PRV there gives you what the main gives, and the rest is up to the city.</p>
+<p><em>[Под текстом рядом: фото 315: After the new PRV went in: 56 PSI on the gauge at the outside spigot, inside what the city measured for the main, McKinney; видео 316, 5 секунд без звука: The new PRV and the new secondary shut-off valve in the valve box by the foundation, gravel under them, McKinney]</em></p>
+<p><strong>The buried water softener, September 2026.</strong> Static pressure about 70 PSI, which is normal. Open a second spigot and it dropped to 40. A drop of ten PSI between two open spigots is normal; a drop of thirty is not. The PRV and the second shut-off valve were buried, as usual, so we started there: dug them up, replaced both, pulled the city permit, and the pressure came up to 75. With the second spigot open it still fell to about 50. Seven feet from the valve box sat one of those plastic rocks. Under it was a whole house water softener, buried in the ground. The homeowner said it had been broken for years and nobody used it, so we cut it out and connected the line straight through. Still dropping. We kept digging along the softener line and found a double check backflow valve buried with it, rusted and half closed, the water still forced through it. Out came the softener and the backflow valve, the line went straight, and the house held 75 PSI, with 60 to 65 at two spigots. Nobody in that house knew either of them was in the ground.</p>
+<p><em>[Под текстом рядом: фото 321: The old PRV and shut-off valve dug out of the flower bed; under the plastic rock behind them a buried water softener nobody used, McKinney; видео 323, 5 секунд без звука: A new PRV and shut-off valve in the box, and the gauge at the spigot after: about 70 PSI, McKinney]</em></p>
+<hr />
+<h3>H2: Main Water Line Repair in Older McKinney Homes</h3>
+<p>The main water line is the pipe from the meter to the house. In the older streets here it is copper, and it has been in the clay for twenty to fifty years. McKinney clay swells when it is wet and shrinks when it is dry, so every summer and every wet winter it moves a little, and the pipe moves with it. Copper in that ground wears thin until a pinhole opens. The first sign is usually a wet patch in the yard that never dries, a strip of grass greener than the rest, or the meter dial turning with everything in the house off. The city knows this soil too: on its side of the meter it has been replacing the copper service lines installed between 1997 and 2011. Your side starts at the meter and runs to the house, and that side is yours.</p>
+<p><strong>Five inches from the meter, December 2023.</strong> The line was leaking right where it leaves the meter box, five to ten inches past the meter: corroded copper, an active leak. Leak detection put it at the box, we dug, cut out the eaten section and brazed in new copper. A small job, when it is found before the yard turns into a pond.</p>
+<p><em>[Под текстом рядом: фото 286: Main water service line a few inches from the meter: the corroded piece cut out, the hole in it, McKinney; фото 288: The dig at the meter box after the leak on the service line, McKinney]</em></p>
+<p><strong>A push-fit fitting at the meter, August 2025.</strong> Another McKinney house, the same spot, a different cause. The line comes off the meter on a threaded fitting, as they all do, and from there somebody had connected the main line with a push-fit fitting. In the ground, in wet clay, that fitting had corroded and was dripping into the pit. We use push-fit fittings only in rare cases, and not underground. We replaced it with a proper connection, and that was the whole repair.</p>
+<p><em>[Рядом видео 324, 5 секунд без звука: At the meter: the push fitting on the main service line that corroded and started to drip, McKinney]</em></p>
+<p>Not every wet yard is a water line, and we say so. If the leak is on the street side of the meter, it is the city's pipe and the city's repair, and we tell you who to call instead of digging in your yard. Our water line repair page shows how a line is located before anyone digs, and the guide on checking for a main water line leak in your yard walks through the meter test, with a McKinney case in it.</p>
+<hr />
+<h3>H2: Common Plumbing Problems in McKinney Homes</h3>
+<p>What breaks in a McKinney house depends on its age. Around the square and east of US 75 the streets are old: a good share of those houses were built before 1980, some of them a hundred years ago. Most of the rest of the city went up after 2000, so the usual McKinney house is fifteen to twenty five years old, which is exactly the age when the first big replacements come due.</p>
+<h3>Water heaters past ten years</h3>
+<p>A water heater is good for about ten years, and a lot of McKinney houses are twice that age, so replacement is one of our regular calls here. Garage or attic, it is the same job: a new tank, a new pan with a drain line that actually leaves the house, the discharge line from the T&amp;P valve, the expansion tank, and the vent. Replacing a water heater in McKinney needs a permit from the city and an inspection at the end, and the inspectors here go straight by the plumbing code: no surprises, no games. They look hardest at the vent pipe, because a bad vent puts carbon monoxide in the house, and at the discharge line from the T&amp;P valve. We set the tank up for that inspection from the start, so it passes the first time. If you smell gas, leave the house first. Then call the gas company, or call 911 for the fire department. Our water heater repair and replacement page covers the symptoms before a tank fails, and the guide on how long water heaters last tells you where yours is on the clock.</p>
+<h3>Slab leaks, and the ground under the house</h3>
+<p>The soil here is clay, and it moves. After a dry summer it shrinks, after a wet winter it swells, the foundation shifts a little, and the copper under the slab shifts with it. In the older houses that is where the pinholes start. Most houses here have a drip line around the foundation for exactly this reason: it keeps the clay from drying out and pulling away. When that system has quit and nobody noticed, the ground moves more, and the leaks follow, in the water lines and in the drain lines under the floor. A warm spot on the floor, a water bill that jumped, the sound of water with everything off: that is the call. We find it first with leak detection, and then it is slab leak repair: a tunnel under the foundation, or the slab opened, and the bad section replaced.</p>
+<p><strong>The kitchen island, March 2025.</strong> The homeowner came home from work and the floor squished, right at the kitchen island. We ran leak detection, opened the drywall under the island, and found the small manifold where the hot and cold lines come up through the slab, with water coming up around it. The leak itself was a pinhole under the foundation. Copper under a slab runs inside a plastic sleeve, and the water had followed the sleeve up into the house instead of soaking into the ground, which is why the floor got wet before the yard did. We tunneled under the foundation and replaced the section with the pinhole.</p>
+<p><em>[Рядом видео 325, 5 секунд без звука: Under the kitchen island, in the opened wall: the copper lines coming up out of the slab, corroded, where the water came up, McKinney]</em></p>
+<h3>Leaks nobody can see</h3>
+<p><strong>Ten nails in one pipe, December 2023.</strong> A newer McKinney house. When the builder insulated the wall, the nails went straight through the water line feeding the water heater, about ten of them. A nail in a pipe seals itself for years, until it rusts, and then it does not. Leak detection found the wall, we opened it, cut out the section with the nails in it and replaced it.</p>
+<p><em>[Под текстом рядом: фото 289: The builder's nails went through the water line to the water heater: a cut piece with a rusted nail inside, McKinney; фото 291: The row of nails that held the insulation, and the water line right under them, McKinney]</em></p>
+<p><strong>The laundry box, December 2024.</strong> A washer box in the middle of the house, with a brass valve that had a pinhole and had dripped into the wall for months. Somebody had been out before us and did not find it. The floor and the baseboards in the living room and the bedroom had swelled by the time we did. We found the valve, replaced it, and the drying was the homeowner's next call. A leak like that costs more in floors than in plumbing, which is why water leak detection has its own page here.</p>
+<p><em>[Под текстом рядом: видео 195, 5 секунд без звука: The laundry box in the wall: the brass valve that dripped inside the wall for months, McKinney; фото 196: What showed up in the rooms: a swollen floor and baseboard, months of a slow leak, McKinney]</em></p>
+<h3>The bathroom sink that drains the air conditioner</h3>
+<p>In October 2026 an evening call came in from McKinney: a bathroom sink overflowing, slowly, and the AC pan in the attic full of water, with the overflow line already dumping it outside through the roof. One clog, two symptoms. In a lot of houses here the air conditioner drains into the bathroom sink line, so when that drain line clogs, the sink backs up and the air conditioner's water has nowhere to go. We cleared the line with the chain snake, the sink drained, the pan emptied, done. It is a drain cleaning call, and in summer it is the most common one we get.</p>
+<h3>Shower valves, and what 108 PSI does to them</h3>
+<p>In October 2025 we replaced a shower system in a McKinney bathroom in the middle of a small remodel: tile off, walls open. The homeowner picked Delta, we installed it, and while the wall was open we cut the copper supply lines back to clean metal, because inside the wall they had started to corrode, and brazed new copper up to the valve. The gauge on that house's hose bib read 108 PSI, and that is a lot of why cartridges in McKinney showers wear out early. The pressure got fixed the same visit, down to 70. Faucet and shower valve repair is the page for a drip that will not stop or a handle that spins; a valve in an open wall is the easy version of that job.</p>
+<p><em>[Под текстом рядом: видео 260, 5 секунд без звука: Before: the old shower valve in the open wall, McKinney; фото 319: The new Delta shower valve on new copper in the open wall, the corroded part of the old risers cut out, McKinney]</em></p>
+<h3>A toilet that rocks</h3>
+<p><strong>The rusted flange, July 2026.</strong> The toilet rocked at the base, leaked underneath at every flush, and the tank ran. The shut-off valve behind it leaked too, so the family could not even turn the water off. We pulled the toilet, and the reason it rocked was under it: the wax ring had been worn for a year or two, water had seeped past it at every flush, and the flange had rusted through. New flange, new wax ring, new fill valve and flush valve in the tank, new shut-off valve, and the toilet set back down. Nothing moves now. Toilet repair covers the running, the rocking and the leaking; most of it is the parts inside the tank, and the flange is the part people do not expect.</p>
+<p><em>[Рядом фото 322: The toilet off: the flange rusted through, which is why the toilet rocked; the new flange beside it, McKinney]</em></p>
+<hr />
+<h3>H2: Drain Lines and Sewer Lines: Roots, Cleanouts and One Candle</h3>
+<p>The main sewer line runs from the house to the street, and in McKinney two things get into it: roots and objects. Roots find a joint that has separated or a crack, and once they are in they grow with every rain. The first sign is the lowest drain in the house backing up, a tub or a downstairs shower, and a gurgle in the toilet when the washer drains. We clear a main line with the chain snake through the outside cleanout, and the camera goes in after it, or along with it, to see why it clogged. When the camera finds a joint that has pulled apart, or a broken piece of pipe out in the yard, that piece gets dug up and replaced: sewer line repair, in the yard, where the line is. That is what our sewer line repair and camera inspection page is about.</p>
+<p><strong>Roots through a separated joint, May 2026.</strong> A McKinney main line, backing up, cleared through the cleanout with the chain snake. The cable came back with roots wrapped around it, and the camera showed where they came in: a joint in the yard that had separated and let them through. Clearing it gets the house draining; the joint is what has to be fixed so it stays that way.</p>
+<p><em>[Рядом видео 317, 5 секунд без звука: Pulling roots out of the sewer line through the outside cleanout with the chain snake, McKinney]</em></p>
+<p><strong>The candle at 24 feet, May 2026.</strong> A Sunday, an old house near the square, a hundred years old, with a big event in it that same day and the main line backed up. We ran the cable and the camera together, and 24 feet into the line the screen showed something we had never seen in a drain: a plastic candle, the kind with a little bulb in it, lying in a mass of toilet paper. It was switched on. It was still glowing. We pulled it out, cleared the paper, the house drained, and the event went ahead.</p>
+<p><em>[Рядом фото 318: On the camera screen, 24 feet into the main drain line of a hundred year old house downtown: a plastic candle, still lit, in the clog, McKinney]</em></p>
+<p>Nothing in this section goes under the foundation. Where a drain problem is under the slab, the leak detection page explains the hydrostatic test that finds it.</p>
+<hr />
+<h3>H2: What the City of McKinney Asks of a Plumber, and Does for a Homeowner</h3>
+<p>Before a plumbing contractor can pull a permit in McKinney it has to be registered with the city, and we are. A water heater replacement needs a permit and an inspection at the end; so does a sewer line repair in the yard. Small repairs do not, and we do not pretend they do. The city's own list for a water heater is the one every inspector here checks: the discharge line from the T&amp;P valve run properly, an expansion tank on a closed system, and a pan with a drain under a tank in the attic or inside the house.</p>
+<p>The meter is the line between you and the city. The city owns the meter and the pipe between the meter and the street, and only city crews touch the city's valve at the meter; the pipe from the meter to the house, and your own shut-off valve, are yours. The sewer line from the cleanout to the house is yours as well.</p>
+<p>After a leak is repaired, McKinney can adjust the water bill: once in twelve months, for a bill that ran well above your normal usage, with the city's form sent within sixty days and the plumber's invoice attached. Our invoices say what was found and what was replaced, so they work as that paperwork.</p>
+<p>Before a freeze, the city's advice and ours match: let the indoor faucets on outside walls drip, open the cabinets under them, and put a cover on the outside spigots. A frost-free hose bib installed right does not freeze; the cover is enough.</p>
+<hr />
+<h3>H2: Emergency Plumber in McKinney: Nights, Sundays and the Frisco Office</h3>
+<p>Emergency plumbing is what FPP Plumbing is built around, and McKinney gets the same service as the two cities our offices are in. The on-call truck for McKinney comes out of the Frisco office, which sits right at the city line, so McKinney is close to home for us. A person answers at night, finds out what is happening, and walks you to the right valve while the plumber is on the way. If you have never found your main shut-off valve, the guide on how to shut off the main water valve shows where it is in a McKinney house, usually in a box by the meter or at the foundation, and it is worth finding on a calm afternoon, not at midnight with water on the floor.</p>
+<p>What counts as an emergency in McKinney is what counts everywhere: water you cannot stop, a sewer line backing up into the tubs, a water heater that let go in the attic, a pipe that burst in a freeze. A faucet that drips or a disposal that hums waits for the morning rate, and we tell you that on the phone rather than charge you a night fee for a day job. The Sunday candle above was an emergency; the rocking toilet was not.</p>
+<p>Evenings, weekends and holidays add an emergency fee that changes with the hour, and it is said out loud before a truck moves. Our emergency plumbing page explains how a night call goes, step by step.</p>
+<hr />
+<h3>H2: How a Plumbing Call in McKinney Goes, From the Phone to the Invoice</h3>
+<p>On a weekday the service call is $49. That covers the trip and the diagnosis, and it is credited to the repair the moment you approve it. The full price comes before any work, and the invoice does not grow after it. If we have time open, we come the same day. The six steps in full sit on the homepage.</p>
+<p>Two plumbers are on every shift, and the common parts ride with them: PRVs, shut-off valves, cartridges, fill valves, flanges, so most of what is on this page gets finished in one visit. You pay once the work is done, however is easiest for you: a card, Apple Pay or PayPal, Zelle or Venmo, a check, cash. With Zelle, a check or cash the bill is the bill; a card costs a little more, because the card company takes its cut, and we say so before you tap. If you would rather spread a bigger repair out, PayPal Pay Later and Klarna are both there at checkout.</p>
+<hr />
+<h3>H2: McKinney Plumbing FAQ</h3>
+<p><strong>Why is my water pressure low in McKinney when the neighbors say theirs is fine?</strong> Most of the time it is your PRV, not the city: the valve in the flower bed is clogged or stuck and holds the house at 40 PSI while the main delivers 70 or more. One gauge on an outside spigot settles it. In one pocket on the west side of town the city main itself runs at 56 to 58 PSI, and a new PRV there gives you what the main gives.</p>
+<p><strong>The gauge on my hose bib reads over 100 PSI. What does that do to the house?</strong> It wears everything out early: cartridges, supply lines, the fill valve in every toilet, the water heater itself, and it is one of the forces behind slab leaks and burst pipes. Anything over 80 PSI gets the PRV adjusted or replaced, and we set it to about 70. It is usually a one visit fix, and it is cheaper than the next three things it would have broken.</p>
+<p><strong>What does the McKinney inspector look at after a water heater replacement?</strong> The vent pipe first, because a bad vent puts carbon monoxide in the house, then the discharge line from the T&amp;P valve, the expansion tank, and the pan and drain line under an attic or indoor tank. We install to that list, file the permit and book the inspection. The inspectors here work straight by the code, and it passes the first time.</p>
+<p><strong>The leak is in the box at my meter. Do I call the city or a plumber?</strong> Look at which side of the meter is wet. The meter and the pipe from it to the street are the city's, and the city fixes them. The pipe from the meter toward the house is yours, and that is us. If you call us and the leak turns out to be on the city's side, we tell you so and do not dig.</p>
+<p><strong>My water bill doubled because of a leak. Does McKinney adjust it?</strong> It can, once in a twelve month period, when the leak pushed a bill well above your normal usage. You send the city's form within sixty days with the plumber's invoice attached. Our invoice lists what was found and what was replaced, which is what they want to see.</p>
+<p><strong>Which office sends the plumber to McKinney, and who answers at night?</strong> The Frisco office on Westridge Blvd, right at the McKinney line. A person from our team answers at any hour. You tell them what is happening, they tell you what to shut off, and you hear the emergency fee before anyone drives.</p>
+<p><strong>How much does a plumber cost in McKinney, TX?</strong> On a weekday the service call is $49, and it is credited to the repair when you go ahead. The repair itself is a flat price you hear before the work starts, and the invoice matches it. Evenings, weekends and holidays add an emergency fee that depends on the hour, stated on the phone.</p>
+<hr />
+<h3>H2: Reviews of FPP Plumbing, Word for Word</h3>
+<p>Four reviews as their authors wrote them, each with a link to where it was posted.</p>
+<blockquote>
+<p>FPP Plumbing provided exceptional service! They quickly responded to our call, arrived promptly, and fixed the issue fast when we had no hot water in this winter snow storm. Their team was professional, efficient, and thorough. Whether it’s plumbing repairs, drain cleaning, or water heater installation, FPP Plumbing delivers top-quality solutions. Highly recommend for reliable, quick, and expert plumbing services.</p>
+<p>alex p, ★★★★★ · Local Guide Level 5 · January 2025 · Google. <a href="https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURmel9Qamh3RRAB!2m1!1s0x0:0xccc66184bdaf3a93" target="_blank" rel="noopener">Отзыв на Google</a></p>
+<p>Awesome service! Came out and completed an emergency job on a Sunday!</p>
+<p>Phillip Potter, ★★★★★ · Local Guide Level 3 · December 2024 · Google. <a href="https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN2M0llZUdBEAE!2m1!1s0x0:0xccc66184bdaf3a93" target="_blank" rel="noopener">Отзыв на Google</a></p>
+<p>Response was immediate. They were able to troubleshoot a water leak that was hard to find. Very nice and pleasant to work with.</p>
+<p>Javeed N., ★★★★★ · Thumbtack · November 2022. <a href="https://www.thumbtack.com/tx/plano/handyman/fpp-plumbing/service/454195206250143760" target="_blank" rel="noopener">Отзыв на Thumbtack</a></p>
+<p>We hired him to replace a garbage disposal and 3 new faucets. Good work. Good value. Highly recommended.</p>
+<p>Rangsan L., ★★★★★ · Thumbtack · December 2023. <a href="https://www.thumbtack.com/tx/plano/handyman/fpp-plumbing/service/454195206250143760" target="_blank" rel="noopener">Отзыв на Thumbtack</a></p>
+</blockquote>
+<hr />
+<h3>H2: Our Office for McKinney: Frisco, on Westridge Blvd</h3>
+<p>McKinney does not have an FPP office inside the city, and we do not pretend it does. The trucks that cover McKinney come from our Frisco office at 12800 Westridge Blvd, Suite 116, which sits right at the line between the two cities. The office is open Monday to Friday, 8 AM to 5 PM; the phone is answered around the clock. If you are in McKinney and want to see the company before you call it, the Frisco Google profile has the reviews, the photos and the map.</p>
+<p><em>[Рядом фото 2: FPP Plumbing van at the Frisco office]</em></p>
+<p><em>[Блок офиса: адрес, номер кнопкой звонка, ссылка «Google reviews, Frisco», часы, почта, рядом карта Google с офисом.]</em></p>
+<hr />
+<p>A plumber in McKinney, TX is one call away on the Frisco line at the top of this page, answered day and night. If writing is easier, the Request Service form reaches the same people, and we call you back. Nothing starts until the price is on the table.</p>
+<h2>Ссылки в тексте</h2>
+<table>
+<thead>
+<tr>
+<th>Слова в тексте</th>
+<th>Куда ведет</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber near me</td>
+<td>/</td>
+</tr>
+<tr>
+<td>Emergency plumbing</td>
+<td>/emergency-plumbing-services/</td>
+</tr>
+<tr>
+<td>PRV replacement</td>
+<td>/prv-replacement-frisco-plano/</td>
+</tr>
+<tr>
+<td>Water leak detection</td>
+<td>/water-leak-detection-frisco-plano/</td>
+</tr>
+<tr>
+<td>Slab leak repair</td>
+<td>/slab-leak-repair-frisco-plano-mckinney/</td>
+</tr>
+<tr>
+<td>water line repair</td>
+<td>/water-lines/</td>
+</tr>
+<tr>
+<td>water heater repair and replacement</td>
+<td>/water-heaters/</td>
+</tr>
+<tr>
+<td>expansion tank replacement</td>
+<td>/water-heater-repair-frisco-mckinney/</td>
+</tr>
+<tr>
+<td>drain cleaning</td>
+<td>/clogged-drain-cleaning-frisco-plano/</td>
+</tr>
+<tr>
+<td>sewer line repair and camera inspection</td>
+<td>/drain-services/</td>
+</tr>
+<tr>
+<td>hose bib repair</td>
+<td>/hose-bib-repair-frisco-plano/</td>
+</tr>
+<tr>
+<td>toilet repair</td>
+<td>/toilet-repair-frisco-plano/</td>
+</tr>
+<tr>
+<td>garbage disposal repair</td>
+<td>/garbage-disposal-repair-frisco-plano/</td>
+</tr>
+<tr>
+<td>faucet and shower valve repair</td>
+<td>/fixture-installation-repair/</td>
+</tr>
+<tr>
+<td>water line repair</td>
+<td>/water-lines/</td>
+</tr>
+<tr>
+<td>checking for a main water line leak in your yard</td>
+<td>/plumbing-guide/water-leak-yard-tips-2026/</td>
+</tr>
+<tr>
+<td>water heater repair and replacement</td>
+<td>/water-heaters/</td>
+</tr>
+<tr>
+<td>how long water heaters last</td>
+<td>/plumbing-guide/how-long-do-water-heaters-last-guide/</td>
+</tr>
+<tr>
+<td>leak detection</td>
+<td>/water-leak-detection-frisco-plano/</td>
+</tr>
+<tr>
+<td>slab leak repair</td>
+<td>/slab-leak-repair-frisco-plano-mckinney/</td>
+</tr>
+<tr>
+<td>water leak detection</td>
+<td>/water-leak-detection-frisco-plano/</td>
+</tr>
+<tr>
+<td>drain cleaning</td>
+<td>/clogged-drain-cleaning-frisco-plano/</td>
+</tr>
+<tr>
+<td>Faucet and shower valve repair</td>
+<td>/fixture-installation-repair/</td>
+</tr>
+<tr>
+<td>Toilet repair</td>
+<td>/toilet-repair-frisco-plano/</td>
+</tr>
+<tr>
+<td>sewer line repair and camera inspection</td>
+<td>/drain-services/</td>
+</tr>
+<tr>
+<td>leak detection page</td>
+<td>/water-leak-detection-frisco-plano/</td>
+</tr>
+<tr>
+<td>the pipe between the meter and the street</td>
+<td>https://www.mckinneytexas.org/2284/Meters-Leaks-Pipes</td>
+</tr>
+<tr>
+<td>how to shut off the main water valve</td>
+<td>/plumbing-guide/how-to-shut-off-main-water-valve-texas/</td>
+</tr>
+<tr>
+<td>emergency plumbing page</td>
+<td>/emergency-plumbing-services/</td>
+</tr>
+<tr>
+<td>The six steps in full</td>
+<td>/#how-a-call-works</td>
+</tr>
+<tr>
+<td>Frisco Google profile</td>
+<td>https://www.google.com/maps?cid=16325069929376080655</td>
+</tr>
+<tr>
+<td>Request Service form</td>
+<td>форма заявки</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Страница Mckinney, 3 мес</th>
+<th>Страница Mckinney, 16 мес</th>
+<th>Главная, 3 мес</th>
+<th>Главная, 16 мес</th>
+<th>В новом тексте</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>emergency plumber mckinney</td>
+<td></td>
+<td>340 · 65.6 · 0</td>
+<td>5 · 23.0 · 0</td>
+<td>1,800 · 44.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber in mckinney</td>
+<td>5 · 49.4 · 0</td>
+<td>1,431 · 59.1 · 0</td>
+<td></td>
+<td>65 · 84.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber mckinney</td>
+<td>14 · 49.1 · 0</td>
+<td>1,343 · 45.7 · 0</td>
+<td></td>
+<td>13 · 46.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber mckinney tx</td>
+<td>1 · 16.0 · 0</td>
+<td>345 · 75.1 · 0</td>
+<td></td>
+<td>858 · 55.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney emergency plumber</td>
+<td></td>
+<td>189 · 76.3 · 0</td>
+<td></td>
+<td>847 · 58.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx emergency plumber</td>
+<td></td>
+<td>292 · 82.6 · 0</td>
+<td></td>
+<td>663 · 64.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>low water pressure plumber mckinney</td>
+<td>3 · 13.0 · 0</td>
+<td>580 · 33.8 · 0</td>
+<td></td>
+<td>309 · 61.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx emergency plumbing</td>
+<td></td>
+<td>300 · 79.5 · 0</td>
+<td></td>
+<td>485 · 68.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber mckinney texas</td>
+<td></td>
+<td>696 · 60.0 · 0</td>
+<td></td>
+<td>36 · 78.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx emergency plumbers</td>
+<td></td>
+<td>268 · 77.7 · 0</td>
+<td>1 · 79.0 · 0</td>
+<td>454 · 61.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak repair mckinney</td>
+<td></td>
+<td>711 · 62.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber near me mckinney</td>
+<td></td>
+<td>15 · 93.5 · 0</td>
+<td>1 · 12.0 · 0</td>
+<td>686 · 23.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber in mckinney tx</td>
+<td></td>
+<td>631 · 53.4 · 0</td>
+<td></td>
+<td>9 · 70.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers mckinney tx</td>
+<td></td>
+<td>489 · 63.8 · 0</td>
+<td></td>
+<td>74 · 68.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>water line repair mckinney</td>
+<td></td>
+<td>261 · 67.5 · 0</td>
+<td></td>
+<td>286 · 81.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak repair mckinney tx</td>
+<td>1 · 33.0 · 0</td>
+<td>515 · 56.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing mckinney</td>
+<td></td>
+<td>228 · 78.9 · 0</td>
+<td></td>
+<td>268 · 72.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing mckinney tx</td>
+<td>1 · 69.0 · 0</td>
+<td>432 · 72.0 · 0</td>
+<td></td>
+<td>59 · 73.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>google find me a plumber</td>
+<td>45 · 79.6 · 0</td>
+<td>455 · 81.3 · 0</td>
+<td></td>
+<td></td>
+<td>да: голосовой запрос</td>
+</tr>
+<tr>
+<td>mckinney tx plumber service</td>
+<td></td>
+<td>439 · 63.6 · 0</td>
+<td></td>
+<td>5 · 85.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumber service</td>
+<td></td>
+<td>382 · 81.0 · 0</td>
+<td></td>
+<td>41 · 85.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx water line repair</td>
+<td></td>
+<td>404 · 57.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>same day service plumbing mckinney</td>
+<td>6 · 15.5 · 0</td>
+<td>23 · 30.6 · 0</td>
+<td>1 · 18.0 · 0</td>
+<td>371 · 19.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney water line repair</td>
+<td></td>
+<td>375 · 67.2 · 0</td>
+<td></td>
+<td>1 · 109.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber mckinney tx</td>
+<td>2 · 59.0 · 0</td>
+<td>367 · 50.9 · 0</td>
+<td></td>
+<td>3 · 52.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>water line repair mckinney tx</td>
+<td></td>
+<td>365 · 57.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney slab leak repair</td>
+<td></td>
+<td>328 · 68.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx sab leak repair</td>
+<td>1 · 32.0 · 0</td>
+<td>323 · 62.7 · 0</td>
+<td></td>
+<td></td>
+<td>да: опечатка в запросе</td>
+</tr>
+<tr>
+<td>plumbers near me mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>317 · 33.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx pluming</td>
+<td></td>
+<td>315 · 71.6 · 0</td>
+<td></td>
+<td></td>
+<td>да: опечатка в запросе</td>
+</tr>
+<tr>
+<td>mckinney tx plumber</td>
+<td></td>
+<td>304 · 65.6 · 0</td>
+<td></td>
+<td>3 · 95.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing repair mckinney</td>
+<td></td>
+<td>205 · 72.0 · 0</td>
+<td></td>
+<td>92 · 74.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney faucet repair</td>
+<td>1 · 33.0 · 0</td>
+<td>290 · 51.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumber</td>
+<td></td>
+<td>276 · 54.2 · 0</td>
+<td></td>
+<td>3 · 40.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain plumber mckinney</td>
+<td></td>
+<td>185 · 66.7 · 0</td>
+<td></td>
+<td>84 · 81.9 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>faucet repair mckinney</td>
+<td></td>
+<td>259 · 50.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumbing mckinney</td>
+<td></td>
+<td>53 · 78.3 · 0</td>
+<td>1 · 26.0 · 0</td>
+<td>197 · 29.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>hydrojet sewer plumber mckinney tx</td>
+<td></td>
+<td>243 · 60.3 · 0</td>
+<td></td>
+<td>4 · 65.5 · 0</td>
+<td>частично (нет слов: hydrojet)</td>
+</tr>
+<tr>
+<td>slab leak plumber mckinney</td>
+<td>26 · 14.8 · 0</td>
+<td>245 · 45.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx faucet repair</td>
+<td></td>
+<td>239 · 51.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers in mckinney tx</td>
+<td></td>
+<td>224 · 64.0 · 0</td>
+<td></td>
+<td>9 · 92.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>toilet repair mckinney</td>
+<td></td>
+<td>218 · 63.2 · 0</td>
+<td></td>
+<td>2 · 67.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>local plumber mckinney tx</td>
+<td></td>
+<td>134 · 52.6 · 0</td>
+<td></td>
+<td>76 · 66.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing service mckinney</td>
+<td></td>
+<td>177 · 71.8 · 0</td>
+<td></td>
+<td>27 · 83.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber near me mckinney</td>
+<td></td>
+<td>21 · 88.3 · 0</td>
+<td></td>
+<td>174 · 44.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney drain cleaning</td>
+<td></td>
+<td>183 · 65.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>24-hour plumber mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>182 · 52.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drains mckinney</td>
+<td></td>
+<td>182 · 71.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx drain cleaning</td>
+<td></td>
+<td>168 · 87.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer line plumber mckinney</td>
+<td></td>
+<td>142 · 71.7 · 0</td>
+<td></td>
+<td>24 · 67.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>local plumbers mckinney tx</td>
+<td></td>
+<td>96 · 61.0 · 0</td>
+<td></td>
+<td>69 · 64.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak detection mckinney</td>
+<td></td>
+<td>142 · 72.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>bathroom plumbing mckinney</td>
+<td></td>
+<td>97 · 56.4 · 0</td>
+<td></td>
+<td>43 · 72.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>licensed plumber mckinney tx</td>
+<td></td>
+<td>115 · 67.3 · 0</td>
+<td></td>
+<td>18 · 67.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx plumbers</td>
+<td></td>
+<td>133 · 61.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>residential plumbing mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>110 · 75.9 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>leak detection mckinney</td>
+<td></td>
+<td>107 · 90.2 · 0</td>
+<td></td>
+<td>1 · 98.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing services mckinney</td>
+<td></td>
+<td>96 · 73.8 · 0</td>
+<td></td>
+<td>10 · 42.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx garbage disposal repair</td>
+<td></td>
+<td>102 · 60.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbing service</td>
+<td></td>
+<td>89 · 63.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbing services</td>
+<td></td>
+<td>71 · 69.9 · 0</td>
+<td></td>
+<td>18 · 73.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney water heater repair</td>
+<td></td>
+<td>84 · 78.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>faucet repair mckinney tx</td>
+<td></td>
+<td>80 · 51.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney pipe break repair</td>
+<td></td>
+<td>70 · 85.4 · 0</td>
+<td></td>
+<td>10 · 89.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>website for plumbers mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>79 · 64.6 · 0</td>
+<td>не наше (не про услугу)</td>
+</tr>
+<tr>
+<td>plumbing companies in mckinney tx</td>
+<td></td>
+<td>72 · 62.6 · 0</td>
+<td></td>
+<td>6 · 66.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak detection mckinney tx</td>
+<td></td>
+<td>72 · 73.4 · 0</td>
+<td></td>
+<td>1 · 2.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>alexa find me a plumber</td>
+<td>22 · 77.8 · 0</td>
+<td>71 · 39.3 · 0</td>
+<td></td>
+<td></td>
+<td>да: голосовой запрос</td>
+</tr>
+<tr>
+<td>water heater repair mckinney</td>
+<td></td>
+<td>63 · 77.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney leak detection</td>
+<td></td>
+<td>62 · 95.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing contractors mckinney</td>
+<td></td>
+<td>53 · 68.4 · 0</td>
+<td></td>
+<td>9 · 85.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>24/7 plumber mckinney, tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>60 · 23.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>leak repair mckinney</td>
+<td></td>
+<td>56 · 80.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>water heater replacement mckinney</td>
+<td></td>
+<td>56 · 79.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney garbage disposal repair</td>
+<td></td>
+<td>54 · 61.1 · 0</td>
+<td></td>
+<td>1 · 77.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers mckinney texas</td>
+<td></td>
+<td>55 · 63.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>water heater plumber mckinney</td>
+<td></td>
+<td>53 · 78.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber mckinney, tx</td>
+<td></td>
+<td>1 · 44.0 · 0</td>
+<td></td>
+<td>50 · 43.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>waterline leak detection mckinney</td>
+<td></td>
+<td>48 · 77.0 · 0</td>
+<td></td>
+<td>2 · 11.0 · 0</td>
+<td>частично (нет слов: waterline)</td>
+</tr>
+<tr>
+<td>emergency plumber frozen pipes burst dallas plano mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>49 · 10.4 · 0</td>
+<td>другой город (dallas)</td>
+</tr>
+<tr>
+<td>mckinney wet floors</td>
+<td></td>
+<td>47 · 69.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>garbage disposal repair near me</td>
+<td>46 · 5.7 · 0</td>
+<td>46 · 5.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak plumber near me</td>
+<td>45 · 7.7 · 0</td>
+<td>45 · 7.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>local plumber mckinney near me</td>
+<td></td>
+<td>2 · 94.5 · 0</td>
+<td></td>
+<td>42 · 37.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>24 hour plumber mckinney tx</td>
+<td></td>
+<td>5 · 72.4 · 0</td>
+<td></td>
+<td>38 · 50.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>20 · 1.9 · 0</td>
+<td>42 · 7.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers mckinney, tx</td>
+<td></td>
+<td>39 · 61.1 · 0</td>
+<td></td>
+<td>2 · 67.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing companies mckinney</td>
+<td></td>
+<td>37 · 73.3 · 0</td>
+<td></td>
+<td>2 · 80.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>affordable plumber mckinney tx</td>
+<td></td>
+<td>1 · 52.0 · 0</td>
+<td></td>
+<td>37 · 55.0 · 0</td>
+<td>да: оценочное слово в текст не ставим: affordable</td>
+</tr>
+<tr>
+<td>emergency plumber mckinney texas</td>
+<td></td>
+<td>1 · 91.0 · 0</td>
+<td></td>
+<td>37 · 58.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leaks mckinney, tx</td>
+<td></td>
+<td>37 · 53.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers in mckinney texas</td>
+<td></td>
+<td>35 · 67.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>leak detection plumber mckinney</td>
+<td>9 · 21.7 · 0</td>
+<td>29 · 51.0 · 0</td>
+<td></td>
+<td>4 · 88.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbers</td>
+<td></td>
+<td>31 · 46.3 · 0</td>
+<td></td>
+<td>2 · 45.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx water heater repair</td>
+<td></td>
+<td>32 · 74.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney texas plumber</td>
+<td></td>
+<td>31 · 66.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers in mckinney</td>
+<td>2 · 58.5 · 0</td>
+<td>24 · 50.6 · 0</td>
+<td></td>
+<td>7 · 70.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>water leak detection mckinney</td>
+<td></td>
+<td>31 · 91.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>licensed plumber mckinney</td>
+<td></td>
+<td>4 · 68.0 · 0</td>
+<td></td>
+<td>24 · 78.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>main sewer line replacement mckinney</td>
+<td></td>
+<td>28 · 60.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx pluming service</td>
+<td></td>
+<td>20 · 61.5 · 0</td>
+<td></td>
+<td>6 · 75.5 · 0</td>
+<td>да: опечатка в запросе</td>
+</tr>
+<tr>
+<td>plumbing mckinney, tx</td>
+<td></td>
+<td>22 · 72.0 · 0</td>
+<td></td>
+<td>4 · 78.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>24 hour plumber mckinney texas</td>
+<td>6 · 45.3 · 0</td>
+<td>11 · 59.8 · 0</td>
+<td>1 · 30.0 · 0</td>
+<td>10 · 52.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbing repair</td>
+<td></td>
+<td>16 · 61.9 · 0</td>
+<td></td>
+<td>5 · 68.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers mckinney</td>
+<td></td>
+<td>16 · 46.8 · 0</td>
+<td></td>
+<td>4 · 45.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing contractor mckinney</td>
+<td></td>
+<td>18 · 67.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing contractors mckinney near me</td>
+<td></td>
+<td></td>
+<td></td>
+<td>17 · 49.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney water pressure</td>
+<td></td>
+<td>13 · 56.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing company mckinney</td>
+<td></td>
+<td>11 · 68.2 · 0</td>
+<td></td>
+<td>2 · 86.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>garbage disposal repair mckinney</td>
+<td>12 · 9.9 · 0</td>
+<td>12 · 9.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>local plumber mckinney</td>
+<td></td>
+<td>7 · 59.4 · 0</td>
+<td></td>
+<td>5 · 70.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx plumbing</td>
+<td></td>
+<td>12 · 70.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>website design for plumbers mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>12 · 35.2 · 0</td>
+<td>не наше (не про услугу)</td>
+</tr>
+<tr>
+<td>plumbing remodeling mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>11 · 80.5 · 0</td>
+<td>не наше (ремонт ванных: нет такой услуги)</td>
+</tr>
+<tr>
+<td>trenchless pipe repair mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>11 · 5.3 · 0</td>
+<td>частично (нет слов: trenchless)</td>
+</tr>
+<tr>
+<td>water line repair in mckinney texas</td>
+<td></td>
+<td>11 · 58.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>garbage disposal installation near me</td>
+<td>10 · 13.2 · 0</td>
+<td>10 · 13.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>water heater service mckinney near me</td>
+<td></td>
+<td></td>
+<td></td>
+<td>10 · 79.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney drain repair</td>
+<td></td>
+<td>7 · 60.4 · 0</td>
+<td></td>
+<td>2 · 81.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing services mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>9 · 69.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>foundation leak detection mckinney</td>
+<td></td>
+<td>8 · 89.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>leak repairs mckinney tx</td>
+<td></td>
+<td>8 · 78.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>toilet leak mckinney</td>
+<td></td>
+<td>8 · 88.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>24/7 plumber mckinney</td>
+<td>5 · 29.2 · 0</td>
+<td>5 · 29.2 · 0</td>
+<td>2 · 47.0 · 0</td>
+<td>2 · 47.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>cast iron drain pipe repair mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>7 · 9.9 · 0</td>
+<td>частично (нет слов: cast, iron)</td>
+</tr>
+<tr>
+<td>pp plumbing</td>
+<td>1 · 94.0 · 0</td>
+<td>7 · 83.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: pp)</td>
+</tr>
+<tr>
+<td>repiping mckinney</td>
+<td>7 · 33.3 · 0</td>
+<td>7 · 33.3 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>shower replacement in mckinney</td>
+<td></td>
+<td>7 · 87.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>trenchless sewer line repair mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>7 · 2.0 · 0</td>
+<td>частично (нет слов: trenchless)</td>
+</tr>
+<tr>
+<td>drain cleaning mckinney</td>
+<td></td>
+<td>6 · 84.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning mckinney tx</td>
+<td></td>
+<td>6 · 84.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing mckinney texas</td>
+<td></td>
+<td>4 · 76.8 · 0</td>
+<td></td>
+<td>2 · 75.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing repair mckinney tx</td>
+<td></td>
+<td>6 · 69.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>repiping near me</td>
+<td>6 · 19.7 · 0</td>
+<td>6 · 19.7 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>faucet installation plumber mckinney tx</td>
+<td></td>
+<td>1 · 72.0 · 0</td>
+<td></td>
+<td>4 · 78.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>garbage disposal repair mckinney tx</td>
+<td>1 · 6.0 · 0</td>
+<td>5 · 53.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney repiping</td>
+<td></td>
+<td>5 · 53.2 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>plumbing+mckinney</td>
+<td></td>
+<td>4 · 65.8 · 0</td>
+<td></td>
+<td>1 · 96.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer cleaning mckinney</td>
+<td></td>
+<td>5 · 69.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>site:http://fppplumbing.com</td>
+<td></td>
+<td>5 · 16.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: http, //fppplumbing, com)</td>
+</tr>
+<tr>
+<td>clogged drain cleaning mckinney</td>
+<td></td>
+<td>4 · 69.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>google+find+me+a+plumber</td>
+<td></td>
+<td>4 · 72.8 · 0</td>
+<td></td>
+<td></td>
+<td>да: голосовой запрос</td>
+</tr>
+<tr>
+<td>plumber in mckinney, tx</td>
+<td></td>
+<td>4 · 47.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>repiping services near me</td>
+<td>4 · 24.2 · 0</td>
+<td>4 · 24.2 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>toilet repair mckinney tx</td>
+<td></td>
+<td>4 · 65.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>dpp plumbing</td>
+<td>3 · 65.0 · 0</td>
+<td>3 · 65.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: dpp)</td>
+</tr>
+<tr>
+<td>garbage disposal installation mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3 · 12.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tankless water heater repair</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3 · 80.7 · 0</td>
+<td>не наше (tankless не делаем)</td>
+</tr>
+<tr>
+<td>patio repair mckinney tx</td>
+<td></td>
+<td>3 · 63.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: patio)</td>
+</tr>
+<tr>
+<td>plumbing company mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3 · 68.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing repair mckinney, tx</td>
+<td></td>
+<td>3 · 71.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>24 hour plumber mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 56.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>bathroom plumbing mckinney tx</td>
+<td>1 · 54.0 · 0</td>
+<td>2 · 52.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>best plumbers in mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 31.0 · 0</td>
+<td>да: оценочное слово в текст не ставим: best</td>
+</tr>
+<tr>
+<td>clogged toilet mckinney</td>
+<td></td>
+<td>2 · 80.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber 75070</td>
+<td></td>
+<td>2 · 22.5 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (чужой индекс)</td>
+</tr>
+<tr>
+<td>flawless leak detection mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 1.0 · 0</td>
+<td>частично (нет слов: flawless)</td>
+</tr>
+<tr>
+<td>mckinney drainage system repair</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 72.0 · 0</td>
+<td>частично (нет слов: drainage)</td>
+</tr>
+<tr>
+<td>mckinney plumbing company</td>
+<td></td>
+<td>2 · 74.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney texas plumbers</td>
+<td></td>
+<td>1 · 63.0 · 0</td>
+<td></td>
+<td>1 · 73.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx leak detection</td>
+<td></td>
+<td>2 · 131.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber 75070</td>
+<td></td>
+<td>2 · 41.0 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (чужой индекс)</td>
+</tr>
+<tr>
+<td>plumber services</td>
+<td></td>
+<td>2 · 22.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers in mckiinney tx</td>
+<td></td>
+<td>2 · 94.5 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: mckiinney)</td>
+</tr>
+<tr>
+<td>plumbing service mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 23.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak detection near me</td>
+<td>2 · 11.5 · 0</td>
+<td>2 · 11.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>trapp plumbing</td>
+<td>2 · 69.5 · 0</td>
+<td>2 · 69.5 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: trapp)</td>
+</tr>
+<tr>
+<td>cast iron plumbing mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 13.0 · 0</td>
+<td>частично (нет слов: cast, iron)</td>
+</tr>
+<tr>
+<td>clogged drain mckinney</td>
+<td></td>
+<td>1 · 73.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain service mckinney</td>
+<td></td>
+<td>1 · 98.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain repair mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 78.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumbing mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 21.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumbing services mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 25.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>expert plumbing &amp; heating</td>
+<td>1 · 12.0 · 0</td>
+<td>1 · 12.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: expert, heating)</td>
+</tr>
+<tr>
+<td>expert plumbing mckinney tx</td>
+<td>1 · 29.0 · 0</td>
+<td>1 · 29.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: expert)</td>
+</tr>
+<tr>
+<td>fairfield plumbing</td>
+<td>1 · 9.0 · 0</td>
+<td>1 · 9.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: fairfield)</td>
+</tr>
+<tr>
+<td>faulk plumbing</td>
+<td></td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: faulk)</td>
+</tr>
+<tr>
+<td>first choice plumbing</td>
+<td>1 · 7.0 · 0</td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: choice)</td>
+</tr>
+<tr>
+<td>flush plumbing</td>
+<td></td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>fps plumbing</td>
+<td></td>
+<td>1 · 3.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: fps)</td>
+</tr>
+<tr>
+<td>heater replacement mckinney</td>
+<td></td>
+<td>1 · 81.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>immaculate plumbing service mckinney tx</td>
+<td>1 · 48.0 · 0</td>
+<td>1 · 48.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: immaculate)</td>
+</tr>
+<tr>
+<td>impeccable plumber mckinney tx</td>
+<td>1 · 29.0 · 0</td>
+<td>1 · 29.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: impeccable)</td>
+</tr>
+<tr>
+<td>kitchen plumbing mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 41.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>licensed plumbing contractor mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 82.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>local guide program</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: program)</td>
+</tr>
+<tr>
+<td>local plumbing service mckinney tx</td>
+<td></td>
+<td>1 · 47.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbing</td>
+<td></td>
+<td>1 · 88.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney sewer and drain cleaning</td>
+<td></td>
+<td>1 · 45.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney slab leak water damage</td>
+<td></td>
+<td>1 · 92.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: damage)</td>
+</tr>
+<tr>
+<td>mckinney tx plumbing service</td>
+<td></td>
+<td>1 · 60.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pipe lining companies near me mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td>частично (нет слов: lining)</td>
+</tr>
+<tr>
+<td>plumbing companies in mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 80.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing companies mckinney tx</td>
+<td></td>
+<td>1 · 98.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing repair mckinney texas</td>
+<td></td>
+<td>1 · 61.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pop's plumbing</td>
+<td></td>
+<td>1 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: pop)</td>
+</tr>
+<tr>
+<td>ppx plumbing</td>
+<td></td>
+<td>1 · 70.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: ppx)</td>
+</tr>
+<tr>
+<td>site:fppplumbing.com</td>
+<td>1 · 19.0 · 0</td>
+<td>1 · 19.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: fppplumbing, com)</td>
+</tr>
+<tr>
+<td>trenchless plumber mckinney</td>
+<td></td>
+<td>1 · 68.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: trenchless)</td>
+</tr>
+<tr>
+<td>whole house repipe mckinney</td>
+<td>1 · 34.0 · 0</td>
+<td>1 · 34.0 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>yes</td>
+<td>1 · 3.0 · 0</td>
+<td>1 · 3.0 · 0</td>
+<td></td>
+<td></td>
+<td>нет (нет слов: yes)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Страница Mckinney, 3 мес</th>
+<th>Страница Mckinney, 16 мес</th>
+<th>Главная, 3 мес</th>
+<th>Главная, 16 мес</th>
+<th>В новом тексте</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>emergency plumber mckinney</td>
+<td></td>
+<td>340 · 65.6 · 0</td>
+<td>5 · 23.0 · 0</td>
+<td>1,800 · 44.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber in mckinney</td>
+<td>5 · 49.4 · 0</td>
+<td>1,431 · 59.1 · 0</td>
+<td></td>
+<td>65 · 84.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber mckinney</td>
+<td>14 · 49.1 · 0</td>
+<td>1,343 · 45.7 · 0</td>
+<td></td>
+<td>13 · 46.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber mckinney tx</td>
+<td>1 · 16.0 · 0</td>
+<td>345 · 75.1 · 0</td>
+<td></td>
+<td>858 · 55.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney emergency plumber</td>
+<td></td>
+<td>189 · 76.3 · 0</td>
+<td></td>
+<td>847 · 58.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx emergency plumber</td>
+<td></td>
+<td>292 · 82.6 · 0</td>
+<td></td>
+<td>663 · 64.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>low water pressure plumber mckinney</td>
+<td>3 · 13.0 · 0</td>
+<td>580 · 33.8 · 0</td>
+<td></td>
+<td>309 · 61.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx emergency plumbing</td>
+<td></td>
+<td>300 · 79.5 · 0</td>
+<td></td>
+<td>485 · 68.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber mckinney texas</td>
+<td></td>
+<td>696 · 60.0 · 0</td>
+<td></td>
+<td>36 · 78.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx emergency plumbers</td>
+<td></td>
+<td>268 · 77.7 · 0</td>
+<td>1 · 79.0 · 0</td>
+<td>454 · 61.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak repair mckinney</td>
+<td></td>
+<td>711 · 62.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber near me mckinney</td>
+<td></td>
+<td>15 · 93.5 · 0</td>
+<td>1 · 12.0 · 0</td>
+<td>686 · 23.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber in mckinney tx</td>
+<td></td>
+<td>631 · 53.4 · 0</td>
+<td></td>
+<td>9 · 70.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers mckinney tx</td>
+<td></td>
+<td>489 · 63.8 · 0</td>
+<td></td>
+<td>74 · 68.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>water line repair mckinney</td>
+<td></td>
+<td>261 · 67.5 · 0</td>
+<td></td>
+<td>286 · 81.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak repair mckinney tx</td>
+<td>1 · 33.0 · 0</td>
+<td>515 · 56.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing mckinney</td>
+<td></td>
+<td>228 · 78.9 · 0</td>
+<td></td>
+<td>268 · 72.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing mckinney tx</td>
+<td>1 · 69.0 · 0</td>
+<td>432 · 72.0 · 0</td>
+<td></td>
+<td>59 · 73.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>google find me a plumber</td>
+<td>45 · 79.6 · 0</td>
+<td>455 · 81.3 · 0</td>
+<td></td>
+<td></td>
+<td>да: голосовой запрос</td>
+</tr>
+<tr>
+<td>mckinney tx plumber service</td>
+<td></td>
+<td>439 · 63.6 · 0</td>
+<td></td>
+<td>5 · 85.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumber service</td>
+<td></td>
+<td>382 · 81.0 · 0</td>
+<td></td>
+<td>41 · 85.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx water line repair</td>
+<td></td>
+<td>404 · 57.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>same day service plumbing mckinney</td>
+<td>6 · 15.5 · 0</td>
+<td>23 · 30.6 · 0</td>
+<td>1 · 18.0 · 0</td>
+<td>371 · 19.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney water line repair</td>
+<td></td>
+<td>375 · 67.2 · 0</td>
+<td></td>
+<td>1 · 109.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber mckinney tx</td>
+<td>2 · 59.0 · 0</td>
+<td>367 · 50.9 · 0</td>
+<td></td>
+<td>3 · 52.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>water line repair mckinney tx</td>
+<td></td>
+<td>365 · 57.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney slab leak repair</td>
+<td></td>
+<td>328 · 68.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx sab leak repair</td>
+<td>1 · 32.0 · 0</td>
+<td>323 · 62.7 · 0</td>
+<td></td>
+<td></td>
+<td>да: опечатка в запросе</td>
+</tr>
+<tr>
+<td>plumbers near me mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>317 · 33.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx pluming</td>
+<td></td>
+<td>315 · 71.6 · 0</td>
+<td></td>
+<td></td>
+<td>да: опечатка в запросе</td>
+</tr>
+<tr>
+<td>mckinney tx plumber</td>
+<td></td>
+<td>304 · 65.6 · 0</td>
+<td></td>
+<td>3 · 95.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing repair mckinney</td>
+<td></td>
+<td>205 · 72.0 · 0</td>
+<td></td>
+<td>92 · 74.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney faucet repair</td>
+<td>1 · 33.0 · 0</td>
+<td>290 · 51.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumber</td>
+<td></td>
+<td>276 · 54.2 · 0</td>
+<td></td>
+<td>3 · 40.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain plumber mckinney</td>
+<td></td>
+<td>185 · 66.7 · 0</td>
+<td></td>
+<td>84 · 81.9 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>faucet repair mckinney</td>
+<td></td>
+<td>259 · 50.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumbing mckinney</td>
+<td></td>
+<td>53 · 78.3 · 0</td>
+<td>1 · 26.0 · 0</td>
+<td>197 · 29.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>hydrojet sewer plumber mckinney tx</td>
+<td></td>
+<td>243 · 60.3 · 0</td>
+<td></td>
+<td>4 · 65.5 · 0</td>
+<td>частично (нет слов: hydrojet)</td>
+</tr>
+<tr>
+<td>slab leak plumber mckinney</td>
+<td>26 · 14.8 · 0</td>
+<td>245 · 45.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx faucet repair</td>
+<td></td>
+<td>239 · 51.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers in mckinney tx</td>
+<td></td>
+<td>224 · 64.0 · 0</td>
+<td></td>
+<td>9 · 92.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>toilet repair mckinney</td>
+<td></td>
+<td>218 · 63.2 · 0</td>
+<td></td>
+<td>2 · 67.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>local plumber mckinney tx</td>
+<td></td>
+<td>134 · 52.6 · 0</td>
+<td></td>
+<td>76 · 66.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing service mckinney</td>
+<td></td>
+<td>177 · 71.8 · 0</td>
+<td></td>
+<td>27 · 83.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber near me mckinney</td>
+<td></td>
+<td>21 · 88.3 · 0</td>
+<td></td>
+<td>174 · 44.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney drain cleaning</td>
+<td></td>
+<td>183 · 65.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>24-hour plumber mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>182 · 52.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drains mckinney</td>
+<td></td>
+<td>182 · 71.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx drain cleaning</td>
+<td></td>
+<td>168 · 87.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer line plumber mckinney</td>
+<td></td>
+<td>142 · 71.7 · 0</td>
+<td></td>
+<td>24 · 67.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>local plumbers mckinney tx</td>
+<td></td>
+<td>96 · 61.0 · 0</td>
+<td></td>
+<td>69 · 64.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak detection mckinney</td>
+<td></td>
+<td>142 · 72.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>bathroom plumbing mckinney</td>
+<td></td>
+<td>97 · 56.4 · 0</td>
+<td></td>
+<td>43 · 72.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>licensed plumber mckinney tx</td>
+<td></td>
+<td>115 · 67.3 · 0</td>
+<td></td>
+<td>18 · 67.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx plumbers</td>
+<td></td>
+<td>133 · 61.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>residential plumbing mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>110 · 75.9 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>leak detection mckinney</td>
+<td></td>
+<td>107 · 90.2 · 0</td>
+<td></td>
+<td>1 · 98.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing services mckinney</td>
+<td></td>
+<td>96 · 73.8 · 0</td>
+<td></td>
+<td>10 · 42.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx garbage disposal repair</td>
+<td></td>
+<td>102 · 60.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbing service</td>
+<td></td>
+<td>89 · 63.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbing services</td>
+<td></td>
+<td>71 · 69.9 · 0</td>
+<td></td>
+<td>18 · 73.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney water heater repair</td>
+<td></td>
+<td>84 · 78.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>faucet repair mckinney tx</td>
+<td></td>
+<td>80 · 51.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney pipe break repair</td>
+<td></td>
+<td>70 · 85.4 · 0</td>
+<td></td>
+<td>10 · 89.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>website for plumbers mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>79 · 64.6 · 0</td>
+<td>не наше (не про услугу)</td>
+</tr>
+<tr>
+<td>plumbing companies in mckinney tx</td>
+<td></td>
+<td>72 · 62.6 · 0</td>
+<td></td>
+<td>6 · 66.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak detection mckinney tx</td>
+<td></td>
+<td>72 · 73.4 · 0</td>
+<td></td>
+<td>1 · 2.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>alexa find me a plumber</td>
+<td>22 · 77.8 · 0</td>
+<td>71 · 39.3 · 0</td>
+<td></td>
+<td></td>
+<td>да: голосовой запрос</td>
+</tr>
+<tr>
+<td>water heater repair mckinney</td>
+<td></td>
+<td>63 · 77.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney leak detection</td>
+<td></td>
+<td>62 · 95.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing contractors mckinney</td>
+<td></td>
+<td>53 · 68.4 · 0</td>
+<td></td>
+<td>9 · 85.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>24/7 plumber mckinney, tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>60 · 23.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>leak repair mckinney</td>
+<td></td>
+<td>56 · 80.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>water heater replacement mckinney</td>
+<td></td>
+<td>56 · 79.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney garbage disposal repair</td>
+<td></td>
+<td>54 · 61.1 · 0</td>
+<td></td>
+<td>1 · 77.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers mckinney texas</td>
+<td></td>
+<td>55 · 63.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>water heater plumber mckinney</td>
+<td></td>
+<td>53 · 78.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber mckinney, tx</td>
+<td></td>
+<td>1 · 44.0 · 0</td>
+<td></td>
+<td>50 · 43.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>waterline leak detection mckinney</td>
+<td></td>
+<td>48 · 77.0 · 0</td>
+<td></td>
+<td>2 · 11.0 · 0</td>
+<td>частично (нет слов: waterline)</td>
+</tr>
+<tr>
+<td>emergency plumber frozen pipes burst dallas plano mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>49 · 10.4 · 0</td>
+<td>другой город (dallas)</td>
+</tr>
+<tr>
+<td>mckinney wet floors</td>
+<td></td>
+<td>47 · 69.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>garbage disposal repair near me</td>
+<td>46 · 5.7 · 0</td>
+<td>46 · 5.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak plumber near me</td>
+<td>45 · 7.7 · 0</td>
+<td>45 · 7.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>local plumber mckinney near me</td>
+<td></td>
+<td>2 · 94.5 · 0</td>
+<td></td>
+<td>42 · 37.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>24 hour plumber mckinney tx</td>
+<td></td>
+<td>5 · 72.4 · 0</td>
+<td></td>
+<td>38 · 50.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>20 · 1.9 · 0</td>
+<td>42 · 7.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers mckinney, tx</td>
+<td></td>
+<td>39 · 61.1 · 0</td>
+<td></td>
+<td>2 · 67.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing companies mckinney</td>
+<td></td>
+<td>37 · 73.3 · 0</td>
+<td></td>
+<td>2 · 80.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>affordable plumber mckinney tx</td>
+<td></td>
+<td>1 · 52.0 · 0</td>
+<td></td>
+<td>37 · 55.0 · 0</td>
+<td>да: оценочное слово в текст не ставим: affordable</td>
+</tr>
+<tr>
+<td>emergency plumber mckinney texas</td>
+<td></td>
+<td>1 · 91.0 · 0</td>
+<td></td>
+<td>37 · 58.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leaks mckinney, tx</td>
+<td></td>
+<td>37 · 53.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers in mckinney texas</td>
+<td></td>
+<td>35 · 67.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>leak detection plumber mckinney</td>
+<td>9 · 21.7 · 0</td>
+<td>29 · 51.0 · 0</td>
+<td></td>
+<td>4 · 88.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbers</td>
+<td></td>
+<td>31 · 46.3 · 0</td>
+<td></td>
+<td>2 · 45.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx water heater repair</td>
+<td></td>
+<td>32 · 74.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney texas plumber</td>
+<td></td>
+<td>31 · 66.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers in mckinney</td>
+<td>2 · 58.5 · 0</td>
+<td>24 · 50.6 · 0</td>
+<td></td>
+<td>7 · 70.7 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>water leak detection mckinney</td>
+<td></td>
+<td>31 · 91.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>licensed plumber mckinney</td>
+<td></td>
+<td>4 · 68.0 · 0</td>
+<td></td>
+<td>24 · 78.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>main sewer line replacement mckinney</td>
+<td></td>
+<td>28 · 60.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx pluming service</td>
+<td></td>
+<td>20 · 61.5 · 0</td>
+<td></td>
+<td>6 · 75.5 · 0</td>
+<td>да: опечатка в запросе</td>
+</tr>
+<tr>
+<td>plumbing mckinney, tx</td>
+<td></td>
+<td>22 · 72.0 · 0</td>
+<td></td>
+<td>4 · 78.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>24 hour plumber mckinney texas</td>
+<td>6 · 45.3 · 0</td>
+<td>11 · 59.8 · 0</td>
+<td>1 · 30.0 · 0</td>
+<td>10 · 52.6 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbing repair</td>
+<td></td>
+<td>16 · 61.9 · 0</td>
+<td></td>
+<td>5 · 68.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers mckinney</td>
+<td></td>
+<td>16 · 46.8 · 0</td>
+<td></td>
+<td>4 · 45.8 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing contractor mckinney</td>
+<td></td>
+<td>18 · 67.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing contractors mckinney near me</td>
+<td></td>
+<td></td>
+<td></td>
+<td>17 · 49.5 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney water pressure</td>
+<td></td>
+<td>13 · 56.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing company mckinney</td>
+<td></td>
+<td>11 · 68.2 · 0</td>
+<td></td>
+<td>2 · 86.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>garbage disposal repair mckinney</td>
+<td>12 · 9.9 · 0</td>
+<td>12 · 9.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>local plumber mckinney</td>
+<td></td>
+<td>7 · 59.4 · 0</td>
+<td></td>
+<td>5 · 70.4 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx plumbing</td>
+<td></td>
+<td>12 · 70.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>website design for plumbers mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>12 · 35.2 · 0</td>
+<td>не наше (не про услугу)</td>
+</tr>
+<tr>
+<td>plumbing remodeling mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>11 · 80.5 · 0</td>
+<td>не наше (ремонт ванных: нет такой услуги)</td>
+</tr>
+<tr>
+<td>trenchless pipe repair mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>11 · 5.3 · 0</td>
+<td>частично (нет слов: trenchless)</td>
+</tr>
+<tr>
+<td>water line repair in mckinney texas</td>
+<td></td>
+<td>11 · 58.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>garbage disposal installation near me</td>
+<td>10 · 13.2 · 0</td>
+<td>10 · 13.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>water heater service mckinney near me</td>
+<td></td>
+<td></td>
+<td></td>
+<td>10 · 79.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney drain repair</td>
+<td></td>
+<td>7 · 60.4 · 0</td>
+<td></td>
+<td>2 · 81.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing services mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>9 · 69.1 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>foundation leak detection mckinney</td>
+<td></td>
+<td>8 · 89.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>leak repairs mckinney tx</td>
+<td></td>
+<td>8 · 78.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>toilet leak mckinney</td>
+<td></td>
+<td>8 · 88.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>24/7 plumber mckinney</td>
+<td>5 · 29.2 · 0</td>
+<td>5 · 29.2 · 0</td>
+<td>2 · 47.0 · 0</td>
+<td>2 · 47.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>cast iron drain pipe repair mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>7 · 9.9 · 0</td>
+<td>частично (нет слов: cast, iron)</td>
+</tr>
+<tr>
+<td>pp plumbing</td>
+<td>1 · 94.0 · 0</td>
+<td>7 · 83.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: pp)</td>
+</tr>
+<tr>
+<td>repiping mckinney</td>
+<td>7 · 33.3 · 0</td>
+<td>7 · 33.3 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>shower replacement in mckinney</td>
+<td></td>
+<td>7 · 87.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>trenchless sewer line repair mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>7 · 2.0 · 0</td>
+<td>частично (нет слов: trenchless)</td>
+</tr>
+<tr>
+<td>drain cleaning mckinney</td>
+<td></td>
+<td>6 · 84.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning mckinney tx</td>
+<td></td>
+<td>6 · 84.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing mckinney texas</td>
+<td></td>
+<td>4 · 76.8 · 0</td>
+<td></td>
+<td>2 · 75.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing repair mckinney tx</td>
+<td></td>
+<td>6 · 69.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>repiping near me</td>
+<td>6 · 19.7 · 0</td>
+<td>6 · 19.7 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>faucet installation plumber mckinney tx</td>
+<td></td>
+<td>1 · 72.0 · 0</td>
+<td></td>
+<td>4 · 78.2 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>garbage disposal repair mckinney tx</td>
+<td>1 · 6.0 · 0</td>
+<td>5 · 53.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney repiping</td>
+<td></td>
+<td>5 · 53.2 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>plumbing+mckinney</td>
+<td></td>
+<td>4 · 65.8 · 0</td>
+<td></td>
+<td>1 · 96.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer cleaning mckinney</td>
+<td></td>
+<td>5 · 69.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>site:http://fppplumbing.com</td>
+<td></td>
+<td>5 · 16.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: http, //fppplumbing, com)</td>
+</tr>
+<tr>
+<td>clogged drain cleaning mckinney</td>
+<td></td>
+<td>4 · 69.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>google+find+me+a+plumber</td>
+<td></td>
+<td>4 · 72.8 · 0</td>
+<td></td>
+<td></td>
+<td>да: голосовой запрос</td>
+</tr>
+<tr>
+<td>plumber in mckinney, tx</td>
+<td></td>
+<td>4 · 47.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>repiping services near me</td>
+<td>4 · 24.2 · 0</td>
+<td>4 · 24.2 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>toilet repair mckinney tx</td>
+<td></td>
+<td>4 · 65.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>dpp plumbing</td>
+<td>3 · 65.0 · 0</td>
+<td>3 · 65.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: dpp)</td>
+</tr>
+<tr>
+<td>garbage disposal installation mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3 · 12.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tankless water heater repair</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3 · 80.7 · 0</td>
+<td>не наше (tankless не делаем)</td>
+</tr>
+<tr>
+<td>patio repair mckinney tx</td>
+<td></td>
+<td>3 · 63.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: patio)</td>
+</tr>
+<tr>
+<td>plumbing company mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3 · 68.3 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing repair mckinney, tx</td>
+<td></td>
+<td>3 · 71.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>24 hour plumber mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 56.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>bathroom plumbing mckinney tx</td>
+<td>1 · 54.0 · 0</td>
+<td>2 · 52.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>best plumbers in mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 31.0 · 0</td>
+<td>да: оценочное слово в текст не ставим: best</td>
+</tr>
+<tr>
+<td>clogged toilet mckinney</td>
+<td></td>
+<td>2 · 80.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber 75070</td>
+<td></td>
+<td>2 · 22.5 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (чужой индекс)</td>
+</tr>
+<tr>
+<td>flawless leak detection mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 1.0 · 0</td>
+<td>частично (нет слов: flawless)</td>
+</tr>
+<tr>
+<td>mckinney drainage system repair</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 72.0 · 0</td>
+<td>частично (нет слов: drainage)</td>
+</tr>
+<tr>
+<td>mckinney plumbing company</td>
+<td></td>
+<td>2 · 74.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney texas plumbers</td>
+<td></td>
+<td>1 · 63.0 · 0</td>
+<td></td>
+<td>1 · 73.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney tx leak detection</td>
+<td></td>
+<td>2 · 131.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber 75070</td>
+<td></td>
+<td>2 · 41.0 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (чужой индекс)</td>
+</tr>
+<tr>
+<td>plumber services</td>
+<td></td>
+<td>2 · 22.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbers in mckiinney tx</td>
+<td></td>
+<td>2 · 94.5 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: mckiinney)</td>
+</tr>
+<tr>
+<td>plumbing service mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2 · 23.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>slab leak detection near me</td>
+<td>2 · 11.5 · 0</td>
+<td>2 · 11.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>trapp plumbing</td>
+<td>2 · 69.5 · 0</td>
+<td>2 · 69.5 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: trapp)</td>
+</tr>
+<tr>
+<td>cast iron plumbing mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 13.0 · 0</td>
+<td>частично (нет слов: cast, iron)</td>
+</tr>
+<tr>
+<td>clogged drain mckinney</td>
+<td></td>
+<td>1 · 73.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain service mckinney</td>
+<td></td>
+<td>1 · 98.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain repair mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 78.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumbing mckinney tx</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 21.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumbing services mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 25.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>expert plumbing &amp; heating</td>
+<td>1 · 12.0 · 0</td>
+<td>1 · 12.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: expert, heating)</td>
+</tr>
+<tr>
+<td>expert plumbing mckinney tx</td>
+<td>1 · 29.0 · 0</td>
+<td>1 · 29.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: expert)</td>
+</tr>
+<tr>
+<td>fairfield plumbing</td>
+<td>1 · 9.0 · 0</td>
+<td>1 · 9.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: fairfield)</td>
+</tr>
+<tr>
+<td>faulk plumbing</td>
+<td></td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: faulk)</td>
+</tr>
+<tr>
+<td>first choice plumbing</td>
+<td>1 · 7.0 · 0</td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: choice)</td>
+</tr>
+<tr>
+<td>flush plumbing</td>
+<td></td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>fps plumbing</td>
+<td></td>
+<td>1 · 3.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: fps)</td>
+</tr>
+<tr>
+<td>heater replacement mckinney</td>
+<td></td>
+<td>1 · 81.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>immaculate plumbing service mckinney tx</td>
+<td>1 · 48.0 · 0</td>
+<td>1 · 48.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: immaculate)</td>
+</tr>
+<tr>
+<td>impeccable plumber mckinney tx</td>
+<td>1 · 29.0 · 0</td>
+<td>1 · 29.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: impeccable)</td>
+</tr>
+<tr>
+<td>kitchen plumbing mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 41.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>licensed plumbing contractor mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 82.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>local guide program</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: program)</td>
+</tr>
+<tr>
+<td>local plumbing service mckinney tx</td>
+<td></td>
+<td>1 · 47.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney plumbing</td>
+<td></td>
+<td>1 · 88.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney sewer and drain cleaning</td>
+<td></td>
+<td>1 · 45.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>mckinney slab leak water damage</td>
+<td></td>
+<td>1 · 92.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: damage)</td>
+</tr>
+<tr>
+<td>mckinney tx plumbing service</td>
+<td></td>
+<td>1 · 60.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pipe lining companies near me mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td>частично (нет слов: lining)</td>
+</tr>
+<tr>
+<td>plumbing companies in mckinney</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 · 80.0 · 0</td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing companies mckinney tx</td>
+<td></td>
+<td>1 · 98.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumbing repair mckinney texas</td>
+<td></td>
+<td>1 · 61.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pop's plumbing</td>
+<td></td>
+<td>1 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: pop)</td>
+</tr>
+<tr>
+<td>ppx plumbing</td>
+<td></td>
+<td>1 · 70.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: ppx)</td>
+</tr>
+<tr>
+<td>site:fppplumbing.com</td>
+<td>1 · 19.0 · 0</td>
+<td>1 · 19.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: fppplumbing, com)</td>
+</tr>
+<tr>
+<td>trenchless plumber mckinney</td>
+<td></td>
+<td>1 · 68.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: trenchless)</td>
+</tr>
+<tr>
+<td>whole house repipe mckinney</td>
+<td>1 · 34.0 · 0</td>
+<td>1 · 34.0 · 0</td>
+<td></td>
+<td></td>
+<td>не наше (repipe: нет такой услуги)</td>
+</tr>
+<tr>
+<td>yes</td>
+<td>1 · 3.0 · 0</td>
+<td>1 · 3.0 · 0</td>
+<td></td>
+<td></td>
+<td>нет (нет слов: yes)</td>
+</tr>
+</tbody>
+</table></main></body></html>
