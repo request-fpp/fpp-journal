@@ -1,0 +1,343 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 16.10.2026 00:32</p><h1>superseo page audit: /plumber-mckinney-tx/, version 3 (local build)</h1>
+<p>Date: October 16, 2026. Auditor: Claude Code, following the superseo page-audit skill (SKILL.md 0.2.1, with its four references loaded at the steps that call for them).</p>
+<p>What was audited: the built page <code>site/dist/plumber-mckinney-tx/index.html</code> (served locally at http://127.0.0.1:8798/plumber-mckinney-tx/) and its source text <code>source/mckinney-text-v3.md</code>. The live copy at fppplumbing.com still carries the old text and was not audited, except as the "before" picture from the crawl (<code>source/crawl/pages/plumber-mckinney-tx.json</code>).</p>
+<p>Competitors: the ten pages saved as text on October 3, 2026 in <code>source/competitors/2026-10-03-mckinney/00.txt</code> to <code>09.txt</code> (the top results for "plumber mckinney tx", "plumber in mckinney", "mckinney plumbing" on that day). 00, 01 and 02 were read in full, 03 to 09 were read as well. No competitor page was fetched live (several block bots); a WebSearch for the primary keyword returned only directories and press-release pages, so it was not used as evidence. The city facts on the page were checked against the saved copies of the McKinney city pages in <code>docs/briefs/mckinney/work-6a/</code> (the live city page returned 403 to the fetch tool).</p>
+<p>Traffic context: Search Console rows for this URL (<code>source/gsc/page-query-3m.csv</code>, <code>page-query-16m.csv</code>) and the project's own query table for version 3 (<code>exports/mckinney-v3-gsc-table.md</code>). The findings are weighted by those numbers where they exist.</p>
+<p>Project constraints that override generic advice (from CLAUDE.md): no price but the $49 weekday service call; no arrival time promises; no em or en dashes; no groups of three as a habit; no invented numbers, cases or customers; no tankless, hydro jetting, reroute or repipe; reviews quoted word for word; "plumber near me" at most a few times; headings as plain statements, never search phrases bent into questions; city pages never mention or link neighboring cities (McKinney served from the Frisco office is allowed and stated); "North Dallas suburbs" as the only region name. Where a recommendation would break one of these, the report says so and gives the version that keeps the rule.</p>
+<hr />
+<h2>Step 1: what the page is</h2>
+<ul>
+<li>Title (61 characters): "Plumber in McKinney, TX: Water Pressure, PRV &amp; 24/7 Emergency"</li>
+<li>Meta description (154 characters): "Low water pressure, a buried PRV, a water heater past ten years, a main line backed up on a Sunday. Licensed McKinney plumbers, the price before the work."</li>
+<li>H1 (78 characters): "Plumber in McKinney, TX: Water Pressure, PRV, Water Heaters &amp; 24/7 Emergencies"</li>
+<li>Headings: 11 content H2 (services, water pressure and the PRV, main water line repair, common problems, drains and sewer lines, the City of McKinney, emergency plumber, how a call goes, FAQ, reviews, the Frisco office) plus the shared "Request Service" H2; six H3 under "Common Plumbing Problems in McKinney Homes" (water heaters, slab leaks, leaks nobody can see, the bathroom sink that drains the air conditioner, shower valves and 108 PSI, a toilet that rocks). Hierarchy is clean: one H1, H2 then H3, no skipped levels in the content.</li>
+<li>Length: about 4,530 words inside <code>&lt;main&gt;</code> (captions, FAQ, reviews and the office block included); the source file counts 3,818 words from the H1 to the closing paragraph. The old live page: 1,561 words of its own text.</li>
+<li>Links in the body: 31 (29 internal: the homepage twice, all 13 service pages, 3 guides; 2 outbound: the City of McKinney "Meters, Leaks and Pipes" page and the Frisco Google profile). Plus 4 review source links, the "On this page" row (11 anchors), the shared "What is happening right now?" aside (4 links to the emergency page). Every outbound link opens in a new tab.</li>
+<li>Media: 13 photos (the van on the first screen, eager and fetchpriority high; 12 lazy job photos with descriptive alt text and dimensions) and 8 silent clips (preload none, posters, VideoObject nodes).</li>
+<li>Schema (one JSON-LD graph, 18.8 KB): Plumber organization (@id #organization, both offices as Place with geo, hours, the license credential), WebSite, WebPage (dateModified 2026-10-15, author Denys, mainEntity the Service), BreadcrumbList, Service (areaServed McKinney, provider the organization), Person (Denys Kavaler, LinkedIn sameAs), 4 Review nodes (no rating total), 8 VideoObject nodes, FAQPage with the 7 questions word for word.</li>
+<li>Dates and author: byline "By Denys Kavaler, Managing Partner and Licensed Plumber, Updated October 2026" with a <code>time</code> tag (2026-10-15). No visible published date; the WebPage node has no datePublished.</li>
+<li>Robots meta: noindex (the draft build; the live build drops it). Canonical to https://fppplumbing.com/plumber-mckinney-tx/. Open Graph and Twitter tags complete, OG image 1200 by 630 (the van).</li>
+<li>Lighthouse (project's run, local server without compression): phone 98, LCP 2.2 s, CLS 0; desktop 100, LCP 0.5 s. HTML 162 KB, of which 59 KB inline CSS, 12 KB inline JS, 19 KB JSON-LD.</li>
+</ul>
+<h2>Step 2: primary keyword</h2>
+<p>"plumber mckinney tx", with "plumber in mckinney" as the exact form the page uses in its title, H1 and five times in the body. Reasoning: the title, H1, URL (/plumber-mckinney-tx/), the first paragraph and the keyword map all point at the "plumber + McKinney" head cluster; the secondary targets named in the brief ("emergency plumber mckinney", "low water pressure plumber mckinney") each have a section of their own.</p>
+<h2>Step 3: the SERP as saved</h2>
+<p>Ten results, by file: 00 Baker Brothers (McKinney location page of a multi-trade company), 01 Bewley Plumbing (homepage, McKinney company since 1947), 02 Milestone (templated McKinney plumbing page of a large regional brand), 03 Cr Plumbing (homepage, McKinney address, since 1970), 04 Roto-Rooter McKinney (location page, the longest), 05 JMP Plumbing (homepage, McKinney company), 06 Legacy Plumbing (McKinney service-area page, serves from Frisco), 07 Hackler Plumbing (homepage, McKinney company, embedded Google reviews), 08 Jimmy Cash's Plumbing (short homepage), 09 Genzel Plumbing (homepage, McKinney company since 2001). Eight of ten show a McKinney street address. Six are homepages. All ten carry the brand name in the title tag. All ten put a phone number in the body text. None names a warranty term; one (JMP) names prices.</p>
+<hr />
+<h2>PHASE 0: CONTENT IDENTITY</h2>
+<p>What the page is engineered to do: make a McKinney homeowner with a plumbing problem call the Frisco line or send the request form, and make Google treat this URL as the company's McKinney page for "plumber + McKinney" and "emergency plumber + McKinney" (the latter by Denys's decision of October 5, 2026: the city page owns the emergency queries of its city).</p>
+<p>Content type: location page (service-area page) with a strong field-case layer. Journey stage: problem-aware to most-aware (a homeowner who already has a symptom and is choosing a company). Implicit intent: transactional and commercial investigation. Success: positions in the top 10 for the McKinney head terms (today the page averages position 46 to 60 on them with zero clicks in 16 months), calls and form requests, and the city's emergency queries moving from the Frisco page and the homepage to this page.</p>
+<p>Mismatch check: the page claims to be the McKinney page of a company with no McKinney office and says so plainly (Frisco office at the city line). That is honest and matches how Legacy Plumbing, the one other non-resident on the SERP, handles it. The one tension: at about 4,500 words it is three to four times the median competitor; a "plumber mckinney tx" searcher decides fast. The first screen (symptom hook, answer, $49, two buttons), the trust band and the "On this page" row carry the fast decision; the depth below is for the reader who compares, and for the answer engines. No structural mismatch, but the length is a cost to manage (Dimension 4).</p>
+<p>Location-page lens (content-types reference): the doorway test passes with room to spare. Not one paragraph could be moved to another city page by swapping the name: the water tower pocket at 56 to 58 PSI, the buried softener with a double check valve, the 1997 to 2011 copper service lines, the city's leak credit rules, the candle at 24 feet are McKinney and nothing else. NAP: the page shows the Frisco office NAP, identical to the schema and the footer, and never invents a McKinney address. LocalBusiness schema with geo is present on the organization's Place nodes.</p>
+<hr />
+<h2>PHASE 1: COMPETITIVE AND SEMANTIC LANDSCAPE</h2>
+<h3>1A: Top 3 (read in full)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>00 Baker Brothers, /mckinney-plumbing/</th>
+<th>01 Bewley Plumbing, homepage</th>
+<th>02 Milestone, /mckinney/plumbing/</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Format</td>
+<td>Location landing page: a dated-sounding anecdote, then 15 service blurbs, then a second block of neighborhood paragraphs, three office addresses</td>
+<td>Brand homepage: credentials list, coupons, owner paragraph, service tiles</td>
+<td>Templated city-service page: bullet lists per service group, "why choose", emergency block, offices list</td>
+</tr>
+<tr>
+<td>Angle</td>
+<td>"Since 1945", one call for plumbing, AC and electric, McKinney office on SH 121</td>
+<td>"Serving McKinney since 1947", women-owned, family-owned, plumbers not on commission, Chamber of Commerce</td>
+<td>Scale: 40,208 reviews, 100 percent satisfaction guarantee, membership plan</td>
+</tr>
+<tr>
+<td>Length (raw file, nav included)</td>
+<td>2,600 words</td>
+<td>1,000 words</td>
+<td>1,700 words</td>
+</tr>
+<tr>
+<td>E-E-A-T shown</td>
+<td>License numbers in the footer, three addresses, "background checked and drug tested", 80 years; no author, no photos of work in the text, the anecdote reads written to order</td>
+<td>Owner named with a photo caption, BBB A+, Chamber member, since 1947, address and hours; no technical content</td>
+<td>Licenses in the footer, drug tested and background checked, guarantee; nothing McKinney-specific beyond the word</td>
+</tr>
+<tr>
+<td>Covers what FPP's page does not</td>
+<td>Neighborhood entities (Craig Ranch, Adriatica, Eldorado, Tucker Hill, Stonebridge Ranch, Historic Downtown, Trinity Falls, Wilson Creek); gas lines; septic; water filtration; sump pumps; hydro jetting; tankless; "resource guides" library</td>
+<td>Years in business, "not a franchise", "not paid on commission", "no service agreements", coupons, a named owner</td>
+<td>Guarantee wording, "water pressure checks" as maintenance, membership benefits, "fully stocked van"</td>
+</tr>
+<tr>
+<td>What it does better</td>
+<td>Local shorthand: a McKinney street address, named subdivisions, a phone in every block, open seven days</td>
+<td>Trust list a reader can scan in five seconds; the owner's name and face</td>
+<td>Scannable structure: short bullets under each service, an answer-engine-friendly layout</td>
+</tr>
+<tr>
+<td>Where FPP can win</td>
+<td>Baker's anecdote is generic and promises speed; FPP's cases are dated, photographed and specific. Baker's service blurbs are encyclopedia copy (what a septic tank is)</td>
+<td>Zero depth: nothing about McKinney's pipes, soil, pressure or rules. FPP already owns that ground</td>
+<td>Zero local content: the page would read the same with any city name. FPP's page is the opposite</td>
+</tr>
+</tbody>
+</table>
+<h3>1A: the other seven (skimmed)</h3>
+<ul>
+<li>03 Cr Plumbing: since 1970, veteran-owned, "over 350 five-star reviews", "85 percent customer retention", McKinney address on Eldorado Pkwy, RMP license and the TSBPE address in the footer, three short reviews. No technical content.</li>
+<li>04 Roto-Rooter McKinney: the longest page (3,500 raw words). Water damage restoration as a second service, "no extra charge for nights, weekends, holidays", 379 McKinney-tagged reviews, a "Common Plumbing Issues in McKinney, TX Homes" block with a correct paragraph on pressure reducing valves, a nine-question FAQ that includes "What are the most common plumbing problems in McKinney?" (clay soil, hard water), PHCC membership, license, McKinney address, related articles. The nearest competitor to FPP's depth, written in a national template voice.</li>
+<li>05 JMP Plumbing: the most local of the ten. Four named local factors: expansive clay by neighborhood, tree roots by species (live oaks, pecans, elms, "within 5 to 10 years"), hard water ("roughly 14 to 16 grains per gallon" from the North Texas Municipal Water District), aging infrastructure (cast iron stacks and copper in pre-2000 homes, PEX and PVC in Trinity Falls and Painted Tree). Eleven FAQ with prices ($86 trip fee, $150 to $500 calls), permit rules, slab leak insurance, repipe duration. Owner named, since 2012, woman-owned.</li>
+<li>06 Legacy Plumbing: serves McKinney "from nearby Frisco" (the same position as FPP). Demographics (200,000 residents, 67 percent built after 2000), gas service (CoServ, Atmos), water (NTMWD, Superior rating, watering schedule, ET controller rebate), the city's leak credit and the 14,000 copper service line program, a "recent jobs in McKinney" list including a PRV replacement. The only competitor that links mckinneytexas.org.</li>
+<li>07 Hackler Plumbing: "Best Plumber in McKinney TX", BBB rating, "perhaps the lowest service call in McKinney", 114 Google reviews embedded (negative ones included), license M-39169, an "AI, learn about us" link. Mostly review text.</li>
+<li>08 Jimmy Cash's: 540 words, free phone estimates, "beat any written bid by 10 percent", 20 years, license.</li>
+<li>09 Genzel: since 2001, 5.0 on Google, RMP-23766, Guardian Plan membership ($27 a month), "track your plumber", eight FAQ, McKinney address on Virginia Pkwy.</li>
+</ul>
+<h3>1B: Semantic context</h3>
+<p>Central entities of the topic as the SERP and the page define it: the City of McKinney (its utility, its inspectors, its leak credit, its service line program), the water meter and the two shut-off valves, the pressure reducing valve, static pressure in PSI, the North Texas Municipal Water District and its hard water, expansive clay soil, slab foundations and the copper under them, sewer laterals and tree roots, water heaters with T&amp;P discharge, expansion tank and pan, the neighborhoods (historic downtown east of US 75 versus the post-2000 subdivisions), the Texas State Board of Plumbing Examiners and the RMP license.</p>
+<p>Attributes the page already states with values (Entity-Attribute-Value triples, counted on the page): PRV set point about 70 PSI; replacement threshold over 80 PSI; parts of McKinney over 100 PSI; the water tower pocket 56 to 58 PSI; a clogged PRV holding a house at 40; normal drop between two open spigots 10 PSI, abnormal 30; 108 PSI at the shower valve house; copper service lines in the clay 20 to 50 years; city copper lines installed 1997 to 2011; a tank good for about ten years; the leak credit once in 12 months, form within 60 days, with the plumber's invoice; houses east of US 75 a good share before 1980, some a hundred years old; the rest mostly after 2000; the candle at 24 feet; about ten nails in one line; the softener seven feet from the valve box; service line leak five to ten inches past the meter. That is 15 or more specific values in the first 500 words of the pressure section alone, which is the top band of the semantic-entity checklist.</p>
+<p>Predicates: braze, tunnel, dig out, snake, run the camera, locate, isolate, weep at the stem, regulate, adjust, set, corrode, rust through, seep past the wax ring, swell and shrink, back up, gurgle, press, cap, pull the toilet, pull the permit, pass the inspection. Well above the five domain predicates the checklist asks for.</p>
+<p>Semantic nodes the top competitors have that the page lacks (details and the content brief in the Semantic Gap Analysis below): hard water and the NTMWD as the water source; neighborhood names; cast iron drains in the oldest houses; tree species; the count and start year of the city's service line program; the housing-age figures attributed to the Census; "licensed and insured" and the company's founding year on this page; the review count; water damage restoration as a partner service.</p>
+<h3>1C: Search intent alignment</h3>
+<p>The SERP is one intent: local business pages (homepages and city pages), no guides, no listicles among the ten saved results. The page's format matches. Within that intent, the open angle is the one nobody on the SERP takes except JMP in outline: the plumber who explains McKinney's water (pressure, soil, the city's rules) in concrete numbers. The page takes exactly that angle. The second open angle is the emergency query family with the city name, where the homepage and the Frisco page currently collect the impressions; the page's emergency H2 and title words are positioned for it.</p>
+<hr />
+<h2>SCORECARD</h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Score</th>
+<th>Priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Information Gain and Originality</td>
+<td>9/10</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>2. Semantic Depth and Topical Completeness</td>
+<td>8/10</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>3. E-E-A-T Signals</td>
+<td>8/10</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>4. Structure, Readability and Time-to-Value</td>
+<td>7/10</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>5. Technical On-Page SEO</td>
+<td>8/10</td>
+<td>High (small fixes, large queries)</td>
+</tr>
+<tr>
+<td>6. Engagement, Distribution and Discoverability</td>
+<td>7/10</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>7. Conversion and Business Impact</td>
+<td>8/10</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>55/70</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Priority here means where the next hour of work buys the most, not how bad the dimension is.</p>
+<hr />
+<h2>DETAILED FINDINGS PER DIMENSION</h2>
+<h3>Dimension 1: Information Gain and Originality, 9/10</h3>
+<p>Strengths (specific):
+- Nothing on this page exists in the ten competitor texts: the city main at 56 to 58 PSI by the water tower (and the city's own test confirming it), a whole-house softener and a double check valve buried under a plastic rock and found by chasing a 30 PSI drop, a push-fit fitting corroding at the meter, the plastic sleeve carrying slab leak water up into the kitchen instead of into the ground, ten insulation nails sealing a line for years until they rusted, a lit plastic candle at 24.40 feet on the camera screen, a flange rusted through because a wax ring had leaked for a year or two, the AC condensate line tied into the bathroom sink line (one clog, two symptoms).
+- The "I didn't know that" test passes more than three times for a homeowner (the sleeve, the nails, the 10 versus 30 PSI rule, the leak credit paperwork, that the PRV sits in the flower bed next to a second shut-off valve).
+- The city facts are verified against the city's own pages (saved copies in <code>docs/briefs/mckinney/work-6a/</code>): registration before a permit, the leak credit conditions, the 1997 to 2011 copper lines, the T&amp;P and expansion tank and pan items of the residential packet.
+- Quotable material: the candle story and the softener story are the kind of thing a local news site or a Reddit thread repeats with a link.</p>
+<p>What holds it at 9, not 10:
+- Two statements that are verifiable and quotable sit unused: the city's own count of the service line program ("nearly 14,500 copper service lines", "54 percent of the city's 27,000 connections", begun April 2017, "aggressive soil in the region", from the saved city page <code>water-service-line-replacement.txt</code>), and the Census housing-age figures that stand behind "fifteen to twenty five years old" but are not attributed. Both would add first-hand-looking numbers that competitors (Legacy has "more than 14,000") only half carry.
+- The reviews are generic (none names McKinney, which the brief confirms cannot be fixed from the archive). Kevin N. and Javeed N. at least name a job.</p>
+<h3>Dimension 2: Semantic Depth and Topical Completeness, 8/10</h3>
+<p>Strengths: the entity network for pressure, water lines, slab leaks, leak detection, drains and the city's rules is complete and dense (1B). Follow-up questions are answered where they arise (whose side of the meter, what the inspector looks at, does the city adjust the bill, which office comes at night).</p>
+<p>What is missing (each is on two or more competitor pages, or is the page's own data pointing at a gap):
+1. Hard water. JMP ("14 to 16 grains per gallon", NTMWD), Roto-Rooter ("hard water buildup... sediment in water heaters"), Legacy (NTMWD, Superior rating). The page never names the water source or hardness, although it talks about tanks failing at ten years and cartridges wearing out. The project already holds the official figure (brief part 11: NTMWD 2025 report, hardness by plant; the saved file <code>ntmwd-annual-wqr-2025.txt</code>). The Plano page already does this with the city's water quality report; the McKinney page should do the same, one sentence with the official link.
+2. Neighborhood entities. Baker names eight, JMP five, Legacy "Historic Downtown". The page has "around the square", "east of US 75", "by the water tower at the Frisco line", "downtown". Rule check: neighborhoods may be named only where Denys named the place of a real job; the dictation file states that the districts read from phone geotags "do not go on the page or into the journal". So this gap closes only through Denys's word on each story (the softener house, the water tower house, the shower valve house), never from the file facts.
+3. Cast iron drain lines. JMP ("cast iron drain stacks" in pre-2000 homes), Roto-Rooter (older pipes). The page describes houses near the square built before 1980 and a hundred-year-old house with a backed-up main line, but never says what the drain lines under those houses are made of. The Plano page covers cast iron. Ask Denys whether the pre-1980 McKinney houses he has worked in have cast iron under the slab; one sentence with a link to /drain-services/ if yes.
+4. Tree species in the roots story (JMP: live oaks, pecans, elms). Only from Denys; a one-word addition to the May 2026 roots story if he remembers the tree.
+5. Water damage drying. Roto-Rooter builds a whole section on it. The laundry box story ends "the drying was the homeowner's next call". The allowed wording exists ("a restoration partner we trust", no name), and the emergency section could carry one sentence: when a leak has soaked floors we can bring the restoration partner we trust in with us. Fits the rules exactly.
+6. The yearly pressure check as advice. Milestone lists "water pressure checks" as maintenance; Denys's own repeated advice (CLAUDE.md: measure the house pressure every year, above 80 PSI the whole system is under stress) is not on the page, although the page is about pressure. One sentence in the PRV section or in FAQ 2.
+7. Query-language variants the page ranks for but does not spell out (from Search Console, 16 months): "low water pressure plumber mckinney" (580 impressions, average position 33.8, the best position of any big query of this page) and the exact phrase "low water pressure" appears zero times on the page; "faucet repair mckinney" family (about 870 impressions) and "faucet repair" appears zero times (the page says "faucet and shower valve repair"); "plumbers mckinney tx" and "plumbers in mckinney tx" (about 880 impressions) and the plural "plumbers in McKinney" or "McKinney plumbers" appears zero times in the body (only in the meta description); "clogged drains mckinney", "mckinney drain cleaning", "clogged drain plumber mckinney" (about 730 impressions) and the drains H2 carries neither "clogged" nor "McKinney".</p>
+<p>Forfeited by rule, stated so nobody chases them: "hydrojet sewer plumber mckinney tx" (243 impressions; hydro jetting is not a named service, the chain snake is the deep clean), "repiping mckinney" and "repiping near me" (about 25 impressions; FPP does not repipe), "trenchless", "tankless".</p>
+<h3>Dimension 3: E-E-A-T Signals, 8/10</h3>
+<p>Scored with the compact rubric. The 30-second heuristic (datable first-person observations): eight dated cases (August, September, May, May, July, October 2026 and two more without a year by Denys's rule), every one with an original photo or clip, several with gauge readings. Experience: 9. Expertise: 8. Authoritativeness: 7. Trust: 7.</p>
+<p>Experience, strong: the cases are dated to the month where the job is from 2026 (checked against the archive: photo 322 of the flange is July 29, 2026; 321 of the softener is September 29, 2026; 315 and 316 of the water tower house are August 5, 2026; 317 of the roots is May 20, 2026; 318 of the candle is May 2, 2026), carry readings (40, 56, 70, 75, 108 PSI; 24.40 FT on the screen) and show what did not work first (the softener story: new PRV and valve, still dropping; the laundry box: "Somebody had been out before us and didn't find it").</p>
+<p>Expertise, strong: the why behind each recommendation is there (why a PRV over 80 PSI costs money, why the floor got wet before the yard, why a nail seals a pipe, why the inspector looks at the vent first). Edge cases: the city side versus the homeowner's side of the meter; the pocket where the main itself is low.</p>
+<p>Authoritativeness: byline to a verifiable person (the Person node carries LinkedIn; the byline links to the Denys block on the homepage); the page sits inside a 13-service cluster plus guides, and links all of them; one outbound official source (the city). Competitors cite nothing official except Legacy. Where it falls short: the Census figures behind the housing-age sentence are not cited (the Plano page cites table B25035 and links it), and the NTMWD is absent.</p>
+<p>Trustworthiness, with exact locations. The page is accurate against the sources, with these exceptions to fix:
+1. Services section, last paragraph: "A disposal in McKinney is like a disposal anywhere: when the motor hums or the bottom leaks, it gets replaced, usually in the same visit." The site's own disposal page says the opposite about a hum: "A hum usually means a jam, and caught early it is a quick fix" and "A disposal that hums but will not spin is jammed... Caught early, that is often a quick fix and the unit lives on." Denys's dictation says only "Garbage disposal: as usual, nothing out of the ordinary. We replace them." The hum trigger is the writer's addition and contradicts the owner page. Fix: "when the bottom leaks or the motor has quit, it gets replaced, usually in the same visit."
+2. "Shower valves, and what 108 PSI does to them": "New copper went up to the valve, brazed." The clip under the same story is captioned "the new valve pressed in inside the open wall" and its VideoObject description says "Press tool connecting a new shower valve to copper lines". Denys's dictation for this job says the copper risers were redone back to clean metal and says nothing about brazing or pressing. The text asserts a method the pictures contradict. Fix: drop "brazed" ("New copper went up to the valve.") unless Denys says the risers were brazed and only the valve connections pressed; then say both.
+3. Same section: "That is most of the reason cartridges in McKinney showers wear out early." The dictation says high pressure stresses the whole system and faucets start dripping; "most of the reason" is a quantifier Denys did not give (the same pattern the October 15 slop audit removed elsewhere). Fix: "That is one of the reasons cartridges in McKinney showers wear out early."
+4. Services section, second paragraph: "because the houses here are past twenty years". Denys: "many houses are older than 20 years". Fix: "because a lot of the houses here are past twenty years".
+5. FAQ 3 and the water heater H3: "the inspection passes the first time" (FAQ) is an unhedged promise. Denys's words: the inspectors go by the code and it has never been a problem. Fix: "and the inspection has not been a problem on our jobs."
+6. Intro, second paragraph: "plumbing repair in McKinney is residential work for us: houses, not strip malls." This is positioning the dictation does not contain ("residential" was added for the query "residential plumbing mckinney"), and FPP does take the occasional commercial call (a restaurant main line, per CLAUDE.md). A McKinney restaurant reading this sentence will call someone else. Fix, if Denys agrees: "plumbing repair in McKinney is mostly houses for us" (keeps the word residential nearby: "residential work, mostly").
+7. City section and FAQ 5: "for a bill that ran well above your normal usage". The city's condition is usage "at least 3 times greater than the same period of the prior year" and a bill over $150. The project deliberately keeps the dollar figure off the page; the usage multiple is not a price and would spare a reader a refused request: "when the leak pushed one bill to at least three times your usage for the same period a year earlier". Denys's call; the current wording is not wrong, only vaguer than the city's.
+8. Minor: "Five inches from the meter." (bold lead) against "five to ten inches past the meter" in the next sentence and "a few inches" in the caption. Fix the lead to "A few inches from the meter." Also "Right now this is the drain cleaning call we get most, some days five of them" is true in October 2026 and will read stale in spring; "In October 2026 this was..." or a note to refresh with the monthly "From the Job" check.</p>
+<p>Red flags from the rubric (schema without substance): none. The Person node matches a byline and a demonstrated author; the Review nodes carry visible verbatim reviews with source links and no rating total; the FAQ questions read like a homeowner's questions, not keyword strings; the "Updated" date moves only when the text moves.</p>
+<p>Note for information, not a recommendation: Google does not show review rich results for reviews a business publishes about itself; the Review nodes here are machine-readable record only, which is the project's stated intent.</p>
+<h3>Dimension 4: Structure, Readability and Time-to-Value, 7/10</h3>
+<p>Time-to-value: the first sentence is the symptom, the fourth sentence is the diagnosis (the PRV in the flower bed), the second paragraph is the offer ($49, price before work, Frisco office). A reader who reads only H2s and first sentences gets the whole page: every section opens with its answer ("The PRV is the valve that decides what pressure your house sees", "Two things get into a McKinney sewer line: roots and objects", "The meter is the line between you and the city"). The "On this page" row gives eleven jumps.</p>
+<p>Structure: logical (services, the two McKinney specialties, the common problems, drains, the city, emergency, the call, FAQ, reviews, office, closing). Headings are plain statements and none is a question. Hierarchy correct. Section lengths vary (about 150 to 950 words), which the anti-pattern rules want.</p>
+<p>Readability, with locations:
+- Paragraph length. The softener story is one block of about 190 words with eleven sentences of readings; on a phone that is a full screen of text with no break. Split after "pulled the city permit." The water heater H3 is one paragraph that carries the job list, the permit, the inspector's two priorities, the gas sentence and two links; the gas sentence ("If you smell gas, leave the house first...") sits between the inspector and the links with nothing introducing it. Give the gas sentence its own short paragraph, or move it after the links.
+- No table anywhere. The project's own AI-engine rule asks for simple tables for comparisons, and the page has two natural ones: what the gauge reading means (40, 56 to 58, 70, over 80, over 100: all figures already on the page) and whose pipe it is (the meter and the pipe to the street, the city's; the pipe to the house, the two valves, the sewer line from the cleanout, yours). Competitors have none; answer engines lift tables cleanly.
+- Fragments: "Still dropping.", "It was switched on. It was still glowing.", "Nothing moves now." The version 3 build notes list these seven places for Denys; at seven on 3,800 words they read as speech, not a tic. No change recommended.
+- Hyphenation (the only language errors found): "fifteen to twenty five years old" should read "twenty-five"; "a hundred year old house" (caption of photo 318 and its alt) should read "hundred-year-old"; "once in a twelve month period" (FAQ 5) and "once in twelve months" are fine, but "a twelve month period" should read "twelve-month". Hyphens are allowed by the dash rule (the page already uses shut-off, frost-free, push-fit).
+- "A lot of people find us by typing plumber near me into a phone." reads cleanly, but the typed phrase could stand in quotation marks for the reader; optional.
+- FAQ answers are inside closed <code>details</code> elements. Fine for crawlers (the text is in the HTML) and for AI engines; a reader has to tap each one. Consider opening the first one by default.
+- Length: 4,500 words is the longest city page on the SERP by a wide margin. Nothing here is padding, but the common-problems section could lose nothing by moving the kitchen island story's second half onto the slab leak page later, if Denys ever wants the page shorter. Not recommended now.</p>
+<h3>Dimension 5: Technical On-Page SEO, 8/10</h3>
+<p>Weighted with the POP hierarchy (Group A: title, body, URL, H1; Group B: H2 and H3, inbound anchor text; Group C: bold, alt; Group D: schema, meta description).</p>
+<p>Group A:
+- Title: keyword present ("Plumber in McKinney, TX"), 61 characters, a reason to click (the three things a McKinney caller has: pressure, PRV, an emergency). Against the top 3: every competitor title carries a brand name; this one has none, and the page already draws branded impressions ("fpp plumbing", 20 impressions at position 1.9 in 3 months). Adding " | FPP Plumbing" makes 75 characters, so the brand may be cut on a phone; the keyword and the promise survive the cut. The title was decided by the chat at Denys's request, so this needs his word.
+- H1: keyword-rich, 78 characters, Denys's opening kept. Adding the one word "Low" ("Low Water Pressure") puts the page's best-ranked big query on the first screen; also his decision.
+- URL: /plumber-mckinney-tx/, unchanged from the live site, exact.
+- Body: "McKinney" 61 times in main (19 of them in captions), "plumber in McKinney" 5 times, "plumbing repair in McKinney" once, "emergency plumber in McKinney" once, "plumber near me" once, "$49" three times, "PSI" 18, "PRV" 20. No stuffing on 4,500 words. The exact variants the page's Search Console rows ask for are missing: "low water pressure" (0), "faucet repair" (0), "plumbers in McKinney" or "McKinney plumbers" (0 in the body), "clogged drain" (0; "clogged" 4 times).</p>
+<p>Group B:
+- H2s: eight of eleven carry "McKinney". The three live H2s with Search Console history are kept word for word ("Our Plumbing Services in McKinney", "Main Water Line Repair in Older McKinney Homes", "McKinney Plumbing FAQ"); the water line H2 alone held about 1,400 impressions over 16 months. The two H2s that could carry the page's query language and do not: "Water Pressure and the PRV in the Flower Bed" (no "low", no "McKinney") and "Drain Lines and Sewer Lines: Roots, and One Candle at 24 Feet" (no "clogged", no "McKinney", no "drain cleaning"). Both are new headings, so changing them costs nothing in Search Console.
+- H3s: six, descriptive, none with the city. "Slab leaks, and the ground under the house" could read "Slab leaks in McKinney, and the ground under the house" (the keyword map gives "slab leak repair mckinney" to the slab leak page; a city page may name the topic in one heading without targeting the repair phrase).
+- Inbound anchors: in the built content, the anchor "plumber in McKinney" points at this page from the emergency page, the slab leak page, the leak detection page, the water lines page, the shut-off guide and three posts. Eight of the thirteen service pages have no "plumber in McKinney" anchor yet (drain services, drain cleaning, water heaters, fixtures, hose bib, toilet, PRV, disposal; the expansion tank and disposal pages link the URL without that anchor). Those are old texts awaiting their rewrite, where rule 7 already requires the anchor; worth listing so none is missed.</p>
+<p>Group C: alt text on all 13 photos is descriptive and carries the city; captions are specific; bold is used for the lead sentence of each case (21 strong elements), which is the project's chosen pattern.</p>
+<p>Group D:
+- Meta description: 154 characters, written for the click (symptoms, "Licensed McKinney plumbers", "the price before the work"), and it is the one place on the page where "Low water pressure" appears as an exact phrase. It could add the $49 and 24/7 (both allowed) if kept under about 155; see Rewritten Elements.
+- Schema: complete and consistent with the page (checked node by node): the organization with both offices and the license credential, the Service with areaServed McKinney and provider @id, FAQPage matching the seven visible questions, four Review nodes matching the visible text, eight VideoObject nodes with duration, uploadDate, contentUrl and thumbnailUrl, the Person with LinkedIn. Small gaps: the WebPage node has dateModified but no datePublished (the live page's publish date, May 16, 2025, is known from the crawl); the Service node has no hoursAvailable, which the emergency page's Service node carries (24/7); the BreadcrumbList names the page by its full title (61 characters) where "Plumber in McKinney, TX" would read better in a SERP breadcrumb and matches the visible breadcrumb if both change.
+- Canonical, OG and Twitter: present and consistent. Noindex is the draft build, by design.
+- Links: 29 internal in the body with descriptive anchors (every anchor says what the destination is), 2 outbound (one official). The internal link set covers all 13 services and 3 guides from one page, which SearchPilot's tests reward when the anchors are contextual, as they are here.
+- Featured snippets and AI Overviews: paragraph-style definitions that can be lifted exist ("The PRV is the valve that decides what pressure your house sees, whatever the city main delivers."; "The meter is the line between you and the city."). No numbered steps (the six steps are on the homepage by design) and no tables (see Dimension 4).
+- Performance: LCP 2.2 s on the phone run (the project's rule is under 2 s; measured on a local server without compression, Frisco measured 2.0 to 2.2 in the same conditions). The 59 KB of inline CSS on every page and the 19 KB JSON-LD are the fixed costs; the first screen photo is eager with fetchpriority high and sized. Nothing page-specific to fix; measure on the real host after the page goes live.</p>
+<h3>Dimension 6: Engagement, Distribution and Discoverability, 7/10</h3>
+<ul>
+<li>Google Discover: not a target for a service page; the OG image (the van, 1200 by 630) is correct for sharing, not a Discover hero. No change.</li>
+<li>Shareability: two stories are genuinely retellable (the candle at 24 feet; the buried softener and the double check valve). The page has no element that invites a share, which is right for the page type.</li>
+<li>Behavioral: the symptom-first opening answers the query before the fold, the trust band and the "On this page" row reduce pogo-sticking; 13 original photos and 8 silent clips keep a comparison shopper reading; clips load only when scrolled to (about 2 MB only then). On a phone the page is long; the row of jump links and the sticky call bar are the mitigation. Reviews sit far below the fold and name no city; that is the archive, not the page.</li>
+<li>Open Graph and Twitter cards: complete, same title as the page.</li>
+<li>Weak points: no scannable summary element (a table or a short list of "what we get called to McKinney for most") between the first screen and the first H2 for the reader who will not read 4,500 words; FAQ collapsed by default.</li>
+</ul>
+<h3>Dimension 7: Conversion and Business Impact, 8/10</h3>
+<ul>
+<li>Value proposition in five seconds: yes (symptom, diagnosis, "the price before anything is opened", $49 credited).</li>
+<li>CTA: "Call Frisco 469-998-8999" and "Request Service" on the first screen, the sticky call bar, Request Service in the header and the red footer band, the office block with the number, the closing paragraph pointing at both. Single clear primary action (call), repeated logically.</li>
+<li>Social proof near the conversion point: the trust band (Google 5.0, Yelp 5.0, BBB A+, Thumbtack Top Pro, 4,500+ customers) sits directly under the first screen buttons; the reviews are at the bottom. Missing near the top: the standard review-count sentence ("more than 450 five-star reviews across Google, Yelp and Thumbtack") and the words "licensed and insured" in the body (the page says "licensed" three times, "insured" only in the footer; all ten competitors say both).</li>
+<li>Friction: the request form has six fields with strict name validation; a known trade-off (spam) that the project chose. The "What is happening right now?" aside routes an emergency reader to the right instructions without leaving the decision.</li>
+<li>Urgency: genuine (24/7, the emergency fee said before a truck moves); no fabricated urgency anywhere, which also keeps the arrival-time rule.</li>
+<li>One inconsistency: the first screen shows one button (Frisco) because Frisco serves McKinney, but the shared bottom block says "Call the office closest to you" with both Frisco and Plano. A McKinney reader may wonder which to call. The shared block is site-wide by rule; if it can take a page-level flag, show Frisco first or alone on pages with an office set.</li>
+</ul>
+<hr />
+<h2>SEMANTIC GAP ANALYSIS (the content brief for what to add)</h2>
+<p>Each item names the source it must come from, because the project writes nothing without one.</p>
+<p>Entities to add:
+1. North Texas Municipal Water District, with the attribute total hardness (the 2025 report figure for the plant that serves McKinney; the saved report <code>docs/briefs/mckinney/work-6a/ntmwd-annual-wqr-2025.txt</code> and the brief's part 11 carry the figures, 200 and 144 ppm by station) and the relationship hard water, scale, water heater sediment, cartridge wear. One sentence in the water heater H3 or the shower valve H3, with the official link. Source: the NTMWD report (official). Rule check: passes (an official figure, not a price).
+2. U.S. Census Bureau, table B25035 and B25034 for McKinney city: median year built 2007, 7.8 percent of homes built before 1980 citywide, about 26 percent in 75069 east of US 75, 72.8 percent built in 2000 or later. Attribute the housing-age paragraph of "Common Plumbing Problems in McKinney Homes" to the Census and link the table, as the Plano page does. Source: data.census.gov (official). Rule check: passes.
+3. The City of McKinney water service line replacement program as an entity with values: begun April 2017, ten-year program, nearly 14,500 copper service lines (54 percent of 27,000 connections), replaced with polyethylene, the city's own reason "aggressive soil in the region". One sentence added to the existing 1997 to 2011 line, with the program page as a second city link. Source: the saved city page <code>water-service-line-replacement.txt</code> (check the live page once more before the build). Rule check: passes.
+4. Neighborhood names for the real jobs (the water tower house, the softener house, the shower valve house, the roots house): only if Denys names the neighborhood himself; the district names read from phone geotags are excluded by the dictation's own note. Rule check: allowed only from his word.
+5. Cast iron drain lines under the pre-1980 houses near the square: only if Denys confirms he has seen them there. One sentence with a link to /drain-services/ (owner page). Rule check: allowed from his word; no depth on the city page.
+6. Tree species in the roots story: only from Denys.
+7. The restoration partner: "a restoration partner we trust" in the emergency section (allowed wording, no name).</p>
+<p>Attributes and advice already Denys's, missing here:
+8. The yearly gauge check: "Screw a gauge onto a hose bib once a year; over 80 PSI the whole system is under stress." His standing advice; put it in the PRV section or in FAQ 2.
+9. No cleaning tablets in the toilet tank: his standing advice; one sentence in the toilet H3 (optional).</p>
+<p>Query-language variants to spell out (Group A/B inclusion, zero on the page today):
+10. "low water pressure" (H2 and one sentence), "clogged drains in McKinney" (H2), "faucet repair in McKinney" (one sentence in the shower valve H3), "plumbers in McKinney" or "McKinney plumbers" (one sentence, for the plural family of about 880 impressions), "drain cleaning in McKinney" (already twice as the service name; fine).</p>
+<p>Predicates: the page's verbs are already expert. Two the competitors use and FPP must not: "hydro jet", "repipe" (and "reroute", "trenchless", "tankless"). Leave them out.</p>
+<p>Relationships to make explicit (Entity-Attribute-Value): hard water, water heater, sediment and tank life; the city program, the homeowner's side, the same copper and the same soil (the page implies it: make the sentence say the copper on the homeowner's side is the same material in the same soil, which is why the service line jobs on this page exist); PSI reading, PRV state, what fails (a table).</p>
+<hr />
+<h2>TOP 5 QUICK WINS</h2>
+<ol>
+<li>
+<p>Put "low water pressure" on the page, in the H2 and in one sentence. The page's best-ranked big query ("low water pressure plumber mckinney", 580 impressions over 16 months, average position 33.8, better than any other 500-plus query of this page) has zero exact matches in the text. Change the H2 "Water Pressure and the PRV in the Flower Bed" to "Low Water Pressure in McKinney and the PRV in the Flower Bed" (60 characters, a statement, two items, no triplet) and open the section's second paragraph with "Low water pressure in McKinney is usually the PRV, not the city: a clogged PRV holds the house low." The H2 is new on this page, so Search Console loses nothing. The "On this page" label "Water pressure" can stay.</p>
+</li>
+<li>
+<p>Change the drains H2 to "Clogged Drains and Sewer Lines in McKinney: Roots, and One Candle at 24 Feet" (76 characters, still a statement). It adds the city and "clogged drains" to the heading of the section that answers the "mckinney drain cleaning", "clogged drains mckinney", "clogged drain plumber mckinney", "sewer line plumber mckinney" family (about 870 impressions over 16 months at positions 65 to 88). The keyword map keeps "drain cleaning mckinney" for the drain cleaning page; a city page naming its own drains section is not a target conflict.</p>
+</li>
+<li>
+<p>One editing pass for the eight consistency and truth items in Dimension 3: the humming disposal sentence (contradicts the disposal page), "brazed" against the "pressed in" clip caption, "most of the reason" to "one of the reasons", "the houses here" to "a lot of the houses here", "passes the first time" to Denys's words, "Five inches" to "A few inches", the hyphens (twenty-five, hundred-year-old, twelve-month), and a date-safe form of "Right now this is the drain cleaning call we get most". Items 6 (residential only) and 7 (the city's three-times rule) go to Denys as questions.</p>
+</li>
+<li>
+<p>Add three one-liners the rules already allow and every competitor has in some form: "licensed and insured" in the intro's second paragraph ("FPP Plumbing is a local, licensed and insured plumbing company"); the standard review count in the reviews intro ("We have more than 450 five-star reviews across Google, Yelp and Thumbtack; here are four as their authors wrote them..."); Denys's yearly gauge check in the PRV section. Three sentences, zero new facts, three trust nodes the page lacks and the SERP shows.</p>
+</li>
+<li>
+<p>Spell out "faucet repair in McKinney" and the plural "plumbers" once each in the body: in the shower valve H3, "Faucet repair in McKinney is mostly cartridges and shut-off valves, and a drip that won't stop, or a handle that spins, is faucet and shower valve repair." (the existing link keeps its anchor); and in the closing or the office paragraph, "the plumbers who cover McKinney drive out of our Frisco office" becomes "our plumbers in McKinney drive out of our Frisco office" (or "McKinney plumbers" once). About 1,750 impressions of 16-month queries share those two variants.</p>
+</li>
+</ol>
+<p>Needs Denys's word, so not a quick win by itself: adding "Low" to the H1 (his H1 opening stays) and a brand in the title (see Rewritten Elements).</p>
+<hr />
+<h2>TOP 5 STRATEGIC IMPROVEMENTS</h2>
+<ol>
+<li>
+<p>Manage the trade-off the rebuild makes on purpose. The old page's only positions inside the top 15 came from the words that version 3 removed by decision: "slab leak plumber near me" (45 impressions at 7.7), "garbage disposal repair near me" (46 at 5.7), "slab leak plumber mckinney" (26 at 14.8), "garbage disposal repair mckinney" (12 at 9.9), all in the last three months, from the old title and the two old H2s. The keyword map hands those phrases to the slab leak page and the disposal page, which is right, but today the slab leak page averages position 32 on "slab leak repair mckinney" and the disposal page position 28 on "garbage disposal repair mckinney". Three steps: (a) when the slab leak page is rewritten, give it a McKinney passage (the kitchen island story is a natural cross-link in both directions; the URL already carries mckinney); (b) give the disposal page one McKinney sentence with the "plumber in McKinney" anchor; (c) watch these four queries for eight weeks after the McKinney page goes live, and if neither owner page picks them up, put the city into the H3 ("Slab leaks in McKinney, and the ground under the house") and keep the one-sentence disposal mention as it is. Reversible, measured, inside the rules.</p>
+</li>
+<li>
+<p>Add the three official entities with their links (Semantic Gap items 1 to 3): the NTMWD hardness figure in the water heater or shower valve item, the Census housing-age figures attributed and linked in the common-problems intro, and the city's service line program count and start year beside the 1997 to 2011 sentence. That takes the page from one outbound authority link to four, all official, as the Plano page has; it also turns three qualitative claims into quotable Entity-Attribute-Value facts that answer engines lift. About 120 words.</p>
+</li>
+<li>
+<p>Two small tables, no new facts. "What the gauge on the hose bib tells you": 40 (a clogged PRV, or the water tower pocket), 56 to 58 (what the main gives by the water tower), about 70 (where we set a PRV), over 80 (adjust or replace the PRV), over 100 (parts of McKinney with no working PRV: heater, cartridges, fill valves, slab copper pay for it). "Whose pipe it is": the meter and the pipe to the street, the city; the city's valve at the meter, city crews only; the pipe from the meter to the house, your shut-off valve, the sewer line from the cleanout to the house, yours. Both fit the project's AI rule ("comparisons use simple tables"), both are built from sentences already on the page, and no competitor has either.</p>
+</li>
+<li>
+<p>Inbound links and anchors. Eight of thirteen service pages have no "plumber in McKinney" anchor (old texts awaiting rewrite); six guides and posts name McKinney without linking the page (brief, table T4). As each is rewritten, add the anchor in running text (rule 7 already requires it); for the guides and posts, add the link where McKinney is named (allowed: posts link the relevant city page). Contextual in-body links to a page are Group B on-page and the strongest off-page lever the site controls. Also an off-site step that costs nothing: the Frisco Google Business Profile serves McKinney; once the page is live, a GBP post about one of the McKinney jobs (the candle, the softener) linking /plumber-mckinney-tx/ is a legitimate citation.</p>
+</li>
+<li>
+<p>Ask Denys for the McKinney-only material the rules allow and competitors carry in outline: the neighborhood of each told job (his word only), whether the old houses near the square have cast iron drains, the tree in the roots job, his line on commercial calls in McKinney (keep "houses, not strip malls" or soften it), the three-times usage rule for the leak credit, the restoration partner sentence, and a McKinney review (there is none in the archive; a request to the McKinney customers of the 2026 jobs for a Google review on the Frisco profile is the only way one appears). Each answer is one to three sentences on the page; together they close every semantic gap in this report that a rule does not already close.</p>
+</li>
+</ol>
+<hr />
+<h2>REWRITTEN ELEMENTS</h2>
+<p>Title tag (current, 61 characters): "Plumber in McKinney, TX: Water Pressure, PRV &amp; 24/7 Emergency". Keep as the default: it is within the rules, carries the keyword, and was decided with Denys.
+- Option A, with the brand like every competitor (75 characters; the brand may be cut on a phone, the keyword and the promise stay): "Plumber in McKinney, TX: Water Pressure, PRV, 24/7 Emergency | FPP Plumbing"
+- Option B, with the best query word (65 characters): "Plumber in McKinney, TX: Low Water Pressure, PRV &amp; 24/7 Emergency"
+Both need Denys's word (the title was his decision with the chat). Keyword position inside the title does not matter (POP); inclusion and the click do.</p>
+<p>Meta description (current, 154 characters): keep the structure; the one change worth making is the $49 and the insurance, both allowed facts (160 characters, Google cuts at about 155 to 160 on desktop, the cut lands after "24/7"): "Low water pressure, a buried PRV, a water heater past ten years, a main line backed up on a Sunday. Licensed, insured McKinney plumbers. $49 weekday call, 24/7." If 154 is the ceiling, keep the current one; it already has "Low water pressure" and "Licensed McKinney plumbers", which the brief asked to keep.</p>
+<p>H1 (current, 78 characters): "Plumber in McKinney, TX: Water Pressure, PRV, Water Heaters &amp; 24/7 Emergencies". Proposed (82 characters, Denys's opening unchanged, one word added): "Plumber in McKinney, TX: Low Water Pressure, PRV, Water Heaters &amp; 24/7 Emergencies". His decision.</p>
+<p>Opening paragraph: the current hook is strong and stays. If the exact phrase is wanted on the first screen without touching the H1, the first two sentences can carry it: "The shower goes weak the moment somebody flushes, and the hose out back is a trickle: low water pressure. Or the opposite: nothing feels wrong, and the gauge we screw onto the hose bib reads 108 PSI. In McKinney that's one of the calls we get most, and most of the time it ends at the pressure reducing valve in the flower bed, buried next to the second shut-off valve, clogged or leaking at the stem." (No invented frequency: "one of the calls we get most" is his.)</p>
+<p>Sections with factual errors or contradictions, rewritten:
+- Services, last paragraph: "A disposal in McKinney is like a disposal anywhere: when the bottom leaks or the motor has quit, it gets replaced, usually in the same visit."
+- Shower valves: "While the wall was open we cut the copper supply lines back to clean metal, because inside the wall they had started to corrode, and ran new copper up to the valve. The gauge on that house's hose bib read 108 PSI. That is one of the reasons cartridges in McKinney showers wear out early, and the pressure was brought down to 70 the same visit." (If Denys says the risers were brazed and the valve pressed, write both; the clip shows the press tool.)
+- Services, second paragraph: "Right behind it, water heater repair and replacement, because a lot of the houses here are past twenty years and a tank is good for about ten, ..."
+- FAQ 3, last sentence: "We install to that list and file the permit, and the inspection has not been a problem on our jobs."
+- Main water line, second story lead: "A few inches from the meter."
+- Common problems intro, with the Census (Strategic 2): "Around the square and east of US 75 the houses are old; in that part of town about a quarter were built before 1980, some a hundred years ago. Most of the rest of McKinney went up after 2000 (the U.S. Census Bureau puts the median year built at 2007), so the usual house we walk into is fifteen to twenty-five years old, right when the first big replacements come due." (link the Census table on "U.S. Census Bureau").
+- AC condensate item, last sentence: "In October 2026 this was the drain cleaning call we got most, some days five of them."
+- Caption of photo 318 and its alt: "a hundred-year-old house downtown".
+- FAQ 5 and the city paragraph, if Denys agrees to the city's own condition: "It can, once in a twelve-month period, when the leak pushed one bill to at least three times your usage for the same period a year earlier. You send the city's form within sixty days with the plumber's invoice attached."</p>
+<hr />
+<h2>Traffic weighting note</h2>
+<p>Search Console for this URL: 16 months, 19,394 impressions across 171 queries, zero clicks on queries (one click in the page totals); 3 months, 319 impressions across 40 queries, zero clicks. Impressions fell from about 20,000 over the prior thirteen months to 472 in the last three; the page is the weakest of the ten city pages. The rebuild is justified by the numbers. The biggest query families and how version 3 serves them: "plumber + McKinney" head terms (about 7,000 impressions, positions 45 to 65): title, H1, five exact anchors, kept H2s; the emergency family (about 1,700 on this page, several thousand more on the homepage and the Frisco page): the emergency H2 and the title; "low water pressure plumber mckinney" (580 at 33.8): the whole pressure section, minus the exact phrase (Quick Win 1); water line (about 1,400): the kept H2 and two cases; slab leak (about 2,400): one H3 and a case, by decision; faucet (about 870) and drains (about 870): present as service names, absent as the query phrases (Quick Wins 2 and 5); disposal (about 160 over 16 months, the best 3-month positions): one sentence, by decision (Strategic 1).</p>
+<h2>Quality gate</h2>
+<ul>
+<li>Competitors: the ten saved texts were read, 00 to 02 in full, the rest in whole as well; nothing was inferred from titles alone.</li>
+<li>Semantic gaps: seven named, with the competitor that has each and the rule that governs adding it.</li>
+<li>Non-obvious: the missing exact phrase of the page's own best query; the disposal sentence contradicting the owner page; "brazed" against the clip; the deliberate slab leak and disposal trade-off with a measured fallback; the city's three-times rule hidden behind "well above"; the three official entities the project already holds in its saved files but did not put on this page.</li>
+<li>Rewrites: given with character counts and exact locations.</li>
+<li>Every recommendation checked against the project rules; the ones that need Denys's word are marked.</li>
+</ul></main></body></html>

@@ -1,0 +1,159 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 16.10.2026 00:32</p><h1>McKinney page, version 3: single page review on the claude-seo scale (seo-page), October 16, 2026</h1>
+<p>Page: /plumber-mckinney-tx/, version 3 (source/mckinney-text-v3.md; the entry in tools/export_page_text.py PAGES, updated 2026-10-15). Reviewed from the local build site/dist/plumber-mckinney-tx/index.html (165,500 bytes; the local server at http://127.0.0.1:8798/plumber-mckinney-tx/ answered 200 with the same file). The live copy at fppplumbing.com still carries the old text and was not reviewed. Primary keyword: plumber mckinney tx; secondary: plumber in mckinney, emergency plumber mckinney, low water pressure plumber mckinney.</p>
+<p>Method: the skill file of the claude-seo plugin, version 2.4.2 (skills/seo-page/SKILL.md with skills/seo/references/quality-gates.md). The plugin's own Python tools (metadata_template.py, content_quality.py, parse_html.py) need Python 3.10 or newer and this Mac has only 3.9.6, so every check was done by hand on the built HTML with a small extraction script in the scratchpad; the metadata template heuristic (a description that opens with its title and ends on a stock call to action) was applied by hand. Lighthouse figures are the project's own run of this build: phone 98, LCP 2.2 s, CLS 0; desktop 100, LCP 0.5 s.</p>
+<p>Коротко для Дениса: критических ошибок нет. Оценка 93 из 100 (Plano 93, emergency 94, Frisco 91, главная 88). Три самые полезные находки: точной фразы «low water pressure» в тексте страницы нет, она стоит только в описании (запрос «low water pressure plumber mckinney» дал странице 580 показов за 16 месяцев); в разметке у WebPage нет даты первой публикации, хотя она известна (16 мая 2025, из краула живой страницы); на странице одна официальная ссылка города, а в брифе проверены ещё две подходящие страницы города (регистрация подрядчика, замена водопроводных линий). Всё остальное: мелочи и записи.</p>
+<h2>Page Score Card</h2>
+<pre><code>Overall Score: 93/100
+
+On-Page SEO:     92/100  █████████░
+Content Quality: 93/100  █████████░
+Technical:       93/100  █████████░
+Schema:          93/100  █████████░
+Images:          94/100  █████████░
+</code></pre>
+<p>(92 + 93 + 93 + 93 + 94) / 5 = 93.0. For comparison, the earlier reviews on the same scale: emergency 94, Plano 93, Frisco 91, homepage 88.</p>
+<h2>What was checked and matched</h2>
+<p>On-page:
+- Title "Plumber in McKinney, TX: Water Pressure, PRV &amp; 24/7 Emergency", 61 characters, primary keyword first, unique on the site. One character over the 60 guideline; the glyphs are narrow (i, l, commas, slash) so the title should show whole at Google's pixel cut. No change advised: the title is the chat's decision at Denys's request.
+- Meta description 154 characters, own words, does not open with the title, no stock call to action, carries "Low water pressure" and "Licensed McKinney plumbers". Passes the templated metadata heuristic by hand.
+- One H1, keyword first, 78 characters. Twelve H2 in the text plus the form's H2 "Request Service"; six H3 under "Common Plumbing Problems in McKinney Homes"; no skipped levels; the hidden form success message carries an H3 under the form's H2, which is in order. Headings are plain statements, none bent into a search question. The three live H2 that hold Search Console queries stand word for word: "Our Plumbing Services in McKinney", "Main Water Line Repair in Older McKinney Homes", "McKinney Plumbing FAQ".
+- URL short, hyphenated, no parameters, trailing slash, canonical to itself.
+- Internal links in the text: the homepage twice ("plumber near me" in the intro, "The six steps in full" to /#how-a-call-works), all thirteen service pages once each in the services section plus second mentions where the text calls for them, three guides, the emergency page twice; no link to another city page (rule 7); the "On this page" row has eleven anchors and every id exists on the page (checked). The breadcrumb's last item is a span with aria-current, not a link.
+- External links: the City of McKinney page on meters, leaks and pipes (the one official source), the Frisco Google profile, the four review sources, the trust band and footer profiles; all 22 outside links open in a new tab with rel="noopener"; no outside link in the body opens in the same window.
+- Keyword use (text without captions, 4,153 words): McKinney 42 (plus 19 in captions; the Frisco target was up to 65 in the text, captions counted separately), plumber 13, plumbers 1, plumbing 15, PRV 15, PSI 15, "plumber in McKinney" 5, "emergency plumber in McKinney" 1 (the H2), "plumber near me" 1. McKinney density 1.0 percent; the plumber word family 0.7 percent. No stuffing.
+- Watched words: em or en dashes 0 in the whole HTML; tankless 0, hydro jetting 0 (only "hydrostatic test", which is allowed), reroute 0, repipe 0; Dallas 0; "North Dallas" 0; Allen, Prosper, Celina and the other cities appear only in the shared header, menu and footer, never in the body; Plano appears only in the shared "Call Plano office" button of the right-now block and the footer; "within" twice, both "within sixty days" for the city's form, not an arrival promise; "same day" three times: the candle story ("that same day"), "If we have time open, we come the same day" (the allowed wording), and Kevin N.'s review (verbatim); minutes 0; "the owner" 0 (always "the homeowner"); exclamation marks in FPP's own text 0 (only inside the quoted reviews); words from the AI-tell list in voice/denys-voice.md 0; prices: $49 only, three times.</p>
+<p>Content and E-E-A-T:
+- Length: 3,818 words from the H1 to the closing paragraph with the FAQ in the source (the page notes); the built main element holds 4,153 words without captions and 4,558 with captions, trust line, right-now block, office block and form labels. The quality gate for a location page is 600; the project's own mark is about 2,500. Far above both, and the length comes from eleven jobs, not from repetition.
+- Readability (approximate, my own syllable count): Flesch Reading Ease about 72, grade level about 8.5; 214 sentences, 21 words on average, the longest 79 words (the list of payment ways). Plano measured 74.6 and grade 7 on the same kind of count; emergency 82.9 and grade 5.
+- Answer first: every H2 section opens on the fact (the PRV is the valve that decides the pressure; two things get into a McKinney sewer line; a contractor has to be registered and we are; the on-call truck comes out of the Frisco office; the weekday service call is $49). The FAQ answers open on the answer.
+- First-hand experience: eleven jobs with numbers a copywriter could not invent (56 to 58 PSI by the water tower, 108 PSI and the cartridges, 24.40 FT on the camera screen, five to ten inches past the meter, about ten nails), twelve job photos and eight clips of the jobs themselves, each beside its own story.
+- Author and dates: byline "By Denys Kavaler, Managing Partner and Licensed Plumber" linked to /#about, "Updated October 2026" in a time element with datetime 2026-10-15, the Person node in the schema. The license line "Responsible Master Plumber, License M-44816" stands once, in the footer, never beside Denys's name (rule kept). The trust band shows Google 5.0, Yelp 5.0, BBB A+, Thumbtack Top Pro and 4,500+ happy customers with live links.
+- Reviews: four, word for word against reviews/all-reviews.csv (checked byte for byte after whitespace normalisation), each with its source link; signatures by rule 11 ("★★★★★ · Thumbtack · January 2023"; "★★★★★ · Local Guide Level 3 · December 2024 · Google"); none names a city; tools/check_reviews.py: 48 reviews on the site, one author on one page, problems 0.
+- Facts against the rules: McKinney served from the Frisco office, said plainly, no invented McKinney office or phone; the freeze advice matches Denys's correction (indoor faucets drip, the frost-free spigot gets a cover); the gas sentence is his, word for word; the city's bill adjustment and the meter responsibility match the brief's verified city pages; the 1997 to 2011 copper sentence matches the city's Water Service Line Replacement Project page as the brief recorded it ("From 1997 to 2011", "substandard copper material and aggressive soil in the region").
+- Not written, correctly: no warranty terms, no arrival times, no "best" or "affordable", no nationality, no neighboring city, no sewer work under the foundation (the hydrostatic test is handed to the leak detection page), no tankless.</p>
+<p>Technical metadata:
+- charset first in the head, viewport, lang="en", canonical to https://fppplumbing.com/plumber-mckinney-tx/, meta robots noindex (the staging build; Base.astro line 37 writes it only while SITE_STAGING is not "0", and the live deploy builds with SITE_STAGING=0 and refuses a build with the tag; _headers adds X-Robots-Tag noindex on the *.pages.dev addresses only in the live build).
+- Open Graph complete: og:type, og:site_name, og:title (same as the title), og:description, og:url, og:locale en_US, og:image 1200 by 630 (checked with sips, 125 KB JPEG) with og:image:alt; Twitter summary_large_image with title, description, image and alt.
+- Sitemap: the page is listed with lastmod 2026-10-15 among 63 URLs; llms.txt names the page with the same title and description; robots.txt allows every crawler in the rule with the Content-Signal line.
+- Shared blocks: header with Call, Request and Menu; the Menu panel with every service and city in the HTML; the breadcrumb; the "On this page" row; the right-now block linking the emergency page's anchors; the footer with both offices, 13 services, the license line, the profile icons. Everything is in the HTML, nothing waits for JavaScript (the FAQ, the reviews, the phones, the service list all in the source).
+- Scripts: seven inline scripts, about 12 KB in all; no outside script in this build (the Google tag component is added in the live build and fetched at the first touch or after 8 s); fonts from Google after the load event with the stand-in fonts in site.css; the office map is a lazy iframe with a title. One inline style block of 58.7 KB in the head (sitewide, noted in the emergency review as a later item).
+- Core Web Vitals (the project's Lighthouse run of this build): phone 98, LCP 2.2 s, CLS 0, accessibility 100; desktop 100, LCP 0.5 s, CLS 0.001. Hero image eager with fetchpriority="high"; every other picture lazy with width and height; clips preload="none" behind posters.</p>
+<p>Schema:
+- One JSON-LD graph, 18,780 bytes, 19 top nodes, 21 nodes with @id, 29 @id references and all 29 resolve. No AggregateRating anywhere (rule kept). All URLs absolute.
+- Plumber @id https://fppplumbing.com/#organization: name, legalName FPP Plumbing LLC, url, both phones, email, foundingDate 2022, paymentAccepted (the list of Denys's ways), areaServed the ten cities plus Highland Park and University Park, sameAs 10 profiles (Nextdoor among them, LinkedIn not, as the rule says), hasCredential "Responsible Master Plumber, License M-44816" recognised by the Texas State Board of Plumbing Examiners, 24/7 hours on the organisation, logo and image, both PostalAddress entries, two Place offices (#office-frisco, #office-plano) with address, geo, hasMap, phone and the 8 to 5 weekday hours, two ContactPoint entries. The office and organisation @ids are byte for byte the same as on the Frisco page.
+- WebSite, WebPage (url, name, description, isPartOf, about the organisation, mainEntity the Service, breadcrumb, dateModified 2026-10-15, inLanguage en-US, primaryImageOfPage the OG image, author the Person), BreadcrumbList with two items, Service (name "Plumber in McKinney, TX", serviceType Plumbing, provider the organisation, areaServed McKinney, url, description), Person #denys (name, jobTitle, url /#about, sameAs LinkedIn, worksFor, image photo 112; no license number, no credential: rule kept), four Review nodes (itemReviewed the organisation, author, 5 of 5, datePublished matching the CSV, publisher Google or Thumbtack, url to the source, reviewBody word for word), eight VideoObject nodes (name, description, thumbnailUrl, uploadDate with time zone, duration PT5S, contentUrl), FAQPage with seven questions and answers word for word against the on-page text (checked).</p>
+<p>Images and clips:
+- 14 img elements: the logo, the hero (van 314, 720 px WebP, 71 KB, srcset 480 and 720, sizes 100vw on phones and 480px above), twelve job photos and the Frisco office van in the office block. Every one has alt text (68 to 130 characters, descriptive, the city where Denys confirmed it), width and height, lazy loading below the fold, srcset of four sizes from 480 to 1200 with sizes, decoding async. Every 720 px file is under the project's 125 KB cap (the heaviest, photo 321, 124.6 KB).
+- 8 clips: posters 12 to 56 KB, files 132 to 376 KB, every one under the 400 KB clip cap; muted, loop, playsinline, no controls, preload none, aria-label on each; each is a VideoObject.</p>
+<p>Local signals:
+- NAP: the Frisco office address and phone in the office block and footer, the Plano office in the footer, both in the schema with the same strings as the Frisco and Plano pages; the Frisco Google profile linked twice (trust band, office block); the service relationship said plainly in the intro, the emergency section, the FAQ and the office block ("McKinney is served from our Frisco office on Westridge Blvd, right at the line between the two cities"); no fake local address; areaServed McKinney on the Service node; the official city link; McKinney districts named as Denys gave them (the square, east of US 75, the pocket by the water tower at the Frisco line). The call button on the first screen is the Frisco number.</p>
+<p>AI citation readiness:
+- Quotable, specific passages in the HTML ("Ten PSI of drop between two open spigots is normal; thirty is not."; "A nail in a pipe seals itself for years, until it rusts, and then it doesn't."; the meter responsibility split; the inspector's list for a water heater); seven FAQ in HTML and in FAQPage; dates on the 2026 jobs; the author and the updated date; llms.txt entry; robots.txt with Content-Signal for the AI crawlers; no content behind scripts.</p>
+<p>Search Console (exports/mckinney-v3-gsc-table.md, 201 queries of the page and the homepage's McKinney queries): the words of 97.9 percent of the sixteen month impressions stand in the text whole (the notes' figure, checked against the table). What stays out on purpose: hydrojet (243 impressions), trenchless (19), repiping (23), tankless (3): services FPP does not do; "cast iron" (8): no fact from Denys for McKinney, so nothing is written; "affordable" and "best": judgement words the rules keep off the page.</p>
+<h2>Issues Found</h2>
+<p>Critical: none.</p>
+<p>High: none.</p>
+<p>Medium:</p>
+<ol>
+<li>
+<p>The exact phrase "low water pressure" is absent from the page text. It stands five times in the HTML, all of them the description (meta, og, twitter, WebPage and Service descriptions). The secondary keyword "low water pressure plumber mckinney" gave this page 580 impressions in sixteen months (its seventh largest query) and the homepage another 309; "mckinney water pressure" 13 more. The Search Console check marks the query as covered because the three words appear separately ("water pressure low in McKinney" in the first FAQ question). An exact phrase in the body is what the query matching and an AI answer both pick up. Fix (the chat, text): one plain sentence, no new fact, at the top of the PRV section or as the first sentence of its second paragraph, for example "Low water pressure in a McKinney house is usually the PRV, not the city main." The present second paragraph already says "A clogged PRV holds the house low."</p>
+</li>
+<li>
+<p>The plural "plumbers" with the city is absent. The plural queries of this page in sixteen months: plumbers mckinney tx 489, plumbers in mckinney tx 224, mckinney tx plumbers 133, plumbers mckinney texas 55, plumbers mckinney, tx 39, plumbers in mckinney texas 35, mckinney plumbers 31, plumbers in mckinney 26, plumbers mckinney 16: about 1,050 impressions. The body uses "plumbers" once ("Two plumbers are on every shift"); "Licensed McKinney plumbers" stands only in the description. Fix (the chat, text): one natural sentence with "our plumbers in McKinney" or "the plumbers who come to McKinney", in the emergency or services section, once; no second use, the density is fine as it is.</p>
+</li>
+<li>
+<p>One official outbound link where Frisco carries one and Plano four. The brief (docs/mckinney-brief-2026-10-03.md, part 6a, verified October 3) holds two more city pages that fit sentences already on the page: the Contractor Registration page https://www.mckinneytexas.org/257/Contractor-Registration for "A plumbing contractor has to be registered with the City of McKinney" (the Frisco and Plano pages link their cities' registration pages), and the Water Service Line Replacement Project page https://www.mckinneytexas.org/1702/Water-Service-Line-Replacement-Project for "it has been replacing the copper service lines installed between 1997 and 2011" (the brief recorded the page's words "From 1997 to 2011" and "substandard copper material and aggressive soil in the region"). Fix (Claude Code, tools/export_page_text.py PAGES links; new tab, rel noopener): open both pages in a browser first, as the rule says, and link only when the sentence still matches what the city says.</p>
+</li>
+<li>
+<p>WebPage.datePublished is missing. The text file's schema note says "datePublished stays the live page's", and the live page's crawl has it: source/crawl/pages/plumber-mckinney-tx.json, schema WebPage datePublished 2025-05-16T16:12:37+00:00. The built WebPage carries only dateModified 2026-10-15. Fix (Claude Code, site/src/lib/schema.ts and the front matter): write datePublished for every rebuilt page whose crawl has it; snippet below. The emergency review listed the same gap as a later item; for McKinney the date is at hand.</p>
+</li>
+<li>
+<p>Phone LCP 2.2 s against the project's rule of under 2 s. The measurement is from the local server without compression (Plano 2.3 s, Frisco 2.0 to 2.2 s there; the emergency page 1.8 s after its first screen poster got a preload from the head). The hero photo here has no <code>&lt;link rel="preload" as="image"&gt;</code>; the Frisco and Plano heroes have none either, so this is sitewide, not a defect of this page. Fix (Claude Code, Base.astro <code>preload</code> and ServicePage.astro): preload the hero with imagesrcset and imagesizes matching the img (480w and 720w, sizes "(max-width: 820px) 100vw, 480px") on city pages with a hero photo; then measure again. Expected 0.2 to 0.4 s on the same server.</p>
+</li>
+</ol>
+<p>Low:</p>
+<ol start="6">
+<li>
+<p>Phone page weight. The twelve in-text photos use sizes="(max-width: 1099px) 92vw, 240px". On a 2.6x to 3x phone (Lighthouse emulates about 2.6x) 92vw of a 390 to 412 px screen is about 1,000 to 1,100 device pixels, so the browser picks the 1200w variants for pictures drawn 360 CSS px wide: photo 321 at 244 KB, 286 at 246 KB, 288 at 222 KB, 322 at 196 KB (the skill flags files over 200 KB; all four are inside the project's 256 KB cap for 1200 px). The notes measured 870 KB of photos and 1,250 KB in all as loaded on a phone. Option (Claude Code, tools/optimize_photos.py or the image markup): cap the in-text srcset at 960w (those files are 140 to 183 KB), saving about 250 to 300 KB on phones at a small cost in sharpness; or keep the 1200w for sharpness. No LCP effect either way: the hero is a separate image.</p>
+</li>
+<li>
+<p>The breadcrumb label shows the whole title, "Plumber in McKinney, TX: Water Pressure, PRV &amp; 24/7 Emergency", in the visible crumb and in the BreadcrumbList item. Frisco shows "Plumber in Frisco, TX" and Plano "Plumber Plano, TX" because Crumbs.astro shortens the last crumb to the title's part before " | ", and this title has a colon instead. Fix (Claude Code, site/src/components/Crumbs.astro and the matching line in site/src/lib/schema.ts): split at whichever comes first, " | " or ": ", so the crumb reads "Plumber in McKinney, TX"; the Frisco, Plano and emergency crumbs do not change because their titles carry " | " first.</p>
+</li>
+<li>
+<p>The $49 rule is explained in full three times: the intro ("The weekday service call is $49, and it comes off the repair"), the call section ("On a weekday the service call is $49: the trip and the diagnosis, credited to the repair the moment you approve it") and the price FAQ. The Plano page kept it in two places after its audit (the intro and the price FAQ). For the chat (text): keep two full explanations, make the third a bare mention or take it out. Not a ranking matter; a reading one.</p>
+</li>
+<li>
+<p>Service.hoursAvailable is absent. The emergency page's Service node carries hoursAvailable 24/7 since its audit; the city page's Service ("Plumber in McKinney, TX") could carry the same for consistency, since the page says the phone is answered around the clock. Optional (Claude Code); snippet below.</p>
+</li>
+<li>
+<p>The payment paragraph says "A bigger repair can be spread out through PayPal Pay Later or Klarna at checkout." The rule's label for this on the site is "pay over time" (no figures, no "financing"; both kept). Optional consistency item for the chat: use the phrase "pay over time" once in that sentence, since identical wording across pages is what an AI system matches; the card fee wording stays different per page as the rule asks.</p>
+</li>
+<li>
+<p>Records. reviews/site-ledger.md (built by tools/site_reviews_ledger.py) lists 44 reviewers and was built before the McKinney page; tools/check_reviews.py counts 48 on the site, so Kevin N., Phillip Potter, Javeed N. and Rangsan L. are not in the ledger yet (rule 11 asks for a ledger mapping reviewer to page; reviews/ledger.md, the hand kept file, has no McKinney rows either). Run <code>python3 tools/site_reviews_ledger.py</code> after the build. seo/keyword-map.md row 18 and keyword-map.csv still say "carry as is" with the live title; mark the row rewritten when Denys's yes comes, as the Plano and emergency rows were.</p>
+</li>
+<li>
+<p>Sitewide, for information, not a defect of this page: every page links to its own address three times from the shared blocks (the header's Areas dropdown, the Menu panel, the footer's "Services and areas"); Frisco, Plano and the emergency page count the same three. The emergency audit's rule ("a page never links to its own address, shared blocks included") was applied to the floor panel only. Option for Denys and Claude Code: render the current page's item in those three lists as a span with aria-current="page". Low value, easy, sitewide.</p>
+</li>
+<li>
+<p>For information: the title is 61 characters (guideline 60), the hero alt 130 characters (guideline 125); neither needs a change. The seven lines the version 3 notes flagged for Denys (short fragments and verdict lines such as "Still dropping." and "Nothing moves now.") are a voice matter, not a search one, and are his to decide.</p>
+</li>
+</ol>
+<h2>Recommendations the generic skill makes that the project rules overrule</h2>
+<ul>
+<li>A call to action in the meta description: a stock CTA ("Call now!", "Book today") is marketing filler under rule 3. The version that keeps the rule is the one on the page: the description ends on the fact "the price before the work".</li>
+<li>Keyword density of 1 to 3 percent for the head term: the plumber word family stands at 0.7 percent. The version that keeps the rule is items 1 and 2 above, one plain sentence each, not repetition; "plumber near me" stays at one.</li>
+<li>Rating stars for the business (AggregateRating on the Plumber or a LocalBusiness rating): forbidden; the Review nodes stand without a total, as built.</li>
+<li>A dedicated McKinney LocalBusiness or a McKinney address in the schema: forbidden, there is no McKinney office; the Service with areaServed McKinney and the Frisco office in the organisation's location is the right shape.</li>
+<li>Mentioning neighboring communities for local relevance: city pages never name or link Allen, Prosper, Celina, Fairview or Melissa. The version that keeps the rule is what the page does: McKinney's own districts, and Frisco only as the office.</li>
+<li>Price anchors, since competitors (JMP) show prices: nothing but the $49 weekday service call goes on the page.</li>
+<li>Dashes in the title or headings for scanning: no em or en dashes anywhere; the colon in the title does the same work.</li>
+<li>FAQ for rich results: retired by Google in May 2026; the FAQPage stays for readers and AI assistants, as the project rule says.</li>
+<li>Shorten the title to 60 characters: the title is the chat's decision at Denys's request; one character does not justify a change.</li>
+</ul>
+<h2>Schema Suggestions</h2>
+<p>Ready-to-use additions, both inside the existing graph; nothing else changes.</p>
+<p>WebPage: the live page's first publication date from the crawl, with the modified date already there.</p>
+<pre><code class="language-json">{
+  &quot;@type&quot;: &quot;WebPage&quot;,
+  &quot;@id&quot;: &quot;https://fppplumbing.com/plumber-mckinney-tx/#webpage&quot;,
+  &quot;datePublished&quot;: &quot;2025-05-16T16:12:37+00:00&quot;,
+  &quot;dateModified&quot;: &quot;2026-10-15&quot;
+}
+</code></pre>
+<p>Service: the hours the page states, as on the emergency page's Service node.</p>
+<pre><code class="language-json">{
+  &quot;@type&quot;: &quot;Service&quot;,
+  &quot;@id&quot;: &quot;https://fppplumbing.com/plumber-mckinney-tx/#service&quot;,
+  &quot;hoursAvailable&quot;: {
+    &quot;@type&quot;: &quot;OpeningHoursSpecification&quot;,
+    &quot;dayOfWeek&quot;: [&quot;Monday&quot;, &quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;, &quot;Saturday&quot;, &quot;Sunday&quot;],
+    &quot;opens&quot;: &quot;00:00&quot;,
+    &quot;closes&quot;: &quot;23:59&quot;
+  }
+}
+</code></pre>
+<p>No HowTo, no AggregateRating, no QAPage: the FAQ is the company's own questions and answers, not user generated.</p>
+<h2>Fixes that keep every project rule, by who does them</h2>
+<p>Claude Code, without Denys: items 3 (two verified city links, after opening the pages), 4 (datePublished), 5 (hero preload, then a Lighthouse run), 7 (the crumb label), 9 (hoursAvailable), 11 (the ledger and the keyword map row), 6 if the lighter phone weight is wanted.</p>
+<p>The chat, text only, before Denys's yes on the draft: items 1 (one sentence with "low water pressure"), 2 (one sentence with the plural), 8 (the third $49 explanation), 10 ("pay over time").</p>
+<p>Denys: nothing blocks the page. Item 12 (self links in the shared menus) and the seven flagged voice lines are his to decide, in his time.</p>
+<h2>Files read</h2>
+<ul>
+<li>site/dist/plumber-mckinney-tx/index.html (the build), site/dist/sitemap.xml, site/dist/robots.txt, site/dist/llms.txt, site/dist/_headers</li>
+<li>source/mckinney-text-v3.md, site/src/content/pages/plumber-mckinney-tx.md, tools/export_page_text.py (PAGES), site/src/components/Crumbs.astro, site/src/lib/schema.ts, site/src/layouts/Base.astro, site/astro.config.mjs</li>
+<li>exports/mckinney-v3-gsc-table.md, exports/mckinney-v3-notes.md, exports/lighthouse/mckinney-v3-summary.json, exports/audit-emergency/07-claude-seo.md (the scale of the earlier reviews)</li>
+<li>seo/keyword-map.md and .csv, reviews/all-reviews.csv, reviews/ledger.md, reviews/site-ledger.md, tools/check_reviews.py (run), docs/mckinney-brief-2026-10-03.md, docs/mckinney-addendum-2026-10-15.md, docs/pages-plan.md, source/crawl/pages/plumber-mckinney-tx.json, voice/denys-voice.md</li>
+<li>the plugin: ~/.claude/plugins/cache/agricidaniel-claude-seo/claude-seo/2.4.2/skills/seo-page/SKILL.md and skills/seo/references/quality-gates.md</li>
+</ul></main></body></html>
