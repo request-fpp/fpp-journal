@@ -91,7 +91,7 @@
 - «North Dallas» без «suburbs»: Frisco 7 октября, 20 августа, 10 января; Plano 14 июня, сентябрь 2025, август 2025. Города вне нашей десятки: 20 декабря 2024 (Dallas, Coppell, Fairview, Denton, Garland, Flower Mound), 10 мая 2025 (Dallas), 15 августа 2025 (DFW), хештеги #DFWPlumber и #PlumberDallas в 2025.
 - Старые цифры: 15 июня 2025 «1,800+ happy clients», 11 июля 2025 «400+ reviews». На сайте 4,500+ и «more than 450».
 - Backflow: 28 сентября на Plano «we replaced the backflow assembly, tested the new one» и «Call FPP Plumbing for backflow testing». По правилу проверяет лицензированный tester TCEQ, не мы; разрешённая фраза одна.
-- Тире: в 25 постах Plano, в основном строка «Call FPP Plumbing — serving Plano.» (с 17 июля по 25 сентября). Для Frisco: запятая или двоеточие.
+- Тире: в 25 постах Plano, в основном строка «Call FPP Plumbing, serving Plano.» с длинным тире вместо запятой (с 17 июля по 25 сентября). Для Frisco: запятая или двоеточие.
 - Стены хештегов в постах 2025 года: в постах Google они ничего не дают, только длина.
 - 25 сентября на Plano «RO System Installation in Plano»: систем обратного осмоса нет ни на одной странице сайта и ни в одном списке услуг. Вопрос Денису: делаем ли мы это, и надо ли сайту об этом сказать.
 
