@@ -1,0 +1,39 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 17.10.2026 00:45</p><h1>Prosper, версия 2: сборка на черновой адрес (17 октября 2026, ночь)</h1>
+<p>Черновой адрес: https://draft.fppplumbing-preview.pages.dev/plumber-prosper-tx/ (вход по почте, noindex). Живой сайт не тронут. Текст чата <code>source/prosper-text-v2.md</code> (правки чата по аудиту версии 1) собран как есть; в тексте ничего не правлено.</p>
+<h2>1. Что изменилось на странице против версии 1</h2>
+<ul>
+<li>Мета-описание: 155 знаков вместо 215 («Water heaters past ten years, 120 PSI with no PRV in the ground, a meter box full of water. Licensed Prosper plumbers out of Frisco, the price named first.»). Title прежний, 63 знака.</li>
+<li>Строка про отзывы во вступлении в единой формулировке правил: «We have more than 450 five-star reviews across Google, Yelp and Thumbtack».</li>
+<li>Абзац раздела про водонагреватели: что ставится с новым баком, зависит от того, что вокруг; дымоход, линия T&amp;P, газовая ловушка и расширительный бак меняются или добавляются только там, где они неправильные или их нет. Больше не спорит с историей про субботний бак, где дымоход оставили.</li>
+<li>Блок офиса открывается фразой «The plumbers in Prosper you get are the Frisco crew: the office is at 12800 Westridge Blvd, Suite 116...»: «plumbers in Prosper» теперь в тексте один раз.</li>
+<li>Ряд под историей «The house at 120 PSI.» теперь «до и после»: клип 344 (кран льёт), фото 261 (120 на манометре, до), клип 266 (откопали: на линии только shut-off, PRV нет), фото 264 (70 на манометре после нового PRV). Из 263 и 266 выбран 266: история держится на клапане, которого не было, а результат показывает манометр 70. Фото 263 (новый PRV в новой коробке) и 262, 265, 267 свободны для страницы PRV. Подпись 264: «70 PSI on the gauge after the new PRV, Prosper».</li>
+<li>Абзац-заметка из скобок, который в версии 1 печатался под заголовком отзывов, ушёл: сборка выбрасывает многострочные заметки, проверка сайта это сторожит (33 из 33, на всех 64 страницах ни одного абзаца на «[»).</li>
+<li>Остальное как в версии 1: 7 FAQ, 4 отзыва, фото 36 на первом экране, 9 фото и 7 клипов, одна ссылка города (Faq.aspx?TID=27).</li>
+</ul>
+<h2>2. Цифры проверок</h2>
+<ul>
+<li>Текст: 3,876 слов в файле, 4,062 в теле страницы. tools/check_text.py: те же два замечания внутри цитируемых отзывов («affordable», восклицательные знаки). tools/check_overlap.py с конкурентами Prosper: 8 повторов со своими страницами, с конкурентами 0 (новый повтор: адрес офиса «office is at 12800 Westridge Blvd, Suite 116» со страницей Frisco).</li>
+<li>Фразы на странице: «Our Plumbing Services in Prosper» и «Prosper Plumbing FAQ» слово в слово; «Prosper plumber» 1, «plumbers in Prosper» 1, «emergency plumber in Prosper» 1 в тексте плюс H2, «plumbing company» 2, «plumbing contractor» 2, «Residential» 1, «water heater installation» 2, «faucet repair» 1, «plumbers» 4, «Plumber near me» 1 (ссылка на главную). Тире 0. Телефонов в тексте и FAQ 0. Сумма одна, $49. Соседних городов в тексте 0, Frisco только как офис.</li>
+<li>Ссылок в теле 62: 13 услуг (emergency дважды), /#how-a-call-works, два гайда, профиль Google Frisco, FAQ города; у отзывов свои ссылки; ссылок на другие города и на саму страницу нет. Все внешние открываются в новой вкладке (проверка сайта).</li>
+<li>Схема: Plumber, WebSite, WebPage (datePublished 2025-05-16), BreadcrumbList, Service, Person, 4 Review без общей оценки, 7 VideoObject, FAQPage на 7 вопросов. validator.schema.org: 0 ошибок, 0 предупреждений.</li>
+<li>Сайт 33 из 33 (7 предупреждений на других страницах, как раньше). Вёрстка чисто на шести ширинах (17 картинок). Сдвиг шрифтов чисто. Lighthouse: телефон 99 и 100, LCP 1.8 с, CLS 0; компьютер 100 и 100, LCP 0.4 с. Вес на телефоне при загрузке 999 КБ (HTML 160, фото 655, постеры 184), клипы 1,635 КБ только при прокрутке. check_reviews: проблем 0.</li>
+<li>Search Console: 90 запросов и 12,451 показ из 12,877 за 16 месяцев (96.7 процента) со всеми словами в тексте. Цифра версии 1 (97.5) была завышена утёкшей заметкой: слово «Local» стояло в ней («Local Guide»). Теперь слова local в тексте нет, а на нём запросы local plumber near me (44 показа), local plumbers near me (33), local plumbers prosper tx (19), local plumbers (12), local plumber (1): около 109 показов; одна фраза с «local» закрыла бы их. Остальное без изменений: backup (73), problems (49), hot (16), master (6, слово стоит в подвале), чужие названия, опечатки, heating и furnace.</li>
+</ul>
+<h2>3. Аудиты плагинов (по собранной версии 2)</h2>
+<p>Два аудита версии 2 были запущены и остановлены, не дописав отчёты: через полчаса после версии 2 пришла версия 3, аудиты идут по ней (exports/audit-prosper-v3/, отчёт prosper-v3).</p>
+<h2>4. Ждёт Дениса</h2>
+<ul>
+<li>Живая страница Allen по-прежнему несёт абзац-заметку (проверено в 00:00): исправление ждёт его кнопки Run, <code>zsh tools/allen_fix_live.sh</code>. До его «да» по Prosper живая выкладка только этим скриптом.</li>
+</ul></main></body></html>
