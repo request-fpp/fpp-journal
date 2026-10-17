@@ -1,0 +1,182 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 17.10.2026 00:39</p><h1>Установка инструментов: PostHog, Firecrawl, claude-code-setup, task-observer</h1>
+<p>16 октября 2026, ночь. Блок чата «установка инструментов» (он заменил прошлый блок про PostHog и Firecrawl). Отдельное окно, окно Prosper не тронуто. Тексты страниц, дизайн, схема, тайтлы, H1, sitemap и редиректы не менялись. Платных планов и привязки карт нет.</p>
+<h2>Коротко</h2>
+<table>
+<thead>
+<tr>
+<th>Часть</th>
+<th>Состояние</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. PostHog</td>
+<td>Выложен на живой сайт 17 октября в 00:30 по «ок» Дениса. События приходят, запись сессий закрывает форму, дашборд «FPP Calls» собран, скорость по медиане трёх прогонов не изменилась. Осталась проверка MCP после входа</td>
+</tr>
+<tr>
+<td>2. Firecrawl</td>
+<td>MCP добавлен (уровень пользователя, вход через браузер); ждёт входа Дениса через /mcp; правила записаны в CLAUDE.md; таблица конкурентов Prosper делается после входа</td>
+</tr>
+<tr>
+<td>3. claude-code-setup</td>
+<td>Установлен (официальный маркетплейс), рекомендации собраны отдельной сессией, список и описание автопроверки в source/automation-recommendations.md; ничего не включено</td>
+</tr>
+<tr>
+<td>4. task-observer</td>
+<td>Установлен в проект, рабочая папка создана, правила в CLAUDE.md; начинает работать со следующей новой сессии</td>
+</tr>
+</tbody>
+</table>
+<h2>Что ещё нужно от Дениса</h2>
+<p>Один шаг: открыть новую сессию в этом проекте, набрать <code>/mcp</code>, выбрать <code>firecrawl</code> и войти в браузере; затем то же для <code>posthog</code>. Ключи руками копировать не нужно. После этого делаются таблица конкурентов Prosper (source/competitors-prosper.md) и проверка PostHog MCP вопросом «сколько call_click было сегодня».</p>
+<h2>Часть 1. PostHog</h2>
+<p>Что сделано в коде (всё в чистой рабочей копии и в основной папке проекта, не выложено):</p>
+<ul>
+<li><code>site/src/components/PostHog.astro</code> подключён в базовый макет каждой страницы после тегов Google; <code>site/src/design/posthog.js</code> это загрузчик вокруг официального сниппета PostHog (<code>site/src/design/posthog-snippet.js</code>, слово в слово из документации PostHog для Astro), хост US <code>https://us.i.posthog.com</code>, <code>defaults: '2026-05-30'</code> как в документации.</li>
+<li>Загрузка отложенная, тем же правилом, что теги Google: скрипт подтягивается при первом касании страницы (прокрутка, касание, указатель, клик, клавиша) или через 8 секунд после открытия. В первые секунды, которые смотрит замер скорости, он не работает.</li>
+<li>Настройки: autocapture и просмотры страниц включены; запись сессий включена, все поля ввода замаскированы (<code>maskAllInputs: true</code>), а форма заявки целиком закрыта от записи классом <code>ph-no-capture</code> (имя, телефон и адрес клиента в запись не попадают никогда); тепловые карты включены (<code>capture_heatmaps: true</code>).</li>
+<li>Только fppplumbing.com: скрипт проверяет домен и на localhost, на черновом адресе и на любом *.pages.dev ничего не пишет.</li>
+<li>Визиты Дениса: открыть один раз https://fppplumbing.com/?fpp_optout=1 на телефоне и на Маке в каждом браузере, которым он пользуется, и этот браузер больше не считается (<code>?fpp_optout=0</code> включает обратно). Оговорка: Safari на iPhone может забыть флаг, если неделю не заходить на сайт; тогда ссылку открыть ещё раз.</li>
+<li>События, каждое с адресом страницы (свойство <code>page</code> и стандартный <code>$current_url</code>):</li>
+<li><code>call_click</code>: нажатие на любой tel: номер; <code>office</code> = frisco (469-998-8999) или plano (980-899-7997); <code>placement</code> = header, menu, footer, hero, callbar, request или body (к четырём из блока добавлены menu, callbar и request: панель меню, липкая полоса звонка на телефоне и окно заявки это отдельные места, иначе они бы смешались с «body»);</li>
+<li><code>form_submit</code>: только после ответа функции сайта, что заявка ушла в Telegram; без содержимого полей;</li>
+<li><code>triage_click</code>: четыре кнопки блока «What is happening right now?», свойство <code>choice</code> = floor, hot, sewer или pressure;</li>
+<li><code>cutaway_click</code>: 17 точек дома на главной и 4 точки разреза под домом на странице slab leak, свойства <code>target</code> (куда ведёт) и <code>cutaway</code> (home или slab).</li>
+<li>Клик до загрузки скрипта (например, сразу нажали «Call») встаёт в очередь и уходит со своим временем, когда скрипт загрузится.</li>
+<li>CSP на Cloudflare для сайта не задан, добавлять домены PostHog некуда и не нужно.</li>
+<li>Проверено во встроенном браузере на локальной сборке с тестовым ключом: до касания скрипта на странице нет; после клика по номеру на первом экране Frisco пришли <code>$pageview</code> и <code>call_click</code> (frisco, hero) со временем клика; затем footer и callbar; на emergency <code>triage_click</code> (floor); на главной <code>cutaway_click</code> (/prv-replacement-frisco-plano/, home) и <code>call_click</code> (hero); на slab leak <code>cutaway_click</code> (#detect, slab) и <code>call_click</code> (header); с <code>?fpp_optout=1</code> скрипт не грузится, флаг стоит; с <code>?fpp_optout=0</code> флаг снят. Настройки в загруженном объекте: maskAllInputs true, capture_heatmaps true, autocapture true.</li>
+<li>Lighthouse, телефон, локальная сборка без сжатия (как и прошлые замеры проекта), до и после; «после» мерилось дважды (вторая сборка после исправления подстановки ключа):</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>До: баллы, LCP</th>
+<th>После (1): баллы, LCP</th>
+<th>После (2): баллы, LCP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Главная</td>
+<td>98, 2,1 с</td>
+<td>98, 2,1 с</td>
+<td>97, 2,3 с</td>
+</tr>
+<tr>
+<td>Frisco</td>
+<td>98, 2,2 с</td>
+<td>98, 2,3 с</td>
+<td>98, 2,3 с</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>98, 2,3 с</td>
+<td>98, 2,3 с</td>
+<td>98, 2,3 с</td>
+</tr>
+</tbody>
+</table>
+<p>Компьютер везде 100 до и после, CLS без изменений. Падения больше 3 баллов нет, разница в пределах шума замера (в лабораторном прогоне скрипт по правилу отложенной загрузки не запускается вообще; прибавка это около 3,5 КБ встроенного кода на странице). Сводки: exports/posthog/lighthouse/before-summary.json и after-summary.json.</p>
+<p>Что остаётся после регистрации Дениса: вписать ключ в site/src/lib/site.ts; в настройках проекта PostHog включить запись сессий и тепловые карты (эти два тумблера живут на стороне PostHog, без них клиентские настройки не действуют); выложить после «ок»; проверить Live events на живом сайте и что в записи сессии поля формы закрыты; собрать дашборд «FPP Calls» (звонки по страницам за 7 и 30 дней, Frisco и Plano отдельно; формы по страницам; топ страниц входа; доля мобильных); проверить MCP вопросом «сколько call_click было сегодня».</p>
+<h2>Выкладка и проверка на живом сайте (17 октября, ночь)</h2>
+<ul>
+<li>Регистрация и вход: Денис зарегистрировал проект и вошёл в PostHog в панели встроенного браузера (US Cloud). Ключ проекта phc_…7fJu (проект 670044) вписан в site/src/lib/site.ts и закоммичен. Проект переименован из «Default project» в <code>fppplumbing.com</code>, часовой пояс поставлен America/Chicago, чтобы дни в отчётах считались по Далласу.</li>
+<li>Настройки проекта PostHog: запись сессий включена (была выключена), тепловые карты включены (были выключены), autocapture был включён, сбор Web Vitals с реальных посетителей включён по блоку чата от 17 октября (LCP, CLS, FCP, INP с телефонов настоящих клиентов будут видны через неделю; то же покажет отчёт Core Web Vitals в Search Console).</li>
+<li>Дашборд «FPP Calls»: https://us.posthog.com/project/670044/dashboard/2222206 . Семь виджетов: звонки по страницам за 7 и за 30 дней (столбцы Frisco, Plano, всего), звонки по дням по офисам, звонки по месту нажатия, заявки по страницам, топ страниц входа, доля устройств за 30 дней. Пока данных мало, PostHog с адреса дашборда может перебрасывать на вводный экран; с накоплением событий он открывается сразу.</li>
+<li>Выкладка: <code>zsh tools/posthog_live.sh</code> 17 октября в 00:30 по «ок» Дениса. Сборка из чистой копии последнего коммита со старым Prosper (PROSPER_TEXT=old), проверка сайта 33 из 33, сверка всех 63 страниц с живым сайтом до выкладки (менялись только скрипт PostHog и две строки формы на каждой странице, на Allen дополнительно снята заметка сборки в скобках, Prosper остался старым) и после неё (63 из 63 совпадают со сборкой), IndexNow 63 адреса. Починка Allen тем самым на живом сайте, tools/allen_fix_live.sh другого окна больше не нужен. В последнем коммите по-прежнему лежит черновик Prosper: любая выкладка из рабочей папки без PROSPER_TEXT=old выложит его.</li>
+<li>Проверка на живом сайте: до касания скрипта PostHog на странице нет; после первого касания он загрузился, запись сессии началась; в PostHog за секунды пришли <code>$pageview</code>, <code>call_click</code> (office frisco, placement hero, page /plumber-frisco-tx/) и autocapture. Запись сессии открыта в плеере: на 26-й секунде видно окно «Request Service» с заголовком, подводкой и двумя номерами, а полей формы в кадре нет вовсе, как и набранного тестового слова (форма закрыта целиком классом ph-no-capture; в данных записи стоят blockClass ph-no-capture и maskAllInputs true). Кадр: exports/posthog/recording-form-masked-2026-10-17.jpg. Ничего не отправлялось: поле очищено, окно закрыто.</li>
+<li>Замер по блоку чата от 17 октября: телефон, по 3 прогона на страницу, сборка без ключа против сборки с ключом (одна и та же версия сайта, чередование прогонов), медианы. Инструмент tools/lighthouse_median.py, сводка exports/posthog/lighthouse-median/summary.md.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Performance до</th>
+<th>после</th>
+<th>LCP до, с</th>
+<th>после</th>
+<th>TBT до, мс</th>
+<th>после</th>
+<th>CLS до</th>
+<th>после</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Главная</td>
+<td>97</td>
+<td>97</td>
+<td>2,25</td>
+<td>2,25</td>
+<td>0</td>
+<td>0</td>
+<td>0,003</td>
+<td>0,003</td>
+</tr>
+<tr>
+<td>Frisco</td>
+<td>98</td>
+<td>98</td>
+<td>2,25</td>
+<td>2,25</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>98</td>
+<td>98</td>
+<td>2,33</td>
+<td>2,33</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Порог отката из блока (минус 3 балла или плюс 0,2 с LCP) не задет ни на одной странице, откат не нужен. INP в лабораторном замере не измеряется, его заменяет TBT; реальный INP придёт из Web Vitals в PostHog. Итог одной строкой: PostHog на живом сайте, скорость по медиане не изменилась.</p>
+<h2>Часть 2. Firecrawl</h2>
+<ul>
+<li>Добавлен официальный удалённый MCP на уровне пользователя: <code>claude mcp add --scope user --transport http firecrawl https://mcp.firecrawl.dev/v2/mcp-oauth</code>. Статус: «Needs authentication», ждёт входа Дениса через <code>/mcp</code> в новой сессии.</li>
+<li>Правила записаны в CLAUDE.md (раздел «Tools installed on October 16, 2026»): только анализ (объём, H1, H2, FAQ, схема, районы и услуги); текст конкурентов никогда не копируется и не пересказывается; никаких мониторов, расписаний и обхода целых сайтов; перед работой называть расход кредитов, после работы остаток.</li>
+<li>Тестовый прогон под Prosper (топ 5 органики Google по «plumber in Prosper TX» без каталогов, таблица в source/competitors-prosper.md) делается сразу после входа. Предварительная сверка обычным поиском дала кандидатов: Crown Plumbing Service, Porpoise Plumbing, The Prosper Plumber, Genzel Plumbing, Roto-Rooter (страница под Prosper); окончательный список даст поиск Firecrawl.</li>
+</ul>
+<h2>Часть 3. claude-code-setup</h2>
+<ul>
+<li>Маркетплейс claude-plugins-official добавлен (его не было среди настроенных, в списке стоял только встроенный anthropic-plugin-directory), плагин claude-code-setup 1.0.0 установлен для этого проекта (local). Это официальный плагин Anthropic, только чтение.</li>
+<li>Отдельная сессия в этом проекте спросила «recommend automations for this project». Полный ответ: exports/automation-recommendations-raw.md. Разбор по-русски (что предлагает, зачем, что поменяет, риски) и описание автопроверки страниц: source/automation-recommendations.md. Ничего не включено и не установлено.</li>
+<li>Замечание к пункту 3.4 блока (критическое расхождение с правилами проекта): блок просит порог «от 3,000 слов» на страницах услуг и городов, а в CLAUDE.md ориентир 2,500 как отметка, а не жёсткое правило (3,000 названо для главной). Жёсткий порог 3,000 останавливал бы страницы, которые Денис уже закрыл. В описании предложен порог 2,500 как предупреждение; порог меняет Денис.</li>
+</ul>
+<h2>Часть 4. task-observer</h2>
+<ul>
+<li>Установлен в проект: <code>npx -y skills add rebelytics/one-skill-to-rule-them-all --skill task-observer --agent claude-code</code>, версия 3.7.0, файлы в .claude/skills/task-observer (оценки безопасности в установщике: Safe, 0 alerts, Low Risk; скрипты скилла просмотрены: сети и удалений в них нет). Файл skills-lock.json в корне проекта записал источник.</li>
+<li>Рабочая папка создана командой самого скилла в проекте: skill-observations/ (лог это папка observation-log/, по одному файлу на наблюдение; версия 3 скилла не принимает один файл log.md, который назван в блоке, это единственное отступление от блока) и skill-updates/.</li>
+<li>В CLAUDE.md записано: в начале каждой рабочей сессии и после каждого сжатия контекста загружать task-observer и выполнять его стартовый протокол; наблюдатель только пишет в свой лог и не правит ни скиллы, ни CLAUDE.md, ни страницы; правила FPP задаёт только Денис, при противоречии побеждает CLAUDE.md; ловить в первую очередь повторяющиеся поправки Дениса и повторяющиеся ручные шаги; при 5 и больше наблюдениях сводка в журнал, изменения только после «ок».</li>
+<li>Начинает работать со следующей новой сессии (эта сессия и сессия с плагином начались до записи правила).</li>
+</ul>
+<h2>Что добавлено в CLAUDE.md</h2>
+<p>Один раздел в конце файла, «Tools installed on October 16, 2026, night»: PostHog (где код, как грузится, настройки, домены, отключение по ссылке, события, MCP только чтение, дашборд), Firecrawl (MCP и четыре правила), task-observer (установка, правило старта сессии, рабочая папка, правила проекта), claude-code-setup (где лежат рекомендации, ничего не включено без слова Дениса).</p>
+<h2>Где что лежит</h2>
+<ul>
+<li>Код PostHog: site/src/components/PostHog.astro, site/src/design/posthog.js, site/src/design/posthog-snippet.js, константы в site/src/lib/site.ts, вызов form_submit в site/src/components/RequestDialog.astro.</li>
+<li>Замеры: exports/posthog/lighthouse/ (сводки в git, полные отчёты только на Маке).</li>
+<li>Рекомендации: source/automation-recommendations.md и exports/automation-recommendations-raw.md.</li>
+<li>Конкуренты Prosper: source/competitors-prosper.md (после входа в Firecrawl).</li>
+<li>Наблюдатель: .claude/skills/task-observer, skill-observations/, skill-updates/.</li>
+</ul></main></body></html>
