@@ -1,0 +1,44 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 17.10.2026 01:22</p><h1>Prosper, версия 4: закрытие и живой сайт (17 октября 2026, ночь)</h1>
+<p>Денис, 17 октября, 01:02: версия 4 идёт на живой сайт сегодня, первый экран пока без фото, фургон из Prosper добавим завтра отдельной правкой. Текст чата <code>source/prosper-text-v4.md</code> собран как есть; в тексте ничего не правлено. Живая выкладка: выложена <code>zsh tools/deploy.sh live</code> 17 октября в 01:21 (64 страницы, сайт 33 из 33, IndexNow 63 адреса, ответ 200; система безопасности на этот раз выкладку пропустила, кнопка Дениса не понадобилась).</p>
+<h2>1. Что изменилось против версии 3</h2>
+<ul>
+<li>Слова Дениса 01:00: в новых домах клапаны в гараже, в домах среднего возраста и старых в клумбе, в доме со 120 PSI застройщик PRV просто не поставил. Вступление переписано на две группы домов, противоречие ушло; «In one ten year old house we opened that box and the builder had simply skipped the PRV».</li>
+<li>Правки чата по аудиту версии 3: «a local plumbing company, residential work» (слово local теперь в тексте); «most homes in Prosper have a PRV» словами города вместо «nearly every house»; длинные предложения разбиты (водонагреватели, раздел города, раздел emergency); история про 120 PSI в двух абзацах; два H2 без троек: «Clogged Drains and Sewer Lines in Prosper: Grease in the Kitchen Line, Roots in the Main» и «Outside Spigots in Prosper: Why a Frost Free Spigot Still Splits», H2 города «The Town of Prosper: Permits, and the Water Bill After a Leak»; «the backup comes up the tub drain» в абзаце про канализацию; «share a border» в блоке офиса; «plumbing problems» во вступлении. Сравнение с water jet оставлено по слову Дениса.</li>
+<li>Схема: Service страницы несёт hoursAvailable 24/7 (новый флаг hours247 записи страницы, front matter hours_247, site/src/lib/schema.ts и site/src/pages/[...slug].astro; у других городских страниц ничего не изменилось); dateModified 2026-10-17; FAQ слово в слово; VideoObject на каждый из 6 клипов; офис Frisco в узле организации, areaServed Prosper.</li>
+<li>Картинки как в версии 3: первый экран без картинки, OG фото 36; у 120 PSI клип 344 и фото 261; у Flo клип 341; у крана клип 345 и фото 52.</li>
+</ul>
+<h2>2. Цифры проверок</h2>
+<ul>
+<li>Сайт 33 из 33 (7 предупреждений на других страницах, как раньше); заметок в скобках в HTML 0 на всех 64 страницах.</li>
+<li>Текст: 3,932 слова в файле, 4,051 в теле страницы; check_text: два замечания внутри цитируемых отзывов («affordable», восклицательные знаки); check_overlap с конкурентами 0 (10 повторов со своими страницами). Мета-описание 155 знаков, title 63.</li>
+<li>Фразы: «Our Plumbing Services in Prosper» и «Prosper Plumbing FAQ» слово в слово; «plumber in Prosper, TX» 2, «emergency plumber in Prosper» 2, «plumbers in Prosper» 1, «local plumbing company» 1, «plumbing problems» 1, «backup» 1, «plumber near me» 1 (ссылка на главную), отзывы в единой формулировке. Тире 0, телефонов в тексте 0, сумма одна ($49), соседних городов 0, ссылок в теле 62, на другие города и на себя 0.</li>
+<li>Вёрстка чисто на шести ширинах (12 картинок), шрифты чисто. Lighthouse: телефон 99 и 100, LCP 1.7 с, CLS 0; компьютер 100 и 100, LCP 0.4 с. Вес на телефоне при загрузке 693 КБ, клипы 1,388 КБ при прокрутке.</li>
+<li>validator.schema.org по графу версии 4 (с hoursAvailable): 0 ошибок, 0 предупреждений. check_reviews: 56 отзывов, проблем 0; reviews/site-ledger.md построена заново, четыре автора Prosper в ней.</li>
+<li>Search Console: 97 запросов и 12,682 показа из 12,877 за 16 месяцев (98.5 процента) со всеми словами в тексте (local, backup, problems теперь на странице). Без слов остались чужие названия, опечатки, heating и furnace, hot, master.</li>
+<li>Сравнение всех 63 собранных страниц с живым сайтом перед выкладкой: отличается только /plumber-prosper-tx/ (новый текст). Живая страница Allen уже без абзаца-заметки, PostHog уже на живом сайте (выложено другим окном до этой сборки), больше ничего не меняется.</li>
+</ul>
+<h2>3. Аудиты плагинов (по собранной версии 4)</h2>
+<p>два аудита (superseo page-audit и claude-seo seo-page) по собранной версии 4 ещё пишут отчёты; их оценки и замечания будут дописаны сюда (exports/audit-prosper-v4/)</p>
+<h2>4. Записи закрытия</h2>
+<ul>
+<li>reviews/ledger.md: DMarcus Jones, Marina Sexton, Savannah Park, Ryan E. на /plumber-prosper-tx/; Gregory Gaskin II и Lori Flewellen со старой страницы сняты; исключение Дениса по DMarcus Jones было записано в reviews/ledger-decisions.csv 16 октября.</li>
+<li>docs/pages-plan.md, seo/keyword-map.csv (строка rewritten), CLAUDE.md, handoff: страница закрыта.</li>
+<li>voice/samples/2026-10-17-prosper-text-v4-closed.md (текст страницы без заметок сборки) и voice/samples/2026-10-16-prosper.md (диктовка и его слова 17 октября).</li>
+</ul>
+<h2>5. Открыто</h2>
+<ul>
+<li>Фото фургона в Prosper на первый экран: завтра, от Дениса, отдельной правкой (подпись «The FPP Plumbing van in Prosper»).</li>
+<li>Свободны для страницы PRV: 262 до 267, 35, 36, 121.</li>
+</ul></main></body></html>
