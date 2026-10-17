@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 17.10.2026 00:46</p><h1>Установка инструментов: PostHog, Firecrawl, claude-code-setup, task-observer</h1>
+</style></head><body><main><p class="stamp">Опубликовано 17.10.2026 01:18</p><h1>Установка инструментов: PostHog, Firecrawl, claude-code-setup, task-observer</h1>
 <p>16 октября 2026, ночь. Блок чата «установка инструментов» (он заменил прошлый блок про PostHog и Firecrawl). Отдельное окно, окно Prosper не тронуто. Тексты страниц, дизайн, схема, тайтлы, H1, sitemap и редиректы не менялись. Платных планов и привязки карт нет.</p>
 <h2>Коротко</h2>
 <table>
@@ -23,11 +23,11 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <tbody>
 <tr>
 <td>1. PostHog</td>
-<td>Выложен на живой сайт 17 октября в 00:30 по «ок» Дениса. События приходят, запись сессий закрывает форму, дашборд «FPP Calls» собран, скорость по медиане трёх прогонов не изменилась. Осталась проверка MCP после входа</td>
+<td>Выложен на живой сайт 17 октября в 00:30 по «ок» Дениса. События приходят, запись сессий закрывает форму, дашборд «FPP Calls» собран, скорость по медиане трёх прогонов не изменилась. PostHog MCP подключён по личному ключу (только чтение) и ответил на вопрос про call_click</td>
 </tr>
 <tr>
 <td>2. Firecrawl</td>
-<td>MCP добавлен (уровень пользователя, вход через браузер); ждёт входа Дениса через /mcp; правила записаны в CLAUDE.md; таблица конкурентов Prosper делается после входа</td>
+<td>MCP подключён по ключу API (вход через браузер токен не сохранял); правила в CLAUDE.md; тестовый прогон сделан: 7 кредитов, осталось 993 из 1,000; таблица в source/competitors-prosper.md</td>
 </tr>
 <tr>
 <td>3. claude-code-setup</td>
@@ -40,7 +40,7 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 </tbody>
 </table>
 <h2>Что ещё нужно от Дениса</h2>
-<p>Один шаг: открыть новую сессию в этом проекте, набрать <code>/mcp</code>, выбрать <code>firecrawl</code> и войти в браузере; затем то же для <code>posthog</code>. Ключи руками копировать не нужно. После этого делаются таблица конкурентов Prosper (source/competitors-prosper.md) и проверка PostHog MCP вопросом «сколько call_click было сегодня».</p>
+<p>Ничего: все четыре части блока закрыты. Одно на ваше усмотрение: ключи Firecrawl и PostHog прошли через переписку чата; если захотите, их можно перевыпустить в кабинетах Firecrawl и PostHog, скопировать новый ключ и нажать Run на <code>zsh tools/mcp_key.sh firecrawl</code> или <code>zsh tools/mcp_key.sh posthog</code>.</p>
 <h2>Часть 1. PostHog</h2>
 <p>Что сделано в коде (всё в чистой рабочей копии и в основной папке проекта, не выложено):</p>
 <ul>
@@ -151,11 +151,17 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 </tbody>
 </table>
 <p>Порог отката из блока (минус 3 балла или плюс 0,2 с LCP) не задет ни на одной странице, откат не нужен. INP в лабораторном замере не измеряется, его заменяет TBT; реальный INP придёт из Web Vitals в PostHog. Итог одной строкой: PostHog на живом сайте, скорость по медиане не изменилась.</p>
+<h2>Подключение MCP и проверки (17 октября, ночь)</h2>
+<ul>
+<li>Вход через браузер (OAuth через /mcp) три раза не сохранял токен: в связке ключей Мака оставались только записи обнаружения сервера без самого токена, окно /mcp в приложении показывало Authenticated, а ни одна сессия подключения не видела. Путь через терминал отпал: Денису он незнаком, и командная строка просит отдельный вход в Claude. Слой безопасности Claude Code не даёт Claude создавать и сохранять ключи доступа, поэтому ключи создал и прислал Денис: ключ API Firecrawl и личный ключ PostHog с правами только на чтение и доступом к проекту fppplumbing.com. Оба лежат в настройках пользователя Claude Code (~/.claude.json), не в проекте: Firecrawl https://mcp.firecrawl.dev/v2/mcp, PostHog https://mcp.posthog.com/mcp?readonly=true. Скрипт tools/mcp_key.sh кладёт ключ из буфера обмена тем же способом, не показывая его. Сессия видит только те серверы MCP, что были подключены при её старте, поэтому обе проверки шли в свежих сессиях.</li>
+<li>Проверка PostHog MCP, вопрос «сколько call_click было сегодня»: 1 (00:31, кнопка первого экрана страницы Frisco) из 5 событий за день по времени Далласа (3 autocapture, 1 pageview, 1 call_click). Сервер отвечал только на чтение, ничего не менял.</li>
+<li>Тест Firecrawl: один поиск (2 кредита) и пять страниц (по 1 кредиту), 7 кредитов, осталось 993 из 1,000 бесплатных. Таблица source/competitors-prosper.md: The Prosper Plumber, Legacy Plumbing &amp; Electric (страница Prosper), Roto-Rooter (страница Prosper), Trusted Plumber of Prosper, Crown Plumbing Service: объём, H1, H2, FAQ, типы схемы, города, услуги, фото работ, а в конце десять наблюдений о том, чего текст Prosper не имеет против них (темы и виды доказательств, без чужих формулировок) и список того, что у конкурентов есть, а у FPP не будет по правилам. Текст конкурентов никуда не переносился.</li>
+</ul>
 <h2>Часть 2. Firecrawl</h2>
 <ul>
-<li>Добавлен официальный удалённый MCP на уровне пользователя: <code>claude mcp add --scope user --transport http firecrawl https://mcp.firecrawl.dev/v2/mcp-oauth</code>. Статус: «Needs authentication», ждёт входа Дениса через <code>/mcp</code> в новой сессии.</li>
+<li>Сначала добавлен официальный удалённый MCP с входом через браузер (<code>claude mcp add --scope user --transport http firecrawl https://mcp.firecrawl.dev/v2/mcp-oauth</code>); вход токен не сохранял, и сервер переподключён по ключу API Дениса на адрес https://mcp.firecrawl.dev/v2/mcp (раздел «Подключение MCP и проверки»). Статус: Connected.</li>
 <li>Правила записаны в CLAUDE.md (раздел «Tools installed on October 16, 2026»): только анализ (объём, H1, H2, FAQ, схема, районы и услуги); текст конкурентов никогда не копируется и не пересказывается; никаких мониторов, расписаний и обхода целых сайтов; перед работой называть расход кредитов, после работы остаток.</li>
-<li>Тестовый прогон под Prosper (топ 5 органики Google по «plumber in Prosper TX» без каталогов, таблица в source/competitors-prosper.md) делается сразу после входа. Предварительная сверка обычным поиском дала кандидатов: Crown Plumbing Service, Porpoise Plumbing, The Prosper Plumber, Genzel Plumbing, Roto-Rooter (страница под Prosper); окончательный список даст поиск Firecrawl.</li>
+<li>Тестовый прогон под Prosper сделан (7 кредитов, осталось 993): пять органических результатов без каталогов, таблица в source/competitors-prosper.md. Предварительная сверка обычным поиском называла ещё Porpoise Plumbing и Genzel Plumbing; в первой десятке поиска Firecrawl их не было.</li>
 </ul>
 <h2>Часть 3. claude-code-setup</h2>
 <ul>
