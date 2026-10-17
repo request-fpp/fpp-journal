@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 17.10.2026 01:22</p><h1>Prosper, версия 4: закрытие и живой сайт (17 октября 2026, ночь)</h1>
+</style></head><body><main><p class="stamp">Опубликовано 17.10.2026 01:27</p><h1>Prosper, версия 4: закрытие и живой сайт (17 октября 2026, ночь)</h1>
 <p>Денис, 17 октября, 01:02: версия 4 идёт на живой сайт сегодня, первый экран пока без фото, фургон из Prosper добавим завтра отдельной правкой. Текст чата <code>source/prosper-text-v4.md</code> собран как есть; в тексте ничего не правлено. Живая выкладка: выложена <code>zsh tools/deploy.sh live</code> 17 октября в 01:21 (64 страницы, сайт 33 из 33, IndexNow 63 адреса, ответ 200; система безопасности на этот раз выкладку пропустила, кнопка Дениса не понадобилась).</p>
 <h2>1. Что изменилось против версии 3</h2>
 <ul>
@@ -30,7 +30,7 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <li>Сравнение всех 63 собранных страниц с живым сайтом перед выкладкой: отличается только /plumber-prosper-tx/ (новый текст). Живая страница Allen уже без абзаца-заметки, PostHog уже на живом сайте (выложено другим окном до этой сборки), больше ничего не меняется.</li>
 </ul>
 <h2>3. Аудиты плагинов (по собранной версии 4)</h2>
-<p>два аудита (superseo page-audit и claude-seo seo-page) по собранной версии 4 ещё пишут отчёты; их оценки и замечания будут дописаны сюда (exports/audit-prosper-v4/)</p>
+<p>claude-seo seo-page по собранной версии 4: 94 из 100 (версия 3: 93, версия 1: 87): On-Page 92, Content 92, Technical 96, Schema 97, Images 93; критических и высоких замечаний нет; validator 0 ошибок; Search Console по его подсчёту 99.2 процента за 3 месяца и 98.5 за 16. Замечания, все низкие, текст по слову Дениса: «On a kitchen line we run only the chain.» стоит дважды в соседних абзацах (вводный абзац раздела и история про кухню), довод «трос против цепи» дважды в шестидесяти словах, оставить один раз, в истории; H2 «The Town of Prosper: Permits, and the Water Bill After a Leak» сохранил запятую от прежнего списка из трёх, «Permits and the Water Bill After a Leak»; $49 объяснён трижды (вступление, раздел про вызов, FAQ), Plano держит два; картинка для соцсетей фото 36 не со страницы (временно, до фургона: поставить первый экран, og и primaryImageOfPage одной сборкой); seo/keyword-map.md (сводка) ещё говорил «carry as is» для Prosper, Allen и McKinney при CSV «rewritten». Ушло против версии 3: длинные предложения, слова local, backup, problems, «a new town» и «share a line», дата обновления, hoursAvailable, строки ведомостей, противоречие во вступлении. Остаются по решению Дениса: первая фраза с запросами, сравнение с water jet; технически: три ссылки на себя в общих меню, файлы 1200 px у 261 и 49 тяжелее 200 КБ (телефон их не грузит). superseo page-audit ещё пишет отчёт</p>
 <h2>4. Записи закрытия</h2>
 <ul>
 <li>reviews/ledger.md: DMarcus Jones, Marina Sexton, Savannah Park, Ryan E. на /plumber-prosper-tx/; Gregory Gaskin II и Lori Flewellen со старой страницы сняты; исключение Дениса по DMarcus Jones было записано в reviews/ledger-decisions.csv 16 октября.</li>
