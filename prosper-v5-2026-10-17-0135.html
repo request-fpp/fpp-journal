@@ -1,0 +1,39 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 17.10.2026 01:35</p><h1>Prosper, версия 5: три правки по аудитам, живой сайт (17 октября 2026, 01:33)</h1>
+<p>Денис, 17 октября, 01:02: версия идёт на живой сайт сегодня, первый экран пока без фото, фургон из Prosper добавим завтра отдельной правкой. Версия 5 это версия 4 плюс три правки чата по двум аудитам версии 4 (claude-seo 94 из 100, superseo 57 из 70; аудиты версии 5 не гонялись, правки мелкие). Выложена <code>zsh tools/deploy.sh live</code> в 01:33 (64 страницы, сайт 33 из 33, IndexNow 1 адрес, ответ 200), после версии 4, стоявшей на живом сайте с 01:21.</p>
+<h2>1. Три правки</h2>
+<ul>
+<li>Фраза «On a kitchen line we run only the chain.» стояла дважды (конец вводного абзаца раздела и история про кухню), теперь один раз, в истории; вводный абзац кончается на «The chain snake scrubs the wall.»</li>
+<li>H2 города без запятой от прежнего списка: «The Town of Prosper: Permits and the Water Bill After a Leak».</li>
+<li>H2 водонагревателей без гаража (Денис 00:28: в том доме он был в гараже, не «обычно»): «Water Heaters in Prosper: Ten Years, Give or Take».</li>
+</ul>
+<h2>2. Проверки</h2>
+<ul>
+<li>Сайт 33 из 33; заметок в скобках в HTML 0 на всех 64 страницах. Текст 3,923 слова в файле, 4,042 в теле; check_text: те же два замечания внутри цитируемых отзывов; check_overlap с конкурентами 0. Мета 155 знаков. Тире 0, телефонов в тексте 0, сумма одна ($49), соседних городов 0, ссылок в теле 62, на другие города и на себя 0.</li>
+<li>Вёрстка чисто на шести ширинах, шрифты чисто, Lighthouse телефон 99 (LCP 1.7 с, CLS 0), компьютер 100, вес на телефоне 693 КБ. Схема байт в байт как у версии 4, проверенной validator.schema.org (0 ошибок): Service с hoursAvailable 24/7, 6 VideoObject, FAQ на 7 вопросов, dateModified 2026-10-17. check_reviews: 56 отзывов, проблем 0. Search Console 98.5 процента показов.</li>
+<li>Сравнение всех 63 собранных страниц с живым сайтом перед выкладкой (tools/compare_live.py): отличалась только Prosper, 8 строк, три правки. Allen без заметки и PostHog уже были на живом сайте.</li>
+<li>После выкладки живая страница проверена: новые H2, фраза про кухню один раз, без noindex, без заметок; живой Allen чист.</li>
+</ul>
+<h2>3. Записи</h2>
+<ul>
+<li>Ведомости отзывов, план, карта ключей, CLAUDE.md, handoff уже несли закрытие версии 4; переписаны на версию 5. voice/samples/2026-10-17-prosper-text-v5-closed.md (текст страницы без заметок сборки) вместо копии версии 4; voice/samples/2026-10-16-prosper.md обновлён.</li>
+<li>Копия ~/Projects/fppplumbing-site-posthog, tools/posthog_live.sh и tools/allen_fix_live.sh убраны ещё после версии 4 (01:25); живые выкладки только из ~/Projects/fppplumbing-site (main).</li>
+</ul>
+<h2>4. Открыто</h2>
+<ul>
+<li>Фото фургона в Prosper на первый экран: завтра, от Дениса, отдельной правкой (подпись «The FPP Plumbing van in Prosper»; первый экран, og и primaryImageOfPage одной сборкой).</li>
+<li>Три ответа Дениса, которых ждёт чат: slab leak в Prosper, проверка перед покупкой дома, два водонагревателя.</li>
+<li>Две официальные ссылки и фраза про компанию по восстановлению (у чата).</li>
+<li>Свободны для страницы PRV: 262 до 267, 35, 36, 121.</li>
+</ul></main></body></html>
