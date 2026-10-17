@@ -1,0 +1,119 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 16.10.2026 23:38</p><h1>Prosper, версия 1: интейк файлов, подписи, сборка на черновой адрес (16 октября 2026, ночь)</h1>
+<p>Черновой адрес: https://draft.fppplumbing-preview.pages.dev/plumber-prosper-tx/ (вход по почте, noindex). Живой сайт не тронут: на fppplumbing.com/plumber-prosper-tx/ стоит старая страница. Текст чата <code>source/prosper-text-v1.md</code> собран как есть, кроме одной фразы раздела про канализацию (часть 6). Собрано по заданию чата «Prosper, версия 1» и дополнению с ответами Дениса 22:33.</p>
+<h2>1. Файлы: номера и дубликаты</h2>
+<ul>
+<li>Принято 7 новых файлов: 341 IMG_5467_2.MOV (7 августа 2026, 9 с), 342 IMG_3974.MOV (22 июня 2026, 18 с), 343 IMG_0531_2.MOV (21 ноября 2025, 5.5 с), 344 IMG_8223.MOV (22 июля 2025, 9.5 с), 345 IMG_2991.MOV (24 февраля 2025, 7 с), 346 IMG_8438.MOV (13 августа 2024, 6 с), 347 IMG_4096.HEIC (31 марта 2025).</li>
+<li>Дубликаты: IMG_1039_2.HEIC и IMG_1067_2.HEIC это фото 261 и 264 (та же секунда съёмки, 14 и 15 октября 2025). Новых номеров не получили, в архив не копировались.</li>
+</ul>
+<h2>2. Город по каждому файлу</h2>
+<ul>
+<li>341, 342, 343, 344: Prosper по слову Дениса, граница города согласна.</li>
+<li>345 и фото 52, 121 той же работы (24 февраля 2025): Prosper по его слову 22:16, граница говорит Celina. 52 и 121 сняты с плана страницы Celina; подписи, alt и имена файлов теперь с Prosper.</li>
+<li>346 и 347: Prosper по его слову 22:33 («всё, что я сюда скидываю про Prosper, Prosper»).</li>
+<li>35, 36, 49: источник города переписан на его слово (граница тоже Prosper).</li>
+<li>Источники города записаны в photos/captions.csv теми словами, что в задании; его слова по каждому случаю в графе what_denys_said, подписи и alt в photos/captions-en.csv, слаги в tools/photo_slugs.py.</li>
+</ul>
+<h2>3. Три HEIC, что на них</h2>
+<ul>
+<li>IMG_1039_2.HEIC (это 261): манометр на уличном кране у кирпичной стены рядом с блоком кондиционера, чёрная стрелка около 120 PSI.</li>
+<li>IMG_1067_2.HEIC (это 264): тот же кран, чёрная стрелка около 70, после PRV.</li>
+<li>IMG_4096.HEIC (347): корродированный картридж Moen с зелёным штоком в руке в перчатке, душ в плитке, на полу ключ и сумка с инструментом. Подпись: «The Moen shower cartridge out of a five year old house: corroded, the rubber gone, Prosper».</li>
+</ul>
+<h2>4. Кадры из 261 до 267, клипы и расстановка</h2>
+<ul>
+<li>Под историей «The house at 120 PSI.» ряд из четырёх по ходу рассказа: клип 344 (вода бьёт из крана между кондиционерами), фото 261 (120 на манометре), клип 266 (откопали: на линии только shut-off, PRV нет), фото 263 (новый PRV и кран в новой коробке). 264 (70 PSI), 262, 265 и 267 не поставлены, свободны для страницы PRV.</li>
+<li>Клипы, все без звука, 3:4, до 400 КБ: 341 с 0.5 по 4.0 с (весь проём со всеми клапанами; с 4.5 с камера наезжает на наклейку Flo с QR-кодом, клип кончается раньше); 342 с 4.5 по 8.5 с (бак от поддона до дымохода; до 4 с в кадре ящик Milwaukee на полу); 343 с 0.0 по 4.0 с (коробка полная воды; цифры счётчика под мутной водой не читаются даже на вырезках в полный размер, проверено по кадрам 0, 1, 2.5, 4 и 5 с, а клип идёт в 480 px); 344 с 1.8 по 4.6 с (в первую секунду ботинок, с 4.6 с камера уходит на вентилятор кондиционера, с 5.2 с рука в перчатке); 345 с 1.5 по 5.5 с (старый кран с трещиной рядом с новым, надпись на катушке шланга в кадр не попадает); 346 с 0.5 по 3.9 с, окно верхние 3:4 кадра (внизу ботинки, с 5.5 с рука); 266 с 3.0 по 7.0 с.</li>
+<li>Пары и ряды: под историей Moen Flo пара 35 (стена вскрыта, старый PRV на линии) и клип 341; под «The split barrel.» ряд из трёх: клип 345, фото 121, фото 52. По одному рядом с историей: 342 (бак), 343 (коробка счётчика), 49 (кухня), 346 (унитаз), 347 (картридж). В блоке офиса фото 2, фургон у офиса Frisco (301 стоит на странице Frisco).</li>
+<li>Фото 121 обрезано слева на 14 процентов: там была надпись на катушке шланга.</li>
+<li>Первый экран: фото 36 (новый PRV и Moen Flo в гараже Prosper), подпись чата. Фото сначала не встало: карту первых фото городских страниц строит tools/export_design.py, а не сборка контента; запущен, страница пересобрана и перевыложена. Записано в CLAUDE.md.</li>
+</ul>
+<h2>5. Отзывы</h2>
+<ul>
+<li>Все четыре свободны, ни один не стоит на другой странице: DMarcus Jones (Google, профиль Frisco, июнь 2026, Local Guide Level 2, прочитано в его профиле; подпись с городом Prosper, потому что он сам его называет; исключение Дениса для имени Denys записано в reviews/ledger-decisions.csv), Marina Sexton (Google, Frisco, сентябрь 2026, Level 3; города в её тексте нет, в подписи тоже), Savannah Park (Google, Frisco, март 2026, Level 4, прочитано в её профиле), Ryan E. (Thumbtack, март 2023). Резерв (Eric H., Sathya P., Laura B.) не понадобился.</li>
+<li>tools/check_reviews.py: 56 отзывов на 18 страницах, проблем 0.</li>
+</ul>
+<h2>6. Страницы Town of Prosper, открыты заново 16 октября ночью</h2>
+<ul>
+<li>Открыты все десять адресов из задания, плюс FAQ Public Works (Faq.aspx?TID=47, фраза про locates) и форма пересчёта счёта (lf.prospertx.gov/Forms/ubrad3).</li>
+<li>Подтверждено слово в слово: «Due to high and variable water pressure throughout Town, PRVs are required for all new homes. Most existing homes have PRVs necessitating expansion tanks»; «State law requires for the Town to perform inspections of water heater replacements», «the plumber must be registered with the Town, obtain a permit prior to the work»; «If the permit cannot be obtained before the work is performed due to the permit office being closed (and the work is emergent), a permit must be obtained on the following business day»; «Always ask to see the permit before work begins»; 2021 IRC; разрешение на умягчитель (Homeowner Permit Requirements); «A Town employee will check to see if there is a leak or blockage in a Town's line. Otherwise, you will be notified if you should contact a plumber»; «The Town of Prosper does not locate private property. You will need to contact a plumber»; «watch the meter» (Fix-a-Leak); форма пересчёта: «no more than once in 24 months», «within thirty days of the repair», «Shutting off the water does not qualify as a repair», «freezing weather, settlement, corrosion, wear, or accident», «Receipts, Pictures, etc.»; зимний FAQ: «Insulate outdoor spigots. Turn off irrigation systems. Allow indoor faucets to drip», «Turn off your water supply»; отчёт о воде 2025: NTMWD и его озёра, Total Hardness Wylie 200 (96.0 до 200) ppm, «We found 0 lead service lines».</li>
+<li>Убрана одна фраза, из раздела про канализацию: «The Town's own sewer page names what clogs a house line most, and it's grease.» На странице Residential FOG города сказано только, что жир даёт «Clogged or restricted sewer services which cause backups in the facility»; слова «most» там нет. Абзац теперь начинается «Kitchen first. Grease builds on the pipe wall...». Если чат хочет вернуть ссылку на город, честная форма: «The Town's own FOG page says what grease does to a sewer service line: it clogs it and backs the house up».</li>
+<li>Ссылка города стоит на https://www.prospertx.gov/Faq.aspx?TID=27: там слова про давление и про водонагреватель. Адрес 337 из задания это только список двух разделов FAQ без текста ответов.</li>
+<li>К сведению чата: форма пересчёта с 3 октября изменилась, в определении «excusable defect» теперь «from the meter to the foundation, under the foundation, and/or in the internal wall pluming» (так, с опечаткой города). Фразы страницы «от счётчика до фундамента и под ним» верны; проценты пересчёта на странице не названы.</li>
+<li>Одно слово на грани, не трогал: «nearly every house in Prosper sits on a PRV» против слов города «Most existing homes have PRVs» и «required for all new homes». Решать чату.</li>
+</ul>
+<h2>7. Цифры проверок</h2>
+<ul>
+<li>Текст: 3,862 слова в файле, 4,440 в теле страницы с FAQ, отзывами и блоком офиса. tools/check_text.py: два замечания, оба внутри отзывов, которые цитируются слово в слово («affordable» у Marina Sexton и восклицательные знаки у неё, Savannah Park и Ryan E.); 38 троек «на глаз», список в части 10.</li>
+<li>tools/check_overlap.py с конкурентами Prosper: 0 (9 повторов со своими страницами: отзыв Savannah Park со старой страницы Prosper, фразы из заметок в скобках, «if we have time open we come the same day» с главной, McKinney и Allen).</li>
+<li>Title и два H2 слово в слово: «Plumber Prosper, TX: Water Heater, PRV &amp; 24/7 Emergency Plumber», «Our Plumbing Services in Prosper», «Prosper Plumbing FAQ». Фразы: «Prosper plumber» 1, «emergency plumber in Prosper» 1 в тексте (плюс H2), «plumbing company» 3, «plumbing contractor» 2, «Residential» 1, «water heater installation» 2, «faucet repair» 1, «plumbers» 4, «Plumber near me» 1 (с большой буквы в начале фразы, ссылка на главную).</li>
+<li>Тире 0. Телефонов в тексте и FAQ 0 (только кнопка Call Frisco и блок офиса). Сумма одна, $49, четыре упоминания. Соседних городов в тексте 0; Frisco только как офис, 19 раз; Plano один раз в общем блоке «Call the office closest to you».</li>
+<li>Ссылок в теле 62: все 13 услуг по одному разу (emergency дважды: в списке и «emergency plumbing page»), /#how-a-call-works, два гайда (счётчик, главный кран), профиль Google Frisco, FAQ города; у четырёх отзывов свои ссылки. На /plumber-frisco-tx/ и другие города ссылок нет.</li>
+<li>Схема: Plumber, WebSite, WebPage (datePublished 2025-05-16, dateModified 2026-10-16), BreadcrumbList, Service (provider организация, areaServed Prosper), Person, 4 Review без общей оценки, 7 VideoObject, FAQPage с семью вопросами слово в слово. validator.schema.org: 0 ошибок, 0 предупреждений.</li>
+<li>Сайт 32 из 32 (7 предупреждений на других страницах, как раньше). Вёрстка чисто на шести ширинах (17 картинок). Сдвиг шрифтов чисто. Lighthouse: телефон 99 и 100, LCP 1.8 с, CLS 0; компьютер 100 и 100, LCP 0.4 с. Вес на телефоне при загрузке 1,075 КБ (HTML 162, фото 729, постеры 184), клипы 1,635 КБ только при прокрутке.</li>
+<li>Search Console (exports/prosper-gsc.md): 131 запрос за 16 месяцев, 12,877 показов; слова 95 запросов и 12,560 показов (97.5 процента) стоят в тексте целиком. Чего нет, с показами: backup («prosper sewer line backup», 73 показа; на странице «comes back up»), problems («plumbing problems prosper tx», 49), hot («hot water heater repair near me», 16), master («master plumber prosper tx», 6; слово стоит в подвале в строке лицензии), damage («prosper slab leak damage», 4). Остальное: названия чужих компаний, опечатки, heating и furnace (не наше), Little Elm (другой город).</li>
+</ul>
+<h2>8. Аудиты плагинов</h2>
+<p>Два помощника, отчёты в exports/audit-prosper-v1/ (superseo-page-audit.md, claude-seo-seo-page.md); в тексте ничего не правлено.</p>
+<ul>
+<li>Оба нашли одну критическую ошибку сборки: многострочная заметка в квадратных скобках из текстового файла (блок про четыре отзыва, строки 172 до 177 файла) печаталась на странице как абзац под заголовком отзывов: тексты отзывов второй раз, имена файлов проекта и слова Дениса «ставь этот отзыв». Причина в tools/export_page_text.py: выбрасывались только однострочные заметки. Исправлено этой же ночью: заметка от строки с «[» до строки, кончающейся «]», выбрасывается целиком; черновик Prosper перевыложен без неё (на сборке черновика абзацев с «[» 0). Та же заметка стоит на живой странице Allen с вечера 16 октября (текст про четыре отзыва Allen, без кириллицы): это ошибка сборки, не текста. Исправление собрано и проверено: все 63 страницы новой сборки сравнены с живым сайтом, отличается только Allen, минус этот абзац; Prosper на живом сайте остаётся старым (PROSPER_TEXT=old). Живую выкладку система безопасности Claude Code без слова Дениса не пускает: для Дениса готова одна кнопка, <code>zsh tools/allen_fix_live.sh</code> (в отчёте в чат), после неё рабочая папка сама возвращается к черновику Prosper.</li>
+<li>superseo page-audit: 51 из 70 (новизна 9, семантика 7, E-E-A-T 7, структура 6, техника 7, вовлечение 7, конверсия 8); по оценке самого аудита, без утёкшей заметки было бы около 56. Остальные замечания: мета-описание 215 знаков, режется около 155 (предложен вариант на 152 знака); одна официальная ссылка, а можно пять (отчёт о воде, страница форм города, зимний FAQ, таблица Census); слов local, backup, plumbing problems нет (запросы с показами); «Over 450 reviews at five stars, on Google, Yelp and Thumbtack» против единой формулировки правил «more than 450 five-star reviews across Google, Yelp and Thumbtack»; «nearly every house in Prosper sits on a PRV» против слова города «most»; «On a kitchen line we run only the chain» и «No cable on a kitchen line, ever» как абсолют (это слова Дениса по фото 49, «кухню чистим только chain snake»; форму решает чат); фраза «A gas heater replacement is the whole set: the new tank, the vent...» спорит с историей, где дымоход оставили (вопрос Денису); абзац «The house at 120 PSI.» 203 слова, два предложения по 54 и 65 слов; восемь разделов кончаются выводом-строкой; три H2 из троек; факты города повторяются трижды (давление, раздел города, FAQ); конкуренты называют районы и дороги Prosper, страница ни одного места не называет (мы не выдумываем, нужны слова Дениса); слабая группа запросов про водонагреватели (позиции 28 до 73), тема чердачного бака не раскрыта.</li>
+<li>claude-seo seo-page: 87 из 100 (On-Page 84, Content 70, Technical 95, Schema 95, Images 91); одна критическая, та же заметка. Остальное: мета-описание 215 знаков; первый экран без фото на момент его первого запроса (исправлено той же ночью, фото 36 стоит); одна официальная ссылка, где у Plano четыре; множественного «plumbers» рядом с городом в тексте нет («plumbers prosper tx» и родня: 171 показ за 3 месяца, 654 за 16); «Over 450 reviews at five stars» не по правилу; $49 объяснён трижды; предложение в 65 слов в разделе города; файлы 1200 px у 261, 263, 49, 121 по 250 КБ (телефон их не берёт, планшет может); Service без hoursAvailable. Всё остальное совпало: один H1, 13 H2, FAQ и отзывы слово в слово в схеме, 27 из 27 @id, 0 тире, 0 чужих цен, 0 обещаний времени, 0 чужих городов, 98.6 процента показов за 3 месяца и 97.5 за 16 со всеми словами на странице.</li>
+</ul>
+<h2>9. Чего из задания не сделано, и почему, и что ждёт Дениса</h2>
+<ul>
+<li>«Полное видео по тапу» (пункт 4 задания): не сделано. Правило Дениса от 2 октября: клип только крутится, на нём нельзя ничего открыть, увеличить или остановить, плеера на странице нет. Это противоречие в задании, не забытый пункт; если Денис решит иначе, это его слово.</li>
+<li>Живая страница Allen: исправление ждёт кнопки Run у Дениса (часть 8). До его «да» по Prosper живая выкладка идёт только через <code>zsh tools/allen_fix_live.sh</code>, не через <code>zsh tools/deploy.sh live</code> из рабочей папки: иначе черновик Prosper уйдёт на живой сайт.</li>
+</ul>
+<h2>10. Тройки для чата (tools/check_text.py, «на глаз»)</h2>
+<ul>
+<li>is a plumbing company, licensed and insured</li>
+<li>the price second, the wall or the ground third</li>
+<li>on Google, Yelp and Thumbtack</li>
+<li>ten years, give or take</li>
+<li>the expansion tank, new supply lines and a new shut-off valve</li>
+<li>every water heater replacement, state law says so, and the permit and the</li>
+<li>a cheap spigot, the pressure, or both</li>
+<li>new shut-off valve, the gauge at 70, and the whole system came</li>
+<li>A newer Prosper house, main valve and PRV in the garage</li>
+<li>The copper corrodes, a pinhole opens, and the first sign is</li>
+<li>Grease, Wipes, and Roots in a Young</li>
+<li>cleanout on the wall, 75 feet of it, and scrubbed the line back</li>
+<li>the Ridgid closet auger, six feet of it, and the toilet cleared</li>
+<li>the pack or not, don't flush them, and spare yourself the next</li>
+<li>was corroded all over, rusted, and the rubber inside wasn't</li>
+<li>barrel keeps its water, the water freezes, and the spigot splits along</li>
+<li>indoor faucets dripping, outside spigots covered, and if a pipe bursts</li>
+<li>Permits, the Meter, and the Water Bill After</li>
+<li>by the plumbing code, that's all, and the inspections go through</li>
+<li>settlement, corrosion or wear can get the</li>
+<li>the Town's own word, high and variable</li>
+<li>up a tub drain, a pipe that froze and split</li>
+<li>After hours, on weekends and holidays</li>
+<li>a card, a check or cash</li>
+<li>Zelle, a check or cash is the plain</li>
+<li>the card company's cut, not ours, and you hear it before</li>
+<li>emergency fee is added, sized by the hour, and said on the phone</li>
+<li>section with the pinhole, dug out and replaced</li>
+<li>settlement, corrosion or wear</li>
+<li>water stays in it, freezes, and splits the barrel</li>
+<li>spigot gets a cover, the indoor faucets drip, and the shut-off valve gets</li>
+<li>FPP Plumbing came out, looked at it, and explained what happened with</li>
+<li>gave us clear pricing, replaced the water heater, and handled the city permit</li>
+<li>showed up on time, provided wonderful customer service, and was very knowledgeable about</li>
+<li>The work was efficient, professional, and affordable</li>
+<li>November 2023, garbage disposal and a leak under the</li>
+<li>TX, day or night, and the Request Service form</li>
+<li>price is said first, Saturday or Tuesday</li>
+</ul></main></body></html>
