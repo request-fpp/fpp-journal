@@ -1,0 +1,2817 @@
+{
+ "https://fppplumbing.com/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=3_fYSfv2Zsn2IKGNjDxNOg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-10T22:51:44Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/",
+   "userCanonical": "https://fppplumbing.com/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://sketchidea.us.com/finding-a-reliable-plumber-near-me",
+    "https://www.mapquest.com/us/texas/fpp-plumbing-649686988"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    },
+    {
+     "richResultType": "Review snippets",
+     "items": [
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      }
+     ]
+    },
+    {
+     "richResultType": "Videos",
+     "items": [
+      {
+       "name": "The meter leak indicator keeps turning with every tap off: water is leaking somewhere. Video, sped up, Plano"
+      },
+      {
+       "name": "Slab leak: water pushing out from under the foundation as the access hole for the tunnel is started; the water line went through the concrete without a sleeve"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/2024/12/02/hello-world/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=8eYDbCr86tO6weOWvKAd8Q&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=Kuy3HyQcMpsX0t5HEAol6Q&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=O5Tc8636VHxNloRE9lIAYw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-18T03:47:15Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/",
+   "userCanonical": "https://fppplumbing.com/blog/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/toilet-fill-valve-flush-valve-replacement-real-case-in-frisco-tx/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/author/admin/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=P1t0gsbQFDln_LFm3UQylQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/burst-outside-spigot/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=woKMEP4w85FC6zESer8A0w&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-07T06:33:24Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/burst-outside-spigot/",
+   "userCanonical": "https://fppplumbing.com/blog/burst-outside-spigot/",
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/clogged-kitchen-sink-chain-snake/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=RQ0wt900oN_wyw3zh4f9Iw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-08-21T09:59:12Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/clogged-kitchen-sink-chain-snake/",
+   "userCanonical": "https://fppplumbing.com/blog/clogged-kitchen-sink-chain-snake/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/clogged-main-drain-line-daycare-plano/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=svPKchbnUxbTnQ4Kzi5zkw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-05-01T14:40:25Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/clogged-main-drain-line-daycare-plano/",
+   "userCanonical": "https://fppplumbing.com/blog/clogged-main-drain-line-daycare-plano/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/post-sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/clogged-shower-drain-little-elm-case/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=YthgNicc4QptkEseWdWxSA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-07-22T20:04:30Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/clogged-shower-drain-little-elm-case/",
+   "userCanonical": "https://fppplumbing.com/blog/clogged-shower-drain-little-elm-case/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/clogged-toilet-auger-fix-blog/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=Awpb0W7aeHHNbPYTrf4hOw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-28T21:21:24Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/clogged-toilet-auger-fix-blog/",
+   "userCanonical": "https://fppplumbing.com/blog/clogged-toilet-auger-fix-blog/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/clogged-kitchen-sink-chain-snake/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/double-sink-clog-and-drain-line-repair/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=tGfyLJf7RrNakBpzY2hjmg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-08-30T00:48:22Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/double-sink-clog-and-drain-line-repair/",
+   "userCanonical": "https://fppplumbing.com/blog/double-sink-clog-and-drain-line-repair/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=aL8HGUwP6TDNGr5HxlUFOA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-12T16:49:49Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/",
+   "userCanonical": "https://fppplumbing.com/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/main-water-line-leak-under-sidewalk-plano-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=-77QL1hACx8G1EU9JXzJsA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-14T02:56:16Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/main-water-line-leak-under-sidewalk-plano-tx/",
+   "userCanonical": "https://fppplumbing.com/blog/main-water-line-leak-under-sidewalk-plano-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/moen-shower-cartridge-replacement-blog/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=G3r8fvYdPi2fbKBoFdVDNQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-08T13:44:08Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/moen-shower-cartridge-replacement-blog/",
+   "userCanonical": "https://fppplumbing.com/blog/moen-shower-cartridge-replacement-blog/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/clogged-toilet-auger-fix-blog/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/outside-spigot-replacement-plumber-in-frisco/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=fnzM7VemXvxHNjhqEJ43fg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-05-01T03:59:39Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/outside-spigot-replacement-plumber-in-frisco/",
+   "userCanonical": "https://fppplumbing.com/blog/outside-spigot-replacement-plumber-in-frisco/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/post-sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/outside-spigot-replacement-work/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=KUTaaLUPZHCzKhnlLqPKag&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/plumber-frisco-kitchen-drain-clog/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=M3RKqFgo5YCyyIhLacw2MQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-17T07:50:46Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/plumber-frisco-kitchen-drain-clog/",
+   "userCanonical": "https://fppplumbing.com/blog/plumber-frisco-kitchen-drain-clog/",
+   "referringUrls": [
+    "https://fppplumbing.com/blog/double-sink-clog-and-drain-line-repair/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    },
+    {
+     "richResultType": "Videos",
+     "items": [
+      {
+       "name": "Kitchen Drain Clog Cleaning in Frisco, TX | FPP Plumbing"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/plumber-frisco-water-heater-replacement/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=YOaTfntL5rd02mF3pqdttA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/post-2/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=HMdZG0NMZgx5a68hetmCuQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/post/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=PcQ6BQ0jwuziazmuo9M2bA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/shower-system-replacement-3-handle-to-single-handle-valve/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=axLUPnOGJ67BiisWL7R46Q&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-11T05:17:15Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/shower-system-replacement-3-handle-to-single-handle-valve/",
+   "userCanonical": "https://fppplumbing.com/blog/shower-system-replacement-3-handle-to-single-handle-valve/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=TM4-HMBERwjBZWLNwEEcqg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-04-07T04:55:13Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/",
+   "userCanonical": "https://fppplumbing.com/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/blog/slab-leak-two-leaks-one-line-plano/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=hdHec0PLmXAiwlqo_x2DoA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-18T08:32:39Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/slab-leak-two-leaks-one-line-plano/",
+   "userCanonical": "https://fppplumbing.com/blog/slab-leak-two-leaks-one-line-plano/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/toilet-fill-valve-flush-valve-replacement-real-case-in-frisco-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=_4kbR_5wjtQRQBSvhISHtg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-08-21T01:03:05Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/blog/toilet-fill-valve-flush-valve-replacement-real-case-in-frisco-tx/",
+   "userCanonical": "https://fppplumbing.com/blog/toilet-fill-valve-flush-valve-replacement-real-case-in-frisco-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/blog/toilet-replacement-with-new-shutoff-valve-and-wax-ring/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=J1DR8WjQVmjiF23qW9Se7A&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "lastCrawlTime": "2026-05-30T10:57:24Z",
+   "pageFetchState": "SUCCESSFUL",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/clogged-drain-cleaning-frisco-plano/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=oQ2YgtoAGNs8vCiK898oCA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-15T11:29:55Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/clogged-drain-cleaning-frisco-plano/",
+   "userCanonical": "https://fppplumbing.com/clogged-drain-cleaning-frisco-plano/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/confidentiality-policy/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=cfHulI-qNjMO2Dbc4NjLNQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-18T09:49:42Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/confidentiality-policy/",
+   "userCanonical": "https://fppplumbing.com/confidentiality-policy/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/drain-services/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/contact/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=s2dghbzRY2hbpVHeOpyz8w&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-04T03:44:50Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/contact/",
+   "userCanonical": "https://fppplumbing.com/contact/",
+   "referringUrls": [
+    "https://fppplumbing.com/",
+    "https://fppplumbing.com/water-heater-repair-frisco-mckinney/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/drain-services/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=gSySh7A5v8jBDHH-oIJPgQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-15T01:06:59Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/drain-services/",
+   "userCanonical": "https://fppplumbing.com/drain-services/",
+   "referringUrls": [
+    "https://fppplumbing.com/top-emergency-plumber-calls-frisco/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/emergency-plumbing-services/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=T5Lx3sCAiZ61b-X0mSUsNA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-03T16:44:37Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/emergency-plumbing-services/",
+   "userCanonical": "https://fppplumbing.com/emergency-plumbing-services/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/fixture-installation-repair/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=TRtQDEYGEhkqPSUBAPDsPQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-16T21:44:36Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/fixture-installation-repair/",
+   "userCanonical": "https://fppplumbing.com/fixture-installation-repair/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumber-lewisville-tx/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/gallery/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=-_tDtNR8ldMi2u0L2sS4EQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-08T01:11:08Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/gallery/",
+   "userCanonical": "https://fppplumbing.com/gallery/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/water-lines/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/garbage-disposal-repair-frisco-plano/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=FFu3ogu19JRKP0Ik7O5EGw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-17T21:52:03Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/garbage-disposal-repair-frisco-plano/",
+   "userCanonical": "https://fppplumbing.com/garbage-disposal-repair-frisco-plano/",
+   "referringUrls": [
+    "https://fppplumbing.com/plumber-little-elm-tx/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/hose-bib-repair-frisco-plano/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=yINqwQrJgxpxIdERKwk7oA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-07T12:45:52Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/hose-bib-repair-frisco-plano/",
+   "userCanonical": "https://fppplumbing.com/hose-bib-repair-frisco-plano/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/confidentiality-policy/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/news": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=Eh4GMLV9wq4whAyLfWijQg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/news/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=RtOyH2MV5foCDfqZpSz6xA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumber-allen-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=bEmaNuHVHKn0d9n4St2mnA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-14T21:30:45Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-allen-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-allen-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-carrollton-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=p7MB7qJ-NZ13z4csDRPMKQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-18T21:19:04Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-carrollton-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-carrollton-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumber-lewisville-tx/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-celina-tex-water-heater-repair-replacement/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=sXDnzDosX2qAGLxd_hIZaw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumber-celina-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=n3bB8oqwF1d65QsoSvG4ig&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-16T18:49:48Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-celina-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-celina-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-frisco-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=QjFAdg4lJUrz7VfjqkU7mg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-08T14:35:22Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-frisco-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-frisco-tx/",
+   "referringUrls": [
+    "https://reports.lpraudit.com/texas/frisco/drain-cleaning/",
+    "https://biznes.newseria.pl/ze-swiata/ein-newswire/frisco-tx-emergency,b571427413"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    },
+    {
+     "richResultType": "Review snippets",
+     "items": [
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      }
+     ]
+    },
+    {
+     "richResultType": "Videos",
+     "items": [
+      {
+       "name": "The PRV leaking in its box: water running out of the old valve into the mud, Frisco"
+      },
+      {
+       "name": "A stuck outside spigot: the handle turns and the water keeps running, Frisco"
+      },
+      {
+       "name": "On the camera screen: the line packed with roots at the cracked joint, seen through the toilet flange, Frisco"
+      },
+      {
+       "name": "The roots come out through the toilet flange on the chain snake, Frisco"
+      },
+      {
+       "name": "Where the main sewer line broke at the foundation: water runs out of the joint, roots around it, Frisco"
+      },
+      {
+       "name": "The expansion tank as we found it: full of water, hanging on the PEX line and bending it, Frisco"
+      },
+      {
+       "name": "The handle turns and the water keeps running: a broken shower cartridge, Frisco"
+      },
+      {
+       "name": "A water heater in an attic that burst at night: water running over the top of the tank, Frisco"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-lewisville-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=oHZkNNqVNrbxLOgNz0Hi-A&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-11T00:37:24Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-lewisville-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-lewisville-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/drain-services/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-little-elm-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=BSlzW8Au3DGKAWAxJ0ueJQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-11T13:48:53Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-little-elm-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-little-elm-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumber-lewisville-tx/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-mckinney-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=DJzcPFUjPaBKX9UUARSMUw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-15T01:31:13Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-mckinney-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-mckinney-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/top-emergency-plumber-calls-frisco/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-plano-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=cnsTw3aVYunWYi69FiXc_w&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-17T20:29:32Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-plano-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-plano-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/drain-services/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    },
+    {
+     "richResultType": "Review snippets",
+     "items": [
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      }
+     ]
+    },
+    {
+     "richResultType": "Videos",
+     "items": [
+      {
+       "name": "The vent pipe of a water heater coming out at the ceiling, Plano"
+      },
+      {
+       "name": "An old spigot soldered straight onto the pipe in the wall, Plano"
+      },
+      {
+       "name": "The same spigot unsoldered: only the pipe is left in the wall, Plano"
+      },
+      {
+       "name": "A spigot on a pipe out of the ground: it had burst and leaked for a long time, open it and the water comes out at the ground, Plano"
+      },
+      {
+       "name": "After: a new spigot on a new copper pipe, Plano"
+      },
+      {
+       "name": "An outside wall after a freeze: the pipe burst inside a press fitting"
+      },
+      {
+       "name": "Before: a three handle tub and shower valve, water running from the spout, Plano"
+      },
+      {
+       "name": "After: one handle and a wide cover plate on the same wall, Plano"
+      },
+      {
+       "name": "Slab leak: a pinhole spraying from the copper line under the foundation, Plano"
+      },
+      {
+       "name": "No cleanout to work from, so the chain snake goes in through the toilet drain: the clog breaks and the water goes down, Plano"
+      },
+      {
+       "name": "After: the toilet back in place and flushing, Plano"
+      },
+      {
+       "name": "Before the dig: water coming up in the meter box, Plano"
+      },
+      {
+       "name": "Dug out: the copper line by the meter with roots around it, water spraying from the line, Plano"
+      },
+      {
+       "name": "Before: the main line and the tee to the spigot in a flooded dig, Plano"
+      },
+      {
+       "name": "The meter dial turning with everything in the house closed. Video, sped up, Plano"
+      },
+      {
+       "name": "Behind the water heater closet: a pinhole spraying from the copper supply line, Plano"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-prosper-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=fUPsort6ydOTIEDFqH9jew&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-17T14:15:10Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-prosper-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-prosper-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/fixture-installation-repair/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    },
+    {
+     "richResultType": "Review snippets",
+     "items": [
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      },
+      {
+       "name": "FPP Plumbing"
+      }
+     ]
+    },
+    {
+     "richResultType": "Videos",
+     "items": [
+      {
+       "name": "The new gas water heater in the garage: the vent, the gas line, the T&amp;P line and the pan, Prosper"
+      },
+      {
+       "name": "Water pouring out of the wall spigot between the two AC units, an emergency call, Prosper"
+      },
+      {
+       "name": "The garage wall box after the job: the new PRV, the new shut-off valve and the Moen Flo on the line, Prosper"
+      },
+      {
+       "name": "The meter box full of water, the meter turning with everything in the house off, Prosper"
+      },
+      {
+       "name": "The Ridgid closet auger in the toilet, the clog cleared, Prosper"
+      },
+      {
+       "name": "The old frost free spigot split along the barrel, beside the new one, Prosper"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumber-the-celina-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=r9Fbd5_zOBaKN-T__0FeCQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Redirect error",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "lastCrawlTime": "2026-07-27T18:01:05Z",
+   "pageFetchState": "REDIRECT_ERROR",
+   "referringUrls": [
+    "https://fppplumbing.com/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumber-the-colony-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=ZeyPR_gEs_a4TjCFhlnRdg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-12T08:03:54Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumber-the-colony-tx/",
+   "userCanonical": "https://fppplumbing.com/plumber-the-colony-tx/",
+   "referringUrls": [
+    "https://fppplumbing.com/plumber-little-elm-tx/",
+    "https://fppplumbing.com/plumber-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=PWJ-1HrIr34yZmYF58JLVQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Not found (404)",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "lastCrawlTime": "2026-05-18T13:40:12Z",
+   "pageFetchState": "NOT_FOUND",
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guide/water-leak-yard-tips-2026/",
+    "https://fppplumbing.com/plumbing-guide/how-long-do-water-heaters-last-guide/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/angle-stop-valve-leaking-under-sink/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=J27zP7hT1xeSwKc7xlxXFQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-07T17:31:44Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/angle-stop-valve-leaking-under-sink/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/angle-stop-valve-leaking-under-sink/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guide/bathtub-drain-slow-draining-tips-2026/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/automatic-water-shut-off-installation-cost/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=QrbJk7DOF6ehbiwaEmJMeQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/automatic-water-shut-off-valve-install-north-texas/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=0xZfJl95g_sbqeB3Zemtfg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-16T00:07:01Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/automatic-water-shut-off-valve-install-north-texas/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/automatic-water-shut-off-valve-install-north-texas/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/bathtub-drain-slow-draining-tips-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=Dg_NW53q9jxebsdS1_2QSg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-11T18:23:27Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/bathtub-drain-slow-draining-tips-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/bathtub-drain-slow-draining-tips-2026/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guides-tips/",
+    "https://fppplumbing.com/plumbing-guide/angle-stop-valve-leaking-under-sink/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/emergency-plumbing-repair-cost-guid-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=FoD5MFJR_oa5s4m4v8KhLA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Page with redirect",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-08-06T03:02:28Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/",
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/",
+    "https://fppplumbing.com/plumbing-guide/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=GXQeuKgjGWIe_tS6mZu2yg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-14T09:34:48Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/",
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/emergency-repair-cost-guide-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=VOslUIuiMH44SU-egpxYUw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/how-long-do-water-heaters-last-guide/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=Pq-nemUiDoDkbC80LoTphQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-12T15:25:09Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/how-long-do-water-heaters-last-guide/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/how-long-do-water-heaters-last-guide/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guide/plumber-near-me-north-texas-guide-to-avoid-scams/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/how-to-shut-main-water-valve-texas/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=O4tVHLUQON4EkR6S5ijzDA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/how-to-shut-off-main-valve-texas/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=zfTAWjDSt5F83QJID0Qd6A&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/how-to-shut-off-main-water-valve-texas/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=BOjzyv0bw8gA6mP9AuXUfQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-07T12:32:11Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/how-to-shut-off-main-water-valve-texas/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/how-to-shut-off-main-water-valve-texas/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/main-water-line-leak-under-sidewalk-plano-tx/",
+    "https://fppplumbing.com/plumbing-guide/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/plumber-near-me-north-texas-guide-to-avoid-scams/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=GlLlbgDIswhqPD8YxTd2hg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-11T13:49:37Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/plumber-near-me-north-texas-guide-to-avoid-scams/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/plumber-near-me-north-texas-guide-to-avoid-scams/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/pressure-reducing-valve-replacement-guide-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=hZb34J8vhKarWLEvLTV_7A&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-17T21:35:42Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/pressure-reducing-valve-replacement-guide-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/pressure-reducing-valve-replacement-guide-2026/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guide/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/slab-leak-repair-plano-tips-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=aZCJgPfw0G6g8xZN0ab1qg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-05T01:52:01Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/slab-leak-repair-plano-tips-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/slab-leak-repair-plano-tips-2026/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      },
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/water-heater-making-noise-tips-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=RVa9P-9xAc_sfGZkFYBghA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-27T08:19:57Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/water-heater-making-noise-tips-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/water-heater-making-noise-tips-2026/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/water-heater-replacement-cost-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=zz_pSDhCbxVh8tXmAdRl7w&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-15T22:49:41Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/water-heater-replacement-cost-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/water-heater-replacement-cost-2026/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guides-tips/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=_zy-QTk8QMlEdN11rinKIw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-17T18:10:19Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/water-leak-yard-tips-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=eo-335-zKPShIwLOVJiQ0w&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-08-21T14:48:59Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/water-leak-yard-tips-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/water-leak-yard-tips-2026/",
+   "referringUrls": [
+    "https://fppplumbing.com/blog/main-water-line-leak-under-sidewalk-plano-tx/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/water-pressure-dropping-tips-2026/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=aTKF4n7PIQAcK7c7NGSCjA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-19T00:53:09Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/water-pressure-dropping-tips-2026/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/water-pressure-dropping-tips-2026/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guides-tips/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/why-is-my-water-bill-so-high-frisco-tx/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=VYTdqBXVYRAes_4gjwCfoA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-09T04:22:18Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/why-is-my-water-bill-so-high-frisco-tx/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/why-is-my-water-bill-so-high-frisco-tx/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumbing-guides-tips/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/why-your-toilet-keeps-backing-up/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=RXxUuxGoZDJ5__rpht1HBw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-07-12T16:55:10Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guide/why-your-toilet-keeps-backing-up/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guide/why-your-toilet-keeps-backing-up/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/plumbing-guide/your-toilet-keeps-back-up": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=Gpm4cgKdoh_OSCdYTgoM6Q&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/plumbing-guides-tips/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=Cho7a5fOpJlur2AW3qI14Q&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-08T16:31:26Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/plumbing-guides-tips/",
+   "userCanonical": "https://fppplumbing.com/plumbing-guides-tips/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumber-carrollton-tx/",
+    "https://fppplumbing.com/contact/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/prv-replacement-frisco-plano/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=5CRYRC3XEd4MmR_K51B3Gw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-08T12:04:43Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/prv-replacement-frisco-plano/",
+   "userCanonical": "https://fppplumbing.com/prv-replacement-frisco-plano/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/plumber-little-elm-tx/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/slab-leak-repair-frisco-plano-mckinney/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=8Lh2-9AK3EKBwSxlfJ805g&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-27T21:43:09Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/slab-leak-repair-frisco-plano-mckinney/",
+   "userCanonical": "https://fppplumbing.com/slab-leak-repair-frisco-plano-mckinney/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/toilet-repair-frisco-plano/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=P3kf6gVJ9DWxABdO9XomHQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-14T11:34:43Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/toilet-repair-frisco-plano/",
+   "userCanonical": "https://fppplumbing.com/toilet-repair-frisco-plano/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/top-emergency-plumber-calls-frisco/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=hMxqFDsXz82RGdUYLNQ8BQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-12T16:49:26Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/top-emergency-plumber-calls-frisco/",
+   "userCanonical": "https://fppplumbing.com/top-emergency-plumber-calls-frisco/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/water-heater-repair-frisco-mckinney/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/water-heater-repair-frisco-mckinney/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=w5C94i1xaTRbnprg9l4wCA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-17T13:11:30Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/water-heater-repair-frisco-mckinney/",
+   "userCanonical": "https://fppplumbing.com/water-heater-repair-frisco-mckinney/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/prv-replacement-frisco-plano/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/water-heaters/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=DY0PZEXOn9dn3Divnjhh6g&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-18T16:39:12Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/water-heaters/",
+   "userCanonical": "https://fppplumbing.com/water-heaters/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/blog/",
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/water-leak-detection-frisco-plano/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=d321v_4vbpjUawzlGxVduQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-09-30T17:34:46Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/water-leak-detection-frisco-plano/",
+   "userCanonical": "https://fppplumbing.com/water-leak-detection-frisco-plano/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/water-lines/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=SbOv-exBotylRkx7FTQ0PQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-18T01:34:37Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/water-lines/",
+   "userCanonical": "https://fppplumbing.com/water-lines/",
+   "sitemap": [
+    "https://fppplumbing.com/sitemap.xml"
+   ],
+   "referringUrls": [
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  },
+  "richResultsResult": {
+   "verdict": "PASS",
+   "detectedItems": [
+    {
+     "richResultType": "Breadcrumbs",
+     "items": [
+      {
+       "name": "Unnamed item"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2024/12/photo_2024-12-23_20-28-39-1024x1024.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=xEyQsRgjYfk0LYAW2JZTGg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2025/05/new-pressure-reducing-valve-installation-frisco-768x1024.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=rv8M0Hgtlv2QmOlG6BUuzw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2025/05/new-pressure-reducing-valve-installation-frisco.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=M2vJc2sSEdrapilMB45nZw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2025/05/photo_2025-05-15_20-41-47.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=wHjO6V6URYLf246dhBlWVg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2025/05/photo_2025-05-15_20-41-49.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=V8LW0MUPk-BozlTqJxZ5Mg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2025/05/prv-main-shutoff-valve-copper-water-line-repair-768x1024.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=VOfd9jkAoMKCEQ1ki0b6Lw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2025/05/prv-main-shutoff-valve-copper-water-line-repair.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=z9oc9PYJLvx_dhVk_rlqMA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/01/water-heater-replacement-cost-tx.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=lMIOeIckpUDAFOROJPHu3w&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/02/Garage-water-shutoff-access-panel-1024x1024.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=ffpW8c8wn9K9t5gfBi-qVw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/02/Garage-water-shutoff-access-panel.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=W9F9We6e32yiMjTrbcV14g&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/02/Main-water-meter-and-shutoff-valve.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=414O2zcy62TglnASzo0QFg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/02/how-to-turn-off-main-water-shutoff-valve-north-texas-1024x683.png": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=_KFOnSIV37k4_0va9O1qoA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/02/how-to-turn-off-main-water-shutoff-valve-north-texas.png": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=tmQGsyKXUfPHSeOyZYv01Q&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/02/the-water-meter-and-the-main-shutoff-valve-1024x1024.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=fVnuVwCI8pSrbU3tP8re4Q&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/03/angle-stop-valve-leaking-under-sink-plumbing-guide.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=f7tMYPKikoFkeHpsjsKsKA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/03/hair-clogged-shower-drain-removal-1024x571.jpg.webp": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=EYRRM-YeiENHFr77OuYa1w&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/03/hair-clogged-shower-drain-removal.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=6yG4vDdTrqvudUDoSztfEA&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/05/Automatic-Water-Shut-Off-Valve.jpg": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=x7vr8lGSO_k6J5lLH2h1Xg&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://fppplumbing.com/wp-content/uploads/2026/05/MOEN-Automatic-Shut-Off-Valve-1024x1024.jpg.webp": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=ESNlcqaXFKHmWWBJxZLhTw&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ },
+ "https://www.fppplumbing.com/": {
+  "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:fppplumbing.com&id=P9L_CjKHRIaFe-CSDXSdnQ&utm_medium=link&utm_source=api",
+  "indexStatusResult": {
+   "verdict": "NEUTRAL",
+   "coverageState": "Page with redirect",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "lastCrawlTime": "2026-10-09T12:28:25Z",
+   "pageFetchState": "SUCCESSFUL",
+   "googleCanonical": "https://fppplumbing.com/",
+   "userCanonical": "https://fppplumbing.com/",
+   "referringUrls": [
+    "https://fppplumbing.com/"
+   ],
+   "crawledAs": "MOBILE"
+  },
+  "mobileUsabilityResult": {
+   "verdict": "VERDICT_UNSPECIFIED"
+  }
+ }
+}

@@ -1,0 +1,1145 @@
+{
+ "site": "sc-domain:fppplumbing.com",
+ "permission": "siteRestrictedUser",
+ "made": "2026-10-18",
+ "first": "2025-06-06",
+ "last_final": "2026-10-16",
+ "prelim_end": "2026-10-17",
+ "windows": {
+  "16m": [
+   "2025-06-06",
+   "2026-10-16"
+  ],
+  "3m": [
+   "2026-07-19",
+   "2026-10-16"
+  ],
+  "28d": [
+   "2026-09-19",
+   "2026-10-16"
+  ],
+  "prev28d": [
+   "2026-08-22",
+   "2026-09-18"
+  ],
+  "after": [
+   "2026-10-06",
+   "2026-10-16"
+  ],
+  "before": [
+   "2026-09-25",
+   "2026-10-05"
+  ],
+  "after-fresh": [
+   "2026-10-06",
+   "2026-10-17"
+  ],
+  "last10-fresh": [
+   "2026-10-08",
+   "2026-10-17"
+  ]
+ },
+ "files": [
+  {
+   "file": "web-date-16m.csv",
+   "name": "web-date-16m",
+   "dims": [
+    "date"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 498,
+   "clicks": 1732,
+   "impressions": 1867478
+  },
+  {
+   "file": "web-date-16m-usa.csv",
+   "name": "web-date-16m-usa",
+   "dims": [
+    "date"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "usa",
+   "filters": [
+    {
+     "dimension": "country",
+     "operator": "equals",
+     "expression": "usa"
+    }
+   ],
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 498,
+   "clicks": 1537,
+   "impressions": 1739781
+  },
+  {
+   "file": "web-date-fresh.csv",
+   "name": "web-date-fresh",
+   "dims": [
+    "date"
+   ],
+   "type": "web",
+   "state": "all",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-08",
+   "end": "2026-10-17",
+   "rows": 10,
+   "clicks": 43,
+   "impressions": 21646
+  },
+  {
+   "file": "web-page-16m.csv",
+   "name": "web-page-16m",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 118,
+   "clicks": 1751,
+   "impressions": 2155396
+  },
+  {
+   "file": "web-page-3m.csv",
+   "name": "web-page-3m",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 87,
+   "clicks": 562,
+   "impressions": 296179
+  },
+  {
+   "file": "web-page-28d.csv",
+   "name": "web-page-28d",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-09-19",
+   "end": "2026-10-16",
+   "rows": 75,
+   "clicks": 191,
+   "impressions": 75194
+  },
+  {
+   "file": "web-page-prev28d.csv",
+   "name": "web-page-prev28d",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-08-22",
+   "end": "2026-09-18",
+   "rows": 67,
+   "clicks": 181,
+   "impressions": 96985
+  },
+  {
+   "file": "web-page-after.csv",
+   "name": "web-page-after",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-06",
+   "end": "2026-10-16",
+   "rows": 68,
+   "clicks": 61,
+   "impressions": 28060
+  },
+  {
+   "file": "web-page-before.csv",
+   "name": "web-page-before",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-09-25",
+   "end": "2026-10-05",
+   "rows": 59,
+   "clicks": 88,
+   "impressions": 25098
+  },
+  {
+   "file": "web-page-after-fresh.csv",
+   "name": "web-page-after-fresh",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "all",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-06",
+   "end": "2026-10-17",
+   "rows": 75,
+   "clicks": 65,
+   "impressions": 29570
+  },
+  {
+   "file": "web-page-16m-usa.csv",
+   "name": "web-page-16m-usa",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "usa",
+   "filters": [
+    {
+     "dimension": "country",
+     "operator": "equals",
+     "expression": "usa"
+    }
+   ],
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 83,
+   "clicks": 654,
+   "impressions": 1800593
+  },
+  {
+   "file": "web-page-date-16m.csv",
+   "name": "web-page-date-16m",
+   "dims": [
+    "page",
+    "date"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 19414,
+   "clicks": 1751,
+   "impressions": 2155396
+  },
+  {
+   "file": "web-page-date-fresh.csv",
+   "name": "web-page-date-fresh",
+   "dims": [
+    "page",
+    "date"
+   ],
+   "type": "web",
+   "state": "all",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-08",
+   "end": "2026-10-17",
+   "rows": 474,
+   "clicks": 43,
+   "impressions": 24141
+  },
+  {
+   "file": "web-query-16m.csv",
+   "name": "web-query-16m",
+   "dims": [
+    "query"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 11329,
+   "clicks": 708,
+   "impressions": 1652706
+  },
+  {
+   "file": "web-query-3m.csv",
+   "name": "web-query-3m",
+   "dims": [
+    "query"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 4602,
+   "clicks": 153,
+   "impressions": 200831
+  },
+  {
+   "file": "web-query-28d.csv",
+   "name": "web-query-28d",
+   "dims": [
+    "query"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-09-19",
+   "end": "2026-10-16",
+   "rows": 2473,
+   "clicks": 51,
+   "impressions": 47551
+  },
+  {
+   "file": "web-query-prev28d.csv",
+   "name": "web-query-prev28d",
+   "dims": [
+    "query"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-08-22",
+   "end": "2026-09-18",
+   "rows": 2340,
+   "clicks": 50,
+   "impressions": 62918
+  },
+  {
+   "file": "web-query-after.csv",
+   "name": "web-query-after",
+   "dims": [
+    "query"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-06",
+   "end": "2026-10-16",
+   "rows": 1504,
+   "clicks": 20,
+   "impressions": 19902
+  },
+  {
+   "file": "web-query-before.csv",
+   "name": "web-query-before",
+   "dims": [
+    "query"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-09-25",
+   "end": "2026-10-05",
+   "rows": 1640,
+   "clicks": 23,
+   "impressions": 15428
+  },
+  {
+   "file": "web-query-16m-usa.csv",
+   "name": "web-query-16m-usa",
+   "dims": [
+    "query"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "usa",
+   "filters": [
+    {
+     "dimension": "country",
+     "operator": "equals",
+     "expression": "usa"
+    }
+   ],
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 10972,
+   "clicks": 650,
+   "impressions": 1560447
+  },
+  {
+   "file": "web-query-page-16m.csv",
+   "name": "web-query-page-16m",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 17906,
+   "clicks": 713,
+   "impressions": 1919769
+  },
+  {
+   "file": "web-query-page-3m.csv",
+   "name": "web-query-page-3m",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 6904,
+   "clicks": 154,
+   "impressions": 227306
+  },
+  {
+   "file": "web-query-page-28d.csv",
+   "name": "web-query-page-28d",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-09-19",
+   "end": "2026-10-16",
+   "rows": 3756,
+   "clicks": 51,
+   "impressions": 54097
+  },
+  {
+   "file": "web-query-page-after.csv",
+   "name": "web-query-page-after",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-06",
+   "end": "2026-10-16",
+   "rows": 2198,
+   "clicks": 20,
+   "impressions": 22162
+  },
+  {
+   "file": "web-query-page-before.csv",
+   "name": "web-query-page-before",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-09-25",
+   "end": "2026-10-05",
+   "rows": 2430,
+   "clicks": 23,
+   "impressions": 17789
+  },
+  {
+   "file": "web-query-page-after-fresh.csv",
+   "name": "web-query-page-after-fresh",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "web",
+   "state": "all",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-06",
+   "end": "2026-10-17",
+   "rows": 2282,
+   "clicks": 22,
+   "impressions": 23162
+  },
+  {
+   "file": "web-query-page-16m-usa.csv",
+   "name": "web-query-page-16m-usa",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "usa",
+   "filters": [
+    {
+     "dimension": "country",
+     "operator": "equals",
+     "expression": "usa"
+    }
+   ],
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 17375,
+   "clicks": 654,
+   "impressions": 1800593
+  },
+  {
+   "file": "web-query-date-16m.csv",
+   "name": "web-query-date-16m",
+   "dims": [
+    "query",
+    "date"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 318532,
+   "clicks": 708,
+   "impressions": 1652706
+  },
+  {
+   "file": "web-query-page-date-16m.csv",
+   "name": "web-query-page-date-16m",
+   "dims": [
+    "query",
+    "page",
+    "date"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 456681,
+   "clicks": 713,
+   "impressions": 1919769
+  },
+  {
+   "file": "web-device-16m.csv",
+   "name": "web-device-16m",
+   "dims": [
+    "device"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 3,
+   "clicks": 1732,
+   "impressions": 1867478
+  },
+  {
+   "file": "web-device-3m.csv",
+   "name": "web-device-3m",
+   "dims": [
+    "device"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 3,
+   "clicks": 558,
+   "impressions": 264056
+  },
+  {
+   "file": "web-page-device-16m.csv",
+   "name": "web-page-device-16m",
+   "dims": [
+    "page",
+    "device"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 191,
+   "clicks": 713,
+   "impressions": 1919769
+  },
+  {
+   "file": "web-query-device-16m.csv",
+   "name": "web-query-device-16m",
+   "dims": [
+    "query",
+    "device"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 14775,
+   "clicks": 708,
+   "impressions": 1652706
+  },
+  {
+   "file": "web-date-device-16m.csv",
+   "name": "web-date-device-16m",
+   "dims": [
+    "date",
+    "device"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 1368,
+   "clicks": 1732,
+   "impressions": 1867478
+  },
+  {
+   "file": "web-country-16m.csv",
+   "name": "web-country-16m",
+   "dims": [
+    "country"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 218,
+   "clicks": 1732,
+   "impressions": 1867478
+  },
+  {
+   "file": "web-country-3m.csv",
+   "name": "web-country-3m",
+   "dims": [
+    "country"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 168,
+   "clicks": 558,
+   "impressions": 264056
+  },
+  {
+   "file": "web-page-country-16m.csv",
+   "name": "web-page-country-16m",
+   "dims": [
+    "page",
+    "country"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 4106,
+   "clicks": 713,
+   "impressions": 1919769
+  },
+  {
+   "file": "web-query-country-16m.csv",
+   "name": "web-query-country-16m",
+   "dims": [
+    "query",
+    "country"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 41873,
+   "clicks": 708,
+   "impressions": 1652706
+  },
+  {
+   "file": "web-date-country-16m.csv",
+   "name": "web-date-country-16m",
+   "dims": [
+    "date",
+    "country"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 20818,
+   "clicks": 1732,
+   "impressions": 1867478
+  },
+  {
+   "file": "web-appearance-16m.csv",
+   "name": "web-appearance-16m",
+   "dims": [
+    "searchAppearance"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 1,
+   "clicks": 1,
+   "impressions": 462
+  },
+  {
+   "file": "web-appearance-translated-result-page-16m.csv",
+   "name": "web-appearance-translated-result-page-16m",
+   "dims": [
+    "page"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "filtered",
+   "filters": [
+    {
+     "dimension": "searchAppearance",
+     "operator": "equals",
+     "expression": "TRANSLATED_RESULT"
+    }
+   ],
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 8,
+   "clicks": 1,
+   "impressions": 462
+  },
+  {
+   "file": "web-appearance-translated-result-query-16m.csv",
+   "name": "web-appearance-translated-result-query-16m",
+   "dims": [
+    "query"
+   ],
+   "type": "web",
+   "state": "final",
+   "country": "filtered",
+   "filters": [
+    {
+     "dimension": "searchAppearance",
+     "operator": "equals",
+     "expression": "TRANSLATED_RESULT"
+    }
+   ],
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 10,
+   "clicks": 0,
+   "impressions": 135
+  },
+  {
+   "file": "web-hour-10d.csv",
+   "name": "web-hour-10d",
+   "dims": [
+    "hour"
+   ],
+   "type": "web",
+   "state": "hourly_all",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-09",
+   "end": "2026-10-18",
+   "rows": 231,
+   "clicks": 43,
+   "impressions": 19602
+  },
+  {
+   "file": "web-hour-page-recent.csv",
+   "name": "web-hour-page-recent",
+   "dims": [
+    "hour",
+    "page"
+   ],
+   "type": "web",
+   "state": "hourly_all",
+   "country": "all",
+   "filters": null,
+   "start": "2026-10-09",
+   "end": "2026-10-18",
+   "rows": 3942,
+   "clicks": 43,
+   "impressions": 21680
+  },
+  {
+   "file": "image-date-16m.csv",
+   "name": "image-date-16m",
+   "dims": [
+    "date"
+   ],
+   "type": "image",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 498,
+   "clicks": 240,
+   "impressions": 245770
+  },
+  {
+   "file": "image-page-16m.csv",
+   "name": "image-page-16m",
+   "dims": [
+    "page"
+   ],
+   "type": "image",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 62,
+   "clicks": 240,
+   "impressions": 250741
+  },
+  {
+   "file": "image-page-3m.csv",
+   "name": "image-page-3m",
+   "dims": [
+    "page"
+   ],
+   "type": "image",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 43,
+   "clicks": 124,
+   "impressions": 66781
+  },
+  {
+   "file": "image-query-16m.csv",
+   "name": "image-query-16m",
+   "dims": [
+    "query"
+   ],
+   "type": "image",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 4994,
+   "clicks": 51,
+   "impressions": 53565
+  },
+  {
+   "file": "image-query-page-16m.csv",
+   "name": "image-query-page-16m",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "image",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 5241,
+   "clicks": 51,
+   "impressions": 54156
+  },
+  {
+   "file": "video-date-16m.csv",
+   "name": "video-date-16m",
+   "dims": [
+    "date"
+   ],
+   "type": "video",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 498,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "video-page-16m.csv",
+   "name": "video-page-16m",
+   "dims": [
+    "page"
+   ],
+   "type": "video",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "video-page-3m.csv",
+   "name": "video-page-3m",
+   "dims": [
+    "page"
+   ],
+   "type": "video",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "video-query-16m.csv",
+   "name": "video-query-16m",
+   "dims": [
+    "query"
+   ],
+   "type": "video",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "video-query-page-16m.csv",
+   "name": "video-query-page-16m",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "video",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "news-date-16m.csv",
+   "name": "news-date-16m",
+   "dims": [
+    "date"
+   ],
+   "type": "news",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 498,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "news-page-16m.csv",
+   "name": "news-page-16m",
+   "dims": [
+    "page"
+   ],
+   "type": "news",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "news-page-3m.csv",
+   "name": "news-page-3m",
+   "dims": [
+    "page"
+   ],
+   "type": "news",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "news-query-16m.csv",
+   "name": "news-query-16m",
+   "dims": [
+    "query"
+   ],
+   "type": "news",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "news-query-page-16m.csv",
+   "name": "news-query-page-16m",
+   "dims": [
+    "query",
+    "page"
+   ],
+   "type": "news",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "discover-date-16m.csv",
+   "name": "discover-date-16m",
+   "dims": [
+    "date"
+   ],
+   "type": "discover",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 498,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "discover-page-16m.csv",
+   "name": "discover-page-16m",
+   "dims": [
+    "page"
+   ],
+   "type": "discover",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "discover-page-3m.csv",
+   "name": "discover-page-3m",
+   "dims": [
+    "page"
+   ],
+   "type": "discover",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "googleNews-date-16m.csv",
+   "name": "googleNews-date-16m",
+   "dims": [
+    "date"
+   ],
+   "type": "googleNews",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 498,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "googleNews-page-16m.csv",
+   "name": "googleNews-page-16m",
+   "dims": [
+    "page"
+   ],
+   "type": "googleNews",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2025-06-06",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  },
+  {
+   "file": "googleNews-page-3m.csv",
+   "name": "googleNews-page-3m",
+   "dims": [
+    "page"
+   ],
+   "type": "googleNews",
+   "state": "final",
+   "country": "all",
+   "filters": null,
+   "start": "2026-07-19",
+   "end": "2026-10-16",
+   "rows": 0,
+   "clicks": 0,
+   "impressions": 0
+  }
+ ],
+ "inspected": 100,
+ "live_sitemap_urls": 63,
+ "api_calls": 229
+}
