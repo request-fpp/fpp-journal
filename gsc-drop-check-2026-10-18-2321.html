@@ -1,0 +1,278 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 18.10.2026 23:21</p><h1>Проверка: почему последняя неделя слабее (три гайда и Plano), 18.10.2026</h1>
+<p>Денис попросил проверить три гайда и страницу Plano: как они выглядят в выдаче и что поменялось по сравнению со старым сайтом. На сайте ничего не менялось, это только отчёт. Данные: выгрузка Search Console от 18.10.2026 (<a href="gsc-deep">gsc-deep</a>), старый сайт из скана 30.09.2026 (source/crawl), живые страницы на 18.10.2026, профили Google (только чтение), поиск через Firecrawl.</p>
+<p>Страницы: гайд про главный кран <code>/plumbing-guide/how-to-shut-off-main-water-valve-texas/</code>, гайд про кран под раковиной <code>/plumbing-guide/angle-stop-valve-leaking-under-sink/</code>, пост про картридж Moen <code>/blog/moen-shower-cartridge-replacement-blog/</code> и <code>/plumber-plano-tx/</code>.</p>
+<h2>Коротко</h2>
+<ul>
+<li><strong>Три гайда просели ровно в тот день, когда Google перечитал их новую версию</strong> (7 и 8 октября). Показов стало меньше на 27-45%, позиция опустилась примерно на одно место. Текст у них тот же, что на старом сайте, а вокруг текста поменялось несколько вещей (ниже). В те же дни, 8 октября, Google закончил своё сентябрьское обновление против спама, поэтому одну причину назвать точно нельзя.</li>
+<li><strong>Это наши ошибки переезда, и их можно исправить:</strong>
+  1. пропали подписи под фотографиями: 33 подписи на 8 страницах, у гайда про главный кран все 9 (195 слов);
+  2. у всех картинок поменялся адрес: к нему добавился хвост <code>?v=…</code>. После этого показы в поиске по картинкам у гайда про главный кран упали примерно с 750 до 450 в день, у страниц PRV и hose bib почти до нуля;
+  3. на страницах нет строки для роботов, которая была на старом сайте (<code>max-image-preview:large</code>). Она разрешала Google показывать в выдаче крупную картинку.</li>
+<li><strong>Plano выглядит в Google так же, как раньше:</strong> показов даже больше, позиция та же (5,8). Кликов меньше: 4 за 10 дней против 16 за 11 дней до этого. Из профиля Google Plano на сайт переходят как обычно (6 переходов за неделю 8-14 октября). Числа маленькие, по Plano вывода пока нет.</li>
+</ul>
+<h2>Месяц целиком (19.09-16.10 против 22.08-18.09)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Последние 28 дней</th>
+<th style="text-align: right;">28 дней до них</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Клики</td>
+<td style="text-align: right;">191</td>
+<td style="text-align: right;">180</td>
+</tr>
+<tr>
+<td>Показы</td>
+<td style="text-align: right;">66 928</td>
+<td style="text-align: right;">86 221</td>
+</tr>
+<tr>
+<td>Средняя позиция</td>
+<td style="text-align: right;">11,4</td>
+<td style="text-align: right;">13,6</td>
+</tr>
+<tr>
+<td>CTR</td>
+<td style="text-align: right;">0,3%</td>
+<td style="text-align: right;">0,2%</td>
+</tr>
+<tr>
+<td>Клики из поиска по картинкам</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td>Клики с телефона / с компьютера</td>
+<td style="text-align: right;">109 / 80</td>
+<td style="text-align: right;">110 / 65</td>
+</tr>
+</tbody>
+</table>
+<p>По неделям кликов было 46, 53, 66 и 26. Последняя неделя (10-16 октября) самая слабая с конца лета. 17 октября, по предварительным данным, 4 клика.</p>
+<p>Что выросло за месяц: страница Frisco (позиция на последней неделе 5,7, раньше 15-17), «plumber frisco» 14,0 → 7,5, «plumber near me» по всему сайту 19,7 → 14,0, «plumbers near me» 11,9 → 6,9, «emergency plumber near me» 7,3 → 4,5, «slab leak repair» 20,5 → 13,3, «main water line repair» 28,9 → 15,0 (показов втрое больше).</p>
+<p>Что ушло вниз: показы главной падают с сентября неделя за неделей, с 5 368 до 1 304; «emergency plumber» 5,7 → 9,6; «plumber frisco tx» 1 121 → 303 показа (позиция 11,5 → 19,5); «plumber plano tx» 1 042 → 206 показов. Запросов в первой десятке (с показами от 20) стало 138 против 155.</p>
+<h2>По дням: до и после того, как Google перечитал страницу</h2>
+<p>«До»: 26.09-06.10 (11 дней, старая версия). «После»: 08.10-17.10 (10 дней, 17.10 предварительный).</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Google перечитал</th>
+<th style="text-align: right;">Клики до / после</th>
+<th style="text-align: right;">Показов в день до / после</th>
+<th style="text-align: right;">Позиция до / после</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Гайд про главный кран</td>
+<td>07.10</td>
+<td style="text-align: right;">21 / 8</td>
+<td style="text-align: right;">115 / 64 (−45%)</td>
+<td style="text-align: right;">6,5 / 8,1</td>
+</tr>
+<tr>
+<td>Гайд про кран под раковиной</td>
+<td>07.10</td>
+<td style="text-align: right;">15 / 4</td>
+<td style="text-align: right;">151 / 107 (−29%)</td>
+<td style="text-align: right;">7,5 / 8,0</td>
+</tr>
+<tr>
+<td>Пост про картридж Moen</td>
+<td>08.10</td>
+<td style="text-align: right;">12 / 0</td>
+<td style="text-align: right;">94 / 68 (−27%)</td>
+<td style="text-align: right;">7,4 / 8,4</td>
+</tr>
+<tr>
+<td>Plano</td>
+<td>не позже 08.10 (ссылки на новые разделы в выдаче с 08.10), последний раз 17.10</td>
+<td style="text-align: right;">16 / 4</td>
+<td style="text-align: right;">499 / 775 (+55%)</td>
+<td style="text-align: right;">5,8 / 5,8</td>
+</tr>
+</tbody>
+</table>
+<p>У трёх гайдов падение не постепенное: это ступенька на следующий день после того, как Google перечитал новую версию. Все три страницы в индексе, канонический адрес правильный, Google видит у них хлебные крошки.</p>
+<h2>Что поменялось на страницах по сравнению со старым сайтом</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Старый сайт</th>
+<th>Новый сайт</th>
+<th>Затронуто</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title, H1, заголовки H2, текст</td>
+<td></td>
+<td>то же (гайды заморожены)</td>
+<td>у Plano новый текст и H1 по решению Дениса</td>
+</tr>
+<tr>
+<td>Подписи под фото</td>
+<td>были</td>
+<td><strong>нет</strong></td>
+<td>гайд про главный кран 9, remodel guide 13, automatic shut-off guide 3, кран под раковиной 2, bathtub drain 2, yard leak 2, PRV 1, water heater repair 1</td>
+</tr>
+<tr>
+<td>Адреса картинок</td>
+<td><code>/wp-content/uploads/…/файл.jpg</code></td>
+<td><strong>тот же путь с хвостом <code>?v=…</code></strong>, на части страниц добавлены новые фото</td>
+<td>все страницы</td>
+</tr>
+<tr>
+<td>Строка для роботов</td>
+<td><code>index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1</code></td>
+<td><strong>нет</strong></td>
+<td>все страницы</td>
+</tr>
+<tr>
+<td>Meta description</td>
+<td></td>
+<td>та же</td>
+<td>у гайда про главный кран тот же текст; у Plano новый</td>
+</tr>
+<tr>
+<td>Дата в разметке (datePublished)</td>
+<td>была</td>
+<td><strong>нет</strong> у гайда про главный кран и у гайда про кран под раковиной</td>
+<td>2 гайда</td>
+</tr>
+<tr>
+<td>Автор в разметке</td>
+<td>«Denys Kavaler» или организация</td>
+<td>ссылка на Дениса (#denys)</td>
+<td>все гайды</td>
+</tr>
+<tr>
+<td>HowTo в разметке</td>
+<td>был у гайда про главный кран</td>
+<td>нет</td>
+<td>этот вид результатов Google не показывает с 2023 года, на выдачу не влияет</td>
+</tr>
+<tr>
+<td>Строка с автором и датой</td>
+<td>«Denys Kavaler CEO FPP Plumbing / 07/03/2026»</td>
+<td>«Denys Kavaler, Managing Partner and Licensed Plumber · Updated July 3, 2026»</td>
+<td>все гайды</td>
+</tr>
+<tr>
+<td>Ссылки «предыдущий / следующий пост»</td>
+<td>были</td>
+<td>нет, вместо них блок об авторе</td>
+<td>все гайды</td>
+</tr>
+<tr>
+<td>Вес HTML</td>
+<td>275-302 КБ</td>
+<td>131-139 КБ</td>
+<td>легче вдвое</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Подписи под фото.</strong> В файлах содержимого подписи есть, а в готовую страницу они не выводятся. Для замороженных гайдов это расходится с правилом «старый текст в точности». В подписях стояли слова этой темы: «main water meter box», «secondary shutoff», «garage wall», «turn the lever 90°». По одному из них, «garage water shut off valve», у гайда есть показы.</p>
+<p><strong>Адреса картинок.</strong> Хвост <code>?v=…</code> добавляется ко всем фото, чтобы после замены файла браузер не показывал старую версию. Для Google картинка с другим адресом это новая картинка: у старой пропадает связь со страницей, а новую ему надо найти и оценить заново. Старые файлы по старым адресам открываются (200), но страницы на них больше не ссылаются.</p>
+<p>Поиск по картинкам, показы за неделю (клики почти не менялись):</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th style="text-align: right;">12-18.09</th>
+<th style="text-align: right;">19-25.09</th>
+<th style="text-align: right;">26.09-02.10</th>
+<th style="text-align: right;">03-09.10</th>
+<th style="text-align: right;">10-16.10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Гайд про главный кран</td>
+<td style="text-align: right;">4 402</td>
+<td style="text-align: right;">5 539</td>
+<td style="text-align: right;">5 079</td>
+<td style="text-align: right;">4 388</td>
+<td style="text-align: right;">3 255</td>
+</tr>
+<tr>
+<td>hose bib</td>
+<td style="text-align: right;">272</td>
+<td style="text-align: right;">308</td>
+<td style="text-align: right;">364</td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>PRV</td>
+<td style="text-align: right;">226</td>
+<td style="text-align: right;">218</td>
+<td style="text-align: right;">230</td>
+<td style="text-align: right;">162</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Гайд про кран под раковиной</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">142</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">85</td>
+</tr>
+</tbody>
+</table>
+<p>По дням у гайда про главный кран: 600-900 показов в день до 7 октября, с 8 октября 380-550.</p>
+<p><strong>Строка для роботов.</strong> Без неё Google может показывать картинку страницы только обычного размера. С <code>max-image-preview:large</code> он может показать её крупно, во всю ширину экрана (это есть в документации Google). Сильнее всего это касается Discover; на обычную выдачу влияние, скорее всего, небольшое.</p>
+<h2>Plano</h2>
+<ul>
+<li>Видимость не упала: показов в день 775 против 499, позиция та же (5,8). Часть показов это карты и профиль Google: в отдельные дни у страницы тысячи показов на позиции 2 (13.10: 2 639 на позиции 2,3).</li>
+<li>Google уже показывает под Plano ссылки на разделы новой страницы (common problems, four Plano jobs, emergency и другие). Значит, новую страницу он прочитал.</li>
+<li>Кликов меньше: 4 за 08-17.10 против 16 за 26.09-06.10.</li>
+<li>Профиль Google Plano за неделю 8-14 октября: 6 переходов на сайт, 8 звонков, 402 показа в поиске. Это обычная неделя (в августе и сентябре было 5-10 переходов и 4-16 звонков). Цифры профиля за 15-17 октября Google ещё не досчитал.</li>
+<li>Title почти тот же (дефис заменён двоеточием), meta description новая, H1 новый по решению Дениса.</li>
+</ul>
+<h2>Как это выглядит в выдаче</h2>
+<p>В Google напрямую посмотреть не получилось: в браузере он показал проверку «вы не робот», а такие проверки я не прохожу. Поэтому выдачу я смотрел через Firecrawl, поиск с местом Frisco или Plano. Это близко к Google, но не то же самое: Firecrawl не показывает карты и блоки видео.</p>
+<ul>
+<li>«how to turn off water to your house texas»: первые 10 мест занимают YouTube, FOX 4, видео TDI в Facebook, Reddit, сайты городов. Нашего гайда в первой десятке нет. По Search Console средняя позиция гайда 8 по 175 разным запросам, то есть он держится на длинных формулировках.</li>
+<li>«under sink shut off valve leaking»: YouTube, Reddit, Instagram, Facebook, форумы. Нашего гайда в десятке нет.</li>
+<li>«moen shower won't turn off»: наш пост на 7 месте. Google показывает наш title, а вместо описания берёт первые строки текста: «If your shower won't shut off completely, the cartridge inside the valve has failed…».</li>
+<li>«plumber plano tx»: в обычной десятке Baker Brothers, Plano Plumbing, Milestone, Legacy, Roto-Rooter, Berkeys, Yelp, Angi. Нас среди них нет. По Search Console средняя позиция 7,5, и это почти целиком карты.</li>
+</ul>
+<p>Видно, что по запросам гайдов Google всё сильнее заполняет первую страницу видео и форумами. От нас это не зависит, но объясняет, почему гайды держатся на 7-8 месте.</p>
+<h2>Обновления Google в эти дни</h2>
+<p>Сентябрьское обновление Google против спама (September 2026 spam update) шло с 24 сентября и закончилось 8 октября. Ядровых обновлений (core update) в октябре Google не объявлял. 15-16 октября на форумах писали о колебаниях, Google их не подтверждал. Источники: <a href="https://www.seroundtable.com/recap-10-16-2026-42318.html" target="_blank" rel="noopener">Search Engine Roundtable, 16.10.2026</a>, <a href="https://www.seroundtable.com/category/google-updates" target="_blank" rel="noopener">Search Engine Roundtable, обновления Google</a>. Конец этого обновления совпал с днями, когда Google перечитал гайды, поэтому разделить эти две причины точно нельзя.</p>
+<h2>Что я предлагаю (ничего не сделано, ждёт слова Дениса)</h2>
+<ol>
+<li><strong>Вернуть подписи под фото</strong> на 8 страницах (33 подписи), как было на старом сайте. Подписи уже лежат в файлах содержимого, нужно только выводить их на странице. Для замороженных гайдов это возврат к старому тексту, а не новая правка.</li>
+<li><strong>Вернуть старые адреса старым фото:</strong> картинки из <code>/wp-content/uploads/</code> подключать без хвоста <code>?v=</code>. Эти файлы никогда не меняются, хвост нужен только новым фото в <code>/img/</code>.</li>
+<li><strong>Вернуть строку для роботов</strong> <code>index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1</code> на все страницы. В рабочей сборке она должна стоять вместо noindex.</li>
+<li><strong>Вернуть дату публикации</strong> (datePublished) в разметку двух гайдов, дату со старого сайта. Это изменение разметки, текст не трогается. Делать только если Денис разрешит трогать замороженные гайды хотя бы так.</li>
+<li>Через неделю повторить выгрузку и сравнить (для этого есть отдельная карточка).</li>
+</ol>
+<p>Пункты 1-3 касаются всего сайта и выкладываются вместе, с обычной проверкой (все 64 страницы сравниваются с живым сайтом перед выкладкой).</p>
+<h2>Как проверялось</h2>
+<ul>
+<li>Search Console: <code>~/Projects/fpp-data/data/deep-2026-10-18/</code> (страница по дням, запрос + страница по дням, проверка URL), плюс отдельный запрос «поиск по картинкам, страница по дням» 12.09-17.10.</li>
+<li>Старый сайт: <code>source/crawl/html/</code> и <code>source/crawl/pages/</code> (скан 30.09.2026), живые страницы скачаны 18.10.2026.</li>
+<li>Профили Google: новый скрипт <code>~/Projects/fpp-data/gbp/gbp_performance.py</code> (только чтение, Frisco и Plano, Plano только для сравнения).</li>
+<li>Выдача: 4 поиска Firecrawl (8 кредитов, осталось около 985 из 1 000).</li>
+</ul></main></body></html>
