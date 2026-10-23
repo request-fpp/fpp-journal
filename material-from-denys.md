@@ -1,6 +1,6 @@
 # Весь материал от Дениса: фото, видео и его слова
 
-Список собран из архива проекта командой `python3 tools/material_list.py`. Файлов в архиве: 347, из них 208 фото и 139 видео, работ в списке: 194. Список написан для чата, который пишет тексты страниц.
+Список собран из архива проекта командой `python3 tools/material_list.py`. Файлов в архиве: 364, из них 212 фото и 152 видео, работ в списке: 204. Список написан для чата, который пишет тексты страниц.
 
 ## Как читать
 
@@ -21,7 +21,7 @@
 - Линии воды от счётчика до дома (water lines): работ 12, файлов 21
 - Давление воды и PRV: работ 21, файлов 44
 - Водонагреватели, расширительный бак, дымоход: работ 12, файлов 16
-- Прочистка сливов (drain cleaning): работ 15, файлов 28
+- Прочистка сливов (drain cleaning): работ 25, файлов 45
 - Канализация: главная линия, камера, корни (sewer line): работ 11, файлов 18
 - Унитазы и фланцы: работ 25, файлов 40
 - Смесители и душевые клапаны: работ 23, файлов 53
@@ -31,7 +31,7 @@
 - Фургон, офис, люди и остальное: работ 11, файлов 14
 - На паузе: Денис не сказал, что это, или просил не показывать: работ 6, файлов 8
 
-Последние поступления: файлы с 205 по 347, кроме 216 (фото со старого сайта), пришли 5 октября 2026. Слова Дениса к ним целиком записаны в `source/dictation/2026-10-05-plano-photos.md`.
+Последние поступления: файлы с 205 по 364, кроме 216 (фото со старого сайта), пришли 5 октября 2026. Слова Дениса к ним целиком записаны в `source/dictation/2026-10-05-plano-photos.md`.
 
 ## Slab leak: ремонт под плитой
 
@@ -919,7 +919,70 @@ Frisco · декабрь 2024 · файлы: 95
 
 ## Прочистка сливов (drain cleaning)
 
-### 77. No cleanout to work from, so the chain snake goes in through the toilet drain: the clog breaks and the water goes down
+### 77. The chain goes in through the overflow, not the drain
+
+Plano · день съёмки не записан · файлы: 363
+
+**Слова Дениса:** «Ванна, которую он прочистил сегодня, Plano (запись чата 15:44, 23 октября 2026, не дословно)»
+
+- **363**, видео: The chain goes in through the overflow, not the drain, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия, видео с очков Ray-Ban Meta, перекодировано; 23 октября 2026, 36 с. Видео: красный трос уходит в отверстие перелива ванны, накладка снята; на борту сумка с инструментом, внизу кадра ноги. Клип берёт 13.0 до 18.0 с в окне без сумки и без ног. Plano его слово 14:51. / Video from Denys's glasses, 36 s. The clip takes 13.0 to 18.0 s in a window that keeps the overflow and the tub and leaves out the tool bag on the rim and the plumber's legs. The tub call of October 2026, Plano.
+
+### 78. Both outside cleanouts open, and the root that came out of the main line
+
+Plano · октябрь 2026 · файлы: 354
+
+**Слова Дениса:** «Plano, вызов с корнями, видео клинаутов (запись чата 15:44, 23 октября 2026, не дословно); Plano его слово 15:46»
+
+- **354**, видео: Both outside cleanouts open, and the root that came out of the main line, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия (в чат пришла копия h264, в архив взят оригинал телефона IMG_1067 3.MOV из Downloads); 21 октября 2026, ночь, 15 с. Видео: два уличных клинаута открыты в гравии, рядом длинный корень, вытащенный из линии; внизу кадра ноги сантехника. Клип берёт 8.0 до 13.0 с, окно верхние 3:4 кадра, ноги не входят. Plano его слово; граница согласна. / Video, 15 s. The clip takes 8.0 to 13.0 s in the top 3:4 of the frame; the plumber's feet at the bottom are out. The roots and coupling call of October 2026, Plano.
+
+### 79. The toilet off: it was leaking at the base, and the first passes went down through the flange
+
+Plano · октябрь 2026 · файлы: 350, 351, 352
+
+**Слова Дениса (350):** «Plano, глиняный вызов, видео со снятым унитазом (запись чата 15:44, 23 октября 2026, не дословно). 16:16 дословно: «мы сперва чистили через туалет, потому что с туалет же тек. Из-под туалета текло, потому что был этот вакс-ринг поврежден. Сперва мы прочистили через туалет, удалили часть глины. Потом пошли через уличный клинал чистить»»
+
+**Слова Дениса (351):** «Глина на тросе (запись чата 15:44, 23 октября 2026, не дословно). 16:16 дословно: «вот там вот фотография уже на улице, где я показываю этот снейк, ну, конец его, и типа руку на размер моей руки, сколько там, 20 сантиметров он весь в глине»»
+
+**Слова Дениса (352):** «Видео сушки от restoration (запись чата 15:44, 23 октября 2026, не дословно); тот же вечер, что 350 и 351»
+
+- **350**, видео: The toilet off: it was leaking at the base, and the first passes went down through the flange, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия; 15 октября 2026, 20:22, 10 с. Видео: ванная с мокрым полом, полотенца и одежда на полу, бутылки с этикетками, унитаз снят, фланец открыт со старым воском. Клип берёт последние секунды (7.9 до 10.1 с), только фланец, окно без бутылки в верхнем правом углу; полотенца, бутылки и ботинок в первых секундах в клип не входят. Plano его слово; граница согласна. «Клинал» = cleanout (прочтение). / Video, 10 s. The clip takes the last two seconds, the flange alone (window below the spray bottle at the top right); the towels, the clothes, the bottles with brand labels and the plumber's shoe of the first seconds are out. The clay call of October 2026, Plano.
+- **351**, фото: The end of the cable against a hand for size: eight inches of it in clay, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия; 15 октября 2026, 22:01. Фото: конец троса в руке в синей перчатке, весь в глине, ночью у живой изгороди; справа белая перчатка, внизу часы. Plano его слово; граница согласна. / A gloved hand and a watch, no face, no brand readable. The clay call of October 2026, Plano.
+- **352**, видео: The same night: the restoration partner's dryers already running, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия; 15 октября 2026, 22:17, 6 с. Видео: воздуходувка и осушитель у двери ванной; в первых секундах гостиная (стол, жалюзи). Клип берёт 3.0 до 6.0 с, машины у двери, гостиная не входит. Plano его слово; граница согласна. / Video, 6 s. The clip takes 3.0 to 6.0 s with the machines at the bathroom door; the first seconds with the living room furniture are out. No brand readable at clip size. The clay call of October 2026, Plano.
+
+### 80. The Airbnb toilet before: packed solid
+
+Frisco · октябрь 2026 · файлы: 349, 362
+
+**Слова Дениса (349):** «Забитый унитаз до прочистки, Airbnb (запись чата 15:44, 23 октября 2026, не дословно); Frisco: его слово 14:59»
+
+**Слова Дениса (362):** «Унитаз в Airbnb, вся прочистка с очков (запись чата 15:44, 23 октября 2026, не дословно); Frisco: его слово 14:59»
+
+- **349**, фото: The Airbnb toilet before: packed solid, Frisco. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-frisco-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия; снято 10 октября 2026 вечером. Фото: унитаз сверху, чаша полна грязной стоячей воды; внизу кадра ботинки сантехника, на веб-версиях обрезаны (CROP). Airbnb, Frisco по его слову 14:59; граница города согласна. / The web versions are cropped to 3:4 (CROP in tools/optimize_photos.py): the plumber's shoes at the bottom of the frame are out. The Airbnb toilet story of the drain cleaning page (October 2026).
+- **362**, видео: The six foot auger does its work, and the toilet flushes again, Frisco. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-frisco-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия, видео с очков Ray-Ban Meta, перекодировано; 11 октября 2026, 44 с. Видео: шестифутовый закрытый шнек в чаше унитаза, чаша уходит, потом смыв; на тумбе фонарь, внизу кадра ботинки. Клип берёт 7.0 до 12.0 с (чаша уходит) в окне без ботинок. Frisco его слово 14:59. / Video from Denys's glasses, 44 s. The clip takes 7.0 to 12.0 s, the auger in the bowl and the water going down, in a window without the plumber's shoes. The Airbnb toilet story (October 2026), Frisco.
+
+### 81. On the camera screen: roots coming into the pipe at a joint that pulled apart
+
+вне десяти городов, город не пишем (файлы 348); Plano (файлы 353) · апрель 2026 и октябрь 2026 · файлы: 348, 353
+
+Кадры разных дней (2026-04-16, 2026-10-08): это не один выезд. Что к какому дню относится, сказано в словах и заметках к файлам.
+
+**Слова Дениса (348):** «Экран камеры: разрыв трубы и корни. «Работа, которую я не помню, подгони под этот случай» (запись чата 15:44, 23 октября 2026, не дословно)»
+
+**Слова Дениса (353):** «Вот видео… главная линия, когда мы уже ее в процессе ремонта, как она выглядит, лопнувшая труба, там где клинауты, и по ним трещина, через такие трещины проходят корни (15:58, 23 октября 2026, дословно)»
+
+- **348**, фото: On the camera screen: roots coming into the pipe at a joint that pulled apart. На сайте: /clogged-drain-cleaning-frisco-plano/
+  - Заметки: прислано в чат 23 октября 2026, первая партия; снято 8 октября 2026. Фото: монитор камеры, корни заходят в трубу в разошедшемся стыке; внизу слева экран печатает неверную дату, справа значки. Работы и города для страницы нет: Денис сам работу не помнит, на странице без города (по границе города файл лежит во Frisco). / The web versions are cropped (CROP in tools/optimize_photos.py): the wrong date the camera prints at the bottom left and the icons at the right are out. No job and no city on the page (Denys, October 23, 2026: a job he does not remember). The boundary check puts the file in Frisco.
+- **353**, видео: A section of main line cut out at the cleanouts: the crack the roots came in through, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, третья партия; 16 апреля 2026, 21.5 с. Видео: вырезанный кусок главной линии с тройником клинаутов на подъездной дорожке, вдоль него трещина; в первых секундах гаражная дверь и ноги в сандалиях. Клип берёт 5.5 до 10.5 с, тройник с трещиной крупно. Тот же день, что фото 9 и 10. Город: Plano по прочтению чатом его ответа 16:16 на шесть файлов; по границе города файл лежит во Frisco, как и 9 и 10. / Video, 21 s. The clip takes 5.5 to 10.5 s, the cracked tee close up; the garage door and the plumber's feet of the first seconds are out. No year on the page (the job is April 2026). The city is the chat's reading of Denys's answer of 16:16; the boundary says Frisco.
+
+### 82. No cleanout to work from, so the chain snake goes in through the toilet drain: the clog breaks and the water goes down
 
 Plano · день съёмки не записан · файлы: 271, 272
 
@@ -932,18 +995,49 @@ Plano · день съёмки не записан · файлы: 271, 272
 - **272**, видео: After: the toilet back in place and flushing, Plano. На сайте: /plumber-plano-tx/. План: /clogged-drain-cleaning-frisco-plano/
   - Заметки: прислано 5 октября 2026, после ответов; та же работа, что 271. Видео 16 с с камеры в очках: унитаз стоит на месте и смывается, потом ванная с вещами хозяев и зеркалом, потом душевой поддон со следами стоков. На странице Plano стоят только первые пять секунд (унитаз смывается): дальше в кадре вещи хозяев, отражение человека в зеркале и грязный поддон, их не показываем. В расшифровке голоса: «клинаут» cleanout, «плейна» Plano, «дрейн-линию» drain линию, «бакена» backup: прочтение Claude. / Video, 16 s, from camera glasses. On the Plano page only its first five seconds stand (the toilet flushing), next to 271. After that the video shows the homeowner's vanity with personal things, a person in the mirror and the shower pan with residue of the backup: never use that part.
 
-### 78. Milwaukee chain snake through a wall cleanout on the kitchen line, 75 feet
+### 83. The chain snake going into the sink line under the vanity, the line the AC drains into
+
+Plano · день съёмки не записан · файлы: 361
+
+**Слова Дениса:** «Раковина с линией кондиционера, цепной трос (запись чата 15:44, 23 октября 2026, не дословно)»
+
+- **361**, видео: The chain snake going into the sink line under the vanity, the line the AC drains into, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия, видео с очков Ray-Ban Meta, перекодировано; 13 сентября 2026, 34 с. Видео: дверцы тумбы открыты, красный трос барабанной машины уходит в сливную линию раковины; внизу кадра машина с читаемой маркой. Клип берёт 4.0 до 9.0 с в окне без машины. Город: Plano по прочтению чатом его ответа 16:16 на шесть файлов. / Video from Denys's glasses, 34 s. The clip takes 4.0 to 9.0 s in a window above the machine, so its brand is out. The city is the chat's reading of Denys's answer of 16:16.
+
+### 84. Milwaukee chain snake through a wall cleanout on the kitchen line, 75 feet
 
 Prosper · сентябрь 2026 · файлы: 49
 
 **Слова Дениса:** «Milwaukee chain snake через настенный cleanout: прочистка кухонной дренажной линии; кухню чистим только chain snake, 75 футов (16 октября 2026: «Это был тоже Prosper. Просто наросло очень много жира внутри. Когда жир нарастает, его невозможно нормально прочистить тросом: трос пробьёт дырку, а chain прочистит её»)»
 
-- **49**, фото: Milwaukee chain snake through a wall cleanout on the kitchen line, 75 feet, Prosper. На сайте: /clogged-drain-cleaning-frisco-plano/, /, /plumber-prosper-tx/. План: /blog/clogged-kitchen-sink-chain-snake/
+- **49**, фото: Milwaukee chain snake through a wall cleanout on the kitchen line, 75 feet, Prosper. На сайте: /, /plumber-prosper-tx/. План: /clogged-drain-cleaning-frisco-plano/ /blog/clogged-kitchen-sink-chain-snake/
   - Заметки: On the Prosper page beside the kitchen line story (October 16, 2026; Denys: it was Prosper too, the line was packed with grease, the chain only because a cable punches a hole and the chain scrubs the wall).
 
-### 79. Main line backing up into the bathtub: the main line is clogged
+### 85. No wall cleanout: the chain goes in from under the kitchen sink
 
-Little Elm · август 2026 · файлы: 38, 39, 40, 41, 204
+Plano · день съёмки не записан · файлы: 360
+
+**Слова Дениса:** «Кухонная линия из-под раковины с цепным тросом: «мы всегда проверяем, что он прошёл до конца наружу, трос слышно у уличного клинаута» (запись чата 15:44, 23 октября 2026, не дословно)»
+
+- **360**, видео: No wall cleanout: the chain goes in from under the kitchen sink, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, первая партия, видео с очков Ray-Ban Meta, перекодировано; 10 сентября 2026, 50 с. Видео: тумба под кухонной раковиной открыта, машина на полу, цепь уходит в линию; внизу кадра колени сантехника. Клип берёт 4.0 до 9.0 с в окне без коленей и без машины справа (марка). Город: Plano по прочтению чатом его ответа 16:16 на шесть файлов. / Video from Denys's glasses, 50 s. The clip takes 4.0 to 9.0 s in a window that leaves out the plumber's knees and the machine with its brand at the right. The city is the chat's reading of Denys's answer of 16:16.
+
+### 86. A clogged kitchen line: open the wall cleanout and the water runs back outside
+
+вне десяти городов, город не пишем (файлы 234); Plano (файлы 359) · май 2025 · файлы: 234, 359
+
+**Слова Дениса (234):** «Видео: кухонный cleanout на стене. Линия забитая, cleanout открываешь, и вода течет обратно на улицу, вместо того чтобы течь в drain линию»
+
+**Слова Дениса (359):** «Кухонная линия у настенного клинаута с 75-футовым цепным тросом (запись чата 15:46, 23 октября 2026, не дословно)»
+
+- **234**, видео: A clogged kitchen line: open the wall cleanout and the water runs back outside. На сайте: /clogged-drain-cleaning-frisco-plano/
+  - Заметки: прислано 5 октября 2026, вторая партия; 23 мая 2025. Видео 18 с: рука снимает заглушку ревизии на белой кирпичной стене, из ревизии течет вода / Video, 18 s. Not placed yet (Denys, October 5, 2026: keep it for later). His words: the line is clogged, you open the cleanout and the water runs back outside instead of into the drain line. Outside the ten cities: no city.
+- **359**, видео: The chain snake going into the wall cleanout of a kitchen line, the full 75 feet, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, вторая партия, видео с очков Ray-Ban Meta, перекодировано; 28 августа 2026, 27 с. Видео: настенный клинаут на кирпичной стене, цепной трос заходит, машина на траве; внизу кадра колени сантехника, на машине читается марка. Клип берёт 3.0 до 7.0 с в окне без коленей и без марки. Город: Plano по прочтению чатом его ответа 16:16 на шесть файлов. / Video from Denys's glasses, 27 s. The clip takes 3.0 to 7.0 s in a window that leaves out the plumber's knees and the brand on the machine. The city is the chat's reading of Denys's answer of 16:16.
+
+### 87. Main line backing up into the bathtub: the main line is clogged
+
+Little Elm (файлы 38, 39, 40, 41, 204, 356); Plano (файлы 358) · август 2026 · файлы: 38, 39, 40, 41, 204, 356, 358
 
 Сложено по дню и городу съёмки: кадры сняты подряд в один день. Одна ли это работа, Денис не говорил; у каждого файла свои слова.
 
@@ -957,6 +1051,10 @@ Little Elm · август 2026 · файлы: 38, 39, 40, 41, 204
 
 **Слова Дениса (204):** «Фото душа, в котором был backing up»
 
+**Слова Дениса (356):** «Корни, вытащенные через уличный клинаут, разошедшаяся труба, «может, я уже присылал» (запись чата 15:46, 23 октября 2026, не дословно)»
+
+**Слова Дениса (358):** «Фото забитого уличного клинаута, цепной трос как раз заходит (запись чата 15:46, 23 октября 2026, не дословно); картинка пришла через чат, без метаданных»
+
 - **38**, фото: Main line backing up into the bathtub: the main line is clogged, Little Elm. План: /clogged-drain-cleaning-frisco-plano/ /blog/clogged-shower-drain-little-elm-case/ /plumber-little-elm-tx/
   - Заметки: Dirty tub: fine for a case story, not a hero.; Outside the town limits of Little Elm (postal address Little Elm): Little Elm by Denys's word of October 3, 2026; no words about the Little Elm permit or city inspection next to this job
 - **39**, фото: Water from the main line coming back up into the shower pan, Little Elm. План: /clogged-drain-cleaning-frisco-plano/ /blog/clogged-shower-drain-little-elm-case/
@@ -965,10 +1063,23 @@ Little Elm · август 2026 · файлы: 38, 39, 40, 41, 204
   - Заметки: Street with parked cars in the background.; Outside the town limits of Little Elm (postal address Little Elm): Little Elm by Denys's word of October 3, 2026; no words about the Little Elm permit or city inspection next to this job
 - **41**, фото: Same job, another angle: the snake with roots, Little Elm. План: /drain-services/ /plumber-little-elm-tx/
   - Заметки: Street, neighbors' houses and the FPP van in the background; check for house numbers at full size.; Outside the town limits of Little Elm (postal address Little Elm): Little Elm by Denys's word of October 3, 2026; no words about the Little Elm permit or city inspection next to this job
-- **204**, фото: A shower pan after a main line backup: this is what came back up through the drain, Little Elm. На сайте: /. План: /clogged-drain-cleaning-frisco-plano/ /drain-services/
+- **204**, фото: A shower pan after a main line backup: this is what came back up through the drain, Little Elm. На сайте: /clogged-drain-cleaning-frisco-plano/, /. План: /drain-services/
   - Заметки: прислано 2 октября 2026, ночь, для истории про забитую главную линию на главной / Outside the town limits of Little Elm (postal address Little Elm): Little Elm by Denys's word of October 3, 2026; no words about the Little Elm permit or city inspection next to this job
+- **356**, видео: The chain snake back out of the outside cleanout with the roots it took off the pipe wall, Little Elm. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-little-elm-tx/
+  - Заметки: прислано в чат 23 октября 2026, вторая партия; 16 августа 2026, 16:45, 7 с. Видео: цепь вытянута из уличного клинаута с клубком корней, клумба с агавой; вверху кадра улица, машины и фургон, внизу ботинок. Клип берёт 2.4 до 6.6 с в окне без улицы и без ботинка. Та же работа, что фото 40 и 41 (тот же день и клумба). / Video, 7 s. The clip takes 2.4 to 6.6 s in a window that keeps the chain and the roots in the bed; the street, the parked cars and the van at the top and the shoe at the bottom are out. The same job as photos 40 and 41.; Outside the town limits of Little Elm (postal address Little Elm): Little Elm by Denys's word of October 3, 2026; no words about the Little Elm permit or city inspection next to this job
+- **358**, фото: An outside cleanout full to the top, and the chain snake going in, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, вторая партия, как картинка из чата (1320 на 1742, без места съёмки; дата в файле 17 июля 2026). Фото: уличный клинаут полон стоячей воды, цепной трос заходит в него, рука в перчатке с часами; внизу кадра ноги сантехника и машина, на веб-версиях обрезаны (CROP). Город: Plano по прочтению чатом его ответа 16:16 на шесть файлов. / A chat image without metadata (1320 x 1742). The web versions are cropped (CROP in tools/optimize_photos.py): the plumber's legs and the machine at the bottom are out. A gloved hand and a watch, no face. The city is the chat's reading of Denys's answer of 16:16.
 
-### 80. Under the sink with the trap off: the cable in the drain line, and the black AC condensate line (marked) tied into it
+### 88. The trap off: this is the AC water that was filling the sink
+
+Carrollton · август 2026 · файлы: 357
+
+**Слова Дениса:** «P-trap снят, вода от кондиционера течёт в ведро (запись чата 15:46, 23 октября 2026, не дословно)»
+
+- **357**, видео: The trap off: this is the AC water that was filling the sink, Carrollton. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-carrollton-tx/
+  - Заметки: прислано в чат 23 октября 2026, вторая партия; 16 августа 2026, 18:20, 19 с. Видео: сифон снят под раковиной в ванной, вода из патрубка льётся в складное ведро; на подводках бирки, в первой секунде инструмент на дне тумбы. Клип берёт 2.0 до 7.0 с в окне без бирок. По границе города файл лежит в Carrollton: другой дом, чем 38 и 204 того же дня (Little Elm). / Video, 19 s. The clip takes 2.0 to 7.0 s in a window that keeps the tailpiece and the bucket and leaves out the tags on the supply lines. Carrollton by the boundary check: another house than photos 38 and 204 of the same afternoon.
+
+### 89. Under the sink with the trap off: the cable in the drain line, and the black AC condensate line (marked) tied into it
 
 Frisco · июль 2026 · файлы: 201, 203
 
@@ -981,7 +1092,7 @@ Frisco · июль 2026 · файлы: 201, 203
 - **203**, фото: Under the sink: the black AC condensate line tied into the sink drain above the trap (both marked), water on the cabinet floor, Frisco. На сайте: /. План: /clogged-drain-cleaning-frisco-plano/
   - Заметки: прислано 2 октября 2026, ночь; та же работа, что фото 201 (9 июля 2026) / Two labels on the web version: AC condensate line, Sink drain (MARK in tools/optimize_photos.py).
 
-### 81. Clogged shower drain: we pulled out wet wipes
+### 90. Clogged shower drain: we pulled out wet wipes
 
 Plano · май 2026 · файлы: 15, 105, 213
 
@@ -993,13 +1104,22 @@ Plano · май 2026 · файлы: 15, 105, 213
 
 **Слова Дениса (213):** «Фотография с камеры. Там мало что видно будет»
 
-- **15**, фото: Clogged shower drain: we pulled out wet wipes, Plano. План: /clogged-drain-cleaning-frisco-plano/ /plumber-plano-tx/
+- **15**, фото: Clogged shower drain: we pulled out wet wipes, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
 - **105**, фото: Moen cartridge being replaced, Plano. План: /blog/moen-shower-cartridge-replacement-blog/
   - Заметки: Taken off the Plano page on October 5, 2026 (Denys: the wrong photo for the three handle shower valve item; it is a Moen cartridge from another article).
 - **213**, фото: The screen of the drain camera, 25 feet into the line, Plano. План: /drain-services/
   - Заметки: прислано 5 октября 2026 для страницы Plano; экран камеры для труб, 24.92 FT. На страницу не поставлено: Денис сам сказал, что мало что видно. В углу экрана слово меню не на английском и неверная дата: обрезать перед любым использованием / Not placed (Denys, October 5, 2026: hardly anything can be seen on it). A menu word that is not English stands in the corner of the screen and the date on the screen is wrong: crop both before any use.
 
-### 82. Sink drain: P-trap with a flexible corrugated pipe, leaking, clogging, crooked
+### 91. The toilet off: the flange rusted through, the bolt slots gone
+
+Plano · март 2026 · файлы: 355
+
+**Слова Дениса:** «Вот видео… квест, флайнер снимаешь… Туалет снимаешь, а фланец уже проржавевший. Вот эти отверстия, через которые болты держат унитаз… выржавели полностью (15:58, 23 октября 2026, дословно; «флайнер» прочитано как flange)»
+
+- **355**, видео: The toilet off: the flange rusted through, the bolt slots gone, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-plano-tx/
+  - Заметки: прислано в чат 23 октября 2026, третья партия; 11 марта 2026, 11 с. Видео: фланец унитаза, проржавевший насквозь, на плитке, старый воск, прорези под болты выржавели; рядом крышка бачка и унитаз, в конце ботинок. Клип берёт 2.0 до 7.0 с, окно без крышки бачка сверху. Город: Plano по прочтению чатом его ответа 16:16 на шесть файлов; по границе города файл лежит во Flower Mound, не в наших десяти городах. / Video, 11 s. The clip takes 2.0 to 7.0 s in a window below the tank lid; the plumber's shoe of the last second is out. No year on the page (the job is March 2026). The city is the chat's reading of Denys's answer of 16:16; the boundary says Flower Mound.
+
+### 92. Sink drain: P-trap with a flexible corrugated pipe, leaking, clogging, crooked
 
 Carrollton · сентябрь 2025 · файлы: 57, 58
 
@@ -1010,7 +1130,7 @@ Carrollton · сентябрь 2025 · файлы: 57, 58
 - **57**, фото: Sink drain: P-trap with a flexible corrugated pipe, leaking, clogging, crooked, Carrollton. План: /clogged-drain-cleaning-frisco-plano/ /plumber-carrollton-tx/
 - **58**, фото: The same drain reinstalled right: no flex pipe, straight, no leak, Carrollton. План: /clogged-drain-cleaning-frisco-plano/ /plumber-carrollton-tx/
 
-### 83. Clearing a clogged main line through the outside cleanout with the chain snake
+### 93. Clearing a clogged main line through the outside cleanout with the chain snake
 
 Allen · сентябрь 2025 · файлы: 229, 230
 
@@ -1021,33 +1141,33 @@ Allen · сентябрь 2025 · файлы: 229, 230
 - **230**, видео: The outside cleanout opened: full of water to the top, Allen. План: /clogged-drain-cleaning-frisco-plano/ /plumber-allen-tx/
   - Заметки: прислано 5 октября 2026, вторая партия; видео 19 с: снимают крышку ревизии, ревизия полная воды до края. В верхней части кадра улица и чужой двор: обрезать В расшифровке город записан как «Валань»: Allen, прочтение Claude, место съемки совпадает. / Video, 19 s. Not placed yet (Denys, October 5, 2026: keep it for later). See 229. The street and a neighbor's yard at the top of the frame: use a window without them.
 
-### 84. Chain snake spinning, so you can see what it is
+### 94. Chain snake spinning, so you can see what it is
 
 Plano · июль 2025 · файлы: 157
 
 **Слова Дениса:** «Видео: крутится chain snake, чтобы было видно что это»
 
-- **157**, видео: Chain snake spinning, so you can see what it is, Plano. План: /clogged-drain-cleaning-frisco-plano/
+- **157**, видео: Chain snake spinning, so you can see what it is, Plano. На сайте: /clogged-drain-cleaning-frisco-plano/
   - Заметки: Video.
 
-### 85. A clogged kitchen line: open the wall cleanout and the water runs back outside
+### 95. The trap out of the garage ceiling, and the piece of shower pan liner that was inside it
 
-вне десяти городов, город не пишем · май 2025 · файлы: 234
+Frisco · июнь 2025 · файлы: 364
 
-**Слова Дениса:** «Видео: кухонный cleanout на стене. Линия забитая, cleanout открываешь, и вода течет обратно на улицу, вместо того чтобы течь в drain линию»
+**Слова Дениса:** «Вот видео вот это, что я в потолке вырезали клинаут. И там вот это, drain liner или что это было (16:00, 23 октября 2026, дословно, без ругательства)»
 
-- **234**, видео: A clogged kitchen line: open the wall cleanout and the water runs back outside. План: /clogged-drain-cleaning-frisco-plano/
-  - Заметки: прислано 5 октября 2026, вторая партия; 23 мая 2025. Видео 18 с: рука снимает заглушку ревизии на белой кирпичной стене, из ревизии течет вода / Video, 18 s. Not placed yet (Denys, October 5, 2026: keep it for later). His words: the line is clogged, you open the cleanout and the water runs back outside instead of into the drain line. Outside the ten cities: no city.
+- **364**, видео: The trap out of the garage ceiling, and the piece of shower pan liner that was inside it, Frisco. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumber-frisco-tx/
+  - Заметки: прислано в чат 23 октября 2026 (в чат пришла копия h264, в архив взят оригинал телефона из Downloads); 27 июня 2025, 30 с. Видео: сифон 2 дюйма, вырезанный из потолка гаража, на эпоксидном полу, из него вытаскивают кусок чёрной мембраны душевого поддона; внизу кадра ботинок, последние десять секунд камера уходит на потолок гаража и спортзал. Клип берёт 8.0 до 13.0 с в окне без ботинка. Frisco его слово 14:59; граница согласна. Это видео стоит на YouTube: https://www.youtube.com/shorts/qxoCyjUERxo (29 июня 2025). / Video, 30 s. The clip takes 8.0 to 13.0 s, the liner coming out of the trap, in a window without the plumber's boot; the last ten seconds (the garage ceiling and the homeowner's things) are out. No year on the page (the job is June 2025). The same video stands on the FPP YouTube channel, https://www.youtube.com/shorts/qxoCyjUERxo.
 
-### 86. Milwaukee chain snake clearing the main line through an outside cleanout
+### 96. Milwaukee chain snake clearing the main line through an outside cleanout
 
 Frisco · май 2025 · файлы: 96
 
 **Слова Дениса:** «Milwaukee chain snake: пробиваем главную линию через наружный cleanout»
 
-- **96**, фото: Milwaukee chain snake clearing the main line through an outside cleanout, Frisco. На сайте: /emergency-plumbing-services/, /. План: /clogged-drain-cleaning-frisco-plano/ /plumber-frisco-tx/
+- **96**, фото: Milwaukee chain snake clearing the main line through an outside cleanout, Frisco. На сайте: /clogged-drain-cleaning-frisco-plano/, /emergency-plumbing-services/, /. План: /plumber-frisco-tx/
 
-### 87. Kitchen drain line through an outside wall cleanout, chain snake, 75 feet
+### 97. Kitchen drain line through an outside wall cleanout, chain snake, 75 feet
 
 вне десяти городов, город не пишем · апрель 2025 · файлы: 129, 296
 
@@ -1057,10 +1177,10 @@ Frisco · май 2025 · файлы: 96
 
 - **129**, видео: Kitchen drain line through an outside wall cleanout, chain snake, 75 feet. План: /blog/clogged-kitchen-sink-chain-snake/ /clogged-drain-cleaning-frisco-plano/
   - Заметки: Денис прислал это видео ещё раз 5 октября 2026 поздно вечером с видео 296 (тот же день, та же работа): «Опять забита кухонная линия. Через настенный cleanout чистим её chain snake 75 футов». / Video. Sent again on October 5, 2026 with 296, the same job (the cleanout opened, the water runs out).
-- **296**, видео: Kitchen line clogged again: the wall cleanout opened, the water runs out, then the chain snake goes in. План: /clogged-drain-cleaning-frisco-plano/
+- **296**, видео: Kitchen line clogged again: the wall cleanout opened, the water runs out, then the chain snake goes in. На сайте: /clogged-drain-cleaning-frisco-plano/
   - Заметки: прислано 5 октября 2026 поздно вечером, шестая партия; 12 апреля 2025. Видео 33 с: на кирпичной стене открыт настенный cleanout, из него на траву льётся вода. Та же работа, что 129 (IMG_4536.MOV, тот же день): Денис прислал 129 ещё раз с этими словами. / Video, 33 s. Not placed yet (Denys, October 5, 2026, evening). Same job as 129 (April 12, 2025); outside the ten cities, no city. A gloved hand, no face.
 
-### 88. Clearing a kitchen drain line through an outside cleanout
+### 98. Clearing a kitchen drain line through an outside cleanout
 
 Plano · декабрь 2024 · файлы: 91
 
@@ -1069,7 +1189,7 @@ Plano · декабрь 2024 · файлы: 91
 - **91**, фото: Clearing a kitchen drain line through an outside cleanout, Plano. На сайте: /plumber-plano-tx/. План: /clogged-drain-cleaning-frisco-plano/
   - Заметки: 5 октября 2026, ночь: в кадре барабанная машина с тросом, не chain snake; подпись «through an outside cleanout», без 75 футов (блок чата, пункт 4.3).
 
-### 89. Milwaukee snake clearing the shower drain line
+### 99. Milwaukee snake clearing the shower drain line
 
 McKinney · ноябрь 2024 · файлы: 74
 
@@ -1078,7 +1198,7 @@ McKinney · ноябрь 2024 · файлы: 74
 - **74**, видео: Milwaukee snake clearing the shower drain line, McKinney. План: /clogged-drain-cleaning-frisco-plano/
   - Заметки: Video.
 
-### 90. A main line backed up all the way: the tub and the toilet full of sewage
+### 100. A main line backed up all the way: the tub and the toilet full of sewage
 
 вне десяти городов, город не пишем · сентябрь 2024 · файлы: 183, 184, 185
 
@@ -1086,12 +1206,12 @@ McKinney · ноябрь 2024 · файлы: 74
 
 - **183**, видео: A main line backed up all the way: the tub and the toilet full of sewage. На сайте: /emergency-plumbing-services/, /. План: /clogged-drain-cleaning-frisco-plano/ /drain-services/
   - Заметки: видео 3 с: ванна и унитаз полны стоков; по месту съемки вне десяти городов: города в подписи не будет никогда; для страниц про чистку дренажа и канализацию Под историей про главную линию на странице emergency стоит тот же стоп-кадр, что на главной, без города (5 октября 2026, ночь): в клипе при любом окне кадра часть петли показывает ноги сантехника, инструмент или коробку хозяев на бачке. / Video, 3 s. A still of it on the homepage (FRAME); the same still under the main line story of the emergency page since October 5, 2026, night (not a clip: every window of the video that keeps the tub and the toilet shows the plumber's feet, a tool or a box on the tank for part of the loop). Outside the ten cities: no city in any caption, the city is never named. Shoes of the plumber in the frame, no face.
-- **184**, видео: The same backup at the outside cleanouts: both caps off and sewage running over onto the ground. План: /clogged-drain-cleaning-frisco-plano/ /drain-services/
+- **184**, видео: The same backup at the outside cleanouts: both caps off and sewage running over onto the ground. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /drain-services/
   - Заметки: видео 12 с: два уличных клинаута без крышек, полны стоков, льется на землю, ночь, фонарь; вне десяти городов / Video, 12 s, not placed yet. Outside the ten cities: no city. A gloved hand in the frame.
-- **185**, видео: Outside cleanouts overflowing from a clogged main line. План: /clogged-drain-cleaning-frisco-plano/ /drain-services/
+- **185**, видео: Outside cleanouts overflowing from a clogged main line. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /drain-services/
   - Заметки: видео 5 с: те же клинауты, overflow; вне десяти городов / Video, 5 s, not placed yet. Outside the ten cities: no city.
 
-### 91. Toilet pulled, chain snake through the drain line brought out a lot of roots
+### 101. Toilet pulled, chain snake through the drain line brought out a lot of roots
 
 Frisco · день съёмки не записан · файлы: 53
 
@@ -1101,7 +1221,7 @@ Frisco · день съёмки не записан · файлы: 53
 
 ## Канализация: главная линия, камера, корни (sewer line)
 
-### 92. The roots come out through the toilet flange on the chain snake
+### 102. The roots come out through the toilet flange on the chain snake
 
 Frisco · январь 2026 и июнь 2026 · файлы: 122, 166, 167, 179
 
@@ -1124,7 +1244,7 @@ Frisco · январь 2026 и июнь 2026 · файлы: 122, 166, 167, 179
 - **179**, видео: On the camera screen: the line packed with roots at the cracked joint, seen through the toilet flange, Frisco. На сайте: /plumber-frisco-tx/. План: /drain-services/
   - Заметки: по месту съемки граница The Colony и Frisco; Денис: Frisco (тот же дом, что 122, 166 и 167) / Video, 12 s. The site uses a 5 second cut without sound: design/video/179-roots-on-camera-frisco.mp4. January 2026 freeze, the same house as 122, 166 and 167; the date stamp on the camera screen is the camera's own clock and is wrong.
 
-### 93. Main sewer line repair: the line broke, the soil shifted, roots got in
+### 103. Main sewer line repair: the line broke, the soil shifted, roots got in
 
 место съёмки неизвестно, город не пишем · сентябрь 2026 · файлы: 8
 
@@ -1133,7 +1253,7 @@ Frisco · январь 2026 и июнь 2026 · файлы: 122, 166, 167, 179
 - **8**, фото: Main sewer line repair: the line broke, the soil shifted, roots got in. План: /drain-services/
   - Заметки: город не назван / No city (location not recorded).
 
-### 94. A drain line that came apart at the joint, where the roots were
+### 104. A drain line that came apart at the joint, where the roots were
 
 Plano · июль 2026 · файлы: 211, 212
 
@@ -1146,7 +1266,7 @@ Plano · июль 2026 · файлы: 211, 212
 - **212**, фото: A drain line that came apart at the joint, where the roots were, Plano. На сайте: /plumber-plano-tx/. План: /drain-services/
   - Заметки: прислано 5 октября 2026 для страницы Plano; кадр того же видео / A frame of video 211 (1080 x 1920); the web version is cut to 3:4 around the joint (CROP in tools/optimize_photos.py). On the Plano page beside the drains paragraph of the services section: it is a plastic line in a yard, so it does not stand beside the cast iron item.
 
-### 95. Pulling roots out of the sewer line through the outside cleanout with the chain snake
+### 105. Pulling roots out of the sewer line through the outside cleanout with the chain snake
 
 McKinney · май 2026 · файлы: 317
 
@@ -1155,7 +1275,7 @@ McKinney · май 2026 · файлы: 317
 - **317**, видео: Pulling roots out of the sewer line through the outside cleanout with the chain snake, McKinney. На сайте: /plumber-mckinney-tx/. План: /drain-services/
   - Заметки: пришло через чат 15 октября 2026 (inbox); 20 мая 2026. Видео 6,7 с: трос chain snake уходит в чёрный cleanout в земле у кустов, рядом белый cleanout, в конце клубок вытащенных корней; красный инструмент в кадре. / Video, 6.7 s. Denys, October 15, 2026 (case 3 of the second dictation): roots pulled out of the sewer line, the drain line was separated too. May 20, 2026. Not placed yet.
 
-### 96. RIDGID locator on the drain line
+### 106. RIDGID locator on the drain line
 
 Plano · май 2026 · файлы: 17
 
@@ -1163,7 +1283,7 @@ Plano · май 2026 · файлы: 17
 
 - **17**, фото: RIDGID locator on the drain line, Plano. План: /drain-services/ /plumber-plano-tx/ /water-leak-detection-frisco-plano/
 
-### 97. Locator on the lawn finding where the camera is in the drain line
+### 107. Locator on the lawn finding where the camera is in the drain line
 
 Little Elm · май 2026 · файлы: 16
 
@@ -1172,7 +1292,7 @@ Little Elm · май 2026 · файлы: 16
 - **16**, фото: Locator on the lawn finding where the camera is in the drain line, Little Elm. План: /drain-services/ /plumber-little-elm-tx/
   - Заметки: House front in the background: check the full photo for a house number before publishing.; Outside the town limits of Little Elm (postal address Little Elm): Little Elm by Denys's word of October 3, 2026; no words about the Little Elm permit or city inspection next to this job
 
-### 98. On the camera screen, 24 feet into the main drain line of a hundred year old house downtown: a plastic candle, still lit, in the clog
+### 108. On the camera screen, 24 feet into the main drain line of a hundred year old house downtown: a plastic candle, still lit, in the clog
 
 McKinney · май 2026 · файлы: 318
 
@@ -1181,7 +1301,7 @@ McKinney · май 2026 · файлы: 318
 - **318**, фото: On the camera screen, 24 feet into the main drain line of a hundred year old house downtown: a plastic candle, still lit, in the clog, McKinney. На сайте: /plumber-mckinney-tx/. План: /drain-services/ /clogged-drain-cleaning-frisco-plano/
   - Заметки: пришло через чат 15 октября 2026 (inbox); 2 мая 2026. Фото: экран камеры, в линии горящая пластиковая свечка, на экране «24.40FT»; штамп даты камеры на экране неверный (часы камеры), на веб-версии размыт (BLUR 318). / Denys, October 15, 2026 (case 4): a Sunday emergency call downtown, the main line backed up before an event, the line cleared with the snake and the camera; a plastic candle with a light, still on. May 2, 2026. The camera's date stamp on the screen is wrong (the camera clock) and is blurred on the web versions.
 
-### 99. New outside two way cleanout on the drain line
+### 109. New outside two way cleanout on the drain line
 
 The Colony (файлы 9); Frisco (файлы 10) · апрель 2026 · файлы: 9, 10
 
@@ -1196,7 +1316,7 @@ The Colony (файлы 9); Frisco (файлы 10) · апрель 2026 · фай
 - **10**, фото: The same cleanout, broken, already pulled out, Frisco. План: /drain-services/
   - Заметки: City conflict with 9, see 9.
 
-### 100. A separated main drain line: what the chain snake brought out through the outside cleanout
+### 110. A separated main drain line: what the chain snake brought out through the outside cleanout
 
 The Colony · август 2025 · файлы: 231
 
@@ -1205,7 +1325,7 @@ The Colony · август 2025 · файлы: 231
 - **231**, видео: A separated main drain line: what the chain snake brought out through the outside cleanout, The Colony. План: /drain-services/ /plumber-the-colony-tx/
   - Заметки: прислано 5 октября 2026, вторая партия; 10 августа 2025. Видео 8 с: трос выходит из ревизии с большим комом на конце. В расшифровке голоса стоит «за колони»: прочтение Claude, The Colony. По месту съемки файл в Lewisville; город по слову Дениса / Video, 8 s. Not placed yet (Denys, October 5, 2026: keep it for later). Denys named The Colony (the phone location lies in Lewisville; his word on the city of a job is final). He did not say what the ball is made of: the caption does not name it. The city is read from the words of the voice transcript; confirm it with Denys before the file goes on The Colony page. The drain machine with its brand name fills the frame at about 4 to 6 s: use a window without it.
 
-### 101. Broken main drain line outside, hole dug
+### 111. Broken main drain line outside, hole dug
 
 вне десяти городов, город не пишем · июль 2025 · файлы: 155, 156
 
@@ -1217,7 +1337,7 @@ The Colony · август 2025 · файлы: 231
 - **156**, видео: Same line moved by hand: packed with roots that came in through the crack. План: /drain-services/
   - Заметки: Video.
 
-### 102. Main drain line outside: clogged and broken; dug up and cut out
+### 112. Main drain line outside: clogged and broken; dug up and cut out
 
 вне десяти городов, город не пишем · июнь 2025 · файлы: 142, 143
 
@@ -1232,7 +1352,7 @@ The Colony · август 2025 · файлы: 231
 
 ## Унитазы и фланцы
 
-### 103. The sponge head of a toilet cleaning wand, pulled out of the toilet line with a pickup tool
+### 113. The sponge head of a toilet cleaning wand, pulled out of the toilet line with a pickup tool
 
 Frisco · сентябрь 2026 · файлы: 169, 170
 
@@ -1245,7 +1365,7 @@ Frisco · сентябрь 2026 · файлы: 169, 170
 - **170**, видео: Same job: the sponge head on the pickup tool over the pulled toilet, Frisco. Не показываем. План: /toilet-repair-frisco-plano/
   - Заметки: на сайте пока не стоит, фото 169 понятнее / Video, 6 s. Not placed: photo 169 shows the same thing better.
 
-### 104. New wax ring, repaired flange, new bolts
+### 114. New wax ring, repaired flange, new bolts
 
 Plano · август 2026 · файлы: 37
 
@@ -1253,7 +1373,7 @@ Plano · август 2026 · файлы: 37
 
 - **37**, фото: New wax ring, repaired flange, new bolts, Plano. План: /toilet-repair-frisco-plano/ /plumber-plano-tx/
 
-### 105. Rusted toilet flange, broken wax ring, toilet pulled
+### 115. Rusted toilet flange, broken wax ring, toilet pulled
 
 McKinney · июль 2026 · файлы: 33, 34, 322
 
@@ -1270,7 +1390,7 @@ McKinney · июль 2026 · файлы: 33, 34, 322
 - **322**, фото: The toilet off: the flange rusted through, which is why the toilet rocked; the new flange beside it, McKinney. На сайте: /plumber-mckinney-tx/. План: /toilet-repair-frisco-plano/
   - Заметки: пришло через чат 15 октября 2026 (inbox); 29 июля 2026. Фото: унитаз снят, фланец проржавел насквозь, рядом новый фланец, инструменты на плитке, рука в перчатке. Чат отнёс файл к давлению 110 PSI; на снимке фланец, случай 5. / Denys, October 15, 2026 (case 5): the toilet rocked and leaked at the base, the tank leaked, the shut-off valve leaked; a full rebuild, the worn wax ring had let water onto the flange for a year or two, the flange rusted through and was replaced. July 29, 2026.
 
-### 106. Old broken toilet shutoff valve, leaking, coming off
+### 116. Old broken toilet shutoff valve, leaking, coming off
 
 Frisco · июль 2026 · файлы: 31, 32
 
@@ -1281,7 +1401,7 @@ Frisco · июль 2026 · файлы: 31, 32
 - **31**, фото: Old broken toilet shutoff valve, leaking, coming off, Frisco. План: /toilet-repair-frisco-plano/ /plumber-frisco-tx/
 - **32**, фото: New toilet valve, soldered on, new supply line, Frisco. План: /toilet-repair-frisco-plano/
 
-### 107. Hand auger on a fully clogged toilet in very bad shape
+### 117. Hand auger on a fully clogged toilet in very bad shape
 
 место съёмки неизвестно, город не пишем · июль 2026 · файлы: 26
 
@@ -1290,7 +1410,7 @@ Frisco · июль 2026 · файлы: 31, 32
 - **26**, фото: Hand auger on a fully clogged toilet in very bad shape. План: /blog/clogged-toilet-auger-fix-blog/ /toilet-repair-frisco-plano/
   - Заметки: подписать аккуратно / Very dirty toilet. Very dirty floor. Denys asked to caption it carefully: use only on the auger post, small, neutral caption, never as a hero.
 
-### 108. The toilet flushing after it was cleared, the tool box on the tank
+### 118. The toilet flushing after it was cleared, the tool box on the tank
 
 Allen · апрель 2026 · файлы: 339
 
@@ -1299,7 +1419,7 @@ Allen · апрель 2026 · файлы: 339
 - **339**, видео: The toilet flushing after it was cleared, the tool box on the tank, Allen. На сайте: /plumber-allen-tx/. План: /toilet-repair-frisco-plano/
   - Заметки: прислано в чат 16 октября 2026; 27 апреля 2026, у Stacy Rd по метаданным чата, 34 с. Видео: унитаз в маленькой ванной, крышка поднята, смыв; ящик с инструментом на бачке; внизу кадра ноги сантехника и полотенца: окно без них. К какой истории относится (случай 2 или случай 3), говорит Денис. / Video, 34 s. Sent October 16, 2026 without a case named for it (the chat's note: the toilet in place, a flush, the snake on the floor, a tool box on the tank; near Stacy Rd). April 27, 2026. The plumber's feet and towels at the bottom of the frame: window without them. Which story it belongs to (case 2 or case 3) is Denys's to say.
 
-### 109. Toilet clogged to the top, nicknamed "Chili Bowl" in our TikTok video
+### 119. Toilet clogged to the top, nicknamed "Chili Bowl" in our TikTok video
 
 Frisco · апрель 2026 · файлы: 11
 
@@ -1308,7 +1428,7 @@ Frisco · апрель 2026 · файлы: 11
 - **11**, фото: Toilet clogged to the top, nicknamed "Chili Bowl" in our TikTok video, Frisco. План: /toilet-repair-frisco-plano/ /plumbing-guide/why-your-toilet-keeps-backing-up/
   - Заметки: Very dirty toilet. Bathroom items of the household visible. Use small, below the fold, plain caption; the Chili Bowl nickname only as a reference to FPP's own TikTok video. Not as a hero.
 
-### 110. Toilet shutoff valve replaced, quarter turn, soldered
+### 120. Toilet shutoff valve replaced, quarter turn, soldered
 
 место съёмки неизвестно, город не пишем · март 2026 · файлы: 70
 
@@ -1316,7 +1436,7 @@ Frisco · апрель 2026 · файлы: 11
 
 - **70**, фото: Toilet shutoff valve replaced, quarter turn, soldered. План: /toilet-repair-frisco-plano/
 
-### 111. New quarter turn toilet shutoff valve, soldered on
+### 121. New quarter turn toilet shutoff valve, soldered on
 
 место съёмки неизвестно, город не пишем · март 2026 · файлы: 68
 
@@ -1324,7 +1444,7 @@ Frisco · апрель 2026 · файлы: 11
 
 - **68**, фото: New quarter turn toilet shutoff valve, soldered on. План: /toilet-repair-frisco-plano/ /plumbing-guide/angle-stop-valve-leaking-under-sink/
 
-### 112. The toilet before the main line was cleared
+### 122. The toilet before the main line was cleared
 
 Allen · декабрь 2025 · файлы: 333
 
@@ -1333,7 +1453,7 @@ Allen · декабрь 2025 · файлы: 333
 - **333**, фото: The toilet before the main line was cleared, Allen. На сайте: /plumber-allen-tx/. План: /toilet-repair-frisco-plano/
   - Заметки: прислано в чат 16 октября 2026; 19 декабря 2025, восточный Allen по метаданным чата. Фото: унитаз с поднятой крышкой, вода в чаше, плитка на полу. Денис 16 октября, 20:38: это работа с корнями у дерева и фланцем (331, 332), кадр до прочистки главной линии. На странице Allen в ряду из трёх под этой историей. / Denys, October 16, 2026, 20:38: this is the roots and flange job (the main line clogged with roots at a tree, the toilet seeping and rocking, the flange rusted), the toilet before the main line was cleared. December 19, 2025. On the Allen page in the row of three under that story with 331 and 332.
 
-### 113. Rusted toilet bolt at the base: first sign of a flange or wax ring problem
+### 123. Rusted toilet bolt at the base: first sign of a flange or wax ring problem
 
 Allen · декабрь 2025 · файлы: 85, 86, 87, 88, 331, 332
 
@@ -1362,7 +1482,7 @@ Allen · декабрь 2025 · файлы: 85, 86, 87, 88, 331, 332
 - **332**, фото: The new flange ring, bolts and wax ring in place, Allen. На сайте: /plumber-allen-tx/. План: /toilet-repair-frisco-plano/
   - Заметки: прислано в чат 16 октября 2026 (случай 3); 9 декабря 2025. Фото: новое стальное кольцо фланца поверх старого, новое восковое кольцо и болты, над ним подводка унитаза с биркой TOILET, справа полотенце. / Case 3, after. Same job as 88. December 9, 2025.
 
-### 114. Toilet flange, wax ring and bolts replaced
+### 124. Toilet flange, wax ring and bolts replaced
 
 Allen · ноябрь 2025 · файлы: 62
 
@@ -1370,7 +1490,7 @@ Allen · ноябрь 2025 · файлы: 62
 
 - **62**, фото: Toilet flange, wax ring and bolts replaced, Allen. План: /toilet-repair-frisco-plano/ /plumber-allen-tx/
 
-### 115. Toilet tank off: fill and flush valves being replaced
+### 125. Toilet tank off: fill and flush valves being replaced
 
 Plano · ноябрь 2025 · файлы: 61
 
@@ -1379,7 +1499,7 @@ Plano · ноябрь 2025 · файлы: 61
 - **61**, фото: Toilet tank off: fill and flush valves being replaced, Plano. План: /toilet-repair-frisco-plano/ /plumber-plano-tx/
   - Заметки: продиктовано как 51, по порядку это 61 / Dictated as 51; by order it is 61: confirm with Denys.
 
-### 116. Clogged toilet, toilet paper
+### 126. Clogged toilet, toilet paper
 
 место съёмки неизвестно, город не пишем · май 2025 · файлы: 135
 
@@ -1388,16 +1508,16 @@ Plano · ноябрь 2025 · файлы: 61
 - **135**, фото: Clogged toilet, toilet paper. План: /plumbing-guide/why-your-toilet-keeps-backing-up/
   - Заметки: Very dirty toilet. Bathroom items visible. Skip or use small in a toilet guide.
 
-### 117. Main line backing up into the bathtub
+### 127. Main line backing up into the bathtub
 
 Frisco · апрель 2025 · файлы: 130
 
 **Слова Дениса:** «Главная линия: обратный выход в ванну»
 
-- **130**, видео: Main line backing up into the bathtub, Frisco. План: /plumbing-guide/why-your-toilet-keeps-backing-up/ /clogged-drain-cleaning-frisco-plano/
+- **130**, видео: Main line backing up into the bathtub, Frisco. На сайте: /clogged-drain-cleaning-frisco-plano/. План: /plumbing-guide/why-your-toilet-keeps-backing-up/
   - Заметки: Video.
 
-### 118. Toilet clogged all the way
+### 128. Toilet clogged all the way
 
 Plano · февраль 2025 · файлы: 111
 
@@ -1406,7 +1526,7 @@ Plano · февраль 2025 · файлы: 111
 - **111**, фото: Toilet clogged all the way, Plano. План: /plumbing-guide/why-your-toilet-keeps-backing-up/
   - Заметки: Very dirty toilet. Paper in the bowl, stained floor. Use only small inside a toilet story or skip; plain caption.
 
-### 119. An older Plano house with the toilet pulled: the flange is rusted away
+### 129. An older Plano house with the toilet pulled: the flange is rusted away
 
 Plano · январь 2025 · файлы: 241
 
@@ -1415,7 +1535,7 @@ Plano · январь 2025 · файлы: 241
 - **241**, фото: An older Plano house with the toilet pulled: the flange is rusted away. План: /plumber-plano-tx/ /toilet-repair-frisco-plano/ /clogged-drain-cleaning-frisco-plano/
   - Заметки: прислано 5 октября 2026, третья партия; 9 января 2025. Фото: унитаз снят, в деревянном полу отверстие слива, старого фланца нет; рука в перчатке, инструмент, носок ботинка. Город по слову Дениса; по месту съемки файл лежит в другом городе / Not placed yet (Denys, October 5, 2026: keep it for later). His words: in old houses, 30 to 40 years, pulling a toilet is a quest, above all when there is no cleanout and the line has to be cleared through the toilet; it sits on silicone and cement, and under it the flange is rusted through, so the flange has to be repaired too; a very common case. City by his word (the phone location lies in another city). A shoe and tools in the frame.
 
-### 120. Repaired toilet flange
+### 130. Repaired toilet flange
 
 Little Elm · январь 2025 · файлы: 102
 
@@ -1424,7 +1544,7 @@ Little Elm · январь 2025 · файлы: 102
 - **102**, фото: Repaired toilet flange, Little Elm. План: /toilet-repair-frisco-plano/ /plumber-little-elm-tx/
   - Заметки: Outside the town limits of Little Elm (postal address Little Elm): Little Elm by Denys's word of October 3, 2026; no words about the Little Elm permit or city inspection next to this job
 
-### 121. A six foot toilet auger clears a toilet packed with paper
+### 131. A six foot toilet auger clears a toilet packed with paper
 
 McKinney · ноябрь 2024 · файлы: 190, 191
 
@@ -1435,7 +1555,7 @@ McKinney · ноябрь 2024 · файлы: 190, 191
 - **191**, видео: The toilet before: clogged solid with toilet paper, McKinney. План: /toilet-repair-frisco-plano/
   - Заметки: видео 6 с: унитаз, забитый полностью, стоки в чаше; по границе города место съемки в McKinney / Video, 6 s, not placed yet. Waste in the bowl: think before using.
 
-### 122. Under a toilet in Plano: the old flange, rusted through and broken off after years of leaking
+### 132. Under a toilet in Plano: the old flange, rusted through and broken off after years of leaking
 
 Plano · ноябрь 2024 · файлы: 248, 249, 250
 
@@ -1448,7 +1568,7 @@ Plano · ноябрь 2024 · файлы: 248, 249, 250
 - **250**, фото: After: a new flange and a new wax ring, ready for the toilet, Plano. На сайте: /plumber-plano-tx/. План: /toilet-repair-frisco-plano/
   - Заметки: прислано 5 октября 2026, третья партия; фото после: новый фланец, болты и восковое кольцо на том же полу. На странице Plano рядом с 248 / On the Plano page next to 248. See 248.
 
-### 123. The Ridgid closet auger in the toilet, the clog cleared
+### 133. The Ridgid closet auger in the toilet, the clog cleared
 
 Prosper · август 2024 · файлы: 346
 
@@ -1457,7 +1577,7 @@ Prosper · август 2024 · файлы: 346
 - **346**, видео: The Ridgid closet auger in the toilet, the clog cleared, Prosper. На сайте: /plumber-prosper-tx/. План: /toilet-repair-frisco-plano/
   - Заметки: прислано в чат 16 октября 2026 (случай 7); 13 августа 2024, 6 с. Видео: ручной Ridgid closet auger в унитазе, рядом ванна с серой плиткой; внизу кадра с 2.5 с ботинки сантехника, с 5.5 с его рука: клип берёт верхние 3:4 кадра и кончается раньше. Город: Prosper по его слову 22:33 («всё, что я сюда скидываю про Prosper, Prosper»). В расшифровке голоса: «риджит» Ridgid, «flashable» flushable: прочтение Claude. / Video, 6 s. Case 7: an ordinary clog, most likely wipes (the pack stood by the toilet, flushable on the label; his advice: don't flush them). August 13, 2024, no year on the page. Prosper by his word of October 16, 22:33 (everything sent for the Prosper page is Prosper). The plumber's shoes at the bottom of the frame from 2.5 s and his arm from 5.5 s: the clip takes the top 3:4 of the frame and 0.5 to 3.9 s. On the Prosper page beside the toilet story.
 
-### 124. Toilet tank: broken fill and flush valves
+### 134. Toilet tank: broken fill and flush valves
 
 McKinney · июль 2024 · файлы: 139, 140, 141
 
@@ -1474,7 +1594,7 @@ McKinney · июль 2024 · файлы: 139, 140, 141
 - **140**, фото: New flush valve, tank removed, McKinney. План: /toilet-repair-frisco-plano/
 - **141**, фото: Tank back in place, new fill and flush valves, McKinney. На сайте: /, /toilet-repair-frisco-plano/. План: /plumber-mckinney-tx/
 
-### 125. Toilet valve began leaking when the homeowner tried to close it; old valve unsoldered
+### 135. Toilet valve began leaking when the homeowner tried to close it; old valve unsoldered
 
 Plano · июнь 2024 · файлы: 137, 138
 
@@ -1486,7 +1606,7 @@ Plano · июнь 2024 · файлы: 137, 138
   - Заметки: Homeowner's decorative sink in frame: crop.
 - **138**, фото: New toilet valve and supply line, valve soldered on, Plano. План: /toilet-repair-frisco-plano/ /plumber-plano-tx/
 
-### 126. Clogged toilet
+### 136. Clogged toilet
 
 Little Elm · февраль 2024 · файлы: 126
 
@@ -1495,7 +1615,7 @@ Little Elm · февраль 2024 · файлы: 126
 - **126**, фото: Clogged toilet, Little Elm. План: /plumbing-guide/why-your-toilet-keeps-backing-up/
   - Заметки: Very dirty toilet. Brown water to the rim. Skip on service pages; at most a small photo in a toilet guide.; Outside the town limits of Little Elm (postal address Little Elm): Little Elm by Denys's word of October 3, 2026; no words about the Little Elm permit or city inspection next to this job
 
-### 127. Another toilet flange rusted through, with roots grown in through it
+### 137. Another toilet flange rusted through, with roots grown in through it
 
 вне десяти городов, город не пишем · декабрь 2023 · файлы: 251
 
@@ -1506,7 +1626,7 @@ Little Elm · февраль 2024 · файлы: 126
 
 ## Смесители и душевые клапаны
 
-### 128. The old shut-off valve under the bathroom sink that seized and leaked when the homeowner changed the faucet himself
+### 138. The old shut-off valve under the bathroom sink that seized and leaked when the homeowner changed the faucet himself
 
 Plano · октябрь 2026 · файлы: 308, 309, 310, 311, 312, 313
 
@@ -1525,7 +1645,7 @@ Plano · октябрь 2026 · файлы: 308, 309, 310, 311, 312, 313
 - **313**, видео: The new shut-off valve soldered on, the supply line going back on, Plano. План: /fixture-installation-repair/
   - Заметки: по AirDrop на Mac 8 октября 2026 (Downloads), в архив принято 15 октября 2026; слов Дениса о файле пока нет. Одна работа, старый дом (ковёр с цветами, деревянные панели): видео 44 с: новый кран на медном стабе крупно, руки в перчатках, подводка подключается / Video. Plano, a DIY faucet swap: the shut-off valves under the bathroom sink seized and leaked when the homeowner changed the faucet himself; the old valves sweated off, new ones soldered on (Denys, his Google post of October 8, 2026, and his word of October 15 through the chat). Planned for the faucet and shower valve page, not for the McKinney page. Not placed yet.
 
-### 129. New shower system rough in: valve, rain shower and hand shower, before tile
+### 139. New shower system rough in: valve, rain shower and hand shower, before tile
 
 место съёмки неизвестно, город не пишем · июль 2026 · файлы: 22
 
@@ -1533,7 +1653,7 @@ Plano · октябрь 2026 · файлы: 308, 309, 310, 311, 312, 313
 
 - **22**, фото: New shower system rough in: valve, rain shower and hand shower, before tile. План: /fixture-installation-repair/
 
-### 130. New shutoff valves under the sink, soldered on
+### 140. New shutoff valves under the sink, soldered on
 
 место съёмки неизвестно, город не пишем · июль 2026 · файлы: 23
 
@@ -1541,7 +1661,7 @@ Plano · октябрь 2026 · файлы: 308, 309, 310, 311, 312, 313
 
 - **23**, фото: New shutoff valves under the sink, soldered on. План: /plumbing-guide/angle-stop-valve-leaking-under-sink/ /fixture-installation-repair/
 
-### 131. Replacing a Moen shower cartridge
+### 141. Replacing a Moen shower cartridge
 
 место съёмки неизвестно, город не пишем · июль 2026 · файлы: 25
 
@@ -1549,7 +1669,7 @@ Plano · октябрь 2026 · файлы: 308, 309, 310, 311, 312, 313
 
 - **25**, фото: Replacing a Moen shower cartridge. План: /blog/moen-shower-cartridge-replacement-blog/ /fixture-installation-repair/
 
-### 132. Sink drain installed wrong
+### 142. Sink drain installed wrong
 
 Allen · май 2026 · файлы: 18, 19, 338
 
@@ -1566,7 +1686,7 @@ Allen · май 2026 · файлы: 18, 19, 338
 - **338**, фото: The attic water heater after the home inspection: the T&P valve with no discharge line and the PEX bent in an arc straight off the tank, Allen. На сайте: /plumber-allen-tx/. План: /water-heaters/
   - Заметки: прислано в чат 16 октября 2026 (случай 1); 22 мая 2026, у Custer Rd (граница Plano и Allen по метаданным чата), Allen по слову Дениса. Фото: старый газовый водонагреватель на чердаке, сбоку латунный T&P без сливной линии, сверху красная линия PEX, согнутая дугой прямо от бака, рука в синей перчатке показывает на неё. / Case 1 (Denys, October 16, 2026): a bought house, the home inspector said all was fine; the T&P not piped, PEX screwed straight onto the gas heater with no distance and bent down under pressure; replaced to code, city inspection passed. May 22, 2026; Custer Rd (the border of Plano and Allen by the chat's metadata); Allen by his word.
 
-### 133. Replacing a shower cartridge from a rare old brand, not sold in regular stores
+### 143. Replacing a shower cartridge from a rare old brand, not sold in regular stores
 
 Plano · апрель 2026 · файлы: 75, 76, 214, 215
 
@@ -1586,7 +1706,7 @@ Plano · апрель 2026 · файлы: 75, 76, 214, 215
 - **215**, фото: The same old cartridge out of the valve, Plano. План: /fixture-installation-repair/
   - Заметки: прислано 5 октября 2026 для страницы Plano; почти копия 75 и 76; 76 резче. 76 снят со страницы Plano вечером 5 октября 2026 / Near copy of 75 and 76; 76 is the sharper one; it came off the Plano page on the evening of October 5, 2026.
 
-### 134. Washing machine outlet box, the valves do not work
+### 144. Washing machine outlet box, the valves do not work
 
 McKinney · апрель 2026 · файлы: 71, 73
 
@@ -1597,7 +1717,7 @@ McKinney · апрель 2026 · файлы: 71, 73
 - **71**, фото: Washing machine outlet box, the valves do not work, McKinney. План: /fixture-installation-repair/ /plumber-mckinney-tx/
 - **73**, фото: Washing machine outlet box replaced, new valves, McKinney. План: /fixture-installation-repair/ /plumber-mckinney-tx/
 
-### 135. The diverter is gone: switched to the shower, water runs from the tub spout and the shower head at once
+### 145. The diverter is gone: switched to the shower, water runs from the tub spout and the shower head at once
 
 McKinney · ноябрь 2025 · файлы: 180
 
@@ -1606,7 +1726,7 @@ McKinney · ноябрь 2025 · файлы: 180
 - **180**, видео: The diverter is gone: switched to the shower, water runs from the tub spout and the shower head at once, McKinney. План: /fixture-installation-repair/
   - Заметки: город Денис не назвал; по границе города место съемки в McKinney; для страницы смесителей и душевых клапанов / Video, 15 s. For the faucet and shower valve page, not on the Frisco page (McKinney by the city boundary). An arm with a watch in the frame, no face.
 
-### 136. Pulling a Moen cartridge out of the valve with a puller
+### 146. Pulling a Moen cartridge out of the valve with a puller
 
 Frisco · ноябрь 2025 · файлы: 60, 177
 
@@ -1618,7 +1738,7 @@ Frisco · ноябрь 2025 · файлы: 60, 177
 - **177**, фото: A shower cartridge pulled in Frisco, crusted with calcium from hard water. На сайте: /plumber-frisco-tx/. План: /fixture-installation-repair/
   - Заметки: вторая фотография той же работы: 60 / Same job as photo 60 (November 2025).
 
-### 137. Moen shower cartridge replacement, in progress
+### 147. Moen shower cartridge replacement, in progress
 
 Prosper · ноябрь 2025 · файлы: 59
 
@@ -1626,7 +1746,7 @@ Prosper · ноябрь 2025 · файлы: 59
 
 - **59**, фото: Moen shower cartridge replacement, in progress, Prosper. План: /blog/moen-shower-cartridge-replacement-blog/ /plumber-prosper-tx/
 
-### 138. Before: a three handle tub and shower valve, water running from the spout
+### 148. Before: a three handle tub and shower valve, water running from the spout
 
 Plano · октябрь 2025 · файлы: 222, 223
 
@@ -1637,7 +1757,7 @@ Plano · октябрь 2025 · файлы: 222, 223
 - **223**, видео: After: one handle and a wide cover plate on the same wall, Plano. На сайте: /plumber-plano-tx/. План: /fixture-installation-repair/
   - Заметки: прислано 5 октября 2026, вторая партия; видео 8 с, после: одна ручка с большой накладкой на плитке, излив обжимают прессом. Город Plano по слову Дениса от 5 октября 2026; на странице Plano клип стоит под пунктом про три ручки / Video, 8 s. On the Plano page as a five second clip under the three handle item, after 222. Plano by Denys's word. A press tool with its brand name in the frame; the clip takes the upper part of the frame, without the boot at the bottom.
 
-### 139. About 108 PSI on the gauge at a house where the shower valve was replaced
+### 149. About 108 PSI on the gauge at a house where the shower valve was replaced
 
 McKinney · октябрь 2025 · файлы: 258, 259, 260, 319, 320
 
@@ -1660,7 +1780,7 @@ McKinney · октябрь 2025 · файлы: 258, 259, 260, 319, 320
 - **320**, фото: About 110 PSI on the gauge at the outside spigot, McKinney (the same picture as 258). Не показываем
   - Заметки: пришло через чат 15 октября 2026 (inbox, IMG_1018_2.HEIC); тот же снимок, что 258 (IMG_1018.HEIC, 14 октября 2025, 10:58:05), вывезен из телефона дважды: на страницах стоит только 258, 320 никогда. Денис 15 октября: 110 PSI, всё починено, выставлено на 70. / The same shot as 258 (IMG_1018.HEIC), exported from the phone twice: never on a page, 258 stands. Denys, October 15, 2026: 110 PSI, the whole system under stress; fixed, the pressure set to 70 PSI.
 
-### 140. Moen shower cartridge replacement
+### 150. Moen shower cartridge replacement
 
 Plano · июль 2025 · файлы: 154
 
@@ -1669,7 +1789,7 @@ Plano · июль 2025 · файлы: 154
 - **154**, видео: Moen shower cartridge replacement, Plano. План: /blog/moen-shower-cartridge-replacement-blog/
   - Заметки: Video.
 
-### 141. New Moen shower valve, installed with ProPress
+### 151. New Moen shower valve, installed with ProPress
 
 Allen · июнь 2025 · файлы: 149, 150
 
@@ -1681,7 +1801,7 @@ Allen · июнь 2025 · файлы: 149, 150
   - Заметки: не продиктовано
 - **150**, фото: New Moen shower valve, installed with ProPress, Allen. План: /fixture-installation-repair/ /plumber-allen-tx/
 
-### 142. The handle turns and the water keeps running: a broken shower cartridge
+### 152. The handle turns and the water keeps running: a broken shower cartridge
 
 Frisco · май 2025 · файлы: 174
 
@@ -1690,7 +1810,7 @@ Frisco · май 2025 · файлы: 174
 - **174**, видео: The handle turns and the water keeps running: a broken shower cartridge, Frisco. На сайте: /emergency-plumbing-services/, /plumber-frisco-tx/. План: /fixture-installation-repair/
   - Заметки: по месту съемки граница Little Elm и Frisco; Денис связал видео с вызовом во Frisco С ночи 5 октября 2026 стоит и на странице emergency, справа от истории про душ (Денис, 23:17: «душ, который не отключается, вот сюда добавь это видео»); на Frisco остаётся. / Video, 12 s. The site uses a 5 second cut without sound: design/video/174-shower-cartridge-frisco.mp4. An arm with a watch in the frame, no face. Location on the Little Elm and Frisco border; Frisco by Denys's word. Also on the emergency page beside the shower story since October 5, 2026, night (Denys, 23:17); it stays on the Frisco page.
 
-### 143. The Moen shower cartridge out of a five year old house: corroded, the rubber gone
+### 153. The Moen shower cartridge out of a five year old house: corroded, the rubber gone
 
 Prosper · март 2025 · файлы: 347
 
@@ -1699,7 +1819,7 @@ Prosper · март 2025 · файлы: 347
 - **347**, фото: The Moen shower cartridge out of a five year old house: corroded, the rubber gone, Prosper. На сайте: /plumber-prosper-tx/. План: /fixture-installation-repair/
   - Заметки: прислано в чат 16 октября 2026 (случай 5); 31 марта 2025. Фото: корродированный картридж Moen с зелёным штоком в руке в перчатке в душе с плиткой, на полу ключ и сумка с инструментом. Другая работа, чем фото 59 (6 ноября 2025). Город: Prosper по его слову 22:33. / Case 5: an emergency call, the shower would not shut off; the cartridge out with the puller, corroded all over at five years, the rubber gone: hard water, and only a whole house softener prevents the next one. March 31, 2025, no year on the page. Prosper by his word of October 16, 22:33. Another job than photo 59. The wrench and the tool bag on the shower floor are in the frame. On the Prosper page beside the cartridge story.
 
-### 144. Another shower valve replaced; drywall opened from the other side for access
+### 154. Another shower valve replaced; drywall opened from the other side for access
 
 Frisco · февраль 2025 · файлы: 113
 
@@ -1707,7 +1827,7 @@ Frisco · февраль 2025 · файлы: 113
 
 - **113**, фото: Another shower valve replaced; drywall opened from the other side for access, Frisco. План: /fixture-installation-repair/ /plumber-frisco-tx/
 
-### 145. Old broken Roman tub faucet
+### 155. Old broken Roman tub faucet
 
 Frisco · январь 2025 · файлы: 106, 107, 108, 109, 110
 
@@ -1730,7 +1850,7 @@ Frisco · январь 2025 · файлы: 106, 107, 108, 109, 110
 - **109**, фото: Delta shower cartridge replacement: pulling it out of the valve, Frisco. План: /fixture-installation-repair/ /plumber-frisco-tx/
 - **110**, фото: The same valve and a new Delta cartridge in the package, Frisco. План: /fixture-installation-repair/
 
-### 146. Broken tub and shower set, two handles and a spout, old unknown brand
+### 156. Broken tub and shower set, two handles and a spout, old unknown brand
 
 McKinney · декабрь 2024 · файлы: 98, 99, 244
 
@@ -1747,7 +1867,7 @@ McKinney · декабрь 2024 · файлы: 98, 99, 244
 - **244**, фото: Two handles to one: the new valve in the wall through a small tile opening, McKinney. План: /fixture-installation-repair/ /plumber-mckinney-tx/
   - Заметки: прислано 5 октября 2026, третья партия; 30 декабря 2024. Фото: новый клапан с одной ручкой в стене через овальное отверстие в плитке. Та же работа, что 98 (до) и 99 (после). Первое слово расшифровки не разобрано («Ходка») / Not placed yet (Denys, October 5, 2026: keep it for later). Same job as 98 (before) and 99 (after), December 30, 2024; a near copy of 99.
 
-### 147. A Delta shower valve in Frisco: the cartridge itself leaks, water runs out behind the handle
+### 157. A Delta shower valve in Frisco: the cartridge itself leaks, water runs out behind the handle
 
 Frisco · сентябрь 2024 · файлы: 181, 182
 
@@ -1758,7 +1878,7 @@ Frisco · сентябрь 2024 · файлы: 181, 182
 - **182**, видео: The trim off: water sprays out of the Delta cartridge itself, Frisco. План: /fixture-installation-repair/
   - Заметки: видео 4 с: накладка снята, картридж в стене, вода брызжет из самого картриджа / Video, 4 s, not placed yet. A shampoo bottle with a brand name in the frame.
 
-### 148. Old valve set crooked on SharkBite and leaking; someone cut a bearing 2x4 too
+### 158. Old valve set crooked on SharkBite and leaking; someone cut a bearing 2x4 too
 
 Plano · июль 2024 · файлы: 151, 152
 
@@ -1769,7 +1889,7 @@ Plano · июль 2024 · файлы: 151, 152
 - **151**, фото: Old valve set crooked on SharkBite and leaking; someone cut a bearing 2x4 too, Plano. План: /fixture-installation-repair/ /plumber-plano-tx/
 - **152**, фото: Valve reinstalled, bearing 2x4 restored with the cut section put back, Plano. План: /fixture-installation-repair/ /plumber-plano-tx/
 
-### 149. Broken shower set, the shower was dripping
+### 159. Broken shower set, the shower was dripping
 
 Carrollton · июль 2024 · файлы: 144, 145, 146, 147, 148
 
@@ -1791,7 +1911,7 @@ Carrollton · июль 2024 · файлы: 144, 145, 146, 147, 148
 - **147**, фото: New valve soldered in inside the wall, Carrollton. План: /fixture-installation-repair/ /plumber-carrollton-tx/
 - **148**, фото: New valve and shower trim installed, the opening closed, Carrollton. План: /fixture-installation-repair/ /plumber-carrollton-tx/
 
-### 150. A 3 handle shower converted to a single handle valve: the new valve is pressed in through the opening in the tile
+### 160. A 3 handle shower converted to a single handle valve: the new valve is pressed in through the opening in the tile
 
 Plano · день съёмки не записан · файлы: 216
 
@@ -1802,7 +1922,7 @@ Plano · день съёмки не записан · файлы: 216
 
 ## Измельчители
 
-### 151. New Moen garbage disposal, 3/4 HP
+### 161. New Moen garbage disposal, 3/4 HP
 
 Little Elm · март 2026 · файлы: 69
 
@@ -1810,7 +1930,7 @@ Little Elm · март 2026 · файлы: 69
 
 - **69**, фото: New Moen garbage disposal, 3/4 HP, Little Elm. План: /garbage-disposal-repair-frisco-plano/ /plumber-little-elm-tx/
 
-### 152. Old garbage disposal and old drain line, P-trap
+### 162. Old garbage disposal and old drain line, P-trap
 
 Little Elm · март 2025 · файлы: 123, 124
 
@@ -1823,7 +1943,7 @@ Little Elm · март 2025 · файлы: 123, 124
 - **124**, фото: New Moen 3/4 HP garbage disposal, new P-trap, Little Elm. План: /garbage-disposal-repair-frisco-plano/ /plumber-little-elm-tx/
   - Заметки: продиктовано как 120
 
-### 153. New Moen 3/4 HP disposal and drain line; a long leak damaged the cabinet floor
+### 163. New Moen 3/4 HP disposal and drain line; a long leak damaged the cabinet floor
 
 McKinney · январь 2025 · файлы: 103
 
@@ -1831,7 +1951,7 @@ McKinney · январь 2025 · файлы: 103
 
 - **103**, фото: New Moen 3/4 HP disposal and drain line; a long leak damaged the cabinet floor, McKinney. План: /garbage-disposal-repair-frisco-plano/ /plumber-mckinney-tx/
 
-### 154. New Moen garbage disposal, 3/4 HP
+### 164. New Moen garbage disposal, 3/4 HP
 
 Plano · январь 2024 · файлы: 115
 
@@ -1841,7 +1961,7 @@ Plano · январь 2024 · файлы: 115
 
 ## Уличные краны (hose bib)
 
-### 155. Outside faucet replaced with a frost free, another angle
+### 165. Outside faucet replaced with a frost free, another angle
 
 Frisco · июль 2026 · файлы: 30
 
@@ -1850,7 +1970,7 @@ Frisco · июль 2026 · файлы: 30
 - **30**, фото: Outside faucet replaced with a frost free, another angle, Frisco. На сайте: /hose-bib-repair-frisco-plano/. План: /blog/outside-spigot-replacement-plumber-in-frisco/ /plumber-frisco-tx/
   - Заметки: раньше считалось парой к 29; по дате (25 июля 2026), городу и стене это другой кран / Once paired with 29; by the date (July 25, 2026), the city and the wall it is another faucet.
 
-### 156. Outside faucet replaced with a frost free
+### 166. Outside faucet replaced with a frost free
 
 вне десяти городов, город не пишем · июль 2026 · файлы: 29, 208, 209, 210
 
@@ -1869,7 +1989,7 @@ Frisco · июль 2026 · файлы: 30
 - **210**, фото: The split in the tube of the old spigot, up close. План: /hose-bib-repair-frisco-plano/
   - Заметки: прислано 5 октября 2026; трещина на трубке крана крупно, в руке. В кадре баскетбольный мяч с названием марки: обрезать перед использованием / Not placed yet, see 208. A basketball with a brand name in the frame: crop it out before use.
 
-### 157. Outside faucet leaking, will not shut off
+### 167. Outside faucet leaking, will not shut off
 
 Frisco · май 2026 · файлы: 100, 101, 176
 
@@ -1886,7 +2006,7 @@ Frisco · май 2026 · файлы: 100, 101, 176
 - **176**, видео: A stuck outside spigot: the handle turns and the water keeps running, Frisco. На сайте: /plumber-frisco-tx/. План: /hose-bib-repair-frisco-plano/
   - Заметки: прислано для страницы Frisco; по месту съемки ближе Frisco, граница с Little Elm / Video, 3 s, used whole as a silent loop: design/video/176-spigot-stuck-open-frisco.mp4. A gloved hand in the frame, no face.
 
-### 158. An old outside spigot on a brick wall running full open
+### 168. An old outside spigot on a brick wall running full open
 
 Allen · сентябрь 2025 и октябрь 2025 · файлы: 326, 328
 
@@ -1901,7 +2021,7 @@ Allen · сентябрь 2025 и октябрь 2025 · файлы: 326, 328
 - **328**, фото: The wall opened behind the spigot: the copper line soldered straight into it, no threaded connection, Allen. На сайте: /plumber-allen-tx/. План: /hose-bib-repair-frisco-plano/
   - Заметки: прислано в чат 16 октября 2026 (случай 6); 4 октября 2025. Фото: стена открыта изнутри, розовый утеплитель, стойка, медная труба проходит сквозь обшивку в пене и уходит вниз к крану, на обшивке чёрные пятна. Лиц нет. / Case 6 (Denys, October 16, 2026): see 326. October 4, 2025. Black staining on the sheathing shows; no faces.
 
-### 159. An outside faucet that runs and will not shut off
+### 169. An outside faucet that runs and will not shut off
 
 Plano · июль 2025 · файлы: 172
 
@@ -1910,7 +2030,7 @@ Plano · июль 2025 · файлы: 172
 - **172**, фото: An outside faucet that runs and will not shut off, Plano. План: /hose-bib-repair-frisco-plano/ /plumber-plano-tx/
   - Заметки: город Денис не назвал; по границе города место съемки в Plano / Live photo: only the still came through, Denys wants the moving version on the Frisco page (he has to send the video part). The city boundary puts the location in Plano; Denys named no city. The faucet did not burst, it just will not close (Denys).
 
-### 160. The new frost free spigot in the stone wall
+### 170. The new frost free spigot in the stone wall
 
 Prosper · февраль 2025 · файлы: 52, 121, 345
 
@@ -1927,7 +2047,7 @@ Prosper · февраль 2025 · файлы: 52, 121, 345
 - **345**, видео: The old frost free spigot split along the barrel, beside the new one, Prosper. На сайте: /plumber-prosper-tx/. План: /hose-bib-repair-frisco-plano/ /blog/burst-outside-spigot/
   - Заметки: прислано в чат 16 октября 2026 (случай 6); 24 февраля 2025, 7 с. Видео: в руке в перчатке старый frost free кран с продольной трещиной на латунном стволе рядом с новым, каменная стена; катушка шланга в верхнем левом углу, надпись на ней в кадр клипа не попадает. Та же работа, что фото 121 и 52. Денис, 22:15: «даты пишем 26, 25 не пишем»: на странице без года. Город: Prosper его слово (22:16), по границе города Celina. В расшифровке голоса: «Frost Free Speakers» frost free spigots; «air breaker» он сам поправил на vacuum breaker. / Video, 7 s. Case 6: a house a couple of years old, the spigot split after the winter because the threaded connection inside the wall was set level, so the barrel kept its water. February 24, 2025, no year on the page (Denys: no 2025 on the page). Prosper by his word of October 16, 22:16; the city boundary says Celina. The same job as photos 121 and 52. The clip takes 1.5 to 5.5 s; the hose reel at the top left shows no readable brand in it. On the Prosper page first in the pair under the split barrel story with photo 52 (121 off by Denys's word of October 17, 2026, 00:28).
 
-### 161. The same spigot unsoldered: only the pipe is left in the wall
+### 171. The same spigot unsoldered: only the pipe is left in the wall
 
 Plano · август 2024 · файлы: 268, 269
 
@@ -1938,7 +2058,7 @@ Plano · август 2024 · файлы: 268, 269
 - **269**, видео: An old spigot soldered straight onto the pipe in the wall, Plano. На сайте: /plumber-plano-tx/. План: /hose-bib-repair-frisco-plano/
   - Заметки: прислано 5 октября 2026, четвертая партия; видео 5 с, до: старый кран с маховиком припаян к трубе в кирпичной стене. На странице Plano рядом с 268. Город по слову Дениса; по месту съемки файл лежит в другом городе, не из десяти. В расшифровке голоса: «нагрудник» hose bib, «в плене» Plano: прочтение Claude. / Video, 5 s. On the Plano page as a clip under the outside spigots item, first of four. His words: the hose bib on an old house in Plano that is soldered on, we unsolder it. Plano by his word (the phone location lies in another city, not one of the ten).
 
-### 162. The water line to the outside spigot, burst in a freeze inside a garage wall and replaced
+### 172. The water line to the outside spigot, burst in a freeze inside a garage wall and replaced
 
 Frisco · январь 2024 · файлы: 178
 
@@ -1949,7 +2069,7 @@ Frisco · январь 2024 · файлы: 178
 
 ## Аварийные вызовы и мороз
 
-### 163. PEX water line from an attic, chewed through by rodents in two spots
+### 173. PEX water line from an attic, chewed through by rodents in two spots
 
 Allen · день съёмки не записан · файлы: 164
 
@@ -1958,7 +2078,7 @@ Allen · день съёмки не записан · файлы: 164
 - **164**, фото: PEX water line from an attic, chewed through by rodents in two spots, Allen. На сайте: /. План: /emergency-plumbing-services/ /plumber-allen-tx/
   - Заметки: sent in chat October 2, 2026 with the final homepage brief; the cut out pieces shot on a countertop; no location data; дата в архиве это день отправки в чат, день съемки не записан / Shot on a countertop after the repair: the caption says from an attic. City confirmed by Denys, October 2, 2026.
 
-### 164. The ceiling came down under a pinhole leak
+### 174. The ceiling came down under a pinhole leak
 
 Plano · сентябрь 2026 и октябрь 2026 · файлы: 253, 254, 255, 256, 257
 
@@ -1979,7 +2099,7 @@ Plano · сентябрь 2026 и октябрь 2026 · файлы: 253, 254, 2
 - **257**, видео: After: a new spigot on a new copper pipe, Plano. На сайте: /plumber-plano-tx/. План: /hose-bib-repair-frisco-plano/
   - Заметки: прислано 5 октября 2026, третья партия, второе сообщение; видео 9 с, после: новая медная труба и новый кран на том же месте, кран открывают, вода идет из крана. На странице Plano рядом с 256. В кадре мешок с надписью: клип берет окно без него В расшифровке стоит «в плейна», «хозбип», «хосбибы»: Plano и hose bib, прочтение Claude, место съемки совпадает. / Video, 9 s. On the Plano page as a five second clip next to 256. A bag with print lies at the right of the frame: the clip takes a window without it.
 
-### 165. The recirculation pump by the attic water heater that cracked and dripped all night
+### 175. The recirculation pump by the attic water heater that cracked and dripped all night
 
 вне десяти городов, город не пишем · февраль 2026 · файлы: 306
 
@@ -1988,7 +2108,7 @@ Plano · сентябрь 2026 и октябрь 2026 · файлы: 253, 254, 2
 - **306**, видео: The recirculation pump by the attic water heater that cracked and dripped all night. На сайте: /emergency-plumbing-services/. План: /water-heaters/
   - Заметки: прислано в чат 5 октября 2026 ещё позже (чат передать файл не смог, 60 МБ); в архив взят файл телефона из Downloads на Mac, md5 сошёлся с данными чата; суббота 7 февраля 2026, день. Видео 30,5 с: красный насос рециркуляции на линии у водонагревателя на чердаке, настил под ним в тёмных пятнах от воды, рука в синей перчатке на трубе. На кране под насосом этикетка, на водонагревателе этикетки, на трубах печать: клип берёт окно кадра без них (14,0 до 19,0 с). Конец видео смазан, камера уходит в сторону: в клип не идёт. Города Денис не назвал; по границе места съёмки это земля вне городов, города в подписи нет. Стоит под историей «A recirculation pump that dripped all night» на странице emergency (5 октября 2026, ночь). / Video, 30.5 s. Denys, October 5, 2026, late evening (the recirculation pump call of the dictation). On the emergency page under the story since October 5, 2026, night. Labels on the valve under the pump and on the heater, printing on the pipes: the clip takes a window without them (14.0 to 19.0 s); the blurred end is not used. Outside any city by the location: no city. Phone original from the Mac (60 MB, the chat could not pass it on); Saturday, February 7, 2026.
 
-### 166. An evening emergency: the copper lines inside the wall at the baseboard, opened after the leak
+### 176. An evening emergency: the copper lines inside the wall at the baseboard, opened after the leak
 
 Frisco · февраль 2026 · файлы: 297, 298, 299, 300
 
@@ -2009,7 +2129,7 @@ Frisco · февраль 2026 · файлы: 297, 298, 299, 300
 - **300**, видео: Water spraying at the copper lines inside the wall, Frisco. На сайте: /emergency-plumbing-services/. План: /plumber-frisco-tx/
   - Заметки: прислано 5 октября 2026 поздно вечером, шестая партия; 6 февраля 2026. Видео 26 с: водяная пыль в свете фонаря у медных труб в проёме стены, инструмент на полу. С ночи 5 октября 2026 стоит на первом экране страницы emergency (Денис: «может поставим этот манифолд»): сначала клип 18 до 22,5 с, в ту же ночь по замечанию Дениса («непонятно, что течёт, надо видеть воду и брызги») перерезан: 2,2 до 5,4 с, веер брызг и тонкие струи у фитинга в верхней половине кадра 4:5 (её показывает телефон), окно без надписи на ленте и без инструмента на полу. / Video, 26 s. On the first screen of the emergency page since October 5, 2026, night (Denys: put the manifold): first a 4.5 s cut of 18 to 22.5 s, recut the same night on Denys's remark (nobody can tell it is leaking, the water and the spray must be seen): 2.2 to 5.4 s, the fan of spray and the thin jets at the fitting in the upper half of the 4:5 frame (the half a phone shows), a window without the printed tape and the tool on the floor. Same job as 297. Tools on the floor. City Frisco by Denys's word of October 6, 2026 (01:28).
 
-### 167. Denys on an emergency call, shutting off a faucet ripped out of the wall
+### 177. Denys on an emergency call, shutting off a faucet ripped out of the wall
 
 Frisco · май 2025 · файлы: 112
 
@@ -2018,7 +2138,7 @@ Frisco · май 2025 · файлы: 112
 - **112**, фото: Denys on an emergency call, shutting off a faucet ripped out of the wall, Frisco. На сайте: /blog/burst-outside-spigot/, /blog/clogged-kitchen-sink-chain-snake/, /blog/clogged-main-drain-line-daycare-plano/, /blog/clogged-shower-drain-little-elm-case/, /blog/clogged-toilet-auger-fix-blog/, /blog/double-sink-clog-and-drain-line-repair/, /blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/, /blog/main-water-line-leak-under-sidewalk-plano-tx/, /blog/moen-shower-cartridge-replacement-blog/, /blog/outside-spigot-replacement-plumber-in-frisco/, /blog/plumber-frisco-kitchen-drain-clog/, /blog/plumber-frisco-water-heater-replacement/, /blog/shower-system-replacement-3-handle-to-single-handle-valve/, /blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/, /blog/slab-leak-two-leaks-one-line-plano/, /blog/toilet-fill-valve-flush-valve-replacement-real-case-in-frisco-tx/, /blog/toilet-replacement-with-new-shutoff-valve-and-wax-ring/, /, /plumbing-guide/angle-stop-valve-leaking-under-sink/, /plumbing-guide/automatic-water-shut-off-valve-install-north-texas/, /plumbing-guide/bathtub-drain-slow-draining-tips-2026/, /plumbing-guide/emergency-plumbing-repair-cost-guide-2026/, /plumbing-guide/how-long-do-water-heaters-last-guide/, /plumbing-guide/how-to-shut-off-main-water-valve-texas/, /plumbing-guide/plumber-near-me-north-texas-guide-to-avoid-scams/, /plumbing-guide/pressure-reducing-valve-replacement-guide-2026/, /plumbing-guide/slab-leak-repair-plano-tips-2026/, /plumbing-guide/water-heater-making-noise-tips-2026/, /plumbing-guide/water-heater-replacement-cost-2026/, /plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/, /plumbing-guide/water-leak-yard-tips-2026/, /plumbing-guide/water-pressure-dropping-tips-2026/, /plumbing-guide/why-is-my-water-bill-so-high-frisco-tx/, /plumbing-guide/why-your-toilet-keeps-backing-up/. План: /emergency-plumbing-services/ /plumber-frisco-tx/
   - Заметки: Denys's face: confirm he wants it on the site (strong emergency hero).
 
-### 168. Inside the garage wall: the copper line somebody squeezed flat and soldered instead of capping
+### 178. Inside the garage wall: the copper line somebody squeezed flat and soldered instead of capping
 
 Frisco · март 2025 · файлы: 307
 
@@ -2027,7 +2147,7 @@ Frisco · март 2025 · файлы: 307
 - **307**, видео: Inside the garage wall: the copper line somebody squeezed flat and soldered instead of capping, Frisco. На сайте: /emergency-plumbing-services/. План: /hose-bib-repair-frisco-plano/
   - Заметки: прислано в чат 5 октября 2026 в 23:29 (к истории «A leak inside the garage wall» на странице emergency); в архив взят файл телефона из Downloads на Mac, md5 сошёлся с данными чата; 5 марта 2025. Видео 8,1 с: первые секунды вскрытая стена гаража снаружи, инструмент на полу и колени сантехника; с третьей секунды камера внутри стены: короткий медный отрезок вдоль стойки, конец сплющен, из него бьёт тонкая струя. Клип 3,4 до 7,0 с, окно без штампа пиломатериала наверху стойки и без инструмента. Города Денис не назвал; по границе города место съёмки во Frisco. / Video, 8.1 s. Denys, October 5, 2026, 23:29 (the old spigot was removed, the pipe squeezed and soldered with no cap, and after the freeze the joint came apart; earlier, 22:59: in the garage, with a flashlight, the copper pipe sprays). On the emergency page beside the story "A leak inside the garage wall" since October 5, 2026, night. The clip takes 3.4 to 7.0 s, a window without the lumber stamp on the stud and without the tools and the plumber's knees of the first seconds. Phone original from the Mac; March 5, 2025.
 
-### 169. Winter: a pipe burst in the wall, water shooting out
+### 179. Winter: a pipe burst in the wall, water shooting out
 
 вне десяти городов, город не пишем · февраль 2025 · файлы: 114, 116, 117, 118, 119, 120, 237, 238
 
@@ -2060,7 +2180,7 @@ Frisco · март 2025 · файлы: 307
 - **238**, видео: Winter: a pipe burst inside the wall and the water runs out through the outside wall. План: /emergency-plumbing-services/
   - Заметки: прислано 5 октября 2026, третья партия; видео 6,5 с: наружная стена, вода бежит по кирпичу из-под обшивки. Та же работа, что 114, 118, 119, 120, 237. В кадре боковой двор с велосипедами и вещами хозяев: брать окно с мокрым кирпичом без них / Video, 6.5 s. Not placed yet (Denys, October 5, 2026: keep it for later). See 237. The side yard with bicycles and belongings fills most frames: use a window with the wet brick only.
 
-### 170. Restaurant: main line clogged, emergency call, cleared with a chain snake
+### 180. Restaurant: main line clogged, emergency call, cleared with a chain snake
 
 место съёмки неизвестно, город не пишем · декабрь 2024 · файлы: 90
 
@@ -2069,7 +2189,7 @@ Frisco · март 2025 · файлы: 307
 - **90**, фото: Restaurant: main line clogged, emergency call, cleared with a chain snake. План: /emergency-plumbing-services/ /clogged-drain-cleaning-frisco-plano/
   - Заметки: коммерческий объект / Commercial job: no business name visible; keep it that way.
 
-### 171. After somebody tried to change the spigot: the broken water line inside the garage wall, spraying
+### 181. After somebody tried to change the spigot: the broken water line inside the garage wall, spraying
 
 Frisco · октябрь 2024 · файлы: 305
 
@@ -2078,7 +2198,7 @@ Frisco · октябрь 2024 · файлы: 305
 - **305**, видео: After somebody tried to change the spigot: the broken water line inside the garage wall, spraying, Frisco. На сайте: /emergency-plumbing-services/. План: /hose-bib-repair-frisco-plano/
   - Заметки: прислано в чат 5 октября 2026 поздно вечером; в архив взят файл телефона из Downloads на Mac, md5 сошёлся с данными чата; 24 октября 2024, вечер. Видео 10,5 с: стена гаража вскрыта внизу, в проёме каркас и обломанный конец линии, под проёмом след от воды на стене, с 4,5 с рука в перчатке у трубы, при касании из трубы бьёт вода. В первой секунде и в конце в кадре табличка с текстом на стене. Чат сначала по ошибке сопоставил это видео с историей про убранный кран; слово Дениса 5 октября в 22:51: это случай с handyman и спиготом, оно стоит справа от первого абзаца истории «After somebody else's work». Клип 1,3 до 4,5 с (струя видна, проём не закрыт рукой), окно без таблички и без штампа на обшивке. Города Денис не назвал; по границе города место съёмки во Frisco. / Video, 10.5 s. Denys, October 5, 2026, 22:51: this is the handyman's spigot job, somebody tried to change the spigot (the chat had first matched the video to the removed spigot story by mistake). On the emergency page beside the first paragraph of the story "After somebody else's work" since October 5, 2026, night. The clip takes 1.3 to 4.5 s (the jet is seen, no hand covers the opening), a window without the plate with text on the wall and the stamp on the sheathing. Phone original from the Mac; October 24, 2024.
 
-### 172. An outside wall after a freeze: the pipe burst inside a press fitting
+### 182. An outside wall after a freeze: the pipe burst inside a press fitting
 
 Frisco · январь 2024 · файлы: 252
 
@@ -2087,7 +2207,7 @@ Frisco · январь 2024 · файлы: 252
 - **252**, видео: An outside wall after a freeze: the pipe burst inside a press fitting, Frisco. На сайте: /plumber-plano-tx/. План: /emergency-plumbing-services/
   - Заметки: прислано 5 октября 2026, третья партия; 23 января 2024. Видео 6 с: медная линия с пресс-фитингом в наружной стене, из фитинга бьют струи. В расшифровке стоит «Нужная стена»: наружная, прочтение Claude Денис, 5 октября 2026: поставить на страницу Plano к пункту про трубы в наружных стенах. Город по месту съемки Frisco, Денис его не называл: на странице Plano клип стоит без города в подписи и в имени файла. На страницу Frisco этот клип не идет, чтобы одна работа не стояла на двух страницах городов. / Video, 6 s. On the Plano page as a five second clip beside the item about pipes in outside walls (Denys, October 5, 2026: put it there), shown without a city: the location is Frisco and he named no city for it. Not for the Frisco page: one job does not stand on two city pages. January 23, 2024. A press fitting that failed in a freeze: a single case, write no general rule about press fittings from it.
 
-### 173. A copper line in an attic that split in a freeze
+### 183. A copper line in an attic that split in a freeze
 
 место съёмки неизвестно, город не пишем · январь 2023 · файлы: 275
 
@@ -2096,7 +2216,7 @@ Frisco · январь 2024 · файлы: 252
 - **275**, фото: A copper line in an attic that split in a freeze. План: /emergency-plumbing-services/
   - Заметки: прислано 5 октября 2026 вечером, пятая партия («добавь, что у нас такое есть»); 28 января 2023. Фото: медная труба с заглушкой на конце лежит на деревянной балке, заглушка лопнула вдоль. Места съемки в файле нет / Not placed yet (Denys, October 5, 2026, evening: add that we have it). January 28, 2023; no location in the file, no city.
 
-### 174. After a freeze: the capped copper stub on the spout outlet of a shower valve, split and dripping
+### 184. After a freeze: the capped copper stub on the spout outlet of a shower valve, split and dripping
 
 место съёмки неизвестно, город не пишем · январь 2023 · файлы: 276
 
@@ -2105,7 +2225,7 @@ Frisco · январь 2024 · файлы: 252
 - **276**, видео: After a freeze: the capped copper stub on the spout outlet of a shower valve, split and dripping. План: /emergency-plumbing-services/ /fixture-installation-repair/
   - Заметки: прислано 5 октября 2026 вечером, пятая партия («добавь, что у нас такое есть»); 28 января 2023. Видео 4 с: позеленевший медный отвод с заглушкой на конце, вдоль него трещина, с конца течет струйка. Места съемки в файле нет В расшифровке голоса: «спауту» spout (прочтение Claude). / Video, 4 s. Not placed yet (Denys, October 5, 2026, evening: add that we have it). January 28, 2023; no location in the file, no city. A finger crosses the frame for a moment.
 
-### 175. A copper pipe in an outside wall that burst in a freeze
+### 185. A copper pipe in an outside wall that burst in a freeze
 
 место съёмки неизвестно, город не пишем · январь 2023 · файлы: 277
 
@@ -2114,7 +2234,7 @@ Frisco · январь 2024 · файлы: 252
 - **277**, видео: A copper pipe in an outside wall that burst in a freeze. План: /emergency-plumbing-services/
   - Заметки: прислано 5 октября 2026 вечером, пятая партия («добавь, что у нас такое есть»); 28 января 2023. Видео 6 с: проем в стене, внутри медные линии, пластиковая труба и утеплитель, фонарь светит на медную линию, с нее течет. Места съемки в файле нет / Video, 6 s. Not placed yet (Denys, October 5, 2026, evening: add that we have it). January 28, 2023; no location in the file, no city. Dark, the first second shows only the wall.
 
-### 176. A copper pipe in an outside wall that burst in a freeze
+### 186. A copper pipe in an outside wall that burst in a freeze
 
 место съёмки неизвестно, город не пишем · декабрь 2022 · файлы: 278
 
@@ -2123,7 +2243,7 @@ Frisco · январь 2024 · файлы: 252
 - **278**, фото: A copper pipe in an outside wall that burst in a freeze. План: /emergency-plumbing-services/
   - Заметки: прислано 5 октября 2026 вечером, пятая партия («добавь, что у нас такое есть»); 24 декабря 2022. Фото: медная линия в полости стены, вдоль трубы трещина, у фитинга висят капли, вокруг утеплитель. Места съемки в файле нет / Not placed yet (Denys, October 5, 2026, evening: add that we have it). December 24, 2022; no location in the file, no city. The print on the plastic pipe at the top is a pipe standard, not a brand.
 
-### 177. A copper line in an attic that split in a freeze
+### 187. A copper line in an attic that split in a freeze
 
 место съёмки неизвестно, город не пишем · декабрь 2022 · файлы: 279
 
@@ -2134,7 +2254,7 @@ Frisco · январь 2024 · файлы: 252
 
 ## Фургон, офис, люди и остальное
 
-### 178. The office directory of our Frisco office center, with FPP Plumbing, Suite 116, popping out of it
+### 188. The office directory of our Frisco office center, with FPP Plumbing, Suite 116, popping out of it
 
 Frisco · октябрь 2026 · файлы: 301
 
@@ -2143,7 +2263,7 @@ Frisco · октябрь 2026 · файлы: 301
 - **301**, фото: The office directory of our Frisco office center, with FPP Plumbing, Suite 116, popping out of it. На сайте: /plumber-allen-tx/, /plumber-frisco-tx/. План: /contact/
   - Заметки: прислано 5 октября 2026 поздно вечером; снято в тот же день. Фото: два экрана табло у офисов, слева список компаний с номерами, справа план этажей и логотип Caddo. На веб-версии пустые строки списка заполнены условными названиями и весь список размыт, так что табло выглядит полным и нечитаемым (tools/optimize_photos.py FILL_ROWS и BLUR); посередине поверх табло большая плашка «FPP Plumbing  Suite 116», белая с тонкой красной кромкой, чуть наклонённая, в перспективе и с тенью, как будто выехала вперёд (CALLOUT). Первая версия с плашкой внизу и следом из отпечатков Денису не понравилась («ужасно, плашка некрасиво, должна быть посередине»), переделана тем же вечером. Строки FPP на этом экране табло нет: список листается, в кадре страница с другими буквами. Город Денис не назвал, место съёмки по границе города Frisco, это офис Frisco / Web version made with the plate (tools/optimize_photos.py CALLOUT) and the other tenants' names blurred (BLUR); In the office block of the Frisco page since October 5, 2026, night (Denys: put it at the bottom, in the office, as the door photo on Plano). The office center's name and logo are in the frame.
 
-### 179. FPP Plumbing van at the Plano office, 5700 Tennyson Pkwy
+### 189. FPP Plumbing van at the Plano office, 5700 Tennyson Pkwy
 
 Plano · октябрь 2026 · файлы: 302, 303
 
@@ -2156,7 +2276,7 @@ Plano · октябрь 2026 · файлы: 302, 303
 - **303**, фото: FPP Plumbing van at the Plano office, 5700 Tennyson Pkwy. На сайте: /plumber-plano-tx/. План: /contact/
   - Заметки: прислано 5 октября 2026 ночью; та же съёмка, что 302, кадр обрезан теснее и знаки парковки закрашены самим Денисом в телефоне. На веб-версии размыт передний номерной знак. Первый экран страницы Plano с ночи 5 октября 2026 / The first screen of the Plano page since the night of October 5, 2026: Denys's own copy of 302 with the disabled parking signs painted out by him; the front plate blurred on every web version (tools/optimize_photos.py BLUR). The van carries the Frisco phone line on its side.
 
-### 180. The FPP Plumbing van on a street in McKinney: 24/7 emergency plumbing, licensed and insured
+### 190. The FPP Plumbing van on a street in McKinney: 24/7 emergency plumbing, licensed and insured
 
 McKinney · день съёмки не записан · файлы: 314
 
@@ -2165,7 +2285,7 @@ McKinney · день съёмки не записан · файлы: 314
 - **314**, фото: The FPP Plumbing van on a street in McKinney: 24/7 emergency plumbing, licensed and insured. На сайте: /plumber-mckinney-tx/
   - Заметки: прислано в чат 15 октября 2026 как фото для первого экрана страницы McKinney; в проект попала уменьшенная копия из чата, 768 на 1024 px (на Mac по AirDrop в этот день ничего не пришло); снято 5 октября 2026, 17:50. Фото: фургон FPP на улице у кирпичного дома, на крыле M-44816, на борту 469-998-8999; номерной знак размывается в веб-версии (BLUR 314), номеров домов в кадре нет. Если придёт оригинал с телефона, он заменит этот файл под тем же номером. / Denys, October 15, 2026, evening (through the chat): the photo is McKinney, the caption says McKinney (the phone location says Frisco; his word stands). The first screen photo of the McKinney page. The copy in the project is the chat copy, 768 x 1024 px; the phone original replaces it under this number when it arrives. The front plate is blurred on the web versions; the fender shows M-44816 and the side the Frisco number.
 
-### 181. The FPP Plumbing van on a street in Allen: 24/7 emergency plumbing, licensed and insured
+### 191. The FPP Plumbing van on a street in Allen: 24/7 emergency plumbing, licensed and insured
 
 Allen · октябрь 2026 · файлы: 327
 
@@ -2174,7 +2294,7 @@ Allen · октябрь 2026 · файлы: 327
 - **327**, фото: The FPP Plumbing van on a street in Allen: 24/7 emergency plumbing, licensed and insured. На сайте: /plumber-allen-tx/
   - Заметки: прислано в чат 16 октября 2026 как фото первого экрана страницы Allen (IMG_0498-preview, 4284 на 5712); снято 5 октября 2026, по геометке Plano; подпись «Allen» по решению Дениса, записано как его решение. Фото: фургон FPP у бордюра, кирпичный дом и деревья за ним, на крыле M-44816, на борту 469-998-8999 и «24/7 Emergency Plumbing»; передний номерной знак размывается в веб-версии (BLUR 327); номеров домов в кадре нет. / Denys, October 16, 2026 (through the chat): 'let this be Allen; shot elsewhere, no houses to tell'. The caption says Allen by his decision, recorded as his (the phone location says Plano). The first screen photo of the Allen page. The front plate is blurred on the web versions; the fender shows M-44816 and the side the Frisco number. Shot October 5, 2026.
 
-### 182. Our FPP Plumbing van at the Frisco office
+### 192. Our FPP Plumbing van at the Frisco office
 
 Frisco · сентябрь 2026 · файлы: 1
 
@@ -2183,7 +2303,7 @@ Frisco · сентябрь 2026 · файлы: 1
 - **1**, фото: Our FPP Plumbing van at the Frisco office. План: /contact/ /gallery/
   - Заметки: Another company's sign on the building. Van plate visible. Crop or skip.
 
-### 183. FPP Plumbing van at the Frisco office
+### 193. FPP Plumbing van at the Frisco office
 
 Frisco · сентябрь 2026 · файлы: 2
 
@@ -2192,7 +2312,7 @@ Frisco · сентябрь 2026 · файлы: 2
 - **2**, фото: FPP Plumbing van at the Frisco office. На сайте: /plumber-frisco-tx/, /plumber-mckinney-tx/, /plumber-prosper-tx/. План: / /contact/ /plumber-celina-tx/ /plumber-lewisville-tx/
   - Заметки: Van plate blurred on every web version (tools/optimize_photos.py BLUR).; stand in for Celina and Lewisville until job photos from there (Denys, October 1, 2026): on those pages the alt must not name Frisco; hero of the Frisco page; taken at the Frisco office (Denys, October 2, 2026)
 
-### 184. FPP Plumbing van at the Frisco office
+### 194. FPP Plumbing van at the Frisco office
 
 Frisco · сентябрь 2026 · файлы: 3
 
@@ -2201,7 +2321,7 @@ Frisco · сентябрь 2026 · файлы: 3
 - **3**, фото: FPP Plumbing van at the Frisco office. План: /gallery/
   - Заметки: Another company's sign on the building. Van plate visible.
 
-### 185. FPP Plumbing van at the Frisco office
+### 195. FPP Plumbing van at the Frisco office
 
 Frisco · сентябрь 2026 · файлы: 4
 
@@ -2210,7 +2330,7 @@ Frisco · сентябрь 2026 · файлы: 4
 - **4**, фото: FPP Plumbing van at the Frisco office. План: /emergency-plumbing-services/ / /plumber-celina-tx/ /plumber-lewisville-tx/
   - Заметки: stand in for Celina and Lewisville until job photos from there (Denys, October 1, 2026); taken at the Frisco office (Denys, October 2, 2026): on other city pages the alt must not name Frisco
 
-### 186. A buried backflow preventer: this is what you see of it, nothing
+### 196. A buried backflow preventer: this is what you see of it, nothing
 
 Carrollton · сентябрь 2025 · файлы: 226, 227
 
@@ -2221,7 +2341,7 @@ Carrollton · сентябрь 2025 · файлы: 226, 227
 - **227**, фото: A buried backflow preventer box: dirt and debris inside, Carrollton. План: /plumber-carrollton-tx/
   - Заметки: прислано 5 октября 2026, вторая партия; фото: прямоугольная коробка, внутри земля, обломки бетона и мусор; снято за четыре секунды до 226, одна ли это коробка, Денис не говорил / Not placed yet (Denys, October 5, 2026: keep it for later). Taken a few seconds before 226; Denys did not say whether it is the same box.
 
-### 187. Our Plano office at 5700 Tennyson Parkway, with the van at the door
+### 197. Our Plano office at 5700 Tennyson Parkway, with the van at the door
 
 Plano · май 2025 · файлы: 202, 273
 
@@ -2236,7 +2356,7 @@ Plano · май 2025 · файлы: 202, 273
 - **273**, фото: The door of our office: 3rd floor, Suite 300, Plano. На сайте: /plumber-allen-tx/, /plumber-plano-tx/. План: /contact/
   - Заметки: прислано 5 октября 2026; снято 16 мая 2025. Фото: открытая дверь офиса в Plano с табличкой FPP Plumbing, 3rd floor, Suite 300; за дверью стол, стулья и логотип на стене. На странице Plano в блоке офиса. «Этот, у здания»: вероятно, фургон у здания офиса, о котором его спрашивали; что именно он пришлет и куда это поставить, решим, когда придет. В расшифровке стоит «на кабинет»: офис, прочтение Claude / On the Plano page in the office block. Denys said he would photograph "the one at the building" later that day, most likely the van at the office building; where it goes is decided when it comes. A tool box with a brand name stands on the floor at the right edge.
 
-### 188. Готовая установка Aquasana whole house water softener
+### 198. Готовая установка Aquasana whole house water softener
 
 Frisco · декабрь 2024 · файлы: 84
 
@@ -2247,7 +2367,7 @@ Frisco · декабрь 2024 · файлы: 84
 
 ## На паузе: Денис не сказал, что это, или просил не показывать
 
-### 189. Видео, Денис не помнит что это
+### 199. Видео, Денис не помнит что это
 
 McKinney · сентябрь 2026 · файлы: 13, 14
 
@@ -2260,7 +2380,7 @@ McKinney · сентябрь 2026 · файлы: 13, 14
 - **14**, видео. Не показываем
   - Заметки: пересмотреть
 
-### 190. Видео, Денис не помнит что это
+### 200. Видео, Денис не помнит что это
 
 Plano · сентябрь 2026 · файлы: 21
 
@@ -2269,7 +2389,7 @@ Plano · сентябрь 2026 · файлы: 21
 - **21**, видео. Не показываем
   - Заметки: пересмотреть
 
-### 191. Личное: стейк на гриле
+### 201. Личное: стейк на гриле
 
 Frisco · апрель 2026 · файлы: 12
 
@@ -2277,7 +2397,7 @@ Frisco · апрель 2026 · файлы: 12
 
 - **12**, фото. Не показываем
 
-### 192. без подписи
+### 202. без подписи
 
 Frisco · март 2026 · файлы: 131, 132
 
@@ -2288,7 +2408,7 @@ Frisco · март 2026 · файлы: 131, 132
 - **132**, видео. Не показываем
   - Заметки: не продиктовано
 
-### 193. Видео, Денис не знает что это
+### 203. Видео, Денис не знает что это
 
 место съёмки неизвестно, город не пишем · день съёмки не записан · файлы: 160
 
@@ -2297,7 +2417,7 @@ Frisco · март 2026 · файлы: 131, 132
 - **160**, видео. Не показываем
   - Заметки: пересмотреть
 
-### 194. Видео, Денис не помнит что это
+### 204. Видео, Денис не помнит что это
 
 Plano · январь 2025 · файлы: 104
 
@@ -2310,95 +2430,95 @@ Plano · январь 2025 · файлы: 104
 
 Для каждой страницы: номера файлов, которые на ней стоят, и номера, которые для неё отложены. В скобках номер работы в списке выше.
 
-- `/` стоят: 6 (65), 45 (2), 47 (48), 48 (47), 49 (78), 50 (66), 55 (36), 72 (14), 89 (13), 95 (76), 96 (86), 99 (146), 101 (157), 112 (167), 115 (154), 141 (124), 155 (101), 162 (6), 163 (1), 164 (163), 165 (5), 183 (90), 203 (80), 204 (79). Отложены: 2 (183), 4 (185).
+- `/` стоят: 6 (65), 45 (2), 47 (48), 48 (47), 49 (84), 50 (66), 55 (36), 72 (14), 89 (13), 95 (76), 96 (96), 99 (156), 101 (167), 112 (177), 115 (164), 141 (134), 155 (111), 162 (6), 163 (1), 164 (173), 165 (5), 183 (100), 203 (89), 204 (87). Отложены: 2 (193), 4 (195).
 - `/slab-leak-repair-frisco-plano-mckinney/` стоят: 42 (3), 45 (2), 72 (14), 161 (9), 163 (1). Отложены: 66 (7), 67 (7), 77 (8), 78 (8), 125 (6), 162 (6), 165 (5), 281 (4), 282 (4), 325 (10).
-- `/water-leak-detection-frisco-plano/` стоят: 79 (12). Отложены: 17 (96), 20 (11), 63 (17), 64 (17), 65 (15), 72 (14), 89 (13), 133 (21), 134 (21), 136 (19), 161 (9), 188 (27), 189 (27), 192 (26), 193 (26), 194 (26), 195 (25), 196 (25), 200 (20), 224 (16), 225 (16), 232 (18), 235 (19), 236 (16), 239 (22), 240 (22), 242 (23), 243 (23), 245 (24), 246 (24), 247 (24), 253 (164), 254 (164), 255 (164), 270 (28), 280 (31), 286 (43), 289 (30), 290 (30), 291 (30), 292 (30), 293 (30), 294 (30), 295 (29), 297 (166), 298 (166), 329 (24), 343 (38).
+- `/water-leak-detection-frisco-plano/` стоят: 79 (12). Отложены: 17 (106), 20 (11), 63 (17), 64 (17), 65 (15), 72 (14), 89 (13), 133 (21), 134 (21), 136 (19), 161 (9), 188 (27), 189 (27), 192 (26), 193 (26), 194 (26), 195 (25), 196 (25), 200 (20), 224 (16), 225 (16), 232 (18), 235 (19), 236 (16), 239 (22), 240 (22), 242 (23), 243 (23), 245 (24), 246 (24), 247 (24), 253 (174), 254 (174), 255 (174), 270 (28), 280 (31), 286 (43), 289 (30), 290 (30), 291 (30), 292 (30), 293 (30), 294 (30), 295 (29), 297 (176), 298 (176), 329 (24), 343 (38).
 - `/water-lines/` стоят: 55 (36). Отложены: 5 (32), 24 (35), 54 (36), 56 (36), 65 (15), 158 (42), 159 (37), 168 (36), 186 (41), 187 (41), 205 (33), 206 (33), 233 (40), 274 (34), 286 (43), 287 (43), 288 (43), 324 (39), 343 (38).
-- `/prv-replacement-frisco-plano/` стоят: 47 (48). Отложены: 7 (44), 27 (52), 36 (50), 44 (49), 46 (48), 48 (47), 51 (46), 80 (53), 81 (53), 82 (56), 83 (56), 97 (54), 153 (61), 197 (62), 198 (62), 199 (62), 207 (33), 217 (57), 218 (57), 219 (57), 220 (57), 228 (60), 258 (139), 261 (59), 262 (59), 263 (59), 264 (59), 265 (59), 266 (59), 267 (59), 283 (64), 284 (64), 315 (51), 316 (51), 321 (45), 323 (55), 330 (63), 334 (58), 335 (58), 336 (58), 341 (50), 344 (59).
-- `/water-heaters/` стоят: 43 (67). Отложены: 6 (65), 28 (68), 50 (66), 92 (73), 127 (75), 128 (72), 173 (74), 221 (73), 304 (74), 306 (165), 337 (58), 338 (132), 340 (58), 342 (70).
+- `/prv-replacement-frisco-plano/` стоят: 47 (48). Отложены: 7 (44), 27 (52), 36 (50), 44 (49), 46 (48), 48 (47), 51 (46), 80 (53), 81 (53), 82 (56), 83 (56), 97 (54), 153 (61), 197 (62), 198 (62), 199 (62), 207 (33), 217 (57), 218 (57), 219 (57), 220 (57), 228 (60), 258 (149), 261 (59), 262 (59), 263 (59), 264 (59), 265 (59), 266 (59), 267 (59), 283 (64), 284 (64), 315 (51), 316 (51), 321 (45), 323 (55), 330 (63), 334 (58), 335 (58), 336 (58), 341 (50), 344 (59).
+- `/water-heaters/` стоят: 43 (67). Отложены: 6 (65), 28 (68), 50 (66), 92 (73), 127 (75), 128 (72), 173 (74), 221 (73), 304 (74), 306 (175), 337 (58), 338 (142), 340 (58), 342 (70).
 - `/water-heater-repair-frisco-mckinney/` стоят: 95 (76). Отложены: 50 (66), 175 (69), 285 (71).
-- `/clogged-drain-cleaning-frisco-plano/` стоят: 49 (78). Отложены: 15 (81), 38 (79), 39 (79), 40 (79), 53 (91), 57 (82), 58 (82), 74 (89), 90 (170), 91 (88), 96 (86), 129 (87), 130 (117), 157 (84), 183 (90), 184 (90), 185 (90), 201 (80), 203 (80), 204 (79), 229 (83), 230 (83), 234 (85), 241 (119), 271 (77), 272 (77), 296 (87), 318 (98).
-- `/drain-services/` стоят: 155 (101). Отложены: 8 (93), 9 (99), 10 (99), 16 (97), 17 (96), 41 (79), 122 (92), 142 (102), 143 (102), 156 (101), 166 (92), 167 (92), 171 (36), 179 (92), 183 (90), 184 (90), 185 (90), 204 (79), 211 (94), 212 (94), 213 (81), 231 (100), 251 (127), 271 (77), 317 (95), 318 (98).
-- `/toilet-repair-frisco-plano/` стоят: 141 (124). Отложены: 11 (109), 26 (107), 31 (106), 32 (106), 33 (105), 34 (105), 37 (104), 61 (115), 62 (114), 68 (111), 70 (110), 85 (113), 86 (113), 87 (113), 88 (113), 102 (120), 137 (125), 138 (125), 139 (124), 140 (124), 169 (103), 170 (103), 190 (121), 191 (121), 241 (119), 248 (122), 249 (122), 250 (122), 251 (127), 322 (105), 331 (113), 332 (113), 333 (112), 339 (108), 346 (123).
-- `/fixture-installation-repair/` стоят: 99 (146). Отложены: 18 (132), 19 (132), 22 (129), 23 (130), 25 (131), 60 (136), 71 (134), 73 (134), 75 (133), 76 (133), 98 (146), 106 (145), 107 (145), 108 (145), 109 (145), 110 (145), 113 (144), 144 (149), 145 (149), 146 (149), 147 (149), 148 (149), 150 (141), 151 (148), 152 (148), 174 (142), 177 (136), 180 (135), 181 (147), 182 (147), 214 (133), 215 (133), 216 (150), 222 (138), 223 (138), 244 (146), 259 (139), 260 (139), 276 (174), 308 (128), 309 (128), 310 (128), 311 (128), 312 (128), 313 (128), 319 (139), 347 (143).
-- `/garbage-disposal-repair-frisco-plano/` стоят: 115 (154). Отложены: 69 (151), 103 (153), 123 (152), 124 (152).
-- `/hose-bib-repair-frisco-plano/` стоят: 30 (155). Отложены: 29 (156), 52 (160), 100 (157), 101 (157), 121 (160), 172 (159), 176 (157), 178 (162), 208 (156), 209 (156), 210 (156), 256 (164), 257 (164), 268 (161), 269 (161), 305 (171), 307 (168), 326 (158), 328 (158), 344 (59), 345 (160).
-- `/emergency-plumbing-services/` стоят: 6 (65), 47 (48), 48 (47), 96 (86), 114 (169), 120 (169), 174 (142), 183 (90), 253 (164), 254 (164), 255 (164), 279 (177), 280 (31), 295 (29), 298 (166), 299 (166), 300 (166), 304 (74), 305 (171), 306 (165), 307 (168). Отложены: 4 (185), 90 (170), 112 (167), 119 (169), 136 (19), 164 (163), 173 (74), 178 (162), 237 (169), 238 (169), 252 (172), 274 (34), 275 (173), 276 (174), 277 (175), 278 (176), 289 (30), 297 (166).
-- `/top-emergency-plumber-calls-frisco/` стоят: 118 (169). Отложены: 114 (169), 116 (169), 120 (169).
-- `/plumber-frisco-tx/` стоят: 2 (183), 5 (32), 43 (67), 44 (49), 46 (48), 47 (48), 53 (91), 122 (92), 153 (61), 166 (92), 167 (92), 169 (103), 173 (74), 174 (142), 175 (69), 176 (157), 177 (136), 178 (162), 179 (92), 192 (26), 193 (26), 199 (62), 201 (80), 301 (178). Отложены: 30 (155), 31 (106), 60 (136), 83 (56), 96 (86), 101 (157), 106 (145), 108 (145), 109 (145), 112 (167), 113 (144), 197 (62), 198 (62), 217 (57), 218 (57), 219 (57), 220 (57), 224 (16), 228 (60), 233 (40), 283 (64), 284 (64), 285 (71), 297 (166), 298 (166), 299 (166), 300 (166).
-- `/plumber-plano-tx/` стоят: 50 (66), 56 (36), 91 (88), 125 (6), 163 (1), 186 (41), 187 (41), 188 (27), 189 (27), 205 (33), 206 (33), 207 (33), 212 (94), 221 (73), 222 (138), 223 (138), 248 (122), 250 (122), 252 (172), 256 (164), 257 (164), 268 (161), 269 (161), 271 (77), 272 (77), 273 (187), 303 (179). Отложены: 15 (81), 17 (96), 37 (104), 61 (115), 89 (13), 92 (73), 93 (73), 94 (73), 115 (154), 137 (125), 138 (125), 151 (148), 152 (148), 172 (159), 202 (187), 211 (94), 235 (19), 241 (119), 253 (164), 254 (164), 255 (164), 270 (28), 295 (29), 302 (179).
-- `/plumber-mckinney-tx/` стоят: 2 (183), 195 (25), 196 (25), 258 (139), 259 (139), 260 (139), 286 (43), 288 (43), 289 (30), 291 (30), 314 (180), 315 (51), 316 (51), 317 (95), 318 (98), 319 (139), 321 (45), 322 (105), 323 (55), 324 (39), 325 (10). Отложены: 7 (44), 33 (105), 51 (46), 71 (134), 73 (134), 98 (146), 99 (146), 103 (153), 139 (124), 141 (124), 190 (121), 244 (146), 287 (43), 290 (30), 292 (30), 293 (30), 294 (30).
-- `/plumber-allen-tx/` стоят: 229 (83), 273 (187), 301 (178), 326 (158), 327 (181), 328 (158), 329 (24), 330 (63), 331 (113), 332 (113), 333 (112), 334 (58), 335 (58), 336 (58), 337 (58), 338 (132), 339 (108), 340 (58). Отложены: 18 (132), 19 (132), 62 (114), 150 (141), 164 (163), 230 (83), 242 (23), 243 (23), 245 (24), 246 (24), 247 (24).
-- `/plumber-prosper-tx/` стоят: 2 (183), 49 (78), 52 (160), 261 (59), 341 (50), 342 (70), 343 (38), 344 (59), 345 (160), 346 (123), 347 (143). Отложены: 35 (50), 36 (50), 59 (137), 121 (160), 262 (59), 263 (59), 264 (59), 265 (59), 266 (59), 267 (59).
-- `/plumber-celina-tx/` Отложены: 2 (183), 4 (185).
-- `/plumber-little-elm-tx/` Отложены: 16 (97), 38 (79), 40 (79), 41 (79), 69 (151), 102 (120), 123 (152), 124 (152), 165 (5).
-- `/plumber-the-colony-tx/` Отложены: 9 (99), 79 (12), 231 (100).
-- `/plumber-carrollton-tx/` Отложены: 6 (65), 27 (52), 42 (3), 57 (82), 58 (82), 144 (149), 147 (149), 148 (149), 226 (186), 227 (186), 281 (4), 282 (4).
-- `/plumber-lewisville-tx/` Отложены: 2 (183), 4 (185).
-- `/blog/` стоят: 216 (150).
-- `/blog/burst-outside-spigot/` стоят: 112 (167). Отложены: 121 (160), 345 (160).
-- `/blog/clogged-kitchen-sink-chain-snake/` стоят: 112 (167). Отложены: 49 (78), 129 (87).
-- `/blog/clogged-main-drain-line-daycare-plano/` стоят: 112 (167).
-- `/blog/clogged-shower-drain-little-elm-case/` стоят: 112 (167). Отложены: 38 (79), 39 (79).
-- `/blog/clogged-toilet-auger-fix-blog/` стоят: 112 (167). Отложены: 26 (107).
-- `/blog/double-sink-clog-and-drain-line-repair/` стоят: 112 (167).
-- `/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/` стоят: 112 (167).
-- `/blog/main-water-line-leak-under-sidewalk-plano-tx/` стоят: 112 (167).
-- `/blog/moen-shower-cartridge-replacement-blog/` стоят: 112 (167). Отложены: 25 (131), 59 (137), 60 (136), 105 (81), 154 (140).
-- `/blog/outside-spigot-replacement-plumber-in-frisco/` стоят: 112 (167). Отложены: 30 (155), 100 (157).
-- `/blog/plumber-frisco-kitchen-drain-clog/` стоят: 112 (167).
-- `/blog/plumber-frisco-water-heater-replacement/` стоят: 112 (167).
-- `/blog/shower-system-replacement-3-handle-to-single-handle-valve/` стоят: 112 (167). Отложены: 216 (150).
-- `/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/` стоят: 112 (167). Отложены: 106 (145), 107 (145).
-- `/blog/slab-leak-two-leaks-one-line-plano/` стоят: 112 (167).
-- `/blog/toilet-fill-valve-flush-valve-replacement-real-case-in-frisco-tx/` стоят: 112 (167).
-- `/blog/toilet-replacement-with-new-shutoff-valve-and-wax-ring/` стоят: 112 (167). Отложены: 33 (105), 34 (105), 85 (113), 86 (113), 87 (113), 88 (113).
-- `/contact/` Отложены: 1 (182), 2 (183), 202 (187), 273 (187), 301 (178), 302 (179), 303 (179).
-- `/gallery/` Отложены: 1 (182), 3 (184), 93 (73), 94 (73), 117 (169).
-- `/plumbing-guide/angle-stop-valve-leaking-under-sink/` стоят: 112 (167). Отложены: 23 (130), 68 (111), 137 (125).
-- `/plumbing-guide/automatic-water-shut-off-valve-install-north-texas/` стоят: 112 (167). Отложены: 20 (11), 35 (50), 36 (50), 341 (50).
-- `/plumbing-guide/bathtub-drain-slow-draining-tips-2026/` стоят: 112 (167).
-- `/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/` стоят: 112 (167).
-- `/plumbing-guide/how-long-do-water-heaters-last-guide/` стоят: 112 (167). Отложены: 127 (75), 128 (72).
-- `/plumbing-guide/how-to-shut-off-main-water-valve-texas/` стоят: 112 (167). Отложены: 24 (35), 47 (48).
-- `/plumbing-guide/plumber-near-me-north-texas-guide-to-avoid-scams/` стоят: 112 (167).
-- `/plumbing-guide/pressure-reducing-valve-replacement-guide-2026/` стоят: 112 (167). Отложены: 48 (47).
-- `/plumbing-guide/slab-leak-repair-plano-tips-2026/` стоят: 112 (167). Отложены: 45 (2), 78 (8), 125 (6).
-- `/plumbing-guide/water-heater-making-noise-tips-2026/` стоят: 112 (167). Отложены: 127 (75).
-- `/plumbing-guide/water-heater-replacement-cost-2026/` стоят: 112 (167). Отложены: 6 (65), 28 (68).
-- `/plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/` стоят: 112 (167). Отложены: 89 (13).
-- `/plumbing-guide/water-leak-yard-tips-2026/` стоят: 112 (167). Отложены: 54 (36), 55 (36), 158 (42).
-- `/plumbing-guide/water-pressure-dropping-tips-2026/` стоят: 112 (167). Отложены: 82 (56), 83 (56), 153 (61).
-- `/plumbing-guide/why-is-my-water-bill-so-high-frisco-tx/` стоят: 112 (167). Отложены: 72 (14), 79 (12), 133 (21).
-- `/plumbing-guide/why-your-toilet-keeps-backing-up/` стоят: 112 (167). Отложены: 11 (109), 53 (91), 111 (118), 122 (92), 126 (126), 130 (117), 135 (116).
+- `/clogged-drain-cleaning-frisco-plano/` стоят: 15 (90), 96 (96), 130 (127), 157 (94), 184 (100), 185 (100), 204 (87), 234 (86), 296 (97), 348 (81), 349 (80), 350 (79), 351 (79), 352 (79), 353 (81), 354 (78), 355 (91), 356 (87), 357 (88), 358 (87), 359 (86), 360 (85), 361 (83), 362 (80), 363 (77), 364 (95). Отложены: 38 (87), 39 (87), 40 (87), 49 (84), 53 (101), 57 (92), 58 (92), 74 (99), 90 (180), 91 (98), 129 (97), 183 (100), 201 (89), 203 (89), 229 (93), 230 (93), 241 (129), 271 (82), 272 (82), 318 (108).
+- `/drain-services/` стоят: 155 (111). Отложены: 8 (103), 9 (109), 10 (109), 16 (107), 17 (106), 41 (87), 122 (102), 142 (112), 143 (112), 156 (111), 166 (102), 167 (102), 171 (36), 179 (102), 183 (100), 184 (100), 185 (100), 204 (87), 211 (104), 212 (104), 213 (90), 231 (110), 251 (137), 271 (82), 317 (105), 318 (108).
+- `/toilet-repair-frisco-plano/` стоят: 141 (134). Отложены: 11 (119), 26 (117), 31 (116), 32 (116), 33 (115), 34 (115), 37 (114), 61 (125), 62 (124), 68 (121), 70 (120), 85 (123), 86 (123), 87 (123), 88 (123), 102 (130), 137 (135), 138 (135), 139 (134), 140 (134), 169 (113), 170 (113), 190 (131), 191 (131), 241 (129), 248 (132), 249 (132), 250 (132), 251 (137), 322 (115), 331 (123), 332 (123), 333 (122), 339 (118), 346 (133).
+- `/fixture-installation-repair/` стоят: 99 (156). Отложены: 18 (142), 19 (142), 22 (139), 23 (140), 25 (141), 60 (146), 71 (144), 73 (144), 75 (143), 76 (143), 98 (156), 106 (155), 107 (155), 108 (155), 109 (155), 110 (155), 113 (154), 144 (159), 145 (159), 146 (159), 147 (159), 148 (159), 150 (151), 151 (158), 152 (158), 174 (152), 177 (146), 180 (145), 181 (157), 182 (157), 214 (143), 215 (143), 216 (160), 222 (148), 223 (148), 244 (156), 259 (149), 260 (149), 276 (184), 308 (138), 309 (138), 310 (138), 311 (138), 312 (138), 313 (138), 319 (149), 347 (153).
+- `/garbage-disposal-repair-frisco-plano/` стоят: 115 (164). Отложены: 69 (161), 103 (163), 123 (162), 124 (162).
+- `/hose-bib-repair-frisco-plano/` стоят: 30 (165). Отложены: 29 (166), 52 (170), 100 (167), 101 (167), 121 (170), 172 (169), 176 (167), 178 (172), 208 (166), 209 (166), 210 (166), 256 (174), 257 (174), 268 (171), 269 (171), 305 (181), 307 (178), 326 (168), 328 (168), 344 (59), 345 (170).
+- `/emergency-plumbing-services/` стоят: 6 (65), 47 (48), 48 (47), 96 (96), 114 (179), 120 (179), 174 (152), 183 (100), 253 (174), 254 (174), 255 (174), 279 (187), 280 (31), 295 (29), 298 (176), 299 (176), 300 (176), 304 (74), 305 (181), 306 (175), 307 (178). Отложены: 4 (195), 90 (180), 112 (177), 119 (179), 136 (19), 164 (173), 173 (74), 178 (172), 237 (179), 238 (179), 252 (182), 274 (34), 275 (183), 276 (184), 277 (185), 278 (186), 289 (30), 297 (176).
+- `/top-emergency-plumber-calls-frisco/` стоят: 118 (179). Отложены: 114 (179), 116 (179), 120 (179).
+- `/plumber-frisco-tx/` стоят: 2 (193), 5 (32), 43 (67), 44 (49), 46 (48), 47 (48), 53 (101), 122 (102), 153 (61), 166 (102), 167 (102), 169 (113), 173 (74), 174 (152), 175 (69), 176 (167), 177 (146), 178 (172), 179 (102), 192 (26), 193 (26), 199 (62), 201 (89), 301 (188). Отложены: 30 (165), 31 (116), 60 (146), 83 (56), 96 (96), 101 (167), 106 (155), 108 (155), 109 (155), 112 (177), 113 (154), 197 (62), 198 (62), 217 (57), 218 (57), 219 (57), 220 (57), 224 (16), 228 (60), 233 (40), 283 (64), 284 (64), 285 (71), 297 (176), 298 (176), 299 (176), 300 (176), 349 (80), 362 (80), 364 (95).
+- `/plumber-plano-tx/` стоят: 50 (66), 56 (36), 91 (98), 125 (6), 163 (1), 186 (41), 187 (41), 188 (27), 189 (27), 205 (33), 206 (33), 207 (33), 212 (104), 221 (73), 222 (148), 223 (148), 248 (132), 250 (132), 252 (182), 256 (174), 257 (174), 268 (171), 269 (171), 271 (82), 272 (82), 273 (197), 303 (189). Отложены: 15 (90), 17 (106), 37 (114), 61 (125), 89 (13), 92 (73), 93 (73), 94 (73), 115 (164), 137 (135), 138 (135), 151 (158), 152 (158), 172 (169), 202 (197), 211 (104), 235 (19), 241 (129), 253 (174), 254 (174), 255 (174), 270 (28), 295 (29), 302 (189), 350 (79), 351 (79), 352 (79), 353 (81), 354 (78), 355 (91), 358 (87), 359 (86), 360 (85), 361 (83), 363 (77).
+- `/plumber-mckinney-tx/` стоят: 2 (193), 195 (25), 196 (25), 258 (149), 259 (149), 260 (149), 286 (43), 288 (43), 289 (30), 291 (30), 314 (190), 315 (51), 316 (51), 317 (105), 318 (108), 319 (149), 321 (45), 322 (115), 323 (55), 324 (39), 325 (10). Отложены: 7 (44), 33 (115), 51 (46), 71 (144), 73 (144), 98 (156), 99 (156), 103 (163), 139 (134), 141 (134), 190 (131), 244 (156), 287 (43), 290 (30), 292 (30), 293 (30), 294 (30).
+- `/plumber-allen-tx/` стоят: 229 (93), 273 (197), 301 (188), 326 (168), 327 (191), 328 (168), 329 (24), 330 (63), 331 (123), 332 (123), 333 (122), 334 (58), 335 (58), 336 (58), 337 (58), 338 (142), 339 (118), 340 (58). Отложены: 18 (142), 19 (142), 62 (124), 150 (151), 164 (173), 230 (93), 242 (23), 243 (23), 245 (24), 246 (24), 247 (24).
+- `/plumber-prosper-tx/` стоят: 2 (193), 49 (84), 52 (170), 261 (59), 341 (50), 342 (70), 343 (38), 344 (59), 345 (170), 346 (133), 347 (153). Отложены: 35 (50), 36 (50), 59 (147), 121 (170), 262 (59), 263 (59), 264 (59), 265 (59), 266 (59), 267 (59).
+- `/plumber-celina-tx/` Отложены: 2 (193), 4 (195).
+- `/plumber-little-elm-tx/` Отложены: 16 (107), 38 (87), 40 (87), 41 (87), 69 (161), 102 (130), 123 (162), 124 (162), 165 (5), 356 (87).
+- `/plumber-the-colony-tx/` Отложены: 9 (109), 79 (12), 231 (110).
+- `/plumber-carrollton-tx/` Отложены: 6 (65), 27 (52), 42 (3), 57 (92), 58 (92), 144 (159), 147 (159), 148 (159), 226 (196), 227 (196), 281 (4), 282 (4), 357 (88).
+- `/plumber-lewisville-tx/` Отложены: 2 (193), 4 (195).
+- `/blog/` стоят: 216 (160).
+- `/blog/burst-outside-spigot/` стоят: 112 (177). Отложены: 121 (170), 345 (170).
+- `/blog/clogged-kitchen-sink-chain-snake/` стоят: 112 (177). Отложены: 49 (84), 129 (97).
+- `/blog/clogged-main-drain-line-daycare-plano/` стоят: 112 (177).
+- `/blog/clogged-shower-drain-little-elm-case/` стоят: 112 (177). Отложены: 38 (87), 39 (87).
+- `/blog/clogged-toilet-auger-fix-blog/` стоят: 112 (177). Отложены: 26 (117).
+- `/blog/double-sink-clog-and-drain-line-repair/` стоят: 112 (177).
+- `/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/` стоят: 112 (177).
+- `/blog/main-water-line-leak-under-sidewalk-plano-tx/` стоят: 112 (177).
+- `/blog/moen-shower-cartridge-replacement-blog/` стоят: 112 (177). Отложены: 25 (141), 59 (147), 60 (146), 105 (90), 154 (150).
+- `/blog/outside-spigot-replacement-plumber-in-frisco/` стоят: 112 (177). Отложены: 30 (165), 100 (167).
+- `/blog/plumber-frisco-kitchen-drain-clog/` стоят: 112 (177).
+- `/blog/plumber-frisco-water-heater-replacement/` стоят: 112 (177).
+- `/blog/shower-system-replacement-3-handle-to-single-handle-valve/` стоят: 112 (177). Отложены: 216 (160).
+- `/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/` стоят: 112 (177). Отложены: 106 (155), 107 (155).
+- `/blog/slab-leak-two-leaks-one-line-plano/` стоят: 112 (177).
+- `/blog/toilet-fill-valve-flush-valve-replacement-real-case-in-frisco-tx/` стоят: 112 (177).
+- `/blog/toilet-replacement-with-new-shutoff-valve-and-wax-ring/` стоят: 112 (177). Отложены: 33 (115), 34 (115), 85 (123), 86 (123), 87 (123), 88 (123).
+- `/contact/` Отложены: 1 (192), 2 (193), 202 (197), 273 (197), 301 (188), 302 (189), 303 (189).
+- `/gallery/` Отложены: 1 (192), 3 (194), 93 (73), 94 (73), 117 (179).
+- `/plumbing-guide/angle-stop-valve-leaking-under-sink/` стоят: 112 (177). Отложены: 23 (140), 68 (121), 137 (135).
+- `/plumbing-guide/automatic-water-shut-off-valve-install-north-texas/` стоят: 112 (177). Отложены: 20 (11), 35 (50), 36 (50), 341 (50).
+- `/plumbing-guide/bathtub-drain-slow-draining-tips-2026/` стоят: 112 (177).
+- `/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/` стоят: 112 (177).
+- `/plumbing-guide/how-long-do-water-heaters-last-guide/` стоят: 112 (177). Отложены: 127 (75), 128 (72).
+- `/plumbing-guide/how-to-shut-off-main-water-valve-texas/` стоят: 112 (177). Отложены: 24 (35), 47 (48).
+- `/plumbing-guide/plumber-near-me-north-texas-guide-to-avoid-scams/` стоят: 112 (177).
+- `/plumbing-guide/pressure-reducing-valve-replacement-guide-2026/` стоят: 112 (177). Отложены: 48 (47).
+- `/plumbing-guide/slab-leak-repair-plano-tips-2026/` стоят: 112 (177). Отложены: 45 (2), 78 (8), 125 (6).
+- `/plumbing-guide/water-heater-making-noise-tips-2026/` стоят: 112 (177). Отложены: 127 (75).
+- `/plumbing-guide/water-heater-replacement-cost-2026/` стоят: 112 (177). Отложены: 6 (65), 28 (68).
+- `/plumbing-guide/water-leak-after-bathroom-remodel-frisco-tx/` стоят: 112 (177). Отложены: 89 (13).
+- `/plumbing-guide/water-leak-yard-tips-2026/` стоят: 112 (177). Отложены: 54 (36), 55 (36), 158 (42).
+- `/plumbing-guide/water-pressure-dropping-tips-2026/` стоят: 112 (177). Отложены: 82 (56), 83 (56), 153 (61).
+- `/plumbing-guide/why-is-my-water-bill-so-high-frisco-tx/` стоят: 112 (177). Отложены: 72 (14), 79 (12), 133 (21).
+- `/plumbing-guide/why-your-toilet-keeps-backing-up/` стоят: 112 (177). Отложены: 11 (119), 53 (101), 111 (128), 122 (102), 126 (136), 130 (127), 135 (126).
 
 ## Где слово Дениса о городе расходится с местом съёмки
 
 Город в подписи стоит по его слову. Телефон записал место съёмки в другом городе.
 
-- **16** (работа 97): слово Дениса Little Elm, место съёмки вне этого города
-- **38** (работа 79): слово Дениса Little Elm, место съёмки вне этого города
-- **39** (работа 79): слово Дениса Little Elm, место съёмки вне этого города
-- **40** (работа 79): слово Дениса Little Elm, место съёмки вне этого города
-- **41** (работа 79): слово Дениса Little Elm, место съёмки вне этого города
-- **52** (работа 160): слово Дениса Prosper, место съёмки вне этого города
+- **16** (работа 107): слово Дениса Little Elm, место съёмки вне этого города
+- **38** (работа 87): слово Дениса Little Elm, место съёмки вне этого города
+- **39** (работа 87): слово Дениса Little Elm, место съёмки вне этого города
+- **40** (работа 87): слово Дениса Little Elm, место съёмки вне этого города
+- **41** (работа 87): слово Дениса Little Elm, место съёмки вне этого города
+- **52** (работа 170): слово Дениса Prosper, место съёмки вне этого города
 - **92** (работа 73): слово Дениса Plano, место съёмки вне этого города
 - **93** (работа 73): слово Дениса Plano, место съёмки вне этого города
 - **94** (работа 73): слово Дениса Plano, место съёмки вне этого города
-- **102** (работа 120): слово Дениса Little Elm, место съёмки вне этого города
-- **121** (работа 160): слово Дениса Prosper, место съёмки вне этого города
-- **126** (работа 126): слово Дениса Little Elm, место съёмки вне этого города
-- **204** (работа 79): слово Дениса Little Elm, место съёмки вне этого города
+- **102** (работа 130): слово Дениса Little Elm, место съёмки вне этого города
+- **121** (работа 170): слово Дениса Prosper, место съёмки вне этого города
+- **126** (работа 136): слово Дениса Little Elm, место съёмки вне этого города
+- **204** (работа 87): слово Дениса Little Elm, место съёмки вне этого города
 - **221** (работа 73): слово Дениса Plano, место съёмки вне этого города
-- **222** (работа 138): слово Дениса Plano, место съёмки вне этого города
-- **223** (работа 138): слово Дениса Plano, место съёмки вне этого города
-- **231** (работа 100): слово Дениса The Colony, место съёмки вне этого города
-- **241** (работа 119): слово Дениса Plano, место съёмки вне этого города
-- **248** (работа 122): слово Дениса Plano, место съёмки вне этого города
-- **249** (работа 122): слово Дениса Plano, место съёмки вне этого города
-- **250** (работа 122): слово Дениса Plano, место съёмки вне этого города
-- **268** (работа 161): слово Дениса Plano, место съёмки вне этого города
-- **269** (работа 161): слово Дениса Plano, место съёмки вне этого города
+- **222** (работа 148): слово Дениса Plano, место съёмки вне этого города
+- **223** (работа 148): слово Дениса Plano, место съёмки вне этого города
+- **231** (работа 110): слово Дениса The Colony, место съёмки вне этого города
+- **241** (работа 129): слово Дениса Plano, место съёмки вне этого города
+- **248** (работа 132): слово Дениса Plano, место съёмки вне этого города
+- **249** (работа 132): слово Дениса Plano, место съёмки вне этого города
+- **250** (работа 132): слово Дениса Plano, место съёмки вне этого города
+- **268** (работа 171): слово Дениса Plano, место съёмки вне этого города
+- **269** (работа 171): слово Дениса Plano, место съёмки вне этого города
 - **270** (работа 28): слово Дениса Plano, место съёмки вне этого города
 - **289** (работа 30): слово Дениса McKinney, место съёмки вне этого города
 - **290** (работа 30): слово Дениса McKinney, место съёмки вне этого города
@@ -2406,102 +2526,122 @@ Plano · январь 2025 · файлы: 104
 - **292** (работа 30): слово Дениса McKinney, место съёмки вне этого города
 - **293** (работа 30): слово Дениса McKinney, место съёмки вне этого города
 - **294** (работа 30): слово Дениса McKinney, место съёмки вне этого города
-- **314** (работа 180): слово Дениса McKinney, место съёмки вне этого города
-- **327** (работа 181): слово Дениса Allen, место съёмки вне этого города
-- **345** (работа 160): слово Дениса Prosper, место съёмки вне этого города
+- **314** (работа 190): слово Дениса McKinney, место съёмки вне этого города
+- **327** (работа 191): слово Дениса Allen, место съёмки вне этого города
+- **345** (работа 170): слово Дениса Prosper, место съёмки вне этого города
+- **353** (работа 81): слово Дениса Plano, место съёмки вне этого города
+- **355** (работа 91): слово Дениса Plano, место съёмки вне этого города
+- **356** (работа 87): слово Дениса Little Elm, место съёмки вне этого города
 
 ## Что закрыть или обрезать перед показом
 
 Файлы, у которых в заметках есть предупреждение: номер счётчика или машины, улица, чужой двор, комната с вещами, человек в кадре, крупная марка.
 
-- **1** (работа 182)
-- **2** (работа 183): на сайте стоит обрезанным или закрытым (/plumber-frisco-tx/, /plumber-mckinney-tx/, /plumber-prosper-tx/); для других страниц смотреть заметки
-- **3** (работа 184)
-- **11** (работа 109)
-- **16** (работа 97)
-- **40** (работа 79)
-- **41** (работа 79)
+- **1** (работа 192)
+- **2** (работа 193): на сайте стоит обрезанным или закрытым (/plumber-frisco-tx/, /plumber-mckinney-tx/, /plumber-prosper-tx/); для других страниц смотреть заметки
+- **3** (работа 194)
+- **11** (работа 119)
+- **16** (работа 107)
+- **40** (работа 87)
+- **41** (работа 87)
 - **66** (работа 7)
 - **72** (работа 14): на сайте стоит как есть (/, /slab-leak-repair-frisco-plano-mckinney/); для других страниц смотреть заметки
 - **77** (работа 8)
 - **94** (работа 73)
-- **106** (работа 145)
-- **121** (работа 160)
-- **123** (работа 152)
-- **137** (работа 125)
-- **166** (работа 92): на сайте стоит как есть (/plumber-frisco-tx/); для других страниц смотреть заметки
-- **169** (работа 103): на сайте стоит как есть (/plumber-frisco-tx/); для других страниц смотреть заметки
+- **106** (работа 155)
+- **121** (работа 170)
+- **123** (работа 162)
+- **137** (работа 135)
+- **166** (работа 102): на сайте стоит как есть (/plumber-frisco-tx/); для других страниц смотреть заметки
+- **169** (работа 113): на сайте стоит как есть (/plumber-frisco-tx/); для других страниц смотреть заметки
 - **171** (работа 36)
-- **181** (работа 147)
-- **182** (работа 147)
-- **183** (работа 90): на сайте стоит как есть (/emergency-plumbing-services/, /); для других страниц смотреть заметки
+- **181** (работа 157)
+- **182** (работа 157)
+- **183** (работа 100): на сайте стоит как есть (/emergency-plumbing-services/, /); для других страниц смотреть заметки
 - **186** (работа 41): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
 - **189** (работа 27): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **190** (работа 121)
+- **190** (работа 131)
 - **193** (работа 26): на сайте стоит как есть (/plumber-frisco-tx/); для других страниц смотреть заметки
 - **197** (работа 62)
 - **200** (работа 20)
-- **201** (работа 80): на сайте стоит как есть (/plumber-frisco-tx/); для других страниц смотреть заметки
-- **202** (работа 187)
+- **201** (работа 89): на сайте стоит как есть (/plumber-frisco-tx/); для других страниц смотреть заметки
+- **202** (работа 197)
 - **205** (работа 33): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **210** (работа 156)
-- **211** (работа 94)
-- **212** (работа 94): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **213** (работа 81)
+- **210** (работа 166)
+- **211** (работа 104)
+- **212** (работа 104): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
+- **213** (работа 90)
 - **218** (работа 57)
-- **222** (работа 138): на сайте стоит как есть (/plumber-plano-tx/); для других страниц смотреть заметки
-- **223** (работа 138): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **229** (работа 83): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/); для других страниц смотреть заметки
-- **230** (работа 83)
-- **231** (работа 100)
+- **222** (работа 148): на сайте стоит как есть (/plumber-plano-tx/); для других страниц смотреть заметки
+- **223** (работа 148): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
+- **229** (работа 93): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/); для других страниц смотреть заметки
+- **230** (работа 93)
+- **231** (работа 110)
 - **232** (работа 18)
-- **237** (работа 169)
-- **238** (работа 169)
+- **237** (работа 179)
+- **238** (работа 179)
 - **240** (работа 22)
-- **241** (работа 119)
+- **241** (работа 129)
 - **242** (работа 23)
 - **245** (работа 24)
 - **246** (работа 24)
-- **253** (работа 164): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
-- **256** (работа 164): на сайте стоит как есть (/plumber-plano-tx/); для других страниц смотреть заметки
-- **257** (работа 164): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **259** (работа 139): на сайте стоит обрезанным или закрытым (/plumber-mckinney-tx/); для других страниц смотреть заметки
-- **260** (работа 139): на сайте стоит как есть (/plumber-mckinney-tx/); для других страниц смотреть заметки
+- **253** (работа 174): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
+- **256** (работа 174): на сайте стоит как есть (/plumber-plano-tx/); для других страниц смотреть заметки
+- **257** (работа 174): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
+- **259** (работа 149): на сайте стоит обрезанным или закрытым (/plumber-mckinney-tx/); для других страниц смотреть заметки
+- **260** (работа 149): на сайте стоит как есть (/plumber-mckinney-tx/); для других страниц смотреть заметки
 - **265** (работа 59)
 - **266** (работа 59)
 - **267** (работа 59)
-- **268** (работа 161): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **271** (работа 77): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **272** (работа 77): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **273** (работа 187): на сайте стоит как есть (/plumber-allen-tx/, /plumber-plano-tx/); для других страниц смотреть заметки
+- **268** (работа 171): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
+- **271** (работа 82): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
+- **272** (работа 82): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
+- **273** (работа 197): на сайте стоит как есть (/plumber-allen-tx/, /plumber-plano-tx/); для других страниц смотреть заметки
 - **281** (работа 4)
 - **283** (работа 64)
 - **289** (работа 30): на сайте стоит как есть (/plumber-mckinney-tx/); для других страниц смотреть заметки
 - **292** (работа 30)
 - **295** (работа 29): на сайте стоит как есть (/emergency-plumbing-services/); для других страниц смотреть заметки
-- **298** (работа 166): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
-- **300** (работа 166): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
-- **301** (работа 178): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/, /plumber-frisco-tx/); для других страниц смотреть заметки
-- **302** (работа 179)
-- **303** (работа 179): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
-- **305** (работа 171): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
-- **306** (работа 165): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
-- **307** (работа 168): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
-- **310** (работа 128)
-- **314** (работа 180): на сайте стоит обрезанным или закрытым (/plumber-mckinney-tx/); для других страниц смотреть заметки
-- **318** (работа 98): на сайте стоит обрезанным или закрытым (/plumber-mckinney-tx/); для других страниц смотреть заметки
+- **298** (работа 176): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
+- **300** (работа 176): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
+- **301** (работа 188): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/, /plumber-frisco-tx/); для других страниц смотреть заметки
+- **302** (работа 189)
+- **303** (работа 189): на сайте стоит обрезанным или закрытым (/plumber-plano-tx/); для других страниц смотреть заметки
+- **305** (работа 181): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
+- **306** (работа 175): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
+- **307** (работа 178): на сайте стоит обрезанным или закрытым (/emergency-plumbing-services/); для других страниц смотреть заметки
+- **310** (работа 138)
+- **314** (работа 190): на сайте стоит обрезанным или закрытым (/plumber-mckinney-tx/); для других страниц смотреть заметки
+- **318** (работа 108): на сайте стоит обрезанным или закрытым (/plumber-mckinney-tx/); для других страниц смотреть заметки
 - **321** (работа 45): на сайте стоит как есть (/plumber-mckinney-tx/); для других страниц смотреть заметки
 - **324** (работа 39): на сайте стоит как есть (/plumber-mckinney-tx/); для других страниц смотреть заметки
-- **327** (работа 181): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/); для других страниц смотреть заметки
+- **327** (работа 191): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/); для других страниц смотреть заметки
 - **330** (работа 63): на сайте стоит как есть (/plumber-allen-tx/); для других страниц смотреть заметки
 - **334** (работа 58): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/); для других страниц смотреть заметки
-- **339** (работа 108): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/); для других страниц смотреть заметки
+- **339** (работа 118): на сайте стоит обрезанным или закрытым (/plumber-allen-tx/); для других страниц смотреть заметки
 - **340** (работа 58): на сайте стоит как есть (/plumber-allen-tx/); для других страниц смотреть заметки
 - **342** (работа 70): на сайте стоит как есть (/plumber-prosper-tx/); для других страниц смотреть заметки
 - **343** (работа 38): на сайте стоит как есть (/plumber-prosper-tx/); для других страниц смотреть заметки
 - **344** (работа 59): на сайте стоит как есть (/plumber-prosper-tx/); для других страниц смотреть заметки
-- **345** (работа 160): на сайте стоит как есть (/plumber-prosper-tx/); для других страниц смотреть заметки
-- **346** (работа 123): на сайте стоит обрезанным или закрытым (/plumber-prosper-tx/); для других страниц смотреть заметки
+- **345** (работа 170): на сайте стоит как есть (/plumber-prosper-tx/); для других страниц смотреть заметки
+- **346** (работа 133): на сайте стоит обрезанным или закрытым (/plumber-prosper-tx/); для других страниц смотреть заметки
+- **348** (работа 81): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **349** (работа 80): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **350** (работа 79): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **351** (работа 79): на сайте стоит как есть (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **352** (работа 79): на сайте стоит как есть (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **353** (работа 81): на сайте стоит как есть (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **354** (работа 78): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **355** (работа 91): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **356** (работа 87): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **357** (работа 88): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **358** (работа 87): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **359** (работа 86): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **360** (работа 85): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **361** (работа 83): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **362** (работа 80): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **363** (работа 77): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
+- **364** (работа 95): на сайте стоит обрезанным или закрытым (/clogged-drain-cleaning-frisco-plano/); для других страниц смотреть заметки
 
 ## Файлы диктовок без привязки к одному файлу
 
@@ -2523,3 +2663,4 @@ Plano · январь 2025 · файлы: 104
 - `source/dictation/2026-10-15-mckinney.md`: Диктовка Дениса по странице McKinney (15 октября 2026, голосом в чат). Записано со слов Дениса, порядок его. Мат убран, слова его.
 - `source/dictation/2026-10-16-allen.md`: Диктовка Дениса по странице Allen (16 октября 2026, вечер, голосом в чат, с одиннадцатью файлами). Слова Дениса, порядок его, мат убран. Его просьба к тексту: «ты больше пытайся под мою манеру, не выводи это всё идеально». Файлы: девять положены чатом в source/inbox/ (IMG_1377, IMG_1110, IMG_1114, IMG_1474, IMG_1482, IMG_1493, 
 - `source/dictation/2026-10-16-prosper.md`: Prosper: диктовка Дениса, 16 октября 2026, вечер (часть 1). Контекст: Allen закрыт тем же вечером. Следующий город по меню Areas: Prosper. Chat задал 14 вопросов (список в конце). Денис сначала скинул 9 файлов и наговорил по ним, ответы на остальные вопросы обещал следом.
+- `source/dictation/2026-10-23-drain-cleaning.md`: Drain cleaning page: Denys's dictations of October 23, 2026. Recorded in the chat on October 23, 2026, word for word as transcribed (voice to text, Russian). Three parts: 14:22, 14:51 and 14:59. Facts and judgments for /clogged-drain-cleaning-frisco-plano/. Chat readings of the transcriptio
