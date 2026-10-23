@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 23.10.2026 13:54</p><h1>Проверка и хвосты после переезда, 23 октября 2026</h1>
+</style></head><body><main><p class="stamp">Опубликовано 23.10.2026 14:07</p><h1>Проверка и хвосты после переезда, 23 октября 2026</h1>
 <p>По блоку чата от 23 октября 2026. Всё проверено и исправлено локально, в ветке main (коммит 490c504). Живая выкладка одна, в конце: система безопасности Claude Code её не пропустила, нужна кнопка Run у Дениса (команда в части 3). Страница для следующего города: <a href="celina-addendum">celina-addendum</a>. Звонки по дням: <a href="calls-report">calls-report</a>.</p>
 <p>Коротко. Четыре пункта блока подтвердились и правки не потребовали (живые версии, sitemap, HSTS и www, robots.txt), три внешние ссылки живы и оставлены, Request indexing не нужен. Исправлено два пункта: хвост «?v=» у клипов и постеров снят, семь страниц с одной входящей ссылкой получили вторую через блок карточек «Read more». Search Console показывает потерю «plumber near me» у главной с 8 октября, три гайда к 21 октября не вернулись.</p>
 <h2>1. Что подтвердилось, ничего не менял</h2>
@@ -178,6 +178,16 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <pre><code class="language-bash">zsh tools/deploy.sh live
 </code></pre>
 <p>После кнопки я проверяю живые страницы: клипы играют, постеры грузятся, адреса без «?v=», кеш-заголовки на /video/ на месте, валидатор по emergency и Plano.</p>
+<h3>Итог выкладки (23 октября, 14:04)</h3>
+<p>Денис нажал Run (первое нажатие следа не оставило: ни вывода в терминале, ни сборки, ни выкладки на Cloudflare; второе, в панели Terminal, прошло): сборка 64 страницы в 14:03:46, проверка 34 из 34, Deployment complete, IndexNow 63 адреса с ответом 200. Проверка живых страниц после выкладки:</p>
+<ul>
+<li>Адресов /video/ с «?v=» на всех двенадцати страницах 0; штампы у фото в /img/ на месте; блок «Read more» стоит на пяти страницах.</li>
+<li>Схема против разметки на семи страницах с клипами (emergency 13 клипов, Plano 16, главная 2, Frisco 8, McKinney 8, Allen 6, Prosper 6): наборы адресов клипов совпадают, постеры схемы те же, что в разметке.</li>
+<li>Клипы играют: на живой emergency клип первого экрана в браузере readyState 4, идёт (2.7 с из 3.2), постер отвечает 200 image/webp; клип в тексте идёт, без кнопок.</li>
+<li>Кеш-заголовки на /video/: 200, cache-control public, max-age=2592000, Cloudflare отдаёт из кеша (HIT).</li>
+<li>Валидатор schema.org по живым emergency и Plano: 0 ошибок, 0 предупреждений.</li>
+<li>Сверка 63 собранных страниц с живым сайтом после выкладки: 63 совпадают, 0 отличий.</li>
+</ul>
 <h2>4. Search Console, только чтение</h2>
 <p>Данные с 23 сентября по 21 октября 2026 (последний день, который есть в Search Console на 23 октября). Таблицы по запросам с фильтром США (кампания Semrush американская); гайды по всем странам, как таблицы страниц в проекте. Файлы: exports/gsc-daily-2026-10-23/, инструмент tools/gsc_daily.py.</p>
 <h3>а. «plumber near me» и запросы с frisco</h3>
@@ -480,7 +490,6 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <p>Полная таблица по дням и сравнение с сентябрём: <a href="calls-report">calls-report</a> (docs/calls-2026-10-16-2026-10-22.md).</p>
 <h2>6. Открытое</h2>
 <ul>
-<li>Кнопка Run для выкладки (часть 3), потом проверка живых страниц.</li>
 <li>Фургон из Prosper на первый экран /plumber-prosper-tx/ (Денис, 17 октября: отдельной правкой).</li>
 <li>Три ответа Дениса по Prosper, которые ждёт чат (список у чата, в журнале проекта из открытого по Prosper записан только фургон).</li>
 <li>Request indexing: не нужен.</li>
