@@ -1,0 +1,1258 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 23.10.2026 17:54</p><h1>Drain cleaning, версия 4: сборка на черновой адрес (23 октября 2026)</h1>
+<p>Черновой адрес: https://draft.fppplumbing-preview.pages.dev/clogged-drain-cleaning-frisco-plano/ (вход по почте, noindex). Живой сайт не тронут, только <code>zsh tools/deploy.sh draft</code>. Собрано по блоку чата «Drain cleaning, version 4» от 23 октября 2026. Текст: <code>source/drain-cleaning-text-v4.md</code> (чат, 17:40: чтение Денисом черновика версии 3 в 17:18, его слова 17:23 до 17:49 и замечания аудитов версии 3; в 17:50 чат дописал файл и прислал блок второй раз, страница пересобрана по дописанному файлу, первая сборка 17:28 была по файлу 17:23). Версии 2 и 3 остаются в проекте как записи. Аудитов плагинов на версии 4 не было, по блоку: правки текста небольшие, версия 3 оценена (superseo 57 из 70, claude-seo 92 из 100).</p>
+<h2>1. Что собрано</h2>
+<ul>
+<li>Запись <code>DRAIN_V4</code> в <code>tools/export_page_text.py</code> (копия <code>DRAIN_V3</code> с текстом версии 4), <code>PAGES</code> указывает на неё. Всё остальное как в версии 3: layout service, обе кнопки с номерами, ряд «On this page», подпись автора с датой, <code>published</code> 2025-05-06, <code>updated</code> 2026-10-23, крошка, часы 24/7 и serviceType в узле Service, первый экран клип 296 и социальная картинка из его постера, блок Read more из четырёх карточек.</li>
+<li>Что изменилось против версии 3 (по diff текстов, всё из первой строки файла): первый абзац вступления переписан, теперь открывается на работе, а не на загадке и на случае; клип 185 снят (то же, что 184, слово Дениса), 184 стоит один рядом с абзацем про крышку ревизии; клип 157 снят из раздела кухни (его слово: «четвёртая это туалет»), четвёртый абзац кухни без картинки; история про глину разбита на два абзаца, ряд из трёх (350, 351, 352) под вторым; «the wax ring under it was damaged» (его слово «повреждён»); первый абзац раздела камеры короче и не пересказывает раздел главной линии; описание 155 знаков; одна официальная ссылка в разделе кухни. Дописано в 17:50 с его слов 17:47 и 17:49: абзац про рекламу и история про вызов за $79 пересказаны его словами (клик по рекламе Google за забитую главную линию стоит компании около $100 в нашей местности; «We're not accusing anybody of anything. The math just doesn't add up»; фраза о подвохе после камеры снята, она приписывала схему каждой такой рекламе), история про второе мнение получила две фразы в конце, обе фразы «like 90 percent» стали «in our experience, 80 to 90 percent». Ссылка на ролик YouTube стоит как в версии 3. На странице 17 клипов и 7 фото, 17 узлов VideoObject.</li>
+<li>Официальная ссылка, по правилу блока: страницу https://www.plano.gov/fog открыл в браузере, дождался текста (он грузится с задержкой) и прочитал целиком. Слов «prevent sewer backups» и «protect your pipes» на видимой странице нет: там «This can cause a sewer backup in your home or neighborhood» и вкладка «PROTECT YOUR TOILET PIPES». Поэтому фраза, как велел блок, обрезана до «The City of Plano keeps a page for residents on fats, oils and grease.» с той же ссылкой (якорь «page for residents on fats, oils and grease», новая вкладка). Это записано и в файле текста под «Links in the text».</li>
+<li>Вторая ссылка «sewer line repair» на /drain-services/ переехала вместе с последней фразой истории про глину во второй абзац истории: запись ссылок в <code>DRAIN_V4</code> указывает на него (сборка со старой записью остановилась: фразы в первом абзаце больше нет). На странице по-прежнему две ссылки на /drain-services/.</li>
+<li>Города 353 и 355: файл текста записывает слово Дениса 17:23 на вопрос чата, «Оставляем его в Plano», обе Plano. Это записано в <code>photos/captions.csv</code> (city_source: его слово, граница говорит Frisco и Flower Mound), подписи и имена файлов не менялись, они и были с Plano.</li>
+<li>Объём: 5,480 слов текста страницы (<code>export_page_text.plain_words</code>; версия 3 была 5,301, первая сборка версии 4 5,331) против 885 на живой. Title 62 знака, описание 155.</li>
+<li>В собранном HTML: ни одного абзаца с «[», ни одной кириллической буквы, тире 0, телефонов в тексте 0, цена одна ($49), на видео нет «?v=», noindex на месте.</li>
+</ul>
+<h2>2. Проверки</h2>
+<ul>
+<li><code>tools/check_text.py</code> на файле версии 4: десять пометок, все ожидаемые по блоку и не правились: $69 и $79 восемь раз (цены из рекламы конкурентов, по заданию Дениса), «around $100» (цена клика по рекламе Google, его слова 17:47) и восклицательный знак в цитате Thomas S. 40 групп из трёх выписаны для глаза (у версии 3 было 39); слов в файле с заметками 5,859.</li>
+<li><code>tools/check_overlap.py</code> с <code>source/competitors/2026-10-23-drain-cleaning</code>: 0 совпадений с конкурентами; три прогона с нашими страницами, те же, что раньше (фраза про $49 на главной, Allen, Frisco, McKinney, Prosper и emergency; отзыв Angelo Toborg со старой страницы The Colony).</li>
+<li>Сайт при сборке черновика: <code>tools/check_site.py</code> 34 из 34, предупреждений 7, про эту страницу одно, как раньше: «Denton County» в разделе городов. В HTML страницы 17 тегов video и 17 узлов VideoObject, 4 узла Review, noindex на месте, на видео нет «?v=», тире 0.</li>
+<li>Вёрстка на шести ширинах (<code>tools/check_layout.py</code>, 390, 768, 1024, 1100, 1280, 1440): чисто, 29 картинок, ни одна не пересекает текст. Шрифты (<code>tools/font_shift.py</code>): чисто, сдвиг 0.000 на телефоне и 0.010 на компьютере.</li>
+<li>Вес (<code>tools/page_weight.py</code>): телефон 2x при загрузке 1,624 КБ (HTML 186, фото 898, постеры клипов 539), телефон 3x 2,231 КБ, клипы при прокрутке 3,371 КБ (17 клипов, грузятся только у экрана), компьютер 1,155 КБ (цифры второй сборки, по дописанному файлу; первая была на 1 КБ легче). У версии 3 было 1,658 КБ и 3,569 КБ: два снятых клипа дали 35 КБ постеров и 198 КБ клипов.</li>
+<li>Lighthouse (<code>tools/lighthouse_pages.py</code>, локальный сервер без сжатия): телефон 98 и 100 (LCP 2.3 с, CLS 0), компьютер 100 и 100 (LCP 0.5 с, CLS 0.001). У версии 3 было то же, LCP 2.2 с.</li>
+<li>Схема: validator.schema.org по собранному HTML, 0 ошибок, 0 предупреждений, 6 объектов. Отзывы: <code>tools/check_reviews.py</code> 58 отзывов на сайте, 0 проблем.</li>
+<li>Search Console: часть «Search Console» ниже и таблица по каждому запросу в конце страницы; покрытие то же, 97.9 процента показов за 16 месяцев.</li>
+</ul>
+<h2>3. Открытое (для чата и Дениса)</h2>
+<p>По блоку первыми два расхождения с границей города, но по файлу текста они закрыты его словом 17:23: 353 (вырезанная главная линия с трещиной) лежит по границе во Frisco, 355 (ржавый фланец) во Flower Mound, Денис сказал «Оставляем его в Plano», обе стоят с Plano. Если это слово записано верно, вопроса нет; если нет, города меняются в <code>photos/captions.csv</code> и <code>captions-en.csv</code>, имена файлов пересобираются <code>tools/photo_slugs.py</code>.</p>
+<p>Из файла текста («Open with Denys»), без изменений:</p>
+<ul>
+<li>Второе мнение: его ответ 16:16, что это было недавно; города и месяца нет, в истории их нет.</li>
+<li>Ссылка на ролик ремонта: найдена при версии 3, стоит на странице.</li>
+<li>«Up to about 20 gallons a day» (его цифра от 1 октября): оставить или другая цифра.</li>
+<li>Длина: около 5,500 слов против 885 на живой; совет чата 4,200 с переносом подключений посудомойки на страницу disposal; решение его.</li>
+</ul>
+<p>Моё, по дописанному файлу:</p>
+<ul>
+<li>Цифра «around $100» за клик по рекламе Google стоит на странице его словом (17:47). FPP свою рекламу в Google не ведёт (только Google Guaranteed), так что из нашего кабинета её не проверить; это цена рынка со слов Дениса, и на странице она подана как «в нашей местности». Если он хочет без цифры, фраза живёт без неё.</li>
+<li>Для чата, текст: в абзаце про камеру после правки стоят подряд две фразы «The rest is somebody flushing what they shouldn't have. The rest is roots at a joint, a coupling that came apart, a section that settled and lost its slope.»: «the rest» дважды про разное (вторая, видимо, «the reason in the pipe is roots...»). Собрано как есть, текст не правил.</li>
+</ul>
+<h2>Текст страницы, как он стоит на тестовом сайте</h2>
+<p>Курсивом в квадратных скобках стоят пометки о том, что в этом месте на странице (фото, кнопки, карта). Это не текст страницы.</p>
+<p>Title: Drain Cleaning Frisco &amp; Plano, TX: Clogged Drain and Main Line</p>
+<p>Meta description: Drain cleaning in Frisco and Plano: the main line backing up into the tub, the kitchen line, the sink the AC drains into. Chain snake, camera, price first.</p>
+<hr />
+<h3>H1: Drain Cleaning in Frisco &amp; Plano, TX: Clogged Drains, the Main Line, the Kitchen Line and the Sink the AC Drains Into</h3>
+<p>One clogged drain is a short job: the tub that drains an inch an hour, the kitchen sink that stopped taking water, a toilet that fills instead of flushing. More than one drain backing up at the same time is a different call. A toilet downstairs that rises when somebody showers upstairs, gray water standing in the tub, a shower pan that fills while the washer runs: that's the branch line at the least, and most of the time it's the main line, the emergency drain call we get most. The other one is quieter. A bathroom sink fills up on its own in an empty house, because the air conditioner drains into that sink line, and the line is clogged.</p>
+<p>FPP Plumbing does drain cleaning in Frisco and Plano out of two offices, one in each city, with licensed plumbers on the trucks and two of them on every shift. A clogged drain here gets the right machine for that line: a chain snake on a kitchen line and on a main line, and on a main line a camera goes in, every time, so you see why it clogged. You hear one flat price before the machine comes off the truck. On a weekday the service call is $49, and it goes toward the work.</p>
+<p>If you got to us through plumber near me, the two numbers at the top are the Frisco and the Plano office, and either one takes a drain call at any hour.</p>
+<p><em>[Кнопки «Call Frisco» и «Call Plano» с номерами и кнопка «Request Service». Справа клип 296, около пяти секунд без звука: Kitchen line clogged again: the wall cleanout opened, the water runs out, then the chain snake goes in]</em></p>
+<hr />
+<h3>H2: The Main Line: When More Than One Drain Backs Up</h3>
+<p>A house has one drain system. Every sink, tub, toilet and the washer run into branch lines, the branches run into the main line, and the main line leaves the house for the city sewer. When the main line is blocked, nothing you send down goes anywhere. It fills the pipes from the bottom up and comes out at the lowest open drain in the house: the downstairs tub, the shower pan, the toilet nearest the floor. If one bathroom backs up, that's a clog. If the tub and a toilet back up together, or the toilet downstairs rises when somebody showers upstairs, that is at least a branch line, and most of the time it's the main line.</p>
+<p><em>[Под текстом рядом: видео 130, 5 секунд без звука: Main line backing up into the bathtub, Frisco; фото 204: A shower pan after a main line backup: this is what came back up through the drain, Little Elm]</em></p>
+<p>Stop every drain in the house. That includes the washer and the dishwasher, because they drain into the same line and they don't stop on their own. Then go outside and find the sewer cleanout, a capped pipe near the foundation, and take the cap off. Whatever is standing in the pipes runs out onto the ground instead of into the house. On both of the main line calls below the plumber did that before anything else, and the flow inside the house stopped the moment the cap came off.</p>
+<p><em>[Рядом видео 184, 5 секунд без звука: The same backup at the outside cleanouts: both caps off and sewage running over onto the ground]</em></p>
+<p>We clear a main line through that outside cleanout with the chain snake, and the camera goes in with it or right after it. Sometimes before the clearing, when the clog still lets a camera past it; sometimes after, when the pipe is packed solid. The camera is what tells you whether this was a one time clog or a pipe with something wrong in it. A line with nothing wrong in it almost never clogs on its own: in our experience, 80 to 90 percent of the time there's a reason in the pipe. The rest is somebody flushing what they shouldn't have. The rest is roots at a joint, a coupling that came apart, a section that settled and lost its slope. Those get cleared tonight and repaired in daylight, and the repair is sewer line repair.</p>
+<p><em>[Под текстом рядом: фото 358: An outside cleanout full to the top, and the chain snake going in, Plano; видео 356, 5 секунд без звука: The chain snake back out of the outside cleanout with the roots it took off the pipe wall, Little Elm]</em></p>
+<p><strong>Water over the shower pan upstairs, Plano, October 2026.</strong> A night call: the shower on the second floor had overflowed, so the family stopped using it and called about a clogged shower. The plumber asked to see the other bathrooms. Downstairs, the master bath floor was wet, the water had run into the bedroom, every floor was wet. The whole drain system of the house had filled from the main line up to the second floor and come over the shower upstairs, and at the same time the pressure in the lines pushed water up through the shower pan on the first floor. We opened the outside cleanout and let the standing water out of the pipes, then ran the chain snake. It went hard. It came back with a pile of roots. The camera showed why: a coupling in the line had separated, there were a couple of cracks next to it, and the roots had come in through the coupling and the cracks and filled the pipe. The line was cleared that night, the repair of that section was scheduled, and our restoration partner came in to dry the house. That's sewage water, what the restoration trade calls Category 3, and after that kind of water a house that isn't dried grows mold.</p>
+<p><em>[Рядом видео 354, 5 секунд без звука: Both outside cleanouts open, and the root that came out of the main line, Plano]</em></p>
+<p><strong>When clearing is not the fix: a main line packed with clay, Plano, October 2026.</strong> The homeowner took a shower upstairs and the toilet downstairs ran over. He didn't connect the two. He stopped using that toilet, used the one upstairs, and in the evening started the dishwasher and the washing machine for the night. He called when the water was coming out everywhere. When the plumber got out of the truck, the driveway in front of the garage was already wet from the inside out. Inside, the dishwasher and the washer were stopped first; the toilet was running over, the second floor was flooded, every wall in the garage was wet. The outside cleanout was full to the cap. We opened it, the pipes drained onto the ground, and the flow in the house stopped.</p>
+<p>The toilet downstairs had been leaking from under its base, the wax ring under it was damaged, so that toilet came off first and the first passes went down through the flange. Part of the clay came out that way. The rest from outside, through the cleanout: the chain snake went in, and then a cable machine. Two commercial grade machines, more than twenty passes each, and what came back on them was clay. Not grease, not roots. Clay. The last eight inches of the cable came out coated in it every pass, and the cable went about two feet in and stopped. A week earlier somebody had pulled a utility line under the driveway in that spot, and the marking flags were still on the lawn. A drain line full of dirt is not a clog; it's a pipe that is no longer there, and no snake clears that. The night ended with the house safe, the water stopped, and the drying machines of our restoration partner already running on the floors. The line was repaired in daylight, with an 811 locate for the other utilities, a city permit, the HOA, a dig and a new section of pipe. That part is sewer line repair.</p>
+<p><em>[Под текстом рядом: видео 350, 5 секунд без звука: The toilet off: it was leaking at the base, and the first passes went down through the flange, Plano; фото 351: The end of the cable against a hand for size: eight inches of it in clay, Plano; видео 352, 5 секунд без звука: The same night: the restoration partner's dryers already running, Plano]</em></p>
+<hr />
+<h3>H2: A Camera in Every Main Line, and What Happens After It</h3>
+<p>The camera comes with every main line clearing, and with every branch line we open through a toilet; nobody adds it on. A bathroom sink line is the exception: a 1 1/2 inch pipe doesn't always take a camera. A main line without the camera is guessing. If the plumber at your house is clearing a main line without one, find another plumber. That's friendly advice.</p>
+<p>What the camera finds is the next question, and it's where a night call gets expensive for the wrong reason. Say the screen shows roots at a joint, or a small separation where two pieces of pipe pulled apart. That's a broken pipe, and it will need a repair. It does not need the repair tonight. A deep clearing with the chain snake takes the roots off the wall of the pipe, and the line works: a month, a year. When the break is out in the yard, nothing about it touches the foundation. Some water goes into the ground at that joint, and that's not good, but it's not a house flooding. You take the footage, you plan the budget, you get another opinion if you want one, and the repair gets a day on the calendar. Nobody from us hands you a contract at midnight.</p>
+<p><em>[Под текстом рядом: фото 348: On the camera screen: roots coming into the pipe at a joint that pulled apart; видео 353, 5 секунд без звука: A section of main line cut out at the cleanouts, with a crack along it: roots come in through cracks like these, Plano]</em></p>
+<p><strong>A second opinion call.</strong> The homeowner had a company out at night, as an emergency. They ran a plain cable through the main line, the cable went through the roots, a hole opened and the water went down, the shower worked. Then they told him it would clog again tomorrow, that the tree had to come down, that most of the line had to be dug up and replaced, and they gave him a very large number for it. He called us for a second opinion. The camera showed a small separation at one joint, with roots in it. We cleared the roots out with the chain snake, the line ran, and he had the footage and the time to decide what to do about the joint. The roots could have come out the first night for the price of a clearing, not a dig. Instead a cable went through them and the dig was sold as urgent.</p>
+<p>Now the ads: a main line clearing with a camera inspection for $69 or $79. It can't cost that. One click on a Google ad for a clogged main line costs the company around $100 in our area, before anybody has picked up the phone. Then a licensed plumber and his apprentice, the license, the business insurance, an insured and fully stocked truck, the chain snake and the camera on it: that has to cost real money, and $79 doesn't cover the company's own cost of sending the truck. We're not accusing anybody of anything. The math just doesn't add up, and you should know that before you pick a truck by its price.</p>
+<p>Those ads cut both ways, and we've been on a call that showed it. The homeowner called with a blocked sewer line, come now. The plumber ran the camera and saw that the line wasn't fully blocked: a separation at a joint, with roots in it. He said we can take the roots out, and gave the price. No, the homeowner said, that was done two weeks ago, for $79. Did they tell you the line needs a repair? Of course, they cleared it and said it needs a repair. And why wasn't it repaired? Because they cleared it and it worked. Can you clear it again for $79? We can't, and you were told it needs a repair; you're not going to call a new company every week for $79. That's no problem, he said, the internet is full of ads, somebody will come and do it for free. The companies that run those ads get used the same way: the $79 clearing brings the next $79 call, and nobody repairs anything.</p>
+<hr />
+<h3>H2: The Sink the Air Conditioner Drains Into</h3>
+<p>In Texas the air conditioner's condensate line is almost always tied into a bathroom sink drain, under the sink, near the trap. All summer the AC makes water, up to about 20 gallons a day, and every gallon goes down that sink line. When the line clogs, that water has nowhere to go. The sink fills on its own, in an empty house or at night, and runs over the counter onto the floor. People come home or wake up to a flooded bathroom, and a lot of these calls end with our restoration partner drying the floor.</p>
+<p>The first call usually goes to the AC company, and the AC company can't fix it. The most they do is blow out their condensate line down to where it meets the sink drain, and then they tell you to call a plumber, because the clog is in the sink line, not in theirs. The sink line collects what a bathroom sink collects: hair, soap, toothpaste, everything that goes down with a face wash, and the condensate water adds its own, bacteria, rust, calcium. If the bathroom sink drains slow and fills by itself with nobody at the faucet, it's that line.</p>
+<p><em>[Рядом видео 357, 5 секунд без звука: The trap off: this is the AC water that was filling the sink, Carrollton]</em></p>
+<p>We clear it with the chain snake, not a cable, so the wall of the pipe comes clean and the fix holds as long as it can. Not forever. I can tell you the truth: in our experience, 80 to 90 percent of the time it will happen again, and there is no way to prevent it. A sink line that takes 20 gallons of AC water a day is going to collect what it collects. What we can do is clear it properly, so it's a long time between calls and not two weeks.</p>
+<p><em>[Рядом видео 361, 5 секунд без звука: The chain snake going into the sink line under the vanity, the line the AC drains into, Plano]</em></p>
+<p>Older houses have a twist. In the Plano houses from the 70s and 80s the AC line is often tied not into the sink but into the overflow of the bathtub, and not every AC technician knows that. We've had calls where the AC company couldn't blow the line clear and couldn't find where it came out, and on one of them a plumber had been there before us and couldn't find it either. It was in the tub overflow. You take the overflow plate off and clear the line from there. Meanwhile the drain pan under the air handler fills up, and when the emergency line that should carry that overflow out through the roof is clogged too, the pan runs over and the water comes through the ceiling into the room below. We've had those calls as well.</p>
+<p>A sink filling on its own is an emergency with us, because of those 20 gallons. If it's night, shut the AC off at the thermostat first. The water stops, and the sink can wait until the plumber is there.</p>
+<hr />
+<h3>H2: The Kitchen Line: 75 Feet of Chain, and Why We Don't Do It Any Other Way</h3>
+<p>The kitchen line is the dirtiest drain line in the house. Grease goes down it warm, cools inside the pipe and sticks to the wall, and over the years it hardens until it is like stone. Food and soap build on top of that. When a kitchen line clogs, the pipe isn't blocked at one point. It's narrowed along its whole length. The City of Plano keeps a page for residents on fats, oils and grease.</p>
+<p>If the kitchen sits on an outside wall, there is a wall cleanout for that line on the outside of the house, and that's where we work from. The chain snake goes in there and runs the full 75 feet, the whole line out to where it meets the main. The chain spins against the pipe wall and scrubs the grease off it. A cable only bores a hole through the grease; the rest stays on the wall. Where the chain can't be run, it's a cable machine with a big cutting head, and it does the same work on the grease. Either way it's the line, not a spot in it.</p>
+<p><em>[Под текстом рядом: видео 234, 5 секунд без звука: A clogged kitchen line: open the wall cleanout and the water runs back outside; видео 359, 5 секунд без звука: The chain snake going into the wall cleanout of a kitchen line, the full 75 feet, Plano]</em></p>
+<p>Where the kitchen has no wall cleanout, we go in from under the sink: the trap comes off and the chain runs into the line from there, the same 75 feet. Either way the last check is outside. The plumber walks to the outside cleanout of the main line and listens. When the chain has gone the whole way through the kitchen line, you hear it there, and until you hear it the job isn't done.</p>
+<p><em>[Рядом видео 360, 5 секунд без звука: No wall cleanout: the chain goes in from under the kitchen sink, Plano]</em></p>
+<p>We used to do it the other way. Five years ago somebody would call and say the kitchen is slow, I don't need the deep cleaning, I don't need the chain, I don't need 75 feet, just clear it here. We'd send a plumber with a 30 foot cable, he'd open a hole in the grease, and two weeks later the same person called: it's clogged again, you were just here. We went back, we cleared it again, and we stopped playing that game. A kitchen line gets the full 75 feet, every time, and we don't offer anything cheaper. It's the only way the call doesn't come back in two weeks.</p>
+<hr />
+<h3>H2: Tubs and Showers: the Stopper Comes Off, and the Chain Goes Through the Overflow</h3>
+<p>A tub is cleared from the top. The stopper comes out first, and whatever is wound around it comes off. Then the chain snake goes down through the overflow, the opening under the plate on the wall of the tub, because that's the straight way into the trap.</p>
+<p><strong>A tub in Plano, October 2026.</strong> A house from the 1980s with cast iron drains. The stopper came out clean, not one hair on it, and the tub still would not drain. We filled the tub and ran the chain through the overflow, and right at the trap it caught three times. You could hear it in the water: stuck, through, stuck, through, stuck, through, and the tub went down the way a tub should. Forty years of hair, soap and grease had grown into that trap, and only the chain takes that off the pipe.</p>
+<p><em>[Рядом видео 363, 5 секунд без звука: The chain goes in through the overflow, not the drain, Plano]</em></p>
+<p>A shower is the easier of the two. The code puts a shower on a 2 inch drain line and allows a tub 1 1/2, and the chain doesn't always make it through a 1 1/2 inch trap. In a shower you lift the strainer off the drain and the chain goes straight in. What comes out is hair, most of the time, and wet wipes.</p>
+<p><em>[Рядом фото 15: Clogged shower drain: we pulled out wet wipes, Plano]</em></p>
+<p>One thing we see after years of liquid drain cleaner. The chemical eats the hair and the slime and turns them into a sludge that never fully rinses out of the trap. The sludge stays. The drain runs a little better, and over a year or two of pouring more in, the sludge turns hard, like rough calcium. We've opened 2 inch shower lines where the opening left was smaller than a finger. That is not a clog anymore, it's a pipe closing up, and only the chain breaks it. As an emergency, once, a bottle might buy you a day. Over time it makes the line worse. That's our opinion, from what we pull out of the pipes.</p>
+<p><strong>The shower that came back after a remodel, Frisco.</strong> A homeowner had his shower rebuilt: new tile, a long narrow linear drain. About half a year later it stopped draining. The chain wouldn't go through that drain, we took it for a 1 1/2 inch trap, and a cable went through and brought back some hair, and the shower drained. The plumber wrote in his notes that something wasn't right. The shower worked, and the homeowner said leave it. Six months later the same call, and a fair question: why so soon after you cleared it. This time we went below. The bathroom sits over the garage, so we marked where the drain runs on the garage ceiling, opened the drywall, found the 2 inch P-trap and cut it out. Inside it was a big piece of shower pan liner, the sheet that goes under the tile, left there by the crew that did the remodel. Water had been squeezing past it, and every hair that came down caught on it until the trap closed. New trap. We posted the video of that trap on our YouTube channel.</p>
+<p><em>[Рядом видео 364, 5 секунд без звука: The trap out of the garage ceiling, and the piece of shower pan liner that was inside it, Frisco]</em></p>
+<hr />
+<h3>H2: Bathroom Sinks, and the Double Vanity With No Cleanout</h3>
+<p>A bathroom sink without the AC in it clogs the slow way: hair, soap, the stuff that goes down with a face wash. The pop-up stopper catches the first of it, the trap catches the rest, and the chain clears it.</p>
+<p>A double vanity is a harder job than it looks. Two sinks come down into one fitting, a double sanitary tee, and from there one line goes down into the wall. There should be a cleanout right there. In nine double vanities out of ten there isn't. So when the line past the tee clogs, the snake you feed in under one sink comes out in the other sink. The gap at the tee, or just below it, sends the cable sideways instead of down, and you can run it back and forth between two sinks all afternoon. Sometimes a camera finds the angle and the cable goes in. Sometimes the only way is to open the drywall at the back of the cabinet and put in the cleanout that should have been there, and that's what we did in one Plano house: the line got cleared through the new cleanout, and the next time it clogs it's a short job, because the way in is there.</p>
+<hr />
+<h3>H2: Toilets: the Six Foot Auger, and When the Toilet Comes Off</h3>
+<p>A toilet clog is usually a local clog, and it clears with a six foot auger from the bowl. <strong>An Airbnb in Frisco, October 2026.</strong> A night call from the person who rents the house out: the guests said the toilet won't flush. It was packed solid: wet wipes, the kind the package calls flushable, on top of too much toilet paper. The six foot auger went in, the clog broke, the toilet flushed. Flushable on the box is not flushable in a pipe.</p>
+<p><em>[Под текстом рядом: фото 349: The Airbnb toilet before: packed solid, Frisco; видео 362, 5 секунд без звука: The six foot auger does its work, and the toilet flushes again, Frisco]</em></p>
+<p>When the outside cleanout is clear and the auger goes through the toilet and the line still doesn't open, the clog is in the branch line under the floor, and the only way to it is through the toilet with the toilet off. In a lot of the older Plano houses there is no outside cleanout at all, and no wall cleanouts, so the main line gets cleared the same way. There are two ways into a line like that. One is the vent pipe on the roof, and we don't do that: carrying a 75 foot drain machine up a ladder onto a roof is a good way to get a plumber hurt. The other is through the toilet.</p>
+<p>Pulling a toilet is its own job. The water has to be off first, and the small shut-off valve behind a toilet in a house that age often won't close, or starts to leak the moment it's turned, so the main shut-off valve gets closed instead; our guide shows where it is. Then what's under the toilet. In the older houses the flange is rusted away in about eight cases out of ten, and a toilet that rocked before we came usually had a wax ring that leaked for years, with what grows under a toilet after years of that. The chain snake goes down through the flange, the camera follows it, and the toilet goes back on a new flange with a new wax ring. The flange and the wax ring are toilet repair. One of those jobs, with the cable going into the vent twenty times before it found the drain, is told on our plumber in Plano page.</p>
+<p><em>[Рядом видео 355, 5 секунд без звука: The toilet off: the flange rusted through, the bolt slots gone, Plano]</em></p>
+<hr />
+<h3>H2: The Washing Machine Standpipe and the Dishwasher Line</h3>
+<p>The washer drains into a standpipe in the wall, and the trap at the bottom of it collects what the washer sends: lint, hair, threads, the dirt out of the clothes. The line slows for a while, and then one day it stops. You start a load, leave the house, and the water comes back up the standpipe and out of the outlet box in the wall. Not the most common call, but a regular one. The standpipe trap gets cleared like any other trap.</p>
+<p>The dishwasher is a different story, and it's about how it was connected. The right way is a drain hose to an air gap on the countertop, and from the air gap to the garbage disposal. When the line from the air gap to the disposal clogs, the water comes out at the air gap, and the cap on it sends most of it into the sink. That's a small job: the short line from the air gap to the disposal comes off and gets cleared. The second way, without an air gap, is a high loop: the drain hose runs up as high as it goes under the counter before it drops to the disposal, so dirty sink water can't run back into the dishwasher. The third way we see a lot, and it's the worst: the hose straight into the disposal, no air gap, no loop. Every time the disposal backs up a little, the dirty water goes back into the dishwasher. In all three the clog sits at the connection to the disposal. A disposal that hums or leaks under the sink is garbage disposal repair.</p>
+<hr />
+<h3>H2: Newer Houses and Older Houses: PVC, Slope and Cast Iron</h3>
+<p>A newer house with PVC drain lines is the easy case. The pipe is smooth, the fall the plumber set is still there, and there isn't much on the walls yet. Those lines clog because of what went down them, and they clear and stay clear. As the house ages, even PVC changes. The ground under the slab moves, the foundation settles, an inch here and two there, nothing you see in the walls, and a drain line that was set with a fall toward the main loses it. Water that used to run now crawls, and what's in it settles and builds. That's how a line in a house with no visible problem starts clogging again and again.</p>
+<p>Cast iron is the hard case. In the Plano houses from the 70s and 80s the drains under the floor are cast iron, 30 to 50 years old, rusted and scaled inside, pinched where it shifted, cracked in places. Every rough spot catches what goes by. Toilet paper is made to fall apart in water. Wet wipes are not, and in a cast iron line the rust and the sharp turns catch them and start the next stoppage.</p>
+<hr />
+<h3>H2: Emergency Drain Cleaning: What to Shut Off Before We Get There</h3>
+<p>Emergency drain cleaning at night is for water coming into the house: sewage standing in the tub, a sink the AC is filling, a washer standpipe pouring out of the wall. On the call you hear what to shut off. If it's the AC line, shut the AC off at the thermostat, and the water stops. If it's the main line, stop every drain in the house, the washer and the dishwasher first, and if you can find the outside cleanout, take the cap off. A slow kitchen sink or a tub that takes its time waits for a weekday, and we say so on the phone. Evenings and weekends carry an emergency fee that goes with the hour, and it's said before a truck moves. The rest of how a night call goes is on the emergency plumbing page.</p>
+<hr />
+<h3>H2: What Drain Cleaning Costs in Frisco and Plano, and How the Call Goes</h3>
+<p>On a weekday the service call is $49, and it goes toward the work. The plumber looks at which drains are backing up, decides which line it is and where to go in, and gives you one flat price for clearing that line. Nothing starts until you say yes, and the invoice carries that number, not a bigger one. No free estimates: finding which line it is, is the work. On a main line the camera is in that price, and you see the screen with us.</p>
+<p>When the camera shows a pipe that is broken, the clearing is still the clearing. The repair is quoted on its own, with the footage in your hands, for a day you choose.</p>
+<p>Payment comes after the work: Zelle, a check, cash, a card, Apple Pay, PayPal or Venmo. Zelle, a check and cash cost you nothing extra. A card carries a processing fee, and the amount is said before you pay. For a bigger repair there is PayPal Pay Later or Klarna, and the terms are theirs.</p>
+<hr />
+<h3>H2: Drain Cleaning Frisco and Plano: the Cities and the Offices</h3>
+<p>Two offices send the trucks: Westridge Blvd in Frisco and Tennyson Pkwy in Plano. Out of Frisco go a plumber in Frisco, a plumber in McKinney, a plumber in Celina and a plumber in Prosper. Out of Plano, a plumber in Plano. On the Denton County side it's a plumber in The Colony or a plumber in Little Elm, and farther south a plumber in Lewisville or a plumber in Carrollton. A plumber in Allen comes from whichever office is closer that day. The two main lines, the tub and the double vanity in this text were Plano jobs; the shower remodel and the Airbnb toilet were Frisco.</p>
+<p><em>[Рядом фото 96: Milwaukee chain snake clearing the main line through an outside cleanout, Frisco]</em></p>
+<hr />
+<h3>H2: Drain Cleaning FAQ</h3>
+<p><strong>Why is my bathroom sink filling up when nobody is using it?</strong> The air conditioner is draining into that sink line, and the line is clogged. The AC makes up to about 20 gallons of water a day in summer, and when the sink line can't take it, the water comes up in the sink and over the counter. Shut the AC off at the thermostat and the water stops. Then the line gets cleared with the chain snake. In the older houses that line sometimes runs into the tub overflow instead of the sink, and the overflow is where it gets cleared.</p>
+<p><strong>The toilet downstairs comes up when we shower upstairs. Which one is clogged?</strong> Neither. The main line is blocked, and everything from upstairs is coming out at the lowest open drain in the house. Stop using water everywhere, the washer and the dishwasher too, and take the cap off the outside cleanout if you can find it, so the standing water runs out onto the ground. We clear the main line through that cleanout with the chain snake, and the camera goes in to show why it clogged.</p>
+<p><strong>Do you put a camera in the line when you clear a clogged drain?</strong> On every main line and on every branch line we open through a toilet, yes, and it's part of the clearing, not an extra. A bathroom sink line is often too narrow for the camera. On a main line the camera is the whole point: roots at a joint, a coupling that came apart, a settled section, or nothing wrong at all. You see the screen with the plumber.</p>
+<p><strong>Does liquid drain cleaner fix a slow shower?</strong> Once, maybe. The chemical eats the hair and leaves a sludge in the trap that doesn't rinse out, and over a year or two of pouring more in, that sludge hardens like calcium. We've opened 2 inch shower lines closed down to an opening smaller than a finger after years of it. The chain snake breaks that out. A bottle doesn't.</p>
+<p><strong>My kitchen sink was snaked two weeks ago, and it's clogged again. Why?</strong> A short cable opened a hole through the grease, and the grease on the pipe wall closed it back up. A kitchen line is narrowed along its whole length, not blocked at one spot. We run the chain snake the full 75 feet from the wall cleanout and scrub the wall of the pipe, and we don't do a kitchen line any other way.</p>
+<p><strong>Do you clear drains at night?</strong> When water is coming into the house, yes: sewage standing in the tub, a sink the AC is filling, a washer standpipe running over. Evenings and weekends carry an emergency fee that goes with the hour, said on the call before anybody drives. A slow kitchen sink or a slow tub waits for a weekday, and we tell you that on the call, so you don't pay a night fee for a day job.</p>
+<p><strong>How much does drain cleaning cost in Frisco or Plano?</strong> On a weekday it's the $49 service call, and the $49 goes toward the work. The plumber tells you which line it is and gives you one flat price for clearing it before anything starts, and that price is the price on the invoice. A main line clearing has the camera in it. If the camera finds a broken pipe, the repair is a separate price, quoted with the footage in front of you.</p>
+<hr />
+<h3>H2: What People Wrote After a Drain Call</h3>
+<p>Four reviews, word for word, with the link to the source under each.</p>
+<blockquote>
+<p>Came over quickly and cleared a blockage, found a cracked pipe. He came over a couple of days later and repaired the crack quickly. Highly recommend, friendly and easy to work with.</p>
+<p>Angelo Toborg, ★★★★★ · Local Guide Level 4 · July 2026 · Google. <a href="https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25ScmJXZG9TblpRY1RWdWNrbGpaRWw1VVhFeGEwRRAB!2m1!1s0x0:0xccc66184bdaf3a93" target="_blank" rel="noopener">Отзыв на Google</a></p>
+<p>Easy setting appointment. No issue communicating with technician. Pleasant to work with. Fixed plumbing concern and went extra mile to help my mother in law when he found out a potential problem with her hvac connected with plumbing. Gave clear instructions what to monitor after his work in case problem arises. Fair price. Will ise their service again if needed.</p>
+<p>R I., ★★★★★ · Yelp · April 2026. <a href="https://www.yelp.com/biz/fpp-plumbing-plano-2" target="_blank" rel="noopener">Отзыв на Yelp</a></p>
+<p>Came out late at night and fixed our sink!</p>
+<p>Thomas S., ★★★★★ · Thumbtack · February 2023. <a href="https://www.thumbtack.com/tx/plano/handyman/fpp-plumbing/service/454195206250143760" target="_blank" rel="noopener">Отзыв на Thumbtack</a></p>
+<p>Outstanding job at troubleshooting why the dishwasher would not drain. He was very efficient and quick and was able to get parts and install the same day. Highly recommend.</p>
+<p>Laura B., ★★★★★ · Thumbtack · July 2023. <a href="https://www.thumbtack.com/tx/plano/handyman/fpp-plumbing/service/454195206250143760" target="_blank" rel="noopener">Отзыв на Thumbtack</a></p>
+</blockquote>
+<hr />
+<p>If water is coming up in the tub or the sink is filling by itself, shut off what you can and call whichever office is closer: the Frisco and the Plano lines at the top are both answered at any hour. If the sink is only slow, send the Request Service form and we'll set a weekday time. Either way you hear the price before a machine comes off the truck.</p>
+<h2>Ссылки в тексте</h2>
+<table>
+<thead>
+<tr>
+<th>Слова в тексте</th>
+<th>Куда ведет</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber near me</td>
+<td>/</td>
+</tr>
+<tr>
+<td>sewer line repair</td>
+<td>/drain-services/</td>
+</tr>
+<tr>
+<td>our guide</td>
+<td>/plumbing-guide/how-to-shut-off-main-water-valve-texas/</td>
+</tr>
+<tr>
+<td>toilet repair</td>
+<td>/toilet-repair-frisco-plano/</td>
+</tr>
+<tr>
+<td>plumber in Plano</td>
+<td>/plumber-plano-tx/</td>
+</tr>
+<tr>
+<td>garbage disposal repair</td>
+<td>/garbage-disposal-repair-frisco-plano/</td>
+</tr>
+<tr>
+<td>emergency plumbing page</td>
+<td>/emergency-plumbing-services/</td>
+</tr>
+<tr>
+<td>plumber in Frisco</td>
+<td>/plumber-frisco-tx/</td>
+</tr>
+<tr>
+<td>plumber in McKinney</td>
+<td>/plumber-mckinney-tx/</td>
+</tr>
+<tr>
+<td>plumber in Celina</td>
+<td>/plumber-celina-tx/</td>
+</tr>
+<tr>
+<td>plumber in Prosper</td>
+<td>/plumber-prosper-tx/</td>
+</tr>
+<tr>
+<td>plumber in Plano</td>
+<td>/plumber-plano-tx/</td>
+</tr>
+<tr>
+<td>plumber in The Colony</td>
+<td>/plumber-the-colony-tx/</td>
+</tr>
+<tr>
+<td>plumber in Little Elm</td>
+<td>/plumber-little-elm-tx/</td>
+</tr>
+<tr>
+<td>plumber in Lewisville</td>
+<td>/plumber-lewisville-tx/</td>
+</tr>
+<tr>
+<td>plumber in Carrollton</td>
+<td>/plumber-carrollton-tx/</td>
+</tr>
+<tr>
+<td>plumber in Allen</td>
+<td>/plumber-allen-tx/</td>
+</tr>
+<tr>
+<td>Request Service form</td>
+<td>форма заявки</td>
+</tr>
+<tr>
+<td>the video of that trap</td>
+<td>https://www.youtube.com/shorts/qxoCyjUERxo</td>
+</tr>
+<tr>
+<td>sewer line repair</td>
+<td>/drain-services/</td>
+</tr>
+<tr>
+<td>page for residents on fats, oils and grease</td>
+<td>https://www.plano.gov/fog</td>
+</tr>
+</tbody>
+</table>
+<h2>Search Console: запросы страницы против текста версии 4</h2>
+<p>Выгрузки <code>source/gsc/page-query-3m.csv</code> и <code>page-query-16m.csv</code> те же, что для версий 2 и 3, обновлены через API 23 октября 2026 (3 месяца это 24 июля до 21 октября 2026, 16 месяцев это 23 июня 2025 до 21 октября 2026). Таблица ниже построена по тексту версии 4 (<code>python3 tools/gsc_page_table.py /clogged-drain-cleaning-frisco-plano/ "frisco plano" exports/drain-cleaning-v4-gsc-table.md</code>).</p>
+<p>Итог: 123 запроса за 16 месяцев, 11,124 показа с известным запросом, 0 кликов. Полностью покрыты 90 запросов на 10,887 показов, это 97.9 процента показов; частично 23 запроса на 210 показов; другой город 9 запросов на 26 показов; не покрыт 1 запрос на 1 показ (site:fppplumbing.com). Против версий 2 и 3 ничего не изменилось. Фразы «clogged drain plumber», «drain clearing», «blocked drain», «drain cleaning service(s)» и «drain cleaning company» по-прежнему не стоят целиком (файл текста: добавляются только по слову Дениса, предложениями).</p>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Страница Frisco Plano, 3 мес</th>
+<th>Страница Frisco Plano, 16 мес</th>
+<th>Главная, 3 мес</th>
+<th>Главная, 16 мес</th>
+<th>В новом тексте</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>drain cleaning frisco</td>
+<td>448 · 22.3 · 0</td>
+<td>2,247 · 42.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>frisco drain cleaning</td>
+<td>337 · 23.2 · 0</td>
+<td>1,552 · 39.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning plano</td>
+<td>1 · 37.0 · 0</td>
+<td>1,401 · 67.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plano drain cleaning</td>
+<td></td>
+<td>1,126 · 73.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drains frisco</td>
+<td>12 · 21.8 · 0</td>
+<td>745 · 15.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain plano</td>
+<td>88 · 24.4 · 0</td>
+<td>531 · 25.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drains plano</td>
+<td>23 · 30.6 · 0</td>
+<td>414 · 39.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>blocked drain cleaning frisco</td>
+<td>43 · 19.4 · 0</td>
+<td>299 · 18.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning</td>
+<td>3 · 20.7 · 0</td>
+<td>209 · 25.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning frisco tx</td>
+<td>120 · 33.5 · 0</td>
+<td>183 · 52.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>frisco tx drain cleaning</td>
+<td>101 · 39.0 · 0</td>
+<td>161 · 56.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain frisco tx</td>
+<td>38 · 32.5 · 0</td>
+<td>159 · 64.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain near me</td>
+<td>23 · 11.7 · 0</td>
+<td>145 · 14.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain clog plano</td>
+<td></td>
+<td>144 · 29.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer cleaning frisco</td>
+<td></td>
+<td>107 · 52.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer drain cleaning in plano</td>
+<td></td>
+<td>105 · 66.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain frisco</td>
+<td>26 · 18.6 · 0</td>
+<td>92 · 15.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>blocked toilet frisco</td>
+<td></td>
+<td>83 · 22.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber frisco</td>
+<td>69 · 11.0 · 0</td>
+<td>69 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>cast iron pipe replacement frisco</td>
+<td></td>
+<td>66 · 31.9 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: replacement)</td>
+</tr>
+<tr>
+<td>clogged drain service near me</td>
+<td>9 · 11.7 · 0</td>
+<td>65 · 22.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning in plano</td>
+<td></td>
+<td>64 · 73.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer line clean out plano</td>
+<td></td>
+<td>58 · 82.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged toilet plano</td>
+<td>8 · 23.2 · 0</td>
+<td>52 · 23.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency drain cleaning frisco</td>
+<td>11 · 10.8 · 0</td>
+<td>51 · 26.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer drain cleaning plano</td>
+<td></td>
+<td>49 · 74.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain plumber near me</td>
+<td>45 · 20.7 · 0</td>
+<td>48 · 21.1 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain cleaning plano</td>
+<td></td>
+<td>45 · 53.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>cast iron drain pipe repair frisco</td>
+<td></td>
+<td>40 · 34.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer line clean out in plano</td>
+<td></td>
+<td>40 · 80.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain service</td>
+<td></td>
+<td>38 · 14.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>frisco sewer line backup</td>
+<td></td>
+<td>36 · 19.8 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: backup)</td>
+</tr>
+<tr>
+<td>plano sewer drain cleaning</td>
+<td></td>
+<td>35 · 81.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain plano tx</td>
+<td>26 · 34.6 · 0</td>
+<td>34 · 43.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>cast iron pipe repair frisco</td>
+<td></td>
+<td>31 · 33.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>hydro jetting frisco</td>
+<td></td>
+<td>29 · 49.7 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: hydro, jetting)</td>
+</tr>
+<tr>
+<td>drain clearing frisco tx</td>
+<td>28 · 25.6 · 0</td>
+<td>28 · 25.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain service plano</td>
+<td></td>
+<td>28 · 88.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer line cleanout plano</td>
+<td></td>
+<td>28 · 96.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plano sewer line clean out</td>
+<td></td>
+<td>25 · 91.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning near me</td>
+<td></td>
+<td>23 · 21.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain clearing plano</td>
+<td></td>
+<td>23 · 59.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain clearing frisco</td>
+<td></td>
+<td>22 · 47.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber frisco tx</td>
+<td>21 · 11.0 · 0</td>
+<td>21 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>10 · 2.1 · 0</td>
+<td>18 · 2.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pipe breaks frisco</td>
+<td></td>
+<td>17 · 69.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain clearing</td>
+<td></td>
+<td>16 · 25.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>main sewer line replacement frisco</td>
+<td></td>
+<td>14 · 59.1 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: replacement)</td>
+</tr>
+<tr>
+<td>plano sewer line cleanout</td>
+<td></td>
+<td>14 · 95.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>24 hour plumber near me</td>
+<td>13 · 10.8 · 0</td>
+<td>13 · 10.8 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: 24)</td>
+</tr>
+<tr>
+<td>drain cleaning service plano</td>
+<td></td>
+<td>13 · 79.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain service frisco</td>
+<td></td>
+<td>13 · 58.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>frisco sewer cleaning</td>
+<td></td>
+<td>13 · 48.6 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>slow drain repair plano tx</td>
+<td></td>
+<td>12 · 93.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain the colony tx</td>
+<td></td>
+<td>10 · 93.2 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (the colony)</td>
+</tr>
+<tr>
+<td>drain cleaning services frisco</td>
+<td></td>
+<td>10 · 64.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>frisco drain repair</td>
+<td></td>
+<td>10 · 61.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer and drain services in plano</td>
+<td></td>
+<td>10 · 46.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer cleaning in plano</td>
+<td></td>
+<td>10 · 78.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning silverthorne</td>
+<td></td>
+<td>9 · 30.8 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: silverthorne)</td>
+</tr>
+<tr>
+<td>plano drain inspection</td>
+<td></td>
+<td>8 · 77.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>toilet frisco</td>
+<td></td>
+<td>8 · 88.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>bathtub drain clogged near me</td>
+<td>3 · 18.0 · 0</td>
+<td>7 · 19.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning frisco, tx</td>
+<td></td>
+<td>7 · 93.4 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>hydrojetting plano</td>
+<td></td>
+<td>7 · 62.4 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: hydrojetting)</td>
+</tr>
+<tr>
+<td>pipe breaks plano</td>
+<td></td>
+<td>6 · 89.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>24 hour plumbing plano</td>
+<td>5 · 11.2 · 0</td>
+<td>5 · 11.2 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: 24)</td>
+</tr>
+<tr>
+<td>clogged drain removal lily lake</td>
+<td></td>
+<td>5 · 71.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: removal, lily, lake)</td>
+</tr>
+<tr>
+<td>drain cleaning services plano</td>
+<td></td>
+<td>5 · 85.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumbing plano</td>
+<td>5 · 11.8 · 0</td>
+<td>5 · 11.8 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>frisco emergency plumber</td>
+<td>5 · 11.0 · 0</td>
+<td>5 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer line replacement frisco</td>
+<td></td>
+<td>5 · 81.6 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: replacement)</td>
+</tr>
+<tr>
+<td>the colony drain cleaning</td>
+<td></td>
+<td>5 · 69.6 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (the colony)</td>
+</tr>
+<tr>
+<td>clogged drains mckinney</td>
+<td></td>
+<td>4 · 87.2 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (mckinney)</td>
+</tr>
+<tr>
+<td>clogged sink drain near me</td>
+<td></td>
+<td>4 · 8.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning service frisco</td>
+<td></td>
+<td>4 · 54.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning services in plano</td>
+<td></td>
+<td>4 · 88.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>emergency plumber near me</td>
+<td>4 · 11.5 · 0</td>
+<td>4 · 11.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer replacement frisco</td>
+<td></td>
+<td>4 · 74.5 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: replacement)</td>
+</tr>
+<tr>
+<td>clogged drain plumber</td>
+<td></td>
+<td>3 · 15.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged drain repair plano tx</td>
+<td></td>
+<td>3 · 78.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged toilet services plano tx</td>
+<td></td>
+<td>3 · 92.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plano shower repair</td>
+<td></td>
+<td>3 · 68.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer clean out in plano</td>
+<td></td>
+<td>3 · 68.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer clean out plano</td>
+<td></td>
+<td>3 · 98.7 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>unclog sewer line plano tx</td>
+<td></td>
+<td>3 · 77.7 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: unclog)</td>
+</tr>
+<tr>
+<td>clogged drain cleaning mckinney</td>
+<td></td>
+<td>2 · 49.5 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (mckinney)</td>
+</tr>
+<tr>
+<td>clogged toilet solutions plano tx</td>
+<td></td>
+<td>2 · 78.5 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: solutions)</td>
+</tr>
+<tr>
+<td>emergency plumber plano</td>
+<td>2 · 11.5 · 0</td>
+<td>2 · 11.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>main drain cleaning near me</td>
+<td>1 · 23.0 · 0</td>
+<td>2 · 16.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber clear drain</td>
+<td>2 · 10.0 · 0</td>
+<td>2 · 10.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber unclog sink</td>
+<td></td>
+<td>2 · 8.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: unclog)</td>
+</tr>
+<tr>
+<td>plumbing drain cleaning</td>
+<td></td>
+<td>2 · 23.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer and drain services plano</td>
+<td></td>
+<td>2 · 58.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer cleaning plano</td>
+<td></td>
+<td>2 · 82.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>sewer line repair frisco</td>
+<td></td>
+<td>2 · 76.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>unclog toilet plano tx</td>
+<td></td>
+<td>2 · 85.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: unclog)</td>
+</tr>
+<tr>
+<td>blocked drains chifley</td>
+<td>1 · 6.0 · 0</td>
+<td>1 · 6.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: chifley)</td>
+</tr>
+<tr>
+<td>cast iron drain pipe repair mckinney</td>
+<td></td>
+<td>1 · 68.0 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (mckinney)</td>
+</tr>
+<tr>
+<td>clogged drain addison</td>
+<td>1 · 15.0 · 0</td>
+<td>1 · 15.0 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (addison)</td>
+</tr>
+<tr>
+<td>clogged drain cleaning service near me</td>
+<td></td>
+<td>1 · 30.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>clogged toilet cost plano tx</td>
+<td></td>
+<td>1 · 91.0 · 0</td>
+<td></td>
+<td></td>
+<td>да: оценочное слово в текст не ставим: cost</td>
+</tr>
+<tr>
+<td>clogged toilet near plano tx</td>
+<td></td>
+<td>1 · 96.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain and sewer cleaning plano tx</td>
+<td></td>
+<td>1 · 63.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning company frisco</td>
+<td>1 · 34.0 · 0</td>
+<td>1 · 34.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain cleaning near plano tx</td>
+<td></td>
+<td>1 · 70.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain clearing plano tx</td>
+<td>1 · 40.0 · 0</td>
+<td>1 · 40.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>drain repair the colony</td>
+<td></td>
+<td>1 · 74.0 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (the colony)</td>
+</tr>
+<tr>
+<td>drain service the colony</td>
+<td></td>
+<td>1 · 74.0 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (the colony)</td>
+</tr>
+<tr>
+<td>drain unclogging near me</td>
+<td>1 · 13.0 · 0</td>
+<td>1 · 13.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: unclogging)</td>
+</tr>
+<tr>
+<td>fastest response for emergency drain cleaning.</td>
+<td>1 · 7.0 · 0</td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: fastest, response)</td>
+</tr>
+<tr>
+<td>flush plumbing</td>
+<td></td>
+<td>1 · 4.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>frisco tx emergency plumber</td>
+<td>1 · 11.0 · 0</td>
+<td>1 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>hydro jetting little elm</td>
+<td></td>
+<td>1 · 89.0 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (little elm)</td>
+</tr>
+<tr>
+<td>plano hydro jetting</td>
+<td></td>
+<td>1 · 73.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: hydro, jetting)</td>
+</tr>
+<tr>
+<td>plumber for clogged drain</td>
+<td>1 · 12.0 · 0</td>
+<td>1 · 12.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>plumber for drain clog</td>
+<td>1 · 11.0 · 0</td>
+<td>1 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>same day drain unblocking</td>
+<td>1 · 5.0 · 0</td>
+<td>1 · 5.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: unblocking)</td>
+</tr>
+<tr>
+<td>sewer leaks repair frisco</td>
+<td></td>
+<td>1 · 94.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>site:fppplumbing.com</td>
+<td>1 · 27.0 · 0</td>
+<td>1 · 27.0 · 0</td>
+<td></td>
+<td></td>
+<td>нет (нет слов: site, fppplumbing, com)</td>
+</tr>
+<tr>
+<td>unclog drain near me</td>
+<td>1 · 7.0 · 0</td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: unclog)</td>
+</tr>
+<tr>
+<td>unclog toilet service near plano tx</td>
+<td></td>
+<td>1 · 70.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: unclog)</td>
+</tr>
+<tr>
+<td>who offers emergency plumbing services in frisco after hours?</td>
+<td>1 · 11.0 · 0</td>
+<td>1 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: offers)</td>
+</tr>
+</tbody>
+</table></main></body></html>
