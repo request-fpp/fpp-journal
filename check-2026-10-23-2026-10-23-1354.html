@@ -1,0 +1,490 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 23.10.2026 13:54</p><h1>Проверка и хвосты после переезда, 23 октября 2026</h1>
+<p>По блоку чата от 23 октября 2026. Всё проверено и исправлено локально, в ветке main (коммит 490c504). Живая выкладка одна, в конце: система безопасности Claude Code её не пропустила, нужна кнопка Run у Дениса (команда в части 3). Страница для следующего города: <a href="celina-addendum">celina-addendum</a>. Звонки по дням: <a href="calls-report">calls-report</a>.</p>
+<p>Коротко. Четыре пункта блока подтвердились и правки не потребовали (живые версии, sitemap, HSTS и www, robots.txt), три внешние ссылки живы и оставлены, Request indexing не нужен. Исправлено два пункта: хвост «?v=» у клипов и постеров снят, семь страниц с одной входящей ссылкой получили вторую через блок карточек «Read more». Search Console показывает потерю «plumber near me» у главной с 8 октября, три гайда к 21 октября не вернулись.</p>
+<h2>1. Что подтвердилось, ничего не менял</h2>
+<table>
+<thead>
+<tr>
+<th>Пункт блока</th>
+<th>Что проверил</th>
+<th>Итог</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Живые версии</td>
+<td>title, H1, дата в байлайне и формулировки живых страниц против source/<em>-text-v</em>.md и tools/export_page_text.py</td>
+<td>McKinney версия 5 (updated 16.10), Allen версия 5 (updated 16.10), Prosper версия 5 (updated 17.10) с title «Plumber Prosper, TX: Water Heater, PRV &amp; 24/7 Emergency Plumber». В блоке написано «Allen v4»: это описка. Закрыта и выложена 16 октября в 21:20 была версия 5, и на живой странице стоят именно её формулировки («set to 70, or lower when the homeowner asks», «goes in with a valve box»; в версии 4 было «set to about 70» и «at the surface»).</td>
+</tr>
+<tr>
+<td>5. Sitemap</td>
+<td>живой sitemap.xml</td>
+<td>lastmod уже стоят датами закрытия: /plumber-mckinney-tx/ 2026-10-16, /plumber-allen-tx/ 2026-10-16, /plumber-prosper-tx/ 2026-10-17. Генератор (site/src/pages/sitemap.xml.ts) берёт поле updated страницы, как у Plano и Frisco. Августа нет, чинить нечего.</td>
+</tr>
+<tr>
+<td>6. HSTS и www</td>
+<td>заголовки четырёх адресов</td>
+<td>https://fppplumbing.com/ отвечает 200 со Strict-Transport-Security: max-age=31536000. https://www.fppplumbing.com/ отвечает одним 301 на https://fppplumbing.com/. http://fppplumbing.com/ и http://www.fppplumbing.com/ тоже отвечают одним 301 на https://fppplumbing.com/. Ничего не правил.</td>
+</tr>
+<tr>
+<td>7. robots.txt</td>
+<td>файл в репозитории и живой robots.txt</td>
+<td>В site/public/ файла robots.txt нет: его собирает site/src/pages/robots.txt.ts, и строка «Content-Signal: search=yes, ai-input=yes, ai-train=yes» стоит в нём, по блоку чата от 6 октября (04:45). Живой robots.txt побайтно равен собранному: Cloudflare ничего не дописывает. Так что выключается строка у нас, одной строкой в robots.txt.ts, а не в Cloudflare. У Cloudflare своя настройка (managed robots.txt с Content Signals, в кабинете зоны Security, Settings), у нас она не включена и к этой строке отношения не имеет. Ничего не менял.</td>
+</tr>
+<tr>
+<td>3. Три внешние ссылки</td>
+<td>открыл с браузерным User-Agent, с обычным curl и с User-Agent Semrush</td>
+<td>Все три живы. fluidmaster.com/toilet/part-type/flush-valves/ и .../toilet-fill-valves/ отдают браузеру 200 и нужные страницы (заголовки «Toilet Flush Valve» и «Toilet Fill Valve»), но любому скрипту и боту, SemrushBot в том числе, отдают 429 (слишком много запросов): поэтому Semrush и дальше будет считать их битыми. viega.us ProPress отдаёт 200 всем, в том числе боту Semrush. Ссылки оставлены как есть, открываются в новой вкладке.</td>
+</tr>
+<tr>
+<td>8c. URL Inspection</td>
+<td>API Search Console, только чтение</td>
+<td>Все четыре страницы в индексе, канонический адрес свой, последний обход позже закрытия (таблица в части 4в). Request indexing не нужен.</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Что исправлено локально (коммит 490c504)</h2>
+<h3>Хвост «?v=» у клипов и постеров</h3>
+<ul>
+<li>Что было: на живых страницах Plano, Frisco, McKinney, Allen, Prosper, emergency и главной адреса клипов и постеров в разметке (source src, poster, data-poster, preload постера первого экрана) несли хвост «?v=», а contentUrl и thumbnailUrl в узлах VideoObject стояли без него: два адреса у одного файла.</li>
+<li>Что сделано: tools/stamp_assets.py больше не штампует /video/. Фото в /img/ и файлы /assets/ по-прежнему со штампом (в сборке 337 адресов фото с «?v=», адресов /video/ с «?v=» 0). Теперь разметка, preload и схема несут один адрес без параметров.</li>
+<li>Кеш не трогал: site/public/_headers без изменений, /video/* по-прежнему 30 дней.</li>
+<li>Следствие, записано в CLAUDE.md: клип, перерезанный под старым именем, до месяца оставался бы старым в кеше, поэтому изменённый клип получает новое имя файла.</li>
+<li>Меняются восемь страниц: главная (постеры и файлы видео крана на первом экране), emergency, Frisco, Plano, McKinney, Allen, Prosper и slab leak (клип счётчика). На главной и slab leak блок адреса собирать не просил, но это те же клипы и постеры, правило одно.</li>
+<li>Валидатор schema.org по живой странице emergency: 0 ошибок, 0 предупреждений. Сама схема в этой выкладке не меняется, меняются только атрибуты разметки, так что после выкладки результат тот же.</li>
+</ul>
+<h3>Ссылки на семь страниц</h3>
+<p>Новый блок «Read more» под текстом страницы услуги, перед отзывами: site/src/components/MoreLinks.astro, список в site/src/lib/more.ts. Карточки те же, что на хабах блога и гайдов (картинка страницы, вид и дата, H1, описание), на телефоне во всю ширину, одна под другой. В тело текста ничего не добавлено, закрытые и замороженные тексты не тронуты.</p>
+<table>
+<thead>
+<tr>
+<th>Страница услуги</th>
+<th>Карточки под текстом</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/emergency-plumbing-services/</td>
+<td>/top-emergency-plumber-calls-frisco/</td>
+</tr>
+<tr>
+<td>/water-heaters/</td>
+<td>/plumbing-guide/water-heater-making-noise-tips-2026/</td>
+</tr>
+<tr>
+<td>/fixture-installation-repair/</td>
+<td>/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/, /blog/moen-shower-cartridge-replacement-blog/, /blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/</td>
+</tr>
+<tr>
+<td>/hose-bib-repair-frisco-plano/</td>
+<td>/blog/outside-spigot-replacement-plumber-in-frisco/</td>
+</tr>
+<tr>
+<td>/toilet-repair-frisco-plano/</td>
+<td>/blog/clogged-toilet-auger-fix-blog/</td>
+</tr>
+</tbody>
+</table>
+<p>Входящие ссылки после правки (из сборки, без ссылки страницы на себя):</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th style="text-align: right;">Страниц-источников</th>
+<th style="text-align: right;">Ссылок</th>
+<th>Откуда</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/top-emergency-plumber-calls-frisco/</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td>emergency: ссылка в тексте (была) и карточка</td>
+</tr>
+<tr>
+<td>/plumbing-guide/water-heater-making-noise-tips-2026/</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>хаб гайдов, water heaters</td>
+</tr>
+<tr>
+<td>/blog/shower-valve-bathtub-faucet-replacement-in-frisco-from-fpp-plumbing/</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>блог, fixture</td>
+</tr>
+<tr>
+<td>/blog/outside-spigot-replacement-plumber-in-frisco/</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>блог, hose bib</td>
+</tr>
+<tr>
+<td>/blog/moen-shower-cartridge-replacement-blog/</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>блог, fixture</td>
+</tr>
+<tr>
+<td>/blog/frisco-shower-valve-leak-turned-into-a-costly-lesson/</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>блог, fixture</td>
+</tr>
+<tr>
+<td>/blog/clogged-toilet-auger-fix-blog/</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>блог, toilet</td>
+</tr>
+</tbody>
+</table>
+<p>Две оговорки. У top-5 обе ссылки с одной страницы: текст emergency ссылался на неё и раньше, карточка добавила вторую ссылку. Если Semrush считает страницы-источники, а не ссылки, top-5 останется в его списке; вторую страницу-источник я не добавлял, потому что блок назначил для неё только emergency (кандидат на следующий раз: гайд про стоимость аварийного ремонта). И картинка карточки top-5 на закрытой странице emergency: это собственная картинка той страницы, техник у двери фургона, номера и крыла в кадре нет; если на emergency карточка должна быть без картинки, одно слово, уберу.</p>
+<h2>3. Выкладка</h2>
+<p>Собрано из main (64 страницы). Проверки: сайт целиком 34 из 34 (0 ошибок, 7 прежних предупреждений), вёрстка на шести ширинах чисто (главная, Frisco, Plano, emergency), сдвиг от шрифтов чисто, check_reviews 56 отзывов и 0 проблем, тире вне цитируемых отзывов 0, телефонов в тексте 0, схема 0 ошибок.</p>
+<p>Сверка 63 собранных страниц с живым сайтом (tools/compare_live.py): отличаются 12, все ожидаемые, остальные 51 совпадают. Sitemap и заголовки не меняются, они уже правильные.</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Что меняется</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/ , /emergency-plumbing-services/, /plumber-frisco-tx/, /plumber-plano-tx/, /plumber-mckinney-tx/, /plumber-allen-tx/, /plumber-prosper-tx/, /slab-leak-repair-frisco-plano-mckinney/</td>
+<td>адреса клипов и постеров без «?v=»</td>
+</tr>
+<tr>
+<td>/fixture-installation-repair/, /hose-bib-repair-frisco-plano/, /toilet-repair-frisco-plano/, /water-heaters/</td>
+<td>блок «Read more» под текстом (на emergency он тоже добавлен, вместе с адресами клипов)</td>
+</tr>
+</tbody>
+</table>
+<p>Система безопасности Claude Code команду выкладки не пропустила (как и в прошлые разы без прямого слова Дениса в этой сессии). Команда для кнопки Run; скрипт сам собирает сайт без noindex, прогоняет проверку, выкладывает в main и отправляет IndexNow по изменённым страницам:</p>
+<pre><code class="language-bash">zsh tools/deploy.sh live
+</code></pre>
+<p>После кнопки я проверяю живые страницы: клипы играют, постеры грузятся, адреса без «?v=», кеш-заголовки на /video/ на месте, валидатор по emergency и Plano.</p>
+<h2>4. Search Console, только чтение</h2>
+<p>Данные с 23 сентября по 21 октября 2026 (последний день, который есть в Search Console на 23 октября). Таблицы по запросам с фильтром США (кампания Semrush американская); гайды по всем странам, как таблицы страниц в проекте. Файлы: exports/gsc-daily-2026-10-23/, инструмент tools/gsc_daily.py.</p>
+<h3>а. «plumber near me» и запросы с frisco</h3>
+<p>«plumber near me» по неделям, показы / клики / средняя позиция:</p>
+<table>
+<thead>
+<tr>
+<th>Неделя</th>
+<th>Главная</th>
+<th>/plumber-frisco-tx/</th>
+<th>Остальные страницы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>23.09 до 29.09</td>
+<td>207 / 0 / 23.8</td>
+<td>83 / 0 / 10.2</td>
+<td>181 / 0 / 6.2</td>
+</tr>
+<tr>
+<td>30.09 до 06.10</td>
+<td>154 / 0 / 14.1</td>
+<td>63 / 0 / 10.1</td>
+<td>269 / 0 / 4.9</td>
+</tr>
+<tr>
+<td>07.10 до 13.10</td>
+<td>14 / 0 / 13.8</td>
+<td>156 / 0 / 4.6</td>
+<td>285 / 0 / 3.6</td>
+</tr>
+<tr>
+<td>14.10 до 21.10</td>
+<td>20 / 0 / 63.3</td>
+<td>51 / 0 / 5.3</td>
+<td>493 / 0 / 7.3</td>
+</tr>
+</tbody>
+</table>
+<p>По дням у главной: 15 до 58 показов в день до 7 октября (7 октября 8), с 8 октября 0 до 5 показов в день, и одиночные показы на 8 до 144 месте. То есть в Search Console потеря видна с 8 октября, на три дня раньше даты Semrush (11 октября: Semrush снимает позиции не каждый день, и его кампания смотрит выдачу из Frisco, а GSC складывает всю страну). Страница Frisco по этому запросу, наоборот, прибавила: 156 показов на неделе 7 до 13 октября на 4.6 месте и 51 на последней неделе на 5.3. «Остальные страницы» это почти вся Plano: всплески 90 до 198 показов на 1 до 11 месте в отдельные дни (карты и профиль Google, у которого сайтом стоит страница Plano). Кликов по запросу 0 у всех страниц за весь период.</p>
+<p>Запросы с frisco по неделям, показы / клики / позиция:</p>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Неделя</th>
+<th>Главная</th>
+<th>/plumber-frisco-tx/</th>
+<th>Остальные</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber frisco</td>
+<td>23.09 до 29.09</td>
+<td>70 / 0 / 14.0</td>
+<td>30 / 0 / 29.1</td>
+<td>5 / 0 / 1.0</td>
+</tr>
+<tr>
+<td></td>
+<td>30.09 до 06.10</td>
+<td>49 / 1 / 14.5</td>
+<td>23 / 0 / 21.3</td>
+<td>10 / 0 / 1.0</td>
+</tr>
+<tr>
+<td></td>
+<td>07.10 до 13.10</td>
+<td>64 / 0 / 14.5</td>
+<td>615 / 0 / 2.2</td>
+<td>288 / 0 / 1.1</td>
+</tr>
+<tr>
+<td></td>
+<td>14.10 до 21.10</td>
+<td>75 / 0 / 14.4</td>
+<td>403 / 0 / 2.0</td>
+<td>112 / 0 / 1.1</td>
+</tr>
+<tr>
+<td>frisco plumber</td>
+<td>23.09 до 29.09</td>
+<td>53 / 0 / 12.8</td>
+<td>44 / 0 / 15.0</td>
+<td>28 / 0 / 1.0</td>
+</tr>
+<tr>
+<td></td>
+<td>30.09 до 06.10</td>
+<td>39 / 0 / 13.1</td>
+<td>41 / 0 / 15.7</td>
+<td>22 / 0 / 1.0</td>
+</tr>
+<tr>
+<td></td>
+<td>07.10 до 13.10</td>
+<td>30 / 0 / 12.4</td>
+<td>46 / 0 / 12.5</td>
+<td>20 / 0 / 1.5</td>
+</tr>
+<tr>
+<td></td>
+<td>14.10 до 21.10</td>
+<td>31 / 0 / 13.0</td>
+<td>38 / 0 / 7.6</td>
+<td>3 / 0 / 4.3</td>
+</tr>
+<tr>
+<td>plumber in frisco</td>
+<td>23.09 до 29.09</td>
+<td>40 / 0 / 14.6</td>
+<td>19 / 0 / 33.1</td>
+<td>4 / 0 / 5.8</td>
+</tr>
+<tr>
+<td></td>
+<td>30.09 до 06.10</td>
+<td>35 / 0 / 13.5</td>
+<td>16 / 0 / 34.7</td>
+<td>2 / 0 / 1.0</td>
+</tr>
+<tr>
+<td></td>
+<td>07.10 до 13.10</td>
+<td>23 / 0 / 14.3</td>
+<td>17 / 0 / 28.9</td>
+<td>4 / 0 / 1.0</td>
+</tr>
+<tr>
+<td></td>
+<td>14.10 до 21.10</td>
+<td>24 / 0 / 14.4</td>
+<td>19 / 0 / 32.6</td>
+<td>2 / 0 / 1.0</td>
+</tr>
+<tr>
+<td>emergency plumber frisco</td>
+<td>23.09 до 29.09</td>
+<td>70 / 0 / 10.4</td>
+<td>18 / 0 / 28.1</td>
+<td>315 / 0 / 10.6</td>
+</tr>
+<tr>
+<td></td>
+<td>30.09 до 06.10</td>
+<td>56 / 0 / 10.5</td>
+<td>22 / 0 / 27.3</td>
+<td>218 / 0 / 10.3</td>
+</tr>
+<tr>
+<td></td>
+<td>07.10 до 13.10</td>
+<td>50 / 0 / 10.9</td>
+<td>24 / 0 / 12.0</td>
+<td>199 / 0 / 11.4</td>
+</tr>
+<tr>
+<td></td>
+<td>14.10 до 21.10</td>
+<td>47 / 0 / 11.1</td>
+<td>0</td>
+<td>227 / 0 / 11.0</td>
+</tr>
+<tr>
+<td>прочие запросы с frisco</td>
+<td>23.09 до 29.09</td>
+<td>662 / 0 / 14.9</td>
+<td>717 / 0 / 24.4</td>
+<td>1036 / 0 / 17.3</td>
+</tr>
+<tr>
+<td></td>
+<td>30.09 до 06.10</td>
+<td>465 / 0 / 16.0</td>
+<td>452 / 0 / 23.5</td>
+<td>458 / 0 / 15.5</td>
+</tr>
+<tr>
+<td></td>
+<td>07.10 до 13.10</td>
+<td>465 / 0 / 19.4</td>
+<td>533 / 2 / 22.0</td>
+<td>521 / 0 / 18.2</td>
+</tr>
+<tr>
+<td></td>
+<td>14.10 до 21.10</td>
+<td>295 / 0 / 19.0</td>
+<td>297 / 1 / 23.4</td>
+<td>499 / 0 / 17.4</td>
+</tr>
+</tbody>
+</table>
+<p>Что в этом видно. По «plumber frisco» страница Frisco с 7 октября в отдельные дни получает сотни показов на 1 до 2 месте (13 октября 586, 20 октября 382): это профиль Google Frisco, у которого сайтом стоит эта страница; в обычные дни у неё 1 до 14 показов на 13 до 50 месте, как и раньше. По «emergency plumber frisco» у страницы Frisco показы кончились 11 октября (с 12 октября 0); запрос держат страница emergency (около 11 места, 11 до 74 показов в день) и главная (около 11 места). По прочим запросам с frisco показов стало вдвое меньше у всего сайта: главная 662 на первой неделе и 295 на последней, страница Frisco 717 и 297, остальные 1,036 и 499.</p>
+<h3>б. Три гайда (просели 7 и 8 октября)</h3>
+<p>Клики / показы / позиция по неделям, все страны:</p>
+<table>
+<thead>
+<tr>
+<th>Неделя</th>
+<th>Главный кран</th>
+<th>Кран под раковиной</th>
+<th>Картридж Moen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>23.09 до 29.09</td>
+<td>13 / 898 / 6.7</td>
+<td>9 / 1091 / 7.5</td>
+<td>2 / 583 / 7.4</td>
+</tr>
+<tr>
+<td>30.09 до 06.10</td>
+<td>12 / 791 / 6.4</td>
+<td>8 / 995 / 7.6</td>
+<td>10 / 669 / 7.4</td>
+</tr>
+<tr>
+<td>07.10 до 13.10</td>
+<td>6 / 467 / 7.9</td>
+<td>5 / 786 / 7.9</td>
+<td>0 / 504 / 8.4</td>
+</tr>
+<tr>
+<td>14.10 до 21.10</td>
+<td>5 / 434 / 8.3</td>
+<td>3 / 729 / 8.4</td>
+<td>1 / 446 / 8.5</td>
+</tr>
+</tbody>
+</table>
+<p>Показы по дням с 15 по 21 октября: главный кран 81, 64, 57, 58, 41, 35, 40; кран под раковиной 94, 93, 118, 112, 68, 72, 72; Moen 57, 72, 88, 64, 41, 32, 28. К 21 октября не вернулись: последние три дня самые низкие за весь период. Правки от 18 октября (23:39) Google уже перечитал: главный кран обойдён 22 октября в 07:12 UTC, кран под раковиной 23 октября в 01:25, Moen 23 октября в 11:53. Дней после обхода в данных ещё нет, смотреть с конца этой недели.</p>
+<h3>в. URL Inspection (API, только чтение, 23 октября)</h3>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Состояние</th>
+<th>Последний обход (UTC)</th>
+<th>Канонический адрес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/plumber-mckinney-tx/</td>
+<td>Submitted and indexed</td>
+<td>2026-10-19 04:48</td>
+<td>свой</td>
+</tr>
+<tr>
+<td>/plumber-allen-tx/</td>
+<td>Submitted and indexed</td>
+<td>2026-10-19 04:50</td>
+<td>свой</td>
+</tr>
+<tr>
+<td>/plumber-prosper-tx/</td>
+<td>Submitted and indexed</td>
+<td>2026-10-17 14:15</td>
+<td>свой</td>
+</tr>
+<tr>
+<td>/emergency-plumbing-services/</td>
+<td>Submitted and indexed</td>
+<td>2026-10-22 00:02</td>
+<td>свой</td>
+</tr>
+<tr>
+<td>/plumbing-guide/how-to-shut-off-main-water-valve-texas/</td>
+<td>Submitted and indexed</td>
+<td>2026-10-22 07:12</td>
+<td>свой</td>
+</tr>
+<tr>
+<td>/plumbing-guide/angle-stop-valve-leaking-under-sink/</td>
+<td>Submitted and indexed</td>
+<td>2026-10-23 01:25</td>
+<td>свой</td>
+</tr>
+<tr>
+<td>/blog/moen-shower-cartridge-replacement-blog/</td>
+<td>Submitted and indexed</td>
+<td>2026-10-23 11:53</td>
+<td>свой</td>
+</tr>
+</tbody>
+</table>
+<p>McKinney и Allen закрыты 16 октября, Prosper версия 5 на сайте с 17 октября 01:33 по Далласу (06:33 UTC), emergency закрыта 6 октября: все обойдены позже. Request indexing не нужен. Файл: source/gsc/inspection-2026-10-23.csv.</p>
+<h3>г. Видео</h3>
+<p>Через API отчётов по видео нет. В результатах видео-поиска (тип video) за 16 месяцев у сайта 0 страниц. Адресов с «?v=» нет ни в веб-результатах, ни в картинках, ни в видео. Отчёт «Индексирование видео» (Indexing, Video pages) есть только в кабинете Search Console, API его не отдаёт; если нужно его посмотреть, это Денис в кабинете.</p>
+<h2>5. Звонки и сайт, 16 до 22 октября</h2>
+<ul>
+<li>Звонки с карточек Google: 4 за 16 до 20 октября (Frisco 2, Plano 2); за 21 и 22 октября у Google цифр ещё нет. Месяц назад за те же пять дней 15. Показы карточек в поиске 217 против 421, в картах 62 против 92, переходов на сайт с карточек 8 против 5.</li>
+<li>Клики по кнопке звонка на сайте (PostHog, 17 до 22 октября): 5, Frisco 4 и Plano 1. Где: страница Frisco 2 (первый экран и панель звонка), water heaters 1, slab leak 1, главная 1 (Plano). Просмотров без ботов 136 за шесть дней (Frisco 23, главная 21, гайд про главный кран 20, Plano 17, контакты 10).</li>
+<li>Заявки: отправлено 6, открытий формы 9. По дням, открыли / отправили: 17.10 0 / 0, 18.10 0 / 0, 19.10 2 / 2 (Plano, контакты), 20.10 2 / 1 (главная), 21.10 2 / 2 (slab leak, water heaters), 22.10 2 / 1 (Frisco).</li>
+</ul>
+<p>Полная таблица по дням и сравнение с сентябрём: <a href="calls-report">calls-report</a> (docs/calls-2026-10-16-2026-10-22.md).</p>
+<h2>6. Открытое</h2>
+<ul>
+<li>Кнопка Run для выкладки (часть 3), потом проверка живых страниц.</li>
+<li>Фургон из Prosper на первый экран /plumber-prosper-tx/ (Денис, 17 октября: отдельной правкой).</li>
+<li>Три ответа Дениса по Prosper, которые ждёт чат (список у чата, в журнале проекта из открытого по Prosper записан только фургон).</li>
+<li>Request indexing: не нужен.</li>
+<li>Вопросы по Celina для диктовки: в конце страницы <a href="celina-addendum">celina-addendum</a>.</li>
+<li>Для чата, не для действия сейчас: главная потеряла «plumber near me» с 8 октября; показов по запросам с frisco у всего сайта вдвое меньше, чем месяц назад; страница Frisco с 12 октября не показывается по «emergency plumber frisco».</li>
+<li>top-5: если Semrush считает страницы-источники, нужна вторая страница с карточкой (кандидат: гайд про стоимость аварийного ремонта).</li>
+</ul></main></body></html>
