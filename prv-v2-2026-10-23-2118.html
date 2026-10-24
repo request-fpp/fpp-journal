@@ -1,0 +1,783 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 23.10.2026 21:18</p><h1>PRV, версия 2: сборка на черновой адрес (23 октября 2026)</h1>
+<p>Черновой адрес: https://draft.fppplumbing-preview.pages.dev/prv-replacement-frisco-plano/ (вход по почте, noindex). Живой сайт не тронут: на fppplumbing.com/prv-replacement-frisco-plano/ стоит старый текст с точечными правками 3 октября, выкладок на живой сайт не было, только <code>zsh tools/deploy.sh draft</code>. Собрано по блоку чата «PRV page, version 2» от 23 октября 2026. Текст: <code>source/prv-text-v2.md</code> (чат, 19:45, второй проход по версии 1 от 19:24; из диктовок Дениса 19:05, 19:15 и 19:18, <code>source/dictation/2026-10-23-prv.md</code>, и брифа <code>docs/prv-addendum-2026-10-23.md</code>). Диктовка и её копия в <code>voice/samples/2026-10-23-prv.md</code> входят в коммит.</p>
+<h2>1. Что собрано</h2>
+<ul>
+<li>Запись <code>PRV_V2</code> в <code>tools/export_page_text.py</code> PAGES: layout service как у drain cleaning, <code>office: both</code> (обе кнопки звонка с номерами на первом экране, блока офиса нет), подпись автора с видимой датой «Updated October 2026», ряд «On this page» из тринадцати ярлыков по id заголовков, крошка «PRV Replacement in Frisco &amp; Plano, TX», <code>service_type</code> «Pressure reducing valve replacement» в узле Service. Карточки «Read more» под текстом: гайд про замену PRV и гайд про падение давления (<code>site/src/lib/more.ts</code>), их ключи страница не трогает.</li>
+<li>Title и H1 живой страницы слово в слово; живые H2 разделов слово в слово (одиннадцать, плюс H2 FAQ; двенадцатый, «Schedule a Water Pressure Test or PRV Replacement», ушёл в заключительный абзац, его место занял новый H2 про тест давления), плюс два новых («A Water Pressure Test First: the Gauge on the Spigot», «The Expansion Tank: What a PRV Does to the Water Heater»); «Schedule a Water Pressure Test or PRV Replacement» стал заключительным абзацем. Живая страница узла datePublished не несёт (в схеме только dateModified 17 августа 2026), поэтому и новая его не заявляет: dateModified 23 октября 2026, видимая дата в подписи та же.</li>
+<li>Раздел отзывов из файла текста («What People Wrote After a PRV Call», два отзыва по слову Дениса) в эту сборку не вошёл по блоку: для этого в <code>tools/export_page_text.py</code> появился ключ записи <code>skip_sections</code> (разделы файла, которые сборка пропускает; счёт слов их не считает). Когда Денис ответит про Inna Kravchenko и Megan E (спрошено в 19:50), раздел включается, отзывы ставятся через <code>reviews/proposed-placement.csv</code>, <code>tools/build_site_reviews.py</code> и <code>tools/check_reviews.py</code>, подписи без города.</li>
+<li>Объём: 3,381 слово текста страницы (<code>export_page_text.plain_words</code>, без раздела отзывов) против 2,609 на живой. Title 59 знаков, описание в файле чата. Семь вопросов FAQ в FAQPage слово в слово.</li>
+<li>Схема на черновике: Service (serviceType, provider организация, areaServed десять городов и Park Cities), FAQPage с семью вопросами, Person для Дениса, десять узлов VideoObject по одному адресу без «?v=» (семь по заметкам файла и три видео работы Frisco, см. ниже), WebPage с dateModified; узлов Review 0.</li>
+<li>PDF города Frisco открыт перед сборкой и прочитан: «If your house was built in Frisco after 2001, it is likely equipped with a PRV». Фраза раздела городов в файле чата года не называет («The City of Frisco keeps a one page sheet on pressure reducing valves for its residents»), поэтому менять в ней было нечего; ссылка на PDF стоит на словах «sheet on pressure reducing valves», в новой вкладке.</li>
+<li>Ссылки по списку файла: главная якорем «plumber near me» во вступлении; «plumber in Frisco» и «plumber in McKinney» в разделе про высокое давление; «plumber in Plano» и «their own guide» (гайд про автоматический кран) в разделе про место клапана; Ferguson в McKinney (страница магазина, как на emergency) и «outside spigot» на страницу hose bib в разделе «How FPP Plumbing Replaces a PRV»; «expansion tank page» на страницу водонагревателей; страница скидок города Plano в разделе о цене; все десять «plumber in &lt;город&gt;» и PDF Frisco в разделе городов; «Request Service form» в заключении. Frisco, McKinney и Plano связаны дважды (раздел и список городов), проверка сайта не возражает. Внешних ссылок в новой вкладке три.</li>
+<li>Первый экран: фото 217, манометр у старого спигота на 120 PSI, Frisco, ноябрь 2025 (года в подписи нет; красная стрелка не описана): <code>hero_for</code> в <code>photos/captions-en.csv</code>, <code>HERO_FOCUS</code> 0.55 в <code>tools/optimize_photos.py</code> (полоса телефона на циферблате), веб-версии 480 до 1600, hero-полосы и социальная картинка <code>design/img/217-og.jpg</code>. Фото 47 с первого экрана снято (его hero_for для этой страницы убран; оно стоит на Frisco и на кнопке главной). Социальная картинка и primaryImageOfPage: 217.</li>
+</ul>
+<h2>2. Картинки по заметкам текста</h2>
+<table>
+<thead>
+<tr>
+<th>Где</th>
+<th>Что стоит</th>
+<th>Нарезка и что за кадром</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«A Water Pressure Test First», абзац про манометр</td>
+<td>фото 228 рядом: манометр на 100 PSI на уличном спиготе, Frisco</td>
+<td>веб-версии сегодня; обрезано до 3:4 вокруг циферблата (CROP), печатная бирка на спиготе вверху справа за кадром</td>
+</tr>
+<tr>
+<td>«Signs...», третий признак (течь в коробке)</td>
+<td>клип 284 рядом: закопанный PRV и вторичный кран текут в землю, Frisco</td>
+<td>всё видео 3.9 с, середина кадра; crf 35 (на 32 вышло 464 КБ), 278 КБ</td>
+</tr>
+<tr>
+<td>«Can a Bad PRV Cause Low Water Pressure?», первый абзац</td>
+<td>пара под абзацем: клип 82 (манометр на 35 до 40 PSI, Frisco) и фото 83 (тот же спигот после нового PRV, 75 PSI, Frisco)</td>
+<td>82: 2.0 до 7.0 с, циферблат в середине; 83 веб-версии сегодня</td>
+</tr>
+<tr>
+<td>«Where the PRV Is Located», первый абзац</td>
+<td>клип 262 рядом: коробка клапана открыта, внутри земля и ни одного клапана, Prosper</td>
+<td>2.1 до 4.2 с, после крышки первой секунды (на 1.9 кадр ещё плыл); 90 КБ</td>
+</tr>
+<tr>
+<td>«Where the PRV Is Located», абзац про гараж</td>
+<td>пара под абзацем: фото 48 (PRV в коробке в стене гаража, Frisco) и клип 80 (гаражный PRV с пинхолом, капает, Frisco)</td>
+<td>80: 1.5 до 5.5 с, верхние 3:4 кадра, чтобы клапан был целиком; инструмент первой секунды за кадром</td>
+</tr>
+<tr>
+<td>«Can a PRV Be Adjusted...», второй абзац</td>
+<td>клип 97 рядом: новый PRV и новый кран вместе в клумбе, Frisco</td>
+<td>4.7 до 6.8 с, отрезок без коленей сантехника и без машины (на 4.4 они ещё уходили из кадра); 188 КБ</td>
+</tr>
+<tr>
+<td>«How FPP Plumbing Replaces a PRV», история 120 PSI</td>
+<td>пара под абзацем: клип 218 (до: старые линии и клапаны в яме, спигот на трубе из земли) и клип 220 (после: новая коробка с PRV, двумя кранами и дренажным краном), Frisco</td>
+<td>кадры просмотрены: 218 это «до» (яма), 220 это «после» (коробка), менять местами не пришлось; 218 с 2.0 с, после ног и брелка первой секунды, 5 с; 220 с 0.0 с, 4.2 с, до движения камеры в конце</td>
+</tr>
+<tr>
+<td>«PRV Replacement in Frisco and Plano, TX»</td>
+<td>фото 51 рядом: новый PRV в коробке в клумбе, McKinney</td>
+<td>веб-версии сегодня</td>
+</tr>
+<tr>
+<td>«Signs...», история «A Frisco house, October 2026»</td>
+<td>ряд из трёх под историей (класс m-3): клипы 365 (коробка открыта, внутри земля доверху и ни одного клапана), 366 (старый PRV и вторичный кран вырезаны в траншее, корни) и 367 (новый PRV и шаровой кран в двух коробках на гравии), Frisco</td>
+<td>три видео Дениса от 20:33 (работа 22 октября 2026; его слова: «вчерашние во Фриско, PRV и вторичный кран: где он похоронен, где откопали и вырезали, и где уже конечная установка»; оригинал 1091 из Downloads вместо копии h264) приняты в архив как 365 до 367, подписи по заметке файла; 365: 1.4 до 2.7 с, до запястья с часами, 1.3 с; 366: 11.0 до 12.8 с в окне с 5 до 70 процентов высоты кадра (в более длинных отрезках красная перчатка поднималась до самых клапанов), клапаны целиком, перчатка за кадром; 367: 5.7 до 10.7 с, ботинки первых секунд и крышка, большой палец и упаковка последних секунд за кадром</td>
+</tr>
+</tbody>
+</table>
+<p>Все десять клипов нарезаны <code>tools/cut_clips.py</code> по правилу Allen: 3:4, без звука, по кругу, HDR в обычные цвета, постеры того же размера, адреса без «?v=», каждый под 400 КБ; проверены по кадрам (постер и каждый двенадцатый кадр): лиц, номеров, адресов и вещей хозяев нет; марка на циферблатах манометров та же, что на манометрах, уже стоящих на McKinney и Prosper. История про второй клапан в Plano стоит без картинки, пока Денис не пришлёт файлы. Блок писал, что обе истории 23 октября стоят без картинок, пока файлов нет; файлы работы Frisco пришли в 20:33, после блока, и заметка файла текста уже ставила их рядом из трёх, поэтому они приняты и поставлены в этой же сборке (второй черновик, после аудитов; аудиты шли на сборке без них).</p>
+<h2>3. Проверки</h2>
+<ul>
+<li><code>tools/check_text.py</code> на файле версии 2: две пометки, обе в тексте отзыва Inna Kravchenko, который стоит в заметке файла и в эту сборку не вошёл («right away» как слово о скорости и восклицательный знак); в наших словах пометок нет, цен кроме $49 нет (на странице $49 три раза). 27 групп из трёх выписаны для глаза; слов в файле с заметками 3,710.</li>
+<li><code>tools/check_overlap.py</code> с <code>source/competitors/2026-10-23-prv</code>: 0 совпадений с конкурентами; девять прогонов с нашими страницами, все ожидаемые: шесть со старой страницей PRV (H1, четыре сохранённых H2 и H2 FAQ с первым вопросом) и три фразы про $49 (главная, drain cleaning, Allen, Frisco, McKinney, Prosper). В <code>tools/check_overlap.py</code> OWN_PAGE добавлена пара «prv-text»: «prv-replacement-frisco-plano.md».</li>
+<li>Сайт при сборке черновика: <code>tools/check_site.py</code> 34 из 34, предупреждений 7 (про эту страницу ни одного). В HTML страницы (вторая сборка, с тремя клипами работы Frisco): ни одного абзаца с «[», кириллицы нет, тире 0, телефонов в тексте 0 (номера только на кнопках), 10 тегов video и 10 узлов VideoObject, 7 вопросов FAQ в схеме, узлов Review 0, на видео нет «?v=», noindex на месте, 18 внешних ссылок в новой вкладке на странице (в тексте три, остальные лента доверия и подвал), две карточки Read more.</li>
+<li>Вёрстка на шести ширинах (<code>tools/check_layout.py</code>, 390, 768, 1024, 1100, 1280, 1440): чисто, 18 картинок, ни одна не пересекает текст (первая сборка 15). Шрифты (<code>tools/font_shift.py</code>): чисто, сдвиг 0.000 на телефоне и 0.001 на компьютере.</li>
+<li>Вес (<code>tools/page_weight.py</code>): телефон 2x при загрузке 1,111 КБ (HTML 155, фото 492, постеры клипов 464), телефон 3x 1,289 КБ, клипы при прокрутке 1,793 КБ (десять клипов, грузятся только у экрана), компьютер 903 КБ; первая сборка с семью клипами была 963 КБ и 1,318 КБ.</li>
+<li>Lighthouse (<code>tools/lighthouse_pages.py</code>, локальный сервер без сжатия): телефон 98 и 100 (LCP 2.2 с, CLS 0), компьютер 100 и 100 (LCP 0.5 с, CLS 0.001).</li>
+<li>Схема: validator.schema.org по собранному HTML, 0 ошибок, 0 предупреждений. Отзывы: <code>tools/check_reviews.py</code> 58 отзывов на сайте, 0 проблем (на этой странице отзывов нет).</li>
+<li>Search Console: часть «Search Console» ниже и таблица по каждому запросу в конце страницы: 39 запросов на 126 показов покрыты целиком, 17 на 51 частично (чаще всего нет слова «repair»), слова, которыми страница держит места, все на месте.</li>
+</ul>
+<h2>4. Аудиты плагинов</h2>
+<p>Прогнаны на локальной сборке 20:43 (без трёх клипов работы Frisco, которые пришли позже) двумя помощниками Claude Code по инструкциям плагинов, тексты не правились; отчёты в <code>exports/audit-prv-v2/</code>.</p>
+<p><strong>superseo page-audit: 54 из 70</strong> (drain cleaning версия 2 была 55, Prosper 57, McKinney 58, Frisco, Plano и emergency 62). По измерениям: originality 9, semantic depth 8, E-E-A-T 8, structure 7, technical on-page 7, engagement 7, conversion 8. Фактических ошибок против слов Дениса и источников нет. Главное, всё для чата: (1) второй фразе title нет опоры в тексте: слова «regulator» в main нет ни разу, «pressure reducing valve replacement» целиком только в H1, «repair» нет (страница стоит на месте 4.4 по «best prv valve repair near me»), «pressure test» только в H2 (самый большой известный запрос страницы, 31 показ на месте 2.5); покрытие слов запросов 73.8 процента показов за 16 месяцев против 98 у drain cleaning; лечится четырьмя фразами без нового факта (синоним во вступлении, «старый PRV не чиним, а меняем» в разделе про регулировку, «pressure reducing valve replacement» один раз в разделе о цене, «good house pressure for Frisco or Plano, Texas» в первом FAQ); (2) четыре детали не словами Дениса: «stood in water for a year» (его «довольно долго»), «set again on new copper» в истории 120 PSI (его слова 5 октября про спигот с собственным краном, «новая медь» это работа в Plano), «carried since the day it was built» (его: никто не знал), «Most of the valves we replace are the builder's original» (его фразы нет); описание «City water comes in at 100 PSI and more» сильнее текста («80 PSI and up, 100 in some places»); «ten to fifteen years» это цифра, которую он просил проверить (сам сказал пять до пятнадцати); (3) повторы: правило комплекта (PRV плюс кран) шесть раз, гравий шесть, разрешение шесть, 70 PSI девять; две фразы по 62 и 67 слов; история Plano одним абзацем в 190 слов; четыре концовки-приговора, которые файл голоса отверг 15 октября («One dig, one inspection.», «That was new.»); 3,241 слово текста против отметки 2,500, около 120 слов снимаются без потери факта; (4) история Frisco октября 2026 без своей картинки (три видео лежали в inbox с 20:33: исправлено во втором черновике, см. часть 2), история Plano без картинки (файлов нет), у фото первого экрана нет видимой подписи, строка llms.txt всё ещё говорит «tested first, then adjusted or replaced» против правила страницы; (5) нет внутренних ссылок там, где страница называет вещь: slab leak («Slab leaks are on that list too»), faucet и toilet («faucet cartridges, the fill valves»), water lines («the line out to the meter»), leak detection («a wet spot in the flower bed»); два гайда только карточками, не в тексте; все 33 входящие ссылки с других страниц идут с якорем «PRV replacement» без города. Пробелы конкурентов без нового факта: FAQ «есть ли в моём доме PRV вообще» из PDF Frisco и его фактов Prosper и Plano, блок «что показывает манометр / что это значит» из собственного теста и трёх отказов; пробелы, которым нужно его слово: бак в тот же визит, шумы кроме гидроудара, размер клапана, два отзыва. Что держит места, сохранено: title и H1, одиннадцать из двенадцати живых H2 слово в слово, двенадцатый заменён одним к одному; заголовки с известными показами на месте.</p>
+<p><strong>claude-seo seo-page: 90 из 100</strong> (on-page 88, content 88, technical 92, schema 93, images 91). Критических и высоких нет, против правил ничего; каждая фраза файла стоит на странице и ни одной чужой; текст уникален на 97.1 процента против остального сайта. Средние, для чата: (1) «plumbing pressure test near me», самый большой известный запрос, теряет слова: живой текст держал «pressure test» или «pressure testing» шесть раз, новый один раз, в H2; файл текста и моя записка Search Console утверждали, что слова стоят и в первой фразе второго абзаца вступления, это не так (записка исправлена); предложение: «That is the water pressure test our plumber runs before anything else» вместо «That is the test»; (2) llms.txt противоречит странице (строка 25 source/llms.txt: «tested first, then adjusted or replaced», а страница: старый клапан не регулируют, а меняют; та же старая фраза стоит в старых текстах Carrollton и Little Elm, их очередь впереди); (3) для Дениса, один раз: клапаны «bought at Ferguson in McKinney» (его слово) и фраза про возврат города Plano: страница города (прочитана 23 октября около 21:00) говорит, что позиции должны быть куплены у продавца в границах города Plano, дома до 1 января 2013 года и по карте права на возврат, бумаги в 120 дней; правило от 5 октября соблюдено, но вопрос, где покупаются клапаны для работ в Plano и не дать ли в FAQ 7 два условия города одной фразой, как на странице Plano, вместо «Plano homeowners»; (4) история Frisco без картинки, три видео в inbox (исправлено во втором черновике); (5) низкие: «one page sheet» про PDF Frisco, а в PDF две страницы; слов «repair», «install» и «regulator» в тексте нет; FAQ 6 говорит «until the heater's relief valve drips», что версия 2 убрала из раздела как не его слова; «rate them for 80 PSI» при его слове «recommend»; FAQ 1 «almost everywhere here» при его «usually»; имя узла Service это H1 (код); абзац городов повторяет рамку страницы drain cleaning (десять общих отрезков по 8 слов), заключительная фраза стоит ещё на двух страницах; подписи архива: 97 «shutoff» против «shut-off», 82 «a broken PRV», а абзац говорит о забитом; записи к закрытию: reviews/all-reviews.csv строка 632 и reviews/ledger.md строки 55 и 56 держат Megan E и Kseniia на этой странице, строка keyword map «carry as is». Совпало: Lighthouse телефон 98 (LCP 2.3 с, CLS 0), компьютер 100; схема 0 ошибок, 14 узлов, 23 ссылки @id все разрешаются; FAQPage слово в слово; check_overlap 0 с конкурентами; check_text в наших словах чисто.</p>
+<p>Что из этого делаю я, а что чат: текст (слова запросов, четыре детали не его словами, повторы, описание, концовки, внутренние ссылки, llms.txt строка) это версия 3 чата по слову Дениса; вопрос про Plano и Ferguson Денису один раз; три видео работы Frisco поставлены в этой сборке; имя узла Service из крошки, подписи 97 и 82 словами Дениса, леджеры и keyword map это Claude Code при закрытии.</p>
+<h2>5. Открытое (для чата и Дениса)</h2>
+<ul>
+<li>Файлы двух работ 23 октября: дом во Frisco с двумя коробками (закопанная коробка, два старых клапана, манометр на 70), второй PRV у счётчика в Plano.</li>
+<li>Месяц работы в Plano со вторым клапаном (в истории его нет).</li>
+<li>Два отзыва: Inna Kravchenko (в тексте «plumber near me») и Megan E (его имя дважды), одно слово на каждый; спрошено в 19:50. До ответа страница без отзывов.</li>
+<li>Из файла текста без изменений: проверяется ли расширительный бак в тот же визит, что и PRV; стоит ли «between 40 and 80» как норма в FAQ.</li>
+<li>Для чата, из таблицы Search Console: слова «repair» (пять запросов, 29 показов: «best prv valve repair near me», «water works plumbing prv repair and replacement», «water pressure repair») и «install» (шесть показов) в тексте не стоят; «repair» можно дать одной фразой словами Дениса (старый клапан не чинят, а меняют), если он так скажет.</li>
+</ul>
+<h2>Текст страницы, как он стоит на тестовом сайте</h2>
+<p>Курсивом в квадратных скобках стоят пометки о том, что в этом месте на странице (фото, кнопки, карта). Это не текст страницы.</p>
+<p>Title: PRV / Water Pressure Regulator Replacement | Frisco &amp; Plano</p>
+<p>Meta description: City water comes in at 100 PSI and more; the PRV holds it at 70. Pressure test, PRV and shut-off valve replaced with the city permit, in Frisco and Plano.</p>
+<hr />
+<h3>H1: Pressure Reducing Valve (PRV) Replacement for Low or High Water Pressure in Frisco &amp; Plano</h3>
+<p>The city sends water to your house at whatever pressure it takes to reach every house on the line: 80 PSI and up, 100 in some places, 120, sometimes 140. The pressure reducing valve, the PRV, is the one part between the meter and your faucets that brings that down to what a house is built for. When it fails, you get one of three things: the water goes weak, the water goes wild, or the box in the flower bed fills with water. All three end with a new valve, and almost always a new shut-off valve beside it.</p>
+<p>FPP Plumbing replaces PRVs from the Frisco office and the Plano office, with our own licensed plumbers, two on every shift. We put a gauge on the house first, we replace the valve and the shut-off valve as a set, we set the pressure to 70 PSI, and we pull the city permit and pass the inspection. The service call on a weekday is $49, and it goes toward the work.</p>
+<p>If you typed plumber near me because the shower goes thin after a minute or the pipes bang in the wall, the two numbers at the top belong to the Frisco office and the Plano office.</p>
+<p><em>[Кнопка «Call Both» с номером офиса и кнопка «Request Service». Справа фото 217: Before the PRV: about 120 PSI on the gauge at the old spigot, Frisco; номерной знак закрыт.]</em></p>
+<hr />
+<h3>H2: What a Pressure Reducing Valve Does</h3>
+<p>A PRV takes the city's pressure on one side and gives the house a steady, lower pressure on the other. That's the whole job. The plumbing code caps the pressure inside a house at 80 PSI and requires a PRV wherever the city sends more, and here the city sends more. The people who make faucets, water heaters, dishwashers and washing machines rate them for 80 PSI too. Above that, every joint, every valve, every rubber seal and the water heater itself carries more pressure than it was built for. Below about 40 the house feels it the other way: a thin stream in the shower.</p>
+<p>We set a new valve to about 70 PSI. It's the middle we like: well under 80, so the system isn't under stress, and well over 40, so nobody stands under a trickle. In parts of McKinney and Frisco the city's own line runs at 50 to 60 PSI, the city has come out and measured it, and there a new PRV gives you what the main gives it.</p>
+<p>The valve is the homeowner's. The city's responsibility ends at the meter; what the pressure does inside the house is yours to check, and a gauge on an outside spigot once a year is the check that catches a valve before it fails.</p>
+<hr />
+<h3>H2: A Water Pressure Test First: the Gauge on the Spigot</h3>
+<p>A pressure gauge screws onto an outside spigot or onto the washing machine bib. With no water running in the house it shows the static pressure. Over 80 is a problem whether anything feels wrong or not, and at 100 nothing feels wrong at all. Then open a tap inside and watch the needle. A healthy system drops a little and holds. A clogged PRV holds the number while nothing runs and gives it up the moment something does.</p>
+<p><em>[Рядом фото 228: 100 PSI on the gauge at an outside spigot, Frisco]</em></p>
+<p>That is the test our plumber runs before anything else on a pressure call, and it's the test we ask you to run once a year. On a house that reads fine, you've spent two minutes. On a house at 110, you've found the reason the toilet fill valves keep failing.</p>
+<hr />
+<h3>H2: Signs a Pressure Reducing Valve Is Failing</h3>
+<p>Three things, and each one is a different failure inside the same valve.</p>
+<p>The first and the most common: the pressure drops when you use water. The gauge reads fine, even high, with everything closed. Open the shower, and for the first twenty or thirty seconds it runs like it should, because that's the water that was sitting in the pipes under pressure. Then it falls off. Open a second tap and it falls off more. That valve is clogged. Hard water has filled it with scale, and it passes pressure but not volume.</p>
+<p>The second is the opposite: too much pressure. Water sprays out of every faucet, the toilet fill valves stop shutting off and the tank keeps running, and when you close a tap you hear the pipe bang in the wall. That bang is water hammer, and it's a PRV that has stopped holding the city back.</p>
+<p>The third is plain: the valve leaks in its box. You see a wet spot in the flower bed, or the city sends a notice about water use, or you lift the lid once and the box is full of water. The part people don't think about until it happens: the house's own shut-off valve sits in that same box. A valve that has stood in water for a year is rusted when you need it: the night a pipe goes and you run out to close the house, the handle comes off in your hand.</p>
+<p><em>[Рядом видео 284, 5 секунд без звука: A buried PRV and secondary shut-off valve leaking in the dirt, Frisco]</em></p>
+<p><strong>A Frisco house, October 2026.</strong> The homeowner called and asked for a PRV replacement. Our plumber asked why she thought it was the PRV. She said come and see. She flushed a toilet, and the pipes in the ceiling went bang, bang, bang. She opened the sink, and the stream slowly thinned out. That's two of the three signs in one bathroom. The house was about ten years old. She knew where the valve was supposed to be, in the flower bed, but the flower bed had only a box in it, and the box was under the dirt. We dug it out and found the original PRV and the secondary shut-off valve beside it, both corroded. Both came out. The hole went deeper, the bottom got a bed of gravel the way the city's code asks, and because the one box had never covered the valves, a box extension went on so that two boxes stand over them now. The pressure went to 70. Then the same test: a flush, no bang; the sink, no drop. The city permit was pulled before the dig and the city inspection was passed after it.</p>
+<p><em>[Под текстом рядом: видео 365, 5 секунд без звука: The valve box, opened: dirt to the top and no valve in sight, Frisco; видео 366, 5 секунд без звука: Dug out and cut out: the old PRV and the secondary shut-off valve, Frisco; видео 367, 5 секунд без звука: The new PRV and shut-off valve in two boxes, gravel under them, Frisco]</em></p>
+<hr />
+<h3>H2: Can a Bad PRV Cause Low Water Pressure?</h3>
+<p>Yes, and it's the failure we see most. Hard water scales the valve shut from the inside a little more every year. Nothing bursts, nothing leaks, the house just gets weaker: the shower first, then the second bathroom when somebody runs the kitchen tap, then the sprinklers. The gauge on the spigot can still read 60 or 70 with nothing running, which is why the valve gets blamed last. One Frisco house read 35 to 40 PSI on the gauge with the valve clogged, and 75 the same day with the new one in. In Frisco we have measured 30 on a valve that was packed solid inside, and about 40 in McKinney on one the homeowner had tried to adjust himself.</p>
+<p><em>[Под текстом рядом: видео 82, 5 секунд без звука: Pressure 35 to 40 PSI: a broken PRV, one of the first signs, Frisco; фото 83: PRV replaced, pressure back to 75 PSI, Frisco]</em></p>
+<p>Two other things read as low pressure here. The city itself: in a few areas of McKinney and Frisco the main carries 50 to 60 PSI, the city has measured it at the meter, and no valve makes more pressure than the city gives. And a valve nobody knows about: a second PRV in the same line, which is what the Plano story further down is about. The gauge, static and with a tap running, is what separates the three before anybody digs.</p>
+<hr />
+<h3>H2: How High Water Pressure Damages Plumbing</h3>
+<p>High pressure is quiet. At 100 PSI the shower feels great, and the house is wearing out early. The things that go first are the things with rubber in them: faucet cartridges, the fill valves in the toilets, the supply lines under the sinks, the washer hoses. Then the water heater, rated for 80 like everything else in the house. Slab leaks are on that list too: a copper line at 110 PSI for ten years has carried ten years of a load it wasn't built for.</p>
+<p>On the Frisco page we tell where the newer houses leak first, at the valve box; on the McKinney page, what 108 PSI did to a shower valve. A plumber in Frisco and a plumber in McKinney keep finding the same thing: a house that felt fine and was over the line.</p>
+<hr />
+<h3>H2: How Long Does a Pressure Reducing Valve Last?</h3>
+<p>The usual figure is ten to fifteen years, and that's about right for a valve in a dry box with gravel under it. Here we see them fail from five. Two things shorten the life. The first is the box. A PRV is meant to sit in an accessible valve box with gravel on the bottom, so that rain and the sprinklers drain out instead of standing around the brass. When the builder buried it, or the ground moved and the box silted over, the valve sits in wet dirt and corrodes from the outside while the water scales it from the inside. The second is the water itself: hard, and it clogs the valve the way it clogs a shower head.</p>
+<p>Most of the valves we replace are the builder's original. The house is ten years old or more, nobody has opened the box since the day it was set, and the first anybody hears of the PRV is the day it quits.</p>
+<hr />
+<h3>H2: Where the PRV Is Located in Frisco and Plano Homes</h3>
+<p>In most houses it's in the front flower bed, by the foundation, in a round or rectangular box with a lid, and the secondary shut-off valve for the house sits in the same box. Look for the lid first. If there's no lid in sight, the box has silted over, and finding it is part of our job. In many of the older Plano houses the box is gone under the dirt and the valve with it, and in many of those there was never a PRV at all, only the shut-off valve, as our plumber in Plano page shows.</p>
+<p><em>[Рядом видео 262, 5 секунд без звука: The valve box where the PRV and the shut-off valve should be: opened, nothing but dirt, Prosper]</em></p>
+<p>In the houses built in the last ten years the builders bring the main line into the garage, and the PRV and the shut-off valve stand on the wall there, behind a small access panel. That is a better place for it. No dirt, no water, you can check it in a minute and we replace it without a dig. It still fails. Some at five years, some at ten, some at fifteen; the garage protects the outside of the valve, not the inside. The automatic shut-off valves that go in beside it now, a Moen Flo on the same line, have their own guide on this site.</p>
+<p><em>[Под текстом рядом: фото 48: PRV replaced in the garage, Frisco; видео 80, 5 секунд без звука: PRV in the garage with a pinhole, leaking and dripping, Frisco]</em></p>
+<p><strong>A second valve nobody knew about, Plano.</strong> A homeowner called about a wild vibration every time any tap opened. That points at the PRV, and the pressure was about 80, high enough. We found the buried box, put in a new PRV with a new ball valve beside it, rebuilt the box with gravel, and turned the water on. The vibration was still there. That was new. We walked the line out to the meter, opened a tap, and the meter itself was shaking. We called the city's Water Division and they came out fast. They took the meter out and we ran the line without it: still shaking. We took our new PRV out and ran a straight line: still shaking. The city put the meter back and left. We kept going along the line by hand, and 33 feet from the meter we found a second pressure reducing valve, buried, that the house had carried since the day it was built. Two PRVs on one line, and nobody knew about the first one. We removed it, ran that spot straight, left our new valve where it was, set 70 PSI, and the house went quiet.</p>
+<hr />
+<h3>H2: Can a PRV Be Adjusted, or Does It Need Replacement?</h3>
+<p>A new PRV is adjusted, that's how it gets set: a bolt on top, turned until the gauge on the spigot reads 70. An old one is not. That's a rule we made the hard way, years ago, and we don't break it. A valve that is ten years old, rusted on the outside and scaled on the inside, is held together by the fact that nobody has touched it. Turn the bolt and one of four things happens: it starts leaking at the bolt, something inside sticks, the pressure drops to nothing, or the pressure jumps. We've been called out to houses where the homeowner tried to adjust his own valve to get more pressure, and we've been asked to adjust old ones ourselves. The answer is the same. If it looks old and rusted, it's replaced.</p>
+<p>The shut-off valve next to it goes at the same time. They were set the same day, they've stood in the same box in the same water, and if one has failed the other is not far behind. Digging the hole twice costs more than the second valve. So the PRV and the secondary shut-off valve are one job for us, always, and the gravel and the box come with it.</p>
+<p><em>[Рядом видео 97, 5 секунд без звука: Replaced PRV and secondary shutoff valve in a flower bed, Frisco]</em></p>
+<hr />
+<h3>H2: How FPP Plumbing Replaces a PRV</h3>
+<p>The gauge goes on first, static and running, and the plumber tells you what it shows before the price. Then the box. If it's buried, we find it and dig it out; the hole goes deep enough for the new valves and a bed of gravel under them. The old PRV and the old shut-off valve come out together. The new ones go in, a PRV and a ball valve from the brands we trust, bought at Ferguson in McKinney, set onto the line. If the box is too shallow to cover the new valves, it gets an extension, so the lid closes over them and the dirt stays out. The pressure is set to 70, or lower if you ask, and we check it at the spigot. Then a tap runs inside while the plumber watches the gauge hold. The city permit is pulled before the dig and the inspector sees the work after; every city we work in asks for both on a PRV replacement.</p>
+<p><strong>120 PSI in Frisco.</strong> A house where the gauge at the old spigot read about 120. The PRV and the secondary shut-off valve were replaced, a drain valve went onto the line so the system can be emptied, and the outside spigot, which stood on a pipe out of the ground next to the box, was set again on new copper with a shut-off valve of its own, so it can be closed and drained for the winter. One dig, one inspection.</p>
+<p><em>[Под текстом рядом: видео 218, 5 секунд без звука: Before: the old lines and valves in the dig, with the spigot pipe coming out of the ground, Frisco; видео 220, 5 секунд без звука: After: the new valve box with the PRV, the shut-off valves and the drain valve, Frisco]</em></p>
+<p>Our work on a PRV replacement carries a one year warranty on the labor.</p>
+<hr />
+<h3>H2: The Expansion Tank: What a PRV Does to the Water Heater</h3>
+<p>A PRV is also a one way valve. Water comes in and nothing goes back out to the city. That makes the house a closed system, and a closed system has nowhere to put the water that expands every time the water heater heats a tank to 120 degrees. The pressure climbs with every cycle, and the rubber in the house takes the hit. The answer is an expansion tank on the water heater, a small tank with an air bladder that takes that extra water. If you have a PRV, and you almost certainly do, you have to have the tank. The expansion tank page covers the tank itself.</p>
+<hr />
+<h3>H2: PRV Replacement Cost in Frisco &amp; Plano</h3>
+<p>On a weekday the service call is $49, and it goes toward the work. A PRV replacement has a fixed price, and we give it on the phone: say whether the valve is in a flower bed box or in the garage, and you'll hear the number before anybody drives. The permit is in that number and we pull it. Nothing starts before your yes, and the number you said yes to is the number on the invoice. In Plano part of what a new valve costs comes back to you from the city as a credit against the water bill; the conditions are the city's and stand on its Water Conservation Rebates page.</p>
+<hr />
+<h3>H2: PRV Replacement in Frisco and Plano, TX</h3>
+<p>The Frisco office on Westridge Blvd sends a plumber in Frisco, a plumber in McKinney, a plumber in Celina and a plumber in Prosper; the Plano office on Tennyson Pkwy sends a plumber in Plano. A plumber in Allen comes from the office that is closer that day. Toward Denton County it is a plumber in Little Elm or a plumber in The Colony, and farther down a plumber in Lewisville or a plumber in Carrollton, out of the same two offices. The pressure calls are the same in all ten: McKinney has streets over 100 PSI and a buried valve is one of the most common calls there; Allen gave us a 90 PSI house with its valve two feet down and a 30 PSI house whose homeowner didn't know he had one; Prosper gave us a ten year old house at 120 with no PRV at all. The City of Frisco keeps a one page sheet on pressure reducing valves for its residents.</p>
+<p><em>[Рядом фото 51: PRV replaced in a flower bed, McKinney]</em></p>
+<hr />
+<h3>H2: Pressure Valve Questions We Get All the Time</h3>
+<p><strong>What is normal water pressure for a house in Frisco or Plano?</strong> Between 40 and 80 PSI, and we set a new PRV to about 70. The city's line outside is higher than that almost everywhere here, 80 and up, often over 100, which is why the house needs the valve. Put a gauge on an outside spigot with nothing running: over 80 is too much, under 40 is why the shower is weak.</p>
+<p><strong>Where is the PRV located in my house?</strong> In the front flower bed by the foundation, in a box with a lid, next to the secondary shut-off valve. If there's no lid in sight, the box has silted over and the valve is under the dirt. In the newer houses it's on the garage wall behind an access panel.</p>
+<p><strong>How long does a PRV last in our hard water?</strong> Ten to fifteen years is the usual figure. With our hard water, and with the valve buried in wet dirt, we see them fail from five. A dry box with gravel under the valve gets you to the long end.</p>
+<p><strong>Can you adjust my old PRV instead of replacing it?</strong> No. An old rusted valve leaks, sticks, drops or jumps the moment the adjusting bolt turns, and we learned that years ago. A new valve is adjusted when it's set; an old one is replaced, together with the shut-off valve beside it.</p>
+<p><strong>Does PRV replacement need a city permit in Frisco or Plano?</strong> Yes, in both, and in every city we work in. We pull the permit before the dig and the city inspects the work after. The permit is in the price we give you.</p>
+<p><strong>Do I need an expansion tank if I have a PRV?</strong> Yes. The PRV closes the system, the water heater expands the water every cycle, and without a tank the pressure in the house climbs until the heater's relief valve drips. If you have a PRV and no expansion tank on the heater, that's the next job.</p>
+<p><strong>What does a PRV replacement cost in Frisco or Plano?</strong> The weekday service call is $49, and it goes toward the work. The replacement itself is a fixed price; tell us whether the valve is in the flower bed or in the garage and we give the number on the phone, permit included. Plano homeowners get part of the cost back from the city as a water bill credit under the city's conditions.</p>
+<hr />
+<h3>H2: What People Wrote After a PRV Call</h3>
+<p>Two reviews as their authors wrote them, and under each one the link to the review itself.</p>
+<hr />
+<p>If the shower goes thin, the pipes bang, or there's water in the flower bed with no rain, put a gauge on the spigot or call either office and we'll put ours on. A new PRV with its shut-off valve, set to 70 PSI, with the permit and the inspection, is one visit. If the pressure is only a question, send the Request Service form and we'll set a weekday time.</p>
+<h2>Ссылки в тексте</h2>
+<table>
+<thead>
+<tr>
+<th>Слова в тексте</th>
+<th>Куда ведет</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumber near me</td>
+<td>/</td>
+</tr>
+<tr>
+<td>plumber in Frisco</td>
+<td>/plumber-frisco-tx/</td>
+</tr>
+<tr>
+<td>plumber in McKinney</td>
+<td>/plumber-mckinney-tx/</td>
+</tr>
+<tr>
+<td>plumber in Plano</td>
+<td>/plumber-plano-tx/</td>
+</tr>
+<tr>
+<td>their own guide</td>
+<td>/plumbing-guide/automatic-water-shut-off-valve-install-north-texas/</td>
+</tr>
+<tr>
+<td>Ferguson in McKinney</td>
+<td>https://www.ferguson.com/store/tx/mckinney/plumbingpvf-0063</td>
+</tr>
+<tr>
+<td>outside spigot</td>
+<td>/hose-bib-repair-frisco-plano/</td>
+</tr>
+<tr>
+<td>expansion tank page</td>
+<td>/water-heater-repair-frisco-mckinney/</td>
+</tr>
+<tr>
+<td>Water Conservation Rebates page</td>
+<td>https://www.plano.gov/water-conservation-rebates</td>
+</tr>
+<tr>
+<td>plumber in Frisco</td>
+<td>/plumber-frisco-tx/</td>
+</tr>
+<tr>
+<td>plumber in McKinney</td>
+<td>/plumber-mckinney-tx/</td>
+</tr>
+<tr>
+<td>plumber in Celina</td>
+<td>/plumber-celina-tx/</td>
+</tr>
+<tr>
+<td>plumber in Prosper</td>
+<td>/plumber-prosper-tx/</td>
+</tr>
+<tr>
+<td>plumber in Plano</td>
+<td>/plumber-plano-tx/</td>
+</tr>
+<tr>
+<td>plumber in Allen</td>
+<td>/plumber-allen-tx/</td>
+</tr>
+<tr>
+<td>plumber in Little Elm</td>
+<td>/plumber-little-elm-tx/</td>
+</tr>
+<tr>
+<td>plumber in The Colony</td>
+<td>/plumber-the-colony-tx/</td>
+</tr>
+<tr>
+<td>plumber in Lewisville</td>
+<td>/plumber-lewisville-tx/</td>
+</tr>
+<tr>
+<td>plumber in Carrollton</td>
+<td>/plumber-carrollton-tx/</td>
+</tr>
+<tr>
+<td>sheet on pressure reducing valves</td>
+<td>https://www.friscotexas.gov/DocumentCenter/View/8867/Pressure-Reducing-Valves-PRVs-PDF</td>
+</tr>
+<tr>
+<td>Request Service form</td>
+<td>форма заявки</td>
+</tr>
+</tbody>
+</table>
+<h2>Search Console: запросы страницы против текста версии 2</h2>
+<p>Выгрузки <code>source/gsc/page-query-3m.csv</code> и <code>page-query-16m.csv</code> обновлены через API 23 октября 2026 (3 месяца это 24 июля до 21 октября 2026, 16 месяцев это 23 июня 2025 до 21 октября 2026). Таблица ниже построена <code>python3 tools/gsc_page_table.py /prv-replacement-frisco-plano/ "frisco plano" exports/prv-v2-gsc-table.md</code>: каждый запрос страницы и пометка, стоят ли все его значимые слова в новом тексте.</p>
+<p>Итог: 60 запросов за 16 месяцев с известным текстом, 202 показа (всего у страницы за 16 месяцев 2,612 показов и 38 кликов, остальные запросы Google прячет). Полностью покрыты 39 запросов на 126 показов; частично 17 запросов на 51 показ (чаще всего нет слова «repair»: «frisco water line repair», «best prv valve repair near me», «water works plumbing prv repair and replacement», «water pressure repair», вместе 29 показов; «install» и «installation» 6; чужие города jonestown, spicewood, collin county); другой город 2 запроса на 23 показа (denton, чужой индекс); не покрыты 2 запроса на 2 показа (show me, images). Слова, которыми страница держит места: «how to adjust a prv» (место 1.0, слово adjust в H2 и первой фразе раздела), «plumbing pressure test near me» (место 2.5, слова стоят только в H2 про тест; аудит claude-seo: живой текст держал их шесть раз, новый один, для чата), «how long does a prv last» (H2), «where is the prv located» (H2), «what should the pressure be» (первый вопрос FAQ), «prv water pressure» (место 1.0, title и H1), все на месте.</p>
+<table>
+<thead>
+<tr>
+<th>Запрос</th>
+<th>Страница Frisco Plano, 3 мес</th>
+<th>Страница Frisco Plano, 16 мес</th>
+<th>Главная, 3 мес</th>
+<th>Главная, 16 мес</th>
+<th>В новом тексте</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plumbing pressure test near me</td>
+<td>31 · 2.5 · 0</td>
+<td>31 · 2.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>prv replacement denton tx</td>
+<td></td>
+<td>22 · 37.9 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (denton)</td>
+</tr>
+<tr>
+<td>frisco water line repair</td>
+<td></td>
+<td>18 · 63.4 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: repair)</td>
+</tr>
+<tr>
+<td>shut-off valve replacement near me</td>
+<td>14 · 20.3 · 0</td>
+<td>14 · 20.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>how to adjust a prv</td>
+<td></td>
+<td>10 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>how long does a prv last</td>
+<td></td>
+<td>7 · 10.9 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>prv water pressure</td>
+<td></td>
+<td>7 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>best prv valve repair near me</td>
+<td>1 · 7.0 · 0</td>
+<td>5 · 4.4 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: repair)</td>
+</tr>
+<tr>
+<td>good house pressure for frisco texas</td>
+<td>5 · 15.8 · 0</td>
+<td>5 · 15.8 · 0</td>
+<td></td>
+<td></td>
+<td>да: оценочное слово в текст не ставим: good</td>
+</tr>
+<tr>
+<td>how long do prvs last</td>
+<td></td>
+<td>5 · 13.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>site:http://fppplumbing.com</td>
+<td></td>
+<td>5 · 19.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: http, //fppplumbing, com)</td>
+</tr>
+<tr>
+<td>pressure reducing valve</td>
+<td>2 · 6.0 · 0</td>
+<td>4 · 5.2 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pressure reducing valve installation jonestown tx</td>
+<td>4 · 35.8 · 0</td>
+<td>4 · 35.8 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: install, jonestown)</td>
+</tr>
+<tr>
+<td>how long does a prv valve last</td>
+<td></td>
+<td>3 · 2.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>how to adjust prv</td>
+<td></td>
+<td>3 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pressure relief valve outside house</td>
+<td>3 · 11.3 · 0</td>
+<td>3 · 11.3 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>water works plumbing prv repair and replacement</td>
+<td>3 · 7.7 · 0</td>
+<td>3 · 7.7 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: works, repair)</td>
+</tr>
+<tr>
+<td>fpp plumbing</td>
+<td>2 · 2.0 · 0</td>
+<td>2 · 2.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>low pressure</td>
+<td>2 · 9.5 · 0</td>
+<td>2 · 9.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pipe breaks plano</td>
+<td></td>
+<td>2 · 94.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>pressure reducing valve replacement spicewood tx</td>
+<td>2 · 43.5 · 0</td>
+<td>2 · 43.5 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: spicewood)</td>
+</tr>
+<tr>
+<td>price</td>
+<td>1 · 3.0 · 0</td>
+<td>2 · 9.5 · 0</td>
+<td></td>
+<td></td>
+<td>да: оценочное слово в текст не ставим: price</td>
+</tr>
+<tr>
+<td>prv installation</td>
+<td>1 · 8.0 · 0</td>
+<td>2 · 8.5 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: install)</td>
+</tr>
+<tr>
+<td>water pressure down in my area</td>
+<td>2 · 10.0 · 0</td>
+<td>2 · 10.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: area)</td>
+</tr>
+<tr>
+<td>water pressure repair collin county</td>
+<td></td>
+<td>2 · 38.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: repair, collin)</td>
+</tr>
+<tr>
+<td>what is prv in plumbing</td>
+<td>2 · 61.0 · 0</td>
+<td>2 · 61.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>what is this</td>
+<td></td>
+<td>2 · 15.5 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>75075</td>
+<td>1 · 6.0 · 0</td>
+<td>1 · 6.0 · 0</td>
+<td></td>
+<td></td>
+<td>другой город (чужой индекс)</td>
+</tr>
+<tr>
+<td>adjust prv</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>city water</td>
+<td>1 · 1.0 · 0</td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>find part</td>
+<td>1 · 19.0 · 0</td>
+<td>1 · 19.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>frisco</td>
+<td>1 · 4.0 · 0</td>
+<td>1 · 4.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>how to adjust a pressure regulator</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>how to adjust high water pressure</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>how to adjust prv valve</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>how to adjust this valve</td>
+<td>1 · 5.0 · 0</td>
+<td>1 · 5.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>how to adjust water pressure in the house</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>hydrostatic testing frisco</td>
+<td>1 · 43.0 · 0</td>
+<td>1 · 43.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: hydrostatic, testing)</td>
+</tr>
+<tr>
+<td>images</td>
+<td>1 · 2.0 · 0</td>
+<td>1 · 2.0 · 0</td>
+<td></td>
+<td></td>
+<td>нет (нет слов: images)</td>
+</tr>
+<tr>
+<td>licensed plumber</td>
+<td>1 · 6.0 · 0</td>
+<td>1 · 6.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>nsd.prv</td>
+<td>1 · 1.0 · 0</td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: nsd)</td>
+</tr>
+<tr>
+<td>pressure reducing valve location in house</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: location)</td>
+</tr>
+<tr>
+<td>prv city</td>
+<td></td>
+<td>1 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>prv plumbing</td>
+<td>1 · 13.0 · 0</td>
+<td>1 · 13.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>prv replacement cost</td>
+<td>1 · 7.0 · 0</td>
+<td>1 · 7.0 · 0</td>
+<td></td>
+<td></td>
+<td>да: оценочное слово в текст не ставим: cost</td>
+</tr>
+<tr>
+<td>prv service</td>
+<td></td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>replacement valve</td>
+<td></td>
+<td>1 · 12.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>show me</td>
+<td>1 · 1.0 · 0</td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>нет (нет слов: show)</td>
+</tr>
+<tr>
+<td>site:fppplumbing.com</td>
+<td>1 · 22.0 · 0</td>
+<td>1 · 22.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: fppplumbing, com)</td>
+</tr>
+<tr>
+<td>water pressure issues in my area</td>
+<td>1 · 8.0 · 0</td>
+<td>1 · 8.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: issues, area)</td>
+</tr>
+<tr>
+<td>water pressure low in my area</td>
+<td>1 · 9.0 · 0</td>
+<td>1 · 9.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: area)</td>
+</tr>
+<tr>
+<td>water pressure repair</td>
+<td></td>
+<td>1 · 8.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: repair)</td>
+</tr>
+<tr>
+<td>water pressure service</td>
+<td>1 · 1.0 · 0</td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>water regulator valve</td>
+<td>1 · 1.0 · 0</td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>what should the pressure be</td>
+<td>1 · 1.0 · 0</td>
+<td>1 · 1.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>where can i find it</td>
+<td>1 · 3.0 · 0</td>
+<td>1 · 3.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>where is prv valve located in house</td>
+<td>1 · 11.0 · 0</td>
+<td>1 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>where is the prv located in a house</td>
+<td>1 · 11.0 · 0</td>
+<td>1 · 11.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+<tr>
+<td>where to buy</td>
+<td>1 · 20.0 · 0</td>
+<td>1 · 20.0 · 0</td>
+<td></td>
+<td></td>
+<td>частично (нет слов: buy)</td>
+</tr>
+<tr>
+<td>yes</td>
+<td>1 · 8.0 · 0</td>
+<td>1 · 8.0 · 0</td>
+<td></td>
+<td></td>
+<td>да</td>
+</tr>
+</tbody>
+</table></main></body></html>
