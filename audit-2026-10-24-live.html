@@ -1,0 +1,168 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 24.10.2026 16:14</p><h1>Аудит страниц, выложенных 23 и 24 октября 2026 (по живым адресам)</h1>
+<p>Слово Дениса 24 октября 2026, 01:25: «теперь аудит, потому что мы сегодня сделали по этим страницам, все ли в порядке там». Проверены живые страницы, как их видит посетитель и робот, в 01:30:</p>
+<ul>
+<li>https://fppplumbing.com/clogged-drain-cleaning-frisco-plano/ (drain cleaning, версия 8, на живом сайте с 23 октября, 23:36; закрыта);</li>
+<li>https://fppplumbing.com/prv-replacement-frisco-plano/ (PRV, версия 5, на живом сайте с 24 октября, 00:58, правка клипа 01:19; закрыта);</li>
+<li>https://fppplumbing.com/emergency-plumbing-services/ (emergency, версия 5, выложена в 00:55 сессией «Корректировки страницы Emergency»; здесь только техническая проверка, текст той сессии не оценивался).</li>
+</ul>
+<p>Четыре проверки: правила проекта по живому HTML (скриптом), каждая ссылка и каждый файл страниц (скриптом), и два аудита плагинов на каждой из двух закрытых страниц (superseo page-audit и claude-seo seo-page, по одному помощнику на страницу; тексты не менялись, страницы закрыты). Отчёты плагинов: <code>exports/audit-2026-10-24-live/</code>, страницы журнала prv-live-superseo, prv-live-claude-seo, drain-live-superseo, drain-live-claude-seo.</p>
+<h2>1. Правила проекта по живому HTML</h2>
+<table>
+<thead>
+<tr>
+<th>Проверка</th>
+<th>Drain cleaning</th>
+<th>PRV</th>
+<th>Emergency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ответ сервера</td>
+<td>200</td>
+<td>200</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Title и H1 равны файлу текста</td>
+<td>да</td>
+<td>да</td>
+<td>да</td>
+</tr>
+<tr>
+<td>noindex</td>
+<td>нет</td>
+<td>нет</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>Canonical на свой адрес, og:title равен title</td>
+<td>да</td>
+<td>да</td>
+<td>да</td>
+</tr>
+<tr>
+<td>Тег Google и PostHog</td>
+<td>есть</td>
+<td>есть</td>
+<td>есть</td>
+</tr>
+<tr>
+<td>Тире в нашем тексте</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Телефоны в тексте и FAQ</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Суммы в тексте</td>
+<td>$49, $79 дважды и «around $100» (цены из рекламы конкурентов, по слову Дениса)</td>
+<td>$49</td>
+<td>$49</td>
+</tr>
+<tr>
+<td>Обещания времени приезда</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>«Dallas» вне «North Dallas suburbs», tankless, hydro jetting</td>
+<td>нет</td>
+<td>нет</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>Запрещённые города</td>
+<td>нет («Denton County» в общем блоке зоны, одобренный текст главной)</td>
+<td>нет (то же)</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>Узлы схемы</td>
+<td>Plumber, WebSite, WebPage, BreadcrumbList, Service, Person, 4 Review, 17 VideoObject, FAQPage</td>
+<td>те же, 2 Review, 13 VideoObject</td>
+<td>те же, 2 Review, 13 VideoObject</td>
+</tr>
+<tr>
+<td>validator.schema.org по живому HTML</td>
+<td>0 ошибок (23 октября, 23:37)</td>
+<td>0 ошибок (01:19)</td>
+<td>не проверялась здесь</td>
+</tr>
+<tr>
+<td>FAQPage слово в слово с текстом страницы</td>
+<td>да</td>
+<td>да</td>
+<td>да</td>
+</tr>
+<tr>
+<td>Отзывы слово в слово по reviews/all-reviews.csv</td>
+<td>да, 4</td>
+<td>да, 2</td>
+<td>да, 2</td>
+</tr>
+<tr>
+<td>Рейтинговый итог в схеме</td>
+<td>нет</td>
+<td>нет</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>Клипы: адреса без «?v=», каждый клип в VideoObject</td>
+<td>да, 17</td>
+<td>да, 13</td>
+<td>да, 13</td>
+</tr>
+<tr>
+<td>Строка лицензии в подвале</td>
+<td>есть</td>
+<td>есть</td>
+<td>есть</td>
+</tr>
+<tr>
+<td>«4,500+»</td>
+<td>есть</td>
+<td>есть</td>
+<td>есть</td>
+</tr>
+<tr>
+<td>Совет про запах газа</td>
+<td>не нужен</td>
+<td>не нужен</td>
+<td>его словами</td>
+</tr>
+<tr>
+<td>Слово «owner» в нашем тексте</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Дата updated</td>
+<td>23 октября 2026</td>
+<td>24 октября 2026</td>
+<td>24 октября 2026</td>
+</tr>
+</tbody>
+</table>
+<p>Что проверка не измеряет: правдивость каждой фразы против его диктовок (это делалось при сборке каждой версии и в аудитах версий), и длина.</p>
+<h2>2. Ссылки и файлы</h2>
+<p>Со страниц drain cleaning и PRV собраны все адреса (ссылки, фото во всех размерах, клипы, постеры): 173 внутренних адреса, все отвечают 200. Внешних 20: все отвечают 200, кроме трёх, которые закрывают дверь перед роботом, а не перед человеком: BBB 403, Yelp 403, Facebook 400 (так эти сайты отвечают любому скрипту; в браузере страницы открываются, это проверялось раньше, и по памяти проекта 429 и 403 роботу это не сломанная ссылка). Адреса fonts.googleapis.com и fonts.gstatic.com это preconnect к шрифтам, не страницы. Все внешние ссылки открываются в новой вкладке (tools/check_site.py при каждой сборке, 34 из 34).</p></main></body></html>
