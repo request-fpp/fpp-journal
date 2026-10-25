@@ -1,0 +1,208 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 25.10.2026 18:05</p><h1>Картинки после переезда: сверка, возврат файлов, проверка (25 октября 2026)</h1>
+<p>Задание чата от 25 октября 2026 («три вещи после переезда»). Сборка готова и проверена, на живой сайт ничего не выложено: по слову Дениса сначала отчёт, разбор чатом, потом выкладка. Сборка стоит на тестовом адресе https://draft.fppplumbing-preview.pages.dev/ (вход по почте, noindex).</p>
+<h2>Коротко</h2>
+<ul>
+<li>Папка wp-content/uploads вернулась на сайт целиком по старым адресам: 3,104 файла, 227 МБ в публичной папке сайта (до этого 727 файлов, 73 МБ). Все 1,134 адреса картинок со старых страниц отвечают на тестовой сборке: 1,130 отдают 200, четыре адреса HEIC отдают 301 на свою JPEG-копию.</li>
+<li>На 25 страницах у 157 картинок вернулись srcset и sizes со старыми адресами размеров, слово в слово как на WordPress. В sitemap.xml добавлены картинки каждой страницы (395 записей).</li>
+<li>/plumbing-guide/ отвечает 301 на /plumbing-guides-tips/.</li>
+<li>В хабах /blog/ и /plumbing-guides-tips/ и в блоках «Read more» заполнены все пустые alt (37 картинок) подписями этих файлов со старого сайта. Пустых alt на сайте не осталось.</li>
+<li>У 16 гидов в схеме (BlogPosting и WebPage) появился datePublished со старого сайта. На странице дата публикации не показывается, только в схеме.</li>
+<li>Три замороженных гида совпадают со старым сайтом слово в слово: title, H1, description, og:image и текст.</li>
+<li>Две посылки задания не подтвердились, и эти два пункта не сделаны (ниже, раздел 2): title и H1 гида про перекрытие воды переезд не менял, их поменял сам WordPress 3 июля 2026; главное фото под H1 старые страницы не показывали (32 из 33). Решение за Денисом.</li>
+</ul>
+<h2>1. Сверка со старым сайтом (часть 0)</h2>
+<p>Старые страницы взяты напрямую с сервера HOSTiQ по его IP 162.247.155.224 с заголовком Host: fppplumbing.com (WordPress там жив и отвечает). Все 65 адресов (63 из sitemap, /blog/author/admin/ и /plumbing-guide/) сохранены в <code>source/old-site-2026-10-25/html/</code>, старые Yoast-сайтмапы в <code>source/old-site-2026-10-25/sitemaps/</code>, список медиатеки WordPress со всеми размерами и alt в <code>source/old-site-2026-10-25/media.json</code> (295 вложений), полный список файлов папки uploads в <code>source/old-site-2026-10-25/uploads-folder-list.csv</code>.</p>
+<p>Рабочая база построена скриптом <code>python3 tools/old_site_base.py</code>:</p>
+<ul>
+<li><code>source/old-site-2026-10-25/pages.csv</code>: title, H1, description, canonical, og:image, datePublished, dateModified каждой страницы;</li>
+<li><code>source/old-site-2026-10-25/images.csv</code>: 2,573 строки, каждая картинка каждой страницы (src, каждый элемент srcset, href лайтбокса, og:image, картинки схемы и сайтмапа) с alt, шириной, высотой, srcset и sizes;</li>
+<li><code>source/old-site-2026-10-25/addresses.txt</code>: 1,036 разных адресов картинок;</li>
+<li><code>site/src/data/old-srcset.json</code>: 204 файла и их старые srcset и sizes;</li>
+<li><code>site/src/data/old-alts.json</code>: 1,238 файлов и их alt на старом сайте (alt из медиатеки, он же alt этого файла везде);</li>
+<li><code>source/old-site-2026-10-25/frozen-compare.md</code>: три замороженных гида, старое против собранного.</li>
+</ul>
+<p>Три замороженных гида (water-heater-replacement-cost-2026, how-to-shut-off-main-water-valve-texas, angle-stop-valve-leaking-under-sink): title, H1, description и og:image совпадают слово в слово; текст статьи совпадает предложение в предложение. Единственное, чего нет на старых страницах: блок автора под статьёй («Written by Denys Kavaler…»), он стоит под каждым гидом и постом нового сайта с самого переезда. Цены и упоминания tankless в этих трёх гидах не трогались и стоят как на старом сайте. Расхождений нет.</p>
+<h2>2. Что не подтвердилось (по правилу о критических ошибках в блоках чата)</h2>
+<h3>2.1. Гид «как перекрыть воду»: переезд title и H1 не менял</h3>
+<p>Задание говорит, что гиду поменяли title и H1 при переезде, и велит вернуть:
+title «How To Shut Off Main Water Valve Texas: Plumbing Guide», H1 «How to Shut Off Your Main Water Valve in North Texas: A Local Plumber’s Guide».</p>
+<p>Факты:</p>
+<ul>
+<li>Сервер HOSTiQ сегодня (25 октября) отдаёт title «How to Turn Off Water to Your House | Main Shut-Off Valve Guide TX» и H1 «How to Turn Off Water to Your House: Main Water Shut-Off Valve Guide for North Texas». Ровно это стоит на новом сайте.</li>
+<li>Обход живого сайта от 1 октября (source/crawl) видел те же title и H1.</li>
+<li>Копия Wayback Machine от 27 июня 2026 показывает title и H1 из задания, datePublished 9 февраля 2026, dateModified 28 мая 2026. На копии HOSTiQ datePublished и dateModified стоят 3 июля 2026: страницу переопубликовали в WordPress 3 июля с новым title, H1 и description. Переезд был 6 октября.</li>
+</ul>
+<p>То есть замороженный гид переехал ровно таким, каким был на WordPress в день переезда. Поставить сегодня июньский title значит не вернуть старое, а изменить замороженную страницу. По правилу о замороженных гидах и по данным я этого не делал.</p>
+<p>Search Console по этой странице по месяцам (клики, показы, позиция):</p>
+<table>
+<thead>
+<tr>
+<th>Месяц</th>
+<th>Клики</th>
+<th>Показы</th>
+<th>Позиция</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-02</td>
+<td>12</td>
+<td>1,527</td>
+<td>5.6</td>
+</tr>
+<tr>
+<td>2026-03</td>
+<td>25</td>
+<td>2,827</td>
+<td>5.5</td>
+</tr>
+<tr>
+<td>2026-04</td>
+<td>31</td>
+<td>3,216</td>
+<td>6.4</td>
+</tr>
+<tr>
+<td>2026-05</td>
+<td>27</td>
+<td>3,204</td>
+<td>8.2</td>
+</tr>
+<tr>
+<td>2026-06</td>
+<td>15</td>
+<td>2,153</td>
+<td>7.7</td>
+</tr>
+<tr>
+<td>2026-07 (новый title с 3 июля)</td>
+<td>32</td>
+<td>3,679</td>
+<td>8.0</td>
+</tr>
+<tr>
+<td>2026-08</td>
+<td>30</td>
+<td>2,906</td>
+<td>7.7</td>
+</tr>
+<tr>
+<td>2026-09</td>
+<td>42</td>
+<td>3,346</td>
+<td>7.2</td>
+</tr>
+<tr>
+<td>2026-10 (по 23 число)</td>
+<td>22</td>
+<td>1,663</td>
+<td>7.5</td>
+</tr>
+</tbody>
+</table>
+<p>Клики после 3 июля не упали, они выросли; позиция в среднем чуть хуже, чем в феврале и марте, но хуже она стала ещё в мае, до смены title. Запросы страницы в обоих окнах одни и те же: «water shut off», «how to shut off water to house», «water main shut off valve at street», «garage water shut off valve».</p>
+<p>Вопрос Денису: оставить июльский title и H1 (так стоит сейчас, страница с ними растёт) или всё же поставить июньские. Если июньские, это одна строка в source/approved-text-edits.md и пересборка; schema (headline, name) и description следуют за ними.</p>
+<h3>2.2. Главное фото под H1: старые страницы его не показывали</h3>
+<p>Задание говорит вывести главное фото (og:image) под H1 на каждом посте и гиде, «как было на WordPress». Проверка по копиям HOSTiQ и по обходу 1 октября: виджет featured image стоял только на одном посте из 33 (frisco-shower-valve-leak-turned-into-a-costly-lesson, и там он показывал HEIC-файл, который браузеры не открывают). На остальных 32 постах и гидах файл og:image стоял только в мета-тегах и в схеме, в тексте страницы его не было.</p>
+<p>Значит это не возврат, а новое: на 33 страницах, включая три замороженных гида, появилась бы картинка, которой не было. Код готов и стоит выключенным: в site/src/layouts/Article.astro переключатель FEATURED_LEAD; при его включении og:image выводится первой картинкой статьи с alt из медиатеки старого сайта (у всех 33 файлов alt есть). На живой странице это ничего не меняет, пока Денис не скажет.</p>
+<p>Что говорит за включение: картинка с alt под заголовком даёт Google ещё один файл для картиночной выдачи и делает страницу живее. Что против: на четырёх постах og:image это квадратный логотип FPP-Plumbing.jpg 1280 на 1280 (frisco-shower-valve-leak, outside-spigot-replacement, plumber-frisco-water-heater-replacement, toilet-fill-valve-flush-valve-replacement), и под H1 он будет смотреться как ошибка; на замороженных гидах это изменение страницы.</p>
+<h2>3. Возврат файлов (часть 1)</h2>
+<h3>Откуда и куда</h3>
+<p>Источник: папка uploads, которую Денис сам выгрузил с HOSTiQ на рабочий стол (3,807 файлов, 322 МБ). Её полная копия лежит в проекте вне git, как photos/originals: <code>photos/wp-uploads-2026-10-25/uploads/</code> (в .gitignore). Независимо от этого та же папка была снята по HTTP (на сервере открыт листинг папок): 3,687 файлов годовых папок совпали с копией Дениса байт в байт.</p>
+<p>Скрипт <code>python3 tools/restore_uploads.py</code> переносит файлы в <code>site/public/wp-content/uploads/</code>, Cloudflare Pages отдаёт их по тем же адресам https://fppplumbing.com/wp-content/uploads/ГОД/МЕСЯЦ/имя. Лимиты Pages (20,000 файлов, 25 МБ на файл) не задеты, вариант с R2 не понадобился. Отчёт по каждому файлу: <code>exports/uploads-restored.csv</code>.</p>
+<p>Что сделано с файлами:</p>
+<ul>
+<li>годовые папки 2024, 2025, 2026 целиком: все размеры, Elementor-миниатюры внутри них и в elementor/thumbs/ в корне, .webp-копии LiteSpeed; имена те же, ничего не пережималось;</li>
+<li>файлы, которые на сайте уже были (218 штук, перенесённые до переезда), оставлены как есть; у десяти из них байты отличаются от серверных, потому что их тогда пересохранили без метаданных или они заменяют оригинал (список в exports/uploads-restored.csv помечен «kept»);</li>
+<li>метаданные сняты без изменения картинки: у JPEG убраны сегменты Exif/XMP, IPTC и комментарии (ICC-профиль оставлен), у PNG текстовые и eXIf-чанки; проверка показала, что ни в одном файле нет GPS и тега поворота, так что картинки читаются так же. WebP-копии метаданных не несут и скопированы байт в байт;</li>
+<li>не опубликованы: резервные копии LiteSpeed <code>*.bk.*</code> (1,116 файлов, 131 МБ: на них никогда не было ссылок и показов в Search Console, это копии оригиналов до оптимизации), четыре HEIC-оригинала (фото с телефона с координатами внутри: frisco-shower-valve-leak.heic уже с 3 октября отдаёт 301 на JPEG без метаданных, теперь так же ao-smith-water-heater-frisco.heic, frost-free-hose-bib-replacement-frisco-tx.jpg.heic и Toilet-fill-and-flush-valve-replacement-in-Frisco-TX.heic, их JPEG-копии сделаны и стоят рядом), документ SEO-FPPPLUMBING.COM_.pages, и папки плагинов в корне uploads (elementor/css, google-fonts, wpforms, wpcf7_uploads, wp-rollback, wpseo-redirects, winp-css-js, astra-docs) и файл fpp-form-submissions-log.txt с заявками клиентов. Два видео .mp4 на сайте уже были, координат в них нет.</li>
+</ul>
+<p>Итого в публичной папке сайта: 3,104 файла, 227 МБ (было 727 файлов, 73 МБ). В git добавляется около 154 МБ.</p>
+<h3>srcset и sizes</h3>
+<p>На старых страницах у 204 файлов в тексте были srcset и sizes (база части 0). На новом сайте картинка со старого сайта собирается в <code>&lt;picture&gt;</code> с нашими WebP-размерами и <code>&lt;img&gt;</code> старого файла; теперь этот <code>&lt;img&gt;</code> несёт srcset и sizes слово в слово с WordPress (site/src/lib/images.mjs читает old-srcset.json). Браузер по-прежнему берёт наш WebP, а Google видит в HTML те же адреса размеров, что и раньше. Вернулось на 25 страницах у 157 картинок: больше всего в /gallery/ (104), в гиде про протечку после ремонта (16) и в гиде про перекрытие воды (9); на переписанных страницах (главная, Frisco, Plano, emergency, McKinney, Allen, Prosper, drain cleaning, PRV) старых картинок в тексте нет, там ничего не менялось. Ссылки лайтбокса на полноразмерный файл не возвращались (в задании их нет), но сами файлы на месте и отвечают 200.</p>
+<h3>Sitemap с картинками</h3>
+<p><code>tools/image_sitemap.py</code> (последний шаг <code>npm run build</code>) добавляет в sitemap.xml к каждой странице её картинки: og:image и каждая картинка внутри main (старые файлы по старым адресам, фото работ под /img/). 395 записей на 63 страницах, XML проходит разбор, все адреса отвечают 200 на тестовой сборке. Отдельного image-sitemap нет, расширение стоит в основном файле.</p>
+<h3>301 с /plumbing-guide/</h3>
+<p>Правило в _redirects: <code>/plumbing-guide/ /plumbing-guides-tips/ 301</code>. На старом сайте этот адрес отвечал 404, на новом тоже; теперь ведёт на хаб гидов. Проверено на локальном сервере Pages.</p>
+<h2>4. Подписи и даты (часть 3)</h2>
+<ul>
+<li>Хабы /blog/ (17 карточек) и /plumbing-guides-tips/ (16 карточек) и блоки «Read more» на сервисных и городских страницах: пустые alt заполнены alt тех же файлов из медиатеки старого сайта. Всего заполнено 37 картинок на 39 страницах сайта (с учётом повторов в блоках «Read more»). Пустой alt после этого не остался ни у одной картинки.</li>
+<li>К alt со старого сайта применены те же правила, что и ко всем подписям при переносе: тире заменены на двоеточие или запятую (18 файлов), «North Dallas» на «the North Dallas suburbs» (1 файл, карта зон обслуживания).</li>
+<li>Alt составлен заново один: у фото фургона на первом экране страницы Lewisville (photo_2025-05-15_20-41-52.jpg) alt на старом сайте был пустой; написано «FPP Plumbing emergency service van parked in front of a brick home», без города (где снято, на фото не видно).</li>
+<li>У 16 гидов в JSON-LD (BlogPosting и WebPage) добавлен datePublished из WebPage-узла старого сайта (поле date_published в файле страницы; у постов дата была и раньше). В подписи под заголовком дата публикации не показывается, визуально страницы не изменились. У гида про перекрытие воды это 3 июля 2026, дата переопубликации в WordPress.</li>
+<li>Главное фото под H1: не выведено (раздел 2.2).</li>
+</ul>
+<h2>5. Проверки перед выкладкой (на сборке для живого сайта, SITE_STAGING=0)</h2>
+<ul>
+<li>HEAD по каждому адресу из базы части 0 и по каждому адресу картинок из sitemap на локальном сервере Pages (<code>tools/pages_dev.py</code> плюс <code>python3 tools/check_old_addresses.py http://127.0.0.1:8788</code>): 1,134 адреса, все хорошие, 1,130 отдают 200, четыре HEIC отдают 301 на 200. Список в exports/old-addresses-check.csv. Не-200: нет.</li>
+<li>Три замороженных гида: title, H1, description совпадают со старыми слово в слово (frozen-compare.md).</li>
+<li>Пустых alt: 0 на всём сайте (415 тегов img). Хабы: 0.</li>
+<li>Sitemap с картинками: XML разбирается, 63 страницы, 395 картинок, все адреса отвечают 200.</li>
+<li>Schema: три страницы (гид про перекрытие воды, пост burst-outside-spigot, сервисная toilet-repair-frisco-plano) проверены в validator.schema.org: 0 ошибок, 0 предупреждений на каждой (раздел 7).</li>
+<li>Сравнение HTML всех 63 страниц с живым сайтом (tools/compare_live.py и разбор каждого отличия): 24 страницы совпадают байт в байт, 39 отличаются только в трёх вещах: srcset, sizes и alt у тегов img (48 мест, из них 37 заполненных alt), datePublished в JSON-LD у 16 гидов, и строка маячка Cloudflare Web Analytics, которую Cloudflare сам вставляет на живые страницы. Других отличий нет.</li>
+<li>Сайт-проверка <code>tools/check_site.py</code>: 34 проверки пройдены, 0 провалено, 7 предупреждений, все старые (Denton County в утверждённых текстах, reroute в старых гидах, слово owner, повторы абзацев, замороженные гиды, фраза о времени внутри цитаты, llms-full).</li>
+<li>Вёрстка и шрифты не трогались: ни одна картинка не изменила размер или место, менялись только атрибуты img и схема.</li>
+</ul>
+<h2>6. Выкладка и после (не сделано, ждёт слова Дениса)</h2>
+<ul>
+<li>Выложить на живой сайт: <code>zsh tools/deploy.sh live</code> из этой папки на ветке main; перед этим ещё раз <code>python3 tools/compare_live.py --show 2</code> (ожидается тот же список: 39 страниц только с srcset, alt и датой). IndexNow уйдёт сам.</li>
+<li>Кэш Cloudflare: сбросить его из проекта нечем, у логина wrangler нет права Cache Purge, а токен «fpp switch» был только для дня переезда. Нужен он вряд ли: 404 Cloudflare держит в кэше три минуты, сами страницы долго не кэшируются, и после выкладки Pages отдаёт новые файлы сразу. После выкладки я прогоню <code>python3 tools/check_old_addresses.py https://fppplumbing.com</code> и, если какой-то адрес ещё отдаёт 404 через десять минут, попрошу Дениса нажать Purge Everything в панели Cloudflare (Caching, Configuration) или дать токен с правом Cache Purge в скрытом диалоге.</li>
+<li>После выкладки: Rich Results Test на трёх живых адресах (на тестовом адресе он не работает, тот за логином).</li>
+</ul>
+<h2>7. Проверка схемы в validator.schema.org</h2>
+<p>JSON-LD трёх собранных страниц вставлен в validator.schema.org как код (тестовый адрес за логином, по адресу валидатор его не прочтёт):</p>
+<table>
+<thead>
+<tr>
+<th>Страница</th>
+<th>Узлы</th>
+<th>Ошибки</th>
+<th>Предупреждения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/plumbing-guide/how-to-shut-off-main-water-valve-texas/ (гид, с новым datePublished)</td>
+<td>BlogPosting, FAQPage</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>/blog/burst-outside-spigot/ (пост)</td>
+<td>BlogPosting, FAQPage</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>/toilet-repair-frisco-plano/ (сервисная)</td>
+<td>WebPage, FAQPage</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Rich Results Test принимает только открытые адреса: прогоняется на трёх живых адресах после выкладки.</p>
+<h2>8. Файлы и инструменты этой работы</h2>
+<ul>
+<li><code>tools/old_site_base.py</code>: база части 0 из копий HOSTiQ.</li>
+<li><code>tools/restore_uploads.py</code>: перенос папки uploads в публичную папку сайта с правилами выше.</li>
+<li><code>tools/image_sitemap.py</code>: картинки в sitemap.xml на каждой сборке.</li>
+<li><code>tools/check_old_addresses.py</code>: HEAD-проверка всех старых адресов картинок (локально или на живом сайте).</li>
+<li><code>site/src/lib/images.mjs</code>: старые srcset и sizes на img, alt со старого сайта при пустом.</li>
+<li><code>site/src/content.config.ts</code>, <code>site/src/pages/[...slug].astro</code>: поле date_published только для схемы.</li>
+<li><code>site/src/layouts/Article.astro</code>: переключатель FEATURED_LEAD, выключен.</li>
+<li><code>tools/build_launch_content.py</code>: 301 для /plumbing-guide/, 301 для четырёх HEIC, date_published у гидов.</li>
+<li><code>photos/wp-uploads-2026-10-25/uploads/</code>: полная копия папки с HOSTiQ, вне git.</li>
+</ul></main></body></html>
