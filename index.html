@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 25.10.2026 18:05</p><h1>Журнал проекта fppplumbing.com</h1>
+</style></head><body><main><p class="stamp">Опубликовано 25.10.2026 19:18</p><h1>Журнал проекта fppplumbing.com</h1>
 <p>Обновляется после каждой сессии и каждого законченного блока работы. Последнее обновление: 25 октября 2026.</p>
 <h2>Где что лежит</h2>
 <ul>
@@ -1112,10 +1112,12 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <li>Проверки на сборке для живого сайта: 1,134 адреса картинок на локальном сервере Pages все отвечают (1,130 по 200, четыре HEIC 301 на 200); пустых alt 0; sitemap разбирается; check_site 34 из 34, предупреждения старые; сравнение с живым сайтом: 24 страницы байт в байт, 39 отличаются только srcset, sizes и alt у img, datePublished в схеме 16 гидов и маячком Cloudflare. Schema трёх страниц в validator.schema.org: в отчёте.</li>
 <li>Не сделано до слова Дениса: выкладка на живой сайт, HEAD-проверка на живом адресе, Rich Results Test на живых адресах, сброс кэша (из проекта нечем: у логина wrangler нет права Cache Purge; 404 Cloudflare держит три минуты, скорее всего не понадобится).</li>
 </ul>
+<h2>25 октября 2026, вечер: картинки выложены на живой сайт (по утверждению Дениса)</h2>
+<p>Отчёт: docs/pictures-live-2026-10-25.md (страница журнала pictures-live). <code>zsh tools/deploy.sh live</code> в 19:13 CDT, деплой 8d70f959, IndexNow 39 адресов. Проверки на живом сайте: все 1,134 адреса картинок отвечают (1,130 по 200, четыре HEIC 301 на 200); три замороженных гида совпадают со старым сайтом слово в слово; sitemap.xml 200 с 395 записями картинок; /plumbing-guide/ 301 на хаб; пустых alt нет; HTML 63 страниц против снимка «до»: 24 без изменений, 39 только srcset, sizes, alt и datePublished схемы. Rich Results Test на трёх адресах: ошибок нет, некритические замечания только старые (даты в схеме без времени и пояса). Кэш Cloudflare не сбрасывался: из проекта нечем, и застрявших 404 нет (проверено по cf-cache-status); сброс, если нужен, кнопка Purge Everything в панели. Большое фото под H1 выключено, title гида не тронут; оба вопроса остаются у Дениса.</p>
 <h2>В работе сейчас</h2>
 <ul>
 <li>Закрыты и живут на fppplumbing.com: главная, Frisco, Plano, emergency, McKinney (версия 5), Allen (версия 5), Prosper (версия 5), drain cleaning (версия 8, с 23 октября), PRV (версия 5, с 24 октября). Меняются только по слову Дениса.</li>
 <li>Следующая страница: Celina, по порядку Дениса (потом Little Elm, The Colony, Carrollton, Lewisville). Страница journal celina-addendum готова, текст ждёт его диктовки.</li>
 <li>Открыто у Дениса: фургон из Prosper на первый экран; три ответа по Prosper для чата; вопросы по Celina.</li>
-<li>Ждёт слова Дениса: выкладка сборки с картинками (docs/pictures-restore-2026-10-25.md) на живой сайт; два вопроса из неё: title и H1 гида про перекрытие воды (оставить июльские или поставить июньские) и главное фото под H1 постов и гидов (включать или нет).</li>
+<li>Картинки после переезда выложены на живой сайт 25 октября 2026, 19:13 (docs/pictures-live-2026-10-25.md). Два вопроса у Дениса: title и H1 гида про перекрытие воды (оставить июльские или поставить июньские) и главное фото под H1 постов и гидов (включать или нет).</li>
 </ul></main></body></html>

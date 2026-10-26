@@ -1,0 +1,34 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Журнал FPP</title><style>
+:root{--ink:#1d2b3a;--muted:#5b6b7c;--line:#e3e8ee;--bg:#fff;--accent:#c8102e}
+@media (prefers-color-scheme:dark){:root{--ink:#e6ebf0;--muted:#9fb0c2;--line:#2c3a48;--bg:#121a22}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,sans-serif}
+main{max-width:820px;margin:0 auto;padding:24px 16px 64px}h1{font-size:28px;margin:0 0 4px}
+h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
+table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
+th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
+</style></head><body><main><p class="stamp">Опубликовано 25.10.2026 19:18</p><h1>Картинки после переезда: выложено на живой сайт (25 октября 2026, 19:13)</h1>
+<p>По утверждению Дениса (блок чата от 25 октября 2026, вечер). Выложена сборка в том виде, в каком стояла на тестовом адресе: папка uploads, srcset и sizes, sitemap с картинками, подписи превью, 301 с /plumbing-guide/, datePublished в схеме гидов. Код большого фото под H1 остался выключенным, заголовок гида про перекрытие воды не тронут. Подробности того, что именно собрано: docs/pictures-restore-2026-10-25.md (страница журнала pictures-restore).</p>
+<h2>Выкладка</h2>
+<ul>
+<li><code>zsh tools/deploy.sh live</code> из ~/Projects/fppplumbing-site на main, коммит 75c4d8e: сборка 64 страницы, сайт-проверка 34 из 34 (0 провалов, 7 старых предупреждений), деплой Cloudflare Pages 8d70f959 на ветку main, 19:13:21 до 19:13:43 CDT. IndexNow: 39 адресов, ответ 200.</li>
+<li>Перед выкладкой: снимок всех 63 живых страниц и sitemap «до» (exports/live-before-2026-10-25/, вне git), сборка для живого сайта и сравнение с живым: 24 страницы байт в байт, 39 отличаются только srcset, alt и датой в схеме, как и в отчёте днём.</li>
+<li>Живая главная после выкладки: 200, теги Google на месте, noindex нет, заголовка X-Robots-Tag нет.</li>
+</ul>
+<h2>Проверки после выкладки</h2>
+<ol>
+<li>Кэш Cloudflare: сбросить из проекта нечем. У логина wrangler нет права Cache Purge (у wrangler нет такой команды вовсе), токен дня переезда не хранился. Нужен ли сброс, проверено по факту: все адреса ниже отвечают 200, у картинок в кэше стоят свежие копии (cf-cache-status MISS или HIT с возрастом меньше минуты после выкладки), sitemap.xml и страницы отдаются как DYNAMIC, то есть не из кэша. Застрявших 404 нет. Если Денис хочет сбросить кэш всё равно: в панели Cloudflare зона fppplumbing.com, Caching, Configuration, Purge Everything; или токен с правом Zone, Cache Purge в скрытый диалог, тогда сброс делается скриптом.</li>
+<li>HEAD по всем 1,134 адресам картинок на живом fppplumbing.com (<code>python3 tools/check_old_addresses.py https://fppplumbing.com</code>, список в exports/old-addresses-check-live-2026-10-25.csv): все хорошие, 1,130 отдают 200, четыре HEIC отдают 301 на свою JPEG-копию, которая отдаёт 200. Не-200: нет. Один адрес вне базы, elementor-миниатюра из списка медиатеки (new-gas-water-heater-installation-plan-tx-scaled-rson1yzqx9…jpg), отдаёт 404 и на живом сайте, и на HOSTiQ: WordPress записал размер, но файла никогда не было, ни на одной странице он не стоял.</li>
+<li>Три замороженных гида на живом сайте против копий HOSTiQ: title, H1 и description совпадают слово в слово; текст совпадает предложение в предложение (water-heater-replacement-cost-2026: 201 предложение, how-to-shut-off-main-water-valve-texas: 183, angle-stop-valve-leaking-under-sink: 137); на живых страницах только два предложения сверх старых, блок автора под статьёй, как под каждым гидом с переезда.</li>
+<li>sitemap.xml на живом сайте: 200, 63 страницы, 395 записей картинок (до выкладки 0). /plumbing-guide/ отдаёт 301 на /plumbing-guides-tips/. Все 63 страницы отдают 200; тегов img с пустым alt ни на одной нет (заглушки data: в расчёт не идут, их две и они были).</li>
+<li>HTML всех 63 живых страниц против снимка «до» (exports/live-after-2026-10-25/ против exports/live-before-2026-10-25/, маячок Cloudflare Web Analytics не в счёт): 24 страницы без изменений, 39 изменились только в srcset, sizes и alt у тегов img (48 мест, из них 37 заполненных alt) и в datePublished схемы у 16 гидов. Других отличий нет.</li>
+</ol>
+<p>Сверх задания, Rich Results Test на трёх живых адресах (обход Google 19:15 до 19:17): гид про перекрытие воды, 6 валидных элементов (Articles, Breadcrumbs, Local businesses, Organization); пост burst-outside-spigot, 6 валидных; сервисная toilet-repair-frisco-plano, 5 валидных. Ошибок нет. Некритические замечания у Articles одни и те же, они были и до выкладки: datePublished и dateModified стоят датой без времени и часового пояса («2026-07-03»), Google хочет полный ISO с поясом (optional). Это вся схема сайта, посты и гиды, не эта работа; если Денис захочет, это одна правка в site/src/lib/schema.ts, но она сдвинет dateModified каждой страницы и требует его слова.</p>
+<h2>Открыто у Дениса (из дневного отчёта, ничего не изменилось)</h2>
+<ul>
+<li>Title и H1 гида про перекрытие воды: оставить июльские (стоят сейчас) или поставить июньские.</li>
+<li>Главное фото под H1 постов и гидов: включать или нет (переключатель FEATURED_LEAD, выключен).</li>
+</ul></main></body></html>
