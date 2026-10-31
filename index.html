@@ -10,8 +10,8 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 31.10.2026 01:35</p><h1>Журнал проекта fppplumbing.com</h1>
-<p>Обновляется после каждой сессии и каждого законченного блока работы. Последнее обновление: 25 октября 2026.</p>
+</style></head><body><main><p class="stamp">Опубликовано 31.10.2026 01:49</p><h1>Журнал проекта fppplumbing.com</h1>
+<p>Обновляется после каждой сессии и каждого законченного блока работы. Последнее обновление: 31 октября 2026.</p>
 <h2>Где что лежит</h2>
 <ul>
 <li>Проект на GitHub (закрытый): https://github.com/request-fpp/fppplumbing-site</li>
@@ -1130,4 +1130,99 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <ul>
 <li>GBP, третий пост на точке Frisco опубликован через API (блок чата «Denys approved this text», 31 октября, около 01:30): «Water Heater Leaking at 10 PM in Frisco, and the Shut-Off Valve Above It Failed Too», текст из файла posts/2026-10-frisco-11-water-heater-valve-night.txt слово в слово (по голосу, списку запрещённых слов, тире, телефонам, ценам и датам чисто, 1,112 знаков), фото 372 (верх газового водонагревателя, вода бежит из-под draft hood; копия из окна чата IMG_1381.jpg, принята в архив, геометки нет, Frisco по слову Дениса; подписи в captions.csv и captions-en.csv), кнопка Call, без ссылки. Google принял пост, статус LIVE, ссылка https://local.google.com/place?id=16325069929376080655&amp;use=posts&amp;lpsid=CAIQACoeChxtc3BfaDphWkZtTTFYRUd4Qkx0SWtyS0poX3FB , запись в posts.log. Пост встал вне очереди как свежая работа; пост про главный кран до мороза идёт следующим и ждёт «да» Дениса (с 25 октября других постов не было).</li>
 <li>GBP, фото поста 11 заменено по слову Дениса («фотку хуёвую скинул, видно просто вентиляционную трубу, неправильно обрезал», 31 октября, около 01:40): карточка поста в Google режет вертикальное фото до горизонтальной и показывает середину кадра, то есть трубу; теперь у поста кадр 4:3 из нижней части снимка, вода на баке, основание draft hood с ржавым кольцом и штуцер (файл 372c на адресе фото постов). Замена сделана через API только у этого поста и только поля фото (новый инструмент gbp_post_photo.py, updateMask=media, ничего не удалялось; статус после замены LIVE), запись в posts.log. Урок, записан в README папки: фото для поста режется под карточку 4:3 заранее, главное в кадре по центру; вертикальный снимок целиком в пост не идёт.</li>
+</ul>
+<h2>31 октября 2026, ночь: блок «emergency cluster», один выпуск на живой сайт</h2>
+<p>DEPLOYED 31 октября 2026, 01:44 America/Chicago (CDT); деплой завершён в 01:44:42, живые проверки в 01:45:20, IndexNow в 01:45</p>
+<p>Живые title после выпуска (прочитаны с fppplumbing.com):
+- Главная: <code>Emergency Plumber Near Me in Frisco, Plano &amp; McKinney | FPP Plumbing</code>
+- Страница emergency: <code>Emergency Plumbing Services in Frisco &amp; Plano: Burst Pipes, Backups, Leaks</code></p>
+<p>Задание: блок от 31 октября 2026 (Денис спал, по блоку всё ниже утверждено им заранее; вопросов не задавалось, каждое решение внутри границ блока записано здесь). Срок 05:30 по Чикаго. Смысл блока: головной запрос «emergency plumber» переходит на главную, страница /emergency-plumbing-services/ с него снимается и становится страницей «emergency plumbing services». Ветка <code>emergency-cluster-2026-10-31</code>, слита в main перед живым выпуском. Черновик: https://draft.fppplumbing-preview.pages.dev/ (вход по почте, noindex). Живой сайт: https://fppplumbing.com/ (деплой 94c91286, https://94c91286.fppplumbing-preview.pages.dev; черновик того же состояния a3bc85e8 на https://draft.fppplumbing-preview.pages.dev/).</p>
+<p>Правило CLAUDE.md о критических ошибках в блоках применено по пунктам: пункты с ошибкой в посылке не выполнены, причина записана ниже. Предупреждение, которое полагается Денису по этому правилу, дано здесь: задачи 1 и 2 отменяют три его прежних решения (title главной не трогаем, главная закрыта; страница emergency ведёт запросы «emergency plumber» без города, 5 октября; title и четыре H2 живой страницы emergency сохранены слово в слово, 5 октября). Данные Search Console за 16 месяцев (source/gsc/page-query-16m.csv) на стороне блока: по запросам со словами «emergency plumber(s)» главная имеет 39 кликов и 116,243 показа, страница emergency 0 кликов и 38,512 показов; по «24 hour / 24/7 plumber» главная 4 клика и 23,886 показов, emergency 0 и 16,367. Главная и так стоит выше страницы emergency на этих запросах, так что консолидация на главной не вредит ранжированию; это записано как выполненное решение Дениса, не как ошибка.</p>
+<h3>Задача 0. Mac не спит</h3>
+<ul>
+<li><code>caffeinate -dimsu -t 16800</code> запущен в 01:24, до 06:04 по Чикаго; <code>pmset -g assertions</code> показывает PreventUserIdleSystemSleep и PreventUserIdleDisplaySleep от caffeinate. Настройки системы не трогались. Процесс сам погаснет после 06:00.</li>
+</ul>
+<h3>Задача 1. Главная (/), текст source/home-text-v5.md (версия 4 плюс четыре строки)</h3>
+<p>Старое → новое, каждая изменённая строка:
+- title: «Plumber Near Me in Frisco, Plano &amp; McKinney | FPP Plumbing» → «Emergency Plumber Near Me in Frisco, Plano &amp; McKinney | FPP Plumbing»
+- meta description: «Plumber near me in Frisco, Plano and McKinney. Licensed plumbers, same-day repairs, 24/7 emergency plumbing, the price before the work starts.» → «Licensed 24/7 emergency plumber in Frisco, Plano and McKinney. A real person answers at any hour, same-day repairs, and the price before the work starts.»
+- H1: «Plumber Near Me in Frisco, Plano &amp; McKinney: Licensed, Local, 24/7» → «24/7 Emergency Plumber Near Me in Frisco, Plano &amp; McKinney: Licensed and Local»
+- абзац под H1: «Same-day plumbing repair across the North Dallas suburbs: licensed plumbers, a real person on the phone at any hour, and a price you hear before the work starts.» → «FPP Plumbing is a licensed 24/7 emergency plumber with offices in Frisco and Plano: same-day repairs across the North Dallas suburbs, a real person on the phone at any hour, and a price you hear before the work starts.»
+- og:title, og:description, twitter:title, twitter:description = новые title и description (они берутся из тех же полей, Base.astro).
+- JSON-LD: у узла WebPage name и description = новые title и description; dateModified узла WebPage 2026-10-03 → 2026-10-31 (это одно поле с lastmod карты сайта, задача 7; текст H1 и подзаголовка изменился, дата честная). Plumber, Person, Review, VideoObject, FAQPage, BreadcrumbList, WebSite не тронуты.
+- Всё остальное на месте: H2 (в том числе два с «near me»), разрез дома, блок «What is happening right now?», From the Job, отзывы, FAQ, все ссылки и якоря. «Plumber near me» стоит в теле пять раз, как и было (H1, заголовок блока о компании, заголовок зоны, ответ FAQ про районы, закрывающий абзац); в description этой фразы больше нет.
+- Проверка: <code>python3 tools/compare_live.py</code> по всем 62 страницам сборки против живого сайта показал на главной ровно 18 изменённых строк: title, description, og и twitter (8 строк), H1 (2), абзац под H1 (2), JSON-LD (2) и ничего больше. JSON-LD разбирается без ошибок; validator.schema.org по живому адресу: 0 ошибок, 0 предупреждений (01:46, 14 узлов: WebPage 1, Review 12, FAQPage 1, остальные внутри графа).</p>
+<h3>Задача 2. Страница emergency (/emergency-plumbing-services/), текст source/emergency-text-v6.md (версия 5 плюс строки ниже)</h3>
+<ul>
+<li>title: «Emergency Plumber in Frisco &amp; Plano, TX | 24/7 Plumbing Service» → «Emergency Plumbing Services in Frisco &amp; Plano: Burst Pipes, Backups, Leaks»</li>
+<li>meta description: «Burst pipe, sewer backup, water through the ceiling: FPP Plumbing answers 24/7 in Frisco, Plano &amp; McKinney. You hear the emergency fee before we roll.» → «Emergency plumbing services in Frisco, Plano and McKinney: burst pipes, sewer backups, slab leaks, no hot water. What to shut off first, what we fix at night.»</li>
+<li>H1: «24/7 Emergency Plumber in Frisco, Plano &amp; McKinney: Licensed and Local» → «Emergency Plumbing Services in Frisco, Plano &amp; McKinney: Burst Pipes, Sewer Backups, Leaks and No Water»</li>
+<li>og:title, og:description, twitter:title, twitter:description = новые title и description.</li>
+<li>Правило головных фраз (точные «emergency plumber», «emergency plumbers», «24/7 plumber», «24 hour plumber», «urgent plumber» не стоят в title, H1, первом абзаце под H1 и ни в одном H2). Первый абзац под H1 их не содержал. Переписаны четыре H2, минимально, в сторону ситуации:</li>
+<li>H2 «What a 24 Hour Plumber Costs After Hours» → «What an Emergency Call Costs After Hours»</li>
+<li>H2 «A 24 Hour Plumber Who Actually Picks Up» → «A Plumber Who Actually Picks Up at Any Hour»</li>
+<li>H2 «What Our Emergency Plumbers Found on Real Calls» → «What We Found on Real Emergency Calls»</li>
+<li>H2 «24 Hour Plumber Service Area: Frisco, Plano and the Cities Around Them» → «Emergency Plumbing Service Area: Frisco, Plano and the Cities Around Them»</li>
+<li>С заголовками сменились их id и четыре ссылки ряда «On this page» (after hours cost, who picks up, real calls, service area); проверка check_site «href=#id без такого id» прошла.</li>
+<li>Фразы в абзацах тела остались, как и разрешает блок: «emergency plumber» 13 раз, «emergency plumbers» 1, «24/7 plumber» 1, «24 hour plumber» 1, «urgent plumber» 0 (по собранному HTML).</li>
+<li>Ссылка на главную во вступлении: «On a weekday these same trucks are somebody's plumber near me. After dark they answer the emergency line.» → «On a weekday these same trucks are somebody's regular plumber. After dark they're the 24/7 emergency plumber.»; в ссылке слова «24/7 emergency plumber», адрес «/». На этой странице блок заменяет якорь «plumber near me» редакционного правила 6; на остальных страницах якорь не тронут.</li>
+<li>Блок зоны обслуживания, структура предложений прежняя, у каждой ссылки на город якорь «emergency plumber in &lt;город&gt;» на свою страницу города: у Frisco и Plano слова уже стояли в тексте, ссылка теперь их накрывает; дальше «A call for a plumber in McKinney goes to the same people as a call for a plumber in Allen. It's that way for a plumber in Prosper and for a plumber in Celina, for a plumber in Little Elm and for a plumber in The Colony, for a plumber in Carrollton and for a plumber in Lewisville.» → «A call for an emergency plumber in McKinney goes to the same people as a call for an emergency plumber in Allen. It's that way for an emergency plumber in Prosper and for an emergency plumber in Celina, for an emergency plumber in Little Elm and for an emergency plumber in The Colony, for an emergency plumber in Carrollton and for an emergency plumber in Lewisville.»</li>
+<li>Убрано предложение «The calls that come in most often have a page of their own: the five emergency calls we get most.» (последний абзац раздела услуг): его ссылка вела на /top-emergency-plumber-calls-frisco/, который по задаче 3 стал 301 на эту же страницу; страница никогда не ссылается на собственный адрес (правило аудита 6 октября), а без ссылки фраза «have a page of their own» была бы неправдой. Решение внутри блока.</li>
+<li>Хлебная крошка: title без « | » встал бы в крошку целиком (75 знаков), поэтому в записи страницы задан короткий crumb «Emergency Plumbing Services in Frisco &amp; Plano» по образцу страницы McKinney (16 октября); видимая крошка была «Emergency Plumber in Frisco &amp; Plano, TX», узел BreadcrumbList несёт то же имя.</li>
+<li>Блок «Read more» под текстом (site/src/lib/more.ts) показывал одну карточку, на /top-emergency-plumber-calls-frisco/; карточки больше нет, блока на странице нет, пока не назван другой пост по теме.</li>
+<li>JSON-LD: у WebPage и Service name и description = новые title (WebPage) и H1 (Service, как и раньше name узла Service берётся из H1) и description; FAQPage не тронута и совпадает с шестью вопросами и ответами на странице слово в слово (проверено по собранному HTML). Видимая дата «Updated October 2026» и dateModified 2026-10-24 → 2026-10-31.</li>
+<li>Тело, истории, FAQ, фото, отзывы, клипы не тронуты. Проверка compare_live по странице: 59 изменённых строк, все перечислены выше (head, крошка, H1, дата, абзац ссылки, 4 ссылки ряда, 4 H2, убранный абзац, блок Read more из 16 строк, JSON-LD).</li>
+<li>Проверки текста: <code>python3 tools/check_text.py source/emergency-text-v6.md</code> PROBLEMS: none, 5,144 слова; <code>tools/check_overlap.py</code> против конкурентов source/competitors/2026-10-01: 8 совпадений, с конкурентами 0 (совпадения со старой страницей emergency и с главной: шапка зоны обслуживания, вопросы FAQ, фраза про двадцать минут). validator.schema.org по живому адресу: 0 ошибок, 0 предупреждений (01:47, по живому адресу через «Run new test»: 4 узла, WebPage 1, Review 2, FAQPage 1).</li>
+</ul>
+<h3>Задача 3. Один редирект</h3>
+<ul>
+<li>/top-emergency-plumber-calls-frisco/ → 301 на /emergency-plumbing-services/ в site/public/_redirects (строится tools/build_launch_content.py: словарь REDIRECTED). Страница не собирается (62 страницы вместо 63; адресов по-прежнему 64, два из них редиректы: /blog/author/admin/ и этот). Из sitemap.xml адрес ушёл. Единственная внутренняя ссылка стояла на странице emergency; она не перенаправлена на саму страницу (самоссылка запрещена), а снята вместе с предложением, см. задачу 2. Редирект старого вложения /top-emergency-plumber-calls-frisco/fpp-emergency-plumbing-response/ теперь ведёт сразу на /emergency-plumbing-services/, без цепочки. Строка этой страницы ушла из source/llms.txt (сборка падала на ней), из карты ключей (seo/keyword-map.csv: redirected). Search Console по странице: 0 кликов за 16 месяцев, 1,469 показов, позиции 23 до 57.</li>
+<li>/plumbing-guide/pressure-reducing-valve-replacement-guide-2026/ не тронут.</li>
+<li>Проверка на живом: <code>curl -I</code> по старому адресу: HTTP/2 301, Location /emergency-plumbing-services/; старое вложение /top-emergency-plumber-calls-frisco/fpp-emergency-plumbing-response/ тоже 301 сразу туда, без цепочки; новый адрес 200; гид о PRV 200; в живом sitemap.xml старого адреса нет (01:45).</li>
+</ul>
+<h3>Задача 4. «Мёртвые» внешние ссылки: не выполнена, посылка не подтвердилась</h3>
+<ul>
+<li>https://fluidmaster.com/toilet/part-type/toilet-fill-valves/ и https://fluidmaster.com/toilet/part-type/flush-valves/ отвечают 200 браузеру (User-Agent Safari); голому curl они отвечают 429, это защита от ботов, а не мёртвая ссылка (та же история, что с 429 в проверке 23 октября). https://www.viega.us/en/products/Catalog/Metal-systems/ProPress.html отвечает 200 и так, и так. Ни одной ссылки не заменено и не снято; оба поста не тронуты.</li>
+</ul>
+<h3>Задача 5. Три опечатки в title (только title; H1 и текст не тронуты; ни один из трёх гидов не заморожен)</h3>
+<ul>
+<li>/plumbing-guide/emergency-plumbing-repair-cost-guide-2026/: «Emergency Plumbing Repair Cost: What to Expect, Plumbing Guid» → «Emergency Plumbing Repair Cost: What to Expect, Plumbing Guide». Следствие: видимая крошка этой страницы показывала title, пока он был короче H1; теперь показывает H1 «Emergency Plumbing Repair Cost: What to Expect Before You Call» (логика компонента Crumbs, не правка).</li>
+<li>/plumbing-guide/water-heater-making-noise-tips-2026/: «Why Is My Water Heater Making Noise?A Plumber Explains the Causes/Fixes» → «Why Is My Water Heater Making Noise? A Plumber Explains the Causes and Fixes» (крошка показывает новый title).</li>
+<li>/blog/clogged-main-drain-line-daycare-plano/: «Clogged main drain line emergency call from a daycare in Plano,TX» → «Clogged Main Drain Line: Emergency Call From a Daycare in Plano, TX».</li>
+<li>og:title и twitter:title следуют за title на всех трёх; узел WebPage в JSON-LD несёт новый title (name). Правило R_TITLE в tools/build_launch_content.py, строки в site/src/data/launch-changes.csv.</li>
+</ul>
+<h3>Задача 6. HSTS: не выполнена, с причиной</h3>
+<ul>
+<li>Заголовок <code>Strict-Transport-Security: max-age=31536000</code> уже стоит на всех страницах с 5 октября (site/public/_headers, аудит Plano); живой <code>curl -I https://fppplumbing.com/</code> его показывает. Блок просит добавить <code>includeSubDomains</code>. Это не сделано: поддомены зоны mail, webmail, ftp, cpanel, webdisk, cpcalendars, cpcontacts ведут на HOSTiQ (162.247.155.224, DNS only), и ни один из них не отдаёт действительный сертификат (curl по https к каждому завершается ошибкой проверки сертификата, код 60). С includeSubDomains любой браузер, побывавший на fppplumbing.com, на год перестал бы открывать cpanel.fppplumbing.com и webmail.fppplumbing.com без возможности обойти предупреждение; cPanel на HOSTiQ сейчас путь к WordPress, который по правилу остаётся откатом на 30 дней. Это критическая ошибка в посылке блока («every subdomain served from Cloudflare still load over HTTPS»: эти поддомены не на Cloudflare), пункт отложен до слова Дениса. Если он решит оставить поддомены HOSTiQ без HTTPS и всё же включить includeSubDomains, это одна строка в site/public/_headers.</li>
+</ul>
+<h3>Задача 7. Индексация после живого выпуска</h3>
+<ul>
+<li>sitemap.xml: lastmod 2026-10-31 у главной, страницы emergency и трёх страниц задачи 5. У главной и emergency это поле updated (вместе с dateModified). У трёх страниц с опечатками текст не менялся, поэтому добавлено поле lastmod только для карты сайта (site/src/content.config.ts, site/src/pages/sitemap.xml.ts): подпись «Updated» и dateModified у них не сдвинуты. Картинки в карте по-прежнему: 392 записи, как строил tools/image_sitemap.py.</li>
+<li>IndexNow: ключ уже был (site/public/0dbadc748a1b91e319c1ea06868dcd30.txt). Отправлено: <code>tools/indexnow.py --changed</code> в составе живого деплоя: 5 адресов (главная, emergency, три страницы задачи 5), ответ 200; отдельно <code>tools/indexnow.py /top-emergency-plumber-calls-frisco/</code>: 1 адрес, ответ 200 (01:45). Файл ключа на живом сайте отвечает 200.</li>
+<li>Google Search Console не трогалась; этот шаг делает чат в 02:50 по журналу.</li>
+<li>Сброс кэша Cloudflare: из проекта нечем (нужен токен зоны, его у Клода нет; как и 25 октября). HTML страниц отдаётся с <code>cache-control: max-age=0, must-revalidate</code>, так что живые title выше прочитаны прямо с сайта после выпуска.</li>
+</ul>
+<h3>Проверки сборки</h3>
+<ul>
+<li><code>python3 tools/build_launch_content.py</code>: checks all passed, 62 страницы, 305 редиректов.</li>
+<li><code>python3 tools/check_site.py</code> в составе деплоя: passed 34, failed checks 0.</li>
+<li><code>python3 tools/check_text.py</code> по обоим текстам: PROBLEMS: none (главная 2,908 слов с title и description, emergency 5,144).</li>
+<li><code>python3 tools/check_overlap.py</code> по обоим текстам: с конкурентами 0 (главная 13 совпадений, все со своими страницами и старым сайтом; emergency 8).</li>
+<li><code>python3 tools/compare_live.py</code>: из 62 страниц сборки с живым сайтом совпадают 57, отличаются ровно 5 ожидаемых (главная, emergency, три страницы задачи 5).</li>
+<li><code>python3 tools/check_layout.py</code> при шести ширинах (главная, Frisco, Plano, emergency): result clean (24 снимка, ни одна картинка не пересекает текст); <code>python3 tools/font_shift.py</code>: clean (главная при 390 px: самый большой сдвиг 53 px, score 0.002; при 1280 px: 26 px, 0.001).</li>
+<li>Первые экраны главной и emergency просмотрены в браузере на компьютере и на телефоне (375 px): H1 в четыре строки на телефоне, кнопки под ним, ничего не наезжает.</li>
+<li><code>python3 tools/check_keyword_map.py</code>: новых пересечений title нет (шесть старых, те же, что были).</li>
+</ul>
+<h3>Не сделано</h3>
+<ul>
+<li>Задача 4: ссылки живы, менять нечего (см. выше).</li>
+<li>Задача 6: includeSubDomains не добавлен (см. выше); max-age стоит с 5 октября.</li>
+<li>Задача 7, сброс кэша: нечем из проекта.</li>
+<li>Rich Results Test по живым адресам (01:47 и 01:48): главная 19 валидных элементов, emergency 20, ошибок нет; у «Local businesses» те же non-critical issues, что и до блока (необязательные поля), новых нет. Так что всё из задач 1, 2, 3, 5 и 7 сделано; не сделаны только пункты ниже.</li>
+<li>Коммиты лежат на main локально (5abcc95 и e04d1f9, ветка emergency-cluster-2026-10-31 слита fast-forward), на GitHub не отправлены: push без слова Дениса не делается; до этого блока main уже был на два коммита впереди origin (посты профиля).</li>
+</ul>
+<h3>Что ещё изменилось в проекте</h3>
+<ul>
+<li>tools/export_page_text.py: запись страницы emergency (источник v6, версия, updated, crumb, ряд nav, ключи разделов, якоря ссылок). tools/export_home_text.py, tools/check_overlap.py, tools/check_migration.py: указатель на home-text-v5.md. tools/build_launch_content.py: REDIRECTED, R_REDIRECTED, LASTMOD_ONLY, R_TITLE с тремя правками, HOME_UPDATED 2026-10-31, пропуск точечных правок ушедшей страницы. site/src/lib/more.ts: карточка снята. seo/keyword-map.csv: строки главной, emergency и ушедшей страницы. source/llms.txt: строка ушедшей страницы снята.</li>
+<li>Страницы emergency и главная остаются закрытыми: изменения только по слову Дениса.</li>
 </ul></main></body></html>
