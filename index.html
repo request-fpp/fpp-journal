@@ -10,7 +10,7 @@ a{color:var(--accent)}code{font-size:15px;background:rgba(127,127,127,.15);paddi
 li{margin:4px 0}.stamp{color:var(--muted);font-size:14px;margin:0 0 16px}
 table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px;line-height:1.35;margin:12px 0}
 th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:var(--bg)}
-</style></head><body><main><p class="stamp">Опубликовано 31.10.2026 01:33</p><h1>Журнал проекта fppplumbing.com</h1>
+</style></head><body><main><p class="stamp">Опубликовано 31.10.2026 01:35</p><h1>Журнал проекта fppplumbing.com</h1>
 <p>Обновляется после каждой сессии и каждого законченного блока работы. Последнее обновление: 25 октября 2026.</p>
 <h2>Где что лежит</h2>
 <ul>
@@ -1129,4 +1129,5 @@ th,td{padding:5px 9px;border-bottom:1px solid var(--line);text-align:left;vertic
 <h2>31 октября 2026, ночь: третий пост профиля Frisco</h2>
 <ul>
 <li>GBP, третий пост на точке Frisco опубликован через API (блок чата «Denys approved this text», 31 октября, около 01:30): «Water Heater Leaking at 10 PM in Frisco, and the Shut-Off Valve Above It Failed Too», текст из файла posts/2026-10-frisco-11-water-heater-valve-night.txt слово в слово (по голосу, списку запрещённых слов, тире, телефонам, ценам и датам чисто, 1,112 знаков), фото 372 (верх газового водонагревателя, вода бежит из-под draft hood; копия из окна чата IMG_1381.jpg, принята в архив, геометки нет, Frisco по слову Дениса; подписи в captions.csv и captions-en.csv), кнопка Call, без ссылки. Google принял пост, статус LIVE, ссылка https://local.google.com/place?id=16325069929376080655&amp;use=posts&amp;lpsid=CAIQACoeChxtc3BfaDphWkZtTTFYRUd4Qkx0SWtyS0poX3FB , запись в posts.log. Пост встал вне очереди как свежая работа; пост про главный кран до мороза идёт следующим и ждёт «да» Дениса (с 25 октября других постов не было).</li>
+<li>GBP, фото поста 11 заменено по слову Дениса («фотку хуёвую скинул, видно просто вентиляционную трубу, неправильно обрезал», 31 октября, около 01:40): карточка поста в Google режет вертикальное фото до горизонтальной и показывает середину кадра, то есть трубу; теперь у поста кадр 4:3 из нижней части снимка, вода на баке, основание draft hood с ржавым кольцом и штуцер (файл 372c на адресе фото постов). Замена сделана через API только у этого поста и только поля фото (новый инструмент gbp_post_photo.py, updateMask=media, ничего не удалялось; статус после замены LIVE), запись в posts.log. Урок, записан в README папки: фото для поста режется под карточку 4:3 заранее, главное в кадре по центру; вертикальный снимок целиком в пост не идёт.</li>
 </ul></main></body></html>
